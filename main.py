@@ -34,7 +34,7 @@ def fetch_news(urls):
 
 def curate_news_for_line(news_text):
     # 最新モデルを指定
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-flash-latest')
     
     prompt = f"""
     あなたは銀行の頼れる先輩社員です。
