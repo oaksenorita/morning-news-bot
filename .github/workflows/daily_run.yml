@@ -16,7 +16,7 @@ jobs:
       - name: Pythonをセットアップ
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: '3.11'  # ←ここを3.9から3.11にするだけ！
 
       - name: ライブラリをインストール
         run: pip install -r requirements.txt
