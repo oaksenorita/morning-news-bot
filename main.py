@@ -4,10 +4,14 @@ import requests
 import google.generativeai as genai
 import json
 
-# GitHubの金庫から鍵を取り出す
-GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
-LINE_ACCESS_TOKEN = os.environ["LINE_ACCESS_TOKEN"]
-LINE_USER_ID = os.environ["LINE_USER_ID"]
+# --- 修正点1: 鍵を取り出す時に .strip() をつけて、余計な空白や改行を削除する ---
+try:
+    GEMINI_API_KEY = os.environ["GEMINI_API_KEY"].strip()
+    LINE_ACCESS_TOKEN = os.environ["LINE_ACCESS_TOKEN"].strip()
+    LINE_USER_ID = os.environ["LINE_USER_ID"].strip()
+except KeyError:
+    print("エラー: Secretsが設定されていません。")
+    exit(1)
 
 RSS_URLS = [
     "https://news.yahoo.co.jp/rss/categories/business.xml",
@@ -29,9 +33,9 @@ def fetch_news(urls):
     return "\n".join(articles)
 
 def curate_news_for_line(news_text):
-    model = genai.GenerativeModel('gemini-flash-latest')
+    # 最新モデルを指定
+    model = genai.GenerativeModel('gemini-1.5-flash')
     
-    # ★ここを修正：優しく、用語解説付きに
     prompt = f"""
     あなたは銀行の頼れる先輩社員です。
     これから入行する新人（後輩）のために、今日のニュースから「知っておくべき重要トピック」を3つ選んで教えてあげてください。
@@ -41,7 +45,7 @@ def curate_news_for_line(news_text):
     - 「なぜ銀行員としてこれを知っておくべきか」を現場の視点で伝えること。
     - ニュースに出てくる難しそうな単語を1つピックアップして解説すること。
 
-    【出力形式（LINEで見やすいように）】
+    【出力形式】
     -----------------------------
     【1】記事タイトル
     🗣 **先輩の解説:** 要約と、それがどう仕事に関係するかを話し言葉（〜だよ、〜なんだ）で3行くらいで。
@@ -57,8 +61,11 @@ def curate_news_for_line(news_text):
     {news_text}
     """
     
-    response = model.generate_content(prompt)
-    return response.text
+    try:
+        response = model.generate_content(prompt)
+        return response.text
+    except Exception as e:
+        return f"AI生成エラー: {e}"
 
 def send_line_message(token, user_id, message):
     url = "https://api.line.me/v2/bot/message/push"
@@ -70,11 +77,18 @@ def send_line_message(token, user_id, message):
         "to": user_id,
         "messages": [{"type": "text", "text": message}]
     }
-    requests.post(url, headers=headers, data=json.dumps(data))
+    # ここでエラーが起きていたので詳細を表示できるように修正
+    try:
+        response = requests.post(url, headers=headers, data=json.dumps(data))
+        if response.status_code != 200:
+            print(f"LINE送信エラー: {response.status_code} {response.text}")
+    except Exception as e:
+        print(f"接続エラー: {e}")
 
 # 実行
 if __name__ == "__main__":
     news_data = fetch_news(RSS_URLS)
     if news_data:
         ai_summary = curate_news_for_line(news_data)
-        send_line_message(LINE_ACCESS_TOKEN, LINE_USER_ID, ai_summary)
+        if ai_summary:
+            send_line_message(LINE_ACCESS_TOKEN, LINE_USER_ID, ai_summary)
