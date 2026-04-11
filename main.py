@@ -102,7 +102,11 @@ if __name__ == "__main__":
         with open("docs/index.html", "w", encoding="utf-8") as f:
             f.write(html_output)
             
-        # 3. LINEにはURLだけを送る (あなたのGitHub IDとリポジトリ名に書き換えてください)
+        # ★ここを追加: GitHubの余計な変換機能(Jekyll)をオフにする空ファイルを作成
+        with open("docs/.nojekyll", "w") as f:
+            pass
+            
+        # 3. LINEにはURLだけを送る
         # 例: GITHUB_ID_HERE を "Taro-Yamada" などにする
         github_id = "oaksenorita" 
         repo_name = "morning-news-bot"
