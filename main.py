@@ -5,7 +5,6 @@ import google.generativeai as genai
 import json
 import datetime
 
-# --- 設定・鍵の取得 ---
 try:
     GEMINI_API_KEY = os.environ["GEMINI_API_KEY"].strip()
     LINE_ACCESS_TOKEN = os.environ["LINE_ACCESS_TOKEN"].strip()
@@ -15,106 +14,99 @@ except KeyError:
     print("エラー: Secretsの設定が足りません。")
     exit(1)
 
-# ニュースソース（北海道と金融中心）
 RSS_URLS = [
-    "https://news.yahoo.co.jp/rss/categories/business.xml",      # 経済
-    "https://www.watch.impress.co.jp/data/rss/1.0/fintech/feed.rdf", # Fintech
-    "https://news.yahoo.co.jp/rss/regions/hokkaido.xml"          # 北海道
+    "https://news.yahoo.co.jp/rss/categories/business.xml",
+    "https://www.watch.impress.co.jp/data/rss/1.0/fintech/feed.rdf",
+    "https://news.yahoo.co.jp/rss/regions/hokkaido.xml"
 ]
 
 genai.configure(api_key=GEMINI_API_KEY)
 
-# 1. ニュースを取得
 def fetch_news(urls):
     articles = []
     for url in urls:
         try:
             feed = feedparser.parse(url)
             for entry in feed.entries[:5]:
-                # AIがリンクを認識しやすいようにマークダウン形式にしておく
                 articles.append(f"- {entry.title} ({entry.link})")
         except:
             pass
     return "\n".join(articles)
 
-# 2. 天気を取得（札幌）
 def fetch_weather_sapporo():
     city = "Sapporo,jp"
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={OPENWEATHER_API_KEY}&units=metric&lang=ja"
-    
     try:
         response = requests.get(url)
         data = response.json()
-        
-        weather_desc = data["weather"][0]["description"]
-        temp_max = data["main"]["temp_max"]
-        temp_min = data["main"]["temp_min"]
-        
-        # 服装などの余計な情報は含めず、データのみを返す
-        return f"天気: {weather_desc}, 最高気温: {temp_max}℃, 最低気温: {temp_min}℃"
-    except Exception as e:
-        return f"天気取得エラー: {e}"
+        return f"天気: {data['weather'][0]['description']}, 最高気温: {data['main']['temp_max']}℃, 最低気温: {data['main']['temp_min']}℃"
+    except:
+        return "天気データ取得エラー"
 
-# 3. AIによる編集・執筆（ここを大幅強化）
-def create_morning_briefing(news_text, weather_text):
+def create_html_news(news_text, weather_text):
     model = genai.GenerativeModel('gemini-flash-latest')
-    today = datetime.date.today().strftime("%Y/%m/%d")
+    today = datetime.date.today().strftime("%Y年%m月%d日")
 
     prompt = f"""
-    今日は {today} です。
-    あなたは北海道の地方銀行に内定した新人に対し、プロフェッショナルな情報を提供するアシスタントです。
+    今日は {today} です。あなたは北海道の地方銀行に内定した新人向けのアシスタントです。
+    以下のニュースと天気から、洗練された「1枚のHTMLページ」を作成してください。
 
-    【出力構成】
+    【HTMLの要件】
+    - <!DOCTYPE html> から始める完全なHTML5で出力すること（```html などのMarkdownブロックは不要）。
+    - <head>内に以下のCSSを必ず読み込むこと: <link rel="stylesheet" href="[https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css](https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css)">
+    - <body>タグの中に、<main class="container"> を配置してレイアウトすること。
     
-    ## 🌤 {today} 札幌の天気
-    {weather_text}
-    （※余計な挨拶や服装のアドバイスは不要です。上記のデータのみ記載してください）
+    【構成内容】
+    1. ヘッダー: <h1>☀️ 朝のインサイト ({today})</h1>
+    2. 天気: <article>タグの中に {weather_text} を見やすく配置。
+    3. ニュース解説 (3件厳選): 以下のニュースから3つ選び、それぞれを <article> タグで囲む。
+       - <h3>タグで記事タイトル
+       - <b>ロジカル要約</b>: 背景/経緯、事象、結果/影響 を <ul> リストで綺麗に整理。
+       - <b>地銀視点の深掘り</b>: 取引先への影響や顧客との会話ネタを <p> タグで記述。
+       - 最後に「続きを読む」というボタン風リンク: <a href="記事URL" role="button" class="outline">続きを読む</a>
 
-    ## 📰 今日の重要ニュース（3選）
-    以下のニュースリストから、地銀内定者が読むべき重要な記事を3つ選定し、以下のフォーマットで解説してください。
-
-    ### [記事タイトル]
-    
-    **1. ロジカル要約**
-    * **背景/経緯:** (この記事に至るまでの前提や課題)
-    * **事象:** (具体的に何が起きたか、何が決まったか)
-    * **結果/影響:** (それにより今後どうなると予想されるか)
-    
-    **2. 地銀視点の深掘り**
-    * 単に「重要だ」と言うだけでなく、「取引先企業（中小企業など）にどう影響するか」「もし顧客と話すならどういう話題になるか」まで踏み込んで記述してください。
-    
-    🔗 [記事のURL]
-
-    (これを3記事分繰り返す)
-
-    【対象ニュースリスト】
+    【ニュースリスト】
     {news_text}
     """
     
-    try:
-        response = model.generate_content(prompt)
-        return response.text
-    except Exception as e:
-        return f"AI生成エラー: {e}"
+    response = model.generate_content(prompt)
+    html_content = response.text
+    
+    # AIがMarkdownの ```html 〜 ``` で囲んでしまった場合に取り除く処理
+    if html_content.startswith("```html"):
+        html_content = html_content[7:]
+    if html_content.endswith("```"):
+        html_content = html_content[:-3]
+        
+    return html_content.strip()
 
-# 4. LINE送信
 def send_line_message(token, user_id, message):
-    url = "https://api.line.me/v2/bot/message/push"
+    url = "[https://api.line.me/v2/bot/message/push](https://api.line.me/v2/bot/message/push)"
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {token}"
     }
-    data = {
-        "to": user_id,
-        "messages": [{"type": "text", "text": message}]
-    }
+    data = {"to": user_id, "messages": [{"type": "text", "text": message}]}
     requests.post(url, headers=headers, data=json.dumps(data))
 
-# メイン処理
 if __name__ == "__main__":
     news_data = fetch_news(RSS_URLS)
     weather_data = fetch_weather_sapporo()
     
     if news_data:
-        message = create_morning_briefing(news_data, weather_data)
-        send_line_message(LINE_ACCESS_TOKEN, LINE_USER_ID, message)
+        # 1. HTMLを生成
+        html_output = create_html_news(news_data, weather_data)
+        
+        # 2. docsフォルダを作って index.html として保存
+        os.makedirs("docs", exist_ok=True)
+        with open("docs/index.html", "w", encoding="utf-8") as f:
+            f.write(html_output)
+            
+        # 3. LINEにはURLだけを送る (あなたのGitHub IDとリポジトリ名に書き換えてください)
+        # 例: GITHUB_ID_HERE を "Taro-Yamada" などにする
+        github_id = "あなたのGitHubユーザー名" 
+        repo_name = "morning-news-bot"
+        site_url = f"https://{github_id}.github.io/{repo_name}/"
+        
+        line_msg = f"🌤 今日のニュースが更新されました！\nブラウザでサクッと確認してください👇\n{site_url}"
+        send_line_message(LINE_ACCESS_TOKEN, LINE_USER_ID, line_msg)
