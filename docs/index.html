@@ -7,33 +7,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #1a5c20; /* 地銀をイメージした信頼感のあるグリーン */
-        }
-        body {
-            background-color: #f4f7f6;
+            --pico-font-family: "Hiragino Sans", "Meiryo", sans-serif;
         }
         h1 {
-            border-bottom: 3px solid var(--primary);
+            border-bottom: 3px solid var(--pico-primary);
             padding-bottom: 0.5rem;
             margin-top: 2rem;
-        }
-        article {
-            background: #fff;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
         .weather-info {
             display: flex;
             gap: 20px;
             font-size: 1.1rem;
         }
-        .badge {
-            display: inline-block;
-            padding: 2px 8px;
-            border-radius: 4px;
-            background-color: var(--primary);
-            color: white;
-            font-size: 0.8rem;
-            margin-bottom: 10px;
+        .logical-summary b, .insight b {
+            color: var(--pico-primary);
         }
     </style>
 </head>
@@ -41,70 +28,91 @@
     <main class="container">
         <header>
             <h1>☀️ 朝のインサイト (2026年04月11日)</h1>
-            <p>北海道の未来を担う新人の皆様へ。今日の重要トピックを整理しました。</p>
+            <p>北海道の未来を担う新人行員の皆様へ、今日押さえるべき重要トピックを届けます。</p>
         </header>
 
         <section id="weather">
             <article>
-                <header><strong>📍 今日の北海道（札幌近郊）の天気</strong></header>
+                <header><strong>📍 今日の天気（道内主要エリア）</strong></header>
                 <div class="weather-info">
-                    <span><strong>天気:</strong> 強い雨 🌧️</span>
-                    <span><strong>最高気温:</strong> 4.78℃</span>
-                    <span><strong>最低気温:</strong> 4.78℃</span>
+                    <span>☁️ <strong>天気:</strong> 厚い雲</span>
+                    <span>🌡️ <strong>最高気温:</strong> 5.27℃</span>
+                    <span>❄️ <strong>最低気温:</strong> 5.27℃</span>
                 </div>
-                <p><small>※4月としては非常に冷え込み、路面状況の悪化が予想されます。外回りの際は足元にご注意ください。</small></p>
+                <small>※冷え込みが続いています。外回りや通勤の際は防寒を万全に。</small>
             </article>
         </section>
 
         <section id="news">
-            <!-- ニュース1: ラピダス -->
+            <!-- ニュース1 -->
             <article>
-                <div class="badge">最重要トピック</div>
-                <h3>半導体の量産目指す「ラピダス」で解析センターの開所式 北海道 千歳</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯:</b> 次世代半導体の国産化を目指すラピダスが、千歳市に製造拠点を建設中。製造工程の効率化が急務となっていた。</li>
-                    <li><b>事象:</b> 製品の不良解析や品質管理を担う「解析センター」が新たに開所。研究開発から検査までの一気通貫体制を強化。</li>
-                    <li><b>結果/影響:</b> 千歳エリアの産業集積が加速。技術者などの定住人口増加に伴う住宅・サービス需要の拡大が見込まれる。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>千歳市を中心とした「シリコンアイランド北海道」構想が具体化しています。取引先の建設業者や不動産業者にとって、周辺インフラ整備（アパート建設や商業施設）に伴う融資相談が活発化するはずです。千歳方面への営業店配属になる方はもちろん、全道的な経済波及効果に注目しましょう。</p>
-                <a href="https://news.yahoo.co.jp/articles/57996ff4f23bc63b4cf489c66483317fd535b805?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>【35歳が境】人生が崩れていく人の“たった1つの共通点”</h3>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯</b>: 30代半ばまでは体力や勢いでカバーできるが、35歳を過ぎると過去の習慣や学習姿勢が顕著に結果として現れ始める。</li>
+                        <li><b>事象</b>: 成長を止めた人と、変化に対応し続ける人の間で、キャリア・健康・人間関係の格差が決定的に広がる。</li>
+                        <li><b>結果/影響</b>: 変化を拒む「硬直したマインドセット」を持つ人は、組織内での価値を失い、生活の質が急激に低下するリスクがある。</li>
+                    </ul>
+                </div>
+                <div class="insight">
+                    <b>地銀視点の深掘り</b>
+                    <p>
+                        リテール営業においては、35歳前後のお客様は住宅ローンの最長借入期間（35年）を考慮する最後のタイミングです。この年代のお客様の「将来への不安」や「キャリアプラン」に寄り添い、単なる融資提案だけでなく、長期的な資産形成やライフプランニングの視点を持つことで、深い信頼関係を築くフックになります。
+                    </p>
+                </div>
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/0588e15c26c4c2c2fca549bd2a0d68184a9ac664?source=rss" role="button" class="outline">続きを読む</a>
+                </footer>
             </article>
 
-            <!-- ニュース2: ダムド ジムニー -->
+            <!-- ニュース2 -->
             <article>
-                <div class="badge">ライフスタイル・地域産業</div>
-                <h3>ダムド「ジムニーノマド アルマータ」に注目ッ！ ランチアから着想を得た“レトロ顔”が魅力</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯:</b> アウトドアブームが定着し、自分好みに車をカスタマイズする「個の消費」が拡大している。</li>
-                    <li><b>事象:</b> 人気のジムニー向けに、伝説の名車ランチア・デルタを彷彿とさせるレトロなカスタムパーツが登場。</li>
-                    <li><b>結果/影響:</b> 新車購入時のオプションだけでなく、中古車市場での「リセールバリュー」向上や、カスタム専門店の収益機会増につながる。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>北海道はジムニーの普及率が極めて高く、カーライフは生活の一部です。取引先である自動車整備工場や販売店が、こうした「高付加価値なカスタム提案」に乗り出している場合、単なる車検業務以上の利益率を確保できている可能性があります。趣味性の高いマイカーローン需要のヒアリングにも役立つネタです。</p>
-                <a href="https://news.yahoo.co.jp/articles/baeb3b9443d357096a06dbb9e26d1b41512a7330?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>新名神の開通待たず国道24号を4車線化へ。物流のボトルネック解消へ</h3>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯</b>: 新名神高速道路の全線開通には時間を要するため、激しい渋滞が続く並行路（国道24号）の整備が急務となっていた。</li>
+                        <li><b>事象</b>: 国土交通省は、特に混雑が激しい区間の4車線化を年度内に完了させる見通しを発表。</li>
+                        <li><b>結果/影響</b>: 物流トラックの定時性が向上し、周辺の経済活動の効率化や交通事故の低減が期待される。</li>
+                    </ul>
+                </div>
+                <div class="insight">
+                    <b>地銀視点の深掘り</b>
+                    <p>
+                        インフラ整備は地域経済の血流を改善します。北海道においても、高規格道路の整備状況は取引先（特に運送・製造業）の生産性に直結します。本件をネタに、物流業のお客様へ「配送効率の向上による燃料費削減」や「設備投資（トラック買い替えや倉庫拡充）」のニーズをヒアリングしてみるのが良いでしょう。
+                    </p>
+                </div>
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/7432b443465297af18f322ea712b455e849775ea?source=rss" role="button" class="outline">続きを読む</a>
+                </footer>
             </article>
 
-            <!-- ニュース3: シビックe:HEV -->
+            <!-- ニュース3 -->
             <article>
-                <div class="badge">産業構造の転換</div>
-                <h3>シビックe:HEVが魅せる“爽快”の衝撃 ガソリン車より低重心な「ホンダ魂」の走り</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯:</b> 脱炭素化に向け、ハイブリッド車(HEV)は単なる低燃費車ではなく、走行性能を両立させる段階へ移行。</li>
-                    <li><b>事象:</b> シビックe:HEVが、モーター駆動の特性を活かしつつ、スポーツ走行でも高い評価を獲得。</li>
-                    <li><b>結果/影響:</b> 「エコだから乗る」から「楽しいから乗る」という付加価値へシフト。ガソリン車から電動車への買い替えサイクルを促進。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>ガソリン代が高止まりする北海道において、燃費性能と走破性を両立したHEVは依然として主力商品です。個人顧客との会話では、単なる預金だけでなく、こうした電動化車両への買い替えを軸にしたライフプランニングや、当行の「グリーンマイカーローン」等の優遇金利商品の提案機会を探ってみましょう。</p>
-                <a href="https://news.yahoo.co.jp/articles/abc7b74c8f428dd6aad3ce5f55356b0a4a210cd1?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>【中国スパイの実態】インフルエンサーを利用した「浸透工作」と技術流出の脅威</h3>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯</b>: 米中対立や台湾情勢の緊迫化に伴い、従来の諜報活動だけでなく、SNSやインフルエンサーを通じた世論工作が激化。</li>
+                        <li><b>事象</b>: 台湾での選挙介入や、米国における先端技術情報の巧妙な流出ルートが次々と発覚している。</li>
+                        <li><b>結果/影響</b>: 国家安全保障だけでなく、民間企業の知的財産が脅かされる事態となっており、グローバル供給網への影響が懸念される。</li>
+                    </ul>
+                </div>
+                <div class="insight">
+                    <b>地銀視点の深掘り</b>
+                    <p>
+                        「経済安全保障」は今や大企業だけの問題ではありません。独自の技術を持つ道内の中小メーカーも、海外資本による買収や情報漏洩のリスクに晒されています。法人担当として、お客様に「ISMS（情報セキュリティマネジメントシステム）の構築」や「サイバー保険」の提案を行う際の背景知識として非常に重要なトピックです。
+                    </p>
+                </div>
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/d0ab0ee32bf2b7e058b20086ba5511c656687a3e?source=rss" role="button" class="outline">続きを読む</a>
+                </footer>
             </article>
         </section>
 
         <footer>
-            <p><small>&copy; 2026 北海道地方銀行・新人研修アシスタント</small></p>
+            <p><small>&copy; 2026 北海道地域金融パートナーズ - 新人研修用資料</small></p>
         </footer>
     </main>
 </body>
