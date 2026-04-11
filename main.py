@@ -104,7 +104,7 @@ if __name__ == "__main__":
             
         # 3. LINEにはURLだけを送る (あなたのGitHub IDとリポジトリ名に書き換えてください)
         # 例: GITHUB_ID_HERE を "Taro-Yamada" などにする
-        github_id = "あなたのGitHubユーザー名" 
+        github_id = "oaksenorita" 
         repo_name = "morning-news-bot"
         site_url = f"https://{github_id}.github.io/{repo_name}/"
         
