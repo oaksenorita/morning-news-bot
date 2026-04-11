@@ -81,7 +81,7 @@ def create_html_news(news_text, weather_text):
     return html_content.strip()
 
 def send_line_message(token, user_id, message):
-    url = "[https://api.line.me/v2/bot/message/push](https://api.line.me/v2/bot/message/push)"
+    url = "https://api.line.me/v2/bot/message/push"
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {token}"
