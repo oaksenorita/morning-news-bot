@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 2026年04月11日</title>
+    <title>朝のインサイト | 2026年04月12日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --pico-font-family: "Hiragino Sans", "Meiryo", sans-serif;
+            --primary: #004d40;
         }
         h1 {
-            border-bottom: 3px solid var(--pico-primary);
-            padding-bottom: 0.5rem;
+            border-left: 8px solid var(--primary);
+            padding-left: 15px;
             margin-top: 2rem;
         }
         .weather-info {
@@ -19,100 +19,90 @@
             gap: 20px;
             font-size: 1.1rem;
         }
-        .logical-summary b, .insight b {
-            color: var(--pico-primary);
+        .weather-info span {
+            font-weight: bold;
+        }
+        .deep-dive {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #004d40;
         }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月11日)</h1>
-            <p>北海道の未来を担う新人行員の皆様へ、今日押さえるべき重要トピックを届けます。</p>
+            <h1>☀️ 朝のインサイト (2026年04月12日)</h1>
+            <p>北海道の未来を担う皆様へ、今日の重要トピックをお届けします。</p>
         </header>
 
-        <section id="weather">
+        <section>
             <article>
-                <header><strong>📍 今日の天気（道内主要エリア）</strong></header>
+                <header><strong>📍 今日の北海道の天気</strong></header>
                 <div class="weather-info">
-                    <span>☁️ <strong>天気:</strong> 厚い雲</span>
-                    <span>🌡️ <strong>最高気温:</strong> 5.27℃</span>
-                    <span>❄️ <strong>最低気温:</strong> 5.27℃</span>
+                    <span>天気: 曇りがち</span>
+                    <span>最高気温: <span style="color: #e53935;">6.9℃</span></span>
+                    <span>最低気温: <span style="color: #1e88e5;">4.86℃</span></span>
                 </div>
-                <small>※冷え込みが続いています。外回りや通勤の際は防寒を万全に。</small>
+                <small>※肌寒い朝です。外出の際は厚手のコートをお忘れなく。</small>
             </article>
         </section>
 
-        <section id="news">
+        <section>
+            <h2>📰 厳選ニュース解説</h2>
+
             <!-- ニュース1 -->
             <article>
-                <h3>【35歳が境】人生が崩れていく人の“たった1つの共通点”</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯</b>: 30代半ばまでは体力や勢いでカバーできるが、35歳を過ぎると過去の習慣や学習姿勢が顕著に結果として現れ始める。</li>
-                        <li><b>事象</b>: 成長を止めた人と、変化に対応し続ける人の間で、キャリア・健康・人間関係の格差が決定的に広がる。</li>
-                        <li><b>結果/影響</b>: 変化を拒む「硬直したマインドセット」を持つ人は、組織内での価値を失い、生活の質が急激に低下するリスクがある。</li>
-                    </ul>
+                <h3>【速報】イラン情勢受け原油先物価格が再び急上昇　1バレル＝100ドルの大台突破</h3>
+                <b>ロジカル要約</b>:
+                <ul>
+                    <li><b>背景/経緯</b>: 中東におけるイラン情勢の地政学リスクが再燃し、供給不安が世界的に波及。</li>
+                    <li><b>事象</b>: 原油先物価格が急騰し、心理的節目である1バレル＝100ドルを突破。</li>
+                    <li><b>結果/影響</b>: ガソリン価格や電気代の更なる上昇、物流コスト増による物価高の再加速が懸念される。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>:
+                <div class="deep-dive">
+                    <p>北海道は物流・農業・漁業のすべてにおいてエネルギー依存度が高く、原油高は地域経済に直撃します。特にビニールハウス栽培を行う農業生産者や運送業者の方々は、コスト転嫁の難しさに直面しているはずです。「最近、燃料代の負担はどうですか？」という一言から、資金繰り支援や省エネ設備投資への融資ニーズを丁寧にヒアリングしてみましょう。</p>
                 </div>
-                <div class="insight">
-                    <b>地銀視点の深掘り</b>
-                    <p>
-                        リテール営業においては、35歳前後のお客様は住宅ローンの最長借入期間（35年）を考慮する最後のタイミングです。この年代のお客様の「将来への不安」や「キャリアプラン」に寄り添い、単なる融資提案だけでなく、長期的な資産形成やライフプランニングの視点を持つことで、深い信頼関係を築くフックになります。
-                    </p>
-                </div>
-                <footer>
-                    <a href="https://news.yahoo.co.jp/articles/0588e15c26c4c2c2fca549bd2a0d68184a9ac664?source=rss" role="button" class="outline">続きを読む</a>
-                </footer>
+                <a href="https://news.yahoo.co.jp/articles/acafca383feb3461a90dfa5a778e6e03153a34b7?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
             <!-- ニュース2 -->
             <article>
-                <h3>新名神の開通待たず国道24号を4車線化へ。物流のボトルネック解消へ</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯</b>: 新名神高速道路の全線開通には時間を要するため、激しい渋滞が続く並行路（国道24号）の整備が急務となっていた。</li>
-                        <li><b>事象</b>: 国土交通省は、特に混雑が激しい区間の4車線化を年度内に完了させる見通しを発表。</li>
-                        <li><b>結果/影響</b>: 物流トラックの定時性が向上し、周辺の経済活動の効率化や交通事故の低減が期待される。</li>
-                    </ul>
+                <h3>「ICカードは作りません」 JR四国が選んだ“持たない経営”の帰結</h3>
+                <b>ロジカル要約</b>:
+                <ul>
+                    <li><b>背景/経緯</b>: 地方鉄道にとって多額の維持費がかかる独自の交通系ICカードシステムの構築が大きな経営負担に。</li>
+                    <li><b>事象</b>: JR四国は自前ICカード導入を断念し、QR決済やタッチ決済など低コストな既存インフラ活用へ舵を切った。</li>
+                    <li><b>結果/影響</b>: 固定費を抑制しつつ利便性を確保。地方インフラの持続可能なモデルとして注目を集めている。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>:
+                <div class="deep-dive">
+                    <p>「最新システムを導入すること」だけがDXではなく、身の丈に合ったコスト構造を作ることが重要だという好例です。道内の取引先でも、人手不足を補うための過剰なIT投資で資金を圧迫しているケースがあるかもしれません。キャッシュレス化を進めたい商店街の顧客などに対し、JR四国の事例を引き合いに、無理のないデジタル化の形を提案するヒントになります。</p>
                 </div>
-                <div class="insight">
-                    <b>地銀視点の深掘り</b>
-                    <p>
-                        インフラ整備は地域経済の血流を改善します。北海道においても、高規格道路の整備状況は取引先（特に運送・製造業）の生産性に直結します。本件をネタに、物流業のお客様へ「配送効率の向上による燃料費削減」や「設備投資（トラック買い替えや倉庫拡充）」のニーズをヒアリングしてみるのが良いでしょう。
-                    </p>
-                </div>
-                <footer>
-                    <a href="https://news.yahoo.co.jp/articles/7432b443465297af18f322ea712b455e849775ea?source=rss" role="button" class="outline">続きを読む</a>
-                </footer>
+                <a href="https://news.yahoo.co.jp/articles/e2c6a475a91315963d3d5ffec3ae90127e44e094?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
             <!-- ニュース3 -->
             <article>
-                <h3>【中国スパイの実態】インフルエンサーを利用した「浸透工作」と技術流出の脅威</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯</b>: 米中対立や台湾情勢の緊迫化に伴い、従来の諜報活動だけでなく、SNSやインフルエンサーを通じた世論工作が激化。</li>
-                        <li><b>事象</b>: 台湾での選挙介入や、米国における先端技術情報の巧妙な流出ルートが次々と発覚している。</li>
-                        <li><b>結果/影響</b>: 国家安全保障だけでなく、民間企業の知的財産が脅かされる事態となっており、グローバル供給網への影響が懸念される。</li>
-                    </ul>
+                <h3>触覚はPSOC 4、目や耳も――ヒューマノイド向けで攻めるInfineon</h3>
+                <b>ロジカル要約</b>:
+                <ul>
+                    <li><b>背景/経緯</b>: 人手不足の深刻化を背景に、労働力としてのヒューマノイドロボットの実用化が加速している。</li>
+                    <li><b>事象</b>: 半導体大手Infineonが、ロボットの「触覚」や「関節」を支える高度な半導体ソリューションを拡充。</li>
+                    <li><b>結果/影響</b>: ロボットの動作がより人間に近づき、単純作業だけでなく介護やサービス業への導入ハードルが下がる。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>:
+                <div class="deep-dive">
+                    <p>北海道の深刻な人口減少を見据えると、数年以内に「働くロボット」は金融支援の大きな対象になります。今はまだ遠い世界の技術に思えますが、例えば食品工場のパレタイジング（積み込み）や宿泊施設の自動化など、現場の課題をロボットで解決しようとする野心的な経営者が現れるはずです。最新のテクノロジーに関心を持ち、取引先の「未来の労働力」について会話を広げてみましょう。</p>
                 </div>
-                <div class="insight">
-                    <b>地銀視点の深掘り</b>
-                    <p>
-                        「経済安全保障」は今や大企業だけの問題ではありません。独自の技術を持つ道内の中小メーカーも、海外資本による買収や情報漏洩のリスクに晒されています。法人担当として、お客様に「ISMS（情報セキュリティマネジメントシステム）の構築」や「サイバー保険」の提案を行う際の背景知識として非常に重要なトピックです。
-                    </p>
-                </div>
-                <footer>
-                    <a href="https://news.yahoo.co.jp/articles/d0ab0ee32bf2b7e058b20086ba5511c656687a3e?source=rss" role="button" class="outline">続きを読む</a>
-                </footer>
+                <a href="https://news.yahoo.co.jp/articles/7c8c49ea481e43e053c5e5a5700f00989741ed6f?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
-        <footer>
-            <p><small>&copy; 2026 北海道地域金融パートナーズ - 新人研修用資料</small></p>
+        <footer style="text-align: center; margin-top: 3rem; padding: 2rem; border-top: 1px solid #eee;">
+            <p><small>&copy; 2026 北海道地方銀行 新人研修アシスタント</small></p>
         </footer>
     </main>
 </body>
