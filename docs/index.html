@@ -3,110 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 2026年04月13日</title>
+    <title>朝のインサイト | 北海道地方銀行 新人研修用</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #004d40;
+            --pico-primary: #1b5e20; /* 銀行らしい信頼感のあるグリーン */
+        }
+        body {
+            background-color: #f4f7f6;
         }
         h1 {
-            border-bottom: 3px solid var(--primary);
+            border-bottom: 4px solid var(--pico-primary);
             padding-bottom: 0.5rem;
             margin-top: 2rem;
         }
-        h3 {
-            color: var(--primary);
+        .logical-summary-title {
+            color: var(--pico-primary);
+            font-weight: bold;
         }
-        .weather-info {
-            display: flex;
-            gap: 2rem;
-            font-size: 1.1rem;
-        }
-        .logical-summary {
-            background-color: #f8f9fa;
+        .insight-box {
+            background-color: #e8f5e9;
             padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
+            border-left: 5px solid var(--pico-primary);
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月13日)</h1>
+            <h1>☀️ 朝のインサイト (2026年04月14日)</h1>
+            <p>おはようございます。北海道の未来を担う皆様へ、本日の重要ニュースをお届けします。</p>
         </header>
 
         <section id="weather">
             <article>
-                <h2>今日の天気 (北海道)</h2>
-                <div class="weather-info">
-                    <span><strong>天気:</strong> 晴天</span>
-                    <span><strong>最高気温:</strong> 9.11℃</span>
-                    <span><strong>最低気温:</strong> 9.11℃</span>
+                <header><strong>📍 北海道エリアの気象状況</strong></header>
+                <div class="grid">
+                    <div>
+                        <strong>天気:</strong> 曇りがち
+                    </div>
+                    <div>
+                        <strong>最高気温:</strong> 6.59℃
+                    </div>
+                    <div>
+                        <strong>最低気温:</strong> 6.59℃
+                    </div>
                 </div>
+                <p><small>※春先の冷え込みが続いています。外訪の際はコートの着用をお勧めします。</small></p>
             </article>
         </section>
 
         <section id="news">
-            <h2>主要ニュース解説</h2>
-
-            <!-- ニュース1 -->
+            <!-- ニュース1: 金融・経済 -->
             <article>
-                <h3>中東情勢とガソリン価格の連動：エネルギー高騰の懸念</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯:</b> 不透明な中東の地政学リスクにより、原油供給への不安が世界的に拡大。</li>
-                        <li><b>事象:</b> 原油価格の上昇に伴い、国内のガソリン価格や電気代などのエネルギーコストが連動して上昇。</li>
-                        <li><b>結果/影響:</b> 物価高が長期化し、家計の購買力低下と企業の収益圧迫が懸念される事態に。</li>
-                    </ul>
-                </div>
-                <b>地銀視点の深掘り</b>
+                <h3>日銀の利上げ観測後退と長期金利低下：イラン情勢と政策の整合性</h3>
+                <b class="logical-summary-title">ロジカル要約</b>
+                <ul>
+                    <li><b>背景/経緯</b>: イラン情勢の緊迫化に伴う世界的な地政学リスクの高まり。</li>
+                    <li><b>事象</b>: 政府の政策対応との整合性から、日本銀行による早期利上げ観測が後退し、長期金利が低下。</li>
+                    <li><b>結果/影響</b>: 市場では過度な引き締めへの警戒が和らぐ一方、円安の持続や輸入コスト増への懸念が残る。</li>
+                </ul>
+                <b class="logical-summary-title">地銀視点の深掘り</b>
                 <p>
-                    北海道は物流や暖房、農業機械などで燃料依存度が高く、ガソリン価格の上昇はダイレクトに地域経済を冷え込ませます。特にお取引先の運送業者や農家の方々に対し、燃料サーチャージの導入状況や、仕入れコスト上昇分を適切に価格転嫁できているかをヒアリングする良いきっかけになります。
+                    金利動向は我々の貸出金利や預金金利に直結する最重要事項です。特に北海道内の輸出入業者や燃料コストに敏感な運輸・農業セクターのお客様に対し、「金利の先行き不透明感」をフックに、為替予約や固定金利への切り替え提案など、リスクヘッジの対話を行うきっかけになります。
                 </p>
-                <a href="https://news.yahoo.co.jp/articles/7b41919535226ded2dd18d7a42f4ee9757984bfb?source=rss" role="button" class="outline">続きを読む</a>
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/eeae1f0d04eb3996371606339bbdb100c3787da3?source=rss" role="button" class="outline">続きを読む</a>
+                </footer>
             </article>
 
-            <!-- ニュース2 -->
+            <!-- ニュース2: 個人向け資産運用 -->
             <article>
-                <h3>「退職金2,500万円」独立の落とし穴：シニア起業の現実</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯:</b> 定年後、退職金を元手に「自分の城」を持ちたいという元管理職のニーズが増加。</li>
-                        <li><b>事象:</b> 緻密な事業計画がないまま立派なオフィスを構えるなど、固定費をかけすぎて事業が停滞。</li>
-                        <li><b>結果/影響:</b> 老後資金が急速に減少し、生活破綻のリスクに直面する「絶望」のケースが表面化。</li>
-                    </ul>
-                </div>
-                <b>地銀視点の深掘り</b>
+                <h3>NISAで+30％達成！ 新NISAで利益が出た人が確認したい3つのポイント</h3>
+                <b class="logical-summary-title">ロジカル要約</b>
+                <ul>
+                    <li><b>背景/経緯</b>: 新NISA開始後の市場好調により、多くの個人投資家が含み益を抱えている状態。</li>
+                    <li><b>事象</b>: 利益確定（売却）すべきか、継続保有すべきかの判断基準が問われている。</li>
+                    <li><b>結果/影響</b>: アセットアロケーションの再確認、長期投資目的の再定義、非課税枠の再利用ルールの理解が必要。</li>
+                </ul>
+                <b class="logical-summary-title">地銀視点の深掘り</b>
                 <p>
-                    預金口座に多額の退職金が入金されたお客様に対し、単に運用を勧めるだけでなく「セカンドキャリアの相談相手」となる重要性がわかります。創業支援融資の厳しさだけでなく、事業の持続可能性について客観的なアドバイスを行うことが、結果的にお客様の資産を守り、当行への信頼に繋がります。
+                    窓口に来店されるお客様の中にも、運用益が出ている方が増えています。「儲かっているから売りたい」という声に対し、安易に応じるのではなく、お客様のライフプランに寄り添った「リバランス」の提案が求められます。地域密着型の銀行として、長期的な信頼関係を築くアドバイスを心がけましょう。
                 </p>
-                <a href="https://news.yahoo.co.jp/articles/1d83f4828026bfc2d03609617115d6dfe8646670?source=rss" role="button" class="outline">続きを読む</a>
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/e55b331d6f3ce0435936103ae207a670dca3c550?source=rss" role="button" class="outline">続きを読む</a>
+                </footer>
             </article>
 
-            <!-- ニュース3 -->
+            <!-- ニュース3: 地域社会・教育 -->
             <article>
-                <h3>インバウンド増加と感染症リスク：観光振興の課題</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯:</b> 水際対策緩和による訪日外国人の急増が、地域の観光産業を活性化。</li>
-                        <li><b>事象:</b> 麻疹（はしか）などの感染症が海外から持ち込まれ、国内で再流行するリスクが浮上。</li>
-                        <li><b>結果/影響:</b> 観光地でのクラスター発生が、風評被害や急激な客足減少を招く懸念がある。</li>
-                    </ul>
-                </div>
-                <b>地銀視点の深掘り</b>
+                <h3>明治創立の女子校が「通信制」併設、 卒業生も驚いた「共学化」ではない選択</h3>
+                <b class="logical-summary-title">ロジカル要約</b>
+                <ul>
+                    <li><b>背景/経緯</b>: 少子化や不登校生徒の増加、多様な学びへのニーズの拡大。</li>
+                    <li><b>事象</b>: 伝統ある私立女子校が、安易な共学化ではなく、既存の校舎を活用した「通信制」の併設を選択。</li>
+                    <li><b>結果/影響</b>: 多様な事情を持つ生徒に居場所を提供しつつ、私立学校としての経営基盤の維持・強化を図る。</li>
+                </ul>
+                <b class="logical-summary-title">地銀視点の深掘り</b>
                 <p>
-                    北海道にとってインバウンドは生命線ですが、ひとたび感染症リスクが顕在化すれば、ホテルや飲食店のキャッシュフローは一気に悪化します。観光関連の取引先には、好調な今こそ衛生対策の徹底や、不測の事態に備えたBCP（事業継続計画）の策定、手元流動性の確保を提案する絶好の機会です。
+                    北海道内でも少子化による私立学校の経営課題は深刻です。本件は、伝統を守りつつ新しい教育ニーズを取り込む「多角化戦略」の好例です。学校法人の取引先に対し、設備投資支援だけでなく、DX化や新しい教育形態への転換といった事業支援の視点を持つための参考事例となります。
                 </p>
-                <a href="https://news.yahoo.co.jp/articles/e9d1c83c66c190f6cb646d83c4fdcc5767497b35?source=rss" role="button" class="outline">続きを読む</a>
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/a418d7ab3b90aa0858e9b8f3f7c8a1f4d849ffb9?source=rss" role="button" class="outline">続きを読む</a>
+                </footer>
             </article>
         </section>
 
-        <footer>
-            <p><small>&copy; 2026 北海道地方銀行・新人研修アシスタント</small></p>
+        <footer class="container">
+            <hr>
+            <p style="text-align: center;"><small>&copy; 2026 北海道地方銀行 新人研修アシスタント</small></p>
         </footer>
     </main>
 </body>
