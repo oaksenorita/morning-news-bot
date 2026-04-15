@@ -3,116 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 北海道地方銀行 新人研修用</title>
+    <title>朝のインサイト | 2026年04月15日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --pico-primary: #1b5e20; /* 銀行らしい信頼感のあるグリーン */
-        }
-        body {
-            background-color: #f4f7f6;
+            --primary: #004d40;
         }
         h1 {
-            border-bottom: 4px solid var(--pico-primary);
-            padding-bottom: 0.5rem;
-            margin-top: 2rem;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 10px;
+            margin-top: 20px;
         }
-        .logical-summary-title {
-            color: var(--pico-primary);
+        .weather-info {
+            background-color: #f0f7f7;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .insight-header {
+            color: var(--primary);
             font-weight: bold;
         }
-        .insight-box {
-            background-color: #e8f5e9;
-            padding: 1rem;
-            border-left: 5px solid var(--pico-primary);
-            border-radius: 4px;
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月14日)</h1>
-            <p>おはようございます。北海道の未来を担う皆様へ、本日の重要ニュースをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年04月15日)</h1>
+            <p>北海道の未来を担う新人行員の皆様へ、今日押さえておくべきトピックをお届けします。</p>
         </header>
 
-        <section id="weather">
-            <article>
-                <header><strong>📍 北海道エリアの気象状況</strong></header>
+        <section>
+            <article class="weather-info">
+                <h2 style="font-size: 1.2rem;">本日の北海道（札幌周辺）の天気</h2>
                 <div class="grid">
-                    <div>
-                        <strong>天気:</strong> 曇りがち
-                    </div>
-                    <div>
-                        <strong>最高気温:</strong> 6.59℃
-                    </div>
-                    <div>
-                        <strong>最低気温:</strong> 6.59℃
-                    </div>
+                    <div><strong>天気:</strong> 晴天</div>
+                    <div><strong>最高気温:</strong> 8.96℃</div>
+                    <div><strong>最低気温:</strong> 8.96℃</div>
                 </div>
-                <p><small>※春先の冷え込みが続いています。外訪の際はコートの着用をお勧めします。</small></p>
+                <small>※日中の気温差が少ない予報です。体調管理に留意し、外回りの際は適切な服装を心がけましょう。</small>
             </article>
         </section>
 
-        <section id="news">
-            <!-- ニュース1: 金融・経済 -->
+        <section>
+            <h2>厳選ニュース解説</h2>
+
+            <!-- ニュース1: 半導体 -->
             <article>
-                <h3>日銀の利上げ観測後退と長期金利低下：イラン情勢と政策の整合性</h3>
-                <b class="logical-summary-title">ロジカル要約</b>
+                <h3>後工程で高まる精度要求、半導体“積層化”支える2次元スケールで描く成長曲線</h3>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯</b>: イラン情勢の緊迫化に伴う世界的な地政学リスクの高まり。</li>
-                    <li><b>事象</b>: 政府の政策対応との整合性から、日本銀行による早期利上げ観測が後退し、長期金利が低下。</li>
-                    <li><b>結果/影響</b>: 市場では過度な引き締めへの警戒が和らぐ一方、円安の持続や輸入コスト増への懸念が残る。</li>
+                    <li><b>背景/経緯</b>: 半導体の微細化が物理的限界に近づく中、性能向上の鍵はチップを積み重ねる「積層化（3Dパッケージング）」へ移行している。</li>
+                    <li><b>事象</b>: 積層化に伴い、チップの位置合わせや切断において、ナノメートル単位の極めて高い計測・制御精度（2次元スケール技術）が不可欠となっている。</li>
+                    <li><b>結果/影響</b>: 製造装置メーカーだけでなく、超精密測定器を持つサプライヤーの重要性が急増。次世代半導体製造の主戦場が「後工程」に移りつつある。</li>
                 </ul>
-                <b class="logical-summary-title">地銀視点の深掘り</b>
-                <p>
-                    金利動向は我々の貸出金利や預金金利に直結する最重要事項です。特に北海道内の輸出入業者や燃料コストに敏感な運輸・農業セクターのお客様に対し、「金利の先行き不透明感」をフックに、為替予約や固定金利への切り替え提案など、リスクヘッジの対話を行うきっかけになります。
-                </p>
-                <footer>
-                    <a href="https://news.yahoo.co.jp/articles/eeae1f0d04eb3996371606339bbdb100c3787da3?source=rss" role="button" class="outline">続きを読む</a>
-                </footer>
+                <b>地銀視点の深掘り</b>:
+                <p>北海道（千歳）でのRapidus（ラピダス）建設が進む中、注目すべきは「後工程」の関連企業です。取引先の中に、精密加工や測定技術を持つ町工場があれば、半導体サプライヤーへの参入チャンスかもしれません。経営者との会話では「後工程の高度化」をキーワードに、設備投資の意欲を伺ってみましょう。</p>
+                <a href="https://news.yahoo.co.jp/articles/a64917de58ca3cf08b6d19add52a9797b1363e24?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2: 個人向け資産運用 -->
+            <!-- ニュース2: 世帯年収1000万円の罠 -->
             <article>
-                <h3>NISAで+30％達成！ 新NISAで利益が出た人が確認したい3つのポイント</h3>
-                <b class="logical-summary-title">ロジカル要約</b>
+                <h3>世帯年収1000万円なのに余裕がない…同じ年収でも豊かに暮らせる人とそうでない人の決定的な違い</h3>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯</b>: 新NISA開始後の市場好調により、多くの個人投資家が含み益を抱えている状態。</li>
-                    <li><b>事象</b>: 利益確定（売却）すべきか、継続保有すべきかの判断基準が問われている。</li>
-                    <li><b>結果/影響</b>: アセットアロケーションの再確認、長期投資目的の再定義、非課税枠の再利用ルールの理解が必要。</li>
+                    <li><b>背景/経緯</b>: 「年収1000万円」は裕福の代名詞とされるが、実際には貯蓄が困難な「高所得貧乏」世帯が増加している。</li>
+                    <li><b>事象</b>: 住宅ローン、教育費、見栄による消費といった「固定費の膨張」が原因。収入増に伴い生活水準を上げてしまう「ライフスタイル・クリープ」が起きている。</li>
+                    <li><b>結果/影響</b>: 表面上の年収よりも、手残り金額（可処分所得）を管理できる「家計のメタ認知能力」が将来の資産格差を分ける。</li>
                 </ul>
-                <b class="logical-summary-title">地銀視点の深掘り</b>
-                <p>
-                    窓口に来店されるお客様の中にも、運用益が出ている方が増えています。「儲かっているから売りたい」という声に対し、安易に応じるのではなく、お客様のライフプランに寄り添った「リバランス」の提案が求められます。地域密着型の銀行として、長期的な信頼関係を築くアドバイスを心がけましょう。
-                </p>
-                <footer>
-                    <a href="https://news.yahoo.co.jp/articles/e55b331d6f3ce0435936103ae207a670dca3c550?source=rss" role="button" class="outline">続きを読む</a>
-                </footer>
+                <b>地銀視点の深掘り</b>:
+                <p>リテール営業において、年収が高いお客様ほど「家計の悩み」を打ち明けにくい傾向にあります。住宅ローン借換やNISAの提案時、単に数字を追うのではなく、将来のキャッシュフロー表を一緒に作成するような「伴走型のアドバイス」が信頼獲得に繋がります。外見の華やかさに惑わされない、本質的な与信判断力を養いましょう。</p>
+                <a href="https://news.yahoo.co.jp/articles/b9241063b0e4f12ec6dc7aa4f215d8eeec70ba2b?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3: 地域社会・教育 -->
+            <!-- ニュース3: 4-6月の残業問題 -->
             <article>
-                <h3>明治創立の女子校が「通信制」併設、 卒業生も驚いた「共学化」ではない選択</h3>
-                <b class="logical-summary-title">ロジカル要約</b>
+                <h3>「4月・5月・6月の残業は損」って本当？ 1年間の手取りが決まる仕組みと2026年の注意点</h3>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯</b>: 少子化や不登校生徒の増加、多様な学びへのニーズの拡大。</li>
-                    <li><b>事象</b>: 伝統ある私立女子校が、安易な共学化ではなく、既存の校舎を活用した「通信制」の併設を選択。</li>
-                    <li><b>結果/影響</b>: 多様な事情を持つ生徒に居場所を提供しつつ、私立学校としての経営基盤の維持・強化を図る。</li>
+                    <li><b>背景/経緯</b>: 社会保険料は毎年4～6月の給与平均（標準報酬月額）を元に決定され、その額が9月以降の1年間に適用される。</li>
+                    <li><b>事象</b>: この期間に残業代が多く支払われると、年間の社会保険料負担が増え、結果として年間の「手取り」が減る現象が発生する。</li>
+                    <li><b>結果/影響</b>: 2026年度は特に、制度改正や賃上げの影響により、多くの労働者が保険料等級の変動を意識する必要がある。</li>
                 </ul>
-                <b class="logical-summary-title">地銀視点の深掘り</b>
-                <p>
-                    北海道内でも少子化による私立学校の経営課題は深刻です。本件は、伝統を守りつつ新しい教育ニーズを取り込む「多角化戦略」の好例です。学校法人の取引先に対し、設備投資支援だけでなく、DX化や新しい教育形態への転換といった事業支援の視点を持つための参考事例となります。
-                </p>
-                <footer>
-                    <a href="https://news.yahoo.co.jp/articles/a418d7ab3b90aa0858e9b8f3f7c8a1f4d849ffb9?source=rss" role="button" class="outline">続きを読む</a>
-                </footer>
+                <b>地銀視点の深掘り</b>:
+                <p>これは新人行員の皆さん自身の生活に直結するだけでなく、法人顧客（特に中小企業の経営者）との重要な会話ネタになります。「今月の給与明細、手取りが減って驚きましたよ」といった世間話から、企業の労務管理や賃上げ対策の話題へと繋げることができます。制度を熟知していることは、プロの銀行員としての第一歩です。</p>
+                <a href="https://news.yahoo.co.jp/articles/abd08431a798da03cb0db89556a2768d57727f14?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
-        <footer class="container">
-            <hr>
-            <p style="text-align: center;"><small>&copy; 2026 北海道地方銀行 新人研修アシスタント</small></p>
+        <footer>
+            <p>&copy; 2026 Hokkaido Local Bank Newcomer Assistant. 今日の業務も頑張りましょう。</p>
         </footer>
     </main>
 </body>
