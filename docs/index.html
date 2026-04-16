@@ -3,100 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年04月15日</title>
+    <title>朝のインサイト | 北海道地方銀行 新人研修用</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #004d40;
+            --primary: #2e7d32; /* 銀行らしい信頼感のある緑 */
         }
-        h1 {
-            border-bottom: 3px solid var(--primary);
-            padding-bottom: 10px;
-            margin-top: 20px;
-        }
-        .weather-info {
-            background-color: #f0f7f7;
-            padding: 1rem;
-            border-radius: 8px;
-        }
-        .insight-header {
-            color: var(--primary);
-            font-weight: bold;
-        }
-        footer {
-            margin-top: 2rem;
-            font-size: 0.8rem;
-            text-align: center;
-        }
+        h1 { margin-top: 1rem; }
+        .weather-info { display: flex; gap: 2rem; align-items: center; }
+        .insight-header { border-left: 5px solid var(--primary); padding-left: 1rem; margin-bottom: 1rem; }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月15日)</h1>
-            <p>北海道の未来を担う新人行員の皆様へ、今日押さえておくべきトピックをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年04月16日)</h1>
+            <p>おはようございます。北海道の未来を支える新人行員の皆さんに、本日押さえておくべきニュースをお届けします。</p>
         </header>
 
         <section>
-            <article class="weather-info">
-                <h2 style="font-size: 1.2rem;">本日の北海道（札幌周辺）の天気</h2>
-                <div class="grid">
-                    <div><strong>天気:</strong> 晴天</div>
-                    <div><strong>最高気温:</strong> 8.96℃</div>
-                    <div><strong>最低気温:</strong> 8.96℃</div>
+            <article>
+                <header><strong>📍 本日の天気（札幌・道内主要都市）</strong></header>
+                <div class="weather-info">
+                    <div><strong>天気:</strong> ☁️ 雲</div>
+                    <div><strong>最高気温:</strong> <span style="color: #d32f2f;">7.45℃</span></div>
+                    <div><strong>最低気温:</strong> <span style="color: #1976d2;">6.86℃</span></div>
                 </div>
-                <small>※日中の気温差が少ない予報です。体調管理に留意し、外回りの際は適切な服装を心がけましょう。</small>
+                <footer>
+                    <small>※まだ肌寒い日が続きます。外訪の際はコートを忘れずに。</small>
+                </footer>
             </article>
         </section>
 
         <section>
-            <h2>厳選ニュース解説</h2>
+            <h2>📰 今朝の注目ニュース</h2>
 
-            <!-- ニュース1: 半導体 -->
+            <!-- ニュース1: JINS決算 -->
             <article>
-                <h3>後工程で高まる精度要求、半導体“積層化”支える2次元スケールで描く成長曲線</h3>
-                <b>ロジカル要約</b>:
-                <ul>
-                    <li><b>背景/経緯</b>: 半導体の微細化が物理的限界に近づく中、性能向上の鍵はチップを積み重ねる「積層化（3Dパッケージング）」へ移行している。</li>
-                    <li><b>事象</b>: 積層化に伴い、チップの位置合わせや切断において、ナノメートル単位の極めて高い計測・制御精度（2次元スケール技術）が不可欠となっている。</li>
-                    <li><b>結果/影響</b>: 製造装置メーカーだけでなく、超精密測定器を持つサプライヤーの重要性が急増。次世代半導体製造の主戦場が「後工程」に移りつつある。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>:
-                <p>北海道（千歳）でのRapidus（ラピダス）建設が進む中、注目すべきは「後工程」の関連企業です。取引先の中に、精密加工や測定技術を持つ町工場があれば、半導体サプライヤーへの参入チャンスかもしれません。経営者との会話では「後工程の高度化」をキーワードに、設備投資の意欲を伺ってみましょう。</p>
-                <a href="https://news.yahoo.co.jp/articles/a64917de58ca3cf08b6d19add52a9797b1363e24?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>下方修正なのになぜストップ高？ 「ジンズ」の決算から学ぶ、株価の動きを読むポイント</h3>
+                <div class="insight-header">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯</b>: アイウェア大手JINSが通期利益見通しを下方修正。通常は売り材料とされる事象が発生。</li>
+                        <li><b>事象</b>: にもかかわらず株価はストップ高。市場が「悪材料出尽くし」と判断し、既存店売上の伸びや今後の効率化を評価した。</li>
+                        <li><b>結果/影響</b>: 単なる業績数字だけでなく、市場の期待値と実績の「乖離」を読み取ることの重要性が浮き彫りになった。</li>
+                    </ul>
+                </div>
+                <b>地銀視点の深掘り</b>
+                <p>
+                    融資先の決算書を読む際、表面上の減益に囚われず「なぜその数字になったのか」という背景を把握する力が求められます。上場企業に限らず、道内の取引先企業の経営状況を評価する際も、将来の成長性や市場環境の変化を汲み取るセンスを磨きましょう。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/5c4a3fecc59bc1360c534bff77dc36815beaf9ec?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2: 世帯年収1000万円の罠 -->
+            <!-- ニュース2: ブラインド商品 -->
             <article>
-                <h3>世帯年収1000万円なのに余裕がない…同じ年収でも豊かに暮らせる人とそうでない人の決定的な違い</h3>
-                <b>ロジカル要約</b>:
-                <ul>
-                    <li><b>背景/経緯</b>: 「年収1000万円」は裕福の代名詞とされるが、実際には貯蓄が困難な「高所得貧乏」世帯が増加している。</li>
-                    <li><b>事象</b>: 住宅ローン、教育費、見栄による消費といった「固定費の膨張」が原因。収入増に伴い生活水準を上げてしまう「ライフスタイル・クリープ」が起きている。</li>
-                    <li><b>結果/影響</b>: 表面上の年収よりも、手残り金額（可処分所得）を管理できる「家計のメタ認知能力」が将来の資産格差を分ける。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>:
-                <p>リテール営業において、年収が高いお客様ほど「家計の悩み」を打ち明けにくい傾向にあります。住宅ローン借換やNISAの提案時、単に数字を追うのではなく、将来のキャッシュフロー表を一緒に作成するような「伴走型のアドバイス」が信頼獲得に繋がります。外見の華やかさに惑わされない、本質的な与信判断力を養いましょう。</p>
-                <a href="https://news.yahoo.co.jp/articles/b9241063b0e4f12ec6dc7aa4f215d8eeec70ba2b?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>ブラインド商品の購入は1回平均2.5個…「おまけ付き菓子」異常な熱狂“購入者の意外な姿”</h3>
+                <div class="insight-header">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯</b>: 中身が見えない「ブラインド形式」の玩具付き菓子市場が、Z世代を中心に急拡大。</li>
+                        <li><b>事象</b>: 平均購入数は2.5個。「推し活」やSNSへの投稿を目的とした複数買いが常態化している。</li>
+                        <li><b>結果/影響</b>: コンビニや小売店での客単価向上に寄与。一方で、転売や在庫管理の難しさといった課題も。</li>
+                    </ul>
+                </div>
+                <b>地銀視点の深掘り</b>
+                <p>
+                    道内の主要顧客であるスーパーやドラッグストアの担当者との会話ネタに最適です。「最近の菓子売り場のトレンド」から、消費者の購買行動の変化を察知し、店舗の改装資金や運転資金のニーズに繋がるヒントを探ってみましょう。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/8860cba98436c0b5a0ac8e63bfe7e22313be0dee?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3: 4-6月の残業問題 -->
+            <!-- ニュース3: ライフワン売上 -->
             <article>
-                <h3>「4月・5月・6月の残業は損」って本当？ 1年間の手取りが決まる仕組みと2026年の注意点</h3>
-                <b>ロジカル要約</b>:
-                <ul>
-                    <li><b>背景/経緯</b>: 社会保険料は毎年4～6月の給与平均（標準報酬月額）を元に決定され、その額が9月以降の1年間に適用される。</li>
-                    <li><b>事象</b>: この期間に残業代が多く支払われると、年間の社会保険料負担が増え、結果として年間の「手取り」が減る現象が発生する。</li>
-                    <li><b>結果/影響</b>: 2026年度は特に、制度改正や賃上げの影響により、多くの労働者が保険料等級の変動を意識する必要がある。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>:
-                <p>これは新人行員の皆さん自身の生活に直結するだけでなく、法人顧客（特に中小企業の経営者）との重要な会話ネタになります。「今月の給与明細、手取りが減って驚きましたよ」といった世間話から、企業の労務管理や賃上げ対策の話題へと繋げることができます。制度を熟知していることは、プロの銀行員としての第一歩です。</p>
-                <a href="https://news.yahoo.co.jp/articles/abd08431a798da03cb0db89556a2768d57727f14?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>ライフワン、単体売上は約160億円 計画通り推移、売上200億円へ</h3>
+                <div class="insight-header">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯</b>: EC事業を展開するライフワンが、堅調な業績推移により売上高160億円を達成。</li>
+                        <li><b>事象</b>: 住宅設備関連のEC需要を確実に取り込み、次なる目標である200億円へ向けて成長を加速。</li>
+                        <li><b>結果/影響</b>: 物流網の整備やDX投資により、販路拡大と効率化を両立させている。</li>
+                    </ul>
+                </div>
+                <b>地銀視点の深掘り</b>
+                <p>
+                    北海道内でも、地場産品のEC展開に注力する企業が増えています。急成長する企業の資金使途（設備投資、人材採用、物流構築）をモデルケースとして学ぶことで、地元企業の販路拡大に向けた「伴走型支援」の提案力を高めていきましょう。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/f4c311f29507611c627621b52d3c547acaab4486?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
-        <footer>
-            <p>&copy; 2026 Hokkaido Local Bank Newcomer Assistant. 今日の業務も頑張りましょう。</p>
+        <footer class="container">
+            <hr>
+            <p><small>© 2026 北海道地方銀行 研修チーム - 地域の笑顔のために</small></p>
         </footer>
     </main>
 </body>
