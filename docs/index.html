@@ -7,95 +7,110 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #2e7d32; /* 銀行らしい信頼感のある緑 */
+            --primary: #1a508b;
         }
-        h1 { margin-top: 1rem; }
-        .weather-info { display: flex; gap: 2rem; align-items: center; }
-        .insight-header { border-left: 5px solid var(--primary); padding-left: 1rem; margin-bottom: 1rem; }
+        body {
+            background-color: #f4f7f9;
+        }
+        h1 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 0.5rem;
+        }
+        .weather-info {
+            background-color: #ffffff;
+            border-left: 10px solid #90a4ae;
+        }
+        .news-section h3 {
+            color: #2c3e50;
+        }
+        .logical-summary b {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            color: #d32f2f;
+        }
+        .insight-box {
+            background-color: #e3f2fd;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 5px solid #1976d2;
+        }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月16日)</h1>
-            <p>おはようございます。北海道の未来を支える新人行員の皆さんに、本日押さえておくべきニュースをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年04月17日)</h1>
+            <p>北海道の未来を担う皆様へ。今日の重要トピックを銀行員視点で整理しました。</p>
         </header>
 
-        <section>
-            <article>
-                <header><strong>📍 本日の天気（札幌・道内主要都市）</strong></header>
-                <div class="weather-info">
-                    <div><strong>天気:</strong> ☁️ 雲</div>
-                    <div><strong>最高気温:</strong> <span style="color: #d32f2f;">7.45℃</span></div>
-                    <div><strong>最低気温:</strong> <span style="color: #1976d2;">6.86℃</span></div>
-                </div>
-                <footer>
-                    <small>※まだ肌寒い日が続きます。外訪の際はコートを忘れずに。</small>
-                </footer>
-            </article>
-        </section>
+        <!-- 天気セクション -->
+        <article class="weather-info">
+            <header><strong>📍 今日の北海道（札幌近郊）の天気</strong></header>
+            <div class="grid">
+                <div>☁️ <strong>天気:</strong> 曇りがち</div>
+                <div>🌡️ <strong>最高気温:</strong> 9.42℃</div>
+                <div>🌡️ <strong>最低気温:</strong> 8.86℃</div>
+            </div>
+            <p><small>※まだ肌寒い日が続きます。外回りや店舗入り口での挨拶の際は、体調管理に留意しましょう。</small></p>
+        </article>
 
-        <section>
-            <h2>📰 今朝の注目ニュース</h2>
+        <!-- ニュース解説 1 -->
+        <article>
+            <h3>なぜ「悪い情報」が届かないのか…責任者が“裸の王様”にされる致命的な構造</h3>
+            <div class="logical-summary">
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><b>背景/経緯:</b> 組織の肥大化や硬直化に伴い、部下が上司の顔色を伺い、不都合な真実を隠蔽する文化が醸成される。</li>
+                    <li><b>事象:</b> 現場のトラブルや予兆が「マイルドな報告」に変換され、経営層に届く頃には深刻な手遅れ状態となる。</li>
+                    <li><b>結果/影響:</b> 迅速な危機管理が不可能になり、企業の社会的信用失墜や致命的な不祥事へ発展する。</li>
+                </ul>
+            </div>
+            <div class="insight-box">
+                <strong>地銀視点の深掘り:</strong>
+                <p>融資先の経営状況を見極める際、社長が「現場の小さなミス」を把握しているかは重要な指標です。訪問時に従業員が社長へ気兼ねなく話しかけているか、あるいは過剰に萎縮していないか。この「風通し」の良し悪しが、将来的な貸倒リスクを予見する非財務情報となります。</p>
+            </div>
+            <a href="https://news.yahoo.co.jp/articles/d3d1a3dee849f3461fddcfff1d0e276acdf3ccce?source=rss" role="button" class="outline">続きを読む</a>
+        </article>
 
-            <!-- ニュース1: JINS決算 -->
-            <article>
-                <h3>下方修正なのになぜストップ高？ 「ジンズ」の決算から学ぶ、株価の動きを読むポイント</h3>
-                <div class="insight-header">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯</b>: アイウェア大手JINSが通期利益見通しを下方修正。通常は売り材料とされる事象が発生。</li>
-                        <li><b>事象</b>: にもかかわらず株価はストップ高。市場が「悪材料出尽くし」と判断し、既存店売上の伸びや今後の効率化を評価した。</li>
-                        <li><b>結果/影響</b>: 単なる業績数字だけでなく、市場の期待値と実績の「乖離」を読み取ることの重要性が浮き彫りになった。</li>
-                    </ul>
-                </div>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    融資先の決算書を読む際、表面上の減益に囚われず「なぜその数字になったのか」という背景を把握する力が求められます。上場企業に限らず、道内の取引先企業の経営状況を評価する際も、将来の成長性や市場環境の変化を汲み取るセンスを磨きましょう。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/5c4a3fecc59bc1360c534bff77dc36815beaf9ec?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
+        <!-- ニュース解説 2 -->
+        <article>
+            <h3>新NISAで「オルカン・S&P500一択」はやっぱり危険…お金のプロが"激動の2026年"に仕込む「資産防衛の切り札」</h3>
+            <div class="logical-summary">
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><b>背景/経緯:</b> 2024年の制度開始以降、米株中心のインデックス投資に資金が集中。多くの初心者が「右肩上がり」を盲信した。</li>
+                    <li><b>事象:</b> 2026年現在の世界的な金利動向の変化や地政学リスクにより、特定の指数だけに頼る投資が限界を迎えている。</li>
+                    <li><b>結果/影響:</b> 一時的な暴落に耐えきれず「狼狽売り」をする個人投資家が急増し、資産形成を断念するケースが懸念される。</li>
+                </ul>
+            </div>
+            <div class="insight-box">
+                <strong>地銀視点の深掘り:</strong>
+                <p>窓口でお客様から「積立がマイナスになった」と相談された際、単に「持ち続けましょう」と言うだけでなく、相関性の低い金や国内債券などを組み合わせた「真の分散投資」を提案できるかが腕の見せ所です。2026年の荒波を乗り越える伴走者としての信頼を築きましょう。</p>
+            </div>
+            <a href="https://news.yahoo.co.jp/articles/efcf9634ff7b862ddeabe1c320a706dd3eee52a5?source=rss" role="button" class="outline">続きを読む</a>
+        </article>
 
-            <!-- ニュース2: ブラインド商品 -->
-            <article>
-                <h3>ブラインド商品の購入は1回平均2.5個…「おまけ付き菓子」異常な熱狂“購入者の意外な姿”</h3>
-                <div class="insight-header">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯</b>: 中身が見えない「ブラインド形式」の玩具付き菓子市場が、Z世代を中心に急拡大。</li>
-                        <li><b>事象</b>: 平均購入数は2.5個。「推し活」やSNSへの投稿を目的とした複数買いが常態化している。</li>
-                        <li><b>結果/影響</b>: コンビニや小売店での客単価向上に寄与。一方で、転売や在庫管理の難しさといった課題も。</li>
-                    </ul>
-                </div>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    道内の主要顧客であるスーパーやドラッグストアの担当者との会話ネタに最適です。「最近の菓子売り場のトレンド」から、消費者の購買行動の変化を察知し、店舗の改装資金や運転資金のニーズに繋がるヒントを探ってみましょう。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/8860cba98436c0b5a0ac8e63bfe7e22313be0dee?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
+        <!-- ニュース解説 3 -->
+        <article>
+            <h3>日高屋「炎上」が鎮火しない本当のワケ、謝罪文の中身</h3>
+            <div class="logical-summary">
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><b>背景/経緯:</b> 人手不足が深刻な外食業界で、採用に関する経営側の発言が「差別的」または「不誠実」と受け取られた。</li>
+                    <li><b>事象:</b> 批判に対し、論点をすり替えた形式的な謝罪文を公開したことで、消費者の不信感がさらに増幅した。</li>
+                    <li><b>結果/影響:</b> ブランドイメージが毀損し、SNSでのボイコット運動や、長期的な採用難を招く恐れが出ている。</li>
+                </ul>
+            </div>
+            <div class="insight-box">
+                <strong>地銀視点の深掘り:</strong>
+                <p>北海道でも人手不足は死活問題です。地元飲食店オーナーとの会話では、単なる人手確保の話題だけでなく「企業の姿勢がどう見られているか」というPRや広報のリスク管理も話題に挙げてください。適切な危機管理ができる企業は、融資先としての持続可能性も高いと評価できます。</p>
+            </div>
+            <a href="https://news.yahoo.co.jp/articles/45321f1ae8dcb04a04b31bfd9317b0b1e9596760?source=rss" role="button" class="outline">続きを読む</a>
+        </article>
 
-            <!-- ニュース3: ライフワン売上 -->
-            <article>
-                <h3>ライフワン、単体売上は約160億円 計画通り推移、売上200億円へ</h3>
-                <div class="insight-header">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯</b>: EC事業を展開するライフワンが、堅調な業績推移により売上高160億円を達成。</li>
-                        <li><b>事象</b>: 住宅設備関連のEC需要を確実に取り込み、次なる目標である200億円へ向けて成長を加速。</li>
-                        <li><b>結果/影響</b>: 物流網の整備やDX投資により、販路拡大と効率化を両立させている。</li>
-                    </ul>
-                </div>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    北海道内でも、地場産品のEC展開に注力する企業が増えています。急成長する企業の資金使途（設備投資、人材採用、物流構築）をモデルケースとして学ぶことで、地元企業の販路拡大に向けた「伴走型支援」の提案力を高めていきましょう。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/f4c311f29507611c627621b52d3c547acaab4486?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
-        </section>
-
-        <footer class="container">
-            <hr>
-            <p><small>© 2026 北海道地方銀行 研修チーム - 地域の笑顔のために</small></p>
+        <footer style="text-align: center; margin-top: 2rem; padding: 1rem; color: #666;">
+            <p>© 2026 北海道地方銀行・新人教育支援チーム</p>
         </footer>
     </main>
 </body>
