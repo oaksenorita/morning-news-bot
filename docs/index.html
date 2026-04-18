@@ -3,114 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 北海道地方銀行 新人研修用</title>
+    <title>朝のインサイト - 2026年04月18日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #1a508b;
-        }
-        body {
-            background-color: #f4f7f9;
+            --primary: #004d40;
         }
         h1 {
-            color: var(--primary);
             border-bottom: 3px solid var(--primary);
             padding-bottom: 0.5rem;
+            margin-top: 2rem;
         }
         .weather-info {
-            background-color: #ffffff;
-            border-left: 10px solid #90a4ae;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
         }
-        .news-section h3 {
-            color: #2c3e50;
+        .weather-info span {
+            font-size: 1.1rem;
         }
-        .logical-summary b {
-            display: inline-block;
-            margin-bottom: 0.5rem;
-            color: #d32f2f;
-        }
-        .insight-box {
-            background-color: #e3f2fd;
-            padding: 1rem;
-            border-radius: 8px;
-            border-left: 5px solid #1976d2;
+        b {
+            color: var(--primary);
         }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月17日)</h1>
-            <p>北海道の未来を担う皆様へ。今日の重要トピックを銀行員視点で整理しました。</p>
+            <h1>☀️ 朝のインサイト (2026年04月18日)</h1>
         </header>
 
-        <!-- 天気セクション -->
-        <article class="weather-info">
-            <header><strong>📍 今日の北海道（札幌近郊）の天気</strong></header>
-            <div class="grid">
-                <div>☁️ <strong>天気:</strong> 曇りがち</div>
-                <div>🌡️ <strong>最高気温:</strong> 9.42℃</div>
-                <div>🌡️ <strong>最低気温:</strong> 8.86℃</div>
-            </div>
-            <p><small>※まだ肌寒い日が続きます。外回りや店舗入り口での挨拶の際は、体調管理に留意しましょう。</small></p>
-        </article>
+        <section id="weather">
+            <article>
+                <header><strong>本日の北海道（札幌周辺）の天気</strong></header>
+                <div class="weather-info">
+                    <span>☁️ <strong>天気:</strong> 薄い雲</span>
+                    <span>🌡️ <strong>最高気温:</strong> 12.2℃</span>
+                    <span>❄️ <strong>最低気温:</strong> 10.86℃</span>
+                </div>
+                <footer>
+                    <small>※4月の北海道は風が冷たいため、外回りの際はスプリングコートやジャケットが必須です。</small>
+                </footer>
+            </article>
+        </section>
 
-        <!-- ニュース解説 1 -->
-        <article>
-            <h3>なぜ「悪い情報」が届かないのか…責任者が“裸の王様”にされる致命的な構造</h3>
-            <div class="logical-summary">
-                <b>ロジカル要約</b>
+        <section id="news">
+            <!-- 記事1 -->
+            <article>
+                <h3>その成功は「怒り」から生まれる。絶対にAIに代替されない仕事術</h3>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯:</b> 組織の肥大化や硬直化に伴い、部下が上司の顔色を伺い、不都合な真実を隠蔽する文化が醸成される。</li>
-                    <li><b>事象:</b> 現場のトラブルや予兆が「マイルドな報告」に変換され、経営層に届く頃には深刻な手遅れ状態となる。</li>
-                    <li><b>結果/影響:</b> 迅速な危機管理が不可能になり、企業の社会的信用失墜や致命的な不祥事へ発展する。</li>
+                    <li><b>背景/経緯</b>: AI技術の急速な進展により、定型業務や論理的思考のみに基づく仕事の価値が相対的に低下している。</li>
+                    <li><b>事象</b>: 「なぜこんなに不便なのか」といった、負の感情（怒り）から生まれる問題意識こそが、AIには持てない人間固有の原動力となる。</li>
+                    <li><b>結果/影響</b>: 強い感情を起点とした課題解決は、独自の付加価値を生み、結果としてAIに代替されないキャリア形成に繋がる。</li>
                 </ul>
-            </div>
-            <div class="insight-box">
-                <strong>地銀視点の深掘り:</strong>
-                <p>融資先の経営状況を見極める際、社長が「現場の小さなミス」を把握しているかは重要な指標です。訪問時に従業員が社長へ気兼ねなく話しかけているか、あるいは過剰に萎縮していないか。この「風通し」の良し悪しが、将来的な貸倒リスクを予見する非財務情報となります。</p>
-            </div>
-            <a href="https://news.yahoo.co.jp/articles/d3d1a3dee849f3461fddcfff1d0e276acdf3ccce?source=rss" role="button" class="outline">続きを読む</a>
-        </article>
+                <b>地銀視点の深掘り</b>:
+                <p>銀行業務のデジタル化が進む中、新人には「正確な事務」以上に「顧客の困りごとを自分事として捉える感受性」が求められます。取引先の社長が抱える不満や苦労（怒り）に共感し、それを解決するための提案ができるかどうかが、ネット銀行との差別化要因になります。「何かお困りごとはありませんか？」という定型句ではなく、相手の感情に踏み込む対話のヒントにしましょう。</p>
+                <a href="https://news.yahoo.co.jp/articles/78e8825118f25112ed877c88709ab924a3b32089?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
 
-        <!-- ニュース解説 2 -->
-        <article>
-            <h3>新NISAで「オルカン・S&P500一択」はやっぱり危険…お金のプロが"激動の2026年"に仕込む「資産防衛の切り札」</h3>
-            <div class="logical-summary">
-                <b>ロジカル要約</b>
+            <!-- 記事2 -->
+            <article>
+                <h3>「日本の新幹線」を売らなくてよかった…習近平が東南アジア3カ国に敷いた"完成しない高速鉄道網"の大誤算</h3>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯:</b> 2024年の制度開始以降、米株中心のインデックス投資に資金が集中。多くの初心者が「右肩上がり」を盲信した。</li>
-                    <li><b>事象:</b> 2026年現在の世界的な金利動向の変化や地政学リスクにより、特定の指数だけに頼る投資が限界を迎えている。</li>
-                    <li><b>結果/影響:</b> 一時的な暴落に耐えきれず「狼狽売り」をする個人投資家が急増し、資産形成を断念するケースが懸念される。</li>
+                    <li><b>背景/経緯</b>: 中国の巨大経済圏構想「一帯一路」の下、東南アジア諸国で中国主導の高速鉄道プロジェクトが推進された。</li>
+                    <li><b>事象</b>: 採算性の無視、建設の遅延、そして受入国の債務負担増大（債務の罠）が表面化し、計画が頓挫・停滞するケースが相次いでいる。</li>
+                    <li><b>結果/影響</b>: インフラ輸出における「持続可能性」と「透明性」の重要性が再認識され、安易な融資のリスクが浮き彫りになった。</li>
                 </ul>
-            </div>
-            <div class="insight-box">
-                <strong>地銀視点の深掘り:</strong>
-                <p>窓口でお客様から「積立がマイナスになった」と相談された際、単に「持ち続けましょう」と言うだけでなく、相関性の低い金や国内債券などを組み合わせた「真の分散投資」を提案できるかが腕の見せ所です。2026年の荒波を乗り越える伴走者としての信頼を築きましょう。</p>
-            </div>
-            <a href="https://news.yahoo.co.jp/articles/efcf9634ff7b862ddeabe1c320a706dd3eee52a5?source=rss" role="button" class="outline">続きを読む</a>
-        </article>
+                <b>地銀視点の深掘り</b>:
+                <p>北海道でも新幹線の延伸や駅前再開発が進んでいますが、この記事は「巨大プロジェクトの採算性と地域経済への実利」を冷静に見極める視点を与えてくれます。地方銀行員として、地域のインフラ整備が将来的に地元企業のプラスになるのか、あるいは自治体の財政を圧迫するリスクはないか、マクロな視点で議論できるようになるための良い事例です。</p>
+                <a href="https://news.yahoo.co.jp/articles/cd0e5a5c0270b5d744d4b19b5851c6157aaaac31?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
 
-        <!-- ニュース解説 3 -->
-        <article>
-            <h3>日高屋「炎上」が鎮火しない本当のワケ、謝罪文の中身</h3>
-            <div class="logical-summary">
-                <b>ロジカル要約</b>
+            <!-- 記事3 -->
+            <article>
+                <h3>部下が突然辞める…痛い上司がスルーする“7つのサイン”とは？</h3>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯:</b> 人手不足が深刻な外食業界で、採用に関する経営側の発言が「差別的」または「不誠実」と受け取られた。</li>
-                    <li><b>事象:</b> 批判に対し、論点をすり替えた形式的な謝罪文を公開したことで、消費者の不信感がさらに増幅した。</li>
-                    <li><b>結果/影響:</b> ブランドイメージが毀損し、SNSでのボイコット運動や、長期的な採用難を招く恐れが出ている。</li>
+                    <li><b>背景/経緯</b>: 労働力不足が深刻化する中、企業にとって「人材の定着（リテンション）」は経営の最優先課題となっている。</li>
+                    <li><b>事象</b>: 離職する社員は突発的に辞めるのではなく、「会議での発言減少」「将来の相談をしなくなる」といった予兆を出していることが多い。</li>
+                    <li><b>結果/影響</b>: これらのサインを管理職が見逃すと、組織力の低下や採用コストの増大を招き、企業の持続可能性を脅かす。</li>
                 </ul>
-            </div>
-            <div class="insight-box">
-                <strong>地銀視点の深掘り:</strong>
-                <p>北海道でも人手不足は死活問題です。地元飲食店オーナーとの会話では、単なる人手確保の話題だけでなく「企業の姿勢がどう見られているか」というPRや広報のリスク管理も話題に挙げてください。適切な危機管理ができる企業は、融資先としての持続可能性も高いと評価できます。</p>
-            </div>
-            <a href="https://news.yahoo.co.jp/articles/45321f1ae8dcb04a04b31bfd9317b0b1e9596760?source=rss" role="button" class="outline">続きを読む</a>
-        </article>
+                <b>地銀視点の深掘り</b>:
+                <p>融資先の「人的資本」の健全性を測る上で、非常に重要な視点です。取引先を訪問した際、従業員の活気や雰囲気の変化に気づくことができれば、それは決算書に現れない「先行指標」となります。経営者に対して「最近の採用や定着状況はいかがですか？」と、人手不足という共通の悩みを切り口に深い経営相談に乗るきっかけに活用できます。</p>
+                <a href="https://news.yahoo.co.jp/articles/684bca5ff24ccc40679c35029210ee8334ed4df2?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
+        </section>
 
-        <footer style="text-align: center; margin-top: 2rem; padding: 1rem; color: #666;">
-            <p>© 2026 北海道地方銀行・新人教育支援チーム</p>
+        <footer>
+            <hr>
+            <p style="text-align: center;"><small>&copy; 2026 北海道地方銀行 新人研修サポートチーム</small></p>
         </footer>
     </main>
 </body>
