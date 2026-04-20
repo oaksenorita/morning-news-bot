@@ -3,92 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 北海道地銀新人研修用</title>
+    <title>朝のインサイト | 2026年04月20日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --pico-font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            --primary: #2e7d32;
         }
-        h1 { border-bottom: 3px solid var(--pico-primary); padding-bottom: 0.5rem; }
-        .weather-info { display: flex; gap: 2rem; align-items: center; }
-        .summary-title { color: var(--pico-primary); }
-        .insight-title { color: #d81b60; }
-        footer { margin-top: 2rem; font-size: 0.8rem; text-align: center; opacity: 0.7; }
+        h1 { margin-top: 1rem; }
+        .weather-info { font-weight: bold; }
+        .insight-box { border-left: 5px solid var(--primary); padding-left: 1rem; background-color: rgba(46, 125, 50, 0.05); }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月19日)</h1>
-            <p>北海道の未来を担う新入行員の皆様へ。本日の重要トピックをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年04月20日)</h1>
+            <p>北海道の未来を担う新人行員の皆様へ。本日の重要トピックをお届けします。</p>
         </header>
 
         <section id="weather">
             <article>
-                <header><strong>📍 今日の気象概況</strong></header>
-                <div class="weather-info">
-                    <span><strong>天気:</strong> 曇りがち</span>
-                    <span><strong>最高気温:</strong> 9.67℃</span>
-                    <span><strong>最低気温:</strong> 8.86℃</span>
+                <header><strong>📍 本日の北海道（札幌近郊）の天気</strong></header>
+                <div class="grid">
+                    <div>天気: <span class="weather-info">弱いにわか雨</span></div>
+                    <div>最高気温: <span class="weather-info" style="color: #d32f2f;">9.86℃</span></div>
+                    <div>最低気温: <span class="weather-info" style="color: #1976d2;">9.12℃</span></div>
                 </div>
                 <footer>
-                    <small>※4月の北海道はまだ冷え込みます。外回りの際は防寒対策を忘れずに。</small>
+                    <small>※雨天のため、外回りの際は足元と書類の防水対策を徹底しましょう。</small>
                 </footer>
             </article>
         </section>
 
-        <section id="news">
-            <!-- ニュース1: 日産EV -->
+        <section id="news-1">
             <article>
-                <h3>日産、中国で新型EV『NX8』発売。航続1450kmの衝撃</h3>
-                <p><b class="summary-title">ロジカル要約</b></p>
+                <h3>顔も名前も知らない…「おひとり様」の66歳弟が孤独死。預金2,000万円の相続で絶句した理由</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯:</b> 中国市場でのEV競争激化を受け、航続距離への不安を払拭する新たな技術投入が急務となっていた。</li>
-                    <li><b>事象:</b> 発電用エンジンを搭載した「レンジエクステンダー」方式を採用し、1450kmという驚異的な航続距離を実現したミッドサイズSUV『NX8』を中国で投入。</li>
-                    <li><b>結果/影響:</b> 充電インフラが不十分な地域でも長距離走行が可能となり、中国における日産のシェア挽回に向けた強力な武器となる。</li>
+                    <li><b>背景/経緯</b>: 独身で「おひとり様」だった弟が急逝。69歳の兄が遺品整理を行ったところ、2,000万円の銀行預金が発見された。</li>
+                    <li><b>事象</b>: 法定相続人を調査した結果、兄弟以外に過去の養子縁組や複雑な親族関係に由来する「未知の相続人」の存在が判明。</li>
+                    <li><b>結果/影響</b>: 相続手続きが難航し、預金の引き出しや解約に膨大な時間と法的専門知識が必要となる事態に陥った。</li>
                 </ul>
-                <p><b class="insight-title">地銀視点の深掘り</b></p>
-                <p>
-                    北海道は広大であり、冬場のバッテリー性能低下が懸念される地域です。この「レンジエクステンダー（長距離走行）技術」は、道内の移動ニーズに非常に合致しています。道内の自動車ディーラーや整備工場のお客様と会話する際、「電気自動車の冬の弱点を克服する技術」として紹介し、今後の市場動向や設備投資の必要性について意見交換するきっかけにしましょう。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/6040ff30c143bb90aeb7ca38e5d276d1b4db893e?source=rss" role="button" class="outline">続きを読む</a>
+                <div class="insight-box">
+                    <b>地銀視点の深掘り</b>
+                    <p>北海道でも単身高齢世帯は増加の一途を辿っています。窓口で「休眠口座の解約」や「相続相談」に来られるお客様に対し、単なる事務手続きとして進めるのではなく、遺言信託や生前贈与のニーズを掘り起こす絶好の機会です。特に「預金2,000万円」規模のお客様は、当行の資産運用・管理サービスの重要ターゲット層であることを意識しましょう。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/28d8014523cee0f5ba98a9d6fdef916fbb46e9f4?source=rss" role="button" class="outline">続きを読む</a>
             </article>
+        </section>
 
-            <!-- ニュース2: スターフライヤー -->
+        <section id="news-2">
             <article>
-                <h3>北九州の翼「スターフライヤー」20年の矜持とANAとの関係</h3>
-                <p><b class="summary-title">ロジカル要約</b></p>
+                <h3>住宅設備から食品まで一斉値上げ？ 「ナフサ高騰」が私たちの生活に与える影響</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯:</b> 北九州空港を拠点に20年、大手でもLCCでもない「独自価値」を模索し続けてきた。</li>
-                    <li><b>事象:</b> 漆黒の機体と高いサービス品質でブランドを確立。現在はANAとの提携を維持しつつ、独自の収益構造の再設計を進めている。</li>
-                    <li><b>結果/影響:</b> 価格競争に巻き込まれず、特定のファン層を掴む「地域密着×高級感」のモデルを提示。</li>
+                    <li><b>背景/経緯</b>: 原油安の落ち着きや円安、地政学リスクの影響で「ナフサ（粗製ガソリン）」の輸入価格が高騰。</li>
+                    <li><b>事象</b>: プラスチック原料、合成ゴム、化学繊維のコストが上昇。住宅設備（配管・断熱材）や食品容器などの広範囲に波及。</li>
+                    <li><b>結果/影響</b>: 消費者物価の押し上げだけでなく、製造業や建設業の採算が悪化し、企業の資金繰りに圧迫を与える。</li>
                 </ul>
-                <p><b class="insight-title">地銀視点の深掘り</b></p>
-                <p>
-                    「地域に根ざしつつ、大手（メガバンク）とは異なる独自価値（バリュー）を提供する」という姿勢は、我々地方銀行の戦略そのものです。北海道でも、エア・ドゥなどの地域航空会社が重要です。観光業を営む取引先に対し、単なる集客数だけでなく「自社のファン（ロイヤルカスタマー）をどう作るか」というブランディングの成功事例として、スターフライヤーの戦略を引用してアドバイスしてみてはいかがでしょうか。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/3408f48f1c7fc2f5311a9f555164107b7f506648?source=rss" role="button" class="outline">続きを読む</a>
+                <div class="insight-box">
+                    <b>地銀視点の深掘り</b>
+                    <p>北海道の基幹産業である農業や食品加工業において、梱包材や肥料のコスト増は避けて通れません。取引先の決算書を見る際は「原価率の上昇」をチェックし、価格転嫁がスムーズに行えているかヒアリングしましょう。設備投資計画を持つ企業には、補助金活用や円滑な融資提案を行うチャンスです。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/ad28a86a51a08d7f6c0ee2e6fb1f1162c8b42749?source=rss" role="button" class="outline">続きを読む</a>
             </article>
+        </section>
 
-            <!-- ニュース3: SHEIN -->
+        <section id="news-3">
             <article>
-                <h3>世界最強のアパレル「SHEIN」強さの秘訣はDXにあり</h3>
-                <p><b class="summary-title">ロジカル要約</b></p>
+                <h3>「学び続けられる人」と「途中で負けて退場する人」の“たった1つ”の違い</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯:</b> Z世代を中心に爆発的人気を誇るSHEINが、なぜ短期間で世界トップクラスに上り詰めたのかの分析。</li>
-                    <li><b>事象:</b> 「100件単位の超小ロット生産」と「AIによる需要予測」を組み合わせ、究極のオンデマンド生産体制を構築。</li>
-                    <li><b>結果/影響:</b> 在庫リスクを極小化しつつトレンドを最速で反映。伝統的な小売モデルを根底から覆す破壊的な競争力を維持。</li>
+                    <li><b>背景/経緯</b>: 急激なDX化や経済構造の変化により、社会人にもリカレント教育（学び直し）が強く求められている。</li>
+                    <li><b>事象</b>: 知識をアップデートし続ける人と、過去の成功体験に固執して学習を止めてしまう人の二極化が進展。</li>
+                    <li><b>結果/影響</b>: 「知的好奇心の有無」が長期的な市場価値や、組織におけるリーダーシップの差として明確に現れる。</li>
                 </ul>
-                <p><b class="insight-title">地銀視点の深掘り</b></p>
-                <p>
-                    アパレルに限らず、道内の製造業や小売業の経営者にとって「在庫管理とDX」は最大の経営課題です。SHEINの事例は、デジタル技術がいかに資金効率（キャッシュフロー）を改善するかを示す好例です。資金繰りの相談を受けた際、「売れ残りリスクを減らすためのデジタル化」という文脈で、IT導入補助金の活用やDX投資の融資提案につなげる思考を持ちましょう。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/ae160f9f2f6310bbec80a5423c44188b23ac98f7?source=rss" role="button" class="outline">続きを読む</a>
+                <div class="insight-box">
+                    <b>地銀視点の深掘り</b>
+                    <p>新人行員の皆様にとって、今は「学ぶこと」が最大の業務です。銀行業務検定やFP資格の勉強はもちろんですが、こうしたニュースから「なぜこの事象が起きているのか」を考える習慣（ロジカルシンキング）を身につけてください。お客様は「知識のある行員」ではなく、「自分のビジネスを理解しようと学び続ける行員」を信頼します。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/56ee6da05f95fd77b56e59191bc81fb2cfd9ceda?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <footer>
-            <p>&copy; 2026 北海道地方銀行・新人研修アシスタント | 本日のニュースを力に、地域を支えましょう。</p>
+            <small>&copy; 2026 北海道リージョナルバンク・新人研修サポートチーム</small>
         </footer>
     </main>
 </body>
