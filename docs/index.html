@@ -3,91 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年04月20日</title>
+    <title>朝のインサイト | 2026年04月21日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #2e7d32;
+            --primary: #1e3a8a;
         }
-        h1 { margin-top: 1rem; }
-        .weather-info { font-weight: bold; }
-        .insight-box { border-left: 5px solid var(--primary); padding-left: 1rem; background-color: rgba(46, 125, 50, 0.05); }
+        h1 {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        .weather-info {
+            background-color: #f8fafc;
+        }
+        .logical-summary-title, .insight-title {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        ul {
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月20日)</h1>
-            <p>北海道の未来を担う新人行員の皆様へ。本日の重要トピックをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年04月21日)</h1>
+            <p>北海道の未来を担う新入行員の皆様、おはようございます。本日の重要トピックをお届けします。</p>
         </header>
 
         <section id="weather">
-            <article>
-                <header><strong>📍 本日の北海道（札幌近郊）の天気</strong></header>
-                <div class="grid">
-                    <div>天気: <span class="weather-info">弱いにわか雨</span></div>
-                    <div>最高気温: <span class="weather-info" style="color: #d32f2f;">9.86℃</span></div>
-                    <div>最低気温: <span class="weather-info" style="color: #1976d2;">9.12℃</span></div>
-                </div>
-                <footer>
-                    <small>※雨天のため、外回りの際は足元と書類の防水対策を徹底しましょう。</small>
-                </footer>
+            <article class="weather-info">
+                <header><strong>📍 北海道の概況</strong></header>
+                天気: 厚い雲, 最高気温: 9.01℃, 最低気温: 9.01℃
+                <p><small>※肌寒い朝です。体調管理に気を配り、元気に営業店へ向かいましょう。</small></p>
             </article>
         </section>
 
-        <section id="news-1">
+        <section id="news-section">
+            <!-- ニュース 1 -->
             <article>
-                <h3>顔も名前も知らない…「おひとり様」の66歳弟が孤独死。預金2,000万円の相続で絶句した理由</h3>
-                <b>ロジカル要約</b>
+                <h3>投資で大切な「インフレの恩恵を受ける側に回る」視点</h3>
+                <b class="logical-summary-title">ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 独身で「おひとり様」だった弟が急逝。69歳の兄が遺品整理を行ったところ、2,000万円の銀行預金が発見された。</li>
-                    <li><b>事象</b>: 法定相続人を調査した結果、兄弟以外に過去の養子縁組や複雑な親族関係に由来する「未知の相続人」の存在が判明。</li>
-                    <li><b>結果/影響</b>: 相続手続きが難航し、預金の引き出しや解約に膨大な時間と法的専門知識が必要となる事態に陥った。</li>
+                    <li><b>背景/経緯</b>: 長年のデフレ脱却が進み、日本経済はインフレ局面へと構造的に変化している。</li>
+                    <li><b>事象</b>: 現金・預金の価値が相対的に目減りする中、インフレ耐性のある「日本株」をどう資産に組み込むかが問われている。</li>
+                    <li><b>結果/影響</b>: 資産を守り増やすためには、「インフレで利益を伸ばす企業」への投資を通じて、経済成長の恩恵を享受する側へ回る必要がある。</li>
                 </ul>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>北海道でも単身高齢世帯は増加の一途を辿っています。窓口で「休眠口座の解約」や「相続相談」に来られるお客様に対し、単なる事務手続きとして進めるのではなく、遺言信託や生前贈与のニーズを掘り起こす絶好の機会です。特に「預金2,000万円」規模のお客様は、当行の資産運用・管理サービスの重要ターゲット層であることを意識しましょう。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/28d8014523cee0f5ba98a9d6fdef916fbb46e9f4?source=rss" role="button" class="outline">続きを読む</a>
+                <b class="insight-title">地銀視点の深掘り</b>
+                <p>
+                    北海道内でも物価高は深刻な課題です。預金業務を担当する際、ただ「貯める」だけでなく、お客様の大切な資産を「守る」ためのインフレ対策（NISA活用等）を提案する重要性が増しています。地場企業の株主優待と絡めた会話など、身近なところから投資の話題を振ってみるのが良いでしょう。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/e0a5f0290a39ba6d03d89c84b1ed523893270815?source=rss" role="button" class="outline">続きを読む</a>
             </article>
-        </section>
 
-        <section id="news-2">
+            <!-- ニュース 2 -->
             <article>
-                <h3>住宅設備から食品まで一斉値上げ？ 「ナフサ高騰」が私たちの生活に与える影響</h3>
-                <b>ロジカル要約</b>
+                <h3>新社会人が身につけるべき、同僚と「ほどほどに仲良くなる」コツ</h3>
+                <b class="logical-summary-title">ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 原油安の落ち着きや円安、地政学リスクの影響で「ナフサ（粗製ガソリン）」の輸入価格が高騰。</li>
-                    <li><b>事象</b>: プラスチック原料、合成ゴム、化学繊維のコストが上昇。住宅設備（配管・断熱材）や食品容器などの広範囲に波及。</li>
-                    <li><b>結果/影響</b>: 消費者物価の押し上げだけでなく、製造業や建設業の採算が悪化し、企業の資金繰りに圧迫を与える。</li>
+                    <li><b>背景/経緯</b>: 職場は多様な年齢層や価値観が混在する場であり、過度な密着や孤立はストレスの要因となる。</li>
+                    <li><b>事象</b>: 挨拶や共通の話題（天気・ニュース）をきっかけに、適度な距離感を保ちながら信頼関係を築く「ほどほど」のコミュニケーションが推奨される。</li>
+                    <li><b>結果/影響</b>: 円滑な人間関係が業務効率を高め、メンタルヘルスの安定と長期的なキャリア形成に寄与する。</li>
                 </ul>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>北海道の基幹産業である農業や食品加工業において、梱包材や肥料のコスト増は避けて通れません。取引先の決算書を見る際は「原価率の上昇」をチェックし、価格転嫁がスムーズに行えているかヒアリングしましょう。設備投資計画を持つ企業には、補助金活用や円滑な融資提案を行うチャンスです。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/ad28a86a51a08d7f6c0ee2e6fb1f1162c8b42749?source=rss" role="button" class="outline">続きを読む</a>
+                <b class="insight-title">地銀視点の深掘り</b>
+                <p>
+                    銀行はチームプレーです。特に地方銀行は地域社会との繋がりも深く、上司から地域の有力者まで幅広い年齢層との接点があります。まずは「ほどほど」の会話で相手の懐に入り、北海道特有の話題（地域の祭りや特産品）でアイスブレイクするスキルを磨くことが、将来の営業活動にも直結します。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/5497449273e728912bd3cf5f5beb1bb41fb651cd?source=rss" role="button" class="outline">続きを読む</a>
             </article>
-        </section>
 
-        <section id="news-3">
+            <!-- ニュース 3 -->
             <article>
-                <h3>「学び続けられる人」と「途中で負けて退場する人」の“たった1つ”の違い</h3>
-                <b>ロジカル要約</b>
+                <h3>「仕事が速い」と褒められる人が毎日こっそりやっていること</h3>
+                <b class="logical-summary-title">ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 急激なDX化や経済構造の変化により、社会人にもリカレント教育（学び直し）が強く求められている。</li>
-                    <li><b>事象</b>: 知識をアップデートし続ける人と、過去の成功体験に固執して学習を止めてしまう人の二極化が進展。</li>
-                    <li><b>結果/影響</b>: 「知的好奇心の有無」が長期的な市場価値や、組織におけるリーダーシップの差として明確に現れる。</li>
+                    <li><b>背景/経緯</b>: 業務量が多い現代の職場において、個人の処理能力の差は「習慣」から生まれている。</li>
+                    <li><b>事象</b>: 仕事が速い人は、前日の準備やタスクの細分化、デッドラインの自己設定など、見えないところで「段取り」を徹底している。</li>
+                    <li><b>結果/影響</b>: 突発的な依頼にも柔軟に対応でき、周囲からの信頼獲得と自身の残業削減を同時に実現できる。</li>
                 </ul>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>新人行員の皆様にとって、今は「学ぶこと」が最大の業務です。銀行業務検定やFP資格の勉強はもちろんですが、こうしたニュースから「なぜこの事象が起きているのか」を考える習慣（ロジカルシンキング）を身につけてください。お客様は「知識のある行員」ではなく、「自分のビジネスを理解しようと学び続ける行員」を信頼します。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/56ee6da05f95fd77b56e59191bc81fb2cfd9ceda?source=rss" role="button" class="outline">続きを読む</a>
+                <b class="insight-title">地銀視点の深掘り</b>
+                <p>
+                    銀行実務は正確性と迅速性の両立が求められます。新人のうちは覚えることが膨大ですが、朝の10分でその日の伝票処理や手続きの流れをイメージするだけで、ミスは激減します。「地銀の仕事は段取りが9割」と心得て、先輩の仕事の進め方を観察し、その「こっそりやっている習慣」を盗んでいきましょう。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/41c894fa334a722b639d11f1292821b2158baee7?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <footer>
-            <small>&copy; 2026 北海道リージョナルバンク・新人研修サポートチーム</small>
+            <p><small>&copy; 2026 北海道・新人行員サポートデスク</small></p>
         </footer>
     </main>
 </body>
