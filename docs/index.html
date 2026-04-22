@@ -3,98 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年04月21日</title>
+    <title>朝のインサイト | 2026年04月22日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #1e3a8a;
+            --primary: #007d41; /* 地銀をイメージした誠実なグリーン */
         }
-        h1 {
-            border-bottom: 3px solid var(--primary);
-            padding-bottom: 0.5rem;
-            margin-top: 2rem;
-        }
-        .weather-info {
-            background-color: #f8fafc;
-        }
-        .logical-summary-title, .insight-title {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-            color: var(--primary);
-        }
-        ul {
-            font-size: 0.95rem;
-        }
+        h1 { margin-top: 2rem; border-left: 8px solid var(--primary); padding-left: 1rem; }
+        h3 { color: var(--primary); }
+        .weather-info { font-size: 1.2rem; }
+        .summary-title, .insight-title { font-weight: bold; display: block; margin-top: 1rem; }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月21日)</h1>
-            <p>北海道の未来を担う新入行員の皆様、おはようございます。本日の重要トピックをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年04月22日)</h1>
+            <p>北海道の未来を担う新人の皆さん、おはようございます。本日の重要トピックを整理しました。</p>
         </header>
 
         <section id="weather">
-            <article class="weather-info">
-                <header><strong>📍 北海道の概況</strong></header>
-                天気: 厚い雲, 最高気温: 9.01℃, 最低気温: 9.01℃
-                <p><small>※肌寒い朝です。体調管理に気を配り、元気に営業店へ向かいましょう。</small></p>
+            <article>
+                <header><strong>📍 北海道の天気</strong></header>
+                <div class="weather-info">
+                    天気: 晴天 | 最高気温: 8.75℃ | 最低気温: 8.75℃
+                </div>
+                <footer>
+                    <small>※冷え込みが続いています。外回りの際は温かい服装を心がけましょう。</small>
+                </footer>
             </article>
         </section>
 
-        <section id="news-section">
-            <!-- ニュース 1 -->
+        <section id="news">
+            <!-- ニュース1 -->
             <article>
-                <h3>投資で大切な「インフレの恩恵を受ける側に回る」視点</h3>
-                <b class="logical-summary-title">ロジカル要約</b>
+                <h3>「実家の名義」未登記の過料リスクと相続登記義務化</h3>
+                <span class="summary-title"><b>ロジカル要約</b></span>
                 <ul>
-                    <li><b>背景/経緯</b>: 長年のデフレ脱却が進み、日本経済はインフレ局面へと構造的に変化している。</li>
-                    <li><b>事象</b>: 現金・預金の価値が相対的に目減りする中、インフレ耐性のある「日本株」をどう資産に組み込むかが問われている。</li>
-                    <li><b>結果/影響</b>: 資産を守り増やすためには、「インフレで利益を伸ばす企業」への投資を通じて、経済成長の恩恵を享受する側へ回る必要がある。</li>
+                    <li><b>背景/経緯</b>: 2024年4月から相続登記が義務化。所有者不明土地問題の解消が目的。</li>
+                    <li><b>事象</b>: 2023年以前の相続であっても、法改正を知らなくても、義務化の対象となり、放置すれば10万円以下の過料の可能性がある。</li>
+                    <li><b>結果/影響</b>: 登記を放置すると売却や担保設定ができず、親族間トラブルや行政罰のリスクが増大する。</li>
                 </ul>
-                <b class="insight-title">地銀視点の深掘り</b>
+                <span class="insight-title"><b>地銀視点の深掘り</b></span>
                 <p>
-                    北海道内でも物価高は深刻な課題です。預金業務を担当する際、ただ「貯める」だけでなく、お客様の大切な資産を「守る」ためのインフレ対策（NISA活用等）を提案する重要性が増しています。地場企業の株主優待と絡めた会話など、身近なところから投資の話題を振ってみるのが良いでしょう。
+                    当行の住宅ローンや事業承継の相談において、不動産登記の状況確認は必須です。特に北海道内の実家や農地の名義が「祖父のまま」というケースは少なくありません。お客様との雑談の中で「相続登記の義務化、ご存知でしたか？」と切り出すことで、法務局や司法書士への橋渡し、さらには遺言信託などの相談へ繋げるきっかけになります。
                 </p>
-                <a href="https://news.yahoo.co.jp/articles/e0a5f0290a39ba6d03d89c84b1ed523893270815?source=rss" role="button" class="outline">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/81af54b11053218c528e4b9804db14ad8ab685ea?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース 2 -->
+            <!-- ニュース2 -->
             <article>
-                <h3>新社会人が身につけるべき、同僚と「ほどほどに仲良くなる」コツ</h3>
-                <b class="logical-summary-title">ロジカル要約</b>
+                <h3>年金制度と少子化がもたらす現役世代の負担増</h3>
+                <span class="summary-title"><b>ロジカル要約</b></span>
                 <ul>
-                    <li><b>背景/経緯</b>: 職場は多様な年齢層や価値観が混在する場であり、過度な密着や孤立はストレスの要因となる。</li>
-                    <li><b>事象</b>: 挨拶や共通の話題（天気・ニュース）をきっかけに、適度な距離感を保ちながら信頼関係を築く「ほどほど」のコミュニケーションが推奨される。</li>
-                    <li><b>結果/影響</b>: 円滑な人間関係が業務効率を高め、メンタルヘルスの安定と長期的なキャリア形成に寄与する。</li>
+                    <li><b>背景/経緯</b>: 日本の年金は賦課方式（現役が受給者を支える）であり、少子高齢化の影響をダイレクトに受ける構造。</li>
+                    <li><b>事象</b>: 給付水準の維持が困難になる中で、現役世代の保険料負担増や受給開始年齢の引き上げ議論が活発化。</li>
+                    <li><b>結果/影響</b>: 公的年金への不信感から、自助努力による資産形成の必要性がかつてないほど高まっている。</li>
                 </ul>
-                <b class="insight-title">地銀視点の深掘り</b>
+                <span class="insight-title"><b>地銀視点の深掘り</b></span>
                 <p>
-                    銀行はチームプレーです。特に地方銀行は地域社会との繋がりも深く、上司から地域の有力者まで幅広い年齢層との接点があります。まずは「ほどほど」の会話で相手の懐に入り、北海道特有の話題（地域の祭りや特産品）でアイスブレイクするスキルを磨くことが、将来の営業活動にも直結します。
+                    若年層のお客様からは「年金はもらえるのか」という不安をよく耳にします。これはNISAやiDeCoといった投資信託商品の提案における最大の関心事です。まずは不安に寄り添い、制度の現状を正しく伝えた上で、「預金＋α」の長期的な資産形成を地域密着のパートナーとして提案することが、お客様の将来を守ることにつながります。
                 </p>
-                <a href="https://news.yahoo.co.jp/articles/5497449273e728912bd3cf5f5beb1bb41fb651cd?source=rss" role="button" class="outline">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/0a3118608b4b7af6428aea379843564a03063619?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース 3 -->
+            <!-- ニュース3 -->
             <article>
-                <h3>「仕事が速い」と褒められる人が毎日こっそりやっていること</h3>
-                <b class="logical-summary-title">ロジカル要約</b>
+                <h3>キッコーマン流：人事施策は「60点」で共有し練り上げる</h3>
+                <span class="summary-title"><b>ロジカル要約</b></span>
                 <ul>
-                    <li><b>背景/経緯</b>: 業務量が多い現代の職場において、個人の処理能力の差は「習慣」から生まれている。</li>
-                    <li><b>事象</b>: 仕事が速い人は、前日の準備やタスクの細分化、デッドラインの自己設定など、見えないところで「段取り」を徹底している。</li>
-                    <li><b>結果/影響</b>: 突発的な依頼にも柔軟に対応でき、周囲からの信頼獲得と自身の残業削減を同時に実現できる。</li>
+                    <li><b>背景/経緯</b>: 変化の激しい時代において、完璧な計画を時間をかけて作る弊害が指摘されている。</li>
+                    <li><b>事象</b>: キッコーマンでは施策を60点の段階で公開し、現場の声を反映させながら100点に近づける哲学を実践。</li>
+                    <li><b>結果/影響</b>: 組織の透明性が高まり、当事者意識を持った社員が増えることで、変化への適応力が向上する。</li>
                 </ul>
-                <b class="insight-title">地銀視点の深掘り</b>
+                <span class="insight-title"><b>地銀視点の深掘り</b></span>
                 <p>
-                    銀行実務は正確性と迅速性の両立が求められます。新人のうちは覚えることが膨大ですが、朝の10分でその日の伝票処理や手続きの流れをイメージするだけで、ミスは激減します。「地銀の仕事は段取りが9割」と心得て、先輩の仕事の進め方を観察し、その「こっそりやっている習慣」を盗んでいきましょう。
+                    この哲学は、皆さんの日々の業務や法人顧客へのアドバイスにも転用可能です。特に地元中小企業の経営者様は、人手不足や組織改革に悩まれています。自社だけで抱え込まず「未完成でもまず対話する」姿勢を共有することで、コンサルティング機能の強化に繋がります。また、新人として「まずは報告・相談する」際、60点でも早めに出すことが信頼構築の第一歩です。
                 </p>
-                <a href="https://news.yahoo.co.jp/articles/41c894fa334a722b639d11f1292821b2158baee7?source=rss" role="button" class="outline">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/4bd5470ef28546bdee3d7cf55c91dc63e9f5d5f6?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <footer>
-            <p><small>&copy; 2026 北海道・新人行員サポートデスク</small></p>
+            <hr>
+            <p style="text-align: center;"><small>&copy; 2026 北海道地域金融支援チーム. 本資料は研修用です。</small></p>
         </footer>
     </main>
 </body>
