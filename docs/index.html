@@ -3,90 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年04月22日</title>
+    <title>朝のインサイト | 2026年04月23日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #007d41; /* 地銀をイメージした誠実なグリーン */
+            --primary: #1b5e20; /* 銀行らしい信頼感のあるグリーン */
         }
-        h1 { margin-top: 2rem; border-left: 8px solid var(--primary); padding-left: 1rem; }
-        h3 { color: var(--primary); }
-        .weather-info { font-size: 1.2rem; }
-        .summary-title, .insight-title { font-weight: bold; display: block; margin-top: 1rem; }
+        h1 { border-bottom: 3px solid var(--primary); padding-bottom: 10px; }
+        .weather-info { display: flex; gap: 20px; align-items: center; }
+        .insight-label { color: var(--primary); font-weight: bold; }
+        article { border-top: 4px solid var(--primary); }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月22日)</h1>
-            <p>北海道の未来を担う新人の皆さん、おはようございます。本日の重要トピックを整理しました。</p>
+            <h1>☀️ 朝のインサイト (2026年04月23日)</h1>
+            <p>北海道の未来を創る新人行員の皆様へ。本日の重要トピックを厳選しました。</p>
         </header>
 
         <section id="weather">
             <article>
-                <header><strong>📍 北海道の天気</strong></header>
+                <header><strong>📍 本日の北海道（主要エリア概況）</strong></header>
                 <div class="weather-info">
-                    天気: 晴天 | 最高気温: 8.75℃ | 最低気温: 8.75℃
+                    <span>天気: <strong>雲</strong></span>
+                    <span>最高気温: <strong>4.12℃</strong></span>
+                    <span>最低気温: <strong>3.86℃</strong></span>
                 </div>
                 <footer>
-                    <small>※冷え込みが続いています。外回りの際は温かい服装を心がけましょう。</small>
+                    <small>※4月下旬としては冷え込みが厳しくなっています。外回りの際は防寒対策を徹底しましょう。</small>
                 </footer>
             </article>
         </section>
 
         <section id="news">
-            <!-- ニュース1 -->
+            <!-- 記事1: 食品輸出 -->
             <article>
-                <h3>「実家の名義」未登記の過料リスクと相続登記義務化</h3>
-                <span class="summary-title"><b>ロジカル要約</b></span>
+                <h3>食品輸出額が2年連続増　中東向けは情勢悪化で3月に急減</h3>
+                <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><b>背景/経緯</b>: 2024年4月から相続登記が義務化。所有者不明土地問題の解消が目的。</li>
-                    <li><b>事象</b>: 2023年以前の相続であっても、法改正を知らなくても、義務化の対象となり、放置すれば10万円以下の過料の可能性がある。</li>
-                    <li><b>結果/影響</b>: 登記を放置すると売却や担保設定ができず、親族間トラブルや行政罰のリスクが増大する。</li>
+                    <li><b>背景/経緯</b>: 日本産食品の海外需要は根強く、2025年度の輸出額は全体として2年連続の増加を記録。</li>
+                    <li><b>事象</b>: 好調な一方で、中東地域への輸出は地政学リスク（情勢悪化）により、3月単月で急激な減少に転じた。</li>
+                    <li><b>結果/影響</b>: 世界的な日本食ブームによる成長性と、国際情勢に左右される供給網の脆弱性が浮き彫りになった。</li>
                 </ul>
-                <span class="insight-title"><b>地銀視点の深掘り</b></span>
+                <p class="insight-label">地銀視点の深掘り</p>
                 <p>
-                    当行の住宅ローンや事業承継の相談において、不動産登記の状況確認は必須です。特に北海道内の実家や農地の名義が「祖父のまま」というケースは少なくありません。お客様との雑談の中で「相続登記の義務化、ご存知でしたか？」と切り出すことで、法務局や司法書士への橋渡し、さらには遺言信託などの相談へ繋げるきっかけになります。
+                    食の宝庫である北海道にとって、輸出拡大は取引先（農家・加工メーカー）の成長に直結します。しかし、今回のニュースにある「特定地域の情勢悪化」は他人事ではありません。海外展開を検討・実施しているお客様に対し、販路の分散化や、地政学リスクを考慮した運転資金の確保など、経営のレジリエンス（復元力）を高める提案が求められます。
                 </p>
-                <a href="https://news.yahoo.co.jp/articles/81af54b11053218c528e4b9804db14ad8ab685ea?source=rss" role="button" class="outline">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/d9ab22dff9d5be4984e8309abdfc90cc39ab305d?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2 -->
+            <!-- 記事2: 地域活性化 -->
             <article>
-                <h3>年金制度と少子化がもたらす現役世代の負担増</h3>
-                <span class="summary-title"><b>ロジカル要約</b></span>
+                <h3>「鉄道を拒否した城下町」栃木県大田原市が、朝ドラ『風、薫る』の聖地になるまで</h3>
+                <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><b>背景/経緯</b>: 日本の年金は賦課方式（現役が受給者を支える）であり、少子高齢化の影響をダイレクトに受ける構造。</li>
-                    <li><b>事象</b>: 給付水準の維持が困難になる中で、現役世代の保険料負担増や受給開始年齢の引き上げ議論が活発化。</li>
-                    <li><b>結果/影響</b>: 公的年金への不信感から、自助努力による資産形成の必要性がかつてないほど高まっている。</li>
+                    <li><b>背景/経緯</b>: かつて鉄道開通を拒み、隣接する那須塩原市との間で発展の明暗が分かれた栃木県大田原市。</li>
+                    <li><b>事象</b>: 2026年現在の朝ドラ『風、薫る』の舞台となったことで、観光客や移住希望者が急増する現象が発生。</li>
+                    <li><b>結果/影響</b>: 「負の歴史」から脱却し、コンテンツを活用した地域ブランディングによる地方創生の成功例となっている。</li>
                 </ul>
-                <span class="insight-title"><b>地銀視点の深掘り</b></span>
+                <p class="insight-label">地銀視点の深掘り</p>
                 <p>
-                    若年層のお客様からは「年金はもらえるのか」という不安をよく耳にします。これはNISAやiDeCoといった投資信託商品の提案における最大の関心事です。まずは不安に寄り添い、制度の現状を正しく伝えた上で、「預金＋α」の長期的な資産形成を地域密着のパートナーとして提案することが、お客様の将来を守ることにつながります。
+                    北海道内でも、交通網の変遷によって課題を抱える自治体は多いです。このニュースは「既存のインフラがなくても、文化・観光資源の活かし方次第で逆転は可能」であることを示唆しています。取引先の飲食店や宿泊施設が、こうしたメディア露出（聖地巡礼）の波に乗り遅れないよう、設備投資やデジタル対応の融資相談につなげるチャンスです。
                 </p>
-                <a href="https://news.yahoo.co.jp/articles/0a3118608b4b7af6428aea379843564a03063619?source=rss" role="button" class="outline">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/4b6cf5f1f0df2b1e3e3ee7f4387ab5651782402c?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3 -->
+            <!-- 記事3: 企業分析 -->
             <article>
-                <h3>キッコーマン流：人事施策は「60点」で共有し練り上げる</h3>
-                <span class="summary-title"><b>ロジカル要約</b></span>
+                <h3>営業利益41倍の「note」、好決算の翌日に株価が急落した理由</h3>
+                <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><b>背景/経緯</b>: 変化の激しい時代において、完璧な計画を時間をかけて作る弊害が指摘されている。</li>
-                    <li><b>事象</b>: キッコーマンでは施策を60点の段階で公開し、現場の声を反映させながら100点に近づける哲学を実践。</li>
-                    <li><b>結果/影響</b>: 組織の透明性が高まり、当事者意識を持った社員が増えることで、変化への適応力が向上する。</li>
+                    <li><b>背景/経緯</b>: プラットフォーム運営の「note」が、営業利益41倍という驚異的な決算を発表。</li>
+                    <li><b>事象</b>: 業績自体は極めて良好だったが、翌日の株価は大幅に下落。市場の期待値（PER）が実力以上に高まりすぎていた。</li>
+                    <li><b>結果/影響</b>: 企業の成長性だけでなく、投資家が「どの程度のPER（株価収益率）を許容しているか」という相場観の重要性が証明された。</li>
                 </ul>
-                <span class="insight-title"><b>地銀視点の深掘り</b></span>
+                <p class="insight-label">地銀視点の深掘り</p>
                 <p>
-                    この哲学は、皆さんの日々の業務や法人顧客へのアドバイスにも転用可能です。特に地元中小企業の経営者様は、人手不足や組織改革に悩まれています。自社だけで抱え込まず「未完成でもまず対話する」姿勢を共有することで、コンサルティング機能の強化に繋がります。また、新人として「まずは報告・相談する」際、60点でも早めに出すことが信頼構築の第一歩です。
+                    法人融資や事業承継の際、お客様の「企業価値」をどう測るかは非常に重要です。たとえ利益が急拡大していても、市場や銀行が過大評価・過小評価してしまうリスクを常に意識しましょう。特にIPOを目指すスタートアップ企業との対話では、決算上の数字だけでなく、市場からどう見られているかという視点を持つことが、信頼されるパートナーへの第一歩です。
                 </p>
-                <a href="https://news.yahoo.co.jp/articles/4bd5470ef28546bdee3d7cf55c91dc63e9f5d5f6?source=rss" role="button" class="outline">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/48c0c30c6bfe147d64455ca9d3fbc6643a9cc175?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <footer>
             <hr>
-            <p style="text-align: center;"><small>&copy; 2026 北海道地域金融支援チーム. 本資料は研修用です。</small></p>
+            <p style="text-align: center;"><small>&copy; 2026 Hokkaido Regional Bank Assistant Services. </small></p>
         </footer>
     </main>
 </body>
