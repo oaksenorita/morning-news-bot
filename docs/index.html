@@ -3,113 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年04月24日</title>
+    <title>朝のインサイト | 2026年04月25日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #004a99;
+            --pico-font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
         }
-        body {
-            background-color: #f4f7f9;
-        }
-        h1 {
-            border-bottom: 3px solid var(--primary);
-            padding-bottom: 10px;
-            margin-top: 20px;
-        }
-        .weather-info {
-            display: flex;
-            gap: 20px;
-            font-size: 1.1rem;
-        }
-        .deep-dive {
-            background-color: #e9f5ff;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 5px solid var(--primary);
-        }
+        h1 { margin-top: 1.5rem; color: #1a5a96; }
+        .weather-info { background-color: #f8fbff; border-left: 8px solid #3b82f6; }
+        .insight-label { color: #d97706; font-weight: bold; }
+        article h3 { font-size: 1.25rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; }
+        ul { padding-left: 1.2rem; }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月24日)</h1>
-            <p>おはようございます。北海道の地銀パーソンとして、今日も一歩先行く知識を身につけましょう。</p>
+            <h1>☀️ 朝のインサイト (2026年04月25日)</h1>
+            <p>北海道の未来を担う新入行員の皆様へ、本日の重要トピックをお届けします。</p>
         </header>
 
         <section id="weather">
-            <article>
-                <header><strong>📍 本日の北海道（札幌近郊）の天気</strong></header>
-                <div class="weather-info">
-                    <span>☁️ 天気: <strong>薄い雲</strong></span>
-                    <span>🌡️ 最高気温: <strong>4.67℃</strong></span>
-                    <span>❄️ 最低気温: <strong>2.86℃</strong></span>
+            <article class="weather-info">
+                <div class="grid">
+                    <div>
+                        <strong>📍 北海道エリアの天気</strong><br>
+                        薄い雲が広がる空模様
+                    </div>
+                    <div>
+                        <strong>🌡️ 気温</strong><br>
+                        最高: 8.56℃ / 最低: 7.86℃
+                    </div>
                 </div>
-                <footer>
-                    <small>※4月下旬としては肌寒い朝です。外回り時はコートを忘れずに。体調管理もプロの仕事です。</small>
-                </footer>
             </article>
         </section>
 
-        <section id="news">
-            <!-- ニュース1: 住宅補助金 -->
+        <section id="news-section">
+            <!-- ニュース1 -->
             <article>
-                <h3>数百万円の差になることも…「省エネ住宅」の補助金、減税、光熱費削減で“戻るお金”はいくら？</h3>
-                <b>ロジカル要約</b>
+                <h3>「新基準原付」モデル発売開始、50cc原付の代替となるか？</h3>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯</b>: 脱炭素社会の実現に向け、政府が住宅の省エネ化を強力に推進している。</li>
-                    <li><b>事象</b>: 「子育てエコホーム支援事業」などの補助金や住宅ローン減税の拡充により、一般住宅と省エネ住宅で受取額・減税額に数百万単位の差が生じている。</li>
-                    <li><b>結果/影響</b>: 初期費用は高くても、ランニングコスト（光熱費）と公的支援を合わせると、長期的には省エネ住宅の方が圧倒的に経済的合理性が高くなる。</li>
+                    <li><b>背景/経緯</b>: 排ガス規制の強化により、従来の50ccエンジンの継続生産が困難になっていた。</li>
+                    <li><b>事象</b>: 125ccクラスの出力を制限することで「原付一種」として扱う新基準が施行され、ホンダ等のメーカーが対応モデルを発売。</li>
+                    <li><b>結果/影響</b>: 「乗りやすい」という肯定派と「価格上昇」を懸念する否定派に反響が分かれ、市場の勢力図が変化している。</li>
                 </ul>
-                <div class="deep-dive">
-                    <b>地銀視点の深掘り</b>
-                    <p>
-                        北海道の顧客にとって、冬場の光熱費は生活設計に直結する死活問題です。住宅ローンの相談を受けた際、単に「借りられる金額」を提示するだけでなく、「省エネ住宅なら月々の支払いが実質これだけ軽減される」というトータルライフコストの視点を持つことが、地銀ならではのコンサルティング能力に繋がります。
-                    </p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/8c945a2e1ca29ab37dc009eb064a00f68543a16f?source=rss" role="button" class="outline">続きを読む</a>
+                <p>
+                    <span class="insight-label">地銀視点の深掘り：</span>
+                    北海道の地方部では、学生や高齢者の移動手段として原付の重要性が高いです。車両価格の上昇は、個人の支出増だけでなく、地元のバイクショップの仕入れ資金需要にも影響します。顧客との会話では「維持費と利便性のバランス」をフックに、買い替え需要の動向を探ってみましょう。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/7f5a7f5716d3d519fdad9cd7195e1ea5ff7bb70c?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2: 軽トラの未来 -->
+            <!-- ニュース2 -->
             <article>
-                <h3>「これが近未来の軽トラだ!?」メーカーがガチで作ったアクティトラック改が凄すぎる！</h3>
-                <b>ロジカル要約</b>
+                <h3>「ウィッグ」は日本のハイテクの結晶：アデランスの逆転劇</h3>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯</b>: 軽トラックは日本のインフラを支える重要なツールだが、多様化するニーズへの対応が求められている。</li>
-                    <li><b>事象</b>: ホンダが既存の「アクティ」をベースに、よりタフで多機能なカスタマイズモデルを提案。</li>
-                    <li><b>結果/影響</b>: 農業や配送業だけでなく、アウトドアや災害支援など、軽トラの活用領域が広がる可能性が示唆された。</li>
+                    <li><b>背景/経緯</b>: 新幹線用フィルターの開発失敗から生まれた特殊な合成繊維が、人工毛髪としての可能性を見出された。</li>
+                    <li><b>事象</b>: 失敗作を「捨てる」のではなく「転用」する技術革新により、リアルな質感を追求したウィッグを開発。</li>
+                    <li><b>結果/影響</b>: かつての「男性用」イメージを脱却。現在は女性用売上が逆転し、世界が称賛するハイテク産業へと成長。</li>
                 </ul>
-                <div class="deep-dive">
-                    <b>地銀視点の深掘り</b>
-                    <p>
-                        北海道の基幹産業である農業や水産業において、軽トラは欠かせない「動産」です。取引先の経営者様との雑談の中で、「最近の軽トラはここまで進化しているようですね」といった話題から、設備投資の意欲や、スマート農業への関心を探るきっかけになります。現場感覚を持つことは、融資判断の第一歩です。
-                    </p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/4138ccce60d028870fbd01e26cc7fa77f3c5637b?source=rss" role="button" class="outline">続きを読む</a>
+                <p>
+                    <span class="insight-label">地銀視点の深掘り：</span>
+                    「失敗した技術の転用」は、製造業の取引先に対するコンサルティングの金言です。北海道の町工場でも、用途を変えれば化ける技術が眠っているかもしれません。決算書の数字だけでなく、その企業が持つ「独自の失敗・経験」を資産として捉える視点を養いましょう。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/a201197a213bf7d0334ae2584e3f492f6bf3b583?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3: 評価が高い人の過ごし方 -->
+            <!-- ニュース3 -->
             <article>
-                <h3>職場で「評価が高い人」が絶対にやらない“休日の過ごし方”・ワースト1</h3>
-                <b>ロジカル要約</b>
+                <h3>一流のお店は何をする？「クーポン配布」に終わらない顧客体験</h3>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯</b>: 成果を出し続けるプロフェッショナルには、共通の休息リズムが存在する。</li>
-                    <li><b>事象</b>: 評価が低い人の典型は「無計画な寝溜め」や「仕事の持ち越し」。逆に高い人は「アクティブレスト（積極的休養）」を取り入れている。</li>
-                    <li><b>結果/影響</b>: 月曜日のパフォーマンスに劇的な差が生まれ、中長期的なキャリア形成に影響する。</li>
+                    <li><b>背景/経緯</b>: デジタル化でクーポン配布が容易になったが、安売り合戦による利益率低下が課題。</li>
+                    <li><b>事象</b>: 二流店は「値引き」のみで集客するが、一流店はクーポンを「次回来店のきっかけ」や「期待を超える体験の添え物」として活用。</li>
+                    <li><b>結果/影響</b>: 一時的な来店ではなく、LTV（顧客生涯価値）を高め、ファンを増やすことに成功している。</li>
                 </ul>
-                <div class="deep-dive">
-                    <b>地銀視点の深掘り</b>
-                    <p>
-                        新人期間は覚えることが多く、心身ともに疲れやすい時期です。しかし、地域の信頼を背負う銀行員として、常にベストコンディションでいることも重要な責務です。今週末は単に「寝る」だけでなく、北海道の豊かな自然に触れるなど、月曜日に笑顔で顧客の前に立てるような「自分なりのリフレッシュ法」を見つけてみてください。
-                    </p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/ff2cc04f8484380595d691ff813d060cff227228?source=rss" role="button" class="outline">続きを読む</a>
+                <p>
+                    <span class="insight-label">地銀視点の深掘り：</span>
+                    道内の飲食店や観光業者も価格競争に陥りやすい状況です。融資の相談を受けた際、単なる「集客施策」ではなく「どうファンを作るか」を深掘りすることで、事業の継続性をより正確に判断できます。経営者に対し、販促の「質」を問う一歩踏み込んだアドバイスを目指しましょう。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/36093c54bd045edf524702b4d2581bde0f44786a?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
-        <footer class="container">
-            <hr>
-            <p style="text-align: center;"><small>&copy; 2026 Hokkaido Local Bank Newcomer Support System</small></p>
+        <footer>
+            <small>&copy; 2026 北海道地方銀行 新人研修サポートチーム | 今日の学びが、地域の力に。</small>
         </footer>
     </main>
 </body>
