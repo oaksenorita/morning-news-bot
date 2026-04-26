@@ -3,93 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年04月25日</title>
+    <title>朝のインサイト | 2026年04月26日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --pico-font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            --primary: #2c3e50;
         }
-        h1 { margin-top: 1.5rem; color: #1a5a96; }
-        .weather-info { background-color: #f8fbff; border-left: 8px solid #3b82f6; }
-        .insight-label { color: #d97706; font-weight: bold; }
-        article h3 { font-size: 1.25rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; }
-        ul { padding-left: 1.2rem; }
+        h1 {
+            border-bottom: 3px solid #1a5276;
+            padding-bottom: 10px;
+            margin-top: 2rem;
+        }
+        .weather-info {
+            background-color: #f8f9fa;
+        }
+        .insight-box {
+            border-left: 5px solid #d4ac0d;
+            padding-left: 15px;
+            background-color: #fef9e7;
+        }
+        ul li {
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月25日)</h1>
-            <p>北海道の未来を担う新入行員の皆様へ、本日の重要トピックをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年04月26日)</h1>
+            <p>おはようございます。北海道の未来を担う新人の皆様へ、今朝の重要トピックをお届けします。</p>
         </header>
 
         <section id="weather">
             <article class="weather-info">
+                <header><strong>📍 本日の北海道（札幌近郊）の天気</strong></header>
                 <div class="grid">
-                    <div>
-                        <strong>📍 北海道エリアの天気</strong><br>
-                        薄い雲が広がる空模様
-                    </div>
-                    <div>
-                        <strong>🌡️ 気温</strong><br>
-                        最高: 8.56℃ / 最低: 7.86℃
-                    </div>
+                    <div><strong>天気:</strong> 曇りがち</div>
+                    <div><strong>最高気温:</strong> 13.01℃</div>
+                    <div><strong>最低気温:</strong> 11.86℃</div>
                 </div>
+                <footer>
+                    <small>※4月下旬としては少し肌寒い朝です。外回りの際はスプリングコートなどで体温調節を。 </small>
+                </footer>
             </article>
         </section>
 
-        <section id="news-section">
+        <section id="news-digest">
             <!-- ニュース1 -->
             <article>
-                <h3>「新基準原付」モデル発売開始、50cc原付の代替となるか？</h3>
-                <b>ロジカル要約</b>:
+                <h3>AIを「プレイヤー時代」と同じように使うリーダーが評価されない理由</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 排ガス規制の強化により、従来の50ccエンジンの継続生産が困難になっていた。</li>
-                    <li><b>事象</b>: 125ccクラスの出力を制限することで「原付一種」として扱う新基準が施行され、ホンダ等のメーカーが対応モデルを発売。</li>
-                    <li><b>結果/影響</b>: 「乗りやすい」という肯定派と「価格上昇」を懸念する否定派に反響が分かれ、市場の勢力図が変化している。</li>
+                    <li><b>背景/経緯:</b> 生成AIの急速な普及により、個人の業務効率化は当たり前となったが、管理職（リーダー）層での活用法に格差が生じている。</li>
+                    <li><b>事象:</b> 自分の作業を楽にするためだけにAIを使う「プレイヤー型」リーダーに対し、組織の成果を最大化させるためにAIを「軍師」や「壁打ち相手」として使うリーダーが台頭している。</li>
+                    <li><b>結果/影響:</b> 前者はマネジメントとしての付加価値を失う一方、後者は組織全体の生産性を引き上げ、次世代のリーダーとして高く評価される。</li>
                 </ul>
-                <p>
-                    <span class="insight-label">地銀視点の深掘り：</span>
-                    北海道の地方部では、学生や高齢者の移動手段として原付の重要性が高いです。車両価格の上昇は、個人の支出増だけでなく、地元のバイクショップの仕入れ資金需要にも影響します。顧客との会話では「維持費と利便性のバランス」をフックに、買い替え需要の動向を探ってみましょう。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/7f5a7f5716d3d519fdad9cd7195e1ea5ff7bb70c?source=rss" role="button" class="outline">続きを読む</a>
+                <div class="insight-box">
+                    <strong>地銀視点の深掘り:</strong>
+                    <p>我々銀行員も、単なる事務処理の効率化にAIを使う段階は過ぎました。取引先の経営課題に対し、AIを用いて多角的なシミュレーションを行い、経営者と同じ目線で「次の一手」を議論できる能力が求められています。融資先企業のDX支援の際、「社長、AIは部下ではなく、経営の参謀として使いましょう」という提案は、信頼獲得の大きな武器になります。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/4ca8f071cc85bbdee3e19513bd677d611ca166fe?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
             <!-- ニュース2 -->
             <article>
-                <h3>「ウィッグ」は日本のハイテクの結晶：アデランスの逆転劇</h3>
-                <b>ロジカル要約</b>:
+                <h3>関西テレビハッズ、ライフスタイルブランド「アスデルマ」始動</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 新幹線用フィルターの開発失敗から生まれた特殊な合成繊維が、人工毛髪としての可能性を見出された。</li>
-                    <li><b>事象</b>: 失敗作を「捨てる」のではなく「転用」する技術革新により、リアルな質感を追求したウィッグを開発。</li>
-                    <li><b>結果/影響</b>: かつての「男性用」イメージを脱却。現在は女性用売上が逆転し、世界が称賛するハイテク産業へと成長。</li>
+                    <li><b>背景/経緯:</b> 放送局グループの信頼性と情報発信力を背景に、収益の多角化を目指す新たな事業戦略。</li>
+                    <li><b>事象:</b> メディアの枠を超えたライフスタイルブランド「アスデルマ」を立ち上げ、D2C（消費者直接取引）モデルを本格化。</li>
+                    <li><b>結果/影響:</b> グループのメディアリソースを活用することで、広告費を抑えつつ急速なブランド認知と顧客基盤の構築を狙う。</li>
                 </ul>
-                <p>
-                    <span class="insight-label">地銀視点の深掘り：</span>
-                    「失敗した技術の転用」は、製造業の取引先に対するコンサルティングの金言です。北海道の町工場でも、用途を変えれば化ける技術が眠っているかもしれません。決算書の数字だけでなく、その企業が持つ「独自の失敗・経験」を資産として捉える視点を養いましょう。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/a201197a213bf7d0334ae2584e3f492f6bf3b583?source=rss" role="button" class="outline">続きを読む</a>
+                <div class="insight-box">
+                    <strong>地銀視点の深掘り:</strong>
+                    <p>地方でも、地場産品を持つ企業が自社ブランド化（D2C）を進める動きが加速しています。北海道の「食」や「工芸」を扱う取引先に対し、メディア活用やストーリー戦略の重要性を説く好事例です。また、放送局のような異業種が小売・製造に参入する動きは、既存の流通業者（取引先）にとって脅威にもなり得るため、業界再編の予兆として注視が必要です。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/0974438a22f78022bbd5e62f47e80484ae909364?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
             <!-- ニュース3 -->
             <article>
-                <h3>一流のお店は何をする？「クーポン配布」に終わらない顧客体験</h3>
-                <b>ロジカル要約</b>:
+                <h3>ホンダ「フィットLUXE」が示すコンパクトカーの“豪華さ”への需要</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: デジタル化でクーポン配布が容易になったが、安売り合戦による利益率低下が課題。</li>
-                    <li><b>事象</b>: 二流店は「値引き」のみで集客するが、一流店はクーポンを「次回来店のきっかけ」や「期待を超える体験の添え物」として活用。</li>
-                    <li><b>結果/影響</b>: 一時的な来店ではなく、LTV（顧客生涯価値）を高め、ファンを増やすことに成功している。</li>
+                    <li><b>背景/経緯:</b> 経済性重視だったコンパクトカー市場で、上級セダンからの乗り換え（ダウンサイジング）需要が増加している。</li>
+                    <li><b>事象:</b> 本革シートや質感にこだわった「LUXE（リュクス）」グレードに対し、大型車オーナーからも「期待以上」との高い評価が寄せられている。</li>
+                    <li><b>結果/影響:</b> 「小さくて高品質」な車が新しいステータスとなり、自動車メーカーの利益率向上と、消費者の価値観の変化が鮮明になった。</li>
                 </ul>
-                <p>
-                    <span class="insight-label">地銀視点の深掘り：</span>
-                    道内の飲食店や観光業者も価格競争に陥りやすい状況です。融資の相談を受けた際、単なる「集客施策」ではなく「どうファンを作るか」を深掘りすることで、事業の継続性をより正確に判断できます。経営者に対し、販促の「質」を問う一歩踏み込んだアドバイスを目指しましょう。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/36093c54bd045edf524702b4d2581bde0f44786a?source=rss" role="button" class="outline">続きを読む</a>
+                <div class="insight-box">
+                    <strong>地銀視点の深掘り:</strong>
+                    <p>北海道は車社会であり、マイカーの購入動向は地域の消費心理を映す鏡です。230万円超のコンパクトカーが売れる背景には、固定費（燃費・税金）を抑えつつ、生活の質は落としたくないという「堅実かつ上質志向」な道民性も見て取れます。マイカーローンの提案時には、単なる移動手段としてではなく、長距離移動の多い北海道だからこそ「車内の快適性への投資」という切り口が有効かもしれません。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/a70d1f801e409cd2584fd1fe2234dd698ca7066d?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <footer>
-            <small>&copy; 2026 北海道地方銀行 新人研修サポートチーム | 今日の学びが、地域の力に。</small>
+            <hr>
+            <p style="text-align: center;">
+                <small>© 2026 北海道地方銀行・新人研修サポートチーム</small>
+            </p>
         </footer>
     </main>
 </body>
