@@ -3,107 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年04月27日</title>
+    <title>朝のインサイト | 2026年04月28日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #00703c; /* 地方銀行をイメージしたクリーンなグリーン */
+            --pico-font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
         }
-        body {
-            background-color: #f8f9fa;
-        }
-        h1 {
-            border-bottom: 3px solid var(--primary);
-            padding-bottom: 10px;
-            margin-top: 2rem;
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--pico-muted-border-color);
+            margin-bottom: 2rem;
         }
         .weather-info {
             display: flex;
-            gap: 20px;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .weather-item {
             font-size: 1.1rem;
         }
-        .insight-label {
-            color: var(--primary);
-            font-weight: bold;
+        .logical-summary b {
+            color: var(--pico-primary);
+        }
+        .bank-insight {
+            background-color: var(--pico-card-sectioning-background-color);
+            padding: 1rem;
+            border-left: 4px solid var(--pico-primary);
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月27日)</h1>
-            <p>おはようございます。北海道の地銀パーソンとして、今日も地域の経済と未来を支える一歩を。本日のニュースと天気をお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年04月28日)</h1>
+            <p>北海道の未来を担う新人の皆様へ。今日の重要ニュースを地銀視点で解説します。</p>
         </header>
 
         <section id="weather">
             <article>
-                <header><strong>📍 本日の北海道（札幌周辺）の天気</strong></header>
+                <header><strong>📍 今日の北海道（札幌周辺）の天気</strong></header>
                 <div class="weather-info">
-                    <span>☁️ <strong>天気:</strong> 曇りがち</span>
-                    <span>🌡️ <strong>最高気温:</strong> 8.56℃</span>
-                    <span>❄️ <strong>最低気温:</strong> 7.86℃</span>
+                    <span class="weather-item">☁️ <strong>天気:</strong> 曇りがち</span>
+                    <span class="weather-item">🌡️ <strong>最高気温:</strong> 8.01℃</span>
+                    <span class="weather-item">📉 <strong>最低気温:</strong> 6.86℃</span>
                 </div>
                 <footer>
-                    <small>※まだ肌寒い日が続きます。外訪の際は温かい服装を心がけてください。</small>
+                    <small>※まだ肌寒い日が続きます。外回りや通勤時は、春物コートを活用し体調管理を徹底しましょう。</small>
                 </footer>
             </article>
         </section>
 
-        <section id="news-analysis">
-            <!-- ニュース1 -->
+        <section id="news-section">
+            <!-- News 1: Toyota Yaris -->
             <article>
-                <h3>「車掌がいない電車」が増加　“人手不足の時代”を進む鉄道の現在地</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯</b>: 深刻な労働人口の減少と、鉄道業界における採用難。</li>
-                    <li><b>事象</b>: 都市部・地方問わず、自動運転技術の導入やワンマン運転（車掌なし）化が加速。</li>
-                    <li><b>結果/影響</b>: 運行コストの削減と路線維持の両立を図るが、トラブル時の対応力向上やシステム投資が課題。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>
-                    北海道においても、JRや地方鉄道の維持は地域経済の死活問題です。人手不足は鉄道に限らず、当行の取引先（製造業、運送業）でも共通の悩み。顧客との会話では「省人化投資」への融資提案や、補助金活用の話題に繋げやすいトピックです。インフラの変化が地域の不動産価値にどう影響するか、長期的な視点を持つことが重要です。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/f641a40c2629116ea165e90f7c6552db805888ef?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>169万円から！ トヨタ「ヤリス」改良で何が変わった？</h3>
+                <div class="logical-summary">
+                    <p><b>ロジカル要約</b></p>
+                    <ul>
+                        <li><strong>背景/経緯:</strong> 燃費性能と扱いやすさで圧倒的シェアを誇るコンパクトカー「ヤリス」が、市場競争力維持のため仕様変更を実施。</li>
+                        <li><strong>事象:</strong> 最新の安全装置「Toyota Safety Sense」の機能拡大や、インフォテインメントシステムの使い勝手を大幅に向上。</li>
+                        <li><strong>結果/影響:</strong> エントリー価格を抑えつつ付加価値を高めたことで、個人ユーザーだけでなく法人車両（営業車）としての需要も再加速。</li>
+                    </ul>
+                </div>
+                <div class="bank-insight">
+                    <p><b>地銀視点の深掘り</b>：北海道は完全な「車社会」であり、地元の自動車ディーラーは当行にとって重要な取引先です。新型モデルの投入はマイカーローンの需要喚起につながるだけでなく、取引先ディーラーの在庫回転率や売上計画にも直結します。お客様との雑談で「最近ヤリスが改良されましたね」と触れることで、購買意欲やライフプランを探る糸口にしましょう。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/60322fd2be6c48fb79151a921c3967a092e36226?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2 -->
+            <!-- News 2: Career/Holiday habits -->
             <article>
-                <h3>「食事の邪魔しない」と若者に人気…「翠」「ROKU」バカ売れで“ジン”旋風</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯</b>: 若年層の「ビール離れ」や、食中酒として甘くない飲み物を求めるニーズの台頭。</li>
-                    <li><b>事象</b>: サントリーが「翠（SUI）」等のジンブランドへ65億円の巨額投資を行い、市場が急拡大。</li>
-                    <li><b>結果/影響</b>: 居酒屋から家庭内需要まで広く浸透し、アルコール市場の新たな定番カテゴリーを確立。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>
-                    北海道は「食」の宝庫。地元の酒造メーカーや飲食店にとっても、この「ジン・トレンド」は大きなビジネスチャンスです。取引先の飲食店店主に「最近、ジンベースの注文は増えていますか？」とトレンドを確認し、そこから仕入れや新メニュー開発の意欲を探ってみましょう。また、地域限定のクラフトジン開発による地方創生の可能性も示唆できます。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/db4f9bcafd47d28aa057b1aa004c8bde7d72bd3a?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>「出世した人の65％」が休日にやっている“意外な行動”</h3>
+                <div class="logical-summary">
+                    <p><b>ロジカル要約</b></p>
+                    <ul>
+                        <li><strong>背景/経緯:</strong> 働き方改革が進む中、成果を出し続けるビジネスパーソンの「休日の質」が注目されている。</li>
+                        <li><strong>事象:</strong> 調査の結果、高い実績を出す人の多くは、単なる休息ではなく「能動的な非日常体験」や「振り返りの時間」をルーチン化している。</li>
+                        <li><strong>結果/影響:</strong> 脳のリフレッシュと俯瞰的な視点の獲得により、月曜からの意思決定スピードが飛躍的に高まる。</li>
+                    </ul>
+                </div>
+                <div class="bank-insight">
+                    <p><b>地銀視点の深掘り</b>：地方銀行の仕事は、幅広い業界の経営者と対等に話すことが求められます。休日に地元のイベントに足を運んだり、読書で知見を広げたりすることは、巡り巡って「顧客への提案の幅」を広げる自己投資になります。特に経営者は「銀行員が何に興味を持っているか」を鋭く見ています。自身の専門性を高める休日習慣を今のうちに構築しましょう。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/55f9c71b2db6d4c1ac19a734f20b27a9a5ace2cf?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3 -->
+            <!-- News 3: Nagoya Redevelopment/Linear -->
             <article>
-                <h3>仕事ができる人はChatGPTで「メール作成」なんてしない。では、優秀な人の“すごい使い方”とは？</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯</b>: 生成AIの普及が一段落し、「単なる作業代行」から「思考のパートナー」への活用レベルの差が顕著に。</li>
-                    <li><b>事象</b>: 優秀な層は、アイデアの壁打ち、複雑な情報の構造化、戦略策定の論理チェックにAIを活用。</li>
-                    <li><b>結果/影響</b>: 事務作業の効率化だけでなく、アウトプットの質そのものが向上し、知的生産性に大きな差が出る。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>
-                    私たち新人行員にとっても、AIは強力な武器になります。例えば、訪問予定企業の決算データを読み込ませて「この企業の強みと課題を3点抽出して」と壁打ちをすることで、上司も驚くような鋭いヒアリングシートが作成できます。定型文作成で終わらず、顧客のための「思考の時間」を増やすためのツールとして使いこなしましょう。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/5c4411ad5dfdb1a656b3e3e78809bbdd336651f0?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>リニア開業見据えた名古屋駅周辺の再開発とエリア格差</h3>
+                <div class="logical-summary">
+                    <p><b>ロジカル要約</b></p>
+                    <ul>
+                        <li><strong>背景/経緯:</strong> 2030年代のリニア中央新幹線開業を見据え、中京圏の玄関口である名古屋駅周辺で大規模再開発が進行中。</li>
+                        <li><strong>事象:</strong> 利便性が高まる「駅東側」に対し、「駅西側」は用地買収や調整の遅れから開発の方向性に課題が残っている。</li>
+                        <li><strong>結果/影響:</strong> エリアによって地価上昇率や商業集積のスピードに顕著な差が出ており、投資マネーの二極化が懸念される。</li>
+                    </ul>
+                </div>
+                <div class="bank-insight">
+                    <p><b>地銀視点の深掘り</b>：これは遠い名古屋の話ではありません。現在進行中の「札幌駅周辺再開発」や「北海道新幹線延伸」と全く同じ構造です。インフラ整備が地価や周辺の商店街にどう波及するかを学ぶ絶好のケーススタディです。不動産融資を担当する際、こうした「再開発の遅れ」や「エリアの個性」が将来の担保価値にどう影響するかを見極める眼を養いましょう。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/4d15efe228851ab050e3168ef37e1071d048517f?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <footer>
-            <hr>
-            <p style="text-align: center;">
-                <small>&copy; 2026 朝のインサイト - 北海道の未来を拓く新人行員の皆様へ</small>
-            </p>
+            <p><small>&copy; 2026 北海道地方銀行 新人研修サポートチーム</small></p>
         </footer>
     </main>
 </body>
