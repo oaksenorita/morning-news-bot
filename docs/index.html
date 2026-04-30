@@ -3,96 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年04月29日</title>
+    <title>朝のインサイト - 2026年04月30日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --pico-font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            --pico-font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
         }
-        h1 { margin-top: 2rem; border-bottom: 3px solid var(--pico-primary); padding-bottom: 0.5rem; }
-        .weather-info { display: flex; gap: 2rem; align-items: center; }
-        .weather-info span { font-size: 1.2rem; }
-        article h3 { color: var(--pico-primary); }
-        .insight-box { background-color: var(--pico-card-sectioning-background-color); padding: 1rem; border-radius: 8px; border-left: 5px solid #0076d6; }
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--pico-muted-border-color);
+            margin-bottom: 2rem;
+        }
+        h1 {
+            color: var(--pico-primary);
+        }
+        .weather-info {
+            background-color: var(--pico-card-background-color);
+            border-left: 5px solid #3498db;
+        }
+        .logical-summary b, .deep-dive b {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--pico-secondary);
+        }
+        .deep-dive {
+            background-color: rgba(52, 152, 219, 0.05);
+            padding: 1rem;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月29日)</h1>
+            <h1>☀️ 朝のインサイト (2026年04月30日)</h1>
+            <p>北海道の未来を担う新入行員の皆様、おはようございます。本日の重要トピックスをお届けします。</p>
         </header>
 
         <section id="weather">
-            <article>
-                <header><strong>📍 北海道エリアの概況</strong></header>
-                <div class="weather-info">
-                    <span>☁️ <strong>天気:</strong> 曇りがち</span>
-                    <span>🌡️ <strong>最高気温:</strong> 9.12℃</span>
-                    <span>🌡️ <strong>最低気温:</strong> 7.86℃</span>
+            <article class="weather-info">
+                <h2 style="font-size: 1.2rem;">本日の北海道（札幌周辺）の天気</h2>
+                <div class="grid">
+                    <div><strong>天気:</strong> 薄い雲</div>
+                    <div><strong>最高気温:</strong> 13.56℃</div>
+                    <div><strong>最低気温:</strong> 12.86℃</div>
                 </div>
-                <small>※本日は「昭和の日」ですが、研修や自己啓発に励む皆さまへお届けします。道内は肌寒い朝です。体調管理に留意しましょう。</small>
+                <p style="font-size: 0.9rem; margin-top: 1rem; color: #666;">※GW直前、朝晩はまだ冷え込みます。外回りの際は体温調節のできる服装を心がけましょう。</p>
             </article>
         </section>
 
-        <section id="news-1">
+        <section id="news">
             <article>
-                <h3>全通まであと1区間「札幌の圏央道」新ルートの効果絶大!? 「エスコンへの最短路」</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯:</b> 札幌圏の渋滞緩和と物流効率化を目指す「道央圏連絡道路」の整備が進んでおり、全線開通まで残り1区間となっている。</li>
-                    <li><b>事象:</b> 新ルートの開通により、特に北広島市のエスコンフィールドHOKKAIDOへのアクセスが劇的に向上し、冬期の吹雪による通行止めにも強い設計が注目されている。</li>
-                    <li><b>結果/影響:</b> 周辺自治体の物流拠点の集積や、観光需要の拡大、さらには災害時の代替路としての機能強化が期待される。</li>
-                </ul>
-                <div class="insight-box">
+                <h3>【超保存版】ChatGPTの「知るだけで差がつく神プロンプト」</h3>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯:</b> 生成AIの普及が進む中、業務効率の差はAIへの「指示出し（プロンプト）」の習熟度に依存するようになっている。</li>
+                        <li><b>事象:</b> ダイヤモンド・オンラインが、具体的で再現性の高い「神プロンプト」のテクニックを体系化して公開。</li>
+                        <li><b>結果/影響:</b> 誰でも質の高い回答を得られるようになり、定型業務や情報収集の時間が大幅に短縮される。</li>
+                    </ul>
+                </div>
+                <div class="deep-dive">
                     <b>地銀視点の深掘り</b>
-                    <p>この道路整備は、北広島・千歳エリアを中心とした「不動産融資」のチャンス拡大を意味します。物流倉庫の建設需要や、沿線自治体の商業施設開発に関する相談が増えるでしょう。取引先企業に対し、物流コスト削減の提案や、アクセス向上による新たな商圏拡大のヒントとして話題に出すのが効果的です。</p>
+                    <p>我々銀行員も、稟議書の構成案作成や膨大な資料の要約にAIを活用する機会が増えています。取引先の中小企業オーナーからも「AIをどう使えばいいか」と相談されるケースを想定し、こうした「神プロンプト」を自ら試し、知見を蓄えておくことは、DX支援という付加価値提供の第一歩になります。</p>
                 </div>
-                <footer style="text-align: right;">
-                    <a href="https://news.yahoo.co.jp/articles/dce5f8c6bd379ab6321f4f3e1db26d4a12b1ae35?source=rss" role="button" class="outline">続きを読む</a>
-                </footer>
+                <a href="https://news.yahoo.co.jp/articles/2884c7e286902cdf65ddc10a96d73d9455979c89?source=rss" role="button" class="outline">続きを読む</a>
             </article>
-        </section>
 
-        <section id="news-2">
             <article>
-                <h3>適応障害で会社を辞めた10年後、急に涙が止まらなくなった。</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯:</b> 現代の職場環境におけるメンタルヘルス不調は、一過性のものではなく、数年・数十年単位で個人のキャリアに影響を及ぼす可能性がある。</li>
-                    <li><b>事象:</b> 過去に完治したと思っていた適応障害が、ライフステージの変化や潜在的なストレスによって、年月を経て再燃・表面化するケースが報告されている。</li>
-                    <li><b>結果/影響:</b> 企業には「休職させない」対策だけでなく、復職後や転職後も継続的に個人の心身をケアする長期的な視点のウェルビーイング支援が求められている。</li>
-                </ul>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>新人研修を終えて現場配属が近づく皆さまにとって、メンタル管理は「最重要スキル」の一つです。また、銀行員として経営者と接する際、従業員の離職やメンタル不調に悩む社長は非常に多いです。こうした事例を知っておくことで、人事制度や福利厚生の相談を受けた際、単なる数字ではない「寄り添ったアドバイス」が可能になります。</p>
+                <h3>【会話で即バレ】なぜか距離を置かれる人の“たった1つの共通点”</h3>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯:</b> 信頼関係が全ての基盤となるビジネスシーンにおいて、無意識の言動が人間関係を阻害するリスクが指摘されている。</li>
+                        <li><b>事象:</b> 距離を置かれる人の共通点として「相手の話を奪い、自分の話にすり替える（会話の横取り）」が挙げられている。</li>
+                        <li><b>結果/影響:</b> 相手は「大切にされていない」と感じ、深層心理で不信感を抱くため、長期的な信頼構築が困難になる。</li>
+                    </ul>
                 </div>
-                <footer style="text-align: right;">
-                    <a href="https://news.yahoo.co.jp/articles/373fb8ef338ea339c1cf87a30dab1af1d89e0ea9?source=rss" role="button" class="outline">続きを読む</a>
-                </footer>
+                <div class="deep-dive">
+                    <b>地銀視点の深掘り</b>
+                    <p>新人行員の皆さんがこれから行う「経営者ヒアリング」で最も大切なのは、自分の知識を披露することではなく、相手の話を「聴く」ことです。北海道の経営者は特に義理人情を大切にされます。会話を奪わず、徹底した傾聴姿勢を見せることで、「この人は信頼できる」という安心感を持っていただくことが、預金・融資のご相談に繋がります。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/725f5a7abd84da589ab36a26535340673412a22d?source=rss" role="button" class="outline">続きを読む</a>
             </article>
-        </section>
 
-        <section id="news-3">
             <article>
-                <h3>アウディ改良型『Q4 eトロン』で内外装刷新　航続距離592kmへ</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯:</b> 欧州のEVシフトは一服感があるものの、実用性を高めた改良モデルの投入は継続しており、特に航続距離の延伸が課題となっている。</li>
-                    <li><b>事象:</b> AudiがEVの主要SUV「Q4 eトロン」を刷新。高効率モーターの採用により、航続距離を約592kmまで伸ばし、操作性（物理スイッチの採用）も改善した。</li>
-                    <li><b>結果/影響:</b> EVへの移行を躊躇していた層への訴求力が高まり、プレミアムEV市場での競争が再加熱する。</li>
-                </ul>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>北海道の冬期におけるEV航続距離の低下は、道内顧客が最も懸念する点です。今回の「航続距離592km」という数字が、極寒期にどの程度維持されるかは注目に値します。自動車販売ディーラーや、ガソリンスタンドから充電ビジネスへの転換を検討している取引先との対話において、最新のEVスペック情報は非常に喜ばれるネタとなります。</p>
+                <h3>ダムド「ジムニーノマド アルマータ」タフで洒落たカスタムの魅力</h3>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯:</b> アウトドアブームの定着により、自分好みに車をカスタマイズする「レトロフィット」市場が拡大。</li>
+                        <li><b>事象:</b> ダムドがスズキ「ジムニー」を往年の名車ランチア・デルタ風にカスタムするキットを発売し、大きな反響を呼んでいる。</li>
+                        <li><b>結果/影響:</b> 実用性一辺倒だった軽自動車に「所有する喜び」という付加価値が加わり、関連パーツメーカーや整備工場のビジネスチャンスが広がっている。</li>
+                    </ul>
                 </div>
-                <footer style="text-align: right;">
-                    <a href="https://news.yahoo.co.jp/articles/bb611bfac593e1545d70ffc459b61324eb4375fb?source=rss" role="button" class="outline">続きを読む</a>
-                </footer>
+                <div class="deep-dive">
+                    <b>地銀視点の深掘り</b>
+                    <p>北海道はジムニーの普及率が非常に高く、趣味と実益を兼ねたカスタマイズ需要は無視できません。地域の自動車整備工場や中古車販売店が、こうした「高付加価値カスタム」を手掛けている場合、それは単なる整備業から「デザイン・ライフスタイル提案業」への転換を意味します。取引先の事業再構築や設備投資のヒントとして、こうしたトレンドを雑談に盛り込んでみてはいかがでしょうか。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/89fe7f2f68e54168142fb2e5b15a5663a6b35f55?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
-        <footer>
-            <p><small>&copy; 2026 北海道地方銀行 新人研修アシスタント</small></p>
+        <footer style="margin-top: 3rem; text-align: center; font-size: 0.8rem; color: #888;">
+            <p>© 2026 北海道地域金融支援アシスタント | 本日の業務も明るく元気に取り組みましょう。</p>
         </footer>
     </main>
 </body>
