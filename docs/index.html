@@ -3,110 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 2026年04月30日</title>
+    <title>朝のインサイト | 北海道地銀新人アナリスト版</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --pico-font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            --primary: #004a99; /* 地銀をイメージした信頼感のあるブルー */
         }
-        header {
-            padding: 2rem 0;
-            border-bottom: 1px solid var(--pico-muted-border-color);
-            margin-bottom: 2rem;
-        }
-        h1 {
-            color: var(--pico-primary);
-        }
-        .weather-info {
-            background-color: var(--pico-card-background-color);
-            border-left: 5px solid #3498db;
-        }
-        .logical-summary b, .deep-dive b {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--pico-secondary);
-        }
-        .deep-dive {
-            background-color: rgba(52, 152, 219, 0.05);
-            padding: 1rem;
-            border-radius: 8px;
-        }
+        h1 { border-bottom: 3px solid var(--primary); padding-bottom: 10px; }
+        .weather-info { background-color: #f8f9fa; border-left: 5px solid #6c757d; }
+        .insight-tag { font-size: 0.9rem; color: var(--primary); font-weight: bold; }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年04月30日)</h1>
-            <p>北海道の未来を担う新入行員の皆様、おはようございます。本日の重要トピックスをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年05月01日)</h1>
+            <p>おはようございます。北海道の未来を支える新人の皆さん、今日も一日頑張りましょう。</p>
         </header>
 
-        <section id="weather">
+        <section>
             <article class="weather-info">
-                <h2 style="font-size: 1.2rem;">本日の北海道（札幌周辺）の天気</h2>
+                <header><strong>📍 本日の道内概況</strong></header>
                 <div class="grid">
-                    <div><strong>天気:</strong> 薄い雲</div>
-                    <div><strong>最高気温:</strong> 13.56℃</div>
-                    <div><strong>最低気温:</strong> 12.86℃</div>
+                    <div>天気: <strong>曇りがち</strong></div>
+                    <div>最高気温: <strong>10.23℃</strong></div>
+                    <div>最低気温: <strong>9.86℃</strong></div>
                 </div>
-                <p style="font-size: 0.9rem; margin-top: 1rem; color: #666;">※GW直前、朝晩はまだ冷え込みます。外回りの際は体温調節のできる服装を心がけましょう。</p>
+                <small>※連休の合間ですが、肌寒い朝です。体調管理に気をつけて訪問準備を進めましょう。</small>
             </article>
         </section>
 
-        <section id="news">
+        <section>
+            <h2>厳選ニュース解説</h2>
+
+            <!-- ニュース1: クレカ決済 vs 交通系IC -->
             <article>
-                <h3>【超保存版】ChatGPTの「知るだけで差がつく神プロンプト」</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯:</b> 生成AIの普及が進む中、業務効率の差はAIへの「指示出し（プロンプト）」の習熟度に依存するようになっている。</li>
-                        <li><b>事象:</b> ダイヤモンド・オンラインが、具体的で再現性の高い「神プロンプト」のテクニックを体系化して公開。</li>
-                        <li><b>結果/影響:</b> 誰でも質の高い回答を得られるようになり、定型業務や情報収集の時間が大幅に短縮される。</li>
-                    </ul>
-                </div>
-                <div class="deep-dive">
-                    <b>地銀視点の深掘り</b>
-                    <p>我々銀行員も、稟議書の構成案作成や膨大な資料の要約にAIを活用する機会が増えています。取引先の中小企業オーナーからも「AIをどう使えばいいか」と相談されるケースを想定し、こうした「神プロンプト」を自ら試し、知見を蓄えておくことは、DX支援という付加価値提供の第一歩になります。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/2884c7e286902cdf65ddc10a96d73d9455979c89?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>電車に乗るなら「クレカのタッチ決済」と「交通系ICカードへのチャージ」どっちがお得？</h3>
+                <b>ロジカル要約</b>:
+                <ul>
+                    <li><b>背景/経緯</b>: キャッシュレス決済の多様化により、鉄道各社が従来の交通系ICに加え、クレジットカードのタッチ決済（EMV Contactless）を相次いで導入。</li>
+                    <li><b>事象</b>: ポイント還元率、利便性（チャージ不要か否か）、利用可能エリアの違いを比較。</li>
+                    <li><b>結果/影響</b>: 利用頻度や所有カードの種類により「最適解」が分かれる状況になっており、消費者の選択眼が問われている。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>:
+                <p>当行のデビットカードやクレジットカードの普及促進において非常に重要なトピックです。特に北海道内でもインバウンド観光客の増加に伴い、タッチ決済のニーズは高まっています。窓口で「どの決済手段が一番お得なの？」と聞かれた際、単にポイントを勧めるだけでなく、お客様の生活動線に合わせたデジタルチャージの提案ができると信頼に繋がります。</p>
+                <a href="https://news.yahoo.co.jp/articles/e6eb50dc4a7850aaf7d95389b849a0f7477f8309?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
+            <!-- ニュース2: 熟年離婚と資産形成 -->
             <article>
-                <h3>【会話で即バレ】なぜか距離を置かれる人の“たった1つの共通点”</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯:</b> 信頼関係が全ての基盤となるビジネスシーンにおいて、無意識の言動が人間関係を阻害するリスクが指摘されている。</li>
-                        <li><b>事象:</b> 距離を置かれる人の共通点として「相手の話を奪い、自分の話にすり替える（会話の横取り）」が挙げられている。</li>
-                        <li><b>結果/影響:</b> 相手は「大切にされていない」と感じ、深層心理で不信感を抱くため、長期的な信頼構築が困難になる。</li>
-                    </ul>
-                </div>
-                <div class="deep-dive">
-                    <b>地銀視点の深掘り</b>
-                    <p>新人行員の皆さんがこれから行う「経営者ヒアリング」で最も大切なのは、自分の知識を披露することではなく、相手の話を「聴く」ことです。北海道の経営者は特に義理人情を大切にされます。会話を奪わず、徹底した傾聴姿勢を見せることで、「この人は信頼できる」という安心感を持っていただくことが、預金・融資のご相談に繋がります。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/725f5a7abd84da589ab36a26535340673412a22d?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>熟年離婚で1,200万円分与された56歳女性、派遣で自立を目指すも給与明細に絶望</h3>
+                <b>ロジカル要約</b>:
+                <ul>
+                    <li><b>背景/経緯</b>: 熟年離婚の増加と、専業主婦・パート主婦層が直面する老後資金の不足問題。</li>
+                    <li><b>事象</b>: 財産分与で得た1,200万円という一見まとまった金額も、物価高や低賃金、長寿化の前では数年で枯渇するリスクが判明。</li>
+                    <li><b>結果/影響</b>: 公的年金、iDeCo、NISAなどを活用した「出口戦略」のない現金保有の危うさが露呈。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>:
+                <p>「1,200万円あるから安心」という感覚のお客様に対し、シミュレーションを通じて「資産寿命」を可視化して差し上げるのが我々の役目です。北海道は単身高齢者の世帯も多いため、ライフプランニングに基づく投資信託の提案や、将来の相続を見据えたアドバイスは、地域密着型金融として不可欠なスキルになります。</p>
+                <a href="https://news.yahoo.co.jp/articles/cafbf6998b5917e55397e38054ad7b4a57688ed6?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
+            <!-- ニュース3: 会議の最初の言葉 -->
             <article>
-                <h3>ダムド「ジムニーノマド アルマータ」タフで洒落たカスタムの魅力</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯:</b> アウトドアブームの定着により、自分好みに車をカスタマイズする「レトロフィット」市場が拡大。</li>
-                        <li><b>事象:</b> ダムドがスズキ「ジムニー」を往年の名車ランチア・デルタ風にカスタムするキットを発売し、大きな反響を呼んでいる。</li>
-                        <li><b>結果/影響:</b> 実用性一辺倒だった軽自動車に「所有する喜び」という付加価値が加わり、関連パーツメーカーや整備工場のビジネスチャンスが広がっている。</li>
-                    </ul>
-                </div>
-                <div class="deep-dive">
-                    <b>地銀視点の深掘り</b>
-                    <p>北海道はジムニーの普及率が非常に高く、趣味と実益を兼ねたカスタマイズ需要は無視できません。地域の自動車整備工場や中古車販売店が、こうした「高付加価値カスタム」を手掛けている場合、それは単なる整備業から「デザイン・ライフスタイル提案業」への転換を意味します。取引先の事業再構築や設備投資のヒントとして、こうしたトレンドを雑談に盛り込んでみてはいかがでしょうか。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/89fe7f2f68e54168142fb2e5b15a5663a6b35f55?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>職場で評価を下げてしまう「会議の最初の言葉」・ワースト1</h3>
+                <b>ロジカル要約</b>:
+                <ul>
+                    <li><b>背景/経緯</b>: 効率的な意思決定が求められるビジネスシーンにおけるコミュニケーションの重要性。</li>
+                    <li><b>事象</b>: 結論を先延ばしにしたり、ネガティブな枕詞から入る発言が、周囲の士気や発言者の評価を著しく下げている。</li>
+                    <li><b>結果/影響</b>: 「とりあえず…」「特にありませんが…」といった言葉を排除し、目的意識を持った発言がチームの生産性を左右する。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>:
+                <p>新人研修を終え、配属先での会議が増えるこの時期。上司や先輩、あるいは法人顧客との商談において、言葉選び一つで「信頼に値する銀行員か」を判断されます。特に融資判断などの厳格な場では、曖昧な表現は致命的です。会議や報告の場では「結論から申し上げますと」を習慣化し、若手らしいキレのある対応を心がけましょう。</p>
+                <a href="https://news.yahoo.co.jp/articles/8d7ca6cb7fd19570833601c148bcf01bd8c8920e?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
-        <footer style="margin-top: 3rem; text-align: center; font-size: 0.8rem; color: #888;">
-            <p>© 2026 北海道地域金融支援アシスタント | 本日の業務も明るく元気に取り組みましょう。</p>
+        <footer>
+            <hr>
+            <p><small>&copy; 2026 北海道地方銀行 新人育成支援チーム | 今日も誠実に、地域と共に。</small></p>
         </footer>
     </main>
 </body>
