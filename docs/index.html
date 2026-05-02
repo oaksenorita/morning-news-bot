@@ -3,85 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 北海道地銀新人アナリスト版</title>
+    <title>朝のインサイト | 2026年05月02日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #004a99; /* 地銀をイメージした信頼感のあるブルー */
+            --primary: #004d40;
         }
-        h1 { border-bottom: 3px solid var(--primary); padding-bottom: 10px; }
-        .weather-info { background-color: #f8f9fa; border-left: 5px solid #6c757d; }
-        .insight-tag { font-size: 0.9rem; color: var(--primary); font-weight: bold; }
+        body {
+            background-color: #f4f7f6;
+        }
+        h1 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        .weather-info {
+            display: flex;
+            gap: 20px;
+            font-size: 1.1rem;
+        }
+        .insight-tag {
+            background-color: var(--primary);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年05月01日)</h1>
-            <p>おはようございます。北海道の未来を支える新人の皆さん、今日も一日頑張りましょう。</p>
+            <h1>☀️ 朝のインサイト (2026年05月02日)</h1>
+            <p>北海道の未来を担う新人の皆様へ。今日の重要トピックを厳選してお届けします。</p>
         </header>
 
-        <section>
-            <article class="weather-info">
-                <header><strong>📍 本日の道内概況</strong></header>
-                <div class="grid">
-                    <div>天気: <strong>曇りがち</strong></div>
-                    <div>最高気温: <strong>10.23℃</strong></div>
-                    <div>最低気温: <strong>9.86℃</strong></div>
+        <section id="weather">
+            <article>
+                <header><strong>📍 今日の北海道（札幌近郊）の天気</strong></header>
+                <div class="weather-info">
+                    <span>☁️ <strong>天気:</strong> 曇りがち</span>
+                    <span>🌡️ <strong>最高気温:</strong> 9.67℃</span>
+                    <span>🌡️ <strong>最低気温:</strong> 8.86℃</span>
                 </div>
-                <small>※連休の合間ですが、肌寒い朝です。体調管理に気をつけて訪問準備を進めましょう。</small>
+                <small style="margin-top: 10px; display: block;">5月に入りましたが、まだ肌寒い朝です。外回りに行く際は、一枚羽織るものを持っておくと安心です。</small>
             </article>
         </section>
 
-        <section>
-            <h2>厳選ニュース解説</h2>
-
-            <!-- ニュース1: クレカ決済 vs 交通系IC -->
+        <section id="news">
+            <!-- ニュース1: 人型ロボット -->
             <article>
-                <h3>電車に乗るなら「クレカのタッチ決済」と「交通系ICカードへのチャージ」どっちがお得？</h3>
-                <b>ロジカル要約</b>:
+                <div class="insight-tag">テクノロジー・国際</div>
+                <h3>【人型ロボット開発】中国「栄燿」の大躍進と技術革命</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: キャッシュレス決済の多様化により、鉄道各社が従来の交通系ICに加え、クレジットカードのタッチ決済（EMV Contactless）を相次いで導入。</li>
-                    <li><b>事象</b>: ポイント還元率、利便性（チャージ不要か否か）、利用可能エリアの違いを比較。</li>
-                    <li><b>結果/影響</b>: 利用頻度や所有カードの種類により「最適解」が分かれる状況になっており、消費者の選択眼が問われている。</li>
+                    <li><b>背景/経緯:</b> 中国のスマホメーカー「栄燿（Honor）」が、成長著しい人型ロボット市場への参入を表明。</li>
+                    <li><b>事象:</b> 参入からわずか1年で、ハーフマラソンで世界記録を樹立するほどの人型ロボット技術を実現。</li>
+                    <li><b>結果/影響:</b> 既存のロボット専業メーカーを凌駕するスピードで進化しており、製造業やサービス業における自動化のパラダイムシフトが加速。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>:
-                <p>当行のデビットカードやクレジットカードの普及促進において非常に重要なトピックです。特に北海道内でもインバウンド観光客の増加に伴い、タッチ決済のニーズは高まっています。窓口で「どの決済手段が一番お得なの？」と聞かれた際、単にポイントを勧めるだけでなく、お客様の生活動線に合わせたデジタルチャージの提案ができると信頼に繋がります。</p>
-                <a href="https://news.yahoo.co.jp/articles/e6eb50dc4a7850aaf7d95389b849a0f7477f8309?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>
+                <p>
+                    北海道内でも人手不足が深刻な製造業や物流拠点を抱える取引先にとって、ロボット技術の低価格化・高性能化は最大の関心事です。最新のテック動向を共有することで、「単なる資金融資だけでなく、省人化投資のアドバイザー」としての信頼を勝ち取るきっかけになります。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/ba079ed01aa3add2c3e09788eafbf7ee2ad5a779?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2: 熟年離婚と資産形成 -->
+            <!-- ニュース2: セルフ給油の注意点 -->
             <article>
-                <h3>熟年離婚で1,200万円分与された56歳女性、派遣で自立を目指すも給与明細に絶望</h3>
-                <b>ロジカル要約</b>:
+                <div class="insight-tag">生活・リスク管理</div>
+                <h3>“セルフ給油”での「ちょい足し給油」に潜む火災・故障リスク</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 熟年離婚の増加と、専業主婦・パート主婦層が直面する老後資金の不足問題。</li>
-                    <li><b>事象</b>: 財産分与で得た1,200万円という一見まとまった金額も、物価高や低賃金、長寿化の前では数年で枯渇するリスクが判明。</li>
-                    <li><b>結果/影響</b>: 公的年金、iDeCo、NISAなどを活用した「出口戦略」のない現金保有の危うさが露呈。</li>
+                    <li><b>背景/経緯:</b> 満タン後の「あと少し」という心理から、継ぎ足し給油を行うドライバーが後を絶たない。</li>
+                    <li><b>事象:</b> 溢れた燃料がキャニスター等の部品を損傷させ、最悪の場合、燃料漏れによる車両火災に繋がる危険性がある。</li>
+                    <li><b>結果/影響:</b> 安全装置の作動不良や高額な修理費用が発生し、日常的な習慣が甚大な損害を招くリスクとなっている。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>:
-                <p>「1,200万円あるから安心」という感覚のお客様に対し、シミュレーションを通じて「資産寿命」を可視化して差し上げるのが我々の役目です。北海道は単身高齢者の世帯も多いため、ライフプランニングに基づく投資信託の提案や、将来の相続を見据えたアドバイスは、地域密着型金融として不可欠なスキルになります。</p>
-                <a href="https://news.yahoo.co.jp/articles/cafbf6998b5917e55397e38054ad7b4a57688ed6?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>
+                <p>
+                    車社会の北海道において、営業車両を保有する法人顧客との雑談ネタとして非常に有用です。「最近、セルフ給油の事故が増えているようですが、御社の社用車管理は大丈夫ですか？」といった一声から、安全運転教育やリスク管理（保険提案）への導線を作ることができます。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/4d4735a4b41fb6976494aa861712179185c6e610?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3: 会議の最初の言葉 -->
+            <!-- ニュース3: 職場環境と上司のマネジメント -->
             <article>
-                <h3>職場で評価を下げてしまう「会議の最初の言葉」・ワースト1</h3>
-                <b>ロジカル要約</b>:
+                <div class="insight-tag">組織マネジメント・人事</div>
+                <h3>怒鳴る上司を救った職場の決断：心理的安全性と組織改善</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 効率的な意思決定が求められるビジネスシーンにおけるコミュニケーションの重要性。</li>
-                    <li><b>事象</b>: 結論を先延ばしにしたり、ネガティブな枕詞から入る発言が、周囲の士気や発言者の評価を著しく下げている。</li>
-                    <li><b>結果/影響</b>: 「とりあえず…」「特にありませんが…」といった言葉を排除し、目的意識を持った発言がチームの生産性を左右する。</li>
+                    <li><b>背景/経緯:</b> パワハラが問題視される中、感情をコントロールできず孤立する管理職の増加。</li>
+                    <li><b>事象:</b> 怒鳴る上司を「排除」するのではなく、その背景にあるストレスや負荷を組織として分析し、サポート。</li>
+                    <li><b>結果/影響:</b> 本人の自覚と周囲の協力により、職場の雰囲気が劇的に改善し、離職防止と生産性向上を実現。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>:
-                <p>新人研修を終え、配属先での会議が増えるこの時期。上司や先輩、あるいは法人顧客との商談において、言葉選び一つで「信頼に値する銀行員か」を判断されます。特に融資判断などの厳格な場では、曖昧な表現は致命的です。会議や報告の場では「結論から申し上げますと」を習慣化し、若手らしいキレのある対応を心がけましょう。</p>
-                <a href="https://news.yahoo.co.jp/articles/8d7ca6cb7fd19570833601c148bcf01bd8c8920e?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>
+                <p>
+                    道内の中小企業では、後継者不足や深刻な人手不足により、一人の管理職にかかる負担が過大になりがちです。取引先の社長と「従業員の定着率」について話す際、こうした具体的な組織改善の事例を紹介することで、経営課題に寄り添うコンサルティング能力をアピールできます。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/cc2a62ced0e141d644aace8ceeeaefa00e334cf8?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <footer>
-            <hr>
-            <p><small>&copy; 2026 北海道地方銀行 新人育成支援チーム | 今日も誠実に、地域と共に。</small></p>
+            <small>© 2026 北海道地方銀行・新人研修アシスタント</small>
         </footer>
     </main>
 </body>
