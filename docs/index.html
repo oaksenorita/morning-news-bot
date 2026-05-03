@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年05月02日</title>
+    <title>朝のインサイト | 2026年05月03日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #004d40;
+            --primary: #2e7d32;
         }
         body {
             background-color: #f4f7f6;
         }
         h1 {
-            color: var(--primary);
-            border-bottom: 3px solid var(--primary);
-            padding-bottom: 0.5rem;
+            border-left: 8px solid var(--primary);
+            padding-left: 15px;
             margin-top: 2rem;
         }
         .weather-info {
@@ -23,91 +22,82 @@
             gap: 20px;
             font-size: 1.1rem;
         }
-        .insight-tag {
-            background-color: var(--primary);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin-bottom: 10px;
-            display: inline-block;
+        .weather-badge {
+            background-color: #e0f2f1;
+            padding: 5px 15px;
+            border-radius: 20px;
+            color: #004d40;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年05月02日)</h1>
-            <p>北海道の未来を担う新人の皆様へ。今日の重要トピックを厳選してお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年05月03日)</h1>
+            <p>北海道の未来を担う皆さんのための、ビジネスエッセンス・ダイジェスト</p>
         </header>
 
-        <section id="weather">
-            <article>
-                <header><strong>📍 今日の北海道（札幌近郊）の天気</strong></header>
-                <div class="weather-info">
-                    <span>☁️ <strong>天気:</strong> 曇りがち</span>
-                    <span>🌡️ <strong>最高気温:</strong> 9.67℃</span>
-                    <span>🌡️ <strong>最低気温:</strong> 8.86℃</span>
-                </div>
-                <small style="margin-top: 10px; display: block;">5月に入りましたが、まだ肌寒い朝です。外回りに行く際は、一枚羽織るものを持っておくと安心です。</small>
-            </article>
-        </section>
+        <article>
+            <header><strong>📍 本日の気象状況</strong></header>
+            <div class="weather-info">
+                <span class="weather-badge">天気: 霧</span>
+                <span>最高気温: <span style="color: #d32f2f;">9.86℃</span></span>
+                <span>最低気温: <span style="color: #1976d2;">9.67℃</span></span>
+            </div>
+            <footer style="font-size: 0.9rem;">
+                今朝の北海道は霧が発生しやすく、視界が不良です。外回りの際は安全運転を徹底しましょう。
+            </footer>
+        </article>
 
-        <section id="news">
-            <!-- ニュース1: 人型ロボット -->
-            <article>
-                <div class="insight-tag">テクノロジー・国際</div>
-                <h3>【人型ロボット開発】中国「栄燿」の大躍進と技術革命</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯:</b> 中国のスマホメーカー「栄燿（Honor）」が、成長著しい人型ロボット市場への参入を表明。</li>
-                    <li><b>事象:</b> 参入からわずか1年で、ハーフマラソンで世界記録を樹立するほどの人型ロボット技術を実現。</li>
-                    <li><b>結果/影響:</b> 既存のロボット専業メーカーを凌駕するスピードで進化しており、製造業やサービス業における自動化のパラダイムシフトが加速。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    北海道内でも人手不足が深刻な製造業や物流拠点を抱える取引先にとって、ロボット技術の低価格化・高性能化は最大の関心事です。最新のテック動向を共有することで、「単なる資金融資だけでなく、省人化投資のアドバイザー」としての信頼を勝ち取るきっかけになります。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/ba079ed01aa3add2c3e09788eafbf7ee2ad5a779?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
+        <section>
+            <h2>厳選：今日の重要トピックス</h2>
 
-            <!-- ニュース2: セルフ給油の注意点 -->
+            <!-- ニュース1 -->
             <article>
-                <div class="insight-tag">生活・リスク管理</div>
-                <h3>“セルフ給油”での「ちょい足し給油」に潜む火災・故障リスク</h3>
-                <b>ロジカル要約</b>
+                <h3>「1台じゃ足りないなんて…」地方移住・車社会の落とし穴</h3>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯:</b> 満タン後の「あと少し」という心理から、継ぎ足し給油を行うドライバーが後を絶たない。</li>
-                    <li><b>事象:</b> 溢れた燃料がキャニスター等の部品を損傷させ、最悪の場合、燃料漏れによる車両火災に繋がる危険性がある。</li>
-                    <li><b>結果/影響:</b> 安全装置の作動不良や高額な修理費用が発生し、日常的な習慣が甚大な損害を招くリスクとなっている。</li>
+                    <li><b>背景/経緯</b>: 30代夫婦が生活コスト削減を目指し、家賃5万円の庭付き3LDKという好条件で地方へ移住。</li>
+                    <li><b>事象</b>: 公共交通機関の乏しさとインフラの距離から、夫婦それぞれに車が必要となり、維持費やガソリン代が急増。</li>
+                    <li><b>結果/影響</b>: 住宅費は抑えられたものの、想定外の「移動コスト」が家計を圧迫し、生活のゆとりを奪う事態に。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    車社会の北海道において、営業車両を保有する法人顧客との雑談ネタとして非常に有用です。「最近、セルフ給油の事故が増えているようですが、御社の社用車管理は大丈夫ですか？」といった一声から、安全運転教育やリスク管理（保険提案）への導線を作ることができます。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/4d4735a4b41fb6976494aa861712179185c6e610?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>:
+                <p>北海道は日本屈指の車社会です。住宅ローンの相談を受けた際、建物代だけでなく「将来の車両買い替えコスト」や「維持費」を考慮したキャッシュフロー表の提示が不可欠です。マイカーローンの提案チャンスであると同時に、家計全体を守るアドバイザーとしての真価が問われます。</p>
+                <a href="https://news.yahoo.co.jp/articles/778be95ff2fe298b7d76eb666a30ac29bca21823?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3: 職場環境と上司のマネジメント -->
+            <!-- ニュース2 -->
             <article>
-                <div class="insight-tag">組織マネジメント・人事</div>
-                <h3>怒鳴る上司を救った職場の決断：心理的安全性と組織改善</h3>
-                <b>ロジカル要約</b>
+                <h3>【NISAで一生モノ】2026年5月の欲張り銘柄3選</h3>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯:</b> パワハラが問題視される中、感情をコントロールできず孤立する管理職の増加。</li>
-                    <li><b>事象:</b> 怒鳴る上司を「排除」するのではなく、その背景にあるストレスや負荷を組織として分析し、サポート。</li>
-                    <li><b>結果/影響:</b> 本人の自覚と周囲の協力により、職場の雰囲気が劇的に改善し、離職防止と生産性向上を実現。</li>
+                    <li><b>背景/経緯</b>: NISA制度の定着により、配当金と株主優待の両方を狙う「インカムゲイン重視」の投資スタイルが一般化。</li>
+                    <li><b>事象</b>: 2026年5月に権利確定を迎える、優待利回りと配当利回りのバランスが優れた特定銘柄が注目されている。</li>
+                    <li><b>結果/影響</b>: 短期的な株価変動に一喜一憂せず、長期保有を前提とした資産形成層が市場を支える構造が強まっている。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    道内の中小企業では、後継者不足や深刻な人手不足により、一人の管理職にかかる負担が過大になりがちです。取引先の社長と「従業員の定着率」について話す際、こうした具体的な組織改善の事例を紹介することで、経営課題に寄り添うコンサルティング能力をアピールできます。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/cc2a62ced0e141d644aace8ceeeaefa00e334cf8?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>:
+                <p>GW連休中は、ご家族で将来の資産形成について話すお客様も多いです。窓口では「何を買えばいいか」という問いに対し、目先の利益だけでなく、こうした優待や配当を通じた「投資の楽しさ」や「長期的な保有メリット」を伝え、NISA口座開設の心理的ハードルを下げていきましょう。</p>
+                <a href="https://news.yahoo.co.jp/articles/678e9b0367ef4168c7c880ef9e84feb075baf26c?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
+
+            <!-- ニュース3 -->
+            <article>
+                <h3>「運が抜群にいい人」が毎日している習慣・ベスト1</h3>
+                <b>ロジカル要約</b>:
+                <ul>
+                    <li><b>背景/経緯</b>: ビジネスやプライベートで成功を収める人が共通して持つ「運の良さ」の正体を探る。</li>
+                    <li><b>事象</b>: 最も重要な習慣は、他人の成功を「自分のことのように喜び、肯定的な言葉をかける」ことであると定義。</li>
+                    <li><b>結果/影響</b>: ポジティブなアウトプットが良好な人間関係と情報流入を呼び、結果としてチャンスを掴む確率（運）が向上する。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>:
+                <p>新人時代は覚えることが多く大変ですが、先輩や同僚、そしてお客様の小さなお祝い事に気づき、言葉を添えることが「信頼の貯金」になります。地銀の業務は「究極の人間関係ビジネス」です。相手の幸福に貢献する姿勢が、将来的に大きな案件や紹介を呼び込む「運」に繋がります。</p>
+                <a href="https://news.yahoo.co.jp/articles/28f8f7a255f5c05a826a349ea4b7a199e19168ec?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <footer>
-            <small>© 2026 北海道地方銀行・新人研修アシスタント</small>
+            <small>&copy; 2026 Regional Banking Freshers Assistant. 本資料は研修・情報共有用です。</small>
         </footer>
     </main>
 </body>
