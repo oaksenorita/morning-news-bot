@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年05月03日</title>
+    <title>朝のインサイト | 2026年05月04日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #2e7d32;
-        }
-        body {
-            background-color: #f4f7f6;
+            --pico-font-size: 95%;
         }
         h1 {
-            border-left: 8px solid var(--primary);
-            padding-left: 15px;
+            border-bottom: 3px solid var(--pico-primary);
+            padding-bottom: 0.5rem;
             margin-top: 2rem;
+        }
+        article b {
+            display: block;
+            margin-top: 1rem;
+            color: var(--pico-primary);
         }
         .weather-info {
             display: flex;
-            gap: 20px;
-            font-size: 1.1rem;
+            gap: 2rem;
+            align-items: center;
         }
-        .weather-badge {
-            background-color: #e0f2f1;
-            padding: 5px 15px;
-            border-radius: 20px;
-            color: #004d40;
+        .weather-temp {
+            font-size: 1.2rem;
             font-weight: bold;
         }
     </style>
@@ -34,70 +33,71 @@
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年05月03日)</h1>
-            <p>北海道の未来を担う皆さんのための、ビジネスエッセンス・ダイジェスト</p>
+            <h1>☀️ 朝のインサイト (2026年05月04日)</h1>
+            <p>北海道の未来を担う新人行員の皆様へ。本日の注目ニュースをお届けします。</p>
         </header>
 
-        <article>
-            <header><strong>📍 本日の気象状況</strong></header>
-            <div class="weather-info">
-                <span class="weather-badge">天気: 霧</span>
-                <span>最高気温: <span style="color: #d32f2f;">9.86℃</span></span>
-                <span>最低気温: <span style="color: #1976d2;">9.67℃</span></span>
-            </div>
-            <footer style="font-size: 0.9rem;">
-                今朝の北海道は霧が発生しやすく、視界が不良です。外回りの際は安全運転を徹底しましょう。
-            </footer>
-        </article>
+        <section>
+            <article>
+                <header><strong>📍 北海道の天気情報</strong></header>
+                <div class="weather-info">
+                    <span>天気: <b>薄い雲</b></span>
+                    <span class="weather-temp">最高気温: 8.86℃</span>
+                    <span class="weather-temp">最低気温: 8.86℃</span>
+                </div>
+                <small>※ゴールデンウィーク後半ですが、肌寒い朝です。体調管理に気をつけて業務に励みましょう。</small>
+            </article>
+        </section>
 
         <section>
-            <h2>厳選：今日の重要トピックス</h2>
+            <h2>今朝の厳選ニュース</h2>
 
             <!-- ニュース1 -->
             <article>
-                <h3>「1台じゃ足りないなんて…」地方移住・車社会の落とし穴</h3>
-                <b>ロジカル要約</b>:
+                <h3>読んだ本を「通帳」で管理　全国の図書館が「読書通帳」を導入するワケ</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 30代夫婦が生活コスト削減を目指し、家賃5万円の庭付き3LDKという好条件で地方へ移住。</li>
-                    <li><b>事象</b>: 公共交通機関の乏しさとインフラの距離から、夫婦それぞれに車が必要となり、維持費やガソリン代が急増。</li>
-                    <li><b>結果/影響</b>: 住宅費は抑えられたものの、想定外の「移動コスト」が家計を圧迫し、生活のゆとりを奪う事態に。</li>
+                    <li>背景/経緯：デジタル化が進む中、あえてアナログな「通帳」形式で読書履歴を残すニーズが高まっている。</li>
+                    <li>事象：銀行のATMのような専用機で、読んだ本のタイトルや日付を預金通帳そっくりの冊子に印字する仕組みが全国の図書館で普及。</li>
+                    <li>結果/影響：子供の読書意欲向上や、高齢者の外出機会創出につながり、地域コミュニティの活性化に寄与している。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>:
-                <p>北海道は日本屈指の車社会です。住宅ローンの相談を受けた際、建物代だけでなく「将来の車両買い替えコスト」や「維持費」を考慮したキャッシュフロー表の提示が不可欠です。マイカーローンの提案チャンスであると同時に、家計全体を守るアドバイザーとしての真価が問われます。</p>
-                <a href="https://news.yahoo.co.jp/articles/778be95ff2fe298b7d76eb666a30ac29bca21823?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>
+                <p>我々銀行員にとって馴染み深い「通帳」が、金融以外の価値を生んでいる興味深い事例です。地方自治体との連携（公務法人担当）において、読書通帳の導入支援や、地銀のATMネットワークを活かした地域貢献施策のヒントになるかもしれません。また、預金通帳のペーパーレス化が進む中、「形に残る価値」を顧客がどう捉えているかを知る良い会話ネタになります。</p>
+                <a href="https://news.yahoo.co.jp/articles/e7f429ffc361d5bd22b5bf965082fd9f63c431b2?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
             <!-- ニュース2 -->
             <article>
-                <h3>【NISAで一生モノ】2026年5月の欲張り銘柄3選</h3>
-                <b>ロジカル要約</b>:
+                <h3>「センスがないと戦略は作れない」は大間違い。では、戦略を作れる人と作れない人の差は何か</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: NISA制度の定着により、配当金と株主優待の両方を狙う「インカムゲイン重視」の投資スタイルが一般化。</li>
-                    <li><b>事象</b>: 2026年5月に権利確定を迎える、優待利回りと配当利回りのバランスが優れた特定銘柄が注目されている。</li>
-                    <li><b>結果/影響</b>: 短期的な株価変動に一喜一憂せず、長期保有を前提とした資産形成層が市場を支える構造が強まっている。</li>
+                    <li>背景/経緯：ビジネス戦略は一部の天才的な「センス」によるものと思われがちだが、実際は論理的な構築プロセスである。</li>
+                    <li>事象：戦略構築の差は「目的の明確化」と「資源配分の優先順位付け」を構造的に考えられるかどうかに集約される。</li>
+                    <li>結果/影響：特別な才能を待つのではなく、正しいフレームワークと市場分析を反復することで、誰でも質の高い戦略が策定可能になる。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>:
-                <p>GW連休中は、ご家族で将来の資産形成について話すお客様も多いです。窓口では「何を買えばいいか」という問いに対し、目先の利益だけでなく、こうした優待や配当を通じた「投資の楽しさ」や「長期的な保有メリット」を伝え、NISA口座開設の心理的ハードルを下げていきましょう。</p>
-                <a href="https://news.yahoo.co.jp/articles/678e9b0367ef4168c7c880ef9e84feb075baf26c?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>
+                <p>新人行員の皆さんがこれから行う「法人への融資提案」も、一種の戦略立案です。顧客の課題を「センス」で捉えるのではなく、財務データや市場動向から論理的に紐解く姿勢が求められます。担当先の社長と対話する際も、感覚的な話に終始せず、客観的なデータに基づいた「根拠のある提案」を意識することで、信頼を勝ち取ることができます。</p>
+                <a href="https://news.yahoo.co.jp/articles/e7eb30092846b90d6f315e3aa1e06dbc6addba1d?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
             <!-- ニュース3 -->
             <article>
-                <h3>「運が抜群にいい人」が毎日している習慣・ベスト1</h3>
-                <b>ロジカル要約</b>:
+                <h3>このクルマがカワイイって思うのって世界共通なの？ 「35年前の日産車」が海外で大ウケな件</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: ビジネスやプライベートで成功を収める人が共通して持つ「運の良さ」の正体を探る。</li>
-                    <li><b>事象</b>: 最も重要な習慣は、他人の成功を「自分のことのように喜び、肯定的な言葉をかける」ことであると定義。</li>
-                    <li><b>結果/影響</b>: ポジティブなアウトプットが良好な人間関係と情報流入を呼び、結果としてチャンスを掴む確率（運）が向上する。</li>
+                    <li>背景/経緯：1980年代後半から90年代の日本車（JDM）が、その独特のデザインと信頼性で世界的に再評価されている。</li>
+                    <li>事象：特に「パイクカー」と呼ばれるシリーズが、米国等の「25年ルール（クラシックカー輸入解禁）」により、中古車市場で高値取引されている。</li>
+                    <li>結果/影響：日本国内では低価値とされていた旧車が、重要な輸出資源・資産としての側面を持つようになっている。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>:
-                <p>新人時代は覚えることが多く大変ですが、先輩や同僚、そしてお客様の小さなお祝い事に気づき、言葉を添えることが「信頼の貯金」になります。地銀の業務は「究極の人間関係ビジネス」です。相手の幸福に貢献する姿勢が、将来的に大きな案件や紹介を呼び込む「運」に繋がります。</p>
-                <a href="https://news.yahoo.co.jp/articles/28f8f7a255f5c05a826a349ea4b7a199e19168ec?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>
+                <p>北海道は広大な土地柄、自動車関連の取引先（販売店・整備工場・輸出業者）が非常に多いのが特徴です。一見「古い在庫」に見える車両が、実は海外需要により高い担保価値を持つ資産である可能性もあります。顧客の在庫車両に対する知見を深めることは、適切な融資判断や事業承継の支援に直結します。趣味の話題に見えて、実は地域の主要産業である「物流・自動車」の最前線の動きです。</p>
+                <a href="https://news.yahoo.co.jp/articles/b9e775298050294822add9361482451ee0df6f57?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <footer>
-            <small>&copy; 2026 Regional Banking Freshers Assistant. 本資料は研修・情報共有用です。</small>
+            <hr>
+            <p><small>&copy; 2026 北海道地方銀行 新人研修サポートチーム | 今日も一日、誠実に顧客と向き合いましょう。</small></p>
         </footer>
     </main>
 </body>
