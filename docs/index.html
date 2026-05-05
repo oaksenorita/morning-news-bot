@@ -3,101 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年05月04日</title>
+    <title>朝のインサイト | 2026年05月05日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --pico-font-size: 95%;
+            --primary: #2c3e50;
+        }
+        body {
+            background-color: #f8f9fa;
         }
         h1 {
-            border-bottom: 3px solid var(--pico-primary);
-            padding-bottom: 0.5rem;
+            border-left: 8px solid #004a99;
+            padding-left: 15px;
             margin-top: 2rem;
         }
-        article b {
-            display: block;
-            margin-top: 1rem;
-            color: var(--pico-primary);
-        }
         .weather-info {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
+            background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
         }
-        .weather-temp {
-            font-size: 1.2rem;
-            font-weight: bold;
+        .logical-summary {
+            font-size: 0.95rem;
+        }
+        .insight-badge {
+            display: inline-block;
+            background-color: #004a99;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年05月04日)</h1>
-            <p>北海道の未来を担う新人行員の皆様へ。本日の注目ニュースをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年05月05日)</h1>
+            <p>北海道の未来を担う皆様へ、今日押さえておくべきトピックスを厳選してお届けします。</p>
         </header>
 
-        <section>
-            <article>
-                <header><strong>📍 北海道の天気情報</strong></header>
-                <div class="weather-info">
-                    <span>天気: <b>薄い雲</b></span>
-                    <span class="weather-temp">最高気温: 8.86℃</span>
-                    <span class="weather-temp">最低気温: 8.86℃</span>
+        <section id="weather">
+            <article class="weather-info">
+                <header><strong>今日の天気（北海道エリア）</strong></header>
+                <div class="grid">
+                    <div>☁️ <strong>天気:</strong> 曇りがち</div>
+                    <div>🌡️ <strong>最高気温:</strong> 14.12℃</div>
+                    <div>❄️ <strong>最低気温:</strong> 13.86℃</div>
                 </div>
-                <small>※ゴールデンウィーク後半ですが、肌寒い朝です。体調管理に気をつけて業務に励みましょう。</small>
+                <footer>
+                    <small>※連休最終日、少し肌寒い朝です。外出の際は羽織るものをご用意ください。</small>
+                </footer>
             </article>
         </section>
 
-        <section>
-            <h2>今朝の厳選ニュース</h2>
-
-            <!-- ニュース1 -->
+        <section id="news-section">
+            <!-- News 1 -->
             <article>
-                <h3>読んだ本を「通帳」で管理　全国の図書館が「読書通帳」を導入するワケ</h3>
+                <div class="insight-badge">ビジネススキル</div>
+                <h3>仕事ができる人は「すぐやります」と言わない。では、代わりに何と言う？</h3>
                 <b>ロジカル要約</b>
-                <ul>
-                    <li>背景/経緯：デジタル化が進む中、あえてアナログな「通帳」形式で読書履歴を残すニーズが高まっている。</li>
-                    <li>事象：銀行のATMのような専用機で、読んだ本のタイトルや日付を預金通帳そっくりの冊子に印字する仕組みが全国の図書館で普及。</li>
-                    <li>結果/影響：子供の読書意欲向上や、高齢者の外出機会創出につながり、地域コミュニティの活性化に寄与している。</li>
+                <ul class="logical-summary">
+                    <li><b>背景/経緯</b>: 若手社員ほど意欲を示すために「即答」を重視しがちだが、無計画な承諾は業務品質の低下や納期遅延のリスクを孕んでいる。</li>
+                    <li><b>事象</b>: 真にパフォーマンスの高い人は、安易に「すぐ」とは言わず、まず「いつまでに必要か」という納期（ゴール）を明確に確認する。</li>
+                    <li><b>結果/影響</b>: 期待値調整を先に行うことで、自身のタスクを最適化し、常に100%の精度でアウトプットを出す信頼感を勝ち得ている。</li>
                 </ul>
                 <b>地銀視点の深掘り</b>
-                <p>我々銀行員にとって馴染み深い「通帳」が、金融以外の価値を生んでいる興味深い事例です。地方自治体との連携（公務法人担当）において、読書通帳の導入支援や、地銀のATMネットワークを活かした地域貢献施策のヒントになるかもしれません。また、預金通帳のペーパーレス化が進む中、「形に残る価値」を顧客がどう捉えているかを知る良い会話ネタになります。</p>
-                <a href="https://news.yahoo.co.jp/articles/e7f429ffc361d5bd22b5bf965082fd9f63c431b2?source=rss" role="button" class="outline">続きを読む</a>
+                <p>
+                    銀行業務は「正確性」と「期限」が生命線です。上司や先輩からの指示に対し、反射的に「すぐやります」と言うのではなく、「〇時まででよろしいでしょうか？」と逆質問する癖をつけましょう。これは北海道経済を支えるプロとしての第一歩である「工数管理」の意識を醸成します。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/15784399c105b0ce9aa12aeebffbc23287d3920d?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2 -->
+            <!-- News 2 -->
             <article>
-                <h3>「センスがないと戦略は作れない」は大間違い。では、戦略を作れる人と作れない人の差は何か</h3>
+                <div class="insight-badge">マーケット・分析</div>
+                <h3>株で大損する人と数字の裏を読んで儲ける人の決定的な違い</h3>
                 <b>ロジカル要約</b>
-                <ul>
-                    <li>背景/経緯：ビジネス戦略は一部の天才的な「センス」によるものと思われがちだが、実際は論理的な構築プロセスである。</li>
-                    <li>事象：戦略構築の差は「目的の明確化」と「資源配分の優先順位付け」を構造的に考えられるかどうかに集約される。</li>
-                    <li>結果/影響：特別な才能を待つのではなく、正しいフレームワークと市場分析を反復することで、誰でも質の高い戦略が策定可能になる。</li>
+                <ul class="logical-summary">
+                    <li><b>背景/経緯</b>: 情報過多の時代、表面的な株価の変動やニュースに踊らされて損失を出す個人投資家が後を絶たない。</li>
+                    <li><b>事象</b>: 勝ち残る投資家は「再現性」に注目する。単なる増益ではなく、その利益が「どの事業の、どの仕組みから生まれたか」という数字の裏側を分析している。</li>
+                    <li><b>結果/影響</b>: 感情を排除し、独自の「勝ち筋」を持つことで、市場のノイズに左右されない持続的な資産形成が可能となる。</li>
                 </ul>
                 <b>地銀視点の深掘り</b>
-                <p>新人行員の皆さんがこれから行う「法人への融資提案」も、一種の戦略立案です。顧客の課題を「センス」で捉えるのではなく、財務データや市場動向から論理的に紐解く姿勢が求められます。担当先の社長と対話する際も、感覚的な話に終始せず、客観的なデータに基づいた「根拠のある提案」を意識することで、信頼を勝ち取ることができます。</p>
-                <a href="https://news.yahoo.co.jp/articles/e7eb30092846b90d6f315e3aa1e06dbc6addba1d?source=rss" role="button" class="outline">続きを読む</a>
+                <p>
+                    これは融資審査（クレジットアナリシス）の本質に通じます。決算書の数字を単に追うのではなく、取引先が「なぜ儲かっているのか（あるいは苦しんでいるのか）」というビジネスモデルの裏側を洞察する力は、将来、企業の成長を支援するリレーションシップ・バンキングにおいて不可欠なスキルとなります。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/12361f71f7fb9a27d72a06e401738a31a08d102d?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3 -->
+            <!-- News 3 -->
             <article>
-                <h3>このクルマがカワイイって思うのって世界共通なの？ 「35年前の日産車」が海外で大ウケな件</h3>
+                <div class="insight-badge">地域経済・ライフスタイル</div>
+                <h3>英国SWIFT製「スプライト アルパイン4」：割安な約600万円で実現した上質な一台</h3>
                 <b>ロジカル要約</b>
-                <ul>
-                    <li>背景/経緯：1980年代後半から90年代の日本車（JDM）が、その独特のデザインと信頼性で世界的に再評価されている。</li>
-                    <li>事象：特に「パイクカー」と呼ばれるシリーズが、米国等の「25年ルール（クラシックカー輸入解禁）」により、中古車市場で高値取引されている。</li>
-                    <li>結果/影響：日本国内では低価値とされていた旧車が、重要な輸出資源・資産としての側面を持つようになっている。</li>
+                <ul class="logical-summary">
+                    <li><b>背景/経緯</b>: 国内でアウトドア・観光需要が多様化する中、高価な自走式キャンピングカーに代わり、牽引式のトレーラーが注目されている。</li>
+                    <li><b>事象</b>: 欧州最大手のSWIFT社が、日本の道路事情に適した左側ドア仕様を導入。高品質な居住空間を維持しつつ、自走式の半額近い価格設定を実現。</li>
+                    <li><b>結果/影響</b>: 富裕層だけでなく、アクティブシニアや地方での拠点構築を考える層への普及が期待され、関連レジャー市場が活性化。</li>
                 </ul>
                 <b>地銀視点の深掘り</b>
-                <p>北海道は広大な土地柄、自動車関連の取引先（販売店・整備工場・輸出業者）が非常に多いのが特徴です。一見「古い在庫」に見える車両が、実は海外需要により高い担保価値を持つ資産である可能性もあります。顧客の在庫車両に対する知見を深めることは、適切な融資判断や事業承継の支援に直結します。趣味の話題に見えて、実は地域の主要産業である「物流・自動車」の最前線の動きです。</p>
-                <a href="https://news.yahoo.co.jp/articles/b9e775298050294822add9361482451ee0df6f57?source=rss" role="button" class="outline">続きを読む</a>
+                <p>
+                    広大な大地を持つ北海道は、キャンピングカー観光の聖地です。道内の自動車販売店や、キャンプ場を運営する観光関連の取引先にとって、こうした「比較的手の届きやすい高付加価値商材」の普及は新たなビジネスチャンスです。雑談の中で「最近はトレーラータイプも人気だそうですね」とトレンドを振ってみるのも、顧客との距離を縮める良いきっかけになります。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/a130cd769cb6364e90e6984925fbd9b73f74b60b?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <footer>
             <hr>
-            <p><small>&copy; 2026 北海道地方銀行 新人研修サポートチーム | 今日も一日、誠実に顧客と向き合いましょう。</small></p>
+            <p style="text-align: center;"><small>&copy; 2026 北海道地方銀行 新人研修サポートチーム</small></p>
         </footer>
     </main>
 </body>
