@@ -3,96 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年05月06日</title>
+    <title>朝のインサイト | 2026年05月07日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #004a99;
+            --primary: #1e5a96;
         }
-        h1 { margin-top: 2rem; border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; }
-        .weather-info { display: flex; gap: 2rem; align-items: center; }
-        .insight-label { color: var(--primary); font-weight: bold; display: block; margin-bottom: 0.5rem; }
-        .summary-list { margin-bottom: 1.5rem; }
-        article { border-top: 5px solid var(--primary); }
+        h1 {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        .weather-info {
+            background-color: #f0f4f8;
+            border-left: 10px solid #90a4ae;
+        }
+        .insight-label {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+        }
+        ul {
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年05月06日)</h1>
-            <p>北海道の未来を担う新人行員の皆様へ。本日の注目ニュースをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年05月07日)</h1>
+            <p>北海道の未来を担う新人の皆様へ、今朝の重要トピックをお届けします。</p>
         </header>
 
         <section id="weather">
-            <article>
-                <header><strong>📍 北海道の概況</strong></header>
-                <div class="weather-info">
-                    <div><strong>天気:</strong> 曇りがち</div>
-                    <div><strong>最高気温:</strong> 12.86℃</div>
-                    <div><strong>最低気温:</strong> 12.45℃</div>
+            <article class="weather-info">
+                <header><strong>📍 本日の道内の概況</strong></header>
+                <div class="grid">
+                    <div><strong>天気:</strong> 霧</div>
+                    <div><strong>最高気温:</strong> 11.9℃</div>
+                    <div><strong>最低気温:</strong> 10.86℃</div>
                 </div>
                 <footer>
-                    <small>※大型連休明け、気温の変動による体調管理にご留意ください。</small>
+                    <small>※霧による視界不良が予想されます。外回りや通勤の際は交通安全に十分ご注意ください。</small>
                 </footer>
             </article>
         </section>
 
         <section id="news-section">
-            <h2>厳選ニュース解説</h2>
-
-            <!-- ニュース1 -->
+            <!-- ニュース1：東証最高値 -->
             <article>
-                <h3>退職一時金を「廃止」する会社は増えるのか</h3>
-                <span class="insight-label">ロジカル要約</span>
-                <ul class="summary-list">
-                    <li><b>背景/経緯:</b> 労働市場の流動化が進み、従来の「終身雇用・年功序列」を前提とした退職金制度が優秀な若手人材の確保の妨げになっている。</li>
-                    <li><b>事象:</b> 退職一時金を廃止し、その分を月々の給与やDC（確定拠出年金）に上乗せする「給与シフト」を選択する企業が急増。</li>
-                    <li><b>結果/影響:</b> 企業は固定費の不確実性を排除できる一方、従業員は自ら資産形成を行うリテラシーが求められる時代へ。</li>
+                <div class="insight-label">マーケット・経済</div>
+                <h3>東証6万2833円終値最高値を更新、トヨタ、ホンダなど自動車株は下落</h3>
+                <b>ロジカル要約</b>:
+                <ul>
+                    <li><b>背景/経緯</b>: 2024年からの上昇気流を維持し、歴史的な株高水準が継続。海外投資家からの強い買い意欲が下支えとなっている。</li>
+                    <li><b>事象</b>: 日経平均株価が6万2833円という驚異的な最高値を更新。一方で、円高進行への警戒感から輸出の主力である自動車株には利益確定売りが出た。</li>
+                    <li><b>結果/影響</b>: 資産運用への関心がかつてないほど高まる一方、製造業を支えるサプライヤーが多い地方経済には、株高の実感が届きにくい歪みが生じている。</li>
                 </ul>
-                <span class="insight-label">地銀視点の深掘り</span>
-                <p>
-                    北海道内の中小企業においても、事業承継や採用難を背景に賃金体系の見直しは急務です。取引先企業が退職金制度の改定を検討される際は、従業員向けの「資産形成セミナー（NISA/iDeCo等）」の実施をセットで提案し、行員としてのプレゼンスを高める絶好の機会となります。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/eb6b625a84c9ce01ed48407b902c582066341b15?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>:
+                <p>日経平均の6万円台到達は、お客様との会話で必ず出る話題です。特に資産運用（NISAやiDeCo）を検討中の方には追い風ですが、道内の自動車部品メーカー等と取引がある場合は、株価下落の背景にある為替動向や受注見通しをヒアリングするきっかけにしましょう。景気の「数字」と「実感」の乖離に寄り添う姿勢が求められます。</p>
+                <a href="https://news.yahoo.co.jp/articles/9124eba9bbaa554269e170e8c650dfe6da9bf4d9?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2 -->
+            <!-- ニュース2：仕事の切り替え -->
             <article>
-                <h3>第1次オイルショックと令和のオイルショックの比較</h3>
-                <span class="insight-label">ロジカル要約</span>
-                <ul class="summary-list">
-                    <li><b>背景/経緯:</b> 地政学リスクの長期化と、脱炭素への過度な投資シフトにより、化石燃料の供給構造が脆弱になっている。</li>
-                    <li><b>事象:</b> 1970年代の供給不足と比較し、現在は「資源ナショナリズム」に加え、精製能力の不足という多層的なリスクに直面。</li>
-                    <li><b>結果/影響:</b> エネルギー価格の高止まりが常態化し、特に輸入依存度の高い日本経済にとって深刻なインフレ圧力に。</li>
+                <div class="insight-label">自己研鑽・キャリア</div>
+                <h3>職場の出世する人は「うまく忘れる」。休みと仕事をどう切り替えているのか</h3>
+                <b>ロジカル要約</b>:
+                <ul>
+                    <li><b>背景/経緯</b>: 2026年の労働環境において、タイパ（タイムパフォーマンス）とメンタルヘルス維持の重要性が再認識されている。</li>
+                    <li><b>事象</b>: 成果を出すリーダーほど、オフの時間に「仕事の記憶を一時停止」させ、脳をリフレッシュさせる技術に長けていることが判明。</li>
+                    <li><b>結果/影響</b>: オンオフの切り替えが明確になることで、集中力が高まり、結果として意思決定の質とスピードが向上する。</li>
                 </ul>
-                <span class="insight-label">地銀視点の深掘り</span>
-                <p>
-                    エネルギーコストの上昇は、北海道の基幹産業である農業や物流、観光業に直撃します。融資先の決算書を見る際は、売上高だけでなく、エネルギー関連コストの推移を注視しましょう。省エネ設備導入のための設備投資資金（グリーンローン）の提案につなげるのが行員の腕の見せ所です。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/3e56f26c649714ec03039ba1867afa04c5286964?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>:
+                <p>銀行業務は細かな数字や法規制を扱うため、頭が休まりにくい職業です。しかし、GW明けのこの時期に「疲れ」を溜め込むと、ミスに繋がります。若手の皆さんは、休日は北海道の豊かな自然を楽しんで「忘れる」練習をしてください。リフレッシュした状態で月曜日に臨むことが、結果的にお客様への誠実な対応に繋がります。</p>
+                <a href="https://news.yahoo.co.jp/articles/832ea6621cc9f00b94592298a6c26a8d9dcbe7b7?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3 -->
+            <!-- ニュース3：思考の落とし穴 -->
             <article>
-                <h3>円が大暴落、“1ドル360円時代”への懸念と政治不信</h3>
-                <span class="insight-label">ロジカル要約</span>
-                <ul class="summary-list">
-                    <li><b>背景/経緯:</b> 国内外の金利差に加え、政治的空白や経済政策への信頼低下が円売りに拍車をかけている。</li>
-                    <li><b>事象:</b> 一部の市場関係者から、戦後の固定相場制である1ドル360円水準まで購買力が低下する可能性が指摘される。</li>
-                    <li><b>結果/影響:</b> 輸入価格の激騰による家計の圧迫と、海外資本による国内資産（土地・企業）の買い叩きが加速。</li>
+                <div class="insight-label">ビジネススキル</div>
+                <h3>「勉強熱心なのに成果が出ない人」が、実は陥っている思考の落とし穴</h3>
+                <b>ロジカル要約</b>:
+                <ul>
+                    <li><b>背景/経緯</b>: 知識習得（インプット）が容易な現代において、情報を収集すること自体が目的化してしまう「学習の罠」が増加している。</li>
+                    <li><b>事象</b>: 成果が出ない人は「正解」を外に求めるが、成果を出す人は「目の前の課題」を解決するために必要な知識だけを逆算して抽出している。</li>
+                    <li><b>結果/影響</b>: 知識量とアウトプット（業績や顧客満足）が比例しなくなり、努力が空回りするリスクがある。</li>
                 </ul>
-                <span class="insight-label">地銀視点の深掘り</span>
-                <p>
-                    円安はインバウンド需要には追い風ですが、原材料を輸入に頼る地元メーカーにとっては死活問題です。為替予約やデリバティブを用いたリスクヘッジの提案はもちろん、海外販路開拓を目指す顧客には、円安を逆手に取った輸出拡大のコンサルティングを検討しましょう。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/580654966371c3cab1a9048d970c879a998b92d3?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>:
+                <p>資格試験（銀行業務検定やFP）の勉強に追われる時期ですが、「知識があること」と「融資の相談に乗れること」は別物です。勉強した知識をどう使えば、地元企業の社長の悩みを解決できるか？という「出口」を常に意識しましょう。テストの点数ではなく、お客様の笑顔をゴールに設定する思考の転換が必要です。</p>
+                <a href="https://news.yahoo.co.jp/articles/855148b715ce311fef53bb7124516b43e3b44765?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
-    </main>
 
-    <footer class="container">
-        <hr>
-        <p><small>&copy; 2026 北海道地方銀行・新人研修サポートチーム</small></p>
-    </footer>
+        <footer style="text-align: center; margin-top: 3rem; padding-bottom: 2rem;">
+            <hr>
+            <p><small>&copy; 2026 Regional Bank Newcomer Assistant. 今日の努力が、地域の明日を創ります。</small></p>
+        </footer>
+    </main>
 </body>
 </html>
