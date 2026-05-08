@@ -3,106 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年05月07日</title>
+    <title>朝のインサイト | 2026年05月08日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #1e5a96;
+            --primary: #1b5e20;
         }
-        h1 {
-            border-bottom: 3px solid var(--primary);
-            padding-bottom: 0.5rem;
-            margin-top: 2rem;
-        }
-        .weather-info {
-            background-color: #f0f4f8;
-            border-left: 10px solid #90a4ae;
-        }
-        .insight-label {
-            display: inline-block;
-            background: var(--primary);
-            color: white;
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            margin-bottom: 0.5rem;
-            font-size: 0.8rem;
-        }
-        ul {
-            font-size: 0.95rem;
-        }
+        h1 { margin-top: 2rem; border-bottom: 3px solid var(--primary); padding-bottom: 0.5rem; }
+        h3 { color: var(--primary); }
+        .weather-info { display: flex; gap: 2rem; justify-content: center; font-size: 1.2rem; }
+        b { color: #2e7d32; }
+        article { border-top: 5px solid var(--primary); }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年05月07日)</h1>
-            <p>北海道の未来を担う新人の皆様へ、今朝の重要トピックをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年05月08日)</h1>
         </header>
 
         <section id="weather">
-            <article class="weather-info">
-                <header><strong>📍 本日の道内の概況</strong></header>
-                <div class="grid">
-                    <div><strong>天気:</strong> 霧</div>
-                    <div><strong>最高気温:</strong> 11.9℃</div>
-                    <div><strong>最低気温:</strong> 10.86℃</div>
+            <article>
+                <header><strong>今日の北海道（札幌近郊）の天気</strong></header>
+                <div class="weather-info">
+                    <span>天気: <strong>曇りがち</strong></span>
+                    <span>最高気温: <strong>11.34℃</strong></span>
+                    <span>最低気温: <strong>10.86℃</strong></span>
                 </div>
-                <footer>
-                    <small>※霧による視界不良が予想されます。外回りや通勤の際は交通安全に十分ご注意ください。</small>
-                </footer>
+                <small style="display: block; text-align: center; margin-top: 10px;">
+                    ※肌寒い一日となります。外回りにはスプリングコートが必須です。
+                </small>
             </article>
         </section>
 
-        <section id="news-section">
-            <!-- ニュース1：東証最高値 -->
+        <section id="news-analysis">
             <article>
-                <div class="insight-label">マーケット・経済</div>
-                <h3>東証6万2833円終値最高値を更新、トヨタ、ホンダなど自動車株は下落</h3>
+                <h3>上場企業の夏ボーナス、平均88万円に。なぜ「月数減」でも増えたのか</h3>
                 <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯</b>: 2024年からの上昇気流を維持し、歴史的な株高水準が継続。海外投資家からの強い買い意欲が下支えとなっている。</li>
-                    <li><b>事象</b>: 日経平均株価が6万2833円という驚異的な最高値を更新。一方で、円高進行への警戒感から輸出の主力である自動車株には利益確定売りが出た。</li>
-                    <li><b>結果/影響</b>: 資産運用への関心がかつてないほど高まる一方、製造業を支えるサプライヤーが多い地方経済には、株高の実感が届きにくい歪みが生じている。</li>
+                    <li><b>背景/経緯</b>: 近年の賃上げ（ベースアップ）の進展により、社員の基本給が大幅に底上げされている。</li>
+                    <li><b>事象</b>: 2026年夏のボーナス支給において、支給「月数」を据え置き、あるいは微減させる企業がある一方で、支給「金額」は前年比増の平均88万円に達した。</li>
+                    <li><b>結果/影響</b>: 企業の支払能力は高まっているが、固定費増（基本給増）を警戒し、賞与の「月数」調整で人件費バランスを取る傾向が見られる。</li>
                 </ul>
                 <b>地銀視点の深掘り</b>:
-                <p>日経平均の6万円台到達は、お客様との会話で必ず出る話題です。特に資産運用（NISAやiDeCo）を検討中の方には追い風ですが、道内の自動車部品メーカー等と取引がある場合は、株価下落の背景にある為替動向や受注見通しをヒアリングするきっかけにしましょう。景気の「数字」と「実感」の乖離に寄り添う姿勢が求められます。</p>
-                <a href="https://news.yahoo.co.jp/articles/9124eba9bbaa554269e170e8c650dfe6da9bf4d9?source=rss" role="button" class="outline">続きを読む</a>
+                <p>
+                    北海道内でも大手企業の支店や好業績の地元メーカーに勤める顧客において、可処分所得の増加が見込まれます。この時期は「資産運用（NISA）」や「住宅ローンの繰り上げ返済」の提案チャンスです。また、経営者との会話では「賃上げによる固定費増をどう賞与で調整するか」という他社のベンチマーク事例として話題に出すと、非常に喜ばれます。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/6fcc2d1eff56031d298d6b3e295d8fe8359a6aeb?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2：仕事の切り替え -->
             <article>
-                <div class="insight-label">自己研鑽・キャリア</div>
-                <h3>職場の出世する人は「うまく忘れる」。休みと仕事をどう切り替えているのか</h3>
+                <h3>Nintendo Switch 2値上げにSNSで悲鳴。価格改定による広範な影響</h3>
                 <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯</b>: 2026年の労働環境において、タイパ（タイムパフォーマンス）とメンタルヘルス維持の重要性が再認識されている。</li>
-                    <li><b>事象</b>: 成果を出すリーダーほど、オフの時間に「仕事の記憶を一時停止」させ、脳をリフレッシュさせる技術に長けていることが判明。</li>
-                    <li><b>結果/影響</b>: オンオフの切り替えが明確になることで、集中力が高まり、結果として意思決定の質とスピードが向上する。</li>
+                    <li><b>背景/経緯</b>: 世界的な半導体コストの高騰、物流費の増大、および為替の影響が長期化。</li>
+                    <li><b>事象</b>: 次世代機「Switch 2（仮）」の想定価格が従来機より上昇。同時に現行機種や周辺機器の価格改定も相次いでいる。</li>
+                    <li><b>結果/影響</b>: 消費者の買い控えや、家計における娯楽費の圧迫が懸念される一方、「発売前の駆け込み需要」が発生している。</li>
                 </ul>
                 <b>地銀視点の深掘り</b>:
-                <p>銀行業務は細かな数字や法規制を扱うため、頭が休まりにくい職業です。しかし、GW明けのこの時期に「疲れ」を溜め込むと、ミスに繋がります。若手の皆さんは、休日は北海道の豊かな自然を楽しんで「忘れる」練習をしてください。リフレッシュした状態で月曜日に臨むことが、結果的にお客様への誠実な対応に繋がります。</p>
-                <a href="https://news.yahoo.co.jp/articles/832ea6621cc9f00b94592298a6c26a8d9dcbe7b7?source=rss" role="button" class="outline">続きを読む</a>
+                <p>
+                    こうした「身近な製品の値上げ」は、個人の顧客が最もインフレを実感する瞬間です。窓口での雑談から、最近の物価高に対する不安を聞き出し、教育資金や老後資金の目減り対策としての分散投資を勧めるきっかけにしましょう。また、道内の小売業や玩具店等、在庫管理と資金繰りの変化についても注意深く観察が必要です。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/2121a2e06dcadecf8006493dd6316660ae7970a1?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3：思考の落とし穴 -->
             <article>
-                <div class="insight-label">ビジネススキル</div>
-                <h3>「勉強熱心なのに成果が出ない人」が、実は陥っている思考の落とし穴</h3>
+                <h3>SUVカスタム！ TWSの新作鍛造ホイールが放つ絶妙なバランス</h3>
                 <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯</b>: 知識習得（インプット）が容易な現代において、情報を収集すること自体が目的化してしまう「学習の罠」が増加している。</li>
-                    <li><b>事象</b>: 成果が出ない人は「正解」を外に求めるが、成果を出す人は「目の前の課題」を解決するために必要な知識だけを逆算して抽出している。</li>
-                    <li><b>結果/影響</b>: 知識量とアウトプット（業績や顧客満足）が比例しなくなり、努力が空回りするリスクがある。</li>
+                    <li><b>背景/経緯</b>: アウトドアブームの定着により、街乗りとオフロードの両立を求める「オーバーランダー」スタイルが市場で人気。</li>
+                    <li><b>事象</b>: TWSが街中での美しさと悪路走破性を兼ね備えた、SUV向けの新作鍛造ホイールをリリース。</li>
+                    <li><b>結果/影響</b>: 高単価・高品質なアフターパーツ市場が活況を呈しており、自動車カスタマイズ文化が成熟化している。</li>
                 </ul>
                 <b>地銀視点の深掘り</b>:
-                <p>資格試験（銀行業務検定やFP）の勉強に追われる時期ですが、「知識があること」と「融資の相談に乗れること」は別物です。勉強した知識をどう使えば、地元企業の社長の悩みを解決できるか？という「出口」を常に意識しましょう。テストの点数ではなく、お客様の笑顔をゴールに設定する思考の転換が必要です。</p>
-                <a href="https://news.yahoo.co.jp/articles/855148b715ce311fef53bb7124516b43e3b44765?source=rss" role="button" class="outline">続きを読む</a>
+                <p>
+                    北海道は全国的にもSUV比率が非常に高く、冬タイヤの需要も含め、足回りへの関心が強い地域です。取引先のカーディーラーや整備工場において、こうした「高単価なオプション品」の売れ行きが良いか確認してみてください。趣味への投資が盛んな層は、マイカーローンやフリーローンの潜在的な顧客層でもあります。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/3b01c5961da8b9f8a01403b3583e5bfd685312bb?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
-        <footer style="text-align: center; margin-top: 3rem; padding-bottom: 2rem;">
-            <hr>
-            <p><small>&copy; 2026 Regional Bank Newcomer Assistant. 今日の努力が、地域の明日を創ります。</small></p>
+        <footer style="margin-top: 3rem; text-align: center;">
+            <small>© 2026 北海道地方銀行・新人研修サポートチーム</small>
         </footer>
     </main>
 </body>
