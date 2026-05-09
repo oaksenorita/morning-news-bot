@@ -3,89 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年05月08日</title>
+    <title>朝のインサイト | 2026年05月09日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #1b5e20;
+            --primary: #007d32; /* 北海道の自然をイメージしたグリーン */
         }
-        h1 { margin-top: 2rem; border-bottom: 3px solid var(--primary); padding-bottom: 0.5rem; }
-        h3 { color: var(--primary); }
-        .weather-info { display: flex; gap: 2rem; justify-content: center; font-size: 1.2rem; }
-        b { color: #2e7d32; }
-        article { border-top: 5px solid var(--primary); }
+        body {
+            background-color: #f8f9fa;
+        }
+        header {
+            padding: 2rem 0;
+            text-align: center;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+        }
+        .weather-info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+        .banker-insight {
+            background-color: #e8f5e9;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+        .logical-summary b {
+            color: #333;
+        }
+        ul {
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 <body>
-    <main class="container">
-        <header>
-            <h1>☀️ 朝のインサイト (2026年05月08日)</h1>
-        </header>
 
-        <section id="weather">
-            <article>
-                <header><strong>今日の北海道（札幌近郊）の天気</strong></header>
-                <div class="weather-info">
-                    <span>天気: <strong>曇りがち</strong></span>
-                    <span>最高気温: <strong>11.34℃</strong></span>
-                    <span>最低気温: <strong>10.86℃</strong></span>
-                </div>
-                <small style="display: block; text-align: center; margin-top: 10px;">
-                    ※肌寒い一日となります。外回りにはスプリングコートが必須です。
-                </small>
-            </article>
-        </section>
+<main class="container">
+    <header>
+        <h1>☀️ 朝のインサイト (2026年05月09日)</h1>
+        <p>おはようございます。北海道の未来を担う一歩として、本日の重要トピックを整理しましょう。</p>
+    </header>
 
-        <section id="news-analysis">
-            <article>
-                <h3>上場企業の夏ボーナス、平均88万円に。なぜ「月数減」でも増えたのか</h3>
-                <b>ロジカル要約</b>:
+    <section>
+        <article>
+            <header><strong>📍 本日の北海道（札幌周辺）の天気</strong></header>
+            <div class="weather-info">
+                <span>☁️ 天気: <strong>雲</strong></span>
+                <span>🌡️ 最高気温: <strong>11.34℃</strong></span>
+                <span>❄️ 最低気温: <strong>9.86℃</strong></span>
+            </div>
+            <footer>
+                <small>※少し肌寒い朝です。外回りの際はスプリングコートやジャケットのご用意を。</small>
+            </footer>
+        </article>
+    </section>
+
+    <section>
+        <h2>🗞️ 厳選ニュース解説</h2>
+
+        <!-- ニュース1 -->
+        <article>
+            <h3>20年後には「女性4割・男性5割が一生子なし」の社会に…日本の少子化が止まらない“本当の理由”</h3>
+            <div class="logical-summary">
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 近年の賃上げ（ベースアップ）の進展により、社員の基本給が大幅に底上げされている。</li>
-                    <li><b>事象</b>: 2026年夏のボーナス支給において、支給「月数」を据え置き、あるいは微減させる企業がある一方で、支給「金額」は前年比増の平均88万円に達した。</li>
-                    <li><b>結果/影響</b>: 企業の支払能力は高まっているが、固定費増（基本給増）を警戒し、賞与の「月数」調整で人件費バランスを取る傾向が見られる。</li>
+                    <li><b>背景/経緯</b>: 非婚化の進行に加え、経済的不安や価値観の多様化により、従来の「結婚して子供を持つ」モデルが崩壊。</li>
+                    <li><b>事象</b>: 20年後には未婚・子なし世帯が激増し、人口構造が劇的に変化する。</li>
+                    <li><b>結果/影響</b>: 労働力不足の深刻化だけでなく、消費市場の縮小、社会保障制度の維持が困難に。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>:
-                <p>
-                    北海道内でも大手企業の支店や好業績の地元メーカーに勤める顧客において、可処分所得の増加が見込まれます。この時期は「資産運用（NISA）」や「住宅ローンの繰り上げ返済」の提案チャンスです。また、経営者との会話では「賃上げによる固定費増をどう賞与で調整するか」という他社のベンチマーク事例として話題に出すと、非常に喜ばれます。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/6fcc2d1eff56031d298d6b3e295d8fe8359a6aeb?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
+            </div>
+            <div class="banker-insight">
+                <b>地銀視点の深掘り</b>
+                <p>北海道は全国平均よりも人口減少・少子高齢化が先行して進んでいます。将来的に「単身世帯」が主要顧客となるため、多世代同居前提の住宅ローンだけでなく、単身者向けの資産管理や死後事務委任などの相続ニーズが急増します。取引先企業には「人手不足」への対策（省人化投資）を早急に提案するきっかけになります。</p>
+            </div>
+            <a href="https://news.yahoo.co.jp/articles/637d5287706801d25a77ba6343b49de5bcc28098?source=rss" role="button" class="outline">続きを読む</a>
+        </article>
 
-            <article>
-                <h3>Nintendo Switch 2値上げにSNSで悲鳴。価格改定による広範な影響</h3>
-                <b>ロジカル要約</b>:
+        <!-- ニュース2 -->
+        <article>
+            <h3>【投資歴70年 資産25億円】「金はもう、いらんねん」89歳の現役投資家が教えてくれた「本当の投資の面白さ」</h3>
+            <div class="logical-summary">
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 世界的な半導体コストの高騰、物流費の増大、および為替の影響が長期化。</li>
-                    <li><b>事象</b>: 次世代機「Switch 2（仮）」の想定価格が従来機より上昇。同時に現行機種や周辺機器の価格改定も相次いでいる。</li>
-                    <li><b>結果/影響</b>: 消費者の買い控えや、家計における娯楽費の圧迫が懸念される一方、「発売前の駆け込み需要」が発生している。</li>
+                    <li><b>背景/経緯</b>: 新NISAの開始などで「資産形成」がブームだが、数値的な利益ばかりが強調される現状。</li>
+                    <li><b>事象</b>: 89歳のベテラン投資家が、投資とは単なる金儲けではなく「社会参加」であり「世の中を学ぶこと」だと説く。</li>
+                    <li><b>結果/影響</b>: 投資に対する精神的な豊かさや、企業の成長を応援する視点の重要性が再認識されている。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>:
-                <p>
-                    こうした「身近な製品の値上げ」は、個人の顧客が最もインフレを実感する瞬間です。窓口での雑談から、最近の物価高に対する不安を聞き出し、教育資金や老後資金の目減り対策としての分散投資を勧めるきっかけにしましょう。また、道内の小売業や玩具店等、在庫管理と資金繰りの変化についても注意深く観察が必要です。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/2121a2e06dcadecf8006493dd6316660ae7970a1?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
+            </div>
+            <div class="banker-insight">
+                <b>地銀視点の深掘り</b>
+                <p>窓口でお会いする富裕層の高齢者の方々は、既に十分な資産をお持ちの方も多いです。そうしたお客様に対し、単なる利回り提案ではなく、「地元企業の成長を応援する」「お孫さんの世代に豊かな社会を残す」といった、情緒的な価値を絡めた提案が信頼構築に繋がります。新人の皆さんも、数字の裏にある「企業のストーリー」を学ぶ姿勢を持ちましょう。</p>
+            </div>
+            <a href="https://news.yahoo.co.jp/articles/c6d100f52af3bb6a2762cee023269826c45998d3?source=rss" role="button" class="outline">続きを読む</a>
+        </article>
 
-            <article>
-                <h3>SUVカスタム！ TWSの新作鍛造ホイールが放つ絶妙なバランス</h3>
-                <b>ロジカル要約</b>:
+        <!-- ニュース3 -->
+        <article>
+            <h3>職場で信頼される人がめちゃくちゃ大事にしている「小さな習慣」・ベスト1</h3>
+            <div class="logical-summary">
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: アウトドアブームの定着により、街乗りとオフロードの両立を求める「オーバーランダー」スタイルが市場で人気。</li>
-                    <li><b>事象</b>: TWSが街中での美しさと悪路走破性を兼ね備えた、SUV向けの新作鍛造ホイールをリリース。</li>
-                    <li><b>結果/影響</b>: 高単価・高品質なアフターパーツ市場が活況を呈しており、自動車カスタマイズ文化が成熟化している。</li>
+                    <li><b>背景/経緯</b>: 専門スキルや知識も重要だが、組織において信頼の土台となるのは日常の些細な行動。</li>
+                    <li><b>事象</b>: 最も重要な習慣として「期限を守る」「即レスをする」といった当たり前の徹底が挙げられている。</li>
+                    <li><b>結果/影響</b>: 小さな約束の積み重ねが、大きなプロジェクトを任される際の決定打となる。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>:
-                <p>
-                    北海道は全国的にもSUV比率が非常に高く、冬タイヤの需要も含め、足回りへの関心が強い地域です。取引先のカーディーラーや整備工場において、こうした「高単価なオプション品」の売れ行きが良いか確認してみてください。趣味への投資が盛んな層は、マイカーローンやフリーローンの潜在的な顧客層でもあります。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/3b01c5961da8b9f8a01403b3583e5bfd685312bb?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
-        </section>
+            </div>
+            <div class="banker-insight">
+                <b>地銀視点の深掘り</b>
+                <p>銀行員にとって、最も重要な商品は「信頼」です。北海道の地域社会は繋がりが非常に密であり、「あそこの銀行の担当者は返信が早い」「約束を必ず守る」という評判はすぐに広がります。新人として知識で先輩に勝つのは難しいですが、「レスポンスの速さ」と「正確な期日遵守」は今日からでも勝てるポイントです。これが将来の大きな顧客獲得に繋がります。</p>
+            </div>
+            <a href="https://news.yahoo.co.jp/articles/7e3d5bf61e0a12675185edfb5134a3865110c024?source=rss" role="button" class="outline">続きを読む</a>
+        </article>
+    </section>
 
-        <footer style="margin-top: 3rem; text-align: center;">
-            <small>© 2026 北海道地方銀行・新人研修サポートチーム</small>
-        </footer>
-    </main>
+    <footer style="text-align: center; margin-top: 3rem; padding-bottom: 2rem;">
+        <hr>
+        <p><small>&copy; 2026 北海道地方銀行 新人研修サポートチーム</small></p>
+    </footer>
+</main>
+
 </body>
 </html>
