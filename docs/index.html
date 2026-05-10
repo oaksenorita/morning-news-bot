@@ -3,128 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年05月09日</title>
+    <title>朝のインサイト | 北海道地銀新人向け</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #007d32; /* 北海道の自然をイメージしたグリーン */
+            --pico-font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
         }
-        body {
-            background-color: #f8f9fa;
-        }
-        header {
-            padding: 2rem 0;
-            text-align: center;
-        }
-        h1 {
-            color: var(--primary);
-            font-size: 2.5rem;
-        }
-        .weather-info {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            font-size: 1.2rem;
-        }
-        .banker-insight {
-            background-color: #e8f5e9;
-            padding: 1rem;
-            border-radius: 8px;
-            border-left: 4px solid var(--primary);
-        }
-        .logical-summary b {
-            color: #333;
-        }
-        ul {
-            margin-bottom: 1rem;
-        }
+        h1 { border-bottom: 3px solid var(--pico-primary); padding-bottom: 0.5rem; }
+        .weather-info { display: flex; gap: 2rem; align-items: center; }
+        .insight-card b { color: var(--pico-primary); }
     </style>
 </head>
 <body>
+    <main class="container">
+        <header>
+            <h1>☀️ 朝のインサイト (2026年05月10日)</h1>
+            <p>北海道の未来を担う新人の皆様、おはようございます。本日の重要トピックをまとめました。</p>
+        </header>
 
-<main class="container">
-    <header>
-        <h1>☀️ 朝のインサイト (2026年05月09日)</h1>
-        <p>おはようございます。北海道の未来を担う一歩として、本日の重要トピックを整理しましょう。</p>
-    </header>
+        <section id="weather">
+            <article>
+                <header><strong>📍 北海道の気象概況</strong></header>
+                <div class="weather-info">
+                    <span><strong>天気:</strong> 曇りがち</span>
+                    <span><strong>最高気温:</strong> 12.86℃</span>
+                    <span><strong>最低気温:</strong> 12.45℃</span>
+                </div>
+                <footer>
+                    <small>※5月中旬としては肌寒い朝です。外出時は上着を忘れずに。営業周りの際は体調管理も仕事のうちです。</small>
+                </footer>
+            </article>
+        </section>
 
-    <section>
-        <article>
-            <header><strong>📍 本日の北海道（札幌周辺）の天気</strong></header>
-            <div class="weather-info">
-                <span>☁️ 天気: <strong>雲</strong></span>
-                <span>🌡️ 最高気温: <strong>11.34℃</strong></span>
-                <span>❄️ 最低気温: <strong>9.86℃</strong></span>
-            </div>
-            <footer>
-                <small>※少し肌寒い朝です。外回りの際はスプリングコートやジャケットのご用意を。</small>
-            </footer>
-        </article>
-    </section>
-
-    <section>
-        <h2>🗞️ 厳選ニュース解説</h2>
-
-        <!-- ニュース1 -->
-        <article>
-            <h3>20年後には「女性4割・男性5割が一生子なし」の社会に…日本の少子化が止まらない“本当の理由”</h3>
-            <div class="logical-summary">
+        <section id="news">
+            <article class="insight-card">
+                <h3>【ゴールドマン・サックスの元トレーダーが教える】資産が減ってしまう「高配当株のワナ」</h3>
                 <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 非婚化の進行に加え、経済的不安や価値観の多様化により、従来の「結婚して子供を持つ」モデルが崩壊。</li>
-                    <li><b>事象</b>: 20年後には未婚・子なし世帯が激増し、人口構造が劇的に変化する。</li>
-                    <li><b>結果/影響</b>: 労働力不足の深刻化だけでなく、消費市場の縮小、社会保障制度の維持が困難に。</li>
+                    <li><b>背景/経緯:</b> NISAの普及やインフレ対策として、個人投資家の間で「高配当株投資」がかつてないブームとなっている。</li>
+                    <li><b>事象:</b> 利回りの高さだけを基準に銘柄を選ぶと、株価そのものが下落し続ける「減配リスク」や「衰退産業への投資」に陥りやすい。</li>
+                    <li><b>結果/影響:</b> 配当金以上の損失を抱える「トータルリターンの悪化」を招き、資産形成の本来の目的から逸脱する。</li>
                 </ul>
-            </div>
-            <div class="banker-insight">
                 <b>地銀視点の深掘り</b>
-                <p>北海道は全国平均よりも人口減少・少子高齢化が先行して進んでいます。将来的に「単身世帯」が主要顧客となるため、多世代同居前提の住宅ローンだけでなく、単身者向けの資産管理や死後事務委任などの相続ニーズが急増します。取引先企業には「人手不足」への対策（省人化投資）を早急に提案するきっかけになります。</p>
-            </div>
-            <a href="https://news.yahoo.co.jp/articles/637d5287706801d25a77ba6343b49de5bcc28098?source=rss" role="button" class="outline">続きを読む</a>
-        </article>
+                <p>北海道のお客様は保守的な方が多く、預金に近い感覚で「配当」を好まれる傾向があります。資産運用の相談を受けた際は、単なる利回り提示ではなく、企業の稼ぐ力（キャッシュフロー）を見極める重要性を、プロの視点で優しく助言できるよう準備しておきましょう。</p>
+                <a href="https://news.yahoo.co.jp/articles/292a494a214ce3b61ba04d5dbec500d10697d3ff?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
 
-        <!-- ニュース2 -->
-        <article>
-            <h3>【投資歴70年 資産25億円】「金はもう、いらんねん」89歳の現役投資家が教えてくれた「本当の投資の面白さ」</h3>
-            <div class="logical-summary">
+            <article class="insight-card">
+                <h3>「日経平均の上昇持続」+「出遅れTOPIXの巻き返し」で、今後カギを握る企業や業種は何か</h3>
                 <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 新NISAの開始などで「資産形成」がブームだが、数値的な利益ばかりが強調される現状。</li>
-                    <li><b>事象</b>: 89歳のベテラン投資家が、投資とは単なる金儲けではなく「社会参加」であり「世の中を学ぶこと」だと説く。</li>
-                    <li><b>結果/影響</b>: 投資に対する精神的な豊かさや、企業の成長を応援する視点の重要性が再認識されている。</li>
+                    <li><b>背景/経緯:</b> これまでの株高は一部の半導体関連株などが主導してきたが、市場の関心はより広範な業種へと移りつつある。</li>
+                    <li><b>事象:</b> 東証のPBR改善要求などを背景に、これまで「割安」とされてきた内需企業や伝統的製造業の再評価が進んでいる。</li>
+                    <li><b>結果/影響:</b> TOPIXの構成銘柄（特に内需セクター）が持ち直すことで、日本経済全体の景気実感が底上げされる期待。</li>
                 </ul>
-            </div>
-            <div class="banker-insight">
                 <b>地銀視点の深掘り</b>
-                <p>窓口でお会いする富裕層の高齢者の方々は、既に十分な資産をお持ちの方も多いです。そうしたお客様に対し、単なる利回り提案ではなく、「地元企業の成長を応援する」「お孫さんの世代に豊かな社会を残す」といった、情緒的な価値を絡めた提案が信頼構築に繋がります。新人の皆さんも、数字の裏にある「企業のストーリー」を学ぶ姿勢を持ちましょう。</p>
-            </div>
-            <a href="https://news.yahoo.co.jp/articles/c6d100f52af3bb6a2762cee023269826c45998d3?source=rss" role="button" class="outline">続きを読む</a>
-        </article>
+                <p>地銀の主要な取引先である中堅・中小企業の多くは、TOPIX的な「実体経済」に属しています。市場の裾野が広がることは、道内企業の設備投資意欲や賃上げの追い風となります。法人営業の際は、お客様の業界が「再評価の波」に乗っているか意識して対話してみましょう。</p>
+                <a href="https://news.yahoo.co.jp/articles/029c20bd1702169cc1538390e3c66b4d799fa7a1?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
 
-        <!-- ニュース3 -->
-        <article>
-            <h3>職場で信頼される人がめちゃくちゃ大事にしている「小さな習慣」・ベスト1</h3>
-            <div class="logical-summary">
+            <article class="insight-card">
+                <h3>PM4時に時短社員は退勤→尻拭い続けた彼は限界迎え辞表を…“柔軟な働き方”がもたらす現実</h3>
                 <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 専門スキルや知識も重要だが、組織において信頼の土台となるのは日常の些細な行動。</li>
-                    <li><b>事象</b>: 最も重要な習慣として「期限を守る」「即レスをする」といった当たり前の徹底が挙げられている。</li>
-                    <li><b>結果/影響</b>: 小さな約束の積み重ねが、大きなプロジェクトを任される際の決定打となる。</li>
+                    <li><b>背景/経緯:</b> 働き方改革により、時短勤務や育児支援などの「柔軟な制度」の導入が加速した。</li>
+                    <li><b>事象:</b> 制度だけが先行し、減った分の業務配分やフォロー体制の構築を現場任せにしたことで、特定の社員に負荷が集中。</li>
+                    <li><b>結果/影響:</b> 「真面目に長く働く人」が疲弊して離職し、組織全体の持続可能性が損なわれるパラドックスが発生している。</li>
                 </ul>
-            </div>
-            <div class="banker-insight">
                 <b>地銀視点の深掘り</b>
-                <p>銀行員にとって、最も重要な商品は「信頼」です。北海道の地域社会は繋がりが非常に密であり、「あそこの銀行の担当者は返信が早い」「約束を必ず守る」という評判はすぐに広がります。新人として知識で先輩に勝つのは難しいですが、「レスポンスの速さ」と「正確な期日遵守」は今日からでも勝てるポイントです。これが将来の大きな顧客獲得に繋がります。</p>
-            </div>
-            <a href="https://news.yahoo.co.jp/articles/7e3d5bf61e0a12675185edfb5134a3865110c024?source=rss" role="button" class="outline">続きを読む</a>
-        </article>
-    </section>
+                <p>人手不足が深刻な北海道において、人材定着は最大の経営課題です。融資先の社長が「うちは働きやすい制度を整えた」と仰っても、現場で不公平感が溜まっていないか。コンサルティングの際、表面的な制度だけでなく、実態を伴うマネジメントが行われているかを見る「審美眼」を養ってください。</p>
+                <a href="https://news.yahoo.co.jp/articles/78a257633e68820959a8994bbb3e78afcc76b464?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
+        </section>
 
-    <footer style="text-align: center; margin-top: 3rem; padding-bottom: 2rem;">
-        <hr>
-        <p><small>&copy; 2026 北海道地方銀行 新人研修サポートチーム</small></p>
-    </footer>
-</main>
-
+        <footer>
+            <p><small>&copy; 2026 北海道地方銀行 新人研修サポートチーム</small></p>
+        </footer>
+    </main>
 </body>
 </html>
