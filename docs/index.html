@@ -3,81 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 北海道地銀新人向け</title>
+    <title>朝のインサイト | 2026年05月11日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --pico-font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            --primary: #004a99; /* 地銀をイメージした信頼感のある青 */
         }
-        h1 { border-bottom: 3px solid var(--pico-primary); padding-bottom: 0.5rem; }
+        h1 { margin-top: 2rem; border-bottom: 3px solid var(--primary); padding-bottom: 0.5rem; }
         .weather-info { display: flex; gap: 2rem; align-items: center; }
-        .insight-card b { color: var(--pico-primary); }
+        .weather-info span { font-size: 1.2rem; font-weight: bold; }
+        article h3 { color: var(--primary); }
+        .logical-summary b { color: #d81b60; }
+        .banker-perspective { background-color: #f8f9fa; padding: 1rem; border-left: 4px solid var(--primary); }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年05月10日)</h1>
-            <p>北海道の未来を担う新人の皆様、おはようございます。本日の重要トピックをまとめました。</p>
+            <h1>☀️ 朝のインサイト (2026年05月11日)</h1>
+            <p>おはようございます。北海道の未来を担う皆様へ、本日の重要トピックをお届けします。</p>
         </header>
 
         <section id="weather">
             <article>
-                <header><strong>📍 北海道の気象概況</strong></header>
+                <header><strong>🌡️ 本日の天気（札幌近郊）</strong></header>
                 <div class="weather-info">
-                    <span><strong>天気:</strong> 曇りがち</span>
-                    <span><strong>最高気温:</strong> 12.86℃</span>
-                    <span><strong>最低気温:</strong> 12.45℃</span>
+                    <span>天気: 薄い雲</span>
+                    <span>最高気温: <span style="color: #e53935;">15.23℃</span></span>
+                    <span>最低気温: <span style="color: #1e88e5;">13.86℃</span></span>
                 </div>
-                <footer>
-                    <small>※5月中旬としては肌寒い朝です。外出時は上着を忘れずに。営業周りの際は体調管理も仕事のうちです。</small>
-                </footer>
+                <small>※過ごしやすい気温ですが、朝晩の冷え込みに備え、上着を忘れずにご準備ください。</small>
             </article>
         </section>
 
         <section id="news">
-            <article class="insight-card">
-                <h3>【ゴールドマン・サックスの元トレーダーが教える】資産が減ってしまう「高配当株のワナ」</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯:</b> NISAの普及やインフレ対策として、個人投資家の間で「高配当株投資」がかつてないブームとなっている。</li>
-                    <li><b>事象:</b> 利回りの高さだけを基準に銘柄を選ぶと、株価そのものが下落し続ける「減配リスク」や「衰退産業への投資」に陥りやすい。</li>
-                    <li><b>結果/影響:</b> 配当金以上の損失を抱える「トータルリターンの悪化」を招き、資産形成の本来の目的から逸脱する。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>北海道のお客様は保守的な方が多く、預金に近い感覚で「配当」を好まれる傾向があります。資産運用の相談を受けた際は、単なる利回り提示ではなく、企業の稼ぐ力（キャッシュフロー）を見極める重要性を、プロの視点で優しく助言できるよう準備しておきましょう。</p>
-                <a href="https://news.yahoo.co.jp/articles/292a494a214ce3b61ba04d5dbec500d10697d3ff?source=rss" role="button" class="outline">続きを読む</a>
+            <!-- ニュース1: 千葉駅前再開発 -->
+            <article>
+                <h3>千葉駅前の一等地も激変!? 県都の「まち全体リニューアル」整備方針まとまる</h3>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯</b>: 老朽化したJR支社跡地や公共施設の有効活用が長年の課題となっていた。</li>
+                        <li><b>事象</b>: 千葉市が駅前の一等地を含む大規模な再開発・整備方針を策定し、市民からの意見募集を開始。</li>
+                        <li><b>結果/影響</b>: 商業機能、居住機能、公共機能が融合した新たな都市拠点が形成され、地域経済の活性化が期待される。</li>
+                    </ul>
+                </div>
+                <div class="banker-perspective">
+                    <b>地銀視点の深掘り</b>
+                    <p>他県の事例ではありますが、都市再開発は北海道内（札幌駅前や新幹線延伸予定地）でも共通の重要テーマです。不動産開発に関わる取引先企業様との会話において、「エリア価値の向上」や「人の流れの変化」を予測する際の比較対象として非常に有効なネタとなります。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/fd1c0afa9e2fb91a2330b3431f5d8f282da2c49c?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <article class="insight-card">
-                <h3>「日経平均の上昇持続」+「出遅れTOPIXの巻き返し」で、今後カギを握る企業や業種は何か</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯:</b> これまでの株高は一部の半導体関連株などが主導してきたが、市場の関心はより広範な業種へと移りつつある。</li>
-                    <li><b>事象:</b> 東証のPBR改善要求などを背景に、これまで「割安」とされてきた内需企業や伝統的製造業の再評価が進んでいる。</li>
-                    <li><b>結果/影響:</b> TOPIXの構成銘柄（特に内需セクター）が持ち直すことで、日本経済全体の景気実感が底上げされる期待。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>地銀の主要な取引先である中堅・中小企業の多くは、TOPIX的な「実体経済」に属しています。市場の裾野が広がることは、道内企業の設備投資意欲や賃上げの追い風となります。法人営業の際は、お客様の業界が「再評価の波」に乗っているか意識して対話してみましょう。</p>
-                <a href="https://news.yahoo.co.jp/articles/029c20bd1702169cc1538390e3c66b4d799fa7a1?source=rss" role="button" class="outline">続きを読む</a>
+            <!-- ニュース2: 新型レクサスES -->
+            <article>
+                <h3>新型『レクサスES』日本発売迫る クルマ全体でスピンドルを感じるボディ！</h3>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯</b>: レクサスの中核セダンとして、デザインの刷新と最新の電動化技術の導入が待望されていた。</li>
+                        <li><b>事象</b>: フロントからボディ全体にかけて「スピンドル（紡錘形）」を表現した大胆な新デザインを採用した新型ESが発表。</li>
+                        <li><b>結果/影響</b>: 高級車市場における存在感を高め、ブランドのロイヤリティ向上に寄与する。</li>
+                    </ul>
+                </div>
+                <div class="banker-perspective">
+                    <b>地銀視点の深掘り</b>
+                    <p>地銀の主要顧客である中小企業の経営者層には、レクサスオーナーが多くいらっしゃいます。新モデルの登場は、節税対策を兼ねた車両入れ替えや、法人融資のニーズ（設備投資など）を探る際のスムーズなアイスブレイクとして活用できるでしょう。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/cf908587b5b5b9b5d15c26d047e09002115cb24e?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <article class="insight-card">
-                <h3>PM4時に時短社員は退勤→尻拭い続けた彼は限界迎え辞表を…“柔軟な働き方”がもたらす現実</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯:</b> 働き方改革により、時短勤務や育児支援などの「柔軟な制度」の導入が加速した。</li>
-                    <li><b>事象:</b> 制度だけが先行し、減った分の業務配分やフォロー体制の構築を現場任せにしたことで、特定の社員に負荷が集中。</li>
-                    <li><b>結果/影響:</b> 「真面目に長く働く人」が疲弊して離職し、組織全体の持続可能性が損なわれるパラドックスが発生している。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>人手不足が深刻な北海道において、人材定着は最大の経営課題です。融資先の社長が「うちは働きやすい制度を整えた」と仰っても、現場で不公平感が溜まっていないか。コンサルティングの際、表面的な制度だけでなく、実態を伴うマネジメントが行われているかを見る「審美眼」を養ってください。</p>
-                <a href="https://news.yahoo.co.jp/articles/78a257633e68820959a8994bbb3e78afcc76b464?source=rss" role="button" class="outline">続きを読む</a>
+            <!-- ニュース3: 賃貸の無料インターネット -->
+            <article>
+                <h3>「インターネット無料」の賃貸入居。金額面のメリット以外のデメリットは？</h3>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯</b>: リモートワークの定着により、賃貸物件における「ネット無料」は入居希望者の必須条件になりつつある。</li>
+                        <li><b>事象</b>: 固定費削減のメリットがある一方、通信速度の低下やセキュリティリスク、回線選択の自由度の低さが指摘されている。</li>
+                        <li><b>結果/影響</b>: 物件選びの際、単なる「無料」だけでなく「通信品質」が資産価値を左右する要因となっている。</li>
+                    </ul>
+                </div>
+                <div class="banker-perspective">
+                    <b>地銀視点の深掘り</b>
+                    <p>アパート経営を行う個人オーナー（大家さん）のお客様に対して、空室対策の提案を行う際に重要な知識です。「ただ導入するだけ」ではなく、入居者の満足度を高めて長期入居に繋げるためのコンサルティング視点を持ち、リフォーム資金の融資提案等に繋げましょう。</p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/594effc6c58280c855fbf3c97a5e75d3f3c3a68d?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <footer>
-            <p><small>&copy; 2026 北海道地方銀行 新人研修サポートチーム</small></p>
+            <hr>
+            <p style="text-align: center;">
+                <small>© 2026 北海道ローカルバンク・新人研修事務局</small>
+            </p>
         </footer>
     </main>
 </body>
