@@ -3,100 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年05月11日</title>
+    <title>朝のインサイト | 2026年05月12日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #004a99; /* 地銀をイメージした信頼感のある青 */
+            --pico-font-size: 16px;
         }
-        h1 { margin-top: 2rem; border-bottom: 3px solid var(--primary); padding-bottom: 0.5rem; }
-        .weather-info { display: flex; gap: 2rem; align-items: center; }
-        .weather-info span { font-size: 1.2rem; font-weight: bold; }
-        article h3 { color: var(--primary); }
-        .logical-summary b { color: #d81b60; }
-        .banker-perspective { background-color: #f8f9fa; padding: 1rem; border-left: 4px solid var(--primary); }
+        h1 {
+            border-bottom: 2px solid var(--pico-primary);
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+        .weather-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .insight-label {
+            color: var(--pico-primary);
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            display: block;
+        }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年05月11日)</h1>
-            <p>おはようございます。北海道の未来を担う皆様へ、本日の重要トピックをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年05月12日)</h1>
+            <p>おはようございます。北海道の未来を担う新入行員の皆様へ、本日の重要トピックをお届けします。</p>
         </header>
 
         <section id="weather">
             <article>
-                <header><strong>🌡️ 本日の天気（札幌近郊）</strong></header>
+                <header><strong>📍 本日の北海道（札幌周辺）の天気</strong></header>
                 <div class="weather-info">
-                    <span>天気: 薄い雲</span>
-                    <span>最高気温: <span style="color: #e53935;">15.23℃</span></span>
-                    <span>最低気温: <span style="color: #1e88e5;">13.86℃</span></span>
+                    <span><strong>天気:</strong> 薄い雲</span>
+                    <span><strong>最高気温:</strong> 15.79℃</span>
+                    <span><strong>最低気温:</strong> 13.86℃</span>
                 </div>
-                <small>※過ごしやすい気温ですが、朝晩の冷え込みに備え、上着を忘れずにご準備ください。</small>
+                <footer>
+                    <small>少し肌寒い朝です。外回りや通勤の際は、羽織るものを持ってお出かけください。</small>
+                </footer>
             </article>
         </section>
 
-        <section id="news">
-            <!-- ニュース1: 千葉駅前再開発 -->
+        <section id="news-digest">
             <article>
-                <h3>千葉駅前の一等地も激変!? 県都の「まち全体リニューアル」整備方針まとまる</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯</b>: 老朽化したJR支社跡地や公共施設の有効活用が長年の課題となっていた。</li>
-                        <li><b>事象</b>: 千葉市が駅前の一等地を含む大規模な再開発・整備方針を策定し、市民からの意見募集を開始。</li>
-                        <li><b>結果/影響</b>: 商業機能、居住機能、公共機能が融合した新たな都市拠点が形成され、地域経済の活性化が期待される。</li>
-                    </ul>
-                </div>
-                <div class="banker-perspective">
-                    <b>地銀視点の深掘り</b>
-                    <p>他県の事例ではありますが、都市再開発は北海道内（札幌駅前や新幹線延伸予定地）でも共通の重要テーマです。不動産開発に関わる取引先企業様との会話において、「エリア価値の向上」や「人の流れの変化」を予測する際の比較対象として非常に有効なネタとなります。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/fd1c0afa9e2fb91a2330b3431f5d8f282da2c49c?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>病院内のカフェ、なぜ「タリーズ」が多い？ 100店舗展開を支える運営戦略</h3>
+                <span class="insight-label">【サービス・医療戦略】</span>
+                <p><b>ロジカル要約</b>:</p>
+                <ul>
+                    <li><b>背景/経緯</b>: かつての病院内売店は機能性重視だったが、患者のQOL向上や職員の福利厚生として「寛ぎ」の需要が増加。</li>
+                    <li><b>事象</b>: タリーズコーヒーが病院内特化型の出店戦略を強化し、全国100店舗を達成。徹底した「病院仕様」の運営を構築。</li>
+                    <li><b>結果/影響</b>: 安定した集客が見込める「クローズドマーケット」での地位を確立。病院経営側にとっても付加価値向上に直結。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b>:</p>
+                <p>北海道内でも医療機関の集約化と高機能化が進んでいます。お取引先の病院理事長や経営層との面談では、単なる融資の話だけでなく、こうした「アメニティによる病院の差別化戦略」を情報提供のフックにできます。また、テナント入居する小売業への運転資金ニーズを察知するヒントにもなるでしょう。</p>
+                <a href="https://news.yahoo.co.jp/articles/cb5f9ff4ed1683861743b2701c04567e714586f0?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2: 新型レクサスES -->
             <article>
-                <h3>新型『レクサスES』日本発売迫る クルマ全体でスピンドルを感じるボディ！</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯</b>: レクサスの中核セダンとして、デザインの刷新と最新の電動化技術の導入が待望されていた。</li>
-                        <li><b>事象</b>: フロントからボディ全体にかけて「スピンドル（紡錘形）」を表現した大胆な新デザインを採用した新型ESが発表。</li>
-                        <li><b>結果/影響</b>: 高級車市場における存在感を高め、ブランドのロイヤリティ向上に寄与する。</li>
-                    </ul>
-                </div>
-                <div class="banker-perspective">
-                    <b>地銀視点の深掘り</b>
-                    <p>地銀の主要顧客である中小企業の経営者層には、レクサスオーナーが多くいらっしゃいます。新モデルの登場は、節税対策を兼ねた車両入れ替えや、法人融資のニーズ（設備投資など）を探る際のスムーズなアイスブレイクとして活用できるでしょう。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/cf908587b5b5b9b5d15c26d047e09002115cb24e?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>ショベルカーもロードローラーもそういや「黄色」！ 重機はなぜ黄色なのか？</h3>
+                <span class="insight-label">【産業知識・安全基準】</span>
+                <p><b>ロジカル要約</b>: </p>
+                <ul>
+                    <li><b>背景/経緯</b>: 重機は工事現場という危険な環境で稼働するため、周囲からの視認性が生命線となる。</li>
+                    <li><b>事象</b>: 米キャタピラー社が採用した「ハイウェイ・イエロー」が国際標準（ISO）の礎となり、視認性が高く注意を促す「黄色」が定着。</li>
+                    <li><b>結果/影響</b>: 心理学的にも「警戒」を促す色として機能。現在ではメーカーごとのブランドカラー化しつつも、安全第一の象徴となっている。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b>:</p>
+                <p>北海道の基幹産業の一つである建設業。社長様との雑談で「なぜ重機は黄色いのか知っていますか？」と切り出し、そこから現場の安全管理体制や、高額な重機の買い替え需要（動産担保融資やリースの提案）へと会話を繋げる「アイスブレイクネタ」として非常に優秀なトピックです。</p>
+                <a href="https://news.yahoo.co.jp/articles/304f2b0e4d8d5757e48ba07e4b71305669b43a7a?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3: 賃貸の無料インターネット -->
             <article>
-                <h3>「インターネット無料」の賃貸入居。金額面のメリット以外のデメリットは？</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯</b>: リモートワークの定着により、賃貸物件における「ネット無料」は入居希望者の必須条件になりつつある。</li>
-                        <li><b>事象</b>: 固定費削減のメリットがある一方、通信速度の低下やセキュリティリスク、回線選択の自由度の低さが指摘されている。</li>
-                        <li><b>結果/影響</b>: 物件選びの際、単なる「無料」だけでなく「通信品質」が資産価値を左右する要因となっている。</li>
-                    </ul>
-                </div>
-                <div class="banker-perspective">
-                    <b>地銀視点の深掘り</b>
-                    <p>アパート経営を行う個人オーナー（大家さん）のお客様に対して、空室対策の提案を行う際に重要な知識です。「ただ導入するだけ」ではなく、入居者の満足度を高めて長期入居に繋げるためのコンサルティング視点を持ち、リフォーム資金の融資提案等に繋げましょう。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/594effc6c58280c855fbf3c97a5e75d3f3c3a68d?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>ロータスが新型V8スーパーカー、2028年発売へ 『エスプリ』の精神受け継ぐハイブリッド</h3>
+                <span class="insight-label">【富裕層動向・製造業トレンド】</span>
+                <p><b>ロジカル要約</b>: </p>
+                <ul>
+                    <li><b>背景/経緯</b>: 名車「エスプリ」の生産終了から20年以上。電動化への移行期に、ファン待望のハイパフォーマンスモデルが求められていた。</li>
+                    <li><b>事象</b>: 2028年に向け、V8エンジンとハイブリッドシステムを組み合わせた新型車を開発中。生産は欧州で行われる公算。</li>
+                    <li><b>結果/影響</b>: 伝統的な内燃機関の魅力と最新の電動技術を融合。ブランド価値の再定義と、富裕層市場でのシェア奪還を目指す。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b>:</p>
+                <p>直接的な取引先だけでなく、当行の重要顧客である「富裕層（オーナー経営者など）」の趣味嗜好を把握するために役立つニュースです。2028年という未来の発売日は、中長期的な資産運用や購入資金の準備に向けたライフプランニングの話題として、リテール営業の現場で活用できる可能性があります。</p>
+                <a href="https://news.yahoo.co.jp/articles/52b5862da7e55a45bf34b4e564f68bac6e2eb8cb?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <footer>
             <hr>
-            <p style="text-align: center;">
-                <small>© 2026 北海道ローカルバンク・新人研修事務局</small>
-            </p>
+            <p><small>© 2026 北海道地方銀行・新人研修アシスタント | 常に一歩先の情報を。 </small></p>
         </footer>
     </main>
 </body>
