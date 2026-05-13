@@ -3,98 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年05月12日</title>
+    <title>朝のインサイト | 2026年05月13日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --pico-font-size: 16px;
+            --primary: #2e7d32; /* 北海道の自然をイメージした緑 */
+        }
+        body {
+            background-color: #f8f9fa;
         }
         h1 {
-            border-bottom: 2px solid var(--pico-primary);
+            border-bottom: 3px solid var(--primary);
             padding-bottom: 10px;
-            margin-top: 20px;
+            margin-top: 2rem;
+        }
+        article {
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         .weather-info {
             display: flex;
             gap: 20px;
-            flex-wrap: wrap;
+            font-size: 1.1rem;
         }
-        .insight-label {
-            color: var(--pico-primary);
-            font-size: 0.9rem;
-            margin-bottom: 5px;
-            display: block;
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: var(--primary);
+            color: white;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年05月12日)</h1>
-            <p>おはようございます。北海道の未来を担う新入行員の皆様へ、本日の重要トピックをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年05月13日)</h1>
+            <p>北海道の未来を担う新人の皆さん、おはようございます。本日の重要トピックをお届けします。</p>
         </header>
 
         <section id="weather">
             <article>
-                <header><strong>📍 本日の北海道（札幌周辺）の天気</strong></header>
+                <header><strong>📍 今日の北海道（札幌周辺）の天気</strong></header>
                 <div class="weather-info">
-                    <span><strong>天気:</strong> 薄い雲</span>
-                    <span><strong>最高気温:</strong> 15.79℃</span>
-                    <span><strong>最低気温:</strong> 13.86℃</span>
+                    <span>☁️ 天気: 曇りがち</span>
+                    <span>🌡️ 最高気温: <span style="color: #d32f2f;">10.23℃</span></span>
+                    <span>❄️ 最低気温: <span style="color: #1976d2;">7.86℃</span></span>
                 </div>
                 <footer>
-                    <small>少し肌寒い朝です。外回りや通勤の際は、羽織るものを持ってお出かけください。</small>
+                    <small>※5月半ばですが、まだ肌寒い朝です。外回りや通勤時は上着を忘れずに。</small>
                 </footer>
             </article>
         </section>
 
-        <section id="news-digest">
+        <section id="news">
+            <!-- ニュース1 -->
             <article>
-                <h3>病院内のカフェ、なぜ「タリーズ」が多い？ 100店舗展開を支える運営戦略</h3>
-                <span class="insight-label">【サービス・医療戦略】</span>
-                <p><b>ロジカル要約</b>:</p>
+                <span class="badge">交通法規・リスク管理</span>
+                <h3>子どもの送迎で自転車に乗ると「青切符」の対象に？</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: かつての病院内売店は機能性重視だったが、患者のQOL向上や職員の福利厚生として「寛ぎ」の需要が増加。</li>
-                    <li><b>事象</b>: タリーズコーヒーが病院内特化型の出店戦略を強化し、全国100店舗を達成。徹底した「病院仕様」の運営を構築。</li>
-                    <li><b>結果/影響</b>: 安定した集客が見込める「クローズドマーケット」での地位を確立。病院経営側にとっても付加価値向上に直結。</li>
+                    <li><b>背景/経緯</b>: 道路交通法の改正により、自転車の交通違反に対する取り締まりが強化（青切符制度の導入）。</li>
+                    <li><b>事象</b>: 原則車道走行の徹底。歩行者の妨げになる歩道走行や信号無視などが「反則金」の対象となる。</li>
+                    <li><b>結果/影響</b>: 日常的な送迎や通勤での違反が金銭的・社会的なペナルティに直結する。</li>
                 </ul>
-                <p><b>地銀視点の深掘り</b>:</p>
-                <p>北海道内でも医療機関の集約化と高機能化が進んでいます。お取引先の病院理事長や経営層との面談では、単なる融資の話だけでなく、こうした「アメニティによる病院の差別化戦略」を情報提供のフックにできます。また、テナント入居する小売業への運転資金ニーズを察知するヒントにもなるでしょう。</p>
-                <a href="https://news.yahoo.co.jp/articles/cb5f9ff4ed1683861743b2701c04567e714586f0?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>
+                <p>
+                    地域の皆さま、特に子育て世代のお客様との雑談で「法改正」の話題は非常に有効です。また、当行が推進する「個人賠償責任保険」や自転車保険の付帯状況を確認するきっかけにもなります。コンプライアンス意識の高い銀行員として、自身の通勤スタイルも見直しておきましょう。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/810863f971286ebd42f6494ee2ecdd8264a2315f?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
+            <!-- ニュース2 -->
             <article>
-                <h3>ショベルカーもロードローラーもそういや「黄色」！ 重機はなぜ黄色なのか？</h3>
-                <span class="insight-label">【産業知識・安全基準】</span>
-                <p><b>ロジカル要約</b>: </p>
+                <span class="badge">インフラ・地域経済</span>
+                <h3>貫通まで「あと36m」県都をブチ抜く地下トンネルが進捗</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 重機は工事現場という危険な環境で稼働するため、周囲からの視認性が生命線となる。</li>
-                    <li><b>事象</b>: 米キャタピラー社が採用した「ハイウェイ・イエロー」が国際標準（ISO）の礎となり、視認性が高く注意を促す「黄色」が定着。</li>
-                    <li><b>結果/影響</b>: 心理学的にも「警戒」を促す色として機能。現在ではメーカーごとのブランドカラー化しつつも、安全第一の象徴となっている。</li>
+                    <li><b>背景/経緯</b>: 市街地の慢性的な渋滞解消と、高速道路へのアクセス向上を目指した大規模プロジェクト。</li>
+                    <li><b>事象</b>: 難工事の末、市街地と高速を直結する地下トンネルの貫通が目前（残り36m）に迫る。</li>
+                    <li><b>結果/影響</b>: 物流効率の劇的な向上、周辺地域の不動産価値への波及効果が期待される。</li>
                 </ul>
-                <p><b>地銀視点の深掘り</b>:</p>
-                <p>北海道の基幹産業の一つである建設業。社長様との雑談で「なぜ重機は黄色いのか知っていますか？」と切り出し、そこから現場の安全管理体制や、高額な重機の買い替え需要（動産担保融資やリースの提案）へと会話を繋げる「アイスブレイクネタ」として非常に優秀なトピックです。</p>
-                <a href="https://news.yahoo.co.jp/articles/304f2b0e4d8d5757e48ba07e4b71305669b43a7a?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>
+                <p>
+                    インフラの完成は、物流業者や卸売業を営むお取引先にとって大きなコストダウンに繋がります。「配送ルートが変わることで空いた時間をどう活用するか」といった前向きな設備投資や事業拡大のご相談に乗るチャンスです。地元紙よりも一歩早い情報提供で、頼られる担当者を目指しましょう。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/45ab6aedbe959bd45aa4675efc4da3390e5cec7f?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
+            <!-- ニュース3 -->
             <article>
-                <h3>ロータスが新型V8スーパーカー、2028年発売へ 『エスプリ』の精神受け継ぐハイブリッド</h3>
-                <span class="insight-label">【富裕層動向・製造業トレンド】</span>
-                <p><b>ロジカル要約</b>: </p>
+                <span class="badge">ライフマネー・家計相談</span>
+                <h3>通勤定期券で新幹線に乗れる？ルールの再確認</h3>
+                <b>ロジカル要約</b>
                 <ul>
-                    <li><b>背景/経緯</b>: 名車「エスプリ」の生産終了から20年以上。電動化への移行期に、ファン待望のハイパフォーマンスモデルが求められていた。</li>
-                    <li><b>事象</b>: 2028年に向け、V8エンジンとハイブリッドシステムを組み合わせた新型車を開発中。生産は欧州で行われる公算。</li>
-                    <li><b>結果/影響</b>: 伝統的な内燃機関の魅力と最新の電動技術を融合。ブランド価値の再定義と、富裕層市場でのシェア奪還を目指す。</li>
+                    <li><b>背景/経緯</b>: リモートワークと出社のハイブリッド化が進み、長距離通勤のルールに関する関心が高まっている。</li>
+                    <li><b>事象</b>: 通常の在来線定期券だけでは新幹線に乗車できず、特急券の別途購入や「新幹線定期」への切り替えが必要。</li>
+                    <li><b>結果/影響</b>: 知識不足による不正乗車の防止や、最適な交通費精算の知識が不可欠。</li>
                 </ul>
-                <p><b>地銀視点の深掘り</b>:</p>
-                <p>直接的な取引先だけでなく、当行の重要顧客である「富裕層（オーナー経営者など）」の趣味嗜好を把握するために役立つニュースです。2028年という未来の発売日は、中長期的な資産運用や購入資金の準備に向けたライフプランニングの話題として、リテール営業の現場で活用できる可能性があります。</p>
-                <a href="https://news.yahoo.co.jp/articles/52b5862da7e55a45bf34b4e564f68bac6e2eb8cb?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>
+                <p>
+                    北海道新幹線の延伸を控える中、ビジネス客との会話で「移動の効率化」は頻出のテーマです。特に経営者の方は時間を買う意識が強いため、正しいルールに基づいた節税効果や福利厚生としての通勤手当の提案など、FP（ファイナンシャル・プランナー）的な視点を持って接することが信頼獲得への近道です。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/5dba7a2408309754dc0d5ce1be192e3028c482be?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <footer>
             <hr>
-            <p><small>© 2026 北海道地方銀行・新人研修アシスタント | 常に一歩先の情報を。 </small></p>
+            <p style="text-align: center;">
+                <small>© 2026 北海道地方銀行・新人研修サポート事務局</small>
+            </p>
         </footer>
     </main>
 </body>
