@@ -3,110 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年05月14日</title>
+    <title>朝のインサイト | 2026年05月15日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #2c3e50;
+            --primary: #1b5e20;
         }
-        h1 {
-            border-bottom: 3px solid var(--primary);
-            padding-bottom: 0.5rem;
-            margin-top: 2rem;
-        }
-        .weather-info {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-        .insight-box {
-            background-color: #f8f9fa;
-            border-left: 5px solid #007bff;
-            padding: 1rem;
-            margin-top: 1rem;
-        }
-        .summary-list {
-            font-size: 0.95rem;
-        }
+        h1 { margin-top: 2rem; border-bottom: 3px solid var(--primary); padding-bottom: 0.5rem; }
+        .weather-info { display: flex; gap: 2rem; align-items: center; }
+        .weather-info span { font-size: 1.1rem; }
+        article { border-top: 5px solid var(--primary); }
+        b { color: var(--primary); }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年05月14日)</h1>
-            <p>北海道の未来を担う新入行員の皆様へ、今日押さえるべきトピックをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年05月15日)</h1>
+            <p>北海道の未来を担う新人行員の皆様へ。今日の重要ニュースをお届けします。</p>
         </header>
 
         <section id="weather">
             <article>
                 <header><strong>📍 今日の北海道（札幌周辺）の天気</strong></header>
                 <div class="weather-info">
-                    <span>☁️ <strong>天気:</strong> 雲</span>
-                    <span>🌡️ <strong>最高気温:</strong> 10.79℃</span>
-                    <span>🌡️ <strong>最低気温:</strong> 9.86℃</span>
+                    <span>☁️ 天気: <strong>薄い雲</strong></span>
+                    <span>🌡️ 最高気温: <strong>13.56℃</strong></span>
+                    <span>🌡️ 最低気温: <strong>11.86℃</strong></span>
                 </div>
-                <small>※少し肌寒い朝です。外回りや通勤の際は、一枚羽織るものを持参しましょう。</small>
+                <footer>
+                    <small>※少し肌寒い朝です。外回りにはスプリングコートをお忘れなく。</small>
+                </footer>
             </article>
         </section>
 
         <section id="news">
-            <!-- ニュース1: ホンダ -->
+            <!-- ニュース1: 事業承継 -->
             <article>
-                <h3>ホンダ、EV100％目標を事実上撤回。ハイブリッド強化へ舵</h3>
-                <div class="summary-content">
-                    <b>ロジカル要約</b>
-                    <ul class="summary-list">
-                        <li><b>背景/経緯:</b> 世界的なEVシフトの停滞と、現実的な需要の乖離が顕在化。</li>
-                        <li><b>事象:</b> 「2040年に新車すべてをEV/FCEVにする」という従来目標を修正。決算発表で新型ハイブリッド車2台を世界初公開。</li>
-                        <li><b>結果/影響:</b> 現実的な収益基盤であるハイブリッド（HV）に再注力し、激変する市場への適応力を示す。</li>
-                    </ul>
-                </div>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>北海道内でも自動車関連の部品製造を担う中小企業は少なくありません。急進的なEV化は既存サプライヤーの経営不安に直結していましたが、HVの継続は取引先の「既存技術の活用期間」が延びることを意味します。一方で、長期的な脱炭素対応の融資ニーズ（設備投資）のタイミングについて、顧客と再対話する絶好のネタになります。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/f971c131af717421a2f1a29f60e0179dc52614f5?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>「あんた、やるかい？」 75年続く喫茶店の事業承継</h3>
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li>背景/経緯: 創業75年の老舗。看板商品のレシピが明文化されておらず、設備の老朽化も進んでいる状態。</li>
+                    <li>事象: 廃業危機にある中、店主の「想い」を受け継ぐ第三者への事業承継を模索。</li>
+                    <li>結果/影響: 単なる数値上の資産だけでなく、地域に根付いた「文化」や「顧客」をどう引き継ぐかが課題に。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>北海道内でも飲食店や小売店の店主高齢化は深刻な課題です。融資判断だけでなく、事業承継税制の活用や後継者マッチングの提案が求められます。担当先に「最近、お店の将来について考えていますか？」とさりげなく問いかけることから、我々地銀のコンサルティング営業が始まります。</p>
+                <a href="https://news.yahoo.co.jp/articles/e9335840c9a9ec1b6a42f96134ef97894b259e7c?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2: マネーフォワード/情報流出 -->
+            <!-- ニュース2: オリエンタルランド -->
             <article>
-                <h3>「BeReal禁止」に見る、企業の責任の所在と情報管理</h3>
-                <div class="summary-content">
-                    <b>ロジカル要約</b>
-                    <ul class="summary-list">
-                        <li><b>背景/経緯:</b> マネーフォワード等のIT企業で発生した情報流出事案を受け、社内ルールの再点検が加速。</li>
-                        <li><b>事象:</b> 「盛らないSNS」BeReal等の即時投稿アプリによる、PC画面や書類の予期せぬ映り込みがリスクとして浮上。</li>
-                        <li><b>結果/影響:</b> 個人の意識に頼るだけでなく、組織としての技術的な制限やガバナンス体制の構築が必須に。</li>
-                    </ul>
-                </div>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>我々銀行員にとって「信用」は最大の資産であり、顧客情報の扱いは生命線です。新人の皆さんも、昼食中や休憩時間の何気ない自撮りに「顧客の氏名が載った伝票」や「行内資料」が写り込まないよう、細心の注意が必要です。これは個人のプライバシーの問題ではなく、銀行全体の経営リスクであることを肝に銘じましょう。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/8edcc10807f69fe5f61e40d691e0383a2e7457b5?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>オリエンタルランド、優待拡充でも株価低迷の「3つの理由」</h3>
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li>背景/経緯: 100株保有でパスポート配布などの特別優待と増配を実施し、還元姿勢を強化。</li>
+                    <li>事象: しかし市場では株価の下げ止まりが見られない。</li>
+                    <li>結果/影響: インバウンド需要の一巡懸念や、先行投資負担に対する投資家のシビアな評価が浮き彫りに。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>個人の資産運用相談において「優待が魅力的な銘柄」は人気ですが、こうした市場の需給バランスや背景を論理的に説明できることがプロの信頼に繋がります。NISAの活用を検討中のお客様に対し、身近な銘柄を例に「分散投資」と「リスク管理」の重要性を伝える良いフックになります。</p>
+                <a href="https://news.yahoo.co.jp/articles/be131515e31fee722077bdaaeb031cbae48d59a5?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3: 英語学習の習慣 -->
+            <!-- ニュース3: 災害対応車 -->
             <article>
-                <h3>独学で英語を習得した人の「たった1つの習慣」</h3>
-                <div class="summary-content">
-                    <b>ロジカル要約</b>
-                    <ul class="summary-list">
-                        <li><b>背景/経緯:</b> リスキリングの必要性が叫ばれる中、英語学習に挫折するビジネスパーソンが後を絶たない。</li>
-                        <li><b>事象:</b> 成功者の共通点は「特別なメソッド」ではなく、日常の導線に学習を組み込む「習慣化」。</li>
-                        <li><b>結果/影響:</b> 学習をイベントではなく「生活の一部」にすることで、日本にいながら高い習熟度を実現。</li>
-                    </ul>
-                </div>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>新人時代は、証券外務員や生命保険販売資格など、多くの試験に合格する必要があります。この「習慣化の力」は英語だけでなく、銀行業務の知識習得にもそのまま応用できます。北海道の地域経済もインバウンド需要の高まりで海外との接点が増えています。自己研鑽を習慣化できる行員こそが、将来のコンサルティング営業で差をつけます。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/12af6cc23da61bb9835afe203d00dd330ae90eaf?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>三菱ディーラーマンが愛車をカスタム！ 災害時にも活躍するトライトン</h3>
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li>背景/経緯: ピックアップトラック「トライトン」をベースに、現役ディーラーマンが独自カスタム。</li>
+                    <li>事象: 悪路走破性だけでなく、給電機能や高い積載性を活かした「実戦仕様」に仕上げた。</li>
+                    <li>結果/影響: 趣味の範疇を超え、災害時の初動対応やBCP対策への活用可能性を示唆。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>広大な面積を持つ北海道では、4WD車両の需要が極めて高いです。特に建設業や一次産業の法人顧客に対し、車両更新のタイミングで「BCP（事業継続計画）に役立つ設備投資」としてこうした車両の導入を提案することは、地域の防災力強化への貢献と、新規融資機会の創出を両立させます。</p>
+                <a href="https://news.yahoo.co.jp/articles/d9e7c2499f550e50504fd7001a81d17c3d8b7ab0?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
-        <footer style="text-align: center; margin-top: 3rem; padding: 2rem; border-top: 1px solid #eee;">
-            <p><small>© 2026 北海道地方銀行 新入行員サポートデスク</small></p>
+        <footer>
+            <p><small>&copy; 2026 北海道地銀・新人研修事務局局</small></p>
         </footer>
     </main>
 </body>
