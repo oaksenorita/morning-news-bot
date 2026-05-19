@@ -3,90 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 2026年05月18日</title>
+    <title>朝のインサイト (2026年05月19日) - 北海道地銀新人向け</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
-        :root {
-            --pico-font-size: 95%;
+        body {
+            padding-top: 20px;
+            padding-bottom: 50px;
         }
-        h1 { margin-top: 1.5rem; }
-        .weather-info { font-weight: bold; }
-        .summary-title { display: block; margin-top: 1rem; margin-bottom: 0.5rem; }
+        .weather-info {
+            background-color: var(--pico-secondary-background);
+            border-left: 4px solid var(--pico-primary);
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+        .insight-badge {
+            display: inline-block;
+            background-color: var(--pico-primary-background);
+            color: var(--pico-primary);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+        }
+        .summary-title {
+            color: var(--pico-primary);
+            border-bottom: 1px solid var(--pico-muted-border-color);
+            padding-bottom: 5px;
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
     <main class="container">
+        <!-- ヘッダー -->
         <header>
-            <h1>☀️ 朝のインサイト (2026年05月18日)</h1>
-            <p>おはようございます。北海道の地銀パーソンとして、今日も地域の経済とお客様の動向を読み解きましょう。</p>
+            <h1>☀️ 朝のインサイト (2026年05月19日)</h1>
+            <p><small>北海道の未来を担う新入行員の皆さんへ。本日の注目ニュースと、融資・提案活動に繋がる視点をお届けします。</small></p>
         </header>
 
+        <!-- 天気セクション -->
         <section>
-            <article>
-                <header>📍 本日の天気（札幌近郊）</header>
-                <div class="weather-info">
-                    天気: 曇りがち<br>
-                    最高気温: <span style="color: #e74c3c;">14.12℃</span> / 最低気温: <span style="color: #3498db;">12.86℃</span>
+            <article class="weather-info">
+                <h5 style="margin-bottom: 10px;">📍 本日の道内天気予報</h5>
+                <div class="grid" style="--pico-grid-column-gap: 2rem;">
+                    <div><strong>天気:</strong> 曇りがち</div>
+                    <div><strong>最高気温:</strong> 12.45℃</div>
+                    <div><strong>最低気温:</strong> 11.86℃</div>
                 </div>
-                <small>※少し肌寒い朝です。外回りには羽織るものを持参しましょう。</small>
+                <p style="margin-top: 10px; margin-bottom: 0; font-size: 0.9rem; color: var(--pico-muted-color);">
+                    ※本日は道内全体で肌寒い曇り空となる見込みです。外回りの際は温かい服装を心がけ、体調管理に留意しましょう。
+                </p>
             </article>
         </section>
 
+        <!-- ニュースセクション -->
         <section>
-            <h2>厳選ニュース解説</h2>
+            <h2>📢 本日の厳選ニュース (3選)</h2>
 
-            <!-- News 1: Yamaha -->
+            <!-- ニュース1 -->
             <article>
-                <h3>ヤマハ 401cc以上の大型モデルは「YSP」のみでの取り扱いへ！</h3>
-                <b class="summary-title">ロジカル要約</b>
+                <span class="insight-badge">一次産業・食・事業多角化</span>
+                <h3>飲食店やオフィスに植物工場を 小型の水耕栽培ユニット AI活用で未経験者もOK</h3>
+                
+                <p class="summary-title"><b>ロジカル要約</b></p>
                 <ul>
-                    <li><b>背景/経緯</b>: ヤマハ発動機はブランドイメージの向上と、高度な整備技術が求められる大型バイクの品質維持を目指している。</li>
-                    <li><b>事象</b>: 2027年1月から、401cc以上の大型モデルの販売ルートを専売店「YSP（ヤマハ・モーターサイクル・スポーツプラザ）」に限定することを発表。</li>
-                    <li><b>結果/影響</b>: 一般の協力店（サブディーラー）での大型車取り扱いができなくなり、販売網の集約と店舗の専門化が加速する。</li>
+                    <li><b>背景/経緯:</b> 近年の気候変動による野菜価格の高騰や、農業従事者の高齢化・人手不足を受け、安定的かつ持続可能な食材調達への関心が急速に高まっている。</li>
+                    <li><b>事象:</b> AIによる自動管理機能を搭載し、専門知識のない未経験者でも手軽に運用可能な、飲食店やオフィス向けの「小型水耕栽培ユニット」が開発された。</li>
+                    <li><b>結果/影響:</b> 飲食店では新鮮な自社製食材の安定提供による競合差別化、オフィスでは従業員の福利厚生や緑化推進が容易になり、異業種からの農業分野へのプチ参入が加速する。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>
+
+                <p class="summary-title"><b>地銀視点の深掘り</b></p>
                 <p>
-                    これは「販売網の再編」という重要な経営判断です。管内のバイクショップがサブディーラーである場合、将来的な売り上げ減少や、YSPへの昇格・改装に向けた設備投資ニーズが発生する可能性があります。取引先ショップの取り扱い排気量や、2027年に向けた事業計画をヒアリングする絶好の機会です。
+                    北海道は全国一の一次産業基盤を有していますが、冬期の葉物野菜の確保や広域物流コストの上昇（2024年問題等）が共通課題です。地元のホテル、飲食店、あるいは福祉施設等に対し、「食の地産地消」や「コスト安定化」を目的とした新サービス導入・設備投資資金としての融資提案に繋がります。また、SDGs経営やESG投資に注力する地元企業との対話の第一歩として、この「手軽な植物工場」の話題は非常に有効なアプローチとなります。
                 </p>
-                <a href="https://news.yahoo.co.jp/articles/9fa248b47e9dc46033ad270f9e72786e7ffc9880?source=rss" role="button" class="outline">続きを読む</a>
+
+                <a href="https://news.yahoo.co.jp/articles/f06425ca265a7f5de5815494633496ed065f0cd3?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
             </article>
 
-            <!-- News 2: Alphard Bed Kit -->
+            <!-- ニュース2 -->
             <article>
-                <h3>アルファードの3列目がそのまま使える！画期的なポータブルベッドキット「リドゥー」</h3>
-                <b class="summary-title">ロジカル要約</b>
+                <span class="insight-badge">IT・業務効率化・DX支援</span>
+                <h3>グーグル、レポート作成やスケジュール管理をできる常時可動型AIエージェント「ジェミニ・スパーク」を披露</h3>
+                
+                <p class="summary-title"><b>ロジカル要約</b></p>
                 <ul>
-                    <li><b>背景/経緯</b>: アウトドアブームの定着により、ミニバンを車中泊仕様にするニーズが高まっているが、シートの取り外しなどの手間が課題だった。</li>
-                    <li><b>事象</b>: フランス発のブランド「リドゥー」が、3列目シートを跳ね上げた状態で設置可能な高機能ベッドキットを日本市場に投入。</li>
-                    <li><b>結果/影響</b>: 高価なキャンピングカーを購入せずとも、既存の高級ミニバンをレジャー仕様にアップグレードできる選択肢が増えた。</li>
+                    <li><b>背景/経緯:</b> 生成AIの爆発的普及を経て、従来の「一問一答型」から、ユーザーに代わって自律的に一連の業務を完結させる「AIエージェント」への移行が急速に進んでいる。</li>
+                    <li><b>事象:</b> Googleが、レポート作成、複雑なスケジュール調整、データ収集・分析をバックグラウンドで自律かつ常時実行するAIエージェント「ジェミニ・スパーク」を公開。</li>
+                    <li><b>結果/影響:</b> 一般企業の事務処理プロセスが劇的に自動化され、人間の労働時間はクリエイティブな意思決定に特化し、ホワイトカラー業務の在り方が根本から変わる。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>
+
+                <p class="summary-title"><b>地銀視点の深掘り</b></p>
                 <p>
-                    北海道は「車中泊の聖地」として道外からの流入も多く、関連市場は活発です。カー用品店や自動車ディーラーのお客様に対し、こうした最新ガジェットによる「個人消費の喚起」を話題にできます。また、マイカーローンにこうした高額オプションを含めた提案を行うなど、リテール営業の小ネタとしても有効です。
+                    道内の中小企業では現在、人手不足とそれに伴う事業承継難が深刻な経営課題となっています。このような最先端AIの登場は、「人手が足りない」と悩む取引先企業にとって、大幅なコスト削減と生産性向上をもたらす切り札になり得ます。私たちは資金を貸し出すだけでなく、「IT導入補助金」を活用したIT・DX化提案をセットで行うことで、企業の存続と成長を支えるパートナーとしての信頼を獲得できます。
                 </p>
-                <a href="https://news.yahoo.co.jp/articles/935738547c62c5547102211d25e737bbd3b771f2?source=rss" role="button" class="outline">続きを読む</a>
+
+                <a href="https://news.yahoo.co.jp/articles/56a94a55dc942eedb504df94a12403ee4c978a25?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
             </article>
 
-            <!-- News 3: Pioneer/Carrozzeria -->
+            <!-- ニュース3 -->
             <article>
-                <h3>【夏の準備を始めよう！】パイオニア・カロッツェリア2026年夏の新製品紹介</h3>
-                <b class="summary-title">ロジカル要約</b>
+                <span class="insight-badge">モビリティ・インフラ・寒冷地影響</span>
+                <h3>「ざっくり倍ぐらい使ってます」スズキ初EVが“大きく重く高く”なった意外な理由【開発者に聞く】</h3>
+                
+                <p class="summary-title"><b>ロジカル要約</b></p>
                 <ul>
-                    <li><b>背景/経緯</b>: 夏季のドライブ需要に向けて、車内エンターテインメントや安全装備の需要がピークを迎える時期。</li>
-                    <li><b>事象</b>: パイオニアが「カロッツェリア」ブランドから、2026年夏モデルのカーナビやオーディオ製品を、最新のコネクテッド機能と共に一挙発表。</li>
-                    <li><b>結果/影響</b>: AI連携や通信機能の強化により、車内の「スマホ化」がさらに進み、買い替え需要の促進が期待される。</li>
+                    <li><b>背景/経緯:</b> 軽自動車や小型車に強みを持つスズキが、ブランド初のグローバル市場向け電気自動車（EV）「e vitara」を開発。既存の軽・小型車の枠組みを超えた設計が必要となった。</li>
+                    <li><b>事象:</b> 十分な航続距離の確保、大型バッテリーの安全な搭載、グローバル基準の衝突安全性をクリアするため、開発費や部品点数を従来の「倍近く」費やし、車体を大型化・重量化させた。</li>
+                    <li><b>結果/影響:</b> 従来の低価格・コンパクト路線とは一線を画すプレミアムな価値を持つEVが誕生し、同社の次世代グローバルEVプラットフォームの基盤が確立された。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>
+
+                <p class="summary-title"><b>地銀視点の深掘り</b></p>
                 <p>
-                    5月は、夏のボーナス商戦を控えた重要な時期です。特に北海道では長距離ドライブが多いため、ナビやドラレコへの関心が高い傾向にあります。地元のカーショップや電装店様との会話では、新製品投入による客足の変化や、在庫確保のための運転資金ニーズについて探ってみるのが良いでしょう。
+                    広大な北海道において自家用車は必須インフラであり、スズキの軽自動車やコンパクトカーは道民の生活に深く浸透しています。EVの航続距離向上やメーカーの本格参入は、道内のガソリンスタンド（充電スタンドへの移行）、自動車整備工場、地域販売ディーラーのビジネスモデルに大きな変化を迫ります。取引先の整備工場などへ「EV対応機器の導入支援（設備融資）」を提案したり、今後の市場動向についての意見交換を行う際の極めて重要なトークテーマとなります。
                 </p>
-                <a href="https://news.yahoo.co.jp/articles/c1d4ea39de8555db927a356021d5520ebbaeeaa1?source=rss" role="button" class="outline">続きを読む</a>
+
+                <a href="https://news.yahoo.co.jp/articles/8750bfc3c8b391f7d2da334862fd153dcb4b5e44?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
             </article>
         </section>
 
+        <!-- フッター -->
         <footer>
             <hr>
-            <p><small>© 2026 北海道地方銀行・新人研修サポートチーム</small></p>
+            <p style="text-align: center;"><small>© 2026 北海道地方銀行 新人サポートプロジェクト. All rights reserved.</small></p>
         </footer>
     </main>
 </body>
