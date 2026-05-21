@@ -3,137 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年05月20日) - 北海道地銀新人行員向け</title>
+    <title>朝のインサイト (2026年05月21日)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         body {
-            padding-top: 2rem;
-            padding-bottom: 3rem;
-        }
-        header {
-            border-bottom: 2px solid var(--pico-primary-background);
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
+            padding-top: 20px;
         }
         .weather-info {
-            background-color: var(--pico-card-background-color);
-            border-left: 4px solid var(--pico-primary);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
-        .news-section article {
-            margin-bottom: 2rem;
-        }
-        .deep-dive {
-            background-color: var(--pico-secondary-background);
-            padding: 1rem;
+        .weather-item {
+            flex: 1;
+            min-width: 150px;
+            margin: 5px;
+            padding: 10px;
             border-radius: 8px;
-            margin-top: 1rem;
+            background-color: var(--pico-card-background-color);
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <main class="container">
-        <!-- 1. ヘッダー -->
         <header>
-            <h1>☀️ 朝のインサイト (2026年05月20日)</h1>
-            <p>北海道の未来を担う新人の皆さん、おはようございます！本日の主要ニュースと経済の視点を、日々の営業活動に活かせる形で解説します。</p>
+            <h1>☀️ 朝のインサイト (2026年05月21日)</h1>
+            <p>北海道の地方銀行に内定した皆さまへ、本日の最新ニュースとビジネスに役立つ視点をお届けします。</p>
         </header>
 
-        <!-- 2. 天気 -->
-        <section class="weather-section">
-            <article class="weather-info">
-                <h2>本日の道内天気予報</h2>
-                <div class="grid">
-                    <div>
-                        <strong>天気:</strong> 曇りがち
+        <section>
+            <h2>📍 本日の北海道の天気</h2>
+            <article>
+                <div class="weather-info">
+                    <div class="weather-item">
+                        <strong>天気</strong><br>
+                        ☁️ 曇りがち
                     </div>
-                    <div>
-                        <strong>最高気温:</strong> 16.34℃
+                    <div class="weather-item">
+                        <strong>最高気温</strong><br>
+                        <span style="color: #d93535; font-weight: bold;">14.67℃</span>
                     </div>
-                    <div>
-                        <strong>最低気温:</strong> 12.86℃
+                    <div class="weather-item">
+                        <strong>最低気温</strong><br>
+                        <span style="color: #3884ff; font-weight: bold;">10.86℃</span>
                     </div>
                 </div>
-                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--pico-muted-color);">
-                    ※本日の北海道は、雲が広がりやすく少し肌寒さを感じる1日となりそうです。外回りや顧客訪問の際は、薄手の上着を準備しておくと安心です。
+                <p style="margin-top: 15px; font-size: 0.9rem; color: var(--pico-muted-color); text-align: center;">
+                    ※本日は少し肌寒い一日となりそうです。内定式や研修準備、外出の際は上着を1枚羽織ってお出かけください。
                 </p>
             </article>
         </section>
 
-        <!-- 3. ニュース解説 (3件厳選) -->
-        <section class="news-section">
-            <h2>厳選ニュース解説</h2>
+        <section>
+            <h2>📰 厳選ニュース解説</h2>
 
-            <!-- 1件目：ESG企業ランキング -->
             <article>
-                <h3>最新版「ESG企業ランキング」トップ200…5位はJ.フロント リテイリング4位SOMPOホールディングス、ではトップ3は？</h3>
-                
+                <h3>AI拡大で従来型の銀行員採用減　米金融最大手CEO</h3>
                 <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><b>背景/経緯:</b> 世界的なESG（環境・社会・ガバナンス）投資の浸透に伴い、企業の持続可能性を示す「非財務情報」が、ブランド価値や採用、資金調達に直結する重要な評価基準となっています。</li>
-                    <li><b>事象:</b> 東洋経済オンラインが最新の「ESG企業ランキング」トップ200を発表。大手小売業や金融機関、メーカーが非財務情報の開示や多様性推進、環境投資で高い評価を獲得しました。</li>
-                    <li><b>結果/影響:</b> ESGの取り組みはサプライチェーン全体へと波及しており、大企業のみならず、その取引先である地方の中小企業に対しても具体的な取り組みが求められ始めています。</li>
+                    <li><b>背景/経緯:</b> 生成AI（人工知能）をはじめとするテクノロジーの急速な進化により、金融業界における業務プロセスや役割の大幅な見直しが進められています。</li>
+                    <li><b>事象:</b> 米金融最大手JPモルガン・チェースのジェイミー・ダイモンCEOが、AI導入に伴い、従来型の銀行員採用数を縮小する方針を言及しました。</li>
+                    <li><b>結果/影響:</b> 定型的な事務作業やデータ分析タスクの自動化が加速する一方、金融機関においてはテクノロジーを活用しつつ、高度な顧客対応や経営支援ができる人材へのシフトが急務となっています。</li>
                 </ul>
-
-                <div class="deep-dive">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>
-                        地方銀行においても、取引先のESG経営支援は最優先課題です。道内の中小企業も、大企業との取引を維持・拡大するために、CO2排出量削減や多様な人材活用などの具体的なアクションが迫られています。顧客訪問時には、このランキングの話題を切り口に「御社ではサプライチェーンからESG対応を求められていませんか？」と問いかけ、弊行の「サステナビリティ・リンク・ローン（SLL）」や、SDGs宣言策定コンサルティングなどの金融サービスを提案する契機にしましょう。
-                    </p>
-                </div>
-                <div style="margin-top: 1.5rem;">
-                    <a href="https://news.yahoo.co.jp/articles/63ed93a3272b1b766c5f7e2f17e21fdc904737c5?source=rss" role="button" class="outline">続きを読む</a>
-                </div>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>このニュースは、地銀内定者の皆さんにとって「自身のキャリアをどう築くか」という極めて重要な問いを投げかけています。現在、北海道の地方銀行でも店舗のデジタル化やAI審査の導入が急ピッチで進んでいます。今後求められるのは、「単にミスなく事務をこなす能力」ではなく、「AIには真似できない、お客様の経営課題や将来への想いに深く共感し、最適なソリューションを組み立てる提案力」です。入行前からITやAIのトレンドに関心を持ちつつ、人間味のある人間関係構築力を育む意識を持ちましょう。</p>
+                <a href="https://news.yahoo.co.jp/articles/35afdccaab57327f22af9a07584e0b0b64ccfc08?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- 2件目：KeePer技研の花粉対策 -->
             <article>
-                <h3>洗車のプロ KeePer技研が教える最強の花粉対策!!　水洗いは逆効果で秘策は“70℃のお湯”にあり!?</h3>
-                
+                <h3>介護職の知人が「施設介護」から「訪問介護」へ転職予定です。年収や働き方はどれくらい変わるのでしょうか？</h3>
                 <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><b>背景/経緯:</b> 春から初夏にかけ、車に付着する花粉は放置すると「ペクチン」という粘着成分を放出し、乾燥して車体の塗装に深刻なシミや歪みを引き起こします。</li>
-                    <li><b>事象:</b> カーコーティング最大手のKeePer技研が、ペクチンは熱に弱い性質を持つため、水洗いではなく「70℃程度のお湯」をかけることが最も効果的で安全な除去方法であると発信しました。</li>
-                    <li><b>結果/影響:</b> 正しい洗車技術の認知拡大により、車の資産価値維持に繋がるだけでなく、高付加価値なコーティングサービスや専用設備の需要増が期待されます。</li>
+                    <li><b>背景/経緯:</b> 日本の超高齢社会において介護サービスの需要は拡大し続けており、従事者の多様な働き方や適切な処遇の確保が大きな議論を呼んでいます。</li>
+                    <li><b>事象:</b> シフト制で夜勤を伴うことが多い「施設介護」と、個別の自宅を訪問してケアを行う「訪問介護」では、給与体系（基本給ベースか、時給・出来高制か）や勤務環境において大きな構造的違いが存在します。</li>
+                    <li><b>結果/影響:</b> ライフスタイルに合わせた柔軟な働き方が可能な「訪問介護」への移行は、個人の離職防止に貢献する一方、移動コストやサービスキャンセル時の収入変動といった、事業者・労働者双方にとっての財務的・雇用的なマネジメント課題が生じています。</li>
                 </ul>
-
-                <div class="deep-dive">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>
-                        北海道は広大な土地柄、完全な「車社会」です。取引先企業は多くの社用車を抱えており、管理コストや車両の資産価値維持には高い関心を持っています。また、地元のガソリンスタンド、自動車整備工場、中古車販売店などは弊行の重要なお取引先です。顧客訪問時のアイスブレイク（世間話）としてこの花粉対策の知恵を紹介しつつ、自動車関連の取引先に対しては「高圧温水洗車機の導入など、新たな洗車ニーズ対応に向けた設備投資」の融資提案の糸口として活用できます。
-                    </p>
-                </div>
-                <div style="margin-top: 1.5rem;">
-                    <a href="https://news.yahoo.co.jp/articles/63d47dc1f59d0fd2a275058807c4eef9365765ad?source=rss" role="button" class="outline">続きを読む</a>
-                </div>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>北海道は全国平均を上回るスピードで高齢化が進行しており、介護事業は地域インフラとして極めて重要な位置を占めています。融資担当の行員として地元の介護事業者を支える際、事業者が直面する「人材確保」や「処遇改善」のリアルな構造を理解しておくことは必須です。また、個人のお客様が介護職に従事されている場合、こうした働き方や収入構造の違いを把握した上で、適切な住宅ローンや資産運用の提案を行うことで、「業界をよく理解してくれている頼れるバンカー」として圧倒的な信頼を得ることができます。</p>
+                <a href="https://news.yahoo.co.jp/articles/b8d13f4dd2d0e2522cf4f74251e601ab6a91521a?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- 3件目：Xperia 1 VIII -->
             <article>
-                <h3>ソニー「Xperia 1 VIII」は刷新されたスピーカーが魅力。AIカメラアシスタントで新しい発見も</h3>
-                
+                <h3>なぜか信頼される人が「話を聞くとき」にしているたった一つのこと</h3>
                 <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><b>背景/経緯:</b> スマートフォン市場の成熟化が進む中、メーカー各社は単純な端末スペック向上だけでなく、独自の体験価値や「AI技術の搭載」によって差別化を図っています。</li>
-                    <li><b>事象:</b> ソニーが「Xperia 1 VIII」を発表。映画や音楽を楽しめる刷新されたステレオスピーカーに加え、撮影シチュエーションを自動で最適化し新しい構図や編集を提案する「AIカメラアシスタント」が注目されています。</li>
-                    <li><b>結果/影響:</b> コンテンツクリエイターやガジェットファンへのアピールだけでなく、モバイルワークや、AI活用によるビジネスプロセスの効率化を目指すビジネス層へのアプローチを強化します。</li>
+                    <li><b>背景/経緯:</b> ビジネスや良好な人間関係において「信頼の獲得」は最重要テーマですが、多くの人は「いかに素晴らしい提案をするか」「いかに自分の意見をアピールするか」ばかりに注力しがちです。</li>
+                    <li><b>事象:</b> 相手から深い信頼を勝ち取る人は、話を聞く際に「自分の意見や解決策を即座に挟まず、まずは相手の感情や意図をそのまま受け止める（受容する）」ことに徹底して徹しています。</li>
+                    <li><b>結果/影響:</b> 相手は「自分の話を真剣に聞いてもらえている」という安心感（自己重要感）を得られ、結果として高い信頼関係が生まれ、ビジネスにおけるスムーズな合意や課題解決につながります。</li>
                 </ul>
-
-                <div class="deep-dive">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>
-                        地銀の営業現場において、最新のデジタル技術やAIトレンドに対するアンテナの高さは、特に若手経営者やスタートアップ、IT企業のクライアントと対等に話すための武器になります。このニュースは「スマートフォンの進化＝エッジAI（デバイス内での高速AI処理）の普及」を象徴するものです。「AIで撮影や業務のプロセスがどう変わるか」という視点は、取引先中小企業のDX（デジタルトランスフォーメーション）やテレワーク機器導入に関するヒアリング・提案の引き出しとして非常に有益です。
-                    </p>
-                </div>
-                <div style="margin-top: 1.5rem;">
-                    <a href="https://news.yahoo.co.jp/articles/820b59e7e1d151282be7b935fbba5b7f7f20a74c?source=rss" role="button" class="outline">続きを読む</a>
-                </div>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>地方銀行の銀行員にとって、最大の武器は「傾聴力」です。特に、資金繰りや事業承継、あるいは個人のライフプランなど、デリケートで深刻な悩みを抱えるお客様と向き合う際、焦って金融商品を売り込もうとする姿勢は逆効果になります。まずは「お客様が本当に話したいこと、困っていること」を途中で遮らずにすべて聞き切る。この傾聴姿勢を実践することこそが、地元の経営者や個人のお客様に「この人に相談して良かった」と言っていただける信頼の土台となります。同期や先輩行員との日々のコミュニケーションから、意識して取り入れていきましょう。</p>
+                <a href="https://news.yahoo.co.jp/articles/cc334fea146babe3647bb37e7557f75ebdb8375a?source=rss" role="button" class="outline">続きを読む</a>
             </article>
+
         </section>
 
-        <!-- フッター -->
-        <footer style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--pico-muted-border-color);">
-            <p>© 2026 北海道地方銀行 新人サポートプロジェクト</p>
-            <p style="font-size: 0.8rem; color: var(--pico-muted-color);">本日も地域と顧客の挑戦を支えるため、自信を持って元気に営業へ出発しましょう！</p>
+        <footer>
+            <small style="display: block; text-align: center; margin-top: 40px; color: var(--pico-muted-color);">
+                © 2026 北海道地銀 内定者サポートプログラム. All Rights Reserved.
+            </small>
         </footer>
     </main>
 </body>
