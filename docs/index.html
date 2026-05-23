@@ -1,119 +1,111 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年05月22日)</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <style>
-        body {
-            padding-top: 2rem;
-            padding-bottom: 3rem;
-        }
-        .weather-info {
-            background-color: var(--pico-secondary-background);
-            border-left: 5px solid var(--pico-primary);
-        }
-        .logical-summary {
-            background-color: var(--pico-card-background-color);
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-        }
-        .insight-box {
-            background-color: rgba(0, 150, 255, 0.05);
-            border: 1px dashed var(--pico-primary);
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1.5rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>朝のインサイト - 2026年05月23日</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+    body {
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+    }
+    h1 {
+      border-bottom: 3px solid var(--pico-primary);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .intro-box {
+      background-color: var(--pico-card-background-color);
+      padding: 1rem;
+      border-left: 4px solid var(--pico-primary);
+      margin-bottom: 2rem;
+      border-radius: 4px;
+    }
+    h2 {
+      margin-top: 2rem;
+      border-left: 5px solid var(--pico-primary);
+      padding-left: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-    <main class="container">
-        <!-- ヘッダー -->
-        <header>
-            <h1>☀️ 朝のインサイト (2026年05月22日)</h1>
-            <p><small>北海道の未来を担う新人行員の皆様へ。今日の経済動向と、顧客提案に使える視点をお届けします。</small></p>
-        </header>
+  <main class="container">
+    <header>
+      <h1>☀️ 朝のインサイト (2026年05月23日)</h1>
+      <div class="intro-box">
+        <p>北海道の地方銀行に内定された皆さま、おはようございます。本日のニュースから、今後の銀行業務や皆さまのビジネススキル向上に繋がるトピックを厳選しました。地域を支える銀行員としての視点を少しずつ養っていきましょう。</p>
+      </div>
+    </header>
 
-        <!-- 天気セクション -->
-        <section id="weather">
-            <article class="weather-info">
-                <h3>📍 本日の北海道の天気</h3>
-                <div class="grid">
-                    <div><strong>天気:</strong> 薄い雲</div>
-                    <div><strong>最高気温:</strong> 12.45℃</div>
-                    <div><strong>最低気温:</strong> 10.86℃</div>
-                </div>
-                <p style="margin-top: 1rem; margin-bottom: 0;"><small>💡 <strong>新人への一言アドバイス:</strong> 本日は日中も気温が上がりにくく、肌寒い一日となります。先輩行員との外回りや店舗での案内時は、体調管理に気を配り、温かい笑顔でお客様をお迎えしましょう。「今日は少し冷えますね」という一言から、お客様との温かい会話を始めてみてください。</small></p>
-            </article>
-        </section>
+    <section id="weather">
+      <article>
+        <header><strong>📍 本日の北海道の天気</strong></header>
+        <div class="grid" style="text-align: center;">
+          <div>
+            <small>天気</small>
+            <p style="font-size: 1.25rem; font-weight: bold; margin: 0;">曇りがち ☁️</p>
+          </div>
+          <div>
+            <small>最高気温</small>
+            <p style="font-size: 1.25rem; font-weight: bold; margin: 0; color: #e53935;">10.79℃</p>
+          </div>
+          <div>
+            <small>最低気温</small>
+            <p style="font-size: 1.25rem; font-weight: bold; margin: 0; color: #1e88e5;">9.86℃</p>
+          </div>
+        </div>
+      </article>
+    </section>
 
-        <!-- ニュースセクション -->
-        <section id="news-insights">
-            <h2>📰 厳選ニュース解説</h2>
+    <section id="news-section">
+      <h2>📰 今朝の注目ニュース解説</h2>
 
-            <!-- 記事1 -->
-            <article>
-                <h3>実家に帰った際、年収「500万円」と話したら親に「40代でそれは少ないんじゃない？」と言われました…。同年代はもっと稼いでいるのでしょうか？</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><strong>背景/経緯:</strong> バブル経済や右肩上がりの昇給を経験した親世代と、デフレや低成長期を長く経験した現役世代（40代）との間で、給与水準に対する「当たり前」の認識ギャップが生じている。</li>
-                        <li><strong>事象:</strong> 近年の統計によると、40代前半の平均年収は約490万円、後半は約512万円。地域差や雇用形態を考慮した中央値を踏まえると、年収500万円は決して「少ない」わけではなく、現代の平均的な水準である。</li>
-                        <li><strong>結果/影響:</strong> 世代間の経済的感覚のズレが家族間の会話に影響を与える一方、限られた年収の中でどのように資産形成（NISA、iDeCo等）や早期のライフプラン構築を進めるかが、若い世代共通の重要課題となっている。</li>
-                    </ul>
-                </div>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>北海道内における平均年収事情を考慮すると、道内の40代世帯にとって「年収500万円」は非常に現実的であり、家族の生活を支える大切な基盤です。お客様（特に30〜40代の子育て世代）のライフプランやマイホーム購入の相談に乗る際、この「現実的な給与水準」を深く理解しておくことは必須です。「年収の多寡」に焦点を当てるのではなく、「限られた収入からいかに計画的に教育資金や老後資金を準備するか」という観点から、つみたてNISAなどの資産形成や適切な住宅ローンの借入額を提案しましょう。「親世代からの資金援助（贈与）の有無」も、住宅ローンや相続対策のアプローチにおいて非常に大きな会話のヒントになります。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/ad80bb5b0d3b6aea1bf038f4cfa82d3afc19c7c4?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
-            </article>
-
-            <!-- 記事2 -->
-            <article>
-                <h3>トランプが「任せる」と"物価の番人"を厚遇…利下げしても、しなくても詰む新FRB議長との「蜜月関係」の末路</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><strong>背景/経緯:</strong> 米国大統領選後の新政権発足に伴い、インフレ沈静化を最優先課題とするFRB（米連邦準備制度理事会）とトランプ氏の政策の整合性が市場の大きな関心事となっている。</li>
-                        <li><strong>事象:</strong> トランプ氏は次期FRB議長候補を好遇し、「任せる」という姿勢を示すが、トランプ氏自身が主張する「関税引き上げ」や「減税」といった主要政策は、本質的に強い再インフレ（物価上昇）圧力を生み出すものである。</li>
-                        <li><strong>結果/影響:</strong> 新FRB議長は、トランプ政策がもたらすインフレを防ぐために「利下げができない（高金利維持）」、あるいは景気配慮で「無理な利下げを行い激しい物価高を招く」という、どちらを選んでも経済が失速しかねないジレンマに直面している。</li>
-                    </ul>
-                </div>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>一見、遠いアメリカの話に見えますが、米国の金利動向は「為替（円安・円高）」を通じて、北海道の地域経済に直結しています。円安が長引けば、燃料や飼料、原材料を輸入に頼る道内の農林水産業や建設業、食品加工業の中小企業にとって大きなコスト負担となります。一方で、金利上昇に備えるため、地方銀行としても融資先へのアドバイスや、自行の預金・貸出金利（住宅ローン金利など）の予測が極めて重要になります。地元企業の経営者様を訪問する際、「米国のインフレ懸念が根強く、円安の長期化が懸念されますが、仕入れコストへの影響はいかがですか？」と問いかけ、適切な運転資金の融資提案や金利リスクヘッジのご案内につなげてください。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/9273001519dcff2c15015fe5cbcff35f7c2e23e2?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
-            </article>
-
-            <!-- 記事3 -->
-            <article>
-                <h3>先行予約は7000台超え！　新小型EV『ホンダ・スーパーワン』はシティターボIIに憧れる50歳代が熱視線</h3>
-                <div class="logical-summary">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><strong>背景/経緯:</strong> グローバル規模でEV（電気自動車）シフトが推進される中、実用的なエコカーという位置づけだけでなく、消費者のエモーショナルな価値観や趣味嗜好に訴えかけるEVが模索されていた。</li>
-                        <li><strong>事象:</strong> ホンダが発表した新型小型EV「スーパーワン」は、1980年代の伝説的名車「シティターボII」をオマージュしたデザインを採用。かつて車を愛した50代を中心に大きな反響を呼び、予約開始後すぐに7,000台を突破した。</li>
-                        <li><strong>結果/影響:</strong> EV普及のハードルだった「環境への義務感」を、「趣味・ノスタルジー」という自己表現の動機に変換することで、新たな顧客層や消費の波を開拓できる可能性が証明された。</li>
-                    </ul>
-                </div>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>広大な面積を持つ北海道では、自動車は生活必需品であり、家計や企業活動における最大の支出項目の一つです。特に今回熱視線を送っている「50代」は、地元の有力企業の経営者や、資金に余裕のある優良な個人顧客層に重なります。このニュースは、そうしたお客様との雑談時の「アイスブレイク」に最適です。「ホンダの新しいEV、あの懐かしのシティにそっくりで話題ですね！」という会話から、趣味の話、ひいてはご家族の車の買い替え予定、そして当行の「エコカー優遇マイカーローン」の提案へスムーズにつなげることができます。また、EVの普及を見据え、地元の自動車整備工場や販売店様が今後必要とする「EV対応の整備設備（充電スタンドやテスター等）」への設備投資融資ニーズを先回りして捉える視点も持ちましょう。</p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/e8082838fd615fa83fea65652c541b8b1392f63f?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
-            </article>
-        </section>
-
-        <!-- フッター -->
+      <article>
+        <h3>なぜ一流のリーダーは部下の言葉を「信じない」のか？</h3>
+        <p><b>ロジカル要約</b>:</p>
+        <ul>
+          <li><b>背景/経緯</b>: ビジネスにおいて、リーダーが部下の主観的な報告（「順調です」「問題ありません」など）をそのまま鵜呑みにしてしまい、大きなトラブルに発展するケースが少なくない。</li>
+          <li><b>事象</b>: 「人を信じるが、仕事（事実）は信じない」という一歩引いた姿勢を持ち、客観的なデータや具体的なファクトを基に状況を把握することが、一流のリーダーの共通点である。</li>
+          <li><b>結果/影響</b>: 心理的安全性を担保しつつ、丁寧なファクト確認を習慣化することで、業務の遅れやミスを未然に防ぎ、チーム全体のパフォーマンスを最大化できる。</li>
+        </ul>
+        <p><b>地銀視点の深掘り</b>:</p>
+        <p>地方銀行の融資業務においてもこの「ファクトベースの検証」は極めて重要です。お取引先の経営者様が「経営は順調だ」とおっしゃっても、決算書や試算表、工場の稼働状況といった「客観的な事実（ファクト）」を重ね合わせて検証することが、正しい融資判断に繋がります。また、配属後に指導先輩や上司へ報告を行う際も、「大丈夫です」ではなく「〇〇の書類作成が〇％完了しています」とファクトで報告する習慣をつけましょう。</p>
         <footer>
-            <hr>
-            <p style="text-align: center;"><small>© 2026 北海道地方銀行 新人行員育成サポートプロジェクト</small></p>
+          <a href="https://news.yahoo.co.jp/articles/da8eac59477db2673cfddeac799c46cd9d7006ee?source=rss" role="button" class="outline">続きを読む</a>
         </footer>
-    </main>
+      </article>
+
+      <article>
+        <h3>15年放置の日産 スカイラインGT-Rが新車同様に復活！ ピットワン奇跡の修復劇</h3>
+        <p><b>ロジカル要約</b>:</p>
+        <ul>
+          <li><b>背景/経緯</b>: 日本の旧車（スカイラインGT-R等）が世界的なブームで価値を高める一方、長年の放置や経年劣化によって重度のサビに冒され、修復困難とされる車両が多数存在する。</li>
+          <li><b>事象</b>: 岐阜県の有名自動車カスタマイズショップ「ピットワン」が、15年間放置されサビだらけだったGT-Rを、職人の高い板金塗装技術を駆使して新車同様に完全修復（レストア）した。</li>
+          <li><b>結果/影響</b>: 技術力を駆使したレストアのプロセスが動画等でも大きな反響を呼び、企業のブランド価値を高めるとともに、中古車ビジネスにおける「高付加価値化」の新たな可能性を提示した。</li>
+        </ul>
+        <p><b>地銀視点の深掘り</b>:</p>
+        <p>北海道内にも、板金塗装や自動車整備を行う中小企業は数多く存在します。人口減少や自動車の長寿命化に伴い価格競争が激化する中、このように「独自の技術力で高付加価値を生み出すビジネスモデル（レストア等）」への進出は、お取引先企業の経営基盤を強固にするヒントになります。融資担当者（ポータブルスキルを持つ銀行員）として、地元企業の「隠れた技術力」を発見し、設備投資や事業再構築を提案する際の好事例として頭に入れておきましょう。</p>
+        <footer>
+          <a href="https://news.yahoo.co.jp/articles/51a97784dea99a03023a1c4b877bec6339096a23?source=rss" role="button" class="outline">続きを読む</a>
+        </footer>
+      </article>
+
+      <article>
+        <h3>職場で迷惑な人は返事で「はい」しか言わない。じゃあ、何と言えばいい？</h3>
+        <p><b>ロジカル要約</b>:</p>
+        <ul>
+          <li><b>背景/経緯</b>: 新入社員や若手社員への指導現場において、指示に対して単に「はい」とだけ返事をする人が多く、実際に業務を進めると指示内容とズレが生じる問題が頻発している。</li>
+          <li><b>事象</b>: 思考停止した「はい」の代わりに、指示された内容（アクションや期日）を「〇〇までに仕上げるということですね」と具体的な言葉で復唱することが重要とされる。</li>
+          <li><b>結果/影響</b>: 指示する側と受ける側のミスマッチがなくなり、手戻りが防げる。また、「正しく理解している」という印象を与えるため、職場での信頼関係が劇的に向上する。</li>
+        </ul>
+        <p><b>地銀視点の深掘り</b>:</p>
+        <p>1円のミスも許されない銀行業務において、お互いの「認識のズレ」は致命的な事務事故（誤送金、融資書類の不備など）を引き起こす引き金になります。これから始まる新入社員研修や支店配属後は、先輩から数多くの指示を受けます。指示された際、必ず「〇時までに〇〇を処理すればよろしいですね」と具体的に復唱するだけで、皆さんの信頼度は数倍に跳ね上がります。今日から実践できる最も価値のあるビジネススキルです。</p>
+        <footer>
+          <a href="https://news.yahoo.co.jp/articles/8272ac78404469a165c5f1426c2dd1dd3a50cbe4?source=rss" role="button" class="outline">続きを読む</a>
+        </footer>
+      </article>
+    </section>
+  </main>
 </body>
 </html>
