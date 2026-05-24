@@ -1,111 +1,143 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>朝のインサイト - 2026年05月23日</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <style>
-    body {
-      padding-top: 2rem;
-      padding-bottom: 3rem;
-    }
-    h1 {
-      border-bottom: 3px solid var(--pico-primary);
-      padding-bottom: 0.5rem;
-      margin-bottom: 1.5rem;
-    }
-    .intro-box {
-      background-color: var(--pico-card-background-color);
-      padding: 1rem;
-      border-left: 4px solid var(--pico-primary);
-      margin-bottom: 2rem;
-      border-radius: 4px;
-    }
-    h2 {
-      margin-top: 2rem;
-      border-left: 5px solid var(--pico-primary);
-      padding-left: 0.5rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝のインサイト (2026年05月24日)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        body {
+            padding: 20px 0;
+        }
+        .header-section {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 1rem;
+        }
+        .weather-card {
+            background-color: var(--card-background-color);
+            border-left: 5px solid var(--primary);
+        }
+        .weather-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .weather-item {
+            flex: 1;
+            min-width: 150px;
+        }
+        .deep-dive {
+            background-color: rgba(var(--primary-rgb), 0.05);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            border-left: 3px solid var(--primary);
+        }
+        .button-link {
+            margin-top: 15px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>☀️ 朝のインサイト (2026年05月23日)</h1>
-      <div class="intro-box">
-        <p>北海道の地方銀行に内定された皆さま、おはようございます。本日のニュースから、今後の銀行業務や皆さまのビジネススキル向上に繋がるトピックを厳選しました。地域を支える銀行員としての視点を少しずつ養っていきましょう。</p>
-      </div>
-    </header>
+    <main class="container">
+        <!-- ヘッダー -->
+        <header class="header-section">
+            <h1>☀️ 朝のインサイト (2026年05月24日)</h1>
+            <p><strong>北海道の地方銀行 新入行員の皆様へ：</strong> 本日の主要ニュースと、日々の業務・顧客対応に直結するプロの視点を朝一番にお届けします。</p>
+        </header>
 
-    <section id="weather">
-      <article>
-        <header><strong>📍 本日の北海道の天気</strong></header>
-        <div class="grid" style="text-align: center;">
-          <div>
-            <small>天気</small>
-            <p style="font-size: 1.25rem; font-weight: bold; margin: 0;">曇りがち ☁️</p>
-          </div>
-          <div>
-            <small>最高気温</small>
-            <p style="font-size: 1.25rem; font-weight: bold; margin: 0; color: #e53935;">10.79℃</p>
-          </div>
-          <div>
-            <small>最低気温</small>
-            <p style="font-size: 1.25rem; font-weight: bold; margin: 0; color: #1e88e5;">9.86℃</p>
-          </div>
-        </div>
-      </article>
-    </section>
+        <!-- 天気セクション -->
+        <article class="weather-card">
+            <header><strong>📍 本日の北海道の天気予報</strong></header>
+            <div class="weather-info">
+                <div class="weather-item"><strong>天気:</strong> 曇りがち ☁️</div>
+                <div class="weather-item"><strong>最高気温:</strong> 15.79℃</div>
+                <div class="weather-item"><strong>最低気温:</strong> 12.86℃</div>
+            </div>
+            <footer style="font-size: 0.85rem; padding-top: 10px;">
+                💡 <strong>新人の心得：</strong> 本日はやや肌寒い曇り空の一日となります。外回りや店舗前の清掃時には、スーツの上に羽織れるコートを用意するなど体調管理を徹底しましょう。また、お客様との雑談で「今日は少し冷え込みますね」と共感を示すことで、心理的距離を縮めるきっかけにできます。
+            </footer>
+        </article>
 
-    <section id="news-section">
-      <h2>📰 今朝の注目ニュース解説</h2>
+        <!-- ニュースセクション -->
+        <section>
+            <h2>厳選ニュース解説（3選）</h2>
 
-      <article>
-        <h3>なぜ一流のリーダーは部下の言葉を「信じない」のか？</h3>
-        <p><b>ロジカル要約</b>:</p>
-        <ul>
-          <li><b>背景/経緯</b>: ビジネスにおいて、リーダーが部下の主観的な報告（「順調です」「問題ありません」など）をそのまま鵜呑みにしてしまい、大きなトラブルに発展するケースが少なくない。</li>
-          <li><b>事象</b>: 「人を信じるが、仕事（事実）は信じない」という一歩引いた姿勢を持ち、客観的なデータや具体的なファクトを基に状況を把握することが、一流のリーダーの共通点である。</li>
-          <li><b>結果/影響</b>: 心理的安全性を担保しつつ、丁寧なファクト確認を習慣化することで、業務の遅れやミスを未然に防ぎ、チーム全体のパフォーマンスを最大化できる。</li>
-        </ul>
-        <p><b>地銀視点の深掘り</b>:</p>
-        <p>地方銀行の融資業務においてもこの「ファクトベースの検証」は極めて重要です。お取引先の経営者様が「経営は順調だ」とおっしゃっても、決算書や試算表、工場の稼働状況といった「客観的な事実（ファクト）」を重ね合わせて検証することが、正しい融資判断に繋がります。また、配属後に指導先輩や上司へ報告を行う際も、「大丈夫です」ではなく「〇〇の書類作成が〇％完了しています」とファクトで報告する習慣をつけましょう。</p>
+            <!-- 記事1 -->
+            <article>
+                <h3>“固定資産税”の納付書が届きました。一括と分割どちらがお得？</h3>
+                
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯</strong>: 毎年春から初夏にかけて不動産所有者に固定資産税の納税通知書が届く。納付にあたり、年4回の「期別（分割）払い」と「全期（一括）払い」のいずれかを選択できる。</li>
+                    <li><strong>事象</strong>: 「一括の方が得」というイメージを持たれがちだが、かつて存在した一括払いによる割引制度（前納報奨金制度）は、現在ではほとんどの自治体で廃止されている。</li>
+                    <li><strong>結果/影響</strong>: 金銭的な支払総額は一括・分割のどちらでも変わらない。一括は「支払い忘れの防止・手間の削減」、分割は「手元資金（キャッシュ）の維持」という資金管理上のメリットを選択する形となる。</li>
+                </ul>
+
+                <div class="deep-dive">
+                    <b>地銀視点の深掘り（顧客との会話ネタ・提案）</b>
+                    <p>
+                        道内の各市町村でも前納報奨金はほぼ廃止されています。この時期、ご年配の地主様や個人事業主のお客様から「どっちで払うのがいいと思う？」と相談を受けることがあります。その際は、「金銭的な差はありませんが、手元の資金効率や納税の手間を考慮して選びましょう」とお答えし、当行の口座振替やインターネットバンキング（Pay-easy等）の利用をご提案しましょう。納付の手間を省く「決済サービス」の提案は、お客様の利便性向上とともに、当行口座をメイン口座として使い続けていただくための絶好のフックになります。
+                    </p>
+                </div>
+                
+                <a href="https://news.yahoo.co.jp/articles/5610fc614c4b0cf3eb60f169425bdc370d99e1ce?source=rss" role="button" class="outline button-link">続きを読む</a>
+            </article>
+
+            <!-- 記事2 -->
+            <article>
+                <h3>実家を売るか貸すかで迷っています。「売却」と「賃貸」どちらが将来的に得？</h3>
+                
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯</strong>: 高齢化に伴う実家の空き家化が全国的な社会問題となる中、相続人や家族が「売るべきか」「賃貸に出すべきか」の判断を迫られるケースが急増している。</li>
+                    <li><strong>事象</strong>: 「売却」は即時の現金化や将来の管理コスト・税負担から解放される利点があり、「賃貸」は安定的かつ長期的な家賃収入が期待できる一方で、修繕費用や空室リスク、入居者トラブルなどの経営者責任を負う。</li>
+                    <li><strong>結果/影響</strong>: 物件の立地（需要の有無）、築年数、所有者の資金状況、そして将来的に自身や家族が戻って住む可能性などを総合的に考慮し、中長期的なライフプランに合わせた決断が必要となる。</li>
+                </ul>
+
+                <div class="deep-dive">
+                    <b>地銀視点の深掘り（顧客との会話ネタ・提案）</b>
+                    <p>
+                        北海道は札幌圏を除き、過疎化や空き家問題が特に顕著な地域です。お客様から「実家をどうすべきか」という相談を受けた場合、単なる雑談で終わらせてはいけません。これは地銀として包括的なソリューションを提案できる最大のチャンスです。例えば、売却を選択された場合は「売却代金の資産運用（定期預金や投資信託）」、賃貸を選択された場合は「リフォームローンの融資提案」、また相続に関わる問題であれば「当行の相続手続き支援や遺言信託サービスの紹介」へと繋げられます。地元の不動産業者と連携しながら、地域のお客様の資産を守るパートナーとしての役割を果たしましょう。
+                    </p>
+                </div>
+                
+                <a href="https://news.yahoo.co.jp/articles/79a8d05033f0140739a8b388f459ba1bd173e4a8?source=rss" role="button" class="outline button-link">続きを読む</a>
+            </article>
+
+            <!-- 記事3 -->
+            <article>
+                <h3>超小型バイク用ドライブレコーダー「MiVue M820Pro」登場！</h3>
+                
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯</strong>: 事故時の証拠能力やあおり運転への対策として、四輪車だけでなく二輪車（バイク）でもドライブレコーダーの装着需要が急激に高まっている。</li>
+                    <li><strong>事象</strong>: 2Kの高画質録画や、明暗差に強いHDR機能を備え、ヘルメットや車体にスマートに装着可能な超小型・軽量設計のバイク用ドラレコ「MiVue M820Pro」が新たに発売された。</li>
+                    <li><strong>結果/影響</strong>: 夜間や悪天候時でも鮮明な録画が可能となり、二輪ライダーの万が一の際の自己防衛力が向上するとともに、業界全体の安全意識の向上が期待される。</li>
+                </ul>
+
+                <div class="deep-dive">
+                    <b>地銀視点の深掘り（顧客との会話ネタ・提案）</b>
+                    <p>
+                        北海道は、夏シーズンになると国内外から多くの観光客やライダーが訪れる「ツーリングの聖地」です。このニュースは二つのビジネス視点に繋がります。一つは、地域の「バイクショップ」や「レンタカー・レンタルバイク業者」といった法人取引先に対し、安全対策強化や他社との差別化として最新ドラレコの導入を促す設備投資（ビジネスローン）の提案。もう一つは、個人のお客様へのアプローチです。マイカーローン（バイク購入資金）の商談時や、窓口での自動車・バイク保険（当行が代理店として扱う損害保険）の提案時に、「最近はバイク用の超小型ドラレコも普及しており、これに合わせたドラレコ特約付き保険が人気です」といった、時代を捉えたクロスセルに活用できます。
+                    </p>
+                </div>
+                
+                <a href="https://news.yahoo.co.jp/articles/d974dfeb589f9d49a1f1ce7bf148d007082e9adb?source=rss" role="button" class="outline button-link">続きを読む</a>
+            </article>
+        </section>
+
+        <!-- フッター -->
         <footer>
-          <a href="https://news.yahoo.co.jp/articles/da8eac59477db2673cfddeac799c46cd9d7006ee?source=rss" role="button" class="outline">続きを読む</a>
+            <hr>
+            <p style="text-align: center; font-size: 0.9rem; color: #666;">
+                © 2026 北海道地方銀行 新人研修サポート事務局. All rights reserved. <br>
+                本日も地域のお客様に寄り添い、信頼される行員を目指して一歩ずつ歩みを進めましょう！
+            </p>
         </footer>
-      </article>
-
-      <article>
-        <h3>15年放置の日産 スカイラインGT-Rが新車同様に復活！ ピットワン奇跡の修復劇</h3>
-        <p><b>ロジカル要約</b>:</p>
-        <ul>
-          <li><b>背景/経緯</b>: 日本の旧車（スカイラインGT-R等）が世界的なブームで価値を高める一方、長年の放置や経年劣化によって重度のサビに冒され、修復困難とされる車両が多数存在する。</li>
-          <li><b>事象</b>: 岐阜県の有名自動車カスタマイズショップ「ピットワン」が、15年間放置されサビだらけだったGT-Rを、職人の高い板金塗装技術を駆使して新車同様に完全修復（レストア）した。</li>
-          <li><b>結果/影響</b>: 技術力を駆使したレストアのプロセスが動画等でも大きな反響を呼び、企業のブランド価値を高めるとともに、中古車ビジネスにおける「高付加価値化」の新たな可能性を提示した。</li>
-        </ul>
-        <p><b>地銀視点の深掘り</b>:</p>
-        <p>北海道内にも、板金塗装や自動車整備を行う中小企業は数多く存在します。人口減少や自動車の長寿命化に伴い価格競争が激化する中、このように「独自の技術力で高付加価値を生み出すビジネスモデル（レストア等）」への進出は、お取引先企業の経営基盤を強固にするヒントになります。融資担当者（ポータブルスキルを持つ銀行員）として、地元企業の「隠れた技術力」を発見し、設備投資や事業再構築を提案する際の好事例として頭に入れておきましょう。</p>
-        <footer>
-          <a href="https://news.yahoo.co.jp/articles/51a97784dea99a03023a1c4b877bec6339096a23?source=rss" role="button" class="outline">続きを読む</a>
-        </footer>
-      </article>
-
-      <article>
-        <h3>職場で迷惑な人は返事で「はい」しか言わない。じゃあ、何と言えばいい？</h3>
-        <p><b>ロジカル要約</b>:</p>
-        <ul>
-          <li><b>背景/経緯</b>: 新入社員や若手社員への指導現場において、指示に対して単に「はい」とだけ返事をする人が多く、実際に業務を進めると指示内容とズレが生じる問題が頻発している。</li>
-          <li><b>事象</b>: 思考停止した「はい」の代わりに、指示された内容（アクションや期日）を「〇〇までに仕上げるということですね」と具体的な言葉で復唱することが重要とされる。</li>
-          <li><b>結果/影響</b>: 指示する側と受ける側のミスマッチがなくなり、手戻りが防げる。また、「正しく理解している」という印象を与えるため、職場での信頼関係が劇的に向上する。</li>
-        </ul>
-        <p><b>地銀視点の深掘り</b>:</p>
-        <p>1円のミスも許されない銀行業務において、お互いの「認識のズレ」は致命的な事務事故（誤送金、融資書類の不備など）を引き起こす引き金になります。これから始まる新入社員研修や支店配属後は、先輩から数多くの指示を受けます。指示された際、必ず「〇時までに〇〇を処理すればよろしいですね」と具体的に復唱するだけで、皆さんの信頼度は数倍に跳ね上がります。今日から実践できる最も価値のあるビジネススキルです。</p>
-        <footer>
-          <a href="https://news.yahoo.co.jp/articles/8272ac78404469a165c5f1426c2dd1dd3a50cbe4?source=rss" role="button" class="outline">続きを読む</a>
-        </footer>
-      </article>
-    </section>
-  </main>
+    </main>
 </body>
 </html>
