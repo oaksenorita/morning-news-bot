@@ -3,139 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年05月24日)</title>
+    <title>朝のインサイト (2026年05月25日)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         body {
-            padding: 20px 0;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+            background-color: #f7f9fa;
         }
-        .header-section {
+        main {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        h1 {
+            color: #005a9c;
+            border-bottom: 3px solid #005a9c;
+            padding-bottom: 0.5rem;
             margin-bottom: 2rem;
-            border-bottom: 2px solid var(--primary);
-            padding-bottom: 1rem;
         }
-        .weather-card {
-            background-color: var(--card-background-color);
-            border-left: 5px solid var(--primary);
+        article {
+            border-top: 4px solid #005a9c;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
         .weather-info {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 10px;
+            font-size: 1.1rem;
         }
-        .weather-item {
-            flex: 1;
-            min-width: 150px;
+        .insight-section {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px dashed #ccc;
         }
-        .deep-dive {
-            background-color: rgba(var(--primary-rgb), 0.05);
-            border-radius: 8px;
-            padding: 15px;
-            margin-top: 15px;
-            border-left: 3px solid var(--primary);
-        }
-        .button-link {
-            margin-top: 15px;
+        .badge {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
             display: inline-block;
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
     <main class="container">
         <!-- ヘッダー -->
-        <header class="header-section">
-            <h1>☀️ 朝のインサイト (2026年05月24日)</h1>
-            <p><strong>北海道の地方銀行 新入行員の皆様へ：</strong> 本日の主要ニュースと、日々の業務・顧客対応に直結するプロの視点を朝一番にお届けします。</p>
+        <header>
+            <h1>☀️ 朝のインサイト (2026年05月25日)</h1>
+            <p>北海道の地方銀行に内定した皆さまへ。本日の注目ニュースと、業務に直結する銀行員視点での解説をお届けします。</p>
         </header>
 
-        <!-- 天気セクション -->
-        <article class="weather-card">
-            <header><strong>📍 本日の北海道の天気予報</strong></header>
-            <div class="weather-info">
-                <div class="weather-item"><strong>天気:</strong> 曇りがち ☁️</div>
-                <div class="weather-item"><strong>最高気温:</strong> 15.79℃</div>
-                <div class="weather-item"><strong>最低気温:</strong> 12.86℃</div>
+        <!-- 天気情報 -->
+        <article>
+            <header><strong>⛅ 本日の北海道（札幌周辺）の天気予報</strong></header>
+            <div class="grid weather-info">
+                <div><strong>天気:</strong> 曇りがち</div>
+                <div><strong>最高気温:</strong> 15.79℃</div>
+                <div><strong>最低気温:</strong> 13.86℃</div>
             </div>
-            <footer style="font-size: 0.85rem; padding-top: 10px;">
-                💡 <strong>新人の心得：</strong> 本日はやや肌寒い曇り空の一日となります。外回りや店舗前の清掃時には、スーツの上に羽織れるコートを用意するなど体調管理を徹底しましょう。また、お客様との雑談で「今日は少し冷え込みますね」と共感を示すことで、心理的距離を縮めるきっかけにできます。
-            </footer>
+            <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem; color: #555;">
+                本日は少し肌寒い一日となりそうです。初夏とはいえ、外出時や店舗での挨拶時には体調管理にご留意ください。
+            </p>
         </article>
 
         <!-- ニュースセクション -->
         <section>
-            <h2>厳選ニュース解説（3選）</h2>
+            <h2>本日の厳選ニュース解説</h2>
 
             <!-- 記事1 -->
             <article>
-                <h3>“固定資産税”の納付書が届きました。一括と分割どちらがお得？</h3>
+                <span class="badge">個人資産形成・リテール営業</span>
+                <h3>株式投資デビューで家庭崩壊!? 夫が妻を激怒させた「致命的なミス」とは？</h3>
                 
-                <b>ロジカル要約</b>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><strong>背景/経緯</strong>: 毎年春から初夏にかけて不動産所有者に固定資産税の納税通知書が届く。納付にあたり、年4回の「期別（分割）払い」と「全期（一括）払い」のいずれかを選択できる。</li>
-                    <li><strong>事象</strong>: 「一括の方が得」というイメージを持たれがちだが、かつて存在した一括払いによる割引制度（前納報奨金制度）は、現在ではほとんどの自治体で廃止されている。</li>
-                    <li><strong>結果/影響</strong>: 金銭的な支払総額は一括・分割のどちらでも変わらない。一括は「支払い忘れの防止・手間の削減」、分割は「手元資金（キャッシュ）の維持」という資金管理上のメリットを選択する形となる。</li>
+                    <li><b>背景/経緯:</b> 新NISA制度の普及を契機に、これまで投資に縁のなかった初心者が株式投資を始めるケースが急増している。</li>
+                    <li><b>事象:</b> 家族に無断で、あるいは丁寧な説明を怠ったまま夫がリスクの高い投資を行い、市場のボラティリティによって大きな評価損を抱えてしまう。</li>
+                    <li><b>結果/影響:</b> 夫婦間の経済的な信頼関係が損なわれ、深刻な「家庭崩壊（離婚危機）」や「投資アレルギー」の発症を招く結果となる。</li>
                 </ul>
 
-                <div class="deep-dive">
-                    <b>地銀視点の深掘り（顧客との会話ネタ・提案）</b>
+                <div class="insight-section">
+                    <b>地銀視点の深掘り</b>:
                     <p>
-                        道内の各市町村でも前納報奨金はほぼ廃止されています。この時期、ご年配の地主様や個人事業主のお客様から「どっちで払うのがいいと思う？」と相談を受けることがあります。その際は、「金銭的な差はありませんが、手元の資金効率や納税の手間を考慮して選びましょう」とお答えし、当行の口座振替やインターネットバンキング（Pay-easy等）の利用をご提案しましょう。納付の手間を省く「決済サービス」の提案は、お客様の利便性向上とともに、当行口座をメイン口座として使い続けていただくための絶好のフックになります。
+                        地銀リテール営業（個人向け窓口）の強みは、ネット証券と異なり「対面で、家族のライフプランに寄り添える」点です。こうした投資にまつわるトラブルは、顧客一人だけの話ではなく、家族全体の課題として捉える必要があります。「新NISAを始めたい」という相談をいただいた際は、ただ口座を開設するだけでなく、「ご家族で将来設計を共有されていますか？」と優しく問いかけることで、信頼されるアドバイザーとしての第一歩を踏み出せます。
                     </p>
                 </div>
-                
-                <a href="https://news.yahoo.co.jp/articles/5610fc614c4b0cf3eb60f169425bdc370d99e1ce?source=rss" role="button" class="outline button-link">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/ce985fc98a8bf22953d317f0e9e721fe9ca8a011?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
             </article>
 
             <!-- 記事2 -->
             <article>
-                <h3>実家を売るか貸すかで迷っています。「売却」と「賃貸」どちらが将来的に得？</h3>
+                <span class="badge">地域産業・半導体（ラピダス関連）</span>
+                <h3>半導体パッケージ基板の伝送ロス極小化、既存設備／材料でOK</h3>
                 
-                <b>ロジカル要約</b>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><strong>背景/経緯</strong>: 高齢化に伴う実家の空き家化が全国的な社会問題となる中、相続人や家族が「売るべきか」「賃貸に出すべきか」の判断を迫られるケースが急増している。</li>
-                    <li><strong>事象</strong>: 「売却」は即時の現金化や将来の管理コスト・税負担から解放される利点があり、「賃貸」は安定的かつ長期的な家賃収入が期待できる一方で、修繕費用や空室リスク、入居者トラブルなどの経営者責任を負う。</li>
-                    <li><strong>結果/影響</strong>: 物件の立地（需要の有無）、築年数、所有者の資金状況、そして将来的に自身や家族が戻って住む可能性などを総合的に考慮し、中長期的なライフプランに合わせた決断が必要となる。</li>
+                    <li><b>背景/経緯:</b> 生成AIの急速な発展や高速通信化に伴い、半導体基板における電気信号の「伝送ロス」をいかに減らすかが喫緊の課題。しかし、新設備・新材料の導入は莫大なコストがかかる。</li>
+                    <li><b>事象:</b> 既存の製造設備や安価な既存材料の構成を維持しつつ、表面処理技術の改良等によって、伝送ロスを極限まで低減させる革新的な製造技術が開発された。</li>
+                    <li><b>結果/影響:</b> 製造メーカーは莫大な設備投資を行わずに高性能半導体向け部材を生産でき、半導体の製造コスト削減と普及が大きく加速する。</li>
                 </ul>
 
-                <div class="deep-dive">
-                    <b>地銀視点の深掘り（顧客との会話ネタ・提案）</b>
+                <div class="insight-section">
+                    <b>地銀視点の深掘り</b>:
                     <p>
-                        北海道は札幌圏を除き、過疎化や空き家問題が特に顕著な地域です。お客様から「実家をどうすべきか」という相談を受けた場合、単なる雑談で終わらせてはいけません。これは地銀として包括的なソリューションを提案できる最大のチャンスです。例えば、売却を選択された場合は「売却代金の資産運用（定期預金や投資信託）」、賃貸を選択された場合は「リフォームローンの融資提案」、また相続に関わる問題であれば「当行の相続手続き支援や遺言信託サービスの紹介」へと繋げられます。地元の不動産業者と連携しながら、地域のお客様の資産を守るパートナーとしての役割を果たしましょう。
+                        現在、北海道千歳市では国を挙げた最先端半導体プロジェクト「ラピダス（Rapidus）」の準備が進んでおり、道内経済最大の関心事です。最先端技術というと「中小企業には関係ない」と思われがちですが、「既存設備を活かして参入できる技術」は、道内ものづくり中小企業が半導体サプライチェーンへ参入する強力な足がかりとなります。法人融資やビジネスマッチングの際、地元の中小企業経営者へこうした技術トレンドを紹介し、イノベーション投資を提案する際の最高の会話ネタとなります。
                     </p>
                 </div>
-                
-                <a href="https://news.yahoo.co.jp/articles/79a8d05033f0140739a8b388f459ba1bd173e4a8?source=rss" role="button" class="outline button-link">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/a8909621056edbe5a8c304354aedb882fbf0dd7c?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
             </article>
 
             <!-- 記事3 -->
             <article>
-                <h3>超小型バイク用ドライブレコーダー「MiVue M820Pro」登場！</h3>
+                <span class="badge">高齢化対策・シニアビジネス</span>
+                <h3>75歳の母の“医療費”が思ったより高くて驚きました。後期高齢者医療制度では、全員「1割負担」になるわけではないのですか？</h3>
                 
-                <b>ロジカル要約</b>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><strong>背景/経緯</strong>: 事故時の証拠能力やあおり運転への対策として、四輪車だけでなく二輪車（バイク）でもドライブレコーダーの装着需要が急激に高まっている。</li>
-                    <li><strong>事象</strong>: 2Kの高画質録画や、明暗差に強いHDR機能を備え、ヘルメットや車体にスマートに装着可能な超小型・軽量設計のバイク用ドラレコ「MiVue M820Pro」が新たに発売された。</li>
-                    <li><strong>結果/影響</strong>: 夜間や悪天候時でも鮮明な録画が可能となり、二輪ライダーの万が一の際の自己防衛力が向上するとともに、業界全体の安全意識の向上が期待される。</li>
+                    <li><b>背景/経緯:</b> 後期高齢者（75歳以上）の医療費窓口負担は「原則1割」という固定観念が根強いが、社会保障制度の維持を目的に段階的な負担の見直しが進められている。</li>
+                    <li><b>事象:</b> 年金収入や現役並み所得などの一定基準（単身で年収200万円以上、あるいは383万円以上など）を満たすと、負担割合は2割、あるいは3割へ跳ね上がる。</li>
+                    <li><b>結果/影響:</b> 突然の入院・通院時に想定以上の出費となり、高齢者本人だけでなく、支援する現役の子ども世代の家計にも大きな圧迫要因となる。</li>
                 </ul>
 
-                <div class="deep-dive">
-                    <b>地銀視点の深掘り（顧客との会話ネタ・提案）</b>
+                <div class="insight-section">
+                    <b>地銀視点の深掘り</b>:
                     <p>
-                        北海道は、夏シーズンになると国内外から多くの観光客やライダーが訪れる「ツーリングの聖地」です。このニュースは二つのビジネス視点に繋がります。一つは、地域の「バイクショップ」や「レンタカー・レンタルバイク業者」といった法人取引先に対し、安全対策強化や他社との差別化として最新ドラレコの導入を促す設備投資（ビジネスローン）の提案。もう一つは、個人のお客様へのアプローチです。マイカーローン（バイク購入資金）の商談時や、窓口での自動車・バイク保険（当行が代理店として扱う損害保険）の提案時に、「最近はバイク用の超小型ドラレコも普及しており、これに合わせたドラレコ特約付き保険が人気です」といった、時代を捉えたクロスセルに活用できます。
+                        北海道は全国的にも高齢化率が非常に高く、シニア世帯とそのご家族へのケアは地方銀行にとって最重要テーマです。50代〜60代の「親の介護や医療費を気にし始めた現役世代」が来店された際、医療保障付きの金融商品（保険等）や、資産運用、あるいは将来を見据えた「家族信託」などの相続関連サービスを提案するための重要なフックになります。「親御様の万が一に備え、家計全体の収支をシミュレーションしてみませんか？」という一言が、顧客の潜在ニーズを掘り起こします。
                     </p>
                 </div>
-                
-                <a href="https://news.yahoo.co.jp/articles/d974dfeb589f9d49a1f1ce7bf148d007082e9adb?source=rss" role="button" class="outline button-link">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/ff13b5df31fa8974bc7d188aeb7002023d53e9b7?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
             </article>
         </section>
 
         <!-- フッター -->
         <footer>
             <hr>
-            <p style="text-align: center; font-size: 0.9rem; color: #666;">
-                © 2026 北海道地方銀行 新人研修サポート事務局. All rights reserved. <br>
-                本日も地域のお客様に寄り添い、信頼される行員を目指して一歩ずつ歩みを進めましょう！
+            <p style="text-align: center; font-size: 0.85rem; color: #777;">
+                © 2026 北海道地方銀行 内定者学習支援プログラム. All Rights Reserved.
             </p>
         </footer>
     </main>
