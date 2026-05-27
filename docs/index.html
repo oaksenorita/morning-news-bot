@@ -3,125 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年05月26日)</title>
+    <title>朝のインサイト - 2026年05月27日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
+        :root {
+            --pico-primary: #00707a; /* 北海道の豊かな自然と澄んだ川をイメージしたティールブルー */
+        }
         body {
-            --pico-font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+            padding-top: 2rem;
+            padding-bottom: 3rem;
         }
-        .weather-card {
-            background-color: var(--pico-card-background-color);
-            border-left: 5px solid var(--pico-primary);
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--pico-primary);
+            padding-bottom: 1rem;
         }
-        .insight-badge {
+        .badge {
             display: inline-block;
-            background-color: var(--pico-primary-background);
-            color: var(--pico-primary-inverse);
-            padding: 2px 8px;
+            padding: 0.25rem 0.5rem;
+            background-color: var(--pico-primary);
+            color: white;
             border-radius: 4px;
             font-size: 0.8rem;
             margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-        .article-section {
-            margin-bottom: 2.5rem;
         }
     </style>
 </head>
 <body>
     <main class="container">
         <!-- ヘッダー -->
-        <header style="margin-bottom: 2rem; border-bottom: 1px solid var(--pico-muted-border-color); padding-bottom: 1rem;">
-            <h1>☀️ 朝のインサイト (2026年05月26日)</h1>
-            <p><small>北海道の地方銀行 内定者の皆様へ：日々の経済動向と地域経済のつながりを学ぶためのニュース解説です。</small></p>
+        <header>
+            <h1>☀️ 朝のインサイト (2026年05月27日)</h1>
+            <p>北海道の地方銀行に内定した皆様へ。本日の注目ニュースと、明日から役立つ地銀視点でのビジネスヒントをお届けします。</p>
         </header>
 
         <!-- 天気セクション -->
-        <section class="article-section">
-            <h2>📍 本日の北海道の天気</h2>
-            <article class="weather-card">
-                <div class="grid" style="align-items: center;">
-                    <div>
-                        <span style="font-size: 1.2rem; font-weight: bold;">天気: 曇りがち</span>
-                    </div>
-                    <div>
-                        <span style="color: var(--pico-primary); font-weight: bold;">最高気温: 18.56℃</span>
-                    </div>
-                    <div>
-                        <span style="color: var(--pico-secondary); font-weight: bold;">最低気温: 15.86℃</span>
-                    </div>
+        <section id="weather">
+            <article>
+                <header><strong>📍 本日の北海道（札幌）の天気予報</strong></header>
+                <div class="grid">
+                    <div><strong>☔ 天気:</strong> 小雨</div>
+                    <div><strong>📈 最高気温:</strong> 19.12℃</div>
+                    <div><strong>📉 最低気温:</strong> 19.12℃</div>
                 </div>
-                <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem; color: var(--pico-muted-color);">
-                    ※本日の北海道は、過ごしやすいものの少し曇りがちな1日となりそうです。お取引先への訪問や店舗見学などの際は、薄手の上着を用意しておくと安心です。
-                </p>
+                <footer style="font-size: 0.85rem; color: var(--pico-muted-color);">
+                    本日の道内はあいにくの小雨模様で、5月下旬としてはやや肌寒く感じられます。体調管理や、通勤・通学時の足元に十分ご注意ください。
+                </footer>
             </article>
         </section>
 
         <!-- ニュースセクション -->
-        <section class="article-section">
-            <h2>📰 厳選ニュース解説（地銀視点）</h2>
+        <section id="news-list">
+            <h2>📰 今朝の注目ニュース解説</h2>
 
-            <!-- ニュース1 -->
+            <!-- 記事1 -->
             <article>
-                <div class="insight-badge">地域産業・雇用課題</div>
-                <h3>整備士ってこんなに稼げるの!? 深刻な人手不足で年収上昇中!! AIでも代替困難な“クルマ業界のプロ職”に注目</h3>
-                
-                <p><b>ロジカル要約</b>：</p>
+                <span class="badge">個人向け提案 / 不動産融資</span>
+                <h3>不動産投資の「サブリース」仕組みとリスク（ファイナンシャルフィールド）</h3>
+                <hr>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯</b>：自動車の電子制御化や自動運転技術などの高度化に伴い、専門知識を持つ整備士の重要性が増す一方、労働環境のイメージや少子化により若手の志望者が極端に減少。</li>
-                    <li><b>事象</b>：手作業の複雑さから「AIやロボットで代替できない職種」として技術の希少価値が再評価され、深刻な人材不足が引き金となり整備士の年収・待遇が急上昇している。</li>
-                    <li><b>結果/影響</b>：整備士の社会的地位や魅力が向上する一方で、採用力や資本力に劣る地域の中小整備工場やディーラーでは、人件費の高騰が経営を強く圧迫し始めている。</li>
+                    <li><b>背景/経緯</b>: アパート経営やマンション投資において、「空室リスクを回避し、安定した家賃収入を得たい」というオーナーのニーズが高まっています。</li>
+                    <li><b>事象</b>: サブリースは、業者が物件を一括して借り上げ、入居者に転貸（サブリース）する仕組みです。しかし、契約期間中であっても業者側からの「賃料減額請求」や「途中解約」が発生する法的な仕組み・リスクが存在します。</li>
+                    <li><b>結果/影響</b>: 「長期間の家賃保証」を鵜呑みにしたオーナーが後に経営難に陥るなど、トラブルが相次いでおり、契約条項（特に見直し期間や免責期間）を精緻に確認することが求められています。</li>
                 </ul>
-
-                <p><b>地銀視点の深掘り</b>：</p>
-                <p>北海道は広大な面積を持ち、公共交通機関が限られるため、移動や物流において自動車が不可欠な「超・車社会」です。地域住民の生活の足を守る「整備工場」は、当行にとって極めて大切なお取引先です。整備士の待遇改善は好ましい変化ですが、中小企業にとっては「人件費高騰による資金繰り悪化」や「工賃への価格転嫁の難しさ」という死活問題に直結します。
-                将来、皆さんが渉外（営業）や融資を担当する際、お取引先に対して単に資金を貸し出すだけでなく、「作業効率化のためのDX設備投資（融資案件）」や「工賃値上げに向けた経営改善サポート」などの提案、あるいは「人材紹介サービス」の活用を促すといった、本業支援に踏み込んだ深い対話を持ちかけるチャンスになります。</p>
-
-                <a href="https://news.yahoo.co.jp/articles/e8b2b7e291f8416c37b4cb4f3838583f09e11777?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>:
+                <p>
+                    北海道内でも、資産形成や相続税対策としてアパート投資を検討される地主のお客様が多数いらっしゃいます。将来、皆様がアパートローン（不動産融資）の案件に携わる際、「サブリースだから安心です」と話すお客様に対して、ただ鵜呑みにするのではなく、契約内容に潜む「賃料引き下げリスク」をプロとして優しく解説することが重要です。お客様の資産を守るパートナーとして、リスク管理を含めた適切な事業計画のシミュレーションをご提示しましょう。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/35226d0f6984db39c85ab519fd74845d650e716c?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2 -->
+            <!-- 記事2 -->
             <article>
-                <div class="insight-badge">モビリティ・産業シフト</div>
-                <h3>売上高112％増、EV粗利率4年ぶり高水準——NIOの「稼ぐ力」が変わり始めた</h3>
-                
-                <p><b>ロジカル要約</b>：</p>
+                <span class="badge">個人向け営業 / ライフプランニング</span>
+                <h3>共働き世帯の44％「家計が苦しい」 理想の年収と現実、その差は？（ITmedia ビジネスオンライン）</h3>
+                <hr>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯</b>：中国の新興EV（電気自動車）メーカー「NIO（上海蔚来汽車）」は、激しい価格競争や巨額の研究開発費により赤字が続いていたが、生産プラットフォームの共通化やバッテリー交換式モデルの展開を推進。</li>
-                    <li><b>事象</b>：最新の決算において売上高が前年同期比112%増を記録。部品コストの低下や生産効率の向上により、EV事業の粗利率が4年ぶりの高水準に改善した。</li>
-                    <li><b>結果/影響</b>：激しい市場淘汰の中で「持続的に稼げる体質」への転換を実証。グローバルでのEV普及の加速や、海外メーカーとの競争力に大きな影響を与える可能性が浮上した。</li>
+                    <li><b>背景/経緯</b>: 長引く物価高や、社会保険料・税金の負担増により、世帯全体の収入が増加していても生活が豊かになったと実感しにくい社会環境が続いています。</li>
+                    <li><b>事象</b>: 共働き世帯を対象とした意識調査で、全体の44.2％が「家計が苦しい」と回答。また、理想とする世帯年収と現実の年収との間には、平均して数百万円規模のギャップが存在することが浮き彫りになりました。</li>
+                    <li><b>結果/影響</b>: 日々の節約だけではギャップを埋められず、教育資金や老後の蓄えに対する不安から、資産形成や家計の抜本的な見直しに対する関心が急速に強まっています。</li>
                 </ul>
-
-                <p><b>地銀視点の深掘り</b>：</p>
-                <p>「海外のEVメーカーの動向」は、一見すると北海道の地方銀行には無関係に思えるかもしれません。しかし、EVシフトは、道内のガソリンスタンド（SS）、自動車部品の卸売業、金属加工を手がける地元企業などのビジネスモデルを中長期的に大きく変えるメガトレンドです。NIOのようなEVメーカーが「稼ぐ力」を身につけ普及期に入れば、安価なEVが地方へ流入するスピードも速まります。
-                地元のSSが「将来的にEV充電インフラを導入すべきか」、あるいは「事業再構築を図るべきか」を検討する際、このような海外の先行指標を捉えた情報提供ができるかどうかで、当行の「目利き力」や「伴走支援の信頼度」が試されます。数年先を見据えた事業承継や事業再構築補助金の提案に繋がる重要な知識です。</p>
-
-                <a href="https://news.yahoo.co.jp/articles/2a232ceb8f7162aae860e471f4f2f479fc18d6e0?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>:
+                <p>
+                    北海道でも共働き世帯は主流ですが、冬の暖房費（燃料費）の高騰や食料品の値上げなど、地域特有の生活コストが家計を圧迫しています。窓口や営業活動において、お客様の「なんとなく苦しい」という不安に共感し、新NISAやiDeCoといった「少額からの資産形成」や、住宅ローン金利の見直しなど、プロとしての具体的なソリューション（解決策）を提示するチャンスです。ライフステージに合わせた資金計画を一緒に創り上げることで、一生涯の取引へと繋がります。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/dd8faab9449cab6c4b71173c18e94e1f436b3e20?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3 -->
+            <!-- 記事3 -->
             <article>
-                <div class="insight-badge">地方創生・ブランディング</div>
-                <h3>「リファ」新ライン「リファ モンテカティーニ」が新作4種を発売　先行販売の反響を受け拡充</h3>
-                
-                <p><b>ロジカル要約</b>：</p>
+                <span class="badge">法人融資 / 地場産業支援</span>
+                <h3>【2027年刷新へ】次期カローラクロスの進化はパワートレインにあり。新開発1.5LとPHEVで「ユーロ7」対応へ（carview！）</h3>
+                <hr>
+                <b>ロジカル要約</b>:
                 <ul>
-                    <li><b>背景/経緯</b>：美容機器やスキンケアブランドを展開するMTGが、イタリアの著名なスパリゾート地「モンテカティーニ・テルメ」のクレイ（泥）を贅沢に用いた新たなスキンケア製品ラインを共同開発。</li>
-                    <li><b>事象</b>：限定的な先行販売において、おうち時間を充実させたい顧客層から想定を大幅に上回る大反響を獲得。これを受け、ラインナップを新たに4種拡充し正式に全国展開を開始した。</li>
-                    <li><b>結果/影響</b>：高単価かつストーリー性の高い美容・ウェルネス製品の需要が極めて高いことを実証。ブランド価値のさらなる向上と、今後の市場拡大が期待される。</li>
+                    <li><b>背景/経緯</b>: 欧州の「ユーロ7」をはじめとする世界的な排出ガス規制・環境規制の厳格化に伴い、自動車産業はハイブリッド（HEV）からさらに進んだ電動化対応を余儀なくされています。</li>
+                    <li><b>事象</b>: トヨタの人気SUV「カローラクロス」が2027年に刷新予定。新開発の1.5L直列3気筒エンジンやプラグインハイブリッド（PHEV）を搭載し、排ガス性能を大幅に高めて環境規制に対応する方針です。</li>
+                    <li><b>結果/影響</b>: 世界トップシェア企業の技術革新は、自動車ディーラーや自動車産業を支える膨大なサプライチェーン（部品メーカー・整備工場など）に対して、新技術への移行を促す多大な影響力を持ちます。</li>
                 </ul>
-
-                <p><b>地銀視点の深掘り</b>：</p>
-                <p>北海道には「登別」や「十勝川」をはじめ、全国に誇る温泉地やクレイ（泥）、オーガニックな天然素材が数多く存在します。このニュースは「地域の豊かな自然資源」と「ブランドデザイン・技術」を掛け合わせた「超・高付加価値ブランディング」の成功例として、道内の観光業や地方創生に大いに応用できます。
-                例えば、当行の取引先である地元の温泉旅館に対し、「宿泊アメニティとして高付加価値スキンケアを導入し、客単価や女性客の満足度を向上させる宿泊プラン」の提案を企画することが考えられます。また、地元で自然素材を活かしたコスメ開発を目指す中小企業（化粧品や食品のスタートアップ）に対し、パッケージやストーリー作りの成功事例として本情報を共有することで、関係構築や「販路開拓支援」の具体的なヒントになります。</p>
-
-                <a href="https://news.yahoo.co.jp/articles/f23db4e22da494ccf536798226787ad818dc14a5?source=rss" role="button" class="outline">続きを読む</a>
+                <b>地銀視点の深掘り</b>:
+                <p>
+                    「一人一台」が当たり前の広大な北海道において、自動車は生活・ビジネスに欠かせないインフラです。道内には多くの自動車ディーラーの他、自動車部品を製造・加工する中小企業、整備工場が点在しており、いずれも当行の重要なお取引先です。こうした業界の次世代シフト（PHEV化など）を頭に入れておくことで、企業の経営者様と「今後の設備投資の計画」や「2027年に向けた需要予測」について深い対話が可能になります。若手のうちから産業トレンドに関心を持ち、未来の投資相談に繋げるアンテナを磨きましょう。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/70c4fc8ae9d41b1ee122109caf60ad3f8e9a3a01?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <!-- フッター -->
-        <footer style="margin-top: 3rem; border-top: 1px solid var(--pico-muted-border-color); padding-top: 1rem; text-align: center;">
-            <p><small>&copy; 2026 北海道地方銀行 新人・内定者サポートデスク All Rights Reserved.</small></p>
+        <footer style="margin-top: 3rem; text-align: center; font-size: 0.9rem; border-top: 1px solid #ccc; padding-top: 1.5rem;">
+            <p>© 2026 北海道の地方銀行 内定者サポートチーム. All Rights Reserved.</p>
         </footer>
     </main>
 </body>
