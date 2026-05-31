@@ -3,173 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年05月30日)</title>
+    <title>朝のインサイト - 2026年05月31日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --pico-primary: #005bac; /* 北海道の美しい海と信頼を表すブルー */
+            --primary: #007079; /* 北海道の豊かな自然と信頼感をイメージしたディープティール */
         }
         body {
-            background-color: #f4f7f6;
+            padding-top: 2rem;
+            padding-bottom: 3rem;
         }
-        .header-title {
-            margin-bottom: 0.5rem;
-        }
-        .welcome-card {
-            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
-            border: none;
-            color: #0369a1;
-            padding: 1rem 1.5rem;
+        header {
+            border-bottom: 2px solid var(--primary);
             margin-bottom: 2rem;
+            padding-bottom: 1rem;
         }
-        .welcome-card p {
-            margin-bottom: 0;
-            font-size: 0.95rem;
+        h1 {
+            color: var(--primary);
+            font-size: 2.25rem;
         }
-        article {
-            background-color: #ffffff;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-            margin-bottom: 2rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        article:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+        .weather-info {
+            background-color: var(--card-background-color);
+            border-left: 5px solid #ff9800;
         }
         .weather-grid {
-            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
         }
         .weather-item {
-            padding: 0.5rem;
+            font-size: 1.1rem;
         }
-        .weather-label {
-            font-size: 0.85rem;
-            color: #64748b;
-            display: block;
-        }
-        .weather-data {
-            font-size: 1.25rem;
-            font-weight: bold;
-        }
-        .temp-high {
-            color: #ef4444;
-        }
-        .temp-low {
-            color: #3b82f6;
+        article h3 {
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+            color: var(--primary);
         }
         ul {
-            padding-left: 1.2rem;
+            padding-left: 1.5rem;
         }
-        li {
+        .badge-hokkaido {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            display: inline-block;
             margin-bottom: 0.5rem;
-        }
-        .insight-p {
-            background-color: #f8fafc;
-            border-left: 4px solid var(--pico-primary);
-            padding: 0.75rem 1rem;
-            border-radius: 0 8px 8px 0;
-            font-size: 0.95rem;
         }
     </style>
 </head>
 <body>
     <main class="container">
         <!-- ヘッダー -->
-        <header class="header-section">
-            <h1 class="header-title">☀️ 朝のインサイト (2026年05月30日)</h1>
-            <p style="color: #64748b; margin-bottom: 1.5rem;">北海道の地方銀行へ内定した皆さんへ、今日知るべき経済インサイトと地域の視点をお届けします。</p>
+        <header>
+            <h1>☀️ 朝のインサイト (2026年05月31日)</h1>
+            <p>北海道の未来を担う新人行員の皆さまへ、本日の重要ニュースとビジネスのヒントをお届けします。</p>
         </header>
 
-        <!-- 内定者応援メッセージ -->
-        <div class="welcome-card">
-            <p><strong>内定者の皆さん、おはようございます！</strong><br>
-            地方銀行の仕事の本質は「地域と企業を深く理解すること」から始まります。本日のニュースを通じて、経営者が抱える本音や地域の未来像を想像し、自分の言葉で考える習慣を少しずつ身につけていきましょう。</p>
-        </div>
-
         <!-- 天気セクション -->
-        <section>
-            <h2>📍 本日の北海道の天気</h2>
-            <article>
-                <div class="grid weather-grid">
-                    <div class="weather-item">
-                        <span class="weather-label">天気</span>
-                        <span class="weather-data">☁️ 雲</span>
-                    </div>
-                    <div class="weather-item">
-                        <span class="weather-label">最高気温</span>
-                        <span class="weather-data temp-high">21.9℃</span>
-                    </div>
-                    <div class="weather-item">
-                        <span class="weather-label">最低気温</span>
-                        <span class="weather-data temp-low">12.86℃</span>
-                    </div>
-                </div>
-                <p style="font-size: 0.85rem; color: #64748b; margin-top: 1rem; margin-bottom: 0; text-align: center;">
-                    💡 日中は比較的過ごしやすい気温ですが、朝晩は冷え込みます。体調管理に気をつけて、一日をスタートさせましょう！
-                </p>
-            </article>
-        </section>
+        <article class="weather-info">
+            <header style="margin:-1.5rem -1.5rem 1rem -1.5rem; padding:1rem 1.5rem; background-color: rgba(255, 152, 0, 0.1);">
+                <strong style="color: #e65100; font-size: 1.2rem;">📍 本日の北海道の天気</strong>
+            </header>
+            <div class="weather-grid">
+                <div class="weather-item"><strong>天気:</strong> 晴天 ☀️</div>
+                <div class="weather-item"><strong>最高気温:</strong> 20.79℃</div>
+                <div class="weather-item"><strong>最低気温:</strong> 17.86℃</div>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">※初夏の爽やかな風が吹く一日となりそうです。外回りや通勤時も快適に過ごせますが、朝晩の気温差には留意しましょう。</p>
+        </article>
 
-        <!-- ニュースセクション -->
+        <!-- ニュース解説セクション -->
         <section>
-            <h2>📰 厳選ニュース解説</h2>
+            <h2 style="margin-top: 3rem; margin-bottom: 1.5rem;">📰 本日の厳選ニュース解説</h2>
 
             <!-- 記事1 -->
             <article>
-                <h3>なぜすごい？ 優秀な人を集められるリーダーがやっていること</h3>
-                <p><b>ロジカル要約</b></p>
+                <span class="badge-hokkaido">個人顧客・資産管理</span>
+                <h3>なぜ「10億円」を即座に断ったのか？ 金の卵を産むニワトリを手放さない祖母の、意外すぎる投資ルール</h3>
+                
+                <p><b>ロジカル要約</b>:</p>
                 <ul>
-                    <li><strong>背景/経緯:</strong> 少子高齢化とそれに伴う労働人口の急激な減少により、特に地方の中小企業における優秀な人材の確保・定着が経営の最重要課題となっている。</li>
-                    <li><strong>事象:</strong> 優秀な人材を惹きつけるリーダーは、単なる条件（給与や待遇）の提示にとどまらず、自社の明確なビジョン（大義名分）を語り、「この人と共に成長したい」と思わせる人間的魅力と対話姿勢を磨いている。</li>
-                    <li><strong>結果/影響:</strong> 共感をベースにした自発的なリファラル（紹介）採用や高い定着率が実現し、企業の持続的な成長と採用・教育コストの劇的な削減につながる。</li>
+                    <li><b>背景/経緯:</b> 個人投資や資産運用において、目先の大きな売却益（キャピタルゲイン）に目を奪われ、将来の安定を損なうケースが後を絶たない。</li>
+                    <li><b>事象:</b> 10億円という破格の買収提案（不動産や株式の売却案件）に対し、ある高齢女性は「安定した配当や家賃収入（インカムゲイン）を生み続ける仕組みこそが重要」として即座に拒否した。</li>
+                    <li><b>結果/影響:</b> 一時的な大金よりも、持続的にキャッシュフローをもたらす「金の卵を産むニワトリ（優良資産）」を守り抜く姿勢が、長期的な一族の富の維持と安定において極めて有効であることを実証している。</li>
                 </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p class="insight-p">
-                    北海道内の中小企業でも「人手不足」は経営を脅かす最大のボトルネックです。資金繰りだけでなく、「社長の右腕となる幹部候補がいない」「採用活動がうまくいかない」という悩みを抱える取引先経営者は非常に多く存在します。経営者のビジョン発信を後押しする融資（人材投資・DX投資）の提案や、当行の人材紹介・ビジネスマッチングサービスの提案へつなげるため、この観点を社長とのディスカッションに活かしてください。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/a330cd7f9322397dd68884bab28eb06be364d951?source=rss" role="button" class="outline">続きを読む</a>
+
+                <p><b>地銀視点の深掘り</b>:</p>
+                <p>地元の地主層や中堅中小企業のオーナー経営者との「事業承継」や「資産管理」の対話において、非常に強力なフックとなる話題です。地方銀行の顧客には、先代から受け継いだ土地や自社株を保有する高齢の富裕層が多く存在します。目先の資産価値向上だけでなく、「いかに次の世代に安定したキャッシュフロー（＝安心）を残すか」という顧客の本音（インサイド）に寄り添うことで、信頼関係が深まります。「10億円の一時金より、毎月・毎年の安定を重視されるお客様が多いですが、〇〇様はいかがお考えですか？」と、投資信託や遺言信託の提案につなげる会話ネタとして活用してみましょう。</p>
+
+                <a href="https://news.yahoo.co.jp/articles/861e9066b49520c8c04d06281120392553a6228f?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
             <!-- 記事2 -->
             <article>
-                <h3>人口約90万人の大都市で「駅が廃止」に 約5年間の休止状態から復活ならず 隣駅までわずか200m</h3>
-                <p><b>ロジカル要約</b></p>
+                <span class="badge-hokkaido">法人営業・産業動向</span>
+                <h3>国内の銅事業再編、大手4社が手を組んだワケ</h3>
+                
+                <p><b>ロジカル要約</b>:</p>
                 <ul>
-                    <li><strong>背景/経緯:</strong> 都市部における利便性の重複、乗降客数の低迷、そして老朽化した交通インフラの維持管理コスト増大が全国的な課題となっている。</li>
-                    <li><strong>事象:</strong> 人口約90万人を誇る神戸市において、隣の駅とわずか200メートルしか離れておらず、長年休止状態にあった神戸高速線の駅が正式に廃止と決定された。</li>
-                    <li><strong>結果/影響:</strong> 鉄道運行の効率化や維持コスト削減が図られる一方、これまで「駅近」とされていた周辺エリアの価値再編や、まちづくりの方向性に変化が生じる。</li>
+                    <li><b>背景/経緯:</b> 世界的なEVシフトや脱炭素（カーボンニュートラル）の流れを受け、送電網や電気機器に不可欠な「銅」の需要が世界規模で激増している。</li>
+                    <li><b>事象:</b> 巨額の製錬投資や海外資源の争奪戦に対抗するため、国内非鉄金属大手4社が個別の枠組みを超え、製錬事業や物流、調達での共同運営・事業再編に踏み切った。</li>
+                    <li><b>結果/影響:</b> 国内産業における銅の安定調達リスクが低減され、投資効率が向上する一方、バリューチェーン全体への価格影響や調達ルートの変革が予測される。</li>
                 </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p class="insight-p">
-                    公共交通網の再編や「駅の廃止」は、広大な北海道においても決して他人事ではない、極めて重要なローカルニュースです。交通インフラの縮小や変化は、周辺の商業地価、不動産価値、そして地域住民の購買動線を大きく変貌させます。地域密着の融資担当者（推進役）として、将来的なまちづくりの方向性を一歩先読みし、不動産業や小売業を営む取引先へ「次の一手（店舗展開や土地活用）」を提案する貴重な議論の種になります。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/43564819fd0c733f5fb3c9d5376c9273d4d0a173?source=rss" role="button" class="outline">続きを読む</a>
+
+                <p><b>地銀視点の深掘り</b>:</p>
+                <p>北海道内にも、金属リサイクル業者や、銅を大量に使用する電線・電気設備工事、建設業、製造業などの中小企業が数多く存在します。大手による素材事業の再編は、数年以内に地元の調達価格や納期に直接影響を与える可能性があります。「世界的な銅需要の増加と大手再編の動き」を前提に、取引先企業の経営者に対し、「資材の仕入れ価格の見通し」や「先々の運転資金の確保」に関するヒントを提供することが可能です。「原材料の調達でお困りごとはございませんか？」というアプローチから、経営課題のヒアリングや、設備資金・運転資金の融資ニーズを引き出すきっかけに最適です。</p>
+
+                <a href="https://news.yahoo.co.jp/articles/130697f8dc3c62409adac3310c8865931b8204af?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
             <!-- 記事3 -->
             <article>
-                <h3>あなたの違和感は正しい。「誰とも目が合わない打ち合わせ」はなぜ生まれるか</h3>
-                <p><b>ロジカル要約</b></p>
+                <span class="badge-hokkaido">DX・地域課題解決</span>
+                <h3>eve autoの自動搬送サービス、トヨタ車体富士松工場で10台超稼働…全国最多</h3>
+                
+                <p><b>ロジカル要約</b>:</p>
                 <ul>
-                    <li><strong>背景/経緯:</strong> オンライン会議の普及や業務効率化の流れの中で、形骸化したミーティングが日常化し、実質的な意思決定や生産的な対話が行われないことへの不満が溜まっている。</li>
-                    <li><strong>事象:</strong> 目的が不明瞭で、参加者が「発言しても意味がない」と感じる心理的安全性の低い環境では、誰も画面や相手を見ず、内職や沈黙を決め込む「誰とも目が合わない打ち合わせ」が発生する。</li>
-                    <li><strong>結果/影響:</strong> 組織内の風通しが悪化し、コミュニケーション不全に陥るだけでなく、重要な意思決定が遅れることで組織の競争力が削がれてしまう。</li>
+                    <li><b>背景/経緯:</b> 製造・物流現場における深刻な深刻な人手不足と、工場内搬送業務の自動化（省人化）ニーズが急速に高まっていた。</li>
+                    <li><b>事象:</b> 屋外対応の自動運転EVによる搬送サービス「eve auto」が、トヨタ車体富士松工場で10台以上一挙に導入され、国内最多の稼働実績を記録した。</li>
+                    <li><b>結果/影響:</b> 悪天候や段差のある屋外環境でも安定した自動搬送を実現。工場の生産性向上と同時に、製造現場における自動運転技術の社会実装が本格フェーズに入ったことを示した。</li>
                 </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p class="insight-p">
-                    銀行内でもDXの一環としてオンラインでの会議や商談が増えています。しかし、「誰も発言しない会議」に時間を奪われているのは取引先企業も同様です。経営課題として「社内の風通しを良くしたい」「若手の本音が出ない」と悩む取引先に対して、業務改善（組織開発）のコンサルティング視点から対話が可能です。また、新人の皆さんも日々「相手と向き合い、目的を持った対話」を意識することで、お客様や先輩行員から圧倒的な信頼を勝ち得ることができます。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/808e5f2651fd4ca2a45bf4da963311e9c0ead502?source=rss" role="button" class="outline">続きを読む</a>
+
+                <p><b>地銀視点の深掘り</b>:</p>
+                <p>人手不足は、北海道の地域社会および地元企業が直面する最大の課題です。特に広大な敷地を持つ道内の「食品加工工場」「大規模物流倉庫」「酪農・農業法人」などにおいて、敷地内の運搬作業の省人化は、生き残りをかけた重要課題となっています。この最先端の導入事例を紹介することで、地元企業の経営層に対し、「物流・搬送プロセスのデジタル化（DX）」を具体的に提案できます。当行のソリューション提案（IT導入補助金の活用支援や、自動搬送設備導入に伴う融資、リース提案など）をセットで紹介し、「地銀は資金を貸すだけでなく、経営の省力化も一緒に考えるパートナーである」ことをアピールする素晴らしいネタになります。</p>
+
+                <a href="https://news.yahoo.co.jp/articles/6876c6b9463d847acb78f127edbb17a38da49081?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <!-- フッター -->
-        <footer style="margin-top: 3rem; padding: 2rem 0; border-top: 1px solid #e2e8f0; text-align: center;">
-            <p style="font-size: 0.85rem; color: #64748b;">
-                © 2026 北海道地銀 内定者サポート事務局. <br>
-                情報は朝のインプットとして日々のニュース等から抽出したものです。体調に気をつけて今日も素晴らしい学びを！
-            </p>
+        <footer style="margin-top: 4rem; text-align: center; font-size: 0.9rem; color: #777;">
+            <p>© 2026 北海道地方銀行 新人サポートプロジェクト. All rights reserved.</p>
         </footer>
     </main>
 </body>
