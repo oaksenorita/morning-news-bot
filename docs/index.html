@@ -3,54 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 2026年05月31日</title>
+    <title>朝のインサイト (2026年06月01日)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
-        :root {
-            --primary: #007079; /* 北海道の豊かな自然と信頼感をイメージしたディープティール */
-        }
         body {
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        main {
             padding-top: 2rem;
-            padding-bottom: 3rem;
+            padding-bottom: 2rem;
         }
         header {
-            border-bottom: 2px solid var(--primary);
-            margin-bottom: 2rem;
+            border-bottom: 3px solid #005A9C;
             padding-bottom: 1rem;
+            margin-bottom: 2rem;
         }
-        h1 {
-            color: var(--primary);
+        header h1 {
+            color: #005A9C;
             font-size: 2.25rem;
+            margin: 0;
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        article {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-left: 5px solid #005A9C;
+        }
+        .weather-card {
+            border-left: 5px solid #FFA500;
         }
         .weather-info {
-            background-color: var(--card-background-color);
-            border-left: 5px solid #ff9800;
-        }
-        .weather-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
             gap: 1rem;
-            margin-top: 0.5rem;
         }
         .weather-item {
             font-size: 1.1rem;
         }
-        article h3 {
-            border-bottom: 1px solid #e0e0e0;
+        h3 {
+            color: #1a1a1a;
+            border-bottom: 1px solid #eee;
             padding-bottom: 0.5rem;
-            color: var(--primary);
+            margin-top: 0;
         }
         ul {
-            padding-left: 1.5rem;
+            padding-left: 1.2rem;
+            margin-bottom: 1rem;
         }
-        .badge-hokkaido {
-            background-color: var(--primary);
-            color: white;
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            display: inline-block;
+        ul li {
             margin-bottom: 0.5rem;
+        }
+        p {
+            line-height: 1.6;
+        }
+        a[role="button"] {
+            margin-top: 1rem;
+            background-color: transparent;
+            color: #005A9C;
+            border-color: #005A9C;
+        }
+        a[role="button"]:hover {
+            background-color: #005A9C;
+            color: #fff;
+        }
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: #777;
         }
     </style>
 </head>
@@ -58,85 +87,74 @@
     <main class="container">
         <!-- ヘッダー -->
         <header>
-            <h1>☀️ 朝のインサイト (2026年05月31日)</h1>
-            <p>北海道の未来を担う新人行員の皆さまへ、本日の重要ニュースとビジネスのヒントをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年06月01日)</h1>
+            <p class="subtitle">北海道の未来を担う新入行員の皆様へ、今日の重要トピックスをお届けします。</p>
         </header>
 
         <!-- 天気セクション -->
-        <article class="weather-info">
-            <header style="margin:-1.5rem -1.5rem 1rem -1.5rem; padding:1rem 1.5rem; background-color: rgba(255, 152, 0, 0.1);">
-                <strong style="color: #e65100; font-size: 1.2rem;">📍 本日の北海道の天気</strong>
-            </header>
-            <div class="weather-grid">
-                <div class="weather-item"><strong>天気:</strong> 晴天 ☀️</div>
-                <div class="weather-item"><strong>最高気温:</strong> 20.79℃</div>
-                <div class="weather-item"><strong>最低気温:</strong> 17.86℃</div>
+        <article class="weather-card">
+            <h3>📍 本日の道内気候トピックス</h3>
+            <div class="weather-info">
+                <div class="weather-item">☁️ <strong>天気:</strong> 曇りがち</div>
+                <div class="weather-item">🌡️ <strong>最高気温:</strong> 23.56℃</div>
+                <div class="weather-item">❄️ <strong>最低気温:</strong> 22.86℃</div>
             </div>
-            <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">※初夏の爽やかな風が吹く一日となりそうです。外回りや通勤時も快適に過ごせますが、朝晩の気温差には留意しましょう。</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #555;">
+                本日は道内全体で雲が広がりやすい1日となりそうです。朝晩と日中の気温差に対応できるよう体調管理に留意し、お客様のもとへ爽やかにお伺いしましょう。
+            </p>
         </article>
 
-        <!-- ニュース解説セクション -->
-        <section>
-            <h2 style="margin-top: 3rem; margin-bottom: 1.5rem;">📰 本日の厳選ニュース解説</h2>
+        <!-- ニュース解説 1 -->
+        <article>
+            <h3>住宅ローン変動金利への不安と金利上昇局面における返済額への影響</h3>
+            <p><b>ロジカル要約</b></p>
+            <ul>
+                <li><strong>背景/経緯:</strong> 長らく続いた日銀の超低金利政策の変更に伴い、金利のある世界への移行が現実味を帯びる中、住宅ローン利用者の間で将来的な返済負担増への懸念が高まっている。</li>
+                <li><strong>事象:</strong> 「変動金利のままで本当に大丈夫か」という不安を持つ顧客が増えており、固定金利への切り替えや今後の返済シミュレーションに関心が集まっている。</li>
+                <li><strong>結果/影響:</strong> 5年ルールや125%ルールなどの制度の正確な理解が不足している場合、将来的なライフプラン設計において家計の急激な圧迫リスクを招く懸念がある。</li>
+            </ul>
+            <p><b>地銀視点の深掘り</b></p>
+            <p>
+                道内でもマイホーム購入を控えた若いファミリー層や、既存の住宅ローンをお持ちのお客様から、金利に関するお問い合わせが間違いなく増える局面です。私たち地銀の役割は、単に金利を提示するだけでなく、「5年ルール」や「125％ルール」の仕組みを正しく説明し、お客様のライフステージ（教育資金や老後資金の時期）に合わせた個別のシミュレーションを提示することです。「金利のある世界」への不安に寄り添う丁寧な対話こそが、競合他行との差別化と、長期的なメインバンク化に向けた強固な信頼関係構築に繋がります。
+            </p>
+            <a href="https://news.yahoo.co.jp/articles/ea077cc25635cc4cc69ad4323a4124399c212f71?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
+        </article>
 
-            <!-- 記事1 -->
-            <article>
-                <span class="badge-hokkaido">個人顧客・資産管理</span>
-                <h3>なぜ「10億円」を即座に断ったのか？ 金の卵を産むニワトリを手放さない祖母の、意外すぎる投資ルール</h3>
-                
-                <p><b>ロジカル要約</b>:</p>
-                <ul>
-                    <li><b>背景/経緯:</b> 個人投資や資産運用において、目先の大きな売却益（キャピタルゲイン）に目を奪われ、将来の安定を損なうケースが後を絶たない。</li>
-                    <li><b>事象:</b> 10億円という破格の買収提案（不動産や株式の売却案件）に対し、ある高齢女性は「安定した配当や家賃収入（インカムゲイン）を生み続ける仕組みこそが重要」として即座に拒否した。</li>
-                    <li><b>結果/影響:</b> 一時的な大金よりも、持続的にキャッシュフローをもたらす「金の卵を産むニワトリ（優良資産）」を守り抜く姿勢が、長期的な一族の富の維持と安定において極めて有効であることを実証している。</li>
-                </ul>
+        <!-- ニュース解説 2 -->
+        <article>
+            <h3>経産省と財務省、韓国・中国・台湾製の冷延・熱延鋼帯で不当廉売関税の調査開始</h3>
+            <p><b>ロジカル要約</b></p>
+            <ul>
+                <li><strong>背景/経緯:</strong> 国内の鉄鋼メーカーから、アジア近隣諸国製の冷延・熱延鋼帯が不当に安い価格で輸入（ダンピング）され、国内産業が打撃を受けているとの申し立てがあった。</li>
+                <li><strong>事象:</strong> 経済産業省と財務省が、これら3カ国・地域からの対象製品に対する不当廉売関税の課税に向けた本格的な公式調査を開始した。</li>
+                <li><strong>結果/影響:</strong> 調査でダンピングの事実が認められれば、不当廉売関税が課され輸入価格が上昇する。これにより国内の鉄鋼業は保護される一方、これらの鋼材を調達して製品を作る下流の製造業においては原材料コストが上昇するリスクが生じる。</li>
+            </ul>
+            <p><b>地銀視点の深掘り</b></p>
+            <p>
+                北海道には、自動車部品製造や産業用機械、金属加工などを営む中堅・中小企業が、室蘭や苫小牧などの工業地帯を中心に多数存在します。もし取引先がアジアからの安価な鋼材調達に頼っている場合、今回の調査結果次第で将来的に仕入コストが急騰する可能性があります。若手行員として、「原材料費の動向に変化はないか」「調達ルートの多様化や、価格転嫁の準備は進んでいるか」といった対話を重ねることで、取引先の先手を打った資金繰り支援（運転資金の提案など）に繋げることができます。
+            </p>
+            <a href="https://news.yahoo.co.jp/articles/885147f86cf5589c72e4de9450c056ffe3894ea6?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
+        </article>
 
-                <p><b>地銀視点の深掘り</b>:</p>
-                <p>地元の地主層や中堅中小企業のオーナー経営者との「事業承継」や「資産管理」の対話において、非常に強力なフックとなる話題です。地方銀行の顧客には、先代から受け継いだ土地や自社株を保有する高齢の富裕層が多く存在します。目先の資産価値向上だけでなく、「いかに次の世代に安定したキャッシュフロー（＝安心）を残すか」という顧客の本音（インサイド）に寄り添うことで、信頼関係が深まります。「10億円の一時金より、毎月・毎年の安定を重視されるお客様が多いですが、〇〇様はいかがお考えですか？」と、投資信託や遺言信託の提案につなげる会話ネタとして活用してみましょう。</p>
-
-                <a href="https://news.yahoo.co.jp/articles/861e9066b49520c8c04d06281120392553a6228f?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
-
-            <!-- 記事2 -->
-            <article>
-                <span class="badge-hokkaido">法人営業・産業動向</span>
-                <h3>国内の銅事業再編、大手4社が手を組んだワケ</h3>
-                
-                <p><b>ロジカル要約</b>:</p>
-                <ul>
-                    <li><b>背景/経緯:</b> 世界的なEVシフトや脱炭素（カーボンニュートラル）の流れを受け、送電網や電気機器に不可欠な「銅」の需要が世界規模で激増している。</li>
-                    <li><b>事象:</b> 巨額の製錬投資や海外資源の争奪戦に対抗するため、国内非鉄金属大手4社が個別の枠組みを超え、製錬事業や物流、調達での共同運営・事業再編に踏み切った。</li>
-                    <li><b>結果/影響:</b> 国内産業における銅の安定調達リスクが低減され、投資効率が向上する一方、バリューチェーン全体への価格影響や調達ルートの変革が予測される。</li>
-                </ul>
-
-                <p><b>地銀視点の深掘り</b>:</p>
-                <p>北海道内にも、金属リサイクル業者や、銅を大量に使用する電線・電気設備工事、建設業、製造業などの中小企業が数多く存在します。大手による素材事業の再編は、数年以内に地元の調達価格や納期に直接影響を与える可能性があります。「世界的な銅需要の増加と大手再編の動き」を前提に、取引先企業の経営者に対し、「資材の仕入れ価格の見通し」や「先々の運転資金の確保」に関するヒントを提供することが可能です。「原材料の調達でお困りごとはございませんか？」というアプローチから、経営課題のヒアリングや、設備資金・運転資金の融資ニーズを引き出すきっかけに最適です。</p>
-
-                <a href="https://news.yahoo.co.jp/articles/130697f8dc3c62409adac3310c8865931b8204af?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
-
-            <!-- 記事3 -->
-            <article>
-                <span class="badge-hokkaido">DX・地域課題解決</span>
-                <h3>eve autoの自動搬送サービス、トヨタ車体富士松工場で10台超稼働…全国最多</h3>
-                
-                <p><b>ロジカル要約</b>:</p>
-                <ul>
-                    <li><b>背景/経緯:</b> 製造・物流現場における深刻な深刻な人手不足と、工場内搬送業務の自動化（省人化）ニーズが急速に高まっていた。</li>
-                    <li><b>事象:</b> 屋外対応の自動運転EVによる搬送サービス「eve auto」が、トヨタ車体富士松工場で10台以上一挙に導入され、国内最多の稼働実績を記録した。</li>
-                    <li><b>結果/影響:</b> 悪天候や段差のある屋外環境でも安定した自動搬送を実現。工場の生産性向上と同時に、製造現場における自動運転技術の社会実装が本格フェーズに入ったことを示した。</li>
-                </ul>
-
-                <p><b>地銀視点の深掘り</b>:</p>
-                <p>人手不足は、北海道の地域社会および地元企業が直面する最大の課題です。特に広大な敷地を持つ道内の「食品加工工場」「大規模物流倉庫」「酪農・農業法人」などにおいて、敷地内の運搬作業の省人化は、生き残りをかけた重要課題となっています。この最先端の導入事例を紹介することで、地元企業の経営層に対し、「物流・搬送プロセスのデジタル化（DX）」を具体的に提案できます。当行のソリューション提案（IT導入補助金の活用支援や、自動搬送設備導入に伴う融資、リース提案など）をセットで紹介し、「地銀は資金を貸すだけでなく、経営の省力化も一緒に考えるパートナーである」ことをアピールする素晴らしいネタになります。</p>
-
-                <a href="https://news.yahoo.co.jp/articles/6876c6b9463d847acb78f127edbb17a38da49081?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
-        </section>
+        <!-- ニュース解説 3 -->
+        <article>
+            <h3>ソフトバンクG、時価総額48兆円超でトヨタ自動車を抜き国内首位へ</h3>
+            <p><b>ロジカル要約</b></p>
+            <ul>
+                <li><strong>背景/経緯:</strong> 世界的なAI（人工知能）投資の加速と、アーム（Arm）など半導体関連企業を傘下に持つソフトバンクグループの投資アセットが急騰。</li>
+                <li><strong>事象:</strong> ソフトバンクグループの時価総額が48兆円を突破し、日本を代表する製造業の王者であるトヨタ自動車を抜き、国内企業で首位に躍り出た。</li>
+                <li><strong>結果/影響:</strong> 市場の牽引役が「製造業（ハードウェア）」から「AI・テック（投資・ソフトウェア）」へと完全にシフトしている流れが可視化され、国内外の投資マネーの動きに大きな変化をもたらしている。</li>
+            </ul>
+            <p><b>地銀視点の深掘り</b></p>
+            <p>
+                これは取引先企業の経営者や、地元の個人投資家（富裕層）のお客様との非常に良い「会話のネタ」になります。北海道においても、次世代半導体の「Rapidus（ラピダス）」が千歳市に進出し、先端技術やAIに対する地域の関心は極めて高くなっています。このニュースをフックに、「これからのAI社会が道内産業にどう影響するか」というビジネストークを展開したり、資産運用をお考えのお客様にグローバルな成長セクター（AI・半導体）の投資信託をご案内するなどのアプローチが考えられます。
+            </p>
+            <a href="https://news.yahoo.co.jp/articles/1d4f6a618b157617cf30a96ad67244c5fe5e72e5?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
+        </article>
 
         <!-- フッター -->
-        <footer style="margin-top: 4rem; text-align: center; font-size: 0.9rem; color: #777;">
-            <p>© 2026 北海道地方銀行 新人サポートプロジェクト. All rights reserved.</p>
+        <footer>
+            <p>© 2026 北海道地方銀行 新人研修サポート事務局 | 毎朝のインプットを、毎日の成長に。</p>
         </footer>
     </main>
 </body>
