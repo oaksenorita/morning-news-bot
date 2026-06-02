@@ -3,158 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年06月01日)</title>
+    <title>朝のインサイト (2026年06月02日) - 北海道地銀内定者向け</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         body {
-            background-color: #f4f7f6;
-            color: #333;
+            padding: 20px 0;
         }
-        main {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+        h1 {
+            border-bottom: 2px solid var(--pico-primary);
+            padding-bottom: 10px;
         }
-        header {
-            border-bottom: 3px solid #005A9C;
-            padding-bottom: 1rem;
+        .weather-article {
+            background-color: var(--pico-card-background-color);
+            border-left: 5px solid #10b981;
+        }
+        .insight-card {
             margin-bottom: 2rem;
-        }
-        header h1 {
-            color: #005A9C;
-            font-size: 2.25rem;
-            margin: 0;
-        }
-        .subtitle {
-            font-size: 1rem;
-            color: #666;
-            margin-top: 0.5rem;
-        }
-        article {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            border-left: 5px solid #005A9C;
-        }
-        .weather-card {
-            border-left: 5px solid #FFA500;
-        }
-        .weather-info {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .weather-item {
-            font-size: 1.1rem;
-        }
-        h3 {
-            color: #1a1a1a;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 0.5rem;
-            margin-top: 0;
-        }
-        ul {
-            padding-left: 1.2rem;
-            margin-bottom: 1rem;
-        }
-        ul li {
-            margin-bottom: 0.5rem;
-        }
-        p {
-            line-height: 1.6;
-        }
-        a[role="button"] {
-            margin-top: 1rem;
-            background-color: transparent;
-            color: #005A9C;
-            border-color: #005A9C;
-        }
-        a[role="button"]:hover {
-            background-color: #005A9C;
-            color: #fff;
-        }
-        footer {
-            text-align: center;
-            margin-top: 3rem;
-            font-size: 0.85rem;
-            color: #777;
         }
     </style>
 </head>
 <body>
     <main class="container">
-        <!-- ヘッダー -->
         <header>
-            <h1>☀️ 朝のインサイト (2026年06月01日)</h1>
-            <p class="subtitle">北海道の未来を担う新入行員の皆様へ、今日の重要トピックスをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年06月02日)</h1>
+            <p>北海道の未来を担う内定者の皆さん、おはようございます！本日も金融・地域社会のプロフェッショナルを目指し、顧客との対話に生かせるインサイトを身に付けましょう。</p>
         </header>
 
-        <!-- 天気セクション -->
-        <article class="weather-card">
-            <h3>📍 本日の道内気候トピックス</h3>
-            <div class="weather-info">
-                <div class="weather-item">☁️ <strong>天気:</strong> 曇りがち</div>
-                <div class="weather-item">🌡️ <strong>最高気温:</strong> 23.56℃</div>
-                <div class="weather-item">❄️ <strong>最低気温:</strong> 22.86℃</div>
-            </div>
-            <p style="margin-top: 1rem; font-size: 0.9rem; color: #555;">
-                本日は道内全体で雲が広がりやすい1日となりそうです。朝晩と日中の気温差に対応できるよう体調管理に留意し、お客様のもとへ爽やかにお伺いしましょう。
-            </p>
-        </article>
+        <section id="weather">
+            <h2>📍 本日の北海道エリア天気</h2>
+            <article class="weather-article">
+                <hgroup>
+                    <h3>☁️ 天気: 厚い雲</h3>
+                    <p>本日も一日を通して雲が広がりやすい気候です。</p>
+                </hgroup>
+                <div class="grid">
+                    <div>
+                        <strong>最高気温:</strong> 23.36℃
+                    </div>
+                    <div>
+                        <strong>最低気温:</strong> 23.36℃
+                    </div>
+                </div>
+                <hr>
+                <p style="margin: 0;"><small>💡 <b>会話ネタ</b>: 気温差は少ないものの、すっきりしない空模様です。店舗を訪れるお客様や、外回りでの時候の挨拶に「少しムシムシしますね」「どんよりとした天気が続きますね」など、心地よいアイスブレイクとしてご活用ください。</small></p>
+            </article>
+        </section>
 
-        <!-- ニュース解説 1 -->
-        <article>
-            <h3>住宅ローン変動金利への不安と金利上昇局面における返済額への影響</h3>
-            <p><b>ロジカル要約</b></p>
-            <ul>
-                <li><strong>背景/経緯:</strong> 長らく続いた日銀の超低金利政策の変更に伴い、金利のある世界への移行が現実味を帯びる中、住宅ローン利用者の間で将来的な返済負担増への懸念が高まっている。</li>
-                <li><strong>事象:</strong> 「変動金利のままで本当に大丈夫か」という不安を持つ顧客が増えており、固定金利への切り替えや今後の返済シミュレーションに関心が集まっている。</li>
-                <li><strong>結果/影響:</strong> 5年ルールや125%ルールなどの制度の正確な理解が不足している場合、将来的なライフプラン設計において家計の急激な圧迫リスクを招く懸念がある。</li>
-            </ul>
-            <p><b>地銀視点の深掘り</b></p>
-            <p>
-                道内でもマイホーム購入を控えた若いファミリー層や、既存の住宅ローンをお持ちのお客様から、金利に関するお問い合わせが間違いなく増える局面です。私たち地銀の役割は、単に金利を提示するだけでなく、「5年ルール」や「125％ルール」の仕組みを正しく説明し、お客様のライフステージ（教育資金や老後資金の時期）に合わせた個別のシミュレーションを提示することです。「金利のある世界」への不安に寄り添う丁寧な対話こそが、競合他行との差別化と、長期的なメインバンク化に向けた強固な信頼関係構築に繋がります。
-            </p>
-            <a href="https://news.yahoo.co.jp/articles/ea077cc25635cc4cc69ad4323a4124399c212f71?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
-        </article>
+        <section id="news-insights">
+            <h2>📰 本日の厳選ニュース解説（地銀視点）</h2>
 
-        <!-- ニュース解説 2 -->
-        <article>
-            <h3>経産省と財務省、韓国・中国・台湾製の冷延・熱延鋼帯で不当廉売関税の調査開始</h3>
-            <p><b>ロジカル要約</b></p>
-            <ul>
-                <li><strong>背景/経緯:</strong> 国内の鉄鋼メーカーから、アジア近隣諸国製の冷延・熱延鋼帯が不当に安い価格で輸入（ダンピング）され、国内産業が打撃を受けているとの申し立てがあった。</li>
-                <li><strong>事象:</strong> 経済産業省と財務省が、これら3カ国・地域からの対象製品に対する不当廉売関税の課税に向けた本格的な公式調査を開始した。</li>
-                <li><strong>結果/影響:</strong> 調査でダンピングの事実が認められれば、不当廉売関税が課され輸入価格が上昇する。これにより国内の鉄鋼業は保護される一方、これらの鋼材を調達して製品を作る下流の製造業においては原材料コストが上昇するリスクが生じる。</li>
-            </ul>
-            <p><b>地銀視点の深掘り</b></p>
-            <p>
-                北海道には、自動車部品製造や産業用機械、金属加工などを営む中堅・中小企業が、室蘭や苫小牧などの工業地帯を中心に多数存在します。もし取引先がアジアからの安価な鋼材調達に頼っている場合、今回の調査結果次第で将来的に仕入コストが急騰する可能性があります。若手行員として、「原材料費の動向に変化はないか」「調達ルートの多様化や、価格転嫁の準備は進んでいるか」といった対話を重ねることで、取引先の先手を打った資金繰り支援（運転資金の提案など）に繋げることができます。
-            </p>
-            <a href="https://news.yahoo.co.jp/articles/885147f86cf5589c72e4de9450c056ffe3894ea6?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
-        </article>
+            <!-- 1件目：米国債と為替シミュレーション -->
+            <article class="insight-card">
+                <h3>米国債10年利回り4.4％台「円安」のいま投資対象としてアリなのか。もし円高に進行した場合「1ドル何円まで」なら損しない？</h3>
+                
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 日米の金利差に伴い歴史的な円安水準が続く中、魅力的な高利回り（4.4%台）を誇る米国債に個人投資家の関心が集まっていますが、今後の「円高回帰」による元本割れ懸念がハードルとなっています。</li>
+                    <li><strong>事象:</strong> 156円台で米国10年債を購入した場合のシミュレーションによると、将来的に1ドル＝108円台まで円高が進まない限り、外貨金利収入のバッファによってトータルで損失（元本割れ）は発生しない計算となります。</li>
+                    <li><strong>結果/影響:</strong> 為替変動リスクは避けられないものの、中長期保有というアプローチを取ることで、保有期間に応じた高い「為替リスク耐性」を得られることが定量的に示されました。</li>
+                </ul>
 
-        <!-- ニュース解説 3 -->
-        <article>
-            <h3>ソフトバンクG、時価総額48兆円超でトヨタ自動車を抜き国内首位へ</h3>
-            <p><b>ロジカル要約</b></p>
-            <ul>
-                <li><strong>背景/経緯:</strong> 世界的なAI（人工知能）投資の加速と、アーム（Arm）など半導体関連企業を傘下に持つソフトバンクグループの投資アセットが急騰。</li>
-                <li><strong>事象:</strong> ソフトバンクグループの時価総額が48兆円を突破し、日本を代表する製造業の王者であるトヨタ自動車を抜き、国内企業で首位に躍り出た。</li>
-                <li><strong>結果/影響:</strong> 市場の牽引役が「製造業（ハードウェア）」から「AI・テック（投資・ソフトウェア）」へと完全にシフトしている流れが可視化され、国内外の投資マネーの動きに大きな変化をもたらしている。</li>
-            </ul>
-            <p><b>地銀視点の深掘り</b></p>
-            <p>
-                これは取引先企業の経営者や、地元の個人投資家（富裕層）のお客様との非常に良い「会話のネタ」になります。北海道においても、次世代半導体の「Rapidus（ラピダス）」が千歳市に進出し、先端技術やAIに対する地域の関心は極めて高くなっています。このニュースをフックに、「これからのAI社会が道内産業にどう影響するか」というビジネストークを展開したり、資産運用をお考えのお客様にグローバルな成長セクター（AI・半導体）の投資信託をご案内するなどのアプローチが考えられます。
-            </p>
-            <a href="https://news.yahoo.co.jp/articles/1d4f6a618b157617cf30a96ad67244c5fe5e72e5?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
-        </article>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>地方銀行の富裕層やリテール（個人）顧客、また退職金運用を検討されている高齢層のお客様は、預金金利の低さに悩みつつも「為替リスクが怖いから外貨投資はできない」と考えがちです。新人行員として、「単に円安・円高という目先の動きに一喜一憂するのではなく、金利というバッファを組み合わせて【損益分岐点】を中長期で捉える重要性」をお客様に分かりやすく説明できれば、安心感のある投資提案に繋がります。預金から一歩進んだ提案力を磨く第一歩にしましょう。</p>
 
-        <!-- フッター -->
+                <a href="https://news.yahoo.co.jp/articles/0d39531eb0c2812ff9dc0879aba09a91289b7668?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
+            </article>
+
+            <!-- 2件目：毎日書評・部下育成 -->
+            <article class="insight-card">
+                <h3>【毎日書評】できる上司がやっている、成果へつながる2つの「部下育成」アクション</h3>
+                
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 少子高齢化や人口流出が深刻な地域において、中小企業の経営課題として「人材の採用・育成・定着」は最大の関心事となっています。</li>
+                    <li><strong>事象:</strong> 成果を出す指導者が行う具体的な手法として、業務の重要性や目標を可視化する「マイルストーンの設計」と、対話を通じて本人の気付きを促す「フィードバックの仕組み化」が有効とされています。</li>
+                    <li><strong>結果/影響:</strong> これにより、若手社員のモチベーションと自立性が向上し、結果として定着率の改善と組織の生産性向上に寄与します。</li>
+                </ul>
+
+                <p><b>地銀視点の深掘り</b></p>
+                <p>北海道内の中小企業でも、「せっかく採用しても若手がすぐに辞めてしまう」「どう育てていいか分からない」と頭を抱える経営者が非常に多いです。地銀の強みは資金繰り支援だけではありません。経営者の最も深い悩みである「人」の課題に対し、こうした組織マネジメントの最新ノウハウを会話のフックに提供できれば、「この銀行員はうちの会社の成長を一緒に考えてくれている」という厚い信頼を得られます。また、内定者の皆さん自身の「今後の先輩・上司との関係構築」においても大いに役立つ視点です。</p>
+
+                <a href="https://news.yahoo.co.jp/articles/33cee456cc3bed8f652d67274c4e353c158d2dbc?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
+            </article>
+
+            <!-- 3件目：ゲーム課金トラブル -->
+            <article class="insight-card">
+                <h3>子どものゲーム課金で25万円請求がありました。正直払える額ではありません…。消費者センターに相談すれば取り消しできる可能性はありますか？</h3>
+                
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li><strong>背景/経緯:</strong> スマートフォンの普及や決済手段の多様化・簡易化に伴い、未成年者が親の同意を得ずにゲーム内で高額決済を行ってしまうトラブルが全国で深刻化しています。</li>
+                    <li><strong>事象:</strong> 原則として民法上の「未成年者契約の取消権」を適用し取り消せる可能性がありますが、親のアカウントを無断利用して成人になりすました場合や、端末の管理が著しく不適切であった場合は取消が却下される可能性もあります。</li>
+                    <li><strong>結果/影響:</strong> 消費者生活センターと連携して返金交渉を試みることは不可欠ですが、最悪の事態を防ぐために、家庭内での端末パスワード設定、ペアレンタルコントロールなどの事前設定が最も重要です。</li>
+                </ul>
+
+                <p><b>地銀視点の深掘り</b></p>
+                <p>「地銀は地域コミュニティのライフプランパートナー」です。店頭や個人ローン相談の場面では、こうした生活に直結するマネートラブルや不安をお客様からポロッと相談されることがあります。その際、「実は民法上、このような保護制度があります。まずは消費者センターへ相談してみてはいかがでしょう」とサッと寄り添った初期アドバイスができれば、お客様の心の負担を大きく軽減し、強いロイヤルティ（信頼関係）に繋がります。金融教育が求められる今、地域への啓発活動としてこうしたキャッシュレス決済の怖さや正しい使い方を広めることも、将来の皆さんの重要な役割の一つです。</p>
+
+                <a href="https://news.yahoo.co.jp/articles/beda58019ba5cf7543ae329c2a59f2fd4286b9fe?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
+            </article>
+        </section>
+
         <footer>
-            <p>© 2026 北海道地方銀行 新人研修サポート事務局 | 毎朝のインプットを、毎日の成長に。</p>
+            <hr>
+            <p style="text-align: center;"><small>© 2026 北海道の未来をひらく 地方銀行 内定者サポート事務局</small></p>
         </footer>
     </main>
 </body>
