@@ -3,111 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年06月02日) - 北海道地銀内定者向け</title>
+    <title>朝のインサイト - 北海道地方銀行 新人行員向け</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
+        :root {
+            --primary: #008080; /* 親しみやすさと信頼感のあるティールグリーン（北海道の豊かな自然をイメージ） */
+        }
         body {
             padding: 20px 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 1rem;
         }
         h1 {
-            border-bottom: 2px solid var(--pico-primary);
-            padding-bottom: 10px;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
         }
-        .weather-article {
-            background-color: var(--pico-card-background-color);
-            border-left: 5px solid #10b981;
+        .subtitle {
+            color: #555;
+            font-size: 1.1rem;
         }
-        .insight-card {
+        article {
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
             margin-bottom: 2rem;
+        }
+        .weather-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .weather-card {
+            padding: 10px 20px;
+        }
+        .weather-label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .weather-value {
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+        .news-section-title {
+            margin: 2rem 0 1rem 0;
+            padding-left: 10px;
+            border-left: 5px solid var(--primary);
+        }
+        b {
+            color: var(--primary);
+            display: inline-block;
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
     <main class="container">
+        <!-- 1. ヘッダー -->
         <header>
-            <h1>☀️ 朝のインサイト (2026年06月02日)</h1>
-            <p>北海道の未来を担う内定者の皆さん、おはようございます！本日も金融・地域社会のプロフェッショナルを目指し、顧客との対話に生かせるインサイトを身に付けましょう。</p>
+            <h1>☀️ 朝のインサイト (2026年06月03日)</h1>
+            <div class="subtitle">北海道の未来を担う新人行員の皆さまへ、本日の経済動向と地域経済への目線をお届けします。</div>
         </header>
 
-        <section id="weather">
-            <h2>📍 本日の北海道エリア天気</h2>
-            <article class="weather-article">
-                <hgroup>
-                    <h3>☁️ 天気: 厚い雲</h3>
-                    <p>本日も一日を通して雲が広がりやすい気候です。</p>
-                </hgroup>
-                <div class="grid">
-                    <div>
-                        <strong>最高気温:</strong> 23.36℃
-                    </div>
-                    <div>
-                        <strong>最低気温:</strong> 23.36℃
-                    </div>
+        <!-- 2. 天気 -->
+        <article>
+            <header style="margin-bottom: 1rem; padding: 10px 20px; background-color: #e0f2f1; border-radius: 4px 4px 0 0;">
+                <strong style="color: #004d40;">📍 本日の北海道エリア（主要都市）の天気予報</strong>
+            </header>
+            <div class="weather-container">
+                <div class="weather-card">
+                    <div class="weather-label">天気</div>
+                    <div class="weather-value" style="color: #455a64;">☁️ 雲</div>
                 </div>
-                <hr>
-                <p style="margin: 0;"><small>💡 <b>会話ネタ</b>: 気温差は少ないものの、すっきりしない空模様です。店舗を訪れるお客様や、外回りでの時候の挨拶に「少しムシムシしますね」「どんよりとした天気が続きますね」など、心地よいアイスブレイクとしてご活用ください。</small></p>
-            </article>
-        </section>
+                <div class="weather-card">
+                    <div class="weather-label">最高気温</div>
+                    <div class="weather-value" style="color: #c62828;">21.34℃</div>
+                </div>
+                <div class="weather-card">
+                    <div class="weather-label">最低気温</div>
+                    <div class="weather-value" style="color: #1565c0;">21.34℃</div>
+                </div>
+            </div>
+            <div style="padding: 15px 20px; font-size: 0.85rem; color: #555; background-color: #fafafa; border-top: 1px solid #eee;">
+                ※本日は朝夕と日中の気温差がなく、穏やかで涼しい曇りの一日となりそうです。外回り・店舗周辺の清掃時は調節しやすい服装を意識しましょう。
+            </div>
+        </article>
 
-        <section id="news-insights">
-            <h2>📰 本日の厳選ニュース解説（地銀視点）</h2>
+        <h2 class="news-section-title">📰 厳選ニュース解説（3選）</h2>
 
-            <!-- 1件目：米国債と為替シミュレーション -->
-            <article class="insight-card">
-                <h3>米国債10年利回り4.4％台「円安」のいま投資対象としてアリなのか。もし円高に進行した場合「1ドル何円まで」なら損しない？</h3>
-                
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 日米の金利差に伴い歴史的な円安水準が続く中、魅力的な高利回り（4.4%台）を誇る米国債に個人投資家の関心が集まっていますが、今後の「円高回帰」による元本割れ懸念がハードルとなっています。</li>
-                    <li><strong>事象:</strong> 156円台で米国10年債を購入した場合のシミュレーションによると、将来的に1ドル＝108円台まで円高が進まない限り、外貨金利収入のバッファによってトータルで損失（元本割れ）は発生しない計算となります。</li>
-                    <li><strong>結果/影響:</strong> 為替変動リスクは避けられないものの、中長期保有というアプローチを取ることで、保有期間に応じた高い「為替リスク耐性」を得られることが定量的に示されました。</li>
-                </ul>
+        <!-- 3. ニュース解説 (1) -->
+        <article>
+            <h3>車のローン残り100万円ですが、支払いが厳しくなってきました…。返済額の見直しや借り換えはできるでしょうか？</h3>
+            
+            <p><b>ロジカル要約</b></p>
+            <ul>
+                <li><strong>背景/経緯:</strong> 物価高騰や生活コストの上昇に伴い、家計が圧迫され、既存の自動車ローン（マイカーローン）の返済継続に不安を抱える個人顧客が増加している。</li>
+                <li><strong>事象:</strong> 返済が苦しくなった場合の選択肢として、「返済期間の延長（条件変更）」や、「低金利な他社ローンへの借り換え」といった家計救済策が挙げられる。</li>
+                <li><strong>結果/影響:</strong> 借り換えには手数料や再審査の手間が発生するものの、適切な金利・プランを選ぶことで月々の支払額や総支払額を抑制し、家計の健全化を図ることが可能となる。</li>
+            </ul>
 
-                <p><b>地銀視点の深掘り</b></p>
-                <p>地方銀行の富裕層やリテール（個人）顧客、また退職金運用を検討されている高齢層のお客様は、預金金利の低さに悩みつつも「為替リスクが怖いから外貨投資はできない」と考えがちです。新人行員として、「単に円安・円高という目先の動きに一喜一憂するのではなく、金利というバッファを組み合わせて【損益分岐点】を中長期で捉える重要性」をお客様に分かりやすく説明できれば、安心感のある投資提案に繋がります。預金から一歩進んだ提案力を磨く第一歩にしましょう。</p>
+            <p><b>地銀視点の深掘り</b></p>
+            <p>北海道は一人当たりの自家用車保有台数が多く、車は生活に欠かせないインフラです。そのため、車のローン負担は道民の家計に最も大きな影響を与える要因の一つです。お客様からこのような相談を受けた際、ただ当行のマイカーローンへの借り換えを勧めるだけでなく、「住宅ローンや他社カードローンを含めた、家計全体の収支改善（おまとめ提案）」を提示できると、非常に高い信頼をいただけます。「地域のお客様の暮らしに寄り添う」地方銀行員としての醍醐味が試される、重要な会話ネタです。</p>
 
-                <a href="https://news.yahoo.co.jp/articles/0d39531eb0c2812ff9dc0879aba09a91289b7668?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
-            </article>
+            <a href="https://news.yahoo.co.jp/articles/4858ca5530aa868043afd3e500a8e8bbb83151e0?source=rss" role="button" class="outline">続きを読む</a>
+        </article>
 
-            <!-- 2件目：毎日書評・部下育成 -->
-            <article class="insight-card">
-                <h3>【毎日書評】できる上司がやっている、成果へつながる2つの「部下育成」アクション</h3>
-                
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 少子高齢化や人口流出が深刻な地域において、中小企業の経営課題として「人材の採用・育成・定着」は最大の関心事となっています。</li>
-                    <li><strong>事象:</strong> 成果を出す指導者が行う具体的な手法として、業務の重要性や目標を可視化する「マイルストーンの設計」と、対話を通じて本人の気付きを促す「フィードバックの仕組み化」が有効とされています。</li>
-                    <li><strong>結果/影響:</strong> これにより、若手社員のモチベーションと自立性が向上し、結果として定着率の改善と組織の生産性向上に寄与します。</li>
-                </ul>
+        <!-- 3. ニュース解説 (2) -->
+        <article>
+            <h3>スペースXが12兆円の調達計画　新規株式公開時、過去最大の公算</h3>
+            
+            <p><b>ロジカル要約</b></p>
+            <ul>
+                <li><strong>背景/経緯:</strong> 米宇宙企業スペースX社は、衛星通信サービス「スターリンク」の拡大や、火星探査を見据えた巨大ロケット「スターシップ」の開発加速に向け、多額の成長資金を必要としている。</li>
+                <li><strong>事象:</strong> 同社は新規株式公開（IPO）や既存株売却を通じ、企業評価額を約12兆円（約800億ドル）とする、過去最大規模の資金調達スキームを計画している。</li>
+                <li><strong>結果/影響:</strong> 宇宙開発が国主導から民間主導へと完全にシフトし、最先端ビジネスとして膨大なグローバルマネーを惹きつける主役となったことを裏付けている。</li>
+            </ul>
 
-                <p><b>地銀視点の深掘り</b></p>
-                <p>北海道内の中小企業でも、「せっかく採用しても若手がすぐに辞めてしまう」「どう育てていいか分からない」と頭を抱える経営者が非常に多いです。地銀の強みは資金繰り支援だけではありません。経営者の最も深い悩みである「人」の課題に対し、こうした組織マネジメントの最新ノウハウを会話のフックに提供できれば、「この銀行員はうちの会社の成長を一緒に考えてくれている」という厚い信頼を得られます。また、内定者の皆さん自身の「今後の先輩・上司との関係構築」においても大いに役立つ視点です。</p>
+            <p><b>地銀視点の深掘り</b></p>
+            <p>「宇宙ビジネスは海外の遠い話」ではありません。北海道大樹町にはアジア初の民間の宇宙ロケット発射場「北海道スペースポート（HOSPO）」があり、道内でも宇宙関連産業の集積が急速に進んでいます。地銀として、地元の中小製造業（金属加工や精密機械、ソフトウェアなど）が宇宙産業に新規参入する動きを支援することは極めて重要です。経営者のお客さまとお話しする際、「スペースXの12兆円調達のニュース、すごいですね。北海道大樹町のロケット産業も盛り上がっていますが、御社の高い技術力を活かして宇宙産業へ参入するアイデアはありませんか？」と、未来に向けた設備投資や挑戦を促す会話のフックとして活用しましょう。</p>
 
-                <a href="https://news.yahoo.co.jp/articles/33cee456cc3bed8f652d67274c4e353c158d2dbc?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
-            </article>
+            <a href="https://news.yahoo.co.jp/articles/e273f9336e19ba2bd8e511f4ff5b657509083317?source=rss" role="button" class="outline">続きを読む</a>
+        </article>
 
-            <!-- 3件目：ゲーム課金トラブル -->
-            <article class="insight-card">
-                <h3>子どものゲーム課金で25万円請求がありました。正直払える額ではありません…。消費者センターに相談すれば取り消しできる可能性はありますか？</h3>
-                
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><strong>背景/経緯:</strong> スマートフォンの普及や決済手段の多様化・簡易化に伴い、未成年者が親の同意を得ずにゲーム内で高額決済を行ってしまうトラブルが全国で深刻化しています。</li>
-                    <li><strong>事象:</strong> 原則として民法上の「未成年者契約の取消権」を適用し取り消せる可能性がありますが、親のアカウントを無断利用して成人になりすました場合や、端末の管理が著しく不適切であった場合は取消が却下される可能性もあります。</li>
-                    <li><strong>結果/影響:</strong> 消費者生活センターと連携して返金交渉を試みることは不可欠ですが、最悪の事態を防ぐために、家庭内での端末パスワード設定、ペアレンタルコントロールなどの事前設定が最も重要です。</li>
-                </ul>
+        <!-- 3. ニュース解説 (3) -->
+        <article>
+            <h3>【毎日書評】部下が自ら動き出す！ 日本の上司がやっていない「世界の一流」のマネジメント</h3>
+            
+            <p><b>ロジカル要約</b></p>
+            <ul>
+                <li><strong>背景/経緯:</strong> 日本の中小企業に多く見られる「指示命令型（マイクロマネジメント）」の上司のあり方では、激変する現代市場において若手の主体性やイノベーションを阻害するという課題がある。</li>
+                <li><strong>事象:</strong> 本書は、世界の一流マネージャーが導入している「部下の心理的安全性を確保し、自発的な行動と成長を促すための問いかけや対話の手法」を提唱している。</li>
+                <li><strong>結果/影響:</strong> 指示を与える役割から「並走するコーチ」へ変化することで、チームの生産性が劇的に向上し、結果として組織内のエンゲージメント向上や離職防止に繋がる。</li>
+            </ul>
 
-                <p><b>地銀視点の深掘り</b></p>
-                <p>「地銀は地域コミュニティのライフプランパートナー」です。店頭や個人ローン相談の場面では、こうした生活に直結するマネートラブルや不安をお客様からポロッと相談されることがあります。その際、「実は民法上、このような保護制度があります。まずは消費者センターへ相談してみてはいかがでしょう」とサッと寄り添った初期アドバイスができれば、お客様の心の負担を大きく軽減し、強いロイヤルティ（信頼関係）に繋がります。金融教育が求められる今、地域への啓発活動としてこうしたキャッシュレス決済の怖さや正しい使い方を広めることも、将来の皆さんの重要な役割の一つです。</p>
+            <p><b>地銀視点の深掘り</b></p>
+            <p>北海道の取引先中小企業の多くが「深刻な深刻な人手不足」と「若手人材の早期離職」に頭を悩ませています。経営者や人事担当者を訪問した際、「うちの若い従業員がすぐに辞めてしまう」「主体性がない」という悩みを打ち明けられることが多々あります。その際に「実はこのようなマネジメント手法が今、注目されています」と、資金面だけでなく『人』に関する経営課題への情報提供（伴走型支援）を行うことで、単なるお金の貸し手を超えた「ビジネスパートナー」として認知されます。また、新人であるご自身にとっても、上司や先輩とどのような連携（報連相や主体的な対話）をすべきか、キャリア構築の好材料となるでしょう。</p>
 
-                <a href="https://news.yahoo.co.jp/articles/beda58019ba5cf7543ae329c2a59f2fd4286b9fe?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
-            </article>
-        </section>
+            <a href="https://news.yahoo.co.jp/articles/ec649ec56e4d62121d392fbccdb690f03eed834d?source=rss" role="button" class="outline">続きを読む</a>
+        </article>
 
-        <footer>
-            <hr>
-            <p style="text-align: center;"><small>© 2026 北海道の未来をひらく 地方銀行 内定者サポート事務局</small></p>
-        </footer>
     </main>
 </body>
 </html>
