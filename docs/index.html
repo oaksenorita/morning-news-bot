@@ -3,101 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年06月05日)</title>
+    <title>朝のインサイト (2026年06月06日) - 北海道地銀内定者向け</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
+        :root {
+            --pico-primary: #008080; /* 知性と信頼感を表す深みのあるディープティール */
+            --pico-primary-background: #008080;
+        }
         body {
-            padding-top: 1rem;
-            padding-bottom: 2rem;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
         }
-        h1 {
-            border-bottom: 2px solid var(--pico-primary);
-            padding-bottom: 0.5rem;
+        .header-section {
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #005a5a 0%, #008080 100%);
+            color: white;
+            border-radius: 0 0 16px 16px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
-        .weather-card {
-            background-color: var(--pico-card-background-color);
-            border-left: 5px solid var(--pico-primary);
+        .header-section h1 {
+            margin: 0;
+            color: white;
+            font-size: 1.8rem;
+            text-align: center;
         }
-        .deep-dive {
-            background-color: rgba(var(--pico-primary-rgb), 0.05);
-            padding: 1rem;
+        .header-subtitle {
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+        }
+        .weather-box {
+            background-color: #ffffff;
+            border-left: 5px solid #0284c7;
             border-radius: 8px;
-            border-left: 3px solid var(--pico-primary);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            align-items: center;
+        }
+        .weather-item {
+            text-align: center;
+        }
+        .weather-label {
+            font-size: 0.8rem;
+            color: #64748b;
+            margin-bottom: 0.2rem;
+        }
+        .weather-value {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .section-title {
+            color: #0f172a;
+            border-bottom: 2px solid #008080;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.4rem;
+        }
+        article {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        article:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .article-tag {
+            display: inline-block;
+            background-color: #e0f2fe;
+            color: #0369a1;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            margin-bottom: 0.75rem;
+        }
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #1e293b;
+            line-height: 1.4;
+        }
+        .summary-box {
+            background-color: #f8fafc;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .summary-box ul {
+            margin: 0;
+            padding-left: 1.2rem;
+        }
+        .insight-box {
+            border-top: 1px dashed #cbd5e1;
+            padding-top: 1rem;
             margin-top: 1rem;
+        }
+        .insight-title {
+            color: #0f766e;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .insight-desc {
+            font-size: 0.9rem;
+            color: #475569;
+            line-height: 1.6;
+        }
+        .read-more-btn {
+            margin-top: 1rem;
+            width: 100%;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
         }
     </style>
 </head>
 <body>
-    <main class="container">
-        <!-- ヘッダー -->
-        <header>
-            <h1>☀️ 朝のインサイト (2026年06月05日)</h1>
-            <p>北海道の地方銀行に内定した皆様へ、本日の気象情報と社会人としての糧となる厳選ニュースをお届けします。</p>
-        </header>
 
+    <header class="header-section">
+        <div class="container">
+            <h1>☀️ 朝のインサイト (2026年06月06日)</h1>
+            <div class="header-subtitle">北海道の未来を担う内定者のための、社会人準備＆ビジネス感度向上サポート</div>
+        </div>
+    </header>
+
+    <main class="container">
+        
         <!-- 天気セクション -->
-        <article class="weather-card">
-            <h3>📍 本日の北海道の天気</h3>
-            <p>6月に入りましたが、本日は肌寒い一日となります。体調管理に留意し、万全の準備を進めましょう。</p>
-            <ul>
-                <li><strong>天気:</strong> 厚い雲</li>
-                <li><strong>最高気温:</strong> 13.01℃</li>
-                <li><strong>最低気温:</strong> 13.01℃</li>
-            </ul>
-        </article>
+        <section>
+            <div class="weather-box">
+                <h4 style="margin-top:0; margin-bottom: 1rem; font-size:1rem; color:#0369a1; display:flex; align-items:center; gap:0.5rem;">
+                    📍 北海道の今朝の空模様
+                </h4>
+                <div class="weather-grid">
+                    <div class="weather-item">
+                        <div class="weather-label">天気</div>
+                        <div class="weather-value" style="color: #475569;">☁️ 厚い雲</div>
+                    </div>
+                    <div class="weather-item">
+                        <div class="weather-label">最高気温</div>
+                        <div class="weather-value" style="color: #e11d48;">13.56℃</div>
+                    </div>
+                    <div class="weather-item">
+                        <div class="weather-label">最低気温</div>
+                        <div class="weather-value" style="color: #2563eb;">13.56℃</div>
+                    </div>
+                </div>
+                <p style="font-size:0.8rem; color:#64748b; margin-top: 1rem; margin-bottom: 0; text-align: center;">
+                    ※本日（6月6日）の北海道は全体的に厚い雲に覆われ、気温も上がりにくく少し肌寒い一日となりそうです。体調管理に気をつけて過ごしましょう！
+                </p>
+            </div>
+        </section>
 
         <!-- ニュースセクション -->
         <section>
-            <h2>📰 厳選インサイトニュース (3選)</h2>
+            <h2 class="section-title">本日の厳選ビジネストピックス</h2>
 
             <!-- 記事1 -->
             <article>
-                <h3>「税金を安くしろ！」と怒鳴る客に、プロが返した意外な一言</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 役所や金融機関の窓口、税務署などの現場において、理不尽な怒りやクレームをぶつける顧客（クレーマー）への対応は、現場職員の大きな精神的ストレス要因となっている。</li>
-                    <li><strong>事象:</strong> 対応のプロは、顧客が感情的になっている際に論理や正論で言い返さず、まずは「そこまでお怒りになるのも無理はありません」「ご不便をおかけしました」と相手の感情に共感し、受け止める言葉を返す。</li>
-                    <li><strong>結果/影響:</strong> 顧客は「自分の話を聴いてもらえた」と認識することで冷静さを取り戻し、その後は制度やルールに基づく説明をスムーズに聞き入れ、解決へと導きやすくなる。</li>
-                </ul>
-                <div class="deep-dive">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>地方銀行の店舗（窓口やロビー）では、手続きの煩雑さや手数料の改定、融資審査の結果に対して、お客様が感情的になられる場面に遭遇することがあります。ここで最も重要なのは「まず話を聴き、共感を示す」という初期対応です。北海道に根ざす銀行員として、お客様の「困りごと」や「焦り」に真摯に耳を傾ける姿勢こそが、クレームを信頼関係に変える第一歩となります。配属後に実践できる一歩進んだコミュニケーション術として覚えておきましょう。</p>
+                <span class="article-tag">ビジネスマナー / 報連相</span>
+                <h3>仕事ができる人が「報連相」で使っているすごい一言・ベスト1</h3>
+                
+                <div class="summary-box">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯:</b> ビジネスにおいて「報告・連絡・相談（報連相）」は基本中の基本とされるが、多くの人が「要領よく伝えること」に苦戦している。</li>
+                        <li><b>事象:</b> 仕事ができる人は、報連相の冒頭で「相談なのですが、1分いいですか？」「報告だけで、アクションは不要です」といった<b>【相手の脳のモード（受け入れ準備）を指定する一言】</b>を使っている。</li>
+                        <li><b>結果/影響:</b> 聞き手である上司や同僚は、脳のスタンスを決定（判断モード・ただ聴くモードなど）した上で聞くことができるため、コミュニケーション摩擦が減り、意思決定スピードが劇的に向上する。</li>
+                    </ul>
                 </div>
-                <p><a href="https://news.yahoo.co.jp/articles/7f55695422aa595b3a706c90e03d745d138ca457?source=rss" role="button" class="outline">続きを読む</a></p>
+
+                <div class="insight-box">
+                    <div class="insight-title">💡 地銀視点の深掘り (支店長や先輩との関わり方)</div>
+                    <p class="insight-desc">
+                        銀行業務は、常に「信用」と「スピード」を天秤にかけながら進みます。内定者の皆さんが配属された際、最も最初に行うのが先輩や支店長への「報連相」です。特に多忙を極める銀行の支店長や指導責任者（メンター）に対し、<b>「ご相談なのですが、○分だけお時間よろしいでしょうか」</b>あるいは<b>「確認だけお願いします」</b>と前置きして話しかけられるようになれば、「この新人はビジネスセンスが高いな」と一目置かれること間違いなしです。
+                    </p>
+                </div>
+
+                <div class="read-more-btn">
+                    <a href="https://news.yahoo.co.jp/articles/1e80691861ae0dd811580dac6294540ebee0f507?source=rss" role="button" class="outline">続きを読む</a>
+                </div>
             </article>
 
             <!-- 記事2 -->
             <article>
-                <h3>面接官が「この人とは働きたくない」と感じる一言とは？</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 企業が新社会人や中途採用を行う際、個人の持つスキルや学歴と同じくらい、組織の調和や協調性が極めて重要視される。</li>
-                    <li><strong>事象:</strong> 面接官が最も懸念するのは、自分の権利や求めることばかりを主張する「テイカー（奪う人）」の姿勢や、他責思考、協調性を欠く発言（「私に何をしてくれますか？」というスタンス）である。</li>
-                    <li><strong>結果/影響:</strong> たとえ優秀であっても、「組織のチームワークを乱す」と判断された人材は選考で敬遠されやすく、逆に自発的に貢献しようとする姿勢（ギバーの精神）を持つ人材が求められる。</li>
-                </ul>
-                <div class="deep-dive">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>内定者の皆さんにとって、春からの配属先（支店）は一つの強固な「チーム」です。銀行業務は一人では完結せず、預金、融資、為替などの各担当が連携して初めて機能します。新人として「教えてもらうのが当たり前」という受け身（テイカー）の姿勢ではなく、「自分にできる小さな貢献は何か（ギバー）」を考え、挨拶や周囲への気配りを率先して行うことが、先輩やお客様から愛され信頼される行員になるための最短ルートです。</p>
+                <span class="article-tag">コミュニケーション / 営業力</span>
+                <h3>「話がつまらない人」の特徴・ワースト1</h3>
+                
+                <div class="summary-box">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯:</b> 人間関係を築く上で会話力は重要視されるが、「話していても退屈」と感じられてしまう人は一定数存在し、ビジネスチャンスを失う要因になっている。</li>
+                        <li><b>事象:</b> 話がつまらない人の決定的なワースト特徴は、<b>「相手の関心事ではなく、自分の言いたいこと（知識の披瀝や自分語り）だけを話し続けること」</b>である。</li>
+                        <li><b>結果/影響:</b> 聞き手が「自分の存在を無視されている」と感じることで信頼関係の構築に失敗し、プライベートでもビジネスでも人が離れていってしまうリスクが高まる。</li>
+                    </ul>
                 </div>
-                <p><a href="https://news.yahoo.co.jp/articles/b592190165d73f64f5f497825968e6f9af6447e7?source=rss" role="button" class="outline">続きを読む</a></p>
+
+                <div class="insight-box">
+                    <div class="insight-title">💡 地銀視点の深掘り (地域経済・顧客折衝の現場から)</div>
+                    <p class="insight-desc">
+                        地銀の役割は、地域の事業者様や個人の皆様のニーズを汲み取り、課題を解決することです。融資や投資信託をただ売り込む銀行員は「話がつまらない（＝信用されない）人」になってしまいます。優れた銀行員は、まずお客様の「お話を聞くこと（傾聴）」から始めます。特に北海道の中小企業の社長様は、ご自身の事業への情熱をお持ちです。まずは相手が主役になれるような質問を投げかけ、「徹底的な聞き手」に回る姿勢を磨きましょう。
+                    </p>
+                </div>
+
+                <div class="read-more-btn">
+                    <a href="https://news.yahoo.co.jp/articles/b000fdb14f2af845fcb94f36eec82ca5159762a8?source=rss" role="button" class="outline">続きを読む</a>
+                </div>
             </article>
 
             <!-- 記事3 -->
             <article>
-                <h3>話題の株に飛びつく人と伸びる株を拾う人…その決定的な違い</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 新NISAの普及に伴い、一般個人の投資熱が高まる一方で、SNSなどの流行に流されて損失を出す投資家と、着実に資産を増やす投資家の二極化が進んでいる。</li>
-                    <li><strong>事象:</strong> 短期的な流行や話題（急騰株）に盲目的に飛びつく「イナゴ投資」は高値掴みのリスクが高い。対して、成功する投資家は企業の本来の価値（ファンダメンタルズ）を分析し、過小評価されている良質な資産に長期的な視点で投資する。</li>
-                    <li><strong>結果/影響:</strong> 目先の流行に流されない一貫した投資規律と本質を見極める目が、中長期的な資産形成において圧倒的な成果の差を生み出す。</li>
-                </ul>
-                <div class="deep-dive">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>地銀の重要な役割の一つに、地域住民の「資産形成サポート（ライフプラン提案）」があります。北海道内でも投資への関心は急速に高まっており、窓口でお客様から相談を受ける機会も増えています。単に「今売れている人気商品」を勧めるのではなく、お客様のライフステージに寄り添い、「長期・積立・分散」という投資の本質的な価値を論理的に説明できることがプロの銀行員には求められます。また、企業の「本質的な価値を見極める」という視点は、将来行う「融資における事業性評価（目利き力）」にも直結する重要な思考法です。</p>
+                <span class="article-tag">地域トレンド / 自動車関連ビジネス</span>
+                <h3>DIYで手軽に内装カスタム！ スバル「フォレスター」とレクサス「GX」専用のカット済みシートが登場</h3>
+                
+                <div class="summary-box">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯:</b> 愛車を自分流にカスタムしたいという愛好家が増加しているが、内装業者のプロ施工は高額になるため、手軽にカスタマイズしたいというユーザーニーズがあった。</li>
+                        <li><b>事象:</b> スバル「フォレスター」およびレクサス「GX」用に、車内のパネル等にジャストフィットする「車種専用のDIY用カット済みカーボン調シート」が新たにリリースされた。</li>
+                        <li><b>結果/影響:</b> 専門知識や技術がない一般ユーザーでも安価に内装の雰囲気をグレードアップさせることが可能になり、アフターパーツ業界でのDIY製品市場の更なる活性化が期待される。</li>
+                    </ul>
                 </div>
-                <p><a href="https://news.yahoo.co.jp/articles/df787915e75444ac23569a5c4b7822e0de51d153?source=rss" role="button" class="outline">続きを読む</a></p>
+
+                <div class="insight-box">
+                    <div class="insight-title">💡 地銀視点の深掘り (広大な北海道・マイカー社会の対話のタネ)</div>
+                    <p class="insight-desc">
+                        北海道は言わずと知れた「超・車社会」です。特にスバルのフォレスターなど、冬道に強いSUVは道内で絶大な人気を誇ります。お取引先の自動車整備工場や、中古車ディーラー様などにとっては、こうした「手軽なDIYカスタム」のトレンド情報は顧客接点を増やす好材料になります。また、個人のお客様とマイカー購入計画（当行のオートローン提案）の際に、「フォレスターだと、最近自分でできるかっこいい内装シートも出ているらしいですね！」と雑談を広げる、非常に有効な地域コミュニティネタになります。
+                    </p>
+                </div>
+
+                <div class="read-more-btn">
+                    <a href="https://news.yahoo.co.jp/articles/2c5095f4f55e7e0f09ce5336c1e0684c43365e94?source=rss" role="button" class="outline">続きを読む</a>
+                </div>
             </article>
+
         </section>
     </main>
+
+    <footer>
+        <div class="container">
+            <p>北海道の未来を創る皆さんの成長を全力でサポートします。</p>
+            <p>© 2026 北海道地方銀行 内定者育成支援事務局. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
