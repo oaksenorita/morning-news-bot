@@ -3,142 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年06月13日) - 北海道地銀内定者向け</title>
+    <title>朝のインサイト (2026年06月14日)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
-        :root {
-            --pico-primary: #00707a; /* 北海道の美しい海や自然をイメージした深みのあるティールブルー */
-            --pico-primary-background: #00707a;
-            --pico-primary-hover: #005a63;
-        }
         body {
-            background-color: #f7f9fa;
-        }
-        .header-section {
-            padding: 2rem 0;
-            border-bottom: 3px solid var(--pico-primary);
-            margin-bottom: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 3rem;
         }
         .weather-card {
-            background: linear-gradient(135deg, #e0f2f1 0%, #eef9f6 100%);
-            border-left: 5px solid #009688;
+            background-color: var(--pico-secondary-background);
+            border-left: 5px solid var(--pico-primary);
         }
-        .weather-title {
-            color: #00707a;
-            font-weight: bold;
-        }
-        .insight-card {
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.2s ease;
-        }
-        .insight-card:hover {
-            transform: translateY(-2px);
-        }
-        .bullet-title {
-            color: var(--pico-primary);
-            font-weight: bold;
-        }
-        .footer-note {
-            text-align: center;
-            font-size: 0.85rem;
-            color: #666;
-            margin-top: 3rem;
-            padding-top: 1rem;
-            border-top: 1px solid #e0e0e0;
+        .section-title {
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--pico-muted-border-color);
+            padding-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
     <main class="container">
-        <!-- ヘッダー -->
-        <header class="header-section">
-            <h1>☀️ 朝のインサイト (2026年06月13日)</h1>
-            <p>北海道の未来を担う内定者の皆様へ。本日の地方経済・ビジネスのヒントをお届けします。</p>
+        <!-- 1. ヘッダー -->
+        <header>
+            <h1>☀️ 朝のインサイト (2026年06月14日)</h1>
+            <p><small>北海道の未来を担う地方銀行の内定者・新人の皆様へ。本日の重要トピックスと、業務に役立つ地銀視点での解説をお届けします。</small></p>
         </header>
 
-        <!-- 天気セクション -->
-        <section aria-label="本日の天気">
+        <!-- 2. 天気 -->
+        <section>
             <article class="weather-card">
-                <h5 class="weather-title">📍 本日の北海道の天気</h5>
-                <div class="grid">
-                    <div><strong>天気:</strong> 薄い雲</div>
-                    <div><strong>最高気温:</strong> 16.9℃</div>
-                    <div><strong>最低気温:</strong> 16.9℃</div>
-                </div>
-                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #555;">
-                    ※ 比較的涼しく過ごしやすい一日となりますが、体調管理には留意して内定者課題や大学生活に取り組みましょう。
-                </p>
+                <h3>📍 今日の北海道の天気</h3>
+                <p><strong>天気:</strong> 厚い雲 | <strong>最高気温:</strong> 18.56℃ | <strong>最低気温:</strong> 18.56℃</p>
+                <p><small>本日の道内は一面の厚い雲に覆われ、少し肌寒い一日となりそうです。外回りや通勤の際は、羽織るものを一枚用意しておくと安心です。体調管理に気をつけて元気に過ごしましょう！</small></p>
             </article>
         </section>
 
-        <!-- ニュース解説セクション -->
-        <section aria-label="厳選ビジネスニュース">
-            <h2>📰 厳選ビジネスニュース</h2>
-            <p>地銀のプロフェッショナルとして、ニュースの行間から地域経済の課題や取引先へのソリューションを読み解くトレーニングに最適の3本です。</p>
+        <!-- 3. ニュース解説 (3件厳選) -->
+        <section>
+            <h2 class="section-title">💡 今朝の厳選ニュース解説</h2>
 
-            <!-- 1件目：ネスレ日本 -->
-            <article class="insight-card">
-                <h3>ネスレ日本・深谷龍彦社長が退任 6年間で進めた「量」から「価値」への転換</h3>
-                <hr>
+            <!-- 記事1 -->
+            <article>
+                <h3>【GMV1000億円への戦略を聞く】アンドエスティ 稗田亮氏「オープン化とOMO深化で『選ばれるEC』へ」</h3>
                 <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><span class="bullet-title">背景/経緯:</span> 国内の急激な人口減少や近年の原材料コストの高騰に伴い、従来の「薄利多売（量）」を前提としたビジネスモデルが限界に達していた。</li>
-                    <li><span class="bullet-title">事象:</span> 深谷社長率いるネスレ日本は過去6年間、プレミアム製品の強化やサブスクリプションモデルの拡大、付加価値の高いブランド体験への集中投資を推進した。</li>
-                    <li><span class="bullet-title">結果/影響:</span> 単なる値引き競争から脱却し、高い収益性と強固なブランドロイヤルティを確立。深谷社長は次の世代にこの「価値転換モデル」を引き継ぎ、退任する。</li>
+                    <li><strong>背景/経緯:</strong> アパレル大手のアダストリアが展開する自社EC「アンドエスティ（.st）」は、自社ブランドに限定せず他社ブランドも参画させる「オープン化」戦略へ舵を切っている。</li>
+                    <li><strong>事象:</strong> 実店舗とECを融合させるOMO（Online Merges with Offline）をさらに進化させ、顧客の購買体験価値の向上と会員基盤の拡大を推進。</li>
+                    <li><strong>結果/影響:</strong> 自社・他社の枠を超えた強力なプラットフォームへと成長し、流通取引総額（GMV）1000億円の達成に向けて「日常的に選ばれるEC」としての地位を確立しつつある。</li>
                 </ul>
                 <p><b>地銀視点の深掘り</b></p>
-                <p>
-                    北海道は食品加工業（乳製品、水産加工、十勝の農産物など）が基幹産業の一つです。多くの地元取引先も「原材料高」や「道外・海外との価格競争」に苦しんでいます。このニュースは、単に融資をするだけでなく、取引先に対して「量から価値へのシフト（プレミアム化やブランディング、新チャネル開拓）」を伴走支援する地銀の本業支援（コンサルティング機能）の大切さを教えてくれます。「社長、ネスレのように『売り方』や『ターゲット』を変えて単価を上げる取り組みを、我々と一緒に考えてみませんか？」という、付加価値提案の対話ネタとして大いに活用できます。
-                </p>
-                <div style="text-align: right;">
-                    <a href="https://news.yahoo.co.jp/articles/a7c28533c9f84e3574d34be5491d4e792ef27935?source=rss" role="button" class="outline">続きを読む</a>
-                </div>
+                <p>北海道内には、魅力的な独自ブランドや実店舗を持ちながらも、人口減少に伴う市場縮小やデジタル化（DX）の遅れに悩む中小の小売・アパレル事業者が数多く存在します。店舗とネットを融合させる「OMO」やプラットフォームの活用は、道内企業の売上維持・拡大の生命線です。取引先の経営者様に対し、単なる資金融資の相談に留まらず、「店舗とECをどう連携させてファンを増やすか」というビジネスモデルの転換を伴走支援する際の、非常に具体的な提案・対話ネタとして活用できます。</p>
+                <a href="https://news.yahoo.co.jp/articles/d797e84fe720f8b79c10b7d7d5147df6044cda96?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- 2件目：ファミレスのぬりえ・おもちゃ -->
-            <article class="insight-card">
-                <h3>なぜファミリーレストランは、子どもに「ぬりえ」や「おもちゃ」を渡すのか？</h3>
-                <hr>
+            <!-- 記事2 -->
+            <article>
+                <h3>【一生使える】本当に業績が伸びる株を見抜く「一次情報」の読み方</h3>
                 <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><span class="bullet-title">背景/経緯:</span> 外食産業、特にファミリーレストラン（ファミレス）において、競合他社との差別化やファミリー層のリピート獲得、そして繁忙時間帯のオペレーション円滑化が課題だった。</li>
-                    <li><span class="bullet-title">事象:</span> 入店時に「ぬりえ」や「おもちゃ」を渡すことで、料理提供までの「待ち時間」における子どもの退屈やぐずりを劇的に軽減するアプローチが定着。</li>
-                    <li><span class="bullet-title">結果/影響:</span> 親が落ち着いて食事や会話を楽しめるため客単価が向上し、同時に店舗のファン（リピーター）になる効果を生んだ。さらに、店内が静かに保たれることで従業員の労働環境（精神的負担）の改善にも繋がっている。</li>
+                    <li><strong>背景/経緯:</strong> インターネットやSNSの普及により、他人の意見を切り貼りした「二次情報・三次情報」が溢れ、企業の本質的な価値を見極めることが難しくなっている。</li>
+                    <li><strong>事象:</strong> 業績が本当に伸びる企業を判断するためには、決算短信や有価証券報告書などの生データ（IR資料）に加え、実際の店舗視察や自身の消費体験といった「一次情報」を自ら収集・分析することが不可欠。</li>
+                    <li><strong>結果/影響:</strong> 一次情報を軸にした分析力を身につけることで、目先の市場のノイズに惑わされることなく、企業の持続的な成長力や本質的な価値を見抜く「目利き力」が養われる。</li>
                 </ul>
                 <p><b>地銀視点の深掘り</b></p>
-                <p>
-                    この事例は、マーケティングにおける「CX（顧客体験）の最適化」をシンプルに示しています。北海道の観光地や地方都市における飲食店・レジャー施設、さらには銀行の店舗窓口でも同様の課題（待ち時間のストレス）が存在します。取引先である地元の飲食店や小売店に対し、「初期投資を抑えつつ顧客の隠れた不満（ペイン）を解消し、リピート率を高めるアイデア」としてこの事例を紹介できます。現場のささやかな工夫が、企業のブランド価値や経営改善にいかに直結するかを取引先のオーナーに寄り添って議論できる、非常に身近で強力な会話ネタです。
-                </p>
-                <div style="text-align: right;">
-                    <a href="https://news.yahoo.co.jp/articles/5e83a9fd1d17bd74f2e7864db8e8d80c06ff6ab3?source=rss" role="button" class="outline">続きを読む</a>
-                </div>
+                <p>銀行員としての基礎スキルである「与信判断（融資審査）」や「資産運用提案」において、この「一次情報へのこだわり」はそのまま直結します。決算書の数字という二次情報を追うだけでなく、実際に取引先の現場（工場や店舗）へ足を運び、経営者の表情や現場の活気を肌で感じること（一次情報）が、地域密着型金融の原点です。新人のうちから「現場主義」を徹底することで、融資先の本質的な強みや課題を発見し、他行に真似できない信頼関係を築くことができます。</p>
+                <a href="https://news.yahoo.co.jp/articles/cf75ba4611b60d07983ed8b6c59bef5fb3183b6e?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- 3件目：海上爆速飛行の船（WIG） -->
-            <article class="insight-card">
-                <h3>型破り設計「海上スレスレを爆速飛行」する船？ 航空機!? 社会実装に向けついに動きだす！</h3>
-                <hr>
+            <!-- 記事3 -->
+            <article>
+                <h3>結婚35年、妻から突然「離婚したい」と言われました…。私の年金は「月18万円」の見込みですが、離婚すると半分取られるのでしょうか？ 年金分割の仕組みを確認</h3>
                 <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><span class="bullet-title">背景/経緯:</span> 島国である日本において、離島や沿岸地域間の移動時間・コストの削減、および2024年問題に代表される物流網の維持、さらには脱炭素化が極めて深刻な課題となっている。</li>
-                    <li><span class="bullet-title">事象:</span> 水面近くの空気を捉えて飛ぶ地面効果（WIG）を利用し、従来の高速船より遥かに速く、航空機より低コストかつ環境負荷が低い「地面効果翼機」の国内での社会実装（実証実験やルール整備）に向けたプロジェクトが本格始動。</li>
-                    <li><span class="bullet-title">結果/影響:</span> 沿岸・離島都市間の画期的な高速アクセス手段の誕生が期待され、物流および観光ルートにパラダイムシフトをもたらす可能性がある。</li>
+                    <li><strong>背景/経緯:</strong> 熟年離婚が増加傾向にある中、老後生活の生命線となる「年金」の離婚時における取り扱いについて、多くのシニア層が不安や疑問を抱えている。</li>
+                    <li><strong>事象:</strong> 離婚時の「年金分割制度」には「合意分割」と「3号分割」がある。分割の対象は「厚生年金（報酬比例部分）」の婚姻期間中の保険料納付実績のみであり、受給する年金総額全体や国民年金（基礎年金）が自動的に一律で半分になるわけではない。</li>
+                    <li><strong>結果/影響:</strong> 制度に対する誤解から老後設計を誤るリスクがあり、離婚後の正確な受給見込み額を算出して生活設計を再構築することが不可欠となる。</li>
                 </ul>
                 <p><b>地銀視点の深掘り</b></p>
-                <p>
-                    広大な土地を持ち、離島（利尻、礼文、奥尻など）を抱える北海道にとって、新しい物流・交通インフラ技術は地方創生の超重要トピックです。特に、一次産品の鮮度を保ったまま道外や消費地に届けるスピードの追求や、冬季の交通寸断への対策として、将来この技術が北海道の新たな物流網として活用されるポテンシャルは十分にあります。地元の中小運送業や観光・宿泊事業者に対し、「こうした最先端インフラの開発が進む中、10年後の北海道の観光や物流はどう変わるか？」という未来に向けた長期的な目線で対話を行うための、魅力的な情報提供ネタになります。
-                </p>
-                <div style="text-align: right;">
-                    <a href="https://news.yahoo.co.jp/articles/6ef9c34a07247a08768a1b80dd05faadf103ced4?source=rss" role="button" class="outline">続きを読む</a>
-                </div>
+                <p>超高齢社会を先駆ける北海道において、地銀の個人向けビジネス（リテール営業）ではシニア層のライフプランニングや退職金・相続の相談が大きな割合を占めます。離婚や家族構成の変化といったデリケートな相談において、このような社会保障制度の正しい知識を持っていることは、顧客からの絶対的な信頼に直結します。単に金融商品を勧めるのではなく、お客様の人生の節目に寄り添い、法的な制度に基づいた生活設計（ライフプラン）を親身に提案できる銀行員こそが、地域で長く愛される存在になります。</p>
+                <a href="https://news.yahoo.co.jp/articles/7bcdc46c590d1891e23b375e2093a2769e74a638?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
-
-        <!-- フッター -->
-        <footer class="footer-note">
-            <p>© 2026 北海道地方銀行 内定者サポートチーム. All rights reserved.</p>
-            <p>※本情報は内定者の皆さまのビジネスセンス養成と情報収集を目的に、毎朝配信しています。</p>
-        </footer>
     </main>
 </body>
 </html>
