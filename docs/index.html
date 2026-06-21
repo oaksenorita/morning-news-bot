@@ -3,153 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 北海道地銀内定者向け</title>
+    <title>朝のインサイト - 2026年06月21日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #00703c; /* 北海道の豊かな自然と信頼感をイメージしたグリーン */
-            --primary-hover: #00562e;
+            --primary: #0077c2;
+            --primary-hover: #005fa3;
         }
         body {
-            background-color: #f4f7f5;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+            background-color: #f7f9fa;
+        }
+        main.container {
+            padding-top: 2rem;
+            padding-bottom: 3rem;
         }
         header {
-            border-bottom: 3px solid var(--primary);
+            border-bottom: 2px solid #0077c2;
             margin-bottom: 2rem;
             padding-bottom: 1rem;
         }
-        .weather-card {
-            background: linear-gradient(135deg, #e0eafc, #cfdef3);
-            border-left: 5px solid #7f8c8d;
+        header p {
+            color: #555;
+            font-size: 0.95rem;
         }
-        .insight-badge {
-            background-color: var(--primary);
+        .weather-card {
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+            border: none;
+            color: #0369a1;
+        }
+        .weather-info {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            font-weight: bold;
+        }
+        .weather-item {
+            font-size: 1.1rem;
+            margin: 0.5rem;
+        }
+        .badge {
+            background-color: #0077c2;
             color: white;
             padding: 0.2rem 0.6rem;
             border-radius: 4px;
             font-size: 0.8rem;
-            display: inline-block;
-            margin-bottom: 0.5rem;
+            vertical-align: middle;
+            margin-right: 0.5rem;
         }
-        .logical-box {
-            background-color: #fafbfc;
-            border-left: 3px solid #00562e;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border-radius: 0 8px 8px 0;
+        article h3 {
+            color: #1e293b;
+            border-left: 5px solid #0077c2;
+            padding-left: 0.5rem;
+            font-size: 1.35rem;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
         }
     </style>
 </head>
 <body>
+
     <main class="container">
-        <!-- ヘッダー -->
+        <!-- 1. ヘッダー -->
         <header>
-            <hgroup>
-                <h1>☀️ 朝のインサイト (2026年06月20日)</h1>
-                <p>北海道の未来を担う内定者の皆様へ。本日の注目トピックと地銀視点の解説をお届けします。</p>
-            </hgroup>
+            <h1>☀️ 朝のインサイト (2026年06月21日)</h1>
+            <p>北海道の地方銀行に内定した皆様へ、配属後に役立つ金融・ビジネス視点を養う朝のニュース解説をお届けします。本日は強い雨が予想されています。体調管理や移動には十分気をつけていきましょう。</p>
         </header>
 
-        <!-- 天気セクション -->
+        <!-- 2. 天気 -->
         <section>
-            <h2>今日の北海道の天気</h2>
             <article class="weather-card">
-                <div class="grid">
-                    <div>
-                        <strong>☁️ 天気:</strong> 厚い雲
-                    </div>
-                    <div>
-                        <strong>🌡️ 最高気温:</strong> 18.82℃
-                    </div>
-                    <div>
-                        <strong>❄️ 最低気温:</strong> 18.82℃
-                    </div>
+                <header style="margin-bottom: 1rem; padding: 0; background: transparent; border: none; color: #0369a1;">
+                    <h4 style="margin: 0;">📍 本日の北海道の天気</h4>
+                </header>
+                <div class="weather-info">
+                    <div class="weather-item">🌧️ 天気: <span style="font-size: 1.3rem;">強い雨</span></div>
+                    <div class="weather-item">📈 最高気温: <span style="font-size: 1.3rem;">16.34℃</span></div>
+                    <div class="weather-item">📉 最低気温: <span style="font-size: 1.3rem;">16.34℃</span></div>
                 </div>
-                <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem; color: #555;">
-                    本日の北海道は、日中も気温が上がらず少し肌寒い「蝦夷梅雨（えぞつゆ）」を思わせるどんよりとした一日になりそうです。体調管理に気を配りつつ、温かい飲み物でホッと一息つきながら、良質なインプットを進めましょう。
-                </p>
+                <small style="display: block; text-align: center; margin-top: 1rem; color: #0c4a6e;">
+                    ※気温差が少なく、終日雨風が強まる見込みです。お出かけの際は足元に十分ご注意ください。
+                </small>
             </article>
         </section>
 
-        <!-- ニュース解説セクション -->
+        <!-- 3. ニュース解説 (3件厳選) -->
         <section>
-            <h2>厳選ニュース解説（3選）</h2>
+            <h2>本日の厳選ニュース</h2>
 
-            <!-- 記事1 -->
+            <!-- 1件目：観光・地方創生 -->
             <article>
-                <span class="insight-badge">地域活性化・観光経済</span>
-                <h3>ルピシアから夏の「ブック オブ ティー」数量限定発売　初の試みとしてティーバッグの大きさと入数が異なる2タイプを用意</h3>
-                
-                <div class="logical-box">
-                    <strong>ロジカル要約</strong>
-                    <ul>
-                        <li><b>背景/経緯</b>: お茶の専門店である「ルピシア」は、本を象った人気パッケージの「ブック オブ ティー」シリーズを毎夏、数量限定で展開してきた。</li>
-                        <li><b>事象</b>: 今夏の新作では、初の試みとして消費者の細分化するニーズに対応。ティーバッグの大きさや入数が異なる「2つの異なるタイプ」をラインナップ。</li>
-                        <li><b>結果/影響</b>: ギフト需要や自宅用など、多様化する現代のライフスタイルに深く寄り添うことで、さらなるファン層の拡大と新規・リピート顧客の獲得を狙う。</li>
-                    </ul>
-                </div>
-
-                <strong>地銀視点の深掘り</strong>
+                <h3>月9ドラマ『サバ缶』で聖地化も、福井・小浜が抱える「敦賀から1時間」の壁…“鯖街道”が見出した《観光持続化への光明》</h3>
                 <p>
-                    ルピシアは北海道ニセコ（倶知安町）に本社や主要拠点を移転し、地域経済に多大な好影響を与えている「超」重要企業です。このニュースから学ぶべきは、「既存の人気定番商品を、市場の変化に合わせてアップデートする精緻なマーケティング手法」です。新人の皆さんが配属された後、地元のお土産メーカーや食品加工業の取引先に対し、「パッケージ展開を複数化し、ギフト用と自家消費用に分けることで客単価を高める」といった提案を行う際、このルピシアの事例は非常に説得力のある会話ネタになります。
+                    <b>ロジカル要約</b>:
+                    <ul>
+                        <li><b>背景/経緯</b>: 北陸新幹線の敦賀延伸により福井県全体に観光の波が来ているが、敦賀から離れた小浜市などの地域は、二次交通（移動手段）の不足によりその恩恵を十分に享受しきれない「敦賀から1時間の壁」に直面していた。</li>
+                        <li><b>事象</b>: ドラマ等のロケ地として一時的な聖地巡礼ブームが起きたものの、ブームを一過性に終わらせないため、歴史的な「鯖街道」のストーリー性や地域の伝統的な「食（鯖）」を活かした体験型の持続可能な観光コンテンツの整備に注力。</li>
+                        <li><b>結果/影響</b>: 単なる通過型観光から「滞在型観光」へのシフトが進み、地元の商店や宿泊業などの事業者が連携して観光持続化に向けた独自の経済圏を確立し始めている。</li>
+                    </ul>
                 </p>
-
-                <a href="https://news.yahoo.co.jp/articles/2a798eeb77b389c9703f575951cd764e0357a9b6?source=rss" role="button" class="outline">続きを読む</a>
+                <p>
+                    <b>地銀視点の深掘り</b>:
+                    北海道も「北海道新幹線の札幌延伸」や「主要空港からの二次交通」という、小浜市と全く同じ課題を抱えています。観光資源に恵まれた北海道だからこそ、一過性のブームに頼らない「ストーリー性を持った体験型コンテンツ」へのシフトがお取引先（ホテル、飲食店、交通事業者）の生き残りに不可欠です。融資だけでなく、お取引先同士をつなぐ「ビジネスマッチング」や地域のプロデュース提案を行うことで、地方銀行として地域経済の持続可能性を支える重要なキーマンになれます。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/b445fc59f47ec7cad7bfc4297cbcc06e230b280a?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- 記事2 -->
+            <!-- 2件目：個人向けライフプランニング -->
             <article>
-                <span class="insight-badge">北海道の一次産業・食品加工</span>
-                <h3>昨年の好調を上回る勢いで伸長する豆乳市場　植物性たんぱく質の価値が伝わる　キッコーマンソイフーズ担当者が語る</h3>
-                
-                <div class="logical-box">
-                    <strong>ロジカル要約</strong>
-                    <ul>
-                        <li><b>背景/経緯</b>: 世界的な健康志向、ならびに環境や倫理的観点から「植物性ミルク（オルタナティブミルク）」市場が世界規模で急速に拡大している。</li>
-                        <li><b>事象</b>: 植物性たんぱく質が持つ健康面での栄養価値が消費者に広く正しく認知され、豆乳市場が前年の記録的な好調をさらに上回るペースで伸長している。</li>
-                        <li><b>結果/影響</b>: 飲料用途に留まらず、スープや料理調味料としての日常的な「食卓への浸透」が進み、食品産業において極めて堅牢な成長セクターへと進化。</li>
-                    </ul>
-                </div>
-
-                <strong>地銀視点の深掘り</strong>
+                <h3>定年退職の翌日、コンビニ弁当と缶ビール、あとはテレビをダラダラ観るだけ。60歳元エリート、侘しい孤食「家族を養った俺がなぜ」</h3>
                 <p>
-                    豆乳の主原料である「大豆」の国内生産量ナンバーワンは、言うまでもなく北海道（全国シェア約4割）です。豆乳市場の拡大は、私たちが融資や経営支援を行う道内の農業生産法人、JA、ひいては地元の食品加工メーカーにとって、非常に大きな追い風となります。取引先との会話の中で、「豆乳市場の拡大を捉えて、大豆の高付加価値化や植物性プロテイン（代替肉など）関連の新事業に参入するチャンスではないか」といった、一歩踏み込んだビジネスパートナーとしての対話ができるよう、アンテナを張っておきましょう。
+                    <b>ロジカル要約</b>:
+                    <ul>
+                        <li><b>背景/経緯</b>: 現役時代に「仕事がすべて」だった元一流企業のエリートサラリーマンが、家族や地域社会との関係構築を蔑ろにしたまま定年退職を迎えるケースが増加している。</li>
+                        <li><b>事象</b>: 定年後、肩書きを失ったことで急激な孤独感や喪失感（サードプレイスの欠如）に襲われ、自宅での引きこもりや孤食状態に陥ってしまう。</li>
+                        <li><b>結果/影響</b>: 退職金や十分な金融資産を持ちながらも「使い道がない」「生きがいがない」状態になり、これが高齢期の生活の質（QOL）低下や、シニア層の消費停滞の一因となっている。</li>
+                    </ul>
                 </p>
-
-                <a href="https://news.yahoo.co.jp/articles/a45c15b7beef191dab4ab5ea223b2eae106a100c?source=rss" role="button" class="outline">続きを読む</a>
+                <p>
+                    <b>地銀視点の深掘り</b>:
+                    超高齢社会である北海道において、リテール（個人向け）営業の役割は「お金を増やすこと」だけではありません。これからの地銀パーソンには、退職金運用の提案（預金や投資信託）と同時に、「セカンドライフのライフプラン設計」に寄り添う姿勢が求められます。お取引先である富裕層の「退職後の生きがい」や「社会との繋がり」に対し、シニア向けコミュニティの紹介やボランティア情報の提供、あるいはシニアビジネスを展開するお取引先企業との橋渡しなど、人生に寄り添うトータル提案を行うことで、強固な信頼関係が築けます。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/20cb2f8b372563333a5f60e7d6db2d96e116f41f?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- 記事3 -->
+            <!-- 3件目：不動産業界の動向 -->
             <article>
-                <span class="insight-badge">マインドセット・自己成長</span>
-                <h3>失敗も後悔もなかったことにする、たった1つの思考法</h3>
-                
-                <div class="logical-box">
-                    <strong>ロジカル要約</strong>
-                    <ul>
-                        <li><b>背景/経緯</b>: 仕事や人生における過去の失敗や判断への「後悔」から抜け出せず、精神的なパフォーマンスを落としたり、新たな挑戦を躊躇してしまうビジネスパーソンが多い。</li>
-                        <li><b>事象</b>: 起きてしまった出来事を「失敗」と決めつけるのをやめ、「すべては自分というドラマの『伏線』であり、未来の大きな成長に必要なプロセスだった」と認知を再定義（リフレーミング）する思考法。</li>
-                        <li><b>結果/影響</b>: 過去に対する負の感情が解消され、すべての経験をポジティブな資産に変換。前を向いて次の行動へ素早く踏み出すメンタルタフネスが身につく。</li>
-                    </ul>
-                </div>
-
-                <strong>地銀視点の深掘り</strong>
+                <h3>年収が高い不動産会社ランキング2025【トップ5】平均年収2000万円超えの1位は？</h3>
                 <p>
-                    これからプロの地銀員として歩み出す新人の皆さんは、厳格なルールや細かな手続きに戸惑い、時にはミスをして落ち込むこともあるはずです。しかし、この「伏線回収の思考」があれば、すべての失敗は「将来、顧客の痛みがわかる優秀なバンカーになるための伏線」に変えられます。さらにこの考え方は、事業承継や再建、新たな投資など「失敗のリスク」に怯える中小企業経営者に寄り添う際の、精神的な支え（伴走型支援）としても生きてきます。まずは自分自身の心でこの思考を実践してみましょう。
+                    <b>ロジカル要約</b>:
+                    <ul>
+                        <li><b>背景/経緯</b>: 近年の都市開発ラッシュやオフィス需要の回復、マンション価格の価格高騰を追い風に、日本の不動産業界は非常に高い収益性を維持している。</li>
+                        <li><b>事象</b>: 2025年最新の年収ランキングにおいて、外資系や財閥系の総合デベロッパー、M&Aやアセットマネジメントを専門とする金融色の強い不動産会社が上位を独占し、平均年収が2,000万円を超える水準となっている。</li>
+                        <li><b>結果/影響</b>: 業界内での収益の二極化が進む中、優秀な人材を獲得するための人件費投資が加速。不動産価値の創出アプローチは、単純な転売から高度な資産管理・運用へと高度化している。</li>
+                    </ul>
                 </p>
-
-                <a href="https://news.yahoo.co.jp/articles/ef8a48792a98c3306b5c87f1467fd2f53321804a?source=rss" role="button" class="outline">続きを読む</a>
+                <p>
+                    <b>地銀視点の深掘り</b>:
+                    北海道内、特に札幌中心部の再開発や、世界的に注目されるニセコ・富良野などのリゾート地開発において、不動産業・建設業は当行にとって最重要融資先の一つです。こうしたトップ企業の高収益ビジネスモデル（リート組成や証券化、アセットマネジメント等）の知識を持っておくことは、地元の地主様や不動産会社オーナーとの会話において「業界トレンド」を語る強力な武器になります。「単に土地を担保に融資する」時代から、「不動産を通じた資産最大化スキームを提案する」時代へ。新人時代からこうしたマクロな業界知識に関心を持っておくことで、先輩方とは一味違う提案力の基礎が作れます。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/2e5d74dd2e5d74dd2e5d74dd2e5d74dd?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <!-- フッター -->
         <footer>
             <hr>
-            <p style="text-align: center; font-size: 0.85rem; color: #777;">
-                © 2026 北海道地方銀行 内定者育成支援プログラム. <br>
-                地域の未来を、あなたのインサイトで照らすために。今日も元気に学んでいきましょう！
-            </p>
+            <p>© 2026 北海道未来開拓銀行・内定者サポート事務局</p>
+            <p>※本ページは架空の地銀新人研修用アシスタントツールです。今日の学びを大切に、素晴らしい一日を！</p>
         </footer>
     </main>
+
 </body>
 </html>
