@@ -3,118 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年06月28日)</title>
+    <title>朝のインサイト (2026年06月29日) - 北海道地銀内定者向け</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
+        :root {
+            --primary: #00703c; /* 北海道の豊かな自然をイメージしたグリーン */
+            --primary-hover: #005a30;
+        }
         body {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+            padding: 20px 0;
         }
-        .weather-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 1rem;
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 1rem;
         }
-        .weather-card {
-            flex: 1;
-            min-width: 200px;
-            text-align: center;
-            border: 1px solid var(--pico-muted-border-color);
-            border-radius: var(--pico-border-radius);
-            padding: 1rem;
-            background-color: var(--pico-card-background-color);
+        .weather-info {
+            background-color: var(--card-background-color);
+            border-left: 5px solid #00703c;
         }
-        .highlight-text {
-            color: var(--pico-primary);
-            font-weight: bold;
+        .insight-section {
+            margin-top: 2rem;
+        }
+        article {
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            background-color: var(--primary);
+            color: #ffffff;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
     <main class="container">
-        <!-- 1. ヘッダー -->
+        <!-- ヘッダー -->
         <header>
-            <h1>☀️ 朝のインサイト (2026年06月28日)</h1>
-            <p><small>北海道の未来を担う皆様へ：今日の経済動向と、地銀のプロとして知っておくべき知識を整理してお届けします。</small></p>
+            <h1>☀️ 朝のインサイト (2026年06月29日)</h1>
+            <p>北海道の未来を担う内定者の皆様へ。本日の地方銀行員として知っておくべき必須ニュースと知見をお届けします。</p>
         </header>
 
-        <!-- 2. 天気 -->
-        <section id="weather">
-            <h2>📍 本日の北海道の天気</h2>
-            <article>
-                <div class="weather-container">
-                    <div class="weather-card">
-                        <strong>天気</strong>
-                        <p class="highlight-text">☁️ 曇りがち</p>
-                    </div>
-                    <div class="weather-card">
-                        <strong>最高気温</strong>
-                        <p class="highlight-text">17.45℃</p>
-                    </div>
-                    <div class="weather-card">
-                        <strong>最低気温</strong>
-                        <p class="highlight-text">17.45℃</p>
-                    </div>
+        <!-- 天気セクション -->
+        <section>
+            <article class="weather-info">
+                <header style="margin: 0; padding: 0 0 0.5rem 0;">
+                    <h5 style="margin:0;">📍 本日の北海道の天気</h5>
+                </header>
+                <div class="grid">
+                    <div><strong>天気:</strong> 曇りがち ☁️</div>
+                    <div><strong>最高気温:</strong> 16.9℃</div>
+                    <div><strong>最低気温:</strong> 16.9℃</div>
                 </div>
-                <p style="margin-top: 1rem; font-size: 0.9rem; text-align: center; color: var(--pico-muted-color);">
-                    ※本日は北海道内全体で涼しく、日中も気温が上がりません。店舗にお越しになるお客様への温かいお声がけや、ご自身の体調管理を徹底しましょう。
-                </p>
             </article>
         </section>
 
-        <!-- 3. ニュース解説 -->
-        <section id="news-section">
-            <h2>📰 本日の厳選ニュース＆地銀インサイト</h2>
+        <!-- ニュース解説セクション -->
+        <section class="insight-section">
+            <h2>📰 注目ニュース＆地銀視点解説</h2>
 
-            <!-- ニュース1 -->
+            <!-- 記事1 -->
             <article>
-                <h3>消費税減税の財源問題先送り：金融市場の財政懸念を高めるリスク</h3>
-                <b>ロジカル要約</b>
+                <span class="tag">マクロ経済・為替</span>
+                <h3>39年ぶりの水準まで円安が進行</h3>
+                
+                <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><strong>背景/経緯:</strong> 物価高対策として消費税減税を求める政治的な声が根強い一方、国家の財源をどう補填するかの議論が未解決のまま推移しています。</li>
-                    <li><strong>事象:</strong> 恒久的な財源の議論が先送りされたまま減税を推進する動きは、金融市場において日本の財政規律に対する不信感を招くことになります。</li>
-                    <li><strong>結果/影響:</strong> 日本国債の信用低下に伴う長期金利の急急騰（金利上昇圧力）や、円の信認低下によるさらなる「悪い円安」を引き起こし、国内経済をかえって逼迫させるリスクが生じます。</li>
+                    <li><b>背景/経緯</b>: 日米の金利差固定や歴史的な為替介入後の反発などを背景に、ドル高円安トレンドが継続している。</li>
+                    <li><b>事象</b>: 外為市場で円相場が対ドルで約39年ぶりの水準にまで下落し、円安が一段と進行した。</li>
+                    <li><b>結果/影響</b>: 輸入品やエネルギー価格の上昇による物価高懸念が強まる一方、輸出関連企業の業績上振れやインバウンド（訪日外国人）消費のさらなる活性化が期待される。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    地方銀行の経営において「金利の変動」は最重要テーマです。長期金利の上昇は、融資利ざや（貸出金利と預金金利の差）の改善というプラス面がある一方、保有する国債等の評価損を招くマイナス面もあります。また、為替の円安進行は、北海道の基幹産業である農業や漁業における「輸入飼料・燃料費の高騰」に直結します。地元企業から資金繰りの相談を受けた際、この背景知識をベースに、適切な経営アドバイスや為替ヘッジなどの金融ソリューションを提案できるようになりましょう。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/29cd92638586a1529b3588286be5b85c1d10be59?source=rss" role="button" class="outline">続きを読む</a>
+
+                <p><b>地銀視点の深掘り</b></p>
+                <p>北海道は「インバウンド観光」と「一次産業」という円安の明暗を分ける2大産業を抱えています。観光・宿泊業のお客様にとっては追い風ですが、酪農や農業、漁業を営むお客様にとっては輸入飼料や燃油の高騰が経営を直接圧迫します。新人行員としては、訪問先企業のビジネスモデルが円安に対して「追い風」か「向かい風」かを見極め、融資の提案や為替リスク対策の対話に繋げる基礎知識として必須のトピックです。</p>
+
+                <a href="https://news.yahoo.co.jp/articles/83529e5b38622a855ede608952c811f5b22043f5?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2 -->
+            <!-- 記事2 -->
             <article>
-                <h3>どうして富は「直線的」ではなく「階段状」に増えていくのか？【JUST KEEP BUYINGの著者が教える】</h3>
-                <b>ロジカル要約</b>
+                <span class="tag">地域経済・物流</span>
+                <h3>ガソリン補助金に代替調達の上乗せコスト分を反映</h3>
+                
+                <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><strong>背景/経緯:</strong> 個人投資家の多くは「毎月一定のペースで均等に資産が増えていく（直線的成長）」というイメージを持ちがちです。</li>
-                    <li><strong>事象:</strong> 実際の資産形成は、相場の波や複利効果の顕在化、または「昇給や遺産相続」といった急激な変化が重なることで、ある時突如として増える「階段状（ステップアップ）」の動きをたどります。</li>
-                    <li><strong>結果/影響:</strong> 資産が増えない平坦な時期（準備期）に諦めず、愚直に投資を継続する（Just Keep Buying）姿勢こそが、次の急成長ステージを享受するための最大の鍵となります。</li>
+                    <li><b>背景/経緯</b>: ウクライナ情勢の長期化や中東緊迫化に伴い、原油の代替調達が必要となる場面が増加している。</li>
+                    <li><b>事象</b>: 政府はガソリン補助金の算定基準において、通常ルートから変更したことによる「代替調達の上乗せコスト分」を上乗せ反映する方針。</li>
+                    <li><b>結果/影響</b>: ガソリンや軽油など店頭価格の急激な上昇はある程度抑制されるものの、長引く国の財政負担やエネルギー依存体質への根本的な課題は残されたままとなる。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    この知見は、個人のお客様（リテール部門）への「NISA」や投資信託の提案に直結します。特に投資初心者の顧客は、運用を始めて数ヶ月で結果が出ないと焦って解約してしまうケースが多いです。「資産は階段状に増えていくものなので、今の準備期間が将来の大きな実りにつながります」とお客様にロジカルに寄り添うことで、長期的な信頼関係を構築できます。「地域の相談相手」としての地銀の価値を高めるセールストークに昇華させてください。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/84029bfefb8f7eb9b1d46379695763130983c4bd?source=rss" role="button" class="outline">続きを読む</a>
+
+                <p><b>地銀視点の深掘り</b></p>
+                <p>車社会であり、物流が命綱である北海道において、ガソリンや軽油、冬場の灯油価格は生活・産業の死活問題です。補助金による激変緩和措置の動向は、道内物流業者や建設業者、製造業の資金繰りに直結します。「燃料費の先行き」を不安視する経営者様に対し、省エネ設備投資やDX推進による効率化のための設備資金（融資）のご提案をするなど、補助金の仕組みを頭に置いた上で対話のきっかけにしましょう。</p>
+
+                <a href="https://news.yahoo.co.jp/articles/c1bc41aee10b8000cb468c499e6acd860d22b763?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3 -->
+            <!-- 記事3 -->
             <article>
-                <h3>「キリ クリームチーズ」を使用したチーズケーキ3品を販売【銀座コージーコーナー】</h3>
-                <b>ロジカル要約</b>
+                <span class="tag">リテール・資産形成</span>
+                <h3>面白いほど貯金が続く人と一流選手のたった1つの共通点とは？</h3>
+                
+                <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><strong>背景/経緯:</strong> 初夏の爽やかなスイーツ需要が高まる季節に合わせ、大手洋菓子チェーンの銀座コージーコーナーが限定商品の開発を画策しました。</li>
-                    <li><strong>事象:</strong> 世界的人気ブランド「キリ クリームチーズ」を惜しみなく使用し、爽やかな酸味とコクが特徴のチーズケーキ3種を期間限定で全国販売します。</li>
-                    <li><strong>結果/影響:</strong> 自宅でのプチ贅沢を求める層やファミリー層の購買意欲を刺激し、夏の生菓子・洋菓子市場の活性化を期待させます。</li>
+                    <li><b>背景/経緯</b>: 新NISAの開始や老後資金への関心の高まりから、個人消費者の間で貯蓄や投資に対する意識が高まっている。</li>
+                    <li><b>事象</b>: 貯蓄が順調に進む人と一流アスリートには、「意志の力に頼るのではなく、目的を明確にし、行動をシステム（ルーティン）化している」という共通の行動特徴がある。</li>
+                    <li><b>結果/影響</b>: 目標設定と、自動積立のような「仕組み化」を実行することで、感情や意志に関係なく、誰でも再現性の高い資産形成が可能になる。</li>
                 </ul>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    一見、東京発の華やかなグルメニュースですが、我々「北海道の地銀」にとって乳製品の動向は極めて重要です。北海道は日本の生乳生産の約半数を占めており、道内には多くの乳業メーカーやチーズ工房（当行の大切なお取引先）が存在します。こうした全国規模の限定スイーツの売れ行きや原料トレンドを追うことは、お取引先への「首都圏での流行を踏まえた新製品開発」の提案や、バイヤー紹介（ビジネスマッチング）の強力なヒントになります。地域の一次産業と全国の消費市場を結ぶ、銀行ならではの視野を養いましょう。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/d3f1ad1f1f518e45952558b5bc14f499dcc0bb3b?source=rss" role="button" class="outline">続きを読む</a>
+
+                <p><b>地銀視点の深掘り</b></p>
+                <p>地方銀行の重要な業務の一つが、地域住民の皆様の資産形成をお手伝いする「リテール（個人向け）営業」です。お客様に対して単に「貯金をしましょう」と勧めるのではなく、このニュースにあるように「将来何をしたいか」という目的整理を傾聴し、その上で当行の「自動積立定期預金」や「積立投信」といった『仕組み』をご提案する。このストーリー展開は、配属後の提案活動でそのまま活かせる重要なテクニックです。</p>
+
+                <a href="https://news.yahoo.co.jp/articles/147f06a87851bb3c3ec88b67f81d0851f69bdebc?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
+
+        <!-- フッター -->
+        <footer style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666;">
+            <p>© 2026 北海道地方銀行 内定者サポートチーム. All Rights Reserved.</p>
+        </footer>
     </main>
 </body>
 </html>
