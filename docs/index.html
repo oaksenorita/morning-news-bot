@@ -3,40 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年06月29日) - 北海道地銀内定者向け</title>
+    <title>朝のインサイト - 2026年06月30日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #00703c; /* 北海道の豊かな自然をイメージしたグリーン */
-            --primary-hover: #005a30;
+            --pico-primary: #0060a8; /* 北海道の美しい空と海、誠実さをイメージしたブルー */
         }
         body {
-            padding: 20px 0;
+            padding-top: 1.5rem;
+            padding-bottom: 3rem;
         }
         header {
+            border-bottom: 2px solid var(--pico-primary);
             margin-bottom: 2rem;
-            border-bottom: 2px solid var(--primary);
             padding-bottom: 1rem;
         }
         .weather-info {
-            background-color: var(--card-background-color);
-            border-left: 5px solid #00703c;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
         }
-        .insight-section {
-            margin-top: 2rem;
+        .weather-text {
+            margin-bottom: 0;
         }
         article {
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2.5rem;
+            border: 1px solid var(--pico-card-border-color);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
-        .tag {
-            display: inline-block;
-            padding: 0.2rem 0.6rem;
-            background-color: var(--primary);
-            color: #ffffff;
-            font-size: 0.8rem;
-            border-radius: 4px;
-            margin-bottom: 0.5rem;
+        .logical-summary {
+            background-color: var(--pico-card-background-color);
+            border-left: 4px solid var(--pico-primary);
+            padding: 1rem 1.2rem;
+            margin-bottom: 1.2rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .insight {
+            background-color: #f0f7fc;
+            border-left: 4px solid #009688;
+            padding: 1rem 1.2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            color: #1a3a4a;
+        }
+        [data-theme="dark"] .insight {
+            background-color: #142834;
+            color: #e0f2fe;
+            border-left: 4px solid #00bfa5;
+        }
+        .insight p {
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -44,86 +60,97 @@
     <main class="container">
         <!-- ヘッダー -->
         <header>
-            <h1>☀️ 朝のインサイト (2026年06月29日)</h1>
-            <p>北海道の未来を担う内定者の皆様へ。本日の地方銀行員として知っておくべき必須ニュースと知見をお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年06月30日)</h1>
+            <p>北海道の未来を担う内定者の皆様へ。ビジネス感覚を養い、お客さまと深く語り合える金融パーソンを目指しましょう。</p>
         </header>
 
         <!-- 天気セクション -->
-        <section>
-            <article class="weather-info">
-                <header style="margin: 0; padding: 0 0 0.5rem 0;">
-                    <h5 style="margin:0;">📍 本日の北海道の天気</h5>
-                </header>
-                <div class="grid">
-                    <div><strong>天気:</strong> 曇りがち ☁️</div>
-                    <div><strong>最高気温:</strong> 16.9℃</div>
-                    <div><strong>最低気温:</strong> 16.9℃</div>
+        <section id="weather">
+            <h2>📍 本日の北海道の天気</h2>
+            <article>
+                <div class="weather-info">
+                    <span style="font-size: 3rem;" role="img" aria-label="曇り">☁️</span>
+                    <div>
+                        <p class="weather-text"><strong>天気:</strong> 雲</p>
+                        <p class="weather-text"><strong>最高気温:</strong> 19.67℃ &nbsp;&nbsp;|&nbsp;&nbsp; <strong>最低気温:</strong> 19.67℃</p>
+                        <small>※本日は少し肌寒さを感じる一日となりそうです。体調管理に留意し、朝夕の寒暖差に備えましょう。</small>
+                    </div>
                 </div>
             </article>
         </section>
 
-        <!-- ニュース解説セクション -->
-        <section class="insight-section">
-            <h2>📰 注目ニュース＆地銀視点解説</h2>
+        <!-- ニュースセクション -->
+        <section id="news">
+            <h2>📰 本日の厳選ニュース解説</h2>
 
             <!-- 記事1 -->
             <article>
-                <span class="tag">マクロ経済・為替</span>
-                <h3>39年ぶりの水準まで円安が進行</h3>
+                <h3>「考えすぎて動けない部下」が一発で変わる〈魔法のひと言〉</h3>
                 
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><b>背景/経緯</b>: 日米の金利差固定や歴史的な為替介入後の反発などを背景に、ドル高円安トレンドが継続している。</li>
-                    <li><b>事象</b>: 外為市場で円相場が対ドルで約39年ぶりの水準にまで下落し、円安が一段と進行した。</li>
-                    <li><b>結果/影響</b>: 輸入品やエネルギー価格の上昇による物価高懸念が強まる一方、輸出関連企業の業績上振れやインバウンド（訪日外国人）消費のさらなる活性化が期待される。</li>
-                </ul>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>:
+                    <ul>
+                        <li><b>背景/経緯</b>: 失敗や叱責を恐れるあまり、自分の考えで主体的に行動を起こすことができず、指示を待つだけになってしまう若手社員の指導に悩む上司が増加している。</li>
+                        <li><b>事象</b>: 単に「自分で考えて」と突き放すのではなく、現状を整理し、「まず何から始められそう？」と具体的な一歩（ファーストアクション）を引き出すアプローチが有効。</li>
+                        <li><b>結果/影響</b>: 部下自身が自発的な行動に向けた小さな一歩を具体化でき、主体性と自信を取り戻しながら行動力を向上させることができる。</li>
+                    </ul>
+                </div>
 
-                <p><b>地銀視点の深掘り</b></p>
-                <p>北海道は「インバウンド観光」と「一次産業」という円安の明暗を分ける2大産業を抱えています。観光・宿泊業のお客様にとっては追い風ですが、酪農や農業、漁業を営むお客様にとっては輸入飼料や燃油の高騰が経営を直接圧迫します。新人行員としては、訪問先企業のビジネスモデルが円安に対して「追い風」か「向かい風」かを見極め、融資の提案や為替リスク対策の対話に繋げる基礎知識として必須のトピックです。</p>
+                <div class="insight">
+                    <b>地銀視点の深掘り</b>:
+                    <p>内定者の皆さんにとって、入行後に直面する最も多い悩みのひとつが「失敗を恐れて動けなくなること」です。先輩や上司の視点（指導側の思考）をあらかじめ知っておくことは、自身の「指示の受け方」や「主体的な報告・連絡・相談（ホウレンソウ）」の姿勢を見直す上で非常に役立ちます。また、道内の中小企業でも「若手人材の育成・定着」は非常に深刻な経営課題です。こうした人材開発やマネジメント手法に関するトピックは、将来、お取引先の経営者様が抱える「組織づくり」の悩みをヒアリングし、共感を生むための極めて有益なコミュニケーションの引き出しになります。</p>
+                </div>
 
-                <a href="https://news.yahoo.co.jp/articles/83529e5b38622a855ede608952c811f5b22043f5?source=rss" role="button" class="outline">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/63274d906a3e964ba1785290fa43fe7a0ea63691?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
             </article>
 
             <!-- 記事2 -->
             <article>
-                <span class="tag">地域経済・物流</span>
-                <h3>ガソリン補助金に代替調達の上乗せコスト分を反映</h3>
+                <h3>スズキ『ワゴンR』次期型、発売は2027前半か…販売推移から見えるフルモデルチェンジの方向性</h3>
                 
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><b>背景/経緯</b>: ウクライナ情勢の長期化や中東緊迫化に伴い、原油の代替調達が必要となる場面が増加している。</li>
-                    <li><b>事象</b>: 政府はガソリン補助金の算定基準において、通常ルートから変更したことによる「代替調達の上乗せコスト分」を上乗せ反映する方針。</li>
-                    <li><b>結果/影響</b>: ガソリンや軽油など店頭価格の急激な上昇はある程度抑制されるものの、長引く国の財政負担やエネルギー依存体質への根本的な課題は残されたままとなる。</li>
-                </ul>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>:
+                    <ul>
+                        <li><b>背景/経緯</b>: かつて軽自動車のトップリーダーであったスズキ「ワゴンR」だが、スライドドア搭載のスーパーハイトワゴン人気による市場シフトに伴い、販売シェアの維持・強化が課題となっている。</li>
+                        <li><b>事象</b>: スズキは2027年前半を目標に、環境対応（電動化）や最新の安全装備、そして実用性を高めた次期型ワゴンRのフルモデルチェンジを進めている模様。</li>
+                        <li><b>結果/影響</b>: ライバル他社（ダイハツやホンダ）とのハイトワゴン競争が再燃し、国内の軽自動車シェア構造や、買い替え促進による販売市場への波及効果が期待される。</li>
+                    </ul>
+                </div>
 
-                <p><b>地銀視点の深掘り</b></p>
-                <p>車社会であり、物流が命綱である北海道において、ガソリンや軽油、冬場の灯油価格は生活・産業の死活問題です。補助金による激変緩和措置の動向は、道内物流業者や建設業者、製造業の資金繰りに直結します。「燃料費の先行き」を不安視する経営者様に対し、省エネ設備投資やDX推進による効率化のための設備資金（融資）のご提案をするなど、補助金の仕組みを頭に置いた上で対話のきっかけにしましょう。</p>
+                <div class="insight">
+                    <b>地銀視点の深掘り</b>:
+                    <p>広大な土地を持つ北海道は、車社会そのものです。特に経済的で維持しやすい軽自動車はお客さまの「生活に不可欠な足」として高い普及率を誇ります。道内の中小中古車ディーラーや整備工場などの取引先にとって、主要車種のフルモデルチェンジは、今後の販売・仕入れ戦略を左右する大ニュースです。また、地方銀行としては、新型車の登場に伴い増加する一般顧客の「マイカーローン」需要を取り込む営業推進の絶好の機会となります。お取引先や個人のお客さまとの何気ない対話の中で、「そういえば、再来年に向けてワゴンRが新しくなるらしいですね」と話題を振り、購買動向を掴む手がかりにしてみましょう。</p>
+                </div>
 
-                <a href="https://news.yahoo.co.jp/articles/c1bc41aee10b8000cb468c499e6acd860d22b763?source=rss" role="button" class="outline">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/8b987b3479070083a4f53d0488f262ec277d778b?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
             </article>
 
             <!-- 記事3 -->
             <article>
-                <span class="tag">リテール・資産形成</span>
-                <h3>面白いほど貯金が続く人と一流選手のたった1つの共通点とは？</h3>
+                <h3>「強い胸痛」や「左肩が痛い」は本当に心臓からのSOS？専門医に聞いてわかった“本当に危ない症状”の見分け方</h3>
                 
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><b>背景/経緯</b>: 新NISAの開始や老後資金への関心の高まりから、個人消費者の間で貯蓄や投資に対する意識が高まっている。</li>
-                    <li><b>事象</b>: 貯蓄が順調に進む人と一流アスリートには、「意志の力に頼るのではなく、目的を明確にし、行動をシステム（ルーティン）化している」という共通の行動特徴がある。</li>
-                    <li><b>結果/影響</b>: 目標設定と、自動積立のような「仕組み化」を実行することで、感情や意志に関係なく、誰でも再現性の高い資産形成が可能になる。</li>
-                </ul>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>:
+                    <ul>
+                        <li><b>背景/経緯</b>: 突然死の原因となる心筋梗塞や狭心症などの心臓疾患は、必ずしも分かりやすい胸痛だけではなく、「左肩の凝り」や「顎・胃の痛み」といった意外な部位の異変（放散痛）を伴うことが多い。</li>
+                        <li><b>事象</b>: 専門医によると、息切れを伴う一時的な痛みの頻発、冷や汗、特定の活動時に急に悪化する痛みなど、生命の危機を示すSOSサインを見分けるポイントが存在する。</li>
+                        <li><b>結果/影響</b>: 正しい初期症状の知識を持つことで、見逃されやすい疾患の早期発見や救急受診に繋がり、突発的な重篤化を防止し命を救う可能性が大幅に高まる。</li>
+                    </ul>
+                </div>
 
-                <p><b>地銀視点の深掘り</b></p>
-                <p>地方銀行の重要な業務の一つが、地域住民の皆様の資産形成をお手伝いする「リテール（個人向け）営業」です。お客様に対して単に「貯金をしましょう」と勧めるのではなく、このニュースにあるように「将来何をしたいか」という目的整理を傾聴し、その上で当行の「自動積立定期預金」や「積立投信」といった『仕組み』をご提案する。このストーリー展開は、配属後の提案活動でそのまま活かせる重要なテクニックです。</p>
+                <div class="insight">
+                    <b>地銀視点の深掘り</b>:
+                    <p>北海道内の中小企業の多くは「経営者の高齢化」が進んでおり、社長ひとりの存在に事業運営が依存しているケースが少なくありません。経営者の突然の病や体調不良は、企業にとって事業継続の大きなリスク（キーマンリスク）を意味します。担当行員として、日頃から社長の「お体」や「ご健康」に気を配ることは、会社の与信（信用力）管理、そして良好な関係作りに極めて重要です。この手の健康リスクに関する知識は、多くの高齢経営者が非常に高い関心を持つテーマであり、「ご健康第一でお過ごしください」といった真摯なアプローチとともに、深い信頼関係を築く対話の糸口になります。</p>
+                </div>
 
-                <a href="https://news.yahoo.co.jp/articles/147f06a87851bb3c3ec88b67f81d0851f69bdebc?source=rss" role="button" class="outline">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/6aa4978ed170f0e947ea455d3cc98f072df3992d?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
             </article>
         </section>
 
         <!-- フッター -->
-        <footer style="margin-top: 3rem; text-align: center; font-size: 0.9rem; color: #666;">
-            <p>© 2026 北海道地方銀行 内定者サポートチーム. All Rights Reserved.</p>
+        <footer>
+            <hr>
+            <p style="text-align: center;"><small>© 2026 北海道地方銀行 内定者サポート事務局. <br>日々のインプットを通じて、地域の未来に役立つ「信頼されるバンカー」へ共に成長していきましょう。</small></p>
         </footer>
     </main>
 </body>
