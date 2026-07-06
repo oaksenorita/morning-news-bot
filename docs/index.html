@@ -3,151 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年07月05日)</title>
+    <title>朝のインサイト (2026年07月06日)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         body {
-            padding-top: 2rem;
-            padding-bottom: 3rem;
+            padding-top: 20px;
+            padding-bottom: 40px;
         }
         .weather-info {
-            background-color: var(--pico-secondary-background);
-            border-left: 8px solid var(--pico-primary);
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 2.5rem;
-        }
-        .weather-details {
             display: flex;
-            gap: 2rem;
+            justify-content: space-around;
+            align-items: center;
             flex-wrap: wrap;
-            margin-top: 0.5rem;
         }
         .weather-item {
-            font-size: 1.1rem;
-        }
-        article {
-            margin-bottom: 2.5rem;
-            border: 1px solid var(--pico-border-color);
-        }
-        article h3 {
-            color: var(--pico-primary);
-            margin-bottom: 1rem;
-        }
-        .summary-title, .insight-title {
-            display: block;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-            font-size: 1.05rem;
-        }
-        .insight-text {
-            line-height: 1.6;
-        }
-        .btn-container {
-            margin-top: 1.5rem;
+            text-align: center;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
     <main class="container">
-        <!-- ヘッダー -->
         <header>
-            <h1>☀️ 朝のインサイト (2026年07月05日)</h1>
-            <p>北海道の地方銀行に内定された皆様へ、本日の重要トピックスと地銀ならではの視点をお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年07月06日)</h1>
+            <p>北海道の地方銀行 内定者のための、本日の経済ニュース＆ローカル情報解説</p>
         </header>
 
-        <hr>
-
-        <!-- 天気情報 -->
-        <section>
-            <div class="weather-info">
-                <h4 style="margin:0;">📍 本日の北海道の天気</h4>
-                <div class="weather-details">
-                    <span class="weather-item">☁️ <strong>天気:</strong> 厚い雲</span>
-                    <span class="weather-item">🌡️ <strong>最高気温:</strong> 19.12℃</span>
-                    <span class="weather-item">❄️ <strong>最低気温:</strong> 19.12℃</span>
-                </div>
-                <p style="margin-top: 0.8rem; margin-bottom: 0; font-size: 0.9rem; color: var(--pico-muted-color);">
-                    ※本日は一日中厚い雲に覆われ、気温が上がりにくい肌寒い一日となる予想です。体調を崩さぬよう、羽織るものを一枚用意して活動しましょう。
-                </p>
-            </div>
-        </section>
-
-        <!-- ニュースセクション -->
-        <section>
-            <h2>📰 厳選ローカル＆ビジネスニュース</h2>
-            <p style="color: var(--pico-muted-color); margin-bottom: 2rem;">※経済のプロへの第一歩として、日々のニュースを「自分事」として捉える訓練を行いましょう。</p>
-
-            <!-- 記事1 -->
+        <section id="weather">
             <article>
-                <h3>【金投資の実績】毎月5000円の純金積立を10年間続けたら元本60万円はどうなった？運用成果を検証！</h3>
-                
-                <b class="summary-title">📈 ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 近年の世界的なインフレ懸念や地政学的リスクの高まりを背景に、実物資産であり「安全資産」とされる金（ゴールド）への注目が急速に高まっています。</li>
-                    <li><strong>事象:</strong> 毎月5,000円を10年間（総元本60万円）純金積立で運用し続けた場合の実績をシミュレーションし、その運用成果を検証。</li>
-                    <li><strong>結果/影響:</strong> 歴史的な金価格の高騰により、元本を大幅に上回る資産価値に成長。ドルコスト平均法（時間分散）を用いた積立投資の有効性と、有事に強いゴールドをポートフォリオに組み込む分散投資の重要性が再確認されました。</li>
-                </ul>
-
-                <b class="insight-title">💡 地銀視点の深掘り</b>
-                <p class="insight-text">
-                    国が「貯蓄から投資へ」を推進する中、当行でも個人の資産形成サポートは最重要ミッションの一つです。北海道内の多くのお客様、特に「投資は怖い」と感じている預金重視の高齢層や、これから資産形成を始める若年層に対し、この「時間分散（積立）」と「資産分散（ゴールド等の実物資産）」の概念は非常に強い説得力を持ちます。将来、店頭窓口やライフプラン相談でお客様と向き合う際、投資信託だけでなく、こうした具体的な成功事例を引き出しに持っておくことで、お客様の信頼を獲得する第一歩となるでしょう。
-                </p>
-
-                <div class="btn-container">
-                    <a href="https://news.yahoo.co.jp/articles/79a6d6ab1d743aed4181db8d588507d36aec049a?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+                <header><strong>📍 本日の北海道の天気</strong></header>
+                <div class="weather-info">
+                    <div class="weather-item">
+                        <strong>天気</strong>
+                        <div>曇りがち</div>
+                    </div>
+                    <div class="weather-item">
+                        <strong>最高気温</strong>
+                        <div>21.9℃</div>
+                    </div>
+                    <div class="weather-item">
+                        <strong>最低気温</strong>
+                        <div>21.9℃</div>
+                    </div>
                 </div>
-            </article>
-
-            <!-- 記事2 -->
-            <article>
-                <h3>ファミマ「ストロベリーフラッペ」新発売、いちごの甘くてジューシーな味わいと果肉感が楽しめる</h3>
-                
-                <b class="summary-title">📈 ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> コンビニ各社は、夏の最盛期に向けて冷たいスイーツやフローズンドリンクの需要を囲い込むため、看板商品の開発・リニューアルに注力しています。</li>
-                    <li><strong>事象:</strong> ファミリーマートが定番の人気フレーバー「ストロベリーフラッペ」をさらに美味しくリニューアルし、いちごのジューシーな果肉感を引き立てて新発売。</li>
-                    <li><strong>結果/影響:</strong> 手軽に贅沢感を味わえるトレンド商品としてSNS等でのバズ（拡散）を生み、夏の若年層・ファミリー層の来店頻度向上に寄与することが見込まれます。</li>
-                </ul>
-
-                <b class="insight-title">💡 地銀視点の深掘り</b>
-                <p class="insight-text">
-                    一見、普通のコンビニニュースですが、地方銀行員としては「食の宝庫・北海道」という地域特性と結びつけて考える必要があります。こうした全国展開される人気スイーツの裏には、原材料である牛乳や果物を供給する一次産業（酪農・農業）や、それを加工する道内食品メーカーが存在します。お取引先である地元の農家や乳業メーカーに対し、「今どのような食感やフレーバーが全国でトレンドなのか」という市場の一次情報を提供することは、新商品開発や新たな販路開拓をサポートするための貴重な「対話のタネ」となります。地域の産業をバリューチェーン全体で捉える視点を持ちましょう。
-                </p>
-
-                <div class="btn-container">
-                    <a href="https://news.yahoo.co.jp/articles/2c43523029d838989759d9882a4cc31103dd57c8?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-                </div>
-            </article>
-
-            <!-- 記事3 -->
-            <article>
-                <h3>「無能すぎる管理職」の特徴・ワースト1</h3>
-                
-                <b class="summary-title">📈 ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 労働人口の減少や多様な働き方の進展により、企業の競争力維持には従業員のエンゲージメント向上と効率的な組織マネジメントが急務となっています。</li>
-                    <li><strong>事象:</strong> 組織の生産性を著しく低下させる「ワースト管理職」の決定的な特徴として、部下の声に耳を傾けず、過去の成功体験や精神論に固執する一方通行のマネジメントが挙げられています。</li>
-                    <li><strong>結果/影響:</strong> このような管理職が放置されると、若手社員のエンゲージメントが低下し、優秀な人材の離職や組織全体の思考停止といった致命的な経営不振を招く要因となります。</li>
-                </ul>
-
-                <b class="insight-title">💡 地銀視点の深掘り</b>
-                <p class="insight-text">
-                    地方銀行は資金を融資するだけでなく、取引先中小企業の経営課題を解決する「伴走型支援」を強みとしています。地域企業の倒産や業績不振の多くは、実は財務的な要因だけでなく、経営陣や管理職のマネジメント不足による「深刻な人材難・組織の機能不全」が発端となっています。将来、お取引先企業の経営状態を分析（事業性評価）する際、財務諸表の数字の裏にある「組織の風通し」や「マネジメントの健全性」にまで目を配れる行員を目指しましょう。また、皆様自身が将来、銀行内で信頼されるリーダーとして成長していくための貴重な反面教師ともなる記事です。
-                </p>
-
-                <div class="btn-container">
-                    <a href="https://news.yahoo.co.jp/articles/af7628a24541f963f3f35006c4ef41e6b8afe1bb?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-                </div>
+                <footer>
+                    <small>※本日は一日を通して気温の変動が少ない見込みです。取引先への訪問時は長袖のシャツや薄手のジャケットがあると安心です。</small>
+                </footer>
             </article>
         </section>
 
-        <!-- フッター -->
+        <section id="news">
+            <h2>📰 厳選ニュース解説（3件）</h2>
+
+            <!-- 1件目のニュース -->
+            <article>
+                <h3>給料が高いのに人が辞めていく会社の特徴ワースト1</h3>
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li><b>背景/経緯：</b> 人手不足が叫ばれる昨今、採用競争力を上げるために給与を高水準に設定する企業が増えているが、それでも離職者が後を絶たないケースが見られる。</li>
+                    <li><b>事象：</b> 離職率が高い企業に共通するワースト1の特徴は、心理的安全性の欠如や、経営陣・上司の「一方通行で高圧的なコミュニケーション」に起因する社風である。</li>
+                    <li><b>結果/影響：</b> 給料が良くても、精神的ストレスや成長実感のなさを理由に優秀な若手ほど早期に離職してしまい、長期的には企業の生産性やブランド価値を著しく低下させる。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>北海道の中小企業においても、少子高齢化に伴う深刻な人手不足は経営における最大の懸案事項です。お取引先企業の社長から「給料は低くないはずなのに人が集まらない、すぐ辞めてしまう」という相談を受けた際、単なる資金調達（融資）の提案にとどまらず、社内コミュニケーションや人事評価制度といった『組織課題』に切り込む対話が求められます。地銀行員として、人材定着支援コンサルティングや外部専門家の紹介といった一歩踏み込んだソリューションを提供できる信頼関係を目指しましょう。</p>
+                <a href="https://news.yahoo.co.jp/articles/3721084ed0f9db0763a51a23bc150fbc51f650b7?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
+
+            <!-- 2件目のニュース -->
+            <article>
+                <h3>25年間の長期運用で元本90万円はどう変わった？「純金積立」のシミュレーション実績</h3>
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li><b>背景/経緯：</b> 近年の世界的なインフレや地政学的リスクの上昇を背景に、実物資産としての「金（ゴールド）」の価値が再評価されている。</li>
+                    <li><b>事象：</b> 過去25年間にわたり月々3,000円（総元本90万円）をコツコツ純金積立し続けた場合の長期シミュレーションを実施。</li>
+                    <li><b>結果/影響：</b> 積立投資（ドルコスト平均法）と歴史的な金価格の高騰により、元本90万円が最終的に大幅な評価益を生む結果となり、実物資産による長期運用の効果とインフレヘッジとしての有用性を裏付けた。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>これはリテール（個人向け）営業で非常に役立つ会話ネタです。お取引先の個人顧客、特に現役世代の資産形成層に「新NISA」を提案する際、「長期・積立・分散」の具体例として、こうした純金積立などの実物資産のシミュレーション結果を交えることで、より実感を伴った提案が可能です。「資産を銀行預金（円）だけで持つリスク」や「インフレに負けないポートフォリオの作り方」について、お客様目線で分かりやすく語れる行員になりましょう。</p>
+                <a href="https://news.yahoo.co.jp/articles/75d08997a12637cade28170c3dc17c287ed2be55?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
+
+            <!-- 3件目のニュース -->
+            <article>
+                <h3>藤田晋・堀江貴文・小川嶺に共通する、たった1つの思考法とは？</h3>
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li><b>背景/経緯：</b> 日本を代表する新旧のトップ起業家たちが、激しい市場環境の変化の中でなぜ成果を出し続けられるのか、その行動規範に注目が集まる。</li>
+                    <li><b>事象：</b> 彼らに共通するのは「失敗を前提としつつ、圧倒的なスピード感と『当事者意識』を持って仮説検証を繰り返す」という思考法（マインドセット）である。</li>
+                    <li><b>結果/影響：</b> 外的な批判や小さな失敗を過度に恐れず、迅速に仮説を市場に問うことで、時代の変化をチャンスに変えて急成長事業を創出することができる。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>北海道の地域産業を活性化するためには、スタートアップ企業の育成や、地元企業の「第二創業（事業承継後の新規事業展開）」が鍵となります。内定者の皆さんが将来お会いするであろう地元の熱い若手起業家や後継ぎ社長との面談において、このような「当事者意識と挑戦のスピード」に関するビジネストレンドは盛り上がる話題です。また、伝統的な地銀カルチャーの中でも、この「まずやってみる」という当事者意識とスピード感は、新人が周囲に良い影響を与えるための重要なマインドセットになります。</p>
+                <a href="https://news.yahoo.co.jp/articles/f8fc38c228ff094f29b2c4efd314f90e27e67385?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
+        </section>
+
         <footer>
             <hr>
-            <p style="text-align: center; font-size: 0.9rem; color: var(--pico-muted-color);">
-                © 2026 北海道地方銀行 内定者育成支援プログラム. All Rights Reserved.
-            </p>
+            <p style="text-align: center;"><small>© 2026 北海道地方銀行 新人研修サポートチーム</small></p>
         </footer>
     </main>
 </body>
