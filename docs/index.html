@@ -3,104 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年07月06日)</title>
+    <title>朝のインサイト | 北海道地銀 内定者向け情報プラットフォーム</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
+        :root {
+            --primary: #005a9c;
+        }
         body {
-            padding-top: 20px;
-            padding-bottom: 40px;
+            background-color: #f4f7f6;
         }
-        .weather-info {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
+        header {
+            border-bottom: 3px solid var(--primary);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
         }
-        .weather-item {
+        .weather-card {
+            background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+            border-left: 5px solid #0284c7;
+        }
+        .news-section article {
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 2rem;
+        }
+        .logical-summary {
+            background-color: #f8fafc;
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 4px solid #64748b;
+            margin-bottom: 1.5rem;
+        }
+        .local-bank-insight {
+            background-color: #f0fdf4;
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 4px solid #22c55e;
+            margin-bottom: 1.5rem;
+        }
+        .intro-text {
+            color: #475569;
+            font-size: 1.1rem;
+        }
+        footer {
             text-align: center;
-            margin: 10px;
+            margin-top: 3rem;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
         }
     </style>
 </head>
 <body>
     <main class="container">
+        <!-- ヘッダーセクション -->
         <header>
-            <h1>☀️ 朝のインサイト (2026年07月06日)</h1>
-            <p>北海道の地方銀行 内定者のための、本日の経済ニュース＆ローカル情報解説</p>
+            <h1>☀️ 朝のインサイト (2026年07月07日)</h1>
+            <p class="intro-text">
+                北海道の未来を担う内定者の皆様、おはようございます。地方銀行の行員には、日々のニュースを「地域の経済や顧客のビジネス」に結びつけて考える姿勢が求められます。今日も道内外の重要トピックを、地銀の視点から深く読み解いていきましょう。
+            </p>
         </header>
 
-        <section id="weather">
-            <article>
-                <header><strong>📍 本日の北海道の天気</strong></header>
-                <div class="weather-info">
-                    <div class="weather-item">
-                        <strong>天気</strong>
-                        <div>曇りがち</div>
+        <!-- 天気セクション -->
+        <section class="weather-section">
+            <article class="weather-card">
+                <header style="margin-bottom: 1rem; padding: 0;">
+                    <h5 style="margin: 0; color: #0369a1;">📍 本日の北海道（札幌）の天気</h5>
+                </header>
+                <div class="grid" style="align-items: center;">
+                    <div>
+                        <strong>天気:</strong> 厚い雲
                     </div>
-                    <div class="weather-item">
-                        <strong>最高気温</strong>
-                        <div>21.9℃</div>
+                    <div>
+                        <strong>最高気温:</strong> 22.45℃
                     </div>
-                    <div class="weather-item">
-                        <strong>最低気温</strong>
-                        <div>21.9℃</div>
+                    <div>
+                        <strong>最低気温:</strong> 22.45℃
                     </div>
                 </div>
-                <footer>
-                    <small>※本日は一日を通して気温の変動が少ない見込みです。取引先への訪問時は長袖のシャツや薄手のジャケットがあると安心です。</small>
-                </footer>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #0369a1; margin-bottom: 0;">
+                    ※本日の北海道は、すっきりしない曇り空ですが涼しく過ごしやすい七夕となりそうです。体調管理に気をつけて、学びを進めましょう。
+                </p>
             </article>
         </section>
 
-        <section id="news">
-            <h2>📰 厳選ニュース解説（3件）</h2>
+        <!-- ニュース解説セクション -->
+        <section class="news-section">
+            <h2 style="color: var(--primary); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; margin-top: 3rem;">📰 本日の厳選トピックス</h2>
 
-            <!-- 1件目のニュース -->
+            <!-- 記事1 -->
             <article>
-                <h3>給料が高いのに人が辞めていく会社の特徴ワースト1</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><b>背景/経緯：</b> 人手不足が叫ばれる昨今、採用競争力を上げるために給与を高水準に設定する企業が増えているが、それでも離職者が後を絶たないケースが見られる。</li>
-                    <li><b>事象：</b> 離職率が高い企業に共通するワースト1の特徴は、心理的安全性の欠如や、経営陣・上司の「一方通行で高圧的なコミュニケーション」に起因する社風である。</li>
-                    <li><b>結果/影響：</b> 給料が良くても、精神的ストレスや成長実感のなさを理由に優秀な若手ほど早期に離職してしまい、長期的には企業の生産性やブランド価値を著しく低下させる。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>北海道の中小企業においても、少子高齢化に伴う深刻な人手不足は経営における最大の懸案事項です。お取引先企業の社長から「給料は低くないはずなのに人が集まらない、すぐ辞めてしまう」という相談を受けた際、単なる資金調達（融資）の提案にとどまらず、社内コミュニケーションや人事評価制度といった『組織課題』に切り込む対話が求められます。地銀行員として、人材定着支援コンサルティングや外部専門家の紹介といった一歩踏み込んだソリューションを提供できる信頼関係を目指しましょう。</p>
-                <a href="https://news.yahoo.co.jp/articles/3721084ed0f9db0763a51a23bc150fbc51f650b7?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>定年再雇用後の手取り激減問題と、シニア世代のマネープラン対策</h3>
+                
+                <div class="logical-summary">
+                    <strong>ロジカル要約</strong>
+                    <ul>
+                        <li><b>背景/経緯:</b> 高年齢者雇用安定法の改正に伴い、多くの企業で定年後の再雇用制度が整ったものの、現役時代と比べて基本給や役職手当が大幅に減少するケースが相次いでいる。</li>
+                        <li><b>事象:</b> 定年後に再雇用され額面給与が月18万円となった際、前年の高い所得ベースで計算される住民税や、社会保険料の負担（計約8万円）が重くのしかかり、手取り額が10万円以下に落ち込む「手取りの逆転現象」が発生。</li>
+                        <li><b>結果/影響:</b> シニア世代の家計逼迫を招き、働き損感が生じるリスクがある。現役時代からのiDeCoやNISAを活用した資産形成、加給年金や在職老齢年金など公的制度の正しい理解に基づいた事前のライフプランニングが不可欠となっている。</li>
+                    </ul>
+                </div>
+
+                <div class="local-bank-insight">
+                    <strong>地銀視点の深掘り</strong>
+                    <p>
+                        このテーマは、個人のお客様（リテール分野）との面談やリレーション構築において非常に強力な会話ネタになります。特に北海道は高齢化が急速に進んでおり、退職を控えた50代・60代のお客様を数多く抱えています。
+                        「定年後のリアルなキャッシュフロー」を具体的な数字で示し、シニア世代の資産寿命を延ばすためのアドバイスができるかが鍵です。若年期からのつみたてNISAや、退職金の効果的な運用提案（投資信託や個人年金保険など）を銀行員として提案し、生涯にわたる信頼関係を築く契機としましょう。
+                    </p>
+                </div>
+
+                <a href="https://news.yahoo.co.jp/articles/c849fc1323bec748a0fe6f9aaa99b5152ac6aaeb?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
             </article>
 
-            <!-- 2件目のニュース -->
+            <!-- 記事2 -->
             <article>
-                <h3>25年間の長期運用で元本90万円はどう変わった？「純金積立」のシミュレーション実績</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><b>背景/経緯：</b> 近年の世界的なインフレや地政学的リスクの上昇を背景に、実物資産としての「金（ゴールド）」の価値が再評価されている。</li>
-                    <li><b>事象：</b> 過去25年間にわたり月々3,000円（総元本90万円）をコツコツ純金積立し続けた場合の長期シミュレーションを実施。</li>
-                    <li><b>結果/影響：</b> 積立投資（ドルコスト平均法）と歴史的な金価格の高騰により、元本90万円が最終的に大幅な評価益を生む結果となり、実物資産による長期運用の効果とインフレヘッジとしての有用性を裏付けた。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>これはリテール（個人向け）営業で非常に役立つ会話ネタです。お取引先の個人顧客、特に現役世代の資産形成層に「新NISA」を提案する際、「長期・積立・分散」の具体例として、こうした純金積立などの実物資産のシミュレーション結果を交えることで、より実感を伴った提案が可能です。「資産を銀行預金（円）だけで持つリスク」や「インフレに負けないポートフォリオの作り方」について、お客様目線で分かりやすく語れる行員になりましょう。</p>
-                <a href="https://news.yahoo.co.jp/articles/75d08997a12637cade28170c3dc17c287ed2be55?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>住友化学×サムスン、ガラスコア基板の事業会社設立へ</h3>
+                
+                <div class="logical-summary">
+                    <strong>ロジカル要約</strong>
+                    <ul>
+                        <li><b>背景/経緯:</b> 生成AIの急速な普及と高度化に伴い、半導体の性能を極限まで高めるためのパッケージング技術の重要性が増しており、従来のプラスチックに代わる「ガラスコア基板」が次世代の本命技術として注目されている。</li>
+                        <li><b>事象:</b> 化学大手の住友化学と、世界的な半導体巨人である韓国のサムスンが、この「ガラスコア基板」の量産化および事業推進を目的とした新しい事業会社を共同で設立することを決定した。</li>
+                        <li><b>結果/影響:</b> 次世代AI半導体パッケージのサプライチェーンにおいて、日韓アライアンスによる圧倒的なリードを築く狙いがあり、関連素材や周辺メーカーへの好影響、技術革新の加速が予想される。</li>
+                    </ul>
+                </div>
+
+                <div class="local-bank-insight">
+                    <strong>地銀視点の深掘り</strong>
+                    <p>
+                        現在、北海道（千歳市）では、次世代半導体の国産化を目指す「ラピダス（Rapidus）」プロジェクトの進展により、一大半導体クラスターの形成が急速に進んでいます。
+                        このタイミングでの次世代パッケージ技術（ガラスコア基板）の動きは非常に重要です。道内の中小企業でも、半導体産業への参入やサプライチェーンの一翼を担うべく新規設備投資を検討している企業が増えています。法人顧客を訪問した際、このような最先端技術のトレンドを話題にし、設備資金調達（デットファイナンス）のニーズ開拓やビジネスマッチングの提案に繋げていきましょう。
+                    </p>
+                </div>
+
+                <a href="https://news.yahoo.co.jp/articles/44393970c03a1a5418874d341e3fb8861f61f9c5?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
             </article>
 
-            <!-- 3件目のニュース -->
+            <!-- 記事3 -->
             <article>
-                <h3>藤田晋・堀江貴文・小川嶺に共通する、たった1つの思考法とは？</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><b>背景/経緯：</b> 日本を代表する新旧のトップ起業家たちが、激しい市場環境の変化の中でなぜ成果を出し続けられるのか、その行動規範に注目が集まる。</li>
-                    <li><b>事象：</b> 彼らに共通するのは「失敗を前提としつつ、圧倒的なスピード感と『当事者意識』を持って仮説検証を繰り返す」という思考法（マインドセット）である。</li>
-                    <li><b>結果/影響：</b> 外的な批判や小さな失敗を過度に恐れず、迅速に仮説を市場に問うことで、時代の変化をチャンスに変えて急成長事業を創出することができる。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>北海道の地域産業を活性化するためには、スタートアップ企業の育成や、地元企業の「第二創業（事業承継後の新規事業展開）」が鍵となります。内定者の皆さんが将来お会いするであろう地元の熱い若手起業家や後継ぎ社長との面談において、このような「当事者意識と挑戦のスピード」に関するビジネストレンドは盛り上がる話題です。また、伝統的な地銀カルチャーの中でも、この「まずやってみる」という当事者意識とスピード感は、新人が周囲に良い影響を与えるための重要なマインドセットになります。</p>
-                <a href="https://news.yahoo.co.jp/articles/f8fc38c228ff094f29b2c4efd314f90e27e67385?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>川崎重工が「AI-Readyな保全」提案、屋内位置情報で現場作業を丸ごと可視化</h3>
+                
+                <div class="logical-summary">
+                    <strong>ロジカル要約</strong>
+                    <ul>
+                        <li><b>背景/経緯:</b> 国内の製造業全般において、少子高齢化による「熟練工の不足」や「保全作業の属人化・効率低下」が、工場の稼働率低下を招く深刻な問題となっている。</li>
+                        <li><b>事象:</b> 川崎重工が、屋内GPS等の位置情報技術を活用して、工場内の作業員の動線や設備メンテナンスの作業プロセス全体をデジタルデータとして自動的に可視化・蓄積するシステムを開発・提案。</li>
+                        <li><b>結果/影響:</b> 現場データが整い「AIが活用可能な状態（AI-Ready）」を構築することで、将来的なAIによる設備の故障予測や作業最適化が可能となり、製造現場の生産性を劇的に高めることができる。</li>
+                    </ul>
+                </div>
+
+                <div class="local-bank-insight">
+                    <strong>地銀視点の深掘り</strong>
+                    <p>
+                        北海道には、食産業を支える大規模な「食品加工工場」や「飼料製造業」「乳製品メーカー」が多数集積しています。しかし、その多くが人手不足と生産性の改善に頭を悩ませています。
+                        取引先の経営陣に対し、「生産性向上のためのDX投資」の一環として、このような省力化システムのトレンドを紹介することは非常に好まれます。システムの導入に伴い、公的補助金（IT導入補助金など）の活用支援や、銀行からのDX支援資金貸出（融資）の案件創出に結びつけることができ、銀行・顧客双方がウィンウィンになる伴走支援が実現します。
+                    </p>
+                </div>
+
+                <a href="https://news.yahoo.co.jp/articles/eec637be95d74f1d3d8096a395ef95c1691ae270?source=rss" role="button" class="outline" target="_blank">続きを読む</a>
             </article>
         </section>
 
+        <!-- フッター -->
         <footer>
-            <hr>
-            <p style="text-align: center;"><small>© 2026 北海道地方銀行 新人研修サポートチーム</small></p>
+            <p>北海道地銀 新人アシスタントプラットフォーム | © 2026年07月07日</p>
+            <p><small>私たちは、北海道の地域社会と経済の発展に貢献するプロフェッショナルの育成を支援します。</small></p>
         </footer>
     </main>
 </body>
