@@ -3,144 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 北海道地銀内定者のための経済情報</title>
+    <title>朝のインサイト - 2026年07月11日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         body {
             padding-top: 2rem;
-            padding-bottom: 3rem;
-        }
-        header {
-            margin-bottom: 2rem;
-            border-bottom: 3px solid var(--primary);
-            padding-bottom: 1rem;
+            padding-bottom: 2rem;
         }
         .weather-info {
-            background-color: var(--secondary-focus);
-            border-left: 8px solid #0056b3;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
         }
-        .news-section article {
-            margin-bottom: 2.5rem;
-            border: 1px solid var(--card-border-color);
-        }
-        .news-badge {
-            display: inline-block;
-            padding: 0.25rem 0.5rem;
-            background-color: var(--primary-background);
-            color: var(--primary-inverse);
-            font-size: 0.8rem;
-            border-radius: 4px;
-            margin-bottom: 1rem;
-        }
-        .insight-box {
-            background-color: rgba(0, 128, 128, 0.05);
-            border-left: 4px solid teal;
-            padding: 1rem;
-            border-radius: 0 8px 8px 0;
-            margin-top: 1rem;
+        .weather-item {
+            font-size: 1.1rem;
         }
     </style>
 </head>
 <body>
     <main class="container">
-        <!-- 1. ヘッダー -->
         <header>
-            <h1>☀️ 朝のインサイト (2026年07月10日)</h1>
-            <p>北海道の未来を担う内定者の皆様へ：本日の重要ニュースと、地方銀行員としての視点をお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年07月11日)</h1>
+            <p>北海道の未来を支える新人行員の皆様へ。本日の注目ニュースと、地域密着型金融（リレーションシップバンキング）に活かせる視点をお届けします。</p>
         </header>
 
-        <!-- 2. 天気情報 -->
-        <section>
-            <article class="weather-info">
-                <h3>📍 本日の道内天気予報</h3>
-                <p>
-                    <strong>天気:</strong> 強い雨<br>
-                    <strong>最高気温:</strong> 22.45℃ / <strong>最低気温:</strong> 22.45℃
-                </p>
-                <p>
-                    <small>
-                        ※本日はあいにくの強い雨となり、道内各地で足元が大変悪くなる予想です。気温も22℃台とやや肌寒く感じられますので、外出の際は温かい服装と傘をご用意ください。悪天候の日こそ、お客様への細やかなお気遣いの言葉が光ります。体調に気をつけて今日も元気に過ごしましょう！
-                    </small>
-                </p>
+        <section id="weather">
+            <article>
+                <header><strong>📍 本日の北海道（札幌）の天気予報</strong></header>
+                <div class="weather-info">
+                    <span class="weather-item"><strong>天気:</strong> 適度な雨 🌧️</span>
+                    <span class="weather-item"><strong>最高気温:</strong> 23.56℃</span>
+                    <span class="weather-item"><strong>最低気温:</strong> 23.56℃</span>
+                </div>
+                <small style="margin-top: 10px; display: block; color: var(--pico-muted-color);">※雨の日の外訪の際は、書類や身だしなみが濡れないようお気をつけください。細やかな気配りも信頼関係の第一歩です。</small>
             </article>
         </section>
 
-        <!-- 3. ニュース解説 (3件厳選) -->
-        <section class="news-section">
-            <h2>📰 本日の厳選経済ニュース</h2>
+        <section id="news">
+            <h2>📰 厳選ニュース解説</h2>
 
-            <!-- 1件目：パワハラ -->
+            <!-- ニュース1 -->
             <article>
-                <span class="news-badge">組織マネジメント・人材育成</span>
-                <h3>無自覚に「パワハラ」をする人の特徴・ワースト1</h3>
-                
+                <h3>「優秀な若手がすぐにやめる会社」の特徴・ワースト1</h3>
                 <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><strong>背景/経緯:</strong> 労働環境におけるコンプライアンス遵守が叫ばれる一方、指導者側が「良かれと思って」行う無自覚なハラスメントが企業の大きな組織課題となっている。</li>
-                    <li><strong>事象:</strong> 「自らの成功体験や価値観を絶対正義」とし、部下や相手の文脈や感情を一切顧みずに正論で理詰めしてしまう行動が、無自覚パワハラを引き起こす最大の要因として指摘されている。</li>
-                    <li><strong>結果/影響:</strong> 職場の人間関係がギスギスし、特に若手社員のモチベーション低下や早期離職を招く。最終的には、企業の社会的信用の失墜や採用難といった経営リスクへ直結する。</li>
+                    <li><strong>背景/経緯:</strong> 少子高齢化に伴う深刻な人手不足（売り手市場）の中、若手人材の早期離職は多くの企業にとって死活問題となっています。</li>
+                    <li><strong>事象:</strong> 優秀な若手が離職する最大の要因は「この会社にいても自分の成長が望めない」と失望することであり、業務の裁量のなさや前時代的な管理手法がそれを助長しています。</li>
+                    <li><strong>結果/影響:</strong> 属人的で成長実感のない組織環境を放置する企業は、優秀な人材から順に去っていき、組織の形骸化と長期的な競争力低下に陥ります。</li>
                 </ul>
-
-                <div class="insight-box">
-                    <p><b>地銀視点の深掘り（顧客との会話ネタ・取引先支援）</b></p>
-                    <p>
-                        地方銀行が向き合う北海道の中小企業において、「人手不足」と「若手の離職防止」は深刻なトップ課題です。このニュースは、人事コンサルティングや組織活性化の切り口として非常に強い説得力を持ちます。取引先の社長との対話の中で、「最近の若手教育で苦労されていることはありませんか？」という問いかけから、管理職研修の提案や評価制度見直しのニーズを引き出すことができます。また、皆さんが今後銀行内で良き先輩・後輩関係を築く上でも、相互理解を重視するコミュニケーションが重要になります。
-                    </p>
-                </div>
-                
-                <p><a href="https://news.yahoo.co.jp/articles/18d2d380943079da2cd7b8935b2b630cb6e079bb?source=rss" role="button" class="outline">続きを読む</a></p>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>北海道内の中小企業でも「せっかく採用した若手が定着しない」という経営者のお悩みは非常に増えています。融資先や取引先を訪問した際、この話題は経営者の本音を引き出す格好のフックになります。「最近の若い子は…」という諦めで終わらせず、評価制度の整備やIT導入による業務効率化（若手がやりがいのある仕事に集中できる環境作り）を提案するチャンスです。当行の組織コンサルティング機能や外部の人材サービスとの連携を切り口に、経営支援の対話へ繋げていきましょう。</p>
+                <footer style="text-align: right;">
+                    <a href="https://news.yahoo.co.jp/articles/8e7f6c4084df66c7ed4e2c0ea68157eb30b78811?source=rss" role="button" class="outline">続きを読む</a>
+                </footer>
             </article>
 
-            <!-- 2件目：三菱重工業 -->
+            <!-- ニュース2 -->
             <article>
-                <span class="news-badge">防衛産業・地場サプライチェーン</span>
-                <h3>ウクライナ「パトリオットミサイル」の国内生産で三菱重工業に関心</h3>
-                
+                <h3>【7月第2週のガソリン価格】「京都と兵庫で価格差7.7円」大阪・京都・兵庫の平均価格「169.37 円」関西3府県のガソリン価格（7月6日時点）を比較</h3>
                 <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><strong>背景/経緯:</strong> ウクライナでの戦闘長期化や緊迫する東アジア情勢を受け、防衛装備品（特に迎撃ミサイル「パトリオット」）の世界的な供給不足が深刻化している。</li>
-                    <li><strong>事象:</strong> 米国以外で唯一パトリオットミサイルをライセンス生産できる能力を持つ「三菱重工業」に対し、生産拡大と世界的な防衛ネットワークへの貢献期待が高まっている。</li>
-                    <li><strong>結果/影響:</strong> 日本政府による防衛装備移転三原則の運用指針緩和の動きと相まって、防衛産業における国内製造業のプレゼンスが向上。関連するサプライチェーン全体への投資活性化が見込まれる。</li>
+                    <li><strong>背景/経緯:</strong> 円安基調や国際的な原油動向に伴い、国内の燃料価格は高止まりが続き、家計や企業経営を圧迫しています。</li>
+                    <li><strong>事象:</strong> 関西3府県のデータではガソリン価格が平均169.37円を記録しつつ、地域間で最大7.7円の大きな価格差が生じていることが明らかになりました。</li>
+                    <li><strong>結果/影響:</strong> 物流コストをはじめとする諸経費へのダイレクトな影響に加え、地域間でのコスト格差が事業者の収益力に差を生む要因となっています。</li>
                 </ul>
-
-                <div class="insight-box">
-                    <p><b>地銀視点の深掘り（顧客との会話ネタ・取引先支援）</b></p>
-                    <p>
-                        「防衛宇宙」や「重工業」と聞くと地方銀行には無関係に思えるかもしれませんが、北海道内には高い金属加工技術や精密部品製造技術を持ち、大手重工メーカーのサプライチェーン（下請け網）に食い込んでいる中小企業が数多く存在します。国策としての防衛関連予算の増額や国内生産回帰の流れは、こうした地元製造業への発注増加に繋がります。「最近、大手メーカーからの受注状況や、増産に伴う設備投資のご予定はいかがですか？」といったアプローチから、工場の設備投資資金（融資）や生産性向上のためのDX提案へと繋げるチャンスになります。
-                    </p>
-                </div>
-                
-                <p><a href="https://news.yahoo.co.jp/articles/3e73f3d630f0773ca8f98c9ef185b0ed1ada332a?source=rss" role="button" class="outline">続きを読む</a></p>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>関西のニュースですが、これは広大な土地を擁し、移動・輸送手段を車に大きく依存する北海道において、より深刻なテーマです。道内の「運送・物流業」「農業」「観光業（観光バスやレンタカー）」を営むお客様にとって、燃料費の1円の変動は経営成績に直結します。お客様を訪問した際は、「現在の燃料価格の影響はいかがですか？価格転嫁は進んでいますか？」と問いかけてみてください。資金繰りを支える短期の運転資金の融資提案や、燃費の良い新型車両や省エネ設備への買い替えを促す「環境配慮型融資（グリーンローン）」の提案に繋げることができます。</p>
+                <footer style="text-align: right;">
+                    <a href="https://news.yahoo.co.jp/articles/f85415697c5b2c919c4fb9eb7bc00aebc9ce0b3d?source=rss" role="button" class="outline">続きを読む</a>
+                </footer>
             </article>
 
-            <!-- 3件目：レパード（自動車メンテ） -->
+            <!-- ニュース3 -->
             <article>
-                <span class="news-badge">自動車ビジネス・リテール市場</span>
-                <h3>日産初代「レパード」オーナーの驚くべき維持メンテ術！</h3>
-                
+                <h3>「夕食、何作ろう」を減らす 大塚食品の下味冷凍調味料「メインディップ」、開発者の育児・復職経験から誕生</h3>
                 <p><b>ロジカル要約</b></p>
                 <ul>
-                    <li><strong>背景/経緯:</strong> 1980年代〜90年代の車（ネオクラシックカー）が、映画や思い出補正、投機的価値の向上により、国内外で空前のブームとなっている。</li>
-                    <li><strong>事象:</strong> 生産終了から何十年も経ちメーカーの純正部品が出ない中、オーナー達は精密な再生加工（リビルド）や、独自のネットワークを通じて部品を調達・自作し、車を美しく維持している。</li>
-                    <li><strong>結果/影響:</strong> 旧車の維持に伴う特殊な技術を持つ整備工場や、レストア（復元）専門ビジネス、部品再生市場といったニッチながらも高付加価値な市場が拡大している。</li>
+                    <li><strong>背景/経緯:</strong> 共働き世帯や単身世帯の増加に伴い、家庭における料理の「タイムパフォーマンス（時短・簡便化）」に対する需要が急速に高まっています。</li>
+                    <li><strong>事象:</strong> 開発者自身の育児と復職のリアルな葛藤から着想を得て、肉や魚を漬けて冷凍するだけで本格的なメインおかずが作れる「メインディップ」が開発されました。</li>
+                    <li><strong>結果/影響:</strong> 「手抜き」ではなく「賢い時短（スマートな手助け）」を叶える新ジャンルとして、忙しい現代人のニーズを的確に捉えたヒットが期待されています。</li>
                 </ul>
-
-                <div class="insight-box">
-                    <p><b>地銀視点の深掘り（顧客との会話ネタ・取引先支援）</b></p>
-                    <p>
-                        北海道は言わずと知れた車社会であり、自動車販売店や整備工場は地域密着の主要な取引先です。現在、一般的な自動車整備工場は電気自動車（EV）への対応や価格競争に悩まされていますが、本ニュースのような「旧車のレストア技術」を持つ企業は、競合との差別化を図り高い利益率を確保しています。整備工場の経営者との面談で「最近、こういった旧車のレストアや特殊メンテの引き合いはありますか？」と尋ねることで、ニッチな技術力を活かした新規事業の可能性や、技術継承のための事業承継支援、新たな設備導入への融資相談といった深い本音の対話を引き出せます。
-                    </p>
-                </div>
-                
-                <p><a href="https://news.yahoo.co.jp/articles/675f427d1e887949d73fe96089d4d6a903951f44?source=rss" role="button" class="outline">続きを読む</a></p>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>北海道は日本屈指の「食」の生産基地であり、道内には多くの食品加工メーカーが所在します。こうした企業にとって、単なる素材提供から「高付加価値な調理用パッケージ商品」へのシフトは、利益率を向上させる重要な戦略です。道内の食品製造業のお客様に対し、「地元食材を活かした『下味冷凍ミールキット』などの商品開発はいかがですか？」といった提案が可能です。開発に伴う工場の衛生設備投資や急速冷凍機の導入資金など、設備資金調達の相談へと発展させ、地元企業の「稼ぐ力」の向上を金融面から後押ししましょう。</p>
+                <footer style="text-align: right;">
+                    <a href="https://news.yahoo.co.jp/articles/e76bab82a381edae1c8f29cd9f7a29a31088c772?source=rss" role="button" class="outline">続きを読む</a>
+                </footer>
             </article>
         </section>
-
-        <!-- フッター -->
-        <footer>
-            <hr>
-            <p style="text-align: center;"><small>© 2026 北海道地方銀行 新人行員研修サポートチーム. All rights reserved.</small></p>
-        </footer>
     </main>
 </body>
 </html>
