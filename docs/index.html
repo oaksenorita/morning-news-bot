@@ -1,168 +1,121 @@
 <!DOCTYPE html>
-<html lang="ja" data-theme="light">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト | 2026年07月14日</title>
+    <title>朝のインサイト (2026年07月15日) - 北海道地銀新人向け</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         body {
-            background-color: #f4f7f6;
-            color: #333;
-        }
-        main {
             padding-top: 2rem;
-            padding-bottom: 3rem;
+            padding-bottom: 2rem;
         }
         header {
-            border-bottom: 3px solid #005a9c;
             margin-bottom: 2rem;
+            border-bottom: 2px solid var(--pico-primary-background);
             padding-bottom: 1rem;
         }
-        header p {
-            color: #666;
-            font-size: 0.95rem;
-        }
-        article {
-            border-top: 4px solid #005a9c;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            background-color: #fff;
-            margin-bottom: 2rem;
-        }
-        h2, h3 {
-            color: #005a9c;
-        }
-        b {
-            color: #111;
-            display: inline-block;
-            margin-top: 0.5rem;
-            margin-bottom: 0.3rem;
-        }
-        ul {
-            padding-left: 1.2rem;
-        }
         .weather-info {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            align-items: center;
+            background-color: var(--pico-card-background-color);
+            border-left: 5px solid var(--pico-primary);
         }
-        .weather-badge {
-            background-color: #e3f2fd;
-            color: #0d47a1;
-            padding: 0.3rem 0.8rem;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-        .temp-badge {
-            background-color: #ffe0b2;
-            color: #e65100;
-            padding: 0.3rem 0.8rem;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-        .digest-footer {
-            margin-top: 1rem;
-            text-align: right;
+        .logical-summary, .banker-insight {
+            margin-bottom: 1rem;
         }
     </style>
 </head>
 <body>
     <main class="container">
+        <!-- ヘッダー -->
         <header>
-            <h1>☀️ 朝のインサイト (2026年07月14日)</h1>
-            <p>北海道の未来を担う内定者の皆様へ。本日の地方経済・顧客対話に役立つ厳選ニュースをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年07月15日)</h1>
+            <p><small>北海道の未来を担う新入行員の皆様へ。本日の注目ニュースと、地方銀行員として知っておくべきビジネスの視点をお届けします。</small></p>
         </header>
 
         <!-- 天気セクション -->
         <section aria-label="本日の天気">
-            <article>
-                <header style="margin:-1.5rem -1.5rem 1rem -1.5rem; padding: 1rem 1.5rem; background-color: #f8f9fa; border-bottom: 1px solid #e0e0e0;">
-                    <h5 style="margin:0; color: #555;">📍 本日の北海道（札幌）の気候</h5>
-                </header>
-                <div class="weather-info">
-                    <span class="weather-badge">天気: 厚い雲</span>
-                    <span class="temp-badge">最高気温: 23.56℃</span>
-                    <span class="temp-badge" style="background-color: #e8f5e9; color: #2e7d32;">最低気温: 23.56℃</span>
+            <article class="weather-info">
+                <header><strong>⛅ 本日の北海道（主要都市平均）の天気</strong></header>
+                <div class="grid">
+                    <div><strong>天気:</strong> 厚い雲</div>
+                    <div><strong>最高気温:</strong> 24.12℃</div>
+                    <div><strong>最低気温:</strong> 24.12℃</div>
                 </div>
-                <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
-                    本日は気温差がなく、終日涼しい1日となりそうです。湿気による不快感に気を配りつつ、体調管理に留意してお過ごしください。
-                </p>
+                <small style="margin-top: 0.5rem; display: block;">※本日は比較的過ごしやすい気温ですが、曇り空が広がります。外回りや顧客訪問の際は、突然の雨に備えて折りたたみ傘を準備しましょう。</small>
             </article>
         </section>
 
-        <!-- ニュースセクション -->
-        <section aria-label="厳選ニュース解説">
+        <!-- ニュース解説セクション -->
+        <section aria-label="ニュース解説">
             <h2>📰 本日の厳選ニュース解説</h2>
 
-            <!-- ニュース1 -->
+            <!-- 記事1 -->
             <article>
-                <h3>ポルシェ、上半期の販売台数16％減少も『911』は絶好調</h3>
+                <h3>「涼しいベビーカーシート＆グッドデザイン賞」長野発ベビーブランド成長の裏に“低評価レビュー全社員通知”の改善サイクル</h3>
                 
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯:</b> 世界的な電気自動車（EV）市場の成長鈍化と、プレミアムセグメントにおける顧客ニーズの変化。</li>
-                    <li><b>事象:</b> ポルシェの2026年上半期世界販売台数は前年同期比16％減少したものの、伝統的なガソリン車のアイコンである「911」は前年比8％増と極めて好調で、全体の約4分の1を占めた。</li>
-                    <li><b>結果/影響:</b> 急進的なEVシフトの難しさが浮き彫りになり、自動車各社はHV（ハイブリッド）や内燃機関車とのマルチパスウェイ戦略への再評価を迫られている。</li>
-                </ul>
-
-                <b>地銀視点の深掘り</b>
-                <p>
-                    このニュースは、道内の「自動車ディーラー」や「部品製造・整備業」の取引先を訪問する際、非常にタイムリーな話題になります。北海道は広大な土地柄、冬場のバッテリー性能低下を懸念してEV導入に慎重な顧客が未だ多い地域です。「やはり寒冷地ではガソリン車やハイブリッドの信頼性が根強いですね」といった顧客心理の裏付けとして使えます。また、富裕層（地元企業のオーナー社長など）の「趣味性の高い資産（高級クラシックカーやスポーツカー）」への投資意欲を探る、資産運用・プライベートバンキング的な対話のフックとしても有効です。
-                </p>
-
-                <div class="digest-footer">
-                    <a href="https://news.yahoo.co.jp/articles/3cb6e1c14886306f5566738241bf9eef2e6632f6?source=rss" role="button" class="outline">続きを読む</a>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><strong>背景/経緯:</strong> 地方（長野県）発のベビーブランドが、EC市場で大手競合他社に対抗し、顧客から選ばれる製品開発を模索していた。</li>
+                        <li><strong>事象:</strong> ECサイトに寄せられる「低評価レビュー（顧客の不満）」を自動的に全社員へリアルタイム通知する仕組みを導入。問題点を即座に製品設計やサービスに反映する改善サイクルを確立した。</li>
+                        <li><strong>結果/影響:</strong> 顧客の「生の声」を反映させた革新的な「涼しいベビーカーシート」が誕生し、グッドデザイン賞を受賞。ブランドとしての信頼獲得と飛躍的な売上成長を実現した。</li>
+                    </ul>
                 </div>
+
+                <div class="banker-insight">
+                    <b>地銀視点の深掘り</b>
+                    <p>北海道内の中小製造業や小売業でも、EC（電子商取引）を通じた全国展開や、オリジナルブランドの立ち上げに取り組む企業が増加しています。このニュースはお取引先に対し、「単なるIT導入」ではなく、「顧客の声をいかに迅速に社内改善へつなぐか（DXと組織変革）」という具体的な好事例として紹介できます。特に製品の差別化に悩む経営者への「経営コンサルティング視点」でのアプローチや、業務プロセス改善に向けたIT投資資金のご提案として、商談の糸口に最適です。</p>
+                </div>
+
+                <a href="https://news.yahoo.co.jp/articles/07c08042b7fdcd0089749fcd459b535fe595941f?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2 -->
+            <!-- 記事2 -->
             <article>
-                <h3>「あれ？エンジンかからない…」を防ぐ正しい知識【40度超えの酷暑】夏に急増するバッテリー問題</h3>
+                <h3>【フォレスターの自動車税】本格AWDで人気のSUV！スバル「フォレスター」の自動車税はいくら？主要グレードとパワートレイン別の税額や減税について詳しく解説</h3>
                 
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯:</b> 地球温暖化に伴う夏場の過酷な高温環境。車内およびエンジンルームの温度上昇により、バッテリーへの負荷が極限まで高まっている。</li>
-                    <li><b>事象:</b> エアコンのフル稼働や、内部のバッテリー液の減少（液枯れ）により、夏場に突然エンジンがかからなくなるトラブルが急増している。</li>
-                    <li><b>結果/影響:</b> レッカー移動や突発的なバッテリー交換費用の発生。個人・法人を問わず、運行停止による経済的・時間的ロスが発生する。</li>
-                </ul>
-
-                <b>地銀視点の深掘り</b>
-                <p>
-                    広大な北海道において、車はビジネスと生活に不可欠な「最重要インフラ」です。真夏日における取引先の配送トラックや営業車のトラブルは、企業の業務停止リスクに直結します。地銀の担当者として、道内のガソリンサービスステーション（SS）や自動車整備工場といった取引先に対し、「夏季のバッテリー無料点検キャンペーン」などを通じた来店誘致の提案（短期運転資金・販促費用の融資提案など）に繋げられます。個人のお客様に対しても、「最近北海道も暑いですね。お車のエアコン使用でバッテリーが上がりやすくなっていますが、点検はされましたか？」といった、親しみやすい生活お役立ちのアイスブレイクとして最適です。
-                </p>
-
-                <div class="digest-footer">
-                    <a href="https://news.yahoo.co.jp/articles/c1d68195f2798061f00d7efee8ae768881e7bbf3?source=rss" role="button" class="outline">続きを読む</a>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><strong>背景/経緯:</strong> スバルの「フォレスター」は、本格的な悪路走破性能（AWD）を持ち、積雪地やアウトドア志向のユーザーから絶大な支持を集めている人気SUVである。</li>
+                        <li><strong>事象:</strong> 購入時や毎年の維持費に関わる「自動車税」や「環境性能割」は、排気量やマイルドハイブリッド（e-BOXER等）などのパワートレイン、減税制度の適用状況によって金額が異なる。</li>
+                        <li><strong>結果/影響:</strong> グレードごとの具体的な税負担やライフサイクルコストを明確に把握することで、購入者が自身の予算に合わせた正確な資金計画を立てることが可能になる。</li>
+                    </ul>
                 </div>
+
+                <div class="banker-insight">
+                    <b>地銀視点の深掘り</b>
+                    <p>広大な土地と厳しい積雪環境を持つ北海道において、SUV（4WD）は単なる趣味ではなく、日常生活の「必需品」です。特にスバル車は道内での信頼が厚く、フォレスターを保有しているお客様は多数おられます。個人のお客様（リテール）へ「マイカーローン」をご提案する際、車両の購入価格だけでなく、こうした「毎年の税金」や「車検費用」などの維持費を含めた総合的な資金計画をご提示できると、信頼感は一気に高まります。また、地元の自動車販売店（ディーラー）のお取引先と商談する際にも、減税を踏まえた提案知識は不可欠な「会話ネタ」となります。</p>
+                </div>
+
+                <a href="https://news.yahoo.co.jp/articles/08821a3e73a3ba81df56b730e2568083a43ad9d4?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3 -->
+            <!-- 記事3 -->
             <article>
-                <h3>「大谷翔平と同じ道」は選ばない？佐々木麟太郎が日本をスルーしてMLBを選びうる合理的理由</h3>
+                <h3>「日本の土木技術の勝利」まで進捗率90％超え「早く開通見込みを」 事業費は増額「三遠南信道」最新状況があきらかに</h3>
                 
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><b>背景/経緯:</b> 若手のアスリートや優秀な人材が、日本の既存組織（プロ野球）を経由せず、直接アメリカ（MLB）のシステムに挑戦するキャリアパスが出現している。</li>
-                    <li><b>事象:</b> 米名門スタンフォード大に進学した佐々木麟太郎選手を例に、日米の市場規模、育成環境、引退後のキャリア選択において、直接渡米することの経済的・合理的合理性が議論されている。</li>
-                    <li><b>結果/影響:</b> 日本国内の組織における「若手優秀人材の流出問題」が改めて浮き彫りになり、評価制度や育成環境のグローバル化が急務となっている。</li>
-                </ul>
-
-                <b>地銀視点の深掘り</b>
-                <p>
-                    この話題は、スポーツの枠を超えて、道内の中小企業経営者が共通して直面している「採用難」と「優秀な若手人材の海外・首都圏への流出」という深刻な経営課題にリンクします。経営者に対し、「優秀な人材を惹きつけ、引き留めるための社内投資（労働環境の改善、留学・リスキリング支援）」を促す提案のきっかけになります。また、教育熱心な個人のお客様（経営層や医師等の富裕層）に対しては、早期からの海外留学資金の準備に向けた「教育ローン」の提案や、将来を見据えた外貨建資産の運用アドバイスといった質の高いコンサルティングへと繋げることができます。
-                </p>
-
-                <div class="digest-footer">
-                    <a href="https://news.yahoo.co.jp/articles/c2dd2c780f74763c827134759ce7c4f9d37cd0b3?source=rss" role="button" class="outline">続きを読む</a>
+                <div class="logical-summary">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><strong>背景/経緯:</strong> 静岡・愛知・長野を繋ぐ「三遠南信自動車道」は、崩落しやすい極めて脆い地質（中央構造線付近）を貫くため、日本の高速道路建設における最難関ルートの一つとされていた。</li>
+                        <li><strong>事象:</strong> 青崩峠トンネル（仮称）をはじめとする超難所で日本の先進的な土木技術が結集され、工事全体の進捗率は90%を超えた。一方で、地質対策等の追加工事により事業費は当初計画から増額されている。</li>
+                        <li><strong>結果/影響:</strong> 悲願の全線開通による物流の効率化や災害時の代替路確保、地域観光の活性化が見込める一方、増額された事業費への理解と今後の予算管理が重要課題となっている。</li>
+                    </ul>
                 </div>
+
+                <div class="banker-insight">
+                    <b>地銀視点の深掘り</b>
+                    <p>地方経済において、インフラの延伸は物流の「2024年問題」解決や観光需要の拡大に直結する大きなビジネスチャンスです。北海道でも高規格道路の整備は最重要課題の一つです。一方で、近年の建設業界は「原材料価格の高騰」や「予期せぬ工事難航に伴う事業費増額」といったリスクを抱えています。当行のお取引先である地元の土木・建設業者様も、同様の資金繰り課題や資材調達の難しさに直面しています。このニュースをフックに、「現在の案件で資材高騰の影響はありませんか？」「繋ぎ融資や設備投資の必要性はございませんか？」といったタイムリーな融資相談に繋げることが期待できます。</p>
+                </div>
+
+                <a href="https://news.yahoo.co.jp/articles/ad2c84937a116dff9735b502edac66fef0aaa678?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
 
         <!-- フッター -->
-        <footer style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e0e0e0; font-size: 0.85rem; color: #777; text-align: center;">
-            <p>© 2026 北海道地域金融共同研修シミュレーター. All rights reserved.</p>
-            <p>※本情報は内定者向けのデモ研修資料です。日々の経済ニュースを金融のプロの視点で解釈する練習に役立ててください。</p>
+        <footer style="margin-top: 3rem; border-top: 1px solid var(--pico-muted-border-color); padding-top: 1rem;">
+            <p class="text-center" style="text-align: center;"><small>© 2026 北海道地方銀行 新人サポートプロジェクト. All rights reserved.</small></p>
         </footer>
     </main>
 </body>
