@@ -3,57 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年07月16日) - 北海道地銀内定者向け</title>
+    <title>朝のインサイト - 2026年07月17日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --pico-primary: #007a43; /* 北海道の豊かな大地と針葉樹をイメージしたフォレストグリーン */
+            --primary: #007079; /* 北海道の自然や海をイメージしたティールカラー */
         }
         body {
             padding-top: 2rem;
             padding-bottom: 4rem;
         }
         header {
-            margin-bottom: 3rem;
-            border-bottom: 3px solid var(--pico-primary);
-            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--primary);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
         }
-        .subtitle {
-            color: #555;
-            font-size: 1.1rem;
-            margin-top: 0.5rem;
+        .weather-card {
+            background-color: var(--card-background-color);
+            border-left: 5px solid #888888;
         }
-        .weather-header {
-            color: #d97706;
-            font-weight: bold;
+        .news-title {
+            color: var(--primary);
         }
-        .section-title {
-            margin-top: 3rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 0.5rem;
-        }
-        .weather-detail {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-        .weather-item {
-            padding: 1rem;
-            background: rgba(0, 122, 67, 0.05);
-            border-radius: 8px;
-            text-align: center;
-        }
-        .news-card {
-            border-left: 4px solid var(--pico-primary);
-            padding-left: 1.5rem;
-        }
-        .deep-dive {
-            background-color: rgba(0, 122, 67, 0.03);
-            border-radius: 6px;
-            padding: 1rem;
-            margin-top: 1rem;
-            border-top: 1px dashed var(--pico-primary);
+        .badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            background-color: var(--primary);
+            color: white;
+            margin-bottom: 1rem;
         }
     </style>
 </head>
@@ -61,113 +40,89 @@
     <main class="container">
         <!-- ヘッダー -->
         <header>
-            <h1>☀️ 朝のインサイト (2026年07月16日)</h1>
-            <p class="subtitle">北海道の未来を担う内定者の皆様へ。本日の気象情報と、地銀ビジネスの視点を養う厳選ニュースをお届けします。</p>
+            <h1>☀️ 朝のインサイト (2026年07月17日)</h1>
+            <p>北海道の地方銀行内定者の皆さん、おはようございます。日々のニュースを金融・地銀の視点から捉え、未来の顧客提案や市場分析の力を少しずつ養っていきましょう。</p>
         </header>
 
         <!-- 天気セクション -->
-        <section>
+        <section id="weather">
+            <h2>本日の天気（北海道エリア）</h2>
             <article class="weather-card">
-                <h2 class="weather-header">📍 本日の北海道の天気（札幌基準）</h2>
-                <div class="weather-detail">
-                    <div class="weather-item">
-                        <strong>天気</strong>
-                        <p style="font-size: 1.5rem; margin: 0.5rem 0 0 0;">☀️ 晴天</p>
+                <div class="grid">
+                    <div>
+                        <strong>空模様:</strong> 厚い雲 ☁️
                     </div>
-                    <div class="weather-item">
-                        <strong>最高気温</strong>
-                        <p style="font-size: 1.5rem; margin: 0.5rem 0 0 0; color: #e11d48;">24.67℃</p>
+                    <div>
+                        <strong>最高気温:</strong> 21.9℃
                     </div>
-                    <div class="weather-item">
-                        <strong>最低気温</strong>
-                        <p style="font-size: 1.5rem; margin: 0.5rem 0 0 0; color: #2563eb;">24.67℃</p>
+                    <div>
+                        <strong>最低気温:</strong> 21.9℃
                     </div>
                 </div>
-                <p style="margin-top: 1.5rem; font-size: 0.95rem; line-height: 1.6;">
-                    <strong>【アシスタント解説】</strong><br>
-                    本日は1日を通して気温差がなく、最高・最低ともに約24.7℃と、北海道の夏らしく極めて爽やかで過ごしやすい気候です。梅雨のない北海道のこの清々しさは、本州からの観光客誘致にとっても絶好のアピールポイントとなります。外回りや店舗でのインターンシップ、自己学習にも最適な、はつらつとした一日になりそうです。
-                </p>
+                <footer style="font-size: 0.9rem; margin-top: 1rem; color: #666;">
+                    ※本日は終日気温の変化が少なく、涼しい一日となりそうです。体調管理に気をつけてお過ごしください。
+                </footer>
             </article>
         </section>
 
         <!-- ニュースセクション -->
-        <section>
-            <h2 class="section-title">📰 本日の厳選ビジネス・経済ニュース</h2>
+        <section id="news">
+            <h2>注目の経済・ビジネスニュース解説</h2>
 
-            <!-- ニュース1 -->
-            <article class="news-card">
-                <h3>【新NISA】45歳からでも間に合う？コツコツ「月3万円」×20年の運用結果をシミュレーション</h3>
+            <!-- 記事1 -->
+            <article>
+                <span class="badge">個人金融・リテール営業</span>
+                <h3 class="news-title">退職金2000万円の投資信託運用への懸念と資産形成の考え方</h3>
                 
-                <p><b>ロジカル要約</b></p>
+                <p><b>ロジカル要約</b>:</p>
                 <ul>
-                    <li><b>背景/経緯：</b> 2024年に抜本的拡充がなされた「新NISA」により国民の投資機運が高まる一方、40代〜50代の中堅・シニア層からは「今から始めても老後に間に合うのか」という焦りや不安の声が少なくない。</li>
-                    <li><b>事象：</b> 45歳から毎月3万円（年36万円）を20年間（65歳まで）積立投資した場合のシミュレーションを実施。投資元本720万円に対し、想定利回り年3%で約984万円、年5%で約1233万円に到達する結果が示された。</li>
-                    <li><b>結果/影響：</b> 時間を味方につける複利効果により、40代半ばから始めても老後資金の確かな備え（「2000万円問題」の大部分をカバー）になり得ることが確認され、投資の一歩を躊躇している世代に強い動機付けとなる。</li>
+                    <li><b>背景/経緯</b>: 定年退職を迎えた父親が、退職金2000万円を一括で投資信託の購入に充てたことで、家族内に運用リスクや将来設計に対する不安が広がった。</li>
+                    <li><b>事象</b>: 老後資金という極めて重要かつ安全性が求められる原資を、一つの金融商品（投資信託）に集中して、かつ一括で投資することの是非が問われている。</li>
+                    <li><b>結果/影響</b>: 購入時期や商品の選定によっては元本割れのリスクが高まる。一括ではなく分散（時間分散・商品分散）すること、また生活防衛資金を手元に残した上で計画的に運用することが推奨される。</li>
                 </ul>
 
-                <div class="deep-dive">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>
-                        地方銀行における個人向けリテール営業において、40〜50代の「準富裕層・現役層」は、将来の退職金運用や資産承継も見据えた最重要顧客です。窓口や営業先で「今さら始めても遅いよね」と呟くお客様に対し、このシミュレーションを用いた「具体的な時間と数字の可視化」は非常に有効な会話ネタとなります。特に、物価上昇が家計に影響を及ぼしている北海道において、預金から投資への「資金シフト」を促し、お客様のライフプランに寄り添うパートナーとして信頼を得るための基本アプローチとして覚えておきましょう。
-                    </p>
-                </div>
-                
-                <p style="margin-top: 1rem;">
-                    <a href="https://news.yahoo.co.jp/articles/9322609d12bb6c36087a41211b449ee1489fa54a?source=rss" role="button" class="outline">続きを読む</a>
-                </p>
+                <p><b>地銀視点の深掘り</b>:</p>
+                <p>地銀の個人営業（リテール）において、退職金の預かり入れおよび運用提案は極めて重要なビジネスです。北海道内でも高齢化とそれに伴う退職金運用のニーズは非常に高く、お客様から同様の相談をいただく機会が多々あります。単に高い収益性を謳うのではなく、お客様のライフプランやリスク許容度、ご家族の不安を丁寧にヒアリングし、数年分の生活費を確保した上で「コア・サテライト戦略（安全性と収益性の配分）」を用いた分散提案を行うことが、信頼されるバンカーへの第一歩です。</p>
+
+                <a href="https://news.yahoo.co.jp/articles/6fa6cfb0a6c155ff91671818f0795814e33bc77f?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース2 -->
-            <article class="news-card">
-                <h3>「やっちゃえ日産」は「らしく走れ日産」に　日産がブランドメッセージ刷新　新型エルグランドが「ブランド体現」</h3>
+            <!-- 記事2 -->
+            <article>
+                <span class="badge">外国為替・地域経済</span>
+                <h3 class="news-title">外国為替市場で歴史的な円安進行、NY円は162円台前半で推移</h3>
                 
-                <p><b>ロジカル要約</b></p>
+                <p><b>ロジカル要約</b>:</p>
                 <ul>
-                    <li><b>背景/経緯：</b> 日産自動車は長年、挑戦する姿勢を示す「やっちゃえ日産」のキャッチコピーを推進してきたが、EVシフトや知能化など新時代の自動車市場を見据え、新たなブランドイメージの再構築が求められていた。</li>
-                    <li><b>事象：</b> 新ブランドメッセージ「らしく走れ日産」を発表。単なる技術的挑戦に留まらず、乗る人の個性や「走る楽しさ」そのものに寄り添う方向性を提示し、その象徴として新型「エルグランド」をお披露目した。</li>
-                    <li><b>結果/影響：</b> 競合（トヨタ・ホンダ等）との明確な差別化を狙うとともに、既存ユーザーのエンゲージメント向上と、車への「こだわり」を持つ新たなファン層の開拓を目指す。</li>
+                    <li><b>背景/経緯</b>: 日米の金利差拡大が依然として強く意識されているため、円を売って利回りの高いドルを買う動きが止まらない。</li>
+                    <li><b>事象</b>: ニューヨーク外為市場において、円相場が一時1ドル＝162円29～39銭まで下落し、一段と円安が進行した。</li>
+                    <li><b>結果/影響</b>: 輸入エネルギーや原材料価格の上昇による国内のインフレ圧力がさらに強まる。一方で、輸出企業や外貨獲得を目指す観光関連産業にとっては追い風となる二面性がある。</li>
                 </ul>
 
-                <div class="deep-dive">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>
-                        大手メーカーのブランドメッセージ変更は、その系列の地元ディーラー（カーディーラー）や自動車整備・部品サプライヤーといった、我々地銀の「大切な法人取引先」の販売戦略に直結します。北海道は「1世帯に複数台保有」が珍しくない完全な車社会であり、ディーラーは地域の有力産業です。取引先経営者との面談時に「日産の新しいブランドスローガン、御社ではどのように体現・アピールされていく予定ですか？」と問いかけることで、広告投資や新型車導入に伴う設備資金、プロモーション用の運転資金などの「新たな資金ニーズ（融資提案）」を掘り起こす端緒になります。
-                    </p>
-                </div>
+                <p><b>地銀視点の深掘り</b>:</p>
+                <p>歴史的な円安は、北海道経済に極めて大きな影響を与えます。一次産業（農林水産業）が盛んな道内では、飼料・肥料やビニールハウスの燃料など、多くを輸入に依存しているため、仕入コストの高騰に直面する事業者が増えています。地銀の役割は、これらコスト高に苦しむ中小企業に対して、資金繰り融資や経営改善（省エネ設備投資への融資）を提案すること。また、円安で爆発的な回復を見せるインバウンド（観光地ニセコなど）の恩恵を受ける企業に対し、外貨両替や海外決済対応などのソリューションを提供していく姿勢が求められます。</p>
 
-                <p style="margin-top: 1rem;">
-                    <a href="https://news.yahoo.co.jp/articles/154dafbeca3f31aaed8861f190b45266e6ae7ce2?source=rss" role="button" class="outline">続きを読む</a>
-                </p>
+                <a href="https://news.yahoo.co.jp/articles/6bf7d15c7070339d1d8a3d03bac8d08a91545eb4?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- ニュース3 -->
-            <article class="news-card">
-                <h3>琵琶湖の西を行く「信号なしの無料バイパス」延伸で旧道が“ガラッガラ”に！ 「小松拡幅」整備効果が明らかに</h3>
+            <!-- 記事3 -->
+            <article>
+                <span class="badge">産業動向・生活支援</span>
+                <h3 class="news-title">【2026年7月】ガソリン補助金が1Lあたり7.5円へ大幅増額</h3>
                 
-                <p><b>ロジカル要約</b></p>
+                <p><b>ロジカル要約</b>:</p>
                 <ul>
-                    <li><b>背景/経緯：</b> 滋賀県・琵琶湖西縦貫道路の一部を構成する国道161号「小松拡幅」事業が進められ、信号機のない「無料のバイパス」区間が延伸・4車線化された。</li>
-                    <li><b>事象：</b> 国土交通省による整備効果の分析により、観光シーズンでも渋滞が激的緩和され、バイパス並行区間の旧道（現道）の交通量が大幅に減少。生活道路としての安全性も劇的に向上した。</li>
-                    <li><b>結果/影響：</b> 物流トラックの定時性確保による経済効率向上、広域観光ルートの利便性アップ、地域住民の交通事故リスク低下など、多角的なインフラ整備効果が実証された。</li>
+                    <li><b>背景/経緯</b>: 原油価格の高騰や円安の進行が長期化する中、国内の燃料油価格の急激な値上がりを抑制する必要性が高まっている。</li>
+                    <li><b>事象</b>: 政府は激変緩和対策としてのガソリン補助金を強化し、7月16日から22日までの1週間、1Lあたり前週を上回る「7.5円」の補助を適用。</li>
+                    <li><b>結果/影響</b>: 短期的なガソリン価格の急騰は防がれるものの、補助金終了後の価格動向や、今後の政府の支援方針に引き続き業界全体の注目が集まる。</li>
                 </ul>
 
-                <div class="deep-dive">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>
-                        一見、関西（滋賀県）のトピックですが、「道路インフラの整備＝人流・物流のダイナミックな変化」という構図は、北海道において非常に重要です。広大な北海道では、高規格道路の延伸やバイパス開通が「どの観光地にお客様が流れるか」「どこの工業団地に倉庫を建てるのが有利か」に直結します。地銀の行員（特に法人営業や地域振興部門）として、道内の高規格道路計画を常にキャッチアップし、それによって影響を受ける宿泊業・物流業・製造業のお客様に対して「バイパス開通で人の流れが変わりますから、あちらのエリアに新しい店舗や営業所を構えませんか？」といった、先見性を持ったビジネス提案を行うヒントになります。
-                    </p>
-                </div>
+                <p><b>地銀視点の深掘り</b>:</p>
+                <p>「広大で車社会」である北海道において、ガソリン価格は地域社会の生命線です。ガソリン代の動向は、道内物流を担う運送会社、農業用機械を動かす農家、さらには車で日々の買い物や通勤を行う一般家庭の消費マインドに直撃します。このニュースは、法人顧客（特に運輸業や建設業など）の資金繰りを気遣うコミュニケーションツールとして非常に強力です。「今回の補助金増額で少しは一息つけそうですか？」「今後の価格高騰に備え、長期の運転資金のご用意はいかがですか？」といった、お客様に寄り添う親身な声かけに活用しましょう。</p>
 
-                <p style="margin-top: 1rem;">
-                    <a href="https://news.yahoo.co.jp/articles/ccac5f25e79e1d0c05599f4dd488d698545f72fa?source=rss" role="button" class="outline">続きを読む</a>
-                </p>
+                <a href="https://news.yahoo.co.jp/articles/a6b1bed51857b41d6b78ade0bcaa664712a284d4?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
-
-        <!-- フッター -->
-        <footer style="margin-top: 4rem; text-align: center; font-size: 0.9rem; color: #777;">
-            <p>© 2026 北海道地方銀行 内定者サポート事務局 - All Rights Reserved.</p>
-        </footer>
     </main>
 </body>
 </html>
