@@ -3,114 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年07月18日) - 地銀内定者向け</title>
+    <title>朝のインサイト - 2026年07月19日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        body {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--pico-primary-background);
+            padding-bottom: 1rem;
+        }
+        .weather-info {
+            background-color: var(--pico-card-background-color);
+            border-left: 5px solid var(--pico-primary);
+        }
+        .news-section {
+            margin-top: 3rem;
+        }
+        article {
+            margin-bottom: 2.5rem;
+        }
+        b {
+            color: var(--pico-primary);
+        }
+    </style>
 </head>
 <body>
     <main class="container">
-        <header style="margin-bottom: 2rem; border-bottom: 2px solid var(--pico-primary); padding-bottom: 1rem;">
-            <h1>☀️ 朝のインサイト (2026年07月18日)</h1>
-            <p>北海道の地方銀行に内定された皆様、おはようございます。本日のニュースと天気から、今後の銀行業務や地元企業の皆様との会話に役立つ「ビジネスの芽」をお届けします。</p>
+        <header>
+            <h1>☀️ 朝のインサイト (2026年07月19日)</h1>
+            <p>北海道の地方銀行 内定者の皆様へ：本日の経済動向とキャリアのヒントをお届けします。</p>
         </header>
 
-        <!-- 天気セクション -->
-        <section id="weather" style="margin-bottom: 2.5rem;">
-            <article>
-                <header style="margin-bottom: 1rem;"><strong>📍 本日の北海道の天気予報</strong></header>
+        <section>
+            <article class="weather-info">
+                <h2>☁️ 本日の北海道（札幌）の天気</h2>
                 <div class="grid">
-                    <div>
-                        <span style="font-size: 2rem; margin-right: 0.5rem;">🌧️</span>
-                        <strong>天気:</strong> 小雨
-                    </div>
-                    <div>
-                        <strong>最高気温:</strong> 20.03℃
-                    </div>
-                    <div>
-                        <strong>最低気温:</strong> 20.03℃
-                    </div>
+                    <div><strong>天気:</strong> 厚い雲</div>
+                    <div><strong>最高気温:</strong> 23.01℃</div>
+                    <div><strong>最低気温:</strong> 23.01℃</div>
                 </div>
-                <footer style="margin-top: 1rem; padding-top: 0.5rem; font-size: 0.85rem; color: var(--pico-muted-color);">
-                    ※本日の北海道は雨模様で、夏場としては気温が低く肌寒い一日となりそうです。外回りや通勤の際は体温調節ができる服装と傘をご用意ください。
-                </footer>
+                <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.95rem;">
+                    ※本日は一日を通して気温の変化がほぼありません。どんよりとした厚い雲が広がり、体感としては少し肌寒く感じられる可能性があります。体調管理に気をつけてお過ごしください。
+                </p>
             </article>
         </section>
 
-        <!-- ニュース解説セクション -->
-        <section id="news">
-            <h2 style="margin-bottom: 1.5rem; border-left: 5px solid var(--pico-primary); padding-left: 0.5rem;">📰 厳選ビジネスニュース解説</h2>
+        <section class="news-section">
+            <h2>📰 本日の厳選経済・キャリアニュース（3選）</h2>
 
-            <!-- 記事1 -->
-            <article style="margin-bottom: 2rem;">
-                <h3>【ガソリン価格】愛知と静岡で価格差7.4円！中部3県（愛知・静岡・岐阜）の最新レギュラー価格を徹底比較（2026年7月第3週）</h3>
-                
-                <div style="margin-top: 1rem;">
-                    <p><b>ロジカル要約</b></p>
-                    <ul>
-                        <li><strong>背景/経緯:</strong> 原油価格の動向や地域の競合状況、流通経路の違いにより、隣接する県同士であってもガソリン価格に目に見える格差が生じている。</li>
-                        <li><strong>事象:</strong> 2026年7月第3週のレギュラーガソリン価格調査において、愛知県と静岡県の間で最大1リットルあたり7.4円の価格差が記録された。</li>
-                        <li><strong>結果/影響:</strong> 物流コストや生活費に地域的な格差が生じる。運送業をはじめとする事業者はコスト管理に敏感になり、顧客や企業が隣接県へ越境給油を行う行動も生じ得る。</li>
-                    </ul>
-                </div>
-
-                <div style="margin-top: 1rem; background-color: var(--pico-card-sectioning-background-color); padding: 1rem; border-radius: var(--pico-border-radius);">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>広大な土地を持つ北海道では、自動車は生活およびビジネスの「生命線」であり、ガソリン価格の変動は本州以上に地域経済を揺るがします。当行のお取引先である運輸・物流、観光、農業、そして移動の多い製造業の経営者様は、燃料コストの微増にも非常に敏感です。本州での価格差を「他山の石」として、取引先のコスト削減提案（エコカーへの更新資金、ルート最適化に向けたDX融資）や、経営者との挨拶時に『最近の燃料価格の動向と経費の状況はいかがですか？』と話を切り出す際の有力な話題になります。</p>
-                </div>
-
-                <div style="margin-top: 1rem; text-align: right;">
-                    <a href="https://news.yahoo.co.jp/articles/c387e8bac914d3681e9ba5441b0ba40427ba650d?source=rss" role="button" class="outline" target="_blank" rel="noopener">続きを読む</a>
-                </div>
+            <!-- 記事1：NY原油上昇 -->
+            <article>
+                <h3>NY原油上昇、一時1カ月ぶり高値水準</h3>
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li><b>背景/経緯：</b> 世界的な需要減退懸念が和らいだことや、主要産油国をめぐる地政学的リスクなどが意識された。</li>
+                    <li><b>事象：</b> ニューヨーク原油先物相場が上昇し、一時約1カ月ぶりの高値水準を記録した。</li>
+                    <li><b>結果/影響：</b> 世界的なエネルギー価格の押し上げ要因となり、インフレ再燃や各種産業のコスト増への懸念が広がっている。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>北海道は、広大な土地ゆえに「物流・運送」の依存度が非常に高く、冬場の暖房用をはじめとする燃料需要が他地域に比べて極めて高いのが特徴です。原油価格の上昇は、道内企業の仕入れコストや運送コストを直撃し、収益悪化をもたらす要因となります。配属後に担当する取引先の経営者へ「最近の燃料費高騰による資金繰りへの影響はいかがですか？」といったアプローチを行うことで、運転資金のニーズをいち早く察知する会話のきっかけに繋がります。</p>
+                <a href="https://news.yahoo.co.jp/articles/dfcf2965ed81f511288544f56ee41f94252c0ab2?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- 記事2 -->
-            <article style="margin-bottom: 2rem;">
-                <h3>「昇進させてはいけない若手」の正体・ベスト1</h3>
-                
-                <div style="margin-top: 1rem;">
-                    <p><b>ロジカル要約</b></p>
-                    <ul>
-                        <li><strong>背景/経緯:</strong> 人手不足に伴い若手の早期抜擢や成果主義的な評価が進む中、昇進させた後に組織全体のパフォーマンスを損なってしまう「不適合なリーダー」の存在が浮き彫りになっている。</li>
-                        <li><strong>事象:</strong> 「最も昇進させてはいけない若手」の第1位は、個人の営業成績やスキルは極めて優秀（ハイパフォーマー）でありながら、他者を蹴落としたりチームを平気で犠牲にしたりする「独善的な人物」である。</li>
-                        <li><strong>結果/影響:</strong> 独善的な人物が管理職になると、周囲の優秀な人材の離職や組織全体のモチベーション低下を招き、短期的には良くても中長期的には企業に深刻なダメージを与える。</li>
-                    </ul>
-                </div>
-
-                <div style="margin-top: 1rem; background-color: var(--pico-card-sectioning-background-color); padding: 1rem; border-radius: var(--pico-border-radius);">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>銀行業務は「信頼」の上に成り立っており、それはチームワーク（融資、預金、審査、営業などの高度な連携）によって生み出されます。内定者の皆さんが新人としてスタートを切るにあたり、「個人の成績」だけでなく「周囲へのサポートやチームへの貢献姿勢」を意識することが、将来的に信頼される行員への近道となります。また、これは取引先の中小企業の「後継者問題」や「幹部育成」をサポートする際の重要な評価基準でもあるため、将来の組織コンサルティング業務における経営相談の引き出しとしても非常に価値ある視点です。</p>
-                </div>
-
-                <div style="margin-top: 1rem; text-align: right;">
-                    <a href="https://news.yahoo.co.jp/articles/737774ab67160377a73e2b635fa80178c0c19b75?source=rss" role="button" class="outline" target="_blank" rel="noopener">続きを読む</a>
-                </div>
+            <!-- 記事2：日経平均 -->
+            <article>
+                <h3>日経平均6万5000円割れ、キオクシアは54％も下落、それでも今回の下落が上昇相場の間の調整にすぎないと見る3つの根拠</h3>
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li><b>背景/経緯：</b> 2026年に入り株価は歴史的な上昇を続けてきたが、キオクシアの大幅下落などハイテク関連銘柄の急落を受けて売りが先行。</li>
+                    <li><b>事象：</b> 日経平均株価が一時的に大台の6万5000円を割り込んだ。</li>
+                    <li><b>結果/影響：</b> 急な下落に不安が広がるものの、専門家の間では中長期的な成長トレンドの中での「一時的な調整（押し目）」とする見方が根強い。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>2026年の歴史的な株高局面（6万円台）における調整は、投資を行っている地方銀行の個人顧客（特に高齢の富裕層やリテール層）の心理に大きな動揺を与える可能性があります。地銀の強みである「対面での信頼感」を活かし、一時的な下落局面でもパニックにならず、中長期的な視点で資産運用を継続いただけるようアドバイスするための知識が試されます。また、北海道でも半導体産業（千歳市のラピダス等）への関心が高い今、テック企業の動向は地域経済への波及効果を予測する上でも欠かせない視点です。</p>
+                <a href="https://news.yahoo.co.jp/articles/e094aee7f712f7aa97e34d387dffbcf89ca004eb?source=rss" role="button" class="outline">続きを読む</a>
             </article>
 
-            <!-- 記事3 -->
-            <article style="margin-bottom: 2rem;">
-                <h3>メルセデスAMG新型「CLA 45 4MATIC＋」ドイツで初公開 680馬力のBEV四駆に進化</h3>
-                
-                <div style="margin-top: 1rem;">
-                    <p><b>ロジカル要約</b></p>
-                    <ul>
-                        <li><strong>背景/経緯:</strong> 脱炭素社会への移行を背景に、スポーツ性能を重視するハイエンドカー市場においても、エンジン車からBEV（バッテリーEV）へのシフトが急加速している。</li>
-                        <li><strong>事象:</strong> メルセデスAMGは、最高出力680馬力を誇る驚異的なパワーを備えた新型のBEV四輪駆動「CLA 45 4MATIC＋」をドイツで公開した。</li>
-                        <li><strong>結果/影響:</strong> 最新の駆動・電子制御技術により、EVでもエンジン車以上の走行パフォーマンスと高度な四輪駆動制御が両立することを示した。</li>
-                    </ul>
-                </div>
-
-                <div style="margin-top: 1rem; background-color: var(--pico-card-sectioning-background-color); padding: 1rem; border-radius: var(--pico-border-radius);">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>積雪地域である北海道において、「四駆（4WD）」と「EVのバッテリー性能（冬の暖房による電力ロスなど）」は、地元の方が新車を購入する際の最も懸念するトピックです。本ニュースは、高性能EVでも最新の4WD技術が著しく進化していることを伝えています。今後のEV普及に欠かせない『寒冷地での実用性』や『充電インフラの整備状況』について、地元自動車ディーラーのお取引先や、個人向けオートローンをご検討のお客様との雑談で『冬道のEV四駆の性能、最近凄くなってきていますね』と未来を見据えた最新トレンドとして語ることができます。</p>
-                </div>
-
-                <div style="margin-top: 1rem; text-align: right;">
-                    <a href="https://news.yahoo.co.jp/articles/6447d1a5be45f75d79405ecf47ca9630e2c4ae0d?source=rss" role="button" class="outline" target="_blank" rel="noopener">続きを読む</a>
-                </div>
+            <!-- 記事3：上司が見ているポイント -->
+            <article>
+                <h3>「人を見る目がある上司」が見ているポイント・ベスト1</h3>
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li><b>背景/経緯：</b> 組織における部下の育成や適切な評価において、マネージャー自身の「人を見る目」の重要性が高まっている。</li>
+                    <li><b>事象：</b> 人を見る目がある優れた上司が最も重視している共通の観察ポイント（「言動の一致」や「裏表のない誠実さ」など）が提唱された。</li>
+                    <li><b>結果/影響：</b> これを意識することで、上司と部下の間の信頼関係が強化され、組織の生産性向上や離職率低下に繋がる。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>このニュースは、春から新入行員として組織に入る皆さんにとって、配属先の上司や先輩と信頼関係を築くための重要なバイブルとなります。「言っていることと行動が伴っているか」というポイントは、実は銀行員が「融資先の経営者」を評価する際（定性評価）にもそのまま応用できる指標です。財務諸表（数字）だけでは見えない、経営者の資質や誠実さを見極める目を養うためにも、まずは皆さんが社内で「信頼される新人」として有言実行の姿勢を崩さないことからスタートしましょう。</p>
+                <a href="https://news.yahoo.co.jp/articles/73d7183ac556520c65be367ed7a1b54b955ae59c?source=rss" role="button" class="outline">続きを読む</a>
             </article>
         </section>
     </main>
-    <footer style="text-align: center; margin-top: 3rem; padding: 1.5rem 0; border-top: 1px solid var(--pico-muted-border-color); font-size: 0.9rem; color: var(--pico-muted-color);">
-        © 2026 北海道地銀 内定者サポートデスク
-    </footer>
 </body>
 </html>
