@@ -3,99 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 2026年07月19日</title>
+    <title>朝のインサイト - 北海道地方銀行内定者向け</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
+        :root {
+            --primary: #0066cc;
+        }
         body {
+            font-size: 0.95rem;
+            background-color: #f8fafc;
+        }
+        main {
             padding-top: 2rem;
-            padding-bottom: 2rem;
+            padding-bottom: 3rem;
         }
         header {
+            border-bottom: 2px solid var(--primary);
             margin-bottom: 2rem;
-            border-bottom: 2px solid var(--pico-primary-background);
             padding-bottom: 1rem;
         }
-        .weather-info {
-            background-color: var(--pico-card-background-color);
-            border-left: 5px solid var(--pico-primary);
+        .weather-card {
+            background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+            border: none;
+            color: #0369a1;
         }
-        .news-section {
-            margin-top: 3rem;
+        .weather-title {
+            color: #0369a1;
+            font-weight: bold;
         }
-        article {
-            margin-bottom: 2.5rem;
+        .logical-summary {
+            background-color: #f1f5f9;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
         }
-        b {
-            color: var(--pico-primary);
+        .logical-summary li {
+            margin-bottom: 0.5rem;
+        }
+        .insight-box {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            background-color: #eff6ff;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .read-more-btn {
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+        .welcome-msg {
+            font-size: 0.9rem;
+            color: #64748b;
+            text-align: right;
         }
     </style>
 </head>
 <body>
     <main class="container">
+        <!-- ヘッダー -->
         <header>
-            <h1>☀️ 朝のインサイト (2026年07月19日)</h1>
-            <p>北海道の地方銀行 内定者の皆様へ：本日の経済動向とキャリアのヒントをお届けします。</p>
+            <div class="grid">
+                <div>
+                    <h1>☀️ 朝のインサイト (2026年07月20日)</h1>
+                    <p>北海道の未来を担う内定者の皆様へ、本日押さえておくべき地域経済のヒントをお届けします。</p>
+                </div>
+                <div class="welcome-msg">
+                    <p>北海道地方銀行<br>内定者専用アシスタント</p>
+                </div>
+            </div>
         </header>
 
+        <!-- 天気セクション -->
         <section>
-            <article class="weather-info">
-                <h2>☁️ 本日の北海道（札幌）の天気</h2>
+            <article class="weather-card">
+                <h3 class="weather-title">📍 本日の北海道の天気</h3>
                 <div class="grid">
-                    <div><strong>天気:</strong> 厚い雲</div>
-                    <div><strong>最高気温:</strong> 23.01℃</div>
-                    <div><strong>最低気温:</strong> 23.01℃</div>
+                    <div>
+                        <strong>天気:</strong> 晴天 ☀️
+                    </div>
+                    <div>
+                        <strong>最高気温:</strong> 23.01℃
+                    </div>
+                    <div>
+                        <strong>最低気温:</strong> 23.01℃
+                    </div>
                 </div>
-                <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.95rem;">
-                    ※本日は一日を通して気温の変化がほぼありません。どんよりとした厚い雲が広がり、体感としては少し肌寒く感じられる可能性があります。体調管理に気をつけてお過ごしください。
+                <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem;">
+                    本日は全道的に爽やかな晴天に恵まれる見込みです。朝晩と日中の気温差に気を配り、元気に1日をスタートさせましょう！
                 </p>
             </article>
         </section>
 
-        <section class="news-section">
-            <h2>📰 本日の厳選経済・キャリアニュース（3選）</h2>
+        <!-- ニュース解説セクション -->
+        <section>
+            <h2 style="margin-top: 2rem; margin-bottom: 1.5rem;">📰 本日の厳選トピックス</h2>
 
-            <!-- 記事1：NY原油上昇 -->
+            <!-- 1件目の記事 -->
             <article>
-                <h3>NY原油上昇、一時1カ月ぶり高値水準</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><b>背景/経緯：</b> 世界的な需要減退懸念が和らいだことや、主要産油国をめぐる地政学的リスクなどが意識された。</li>
-                    <li><b>事象：</b> ニューヨーク原油先物相場が上昇し、一時約1カ月ぶりの高値水準を記録した。</li>
-                    <li><b>結果/影響：</b> 世界的なエネルギー価格の押し上げ要因となり、インフレ再燃や各種産業のコスト増への懸念が広がっている。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>北海道は、広大な土地ゆえに「物流・運送」の依存度が非常に高く、冬場の暖房用をはじめとする燃料需要が他地域に比べて極めて高いのが特徴です。原油価格の上昇は、道内企業の仕入れコストや運送コストを直撃し、収益悪化をもたらす要因となります。配属後に担当する取引先の経営者へ「最近の燃料費高騰による資金繰りへの影響はいかがですか？」といったアプローチを行うことで、運転資金のニーズをいち早く察知する会話のきっかけに繋がります。</p>
-                <a href="https://news.yahoo.co.jp/articles/dfcf2965ed81f511288544f56ee41f94252c0ab2?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>売上の3割を捨てた「下請け町工場」　自社ブランドのコーヒーフィルターが世界80の国・地域で求められる理由</h3>
+                
+                <div class="logical-summary">
+                    <strong>ロジカル要約</strong>
+                    <ul>
+                        <li><b>背景/経緯:</b> 受託加工（下請け）を中心とする中小製造業は、長年にわたり厳しい価格競争や親企業の業績に左右されるリスクに直面していた。</li>
+                        <li><b>事象:</b> 下請けとしての売上の約3割を失う覚悟で、独自の技術力を活かした「セラミック製コーヒーフィルター」の自社ブランド開発・販売に注力。</li>
+                        <li><b>結果/影響:</b> 国内外で大ヒットを記録し、今や世界80以上の国と地域で愛用されるまでに成長。下請け依存から脱却し、高収益かつ強固な自社ビジネスモデルを確立した。</li>
+                    </ul>
+                </div>
+
+                <div class="insight-box">
+                    <strong>地銀視点の深掘り（顧客との会話・提案のヒント）</strong>
+                    <p>
+                        北海道内にも、優れた技術を持ちながら「下請けからの脱却」や「独自の販路開拓」に頭を悩ませている中小企業（ものづくり企業）が数多く存在します。
+                        地銀の役割は単に資金を融資するだけではありません。本事例のように、取引先企業のコア技術を見極める「事業性評価」を行い、自社製品開発への挑戦を後押ししたり、ビジネスマッチング（販路開拓支援）や補助金獲得のサポートを提案したりする際の大変参考になる成功モデルです。
+                    </p>
+                </div>
+
+                <a href="https://news.yahoo.co.jp/articles/fd732d4d852d45ad2887501b55fa2d378b1f971e?source=rss" role="button" class="outline read-more-btn" target="_blank" rel="noopener noreferrer">続きを読む</a>
             </article>
 
-            <!-- 記事2：日経平均 -->
+            <!-- 2件目の記事 -->
             <article>
-                <h3>日経平均6万5000円割れ、キオクシアは54％も下落、それでも今回の下落が上昇相場の間の調整にすぎないと見る3つの根拠</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><b>背景/経緯：</b> 2026年に入り株価は歴史的な上昇を続けてきたが、キオクシアの大幅下落などハイテク関連銘柄の急落を受けて売りが先行。</li>
-                    <li><b>事象：</b> 日経平均株価が一時的に大台の6万5000円を割り込んだ。</li>
-                    <li><b>結果/影響：</b> 急な下落に不安が広がるものの、専門家の間では中長期的な成長トレンドの中での「一時的な調整（押し目）」とする見方が根強い。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>2026年の歴史的な株高局面（6万円台）における調整は、投資を行っている地方銀行の個人顧客（特に高齢の富裕層やリテール層）の心理に大きな動揺を与える可能性があります。地銀の強みである「対面での信頼感」を活かし、一時的な下落局面でもパニックにならず、中長期的な視点で資産運用を継続いただけるようアドバイスするための知識が試されます。また、北海道でも半導体産業（千歳市のラピダス等）への関心が高い今、テック企業の動向は地域経済への波及効果を予測する上でも欠かせない視点です。</p>
-                <a href="https://news.yahoo.co.jp/articles/e094aee7f712f7aa97e34d387dffbcf89ca004eb?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>「教育の学研」過去最高売上でも株価は半減、なぜ？　売上の半分を占める「介護ビジネス」の課題</h3>
+                
+                <div class="logical-summary">
+                    <strong>ロジカル要約</strong>
+                    <ul>
+                        <li><b>背景/経緯:</b> 少子化による市場縮小の懸念から、学研は成長分野として「介護ビジネス（高齢者向け住宅等）」への積極的な進出と多角化を図ってきた。</li>
+                        <li><b>事象:</b> 介護事業の牽引によりグループ全体の売上高は過去最高を記録したものの、介護業界における深刻な人手不足、人件費の高騰、新規施設の初期投資負担が利益率を圧迫。</li>
+                        <li><b>結果/影響:</b> 教育事業との本質的なシナジー（相乗効果）が見出しにくく、介護の収益性低下が懸念視されたことで、株式市場からの評価が低迷し株価半減という事態に陥った。</li>
+                    </ul>
+                </div>
+
+                <div class="insight-box">
+                    <strong>地銀視点の深掘り（顧客との会話・提案のヒント）</strong>
+                    <p>
+                        超高齢化社会を迎える北海道において、介護ビジネスは地域を支える不可欠な産業ですが、道内事業者も「人材確保の困難」と「コスト高」という全く同じ壁にぶつかっています。
+                        企業の財務状況や売上高の数字だけを追うのではなく、「その多角化戦略は本業と連動しているか」「投資効率は十分か」を鋭く分析する目が必要です。お取引先の介護事業者に対して、M&Aを通じた規模の経済の追求や、IT・ロボット導入による業務効率化資金の融資（DX支援）などを提案する視点を養いましょう。
+                    </p>
+                </div>
+
+                <a href="https://news.yahoo.co.jp/articles/68734321e611365ef79a9d94c310a93857a5dfbb?source=rss" role="button" class="outline read-more-btn" target="_blank" rel="noopener noreferrer">続きを読む</a>
             </article>
 
-            <!-- 記事3：上司が見ているポイント -->
+            <!-- 3件目の記事 -->
             <article>
-                <h3>「人を見る目がある上司」が見ているポイント・ベスト1</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><b>背景/経緯：</b> 組織における部下の育成や適切な評価において、マネージャー自身の「人を見る目」の重要性が高まっている。</li>
-                    <li><b>事象：</b> 人を見る目がある優れた上司が最も重視している共通の観察ポイント（「言動の一致」や「裏表のない誠実さ」など）が提唱された。</li>
-                    <li><b>結果/影響：</b> これを意識することで、上司と部下の間の信頼関係が強化され、組織の生産性向上や離職率低下に繋がる。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>このニュースは、春から新入行員として組織に入る皆さんにとって、配属先の上司や先輩と信頼関係を築くための重要なバイブルとなります。「言っていることと行動が伴っているか」というポイントは、実は銀行員が「融資先の経営者」を評価する際（定性評価）にもそのまま応用できる指標です。財務諸表（数字）だけでは見えない、経営者の資質や誠実さを見極める目を養うためにも、まずは皆さんが社内で「信頼される新人」として有言実行の姿勢を崩さないことからスタートしましょう。</p>
-                <a href="https://news.yahoo.co.jp/articles/73d7183ac556520c65be367ed7a1b54b955ae59c?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>つまらない老後を過ごしたくなかったら、真っ先にやめたほうがいい習慣とは？</h3>
+                
+                <div class="logical-summary">
+                    <strong>ロジカル要約</strong>
+                    <ul>
+                        <li><b>背景/経緯:</b> 定年退職後の「高齢期の孤立」や「生きがいの喪失」が深刻な社会問題となる中、その原因は現役時代の時間の使い方にあると指摘されている。</li>
+                        <li><b>事象:</b> 会社や仕事だけの人間関係（「仕事一筋」の習慣）を定年後もそのまま引きずってしまうことで、肩書を失った瞬間に社会との接点が遮断されてしまう。</li>
+                        <li><b>結果/影響:</b> 早期に健康を害したり退屈な老後を送ることになりやすい。現役時代から「職場以外のサードプレイス（第3の居場所）」を持ち、多様なコミュニティと繋がる習慣が不可欠となる。</li>
+                    </ul>
+                </div>
+
+                <div class="insight-box">
+                    <strong>地銀視点の深掘り（顧客との会話・提案のヒント）</strong>
+                    <p>
+                        地域密着型の地方銀行にとって、シニア層は預金や資産運用（退職金運用など）において非常に重要な顧客セグメントです。
+                        窓口や訪問時にお客様と信頼関係を築くためには、単に金融商品のメリットを説明するだけでなく、お客様の「退職後の生き方・ライフプラン」に深く共感し寄り添う対話が必要です。「最近何か趣味は始められましたか？」「地域の交流会への参加が健康に良いそうですね」といった、豊かなライフスタイルを提案する雑談力は、リテール（個人向け）営業での大きな武器となります。
+                    </p>
+                </div>
+
+                <a href="https://news.yahoo.co.jp/articles/0795957dfe4b41009ddc2398cc3496519c2a1a37?source=rss" role="button" class="outline read-more-btn" target="_blank" rel="noopener noreferrer">続きを読む</a>
             </article>
         </section>
+
+        <!-- フッター -->
+        <footer style="text-align: center; margin-top: 3rem; color: #64748b; font-size: 0.85rem;">
+            <p>© 2026 北海道地方銀行 内定者学習支援ポータル. All Rights Reserved.</p>
+        </footer>
     </main>
 </body>
 </html>
