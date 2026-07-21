@@ -3,178 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 北海道地方銀行内定者向け</title>
+    <title>朝のインサイト - 2026年07月21日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
         :root {
-            --primary: #0066cc;
+            --pico-font-size: 100%;
         }
         body {
-            font-size: 0.95rem;
-            background-color: #f8fafc;
+            padding-top: 1.5rem;
+            padding-bottom: 3.5rem;
+            background-color: var(--pico-background-color);
         }
-        main {
-            padding-top: 2rem;
-            padding-bottom: 3rem;
-        }
-        header {
-            border-bottom: 2px solid var(--primary);
+        .header-container {
             margin-bottom: 2rem;
+            border-bottom: 2px solid var(--pico-primary);
             padding-bottom: 1rem;
         }
         .weather-card {
-            background: linear-gradient(135deg, #e0f2fe, #bae6fd);
-            border: none;
-            color: #0369a1;
+            background-color: var(--pico-card-background-color);
+            border-left: 5px solid #1070ca;
         }
-        .weather-title {
-            color: #0369a1;
-            font-weight: bold;
-        }
-        .logical-summary {
-            background-color: #f1f5f9;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-        }
-        .logical-summary li {
-            margin-bottom: 0.5rem;
+        .news-card {
+            margin-bottom: 2rem;
         }
         .insight-box {
-            border-left: 4px solid var(--primary);
-            padding-left: 1rem;
-            background-color: #eff6ff;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
+            background-color: var(--pico-code-background-color);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
         }
-        .read-more-btn {
-            display: inline-block;
-            margin-top: 0.5rem;
+        ul.summary-list {
+            margin-bottom: 1rem;
         }
-        .welcome-msg {
-            font-size: 0.9rem;
-            color: #64748b;
-            text-align: right;
+        ul.summary-list li {
+            margin-bottom: 0.25rem;
         }
     </style>
 </head>
 <body>
     <main class="container">
-        <!-- ヘッダー -->
-        <header>
-            <div class="grid">
-                <div>
-                    <h1>☀️ 朝のインサイト (2026年07月20日)</h1>
-                    <p>北海道の未来を担う内定者の皆様へ、本日押さえておくべき地域経済のヒントをお届けします。</p>
-                </div>
-                <div class="welcome-msg">
-                    <p>北海道地方銀行<br>内定者専用アシスタント</p>
-                </div>
-            </div>
+        <header class="header-container">
+            <h1>☀️ 朝のインサイト (2026年07月21日)</h1>
+            <p><small>北海道の地方銀行 新人行員向け デイリー情報ブリーフィング</small></p>
         </header>
 
         <!-- 天気セクション -->
-        <section>
+        <section id="weather">
             <article class="weather-card">
-                <h3 class="weather-title">📍 本日の北海道の天気</h3>
-                <div class="grid">
-                    <div>
-                        <strong>天気:</strong> 晴天 ☀️
-                    </div>
-                    <div>
-                        <strong>最高気温:</strong> 23.01℃
-                    </div>
-                    <div>
-                        <strong>最低気温:</strong> 23.01℃
-                    </div>
-                </div>
-                <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem;">
-                    本日は全道的に爽やかな晴天に恵まれる見込みです。朝晩と日中の気温差に気を配り、元気に1日をスタートさせましょう！
+                <header>
+                    <strong>🌧️ 本日の道内気象情報</strong>
+                </header>
+                <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">
+                    <strong>天気:</strong> 強い雨 &nbsp;|&nbsp; 
+                    <strong>最高気温:</strong> 21.34℃ &nbsp;|&nbsp; 
+                    <strong>最低気温:</strong> 21.34℃
                 </p>
+                <small>※全域で強い雨が予想されています。外回り営業や移動時は足元に十分留意し、訪問先のお客様との冒頭の挨拶（お足元の悪い中…等）にもご活用ください。</small>
             </article>
         </section>
 
         <!-- ニュース解説セクション -->
-        <section>
-            <h2 style="margin-top: 2rem; margin-bottom: 1.5rem;">📰 本日の厳選トピックス</h2>
+        <section id="news">
+            <h2>📰 本日のピックアップニュース</h2>
 
-            <!-- 1件目の記事 -->
-            <article>
-                <h3>売上の3割を捨てた「下請け町工場」　自社ブランドのコーヒーフィルターが世界80の国・地域で求められる理由</h3>
+            <!-- 記事1 -->
+            <article class="news-card">
+                <h3>「今がチャンス」と焦って大損…下落相場で勝てる個人投資家が見極めることは？(ダイヤモンド・オンライン)</h3>
                 
-                <div class="logical-summary">
-                    <strong>ロジカル要約</strong>
-                    <ul>
-                        <li><b>背景/経緯:</b> 受託加工（下請け）を中心とする中小製造業は、長年にわたり厳しい価格競争や親企業の業績に左右されるリスクに直面していた。</li>
-                        <li><b>事象:</b> 下請けとしての売上の約3割を失う覚悟で、独自の技術力を活かした「セラミック製コーヒーフィルター」の自社ブランド開発・販売に注力。</li>
-                        <li><b>結果/影響:</b> 国内外で大ヒットを記録し、今や世界80以上の国と地域で愛用されるまでに成長。下請け依存から脱却し、高収益かつ強固な自社ビジネスモデルを確立した。</li>
-                    </ul>
-                </div>
+                <p><b>ロジカル要約</b></p>
+                <ul class="summary-list">
+                    <li><b>背景/経緯:</b> 金融市場のボラティリティが高まる中、相場下落時に焦って「安値買い」を狙い、さらに損失を拡大させる個人投資家が後を絶たない。</li>
+                    <li><b>事象:</b> 成果を上げる投資家は感情的な行動を避け、市場全体のトレンド転換や個人のリスク許容度、企業のファンダメンタルズを冷静に見極めている。</li>
+                    <li><b>結果/影響:</b> 一時的な相場変動に惑わされず、長期的な視点と資金管理を徹底することが、下落相場での致命傷を防ぎ安定的な資産形成につながる。</li>
+                </ul>
 
                 <div class="insight-box">
-                    <strong>地銀視点の深掘り（顧客との会話・提案のヒント）</strong>
-                    <p>
-                        北海道内にも、優れた技術を持ちながら「下請けからの脱却」や「独自の販路開拓」に頭を悩ませている中小企業（ものづくり企業）が数多く存在します。
-                        地銀の役割は単に資金を融資するだけではありません。本事例のように、取引先企業のコア技術を見極める「事業性評価」を行い、自社製品開発への挑戦を後押ししたり、ビジネスマッチング（販路開拓支援）や補助金獲得のサポートを提案したりする際の大変参考になる成功モデルです。
-                    </p>
+                    <p><b>地銀視点の深掘り</b></p>
+                    <p>当行のリテール営業窓口や資産運用相談において、相場急変動時にお客様から不安の声が寄せられるケースは多々あります。「安くなったから買い増したい」「損切りすべきか」といった相談に対し、焦りを煽らず、長期・積立・分散投資の原則やリスク管理の大切さを改めて説明する姿勢が求められます。相場環境に左右されない顧客本位の資産形成アプローチは、信頼獲得のための強力な会話ネタ・提案の軸となります。</p>
                 </div>
 
-                <a href="https://news.yahoo.co.jp/articles/fd732d4d852d45ad2887501b55fa2d378b1f971e?source=rss" role="button" class="outline read-more-btn" target="_blank" rel="noopener noreferrer">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/7ce628bfeeeac7cc11de7812d2db95ee071466ec?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
             </article>
 
-            <!-- 2件目の記事 -->
-            <article>
-                <h3>「教育の学研」過去最高売上でも株価は半減、なぜ？　売上の半分を占める「介護ビジネス」の課題</h3>
+            <!-- 記事2 -->
+            <article class="news-card">
+                <h3>木曽谷をゆく幹線国道で「1.5kmトンネル」ついに着工へ 災害リスク区間を回避(乗りものニュース)</h3>
                 
-                <div class="logical-summary">
-                    <strong>ロジカル要約</strong>
-                    <ul>
-                        <li><b>背景/経緯:</b> 少子化による市場縮小の懸念から、学研は成長分野として「介護ビジネス（高齢者向け住宅等）」への積極的な進出と多角化を図ってきた。</li>
-                        <li><b>事象:</b> 介護事業の牽引によりグループ全体の売上高は過去最高を記録したものの、介護業界における深刻な人手不足、人件費の高騰、新規施設の初期投資負担が利益率を圧迫。</li>
-                        <li><b>結果/影響:</b> 教育事業との本質的なシナジー（相乗効果）が見出しにくく、介護の収益性低下が懸念視されたことで、株式市場からの評価が低迷し株価半減という事態に陥った。</li>
-                    </ul>
-                </div>
+                <p><b>ロジカル要約</b></p>
+                <ul class="summary-list">
+                    <li><b>背景/経緯:</b> 山間部を通る主要国道は、豪雨や落石等の自然災害による不通リスクが高く、地域交通や物流の大きな弱点となっていた。</li>
+                    <li><b>事象:</b> 危険区間を迂回して安全な通行を確保するため、新たな「1.5kmバイパス構造トンネル」の建設工事が正式に着工された。</li>
+                    <li><b>結果/影響:</b> 防災性が大幅に向上し、停滞のない広域物流ネットワークの確立と地域経済の安全性・利便性の改善が期待される。</li>
+                </ul>
 
                 <div class="insight-box">
-                    <strong>地銀視点の深掘り（顧客との会話・提案のヒント）</strong>
-                    <p>
-                        超高齢化社会を迎える北海道において、介護ビジネスは地域を支える不可欠な産業ですが、道内事業者も「人材確保の困難」と「コスト高」という全く同じ壁にぶつかっています。
-                        企業の財務状況や売上高の数字だけを追うのではなく、「その多角化戦略は本業と連動しているか」「投資効率は十分か」を鋭く分析する目が必要です。お取引先の介護事業者に対して、M&Aを通じた規模の経済の追求や、IT・ロボット導入による業務効率化資金の融資（DX支援）などを提案する視点を養いましょう。
-                    </p>
+                    <p><b>地銀視点の深掘り</b></p>
+                    <p>北海道においても、冬季の吹雪や夏季の集中豪雨による交通途絶リスクは地域経済の死活問題です。インフラ整備関連の動きは、地元の土木・建設事業者における手形割引や機材調達・繋ぎ融資といった資金需要に直結します。また、物流業者や地元企業にとってもBCP（事業継続計画）に関わる重要テーマです。融資先である建設業・運輸業の経営者とのヒアリングの際、「防災インフラ整備と物流効率化」に関する話題として展開できます。</p>
                 </div>
 
-                <a href="https://news.yahoo.co.jp/articles/68734321e611365ef79a9d94c310a93857a5dfbb?source=rss" role="button" class="outline read-more-btn" target="_blank" rel="noopener noreferrer">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/a0e0f327b7759ac3ba0dc4187c23d14806479c75?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
             </article>
 
-            <!-- 3件目の記事 -->
-            <article>
-                <h3>つまらない老後を過ごしたくなかったら、真っ先にやめたほうがいい習慣とは？</h3>
+            <!-- 記事3 -->
+            <article class="news-card">
+                <h3>「結果を出し続ける人」が真っ先にやっていること・ナンバー1(ダイヤモンド・オンライン)</h3>
                 
-                <div class="logical-summary">
-                    <strong>ロジカル要約</strong>
-                    <ul>
-                        <li><b>背景/経緯:</b> 定年退職後の「高齢期の孤立」や「生きがいの喪失」が深刻な社会問題となる中、その原因は現役時代の時間の使い方にあると指摘されている。</li>
-                        <li><b>事象:</b> 会社や仕事だけの人間関係（「仕事一筋」の習慣）を定年後もそのまま引きずってしまうことで、肩書を失った瞬間に社会との接点が遮断されてしまう。</li>
-                        <li><b>結果/影響:</b> 早期に健康を害したり退屈な老後を送ることになりやすい。現役時代から「職場以外のサードプレイス（第3の居場所）」を持ち、多様なコミュニティと繋がる習慣が不可欠となる。</li>
-                    </ul>
-                </div>
+                <p><b>ロジカル要約</b></p>
+                <ul class="summary-list">
+                    <li><b>背景/経緯:</b> 多くのビジネスパーソンが成果を求めてスキルアップを目指すが、一時の成果に終わる人と継続して成果を出し続ける人には明確な差が存在する。</li>
+                    <li><b>事象:</b> 成果を出し続ける人は、仕事を溜め込まずに「優先順位の整理」と「タスクの細分化による即時着手」を最優先で実践している。</li>
+                    <li><b>結果/影響:</b> 着手へのハードルを下げて意思決定のスピードを上げることで、エラー修正も早くなり、結果的に質の高いアウトプットを継続的に生成できる。</li>
+                </ul>
 
                 <div class="insight-box">
-                    <strong>地銀視点の深掘り（顧客との会話・提案のヒント）</strong>
-                    <p>
-                        地域密着型の地方銀行にとって、シニア層は預金や資産運用（退職金運用など）において非常に重要な顧客セグメントです。
-                        窓口や訪問時にお客様と信頼関係を築くためには、単に金融商品のメリットを説明するだけでなく、お客様の「退職後の生き方・ライフプラン」に深く共感し寄り添う対話が必要です。「最近何か趣味は始められましたか？」「地域の交流会への参加が健康に良いそうですね」といった、豊かなライフスタイルを提案する雑談力は、リテール（個人向け）営業での大きな武器となります。
-                    </p>
+                    <p><b>地銀視点の深掘り</b></p>
+                    <p>新人行員として業務に慣れる中で、勘定処理、融資書類の確認、顧客フォローなど多様なタスクに追われがちです。業務を小さく分解して「まず一歩着手する」スピード感は、行内での業務効率化だけでなく、お客様へのレスポンスの早さという信用に直結します。また、業務改善や組織改革に取り組む中小企業の経営者に対しても、生産性向上や行動習慣作りという文脈で共有できる汎用性の高い情報です。</p>
                 </div>
 
-                <a href="https://news.yahoo.co.jp/articles/0795957dfe4b41009ddc2398cc3496519c2a1a37?source=rss" role="button" class="outline read-more-btn" target="_blank" rel="noopener noreferrer">続きを読む</a>
+                <a href="https://news.yahoo.co.jp/articles/9ff7e4bf485ecc0a1849cd25c43adc585d09e97b?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
             </article>
         </section>
 
-        <!-- フッター -->
-        <footer style="text-align: center; margin-top: 3rem; color: #64748b; font-size: 0.85rem;">
-            <p>© 2026 北海道地方銀行 内定者学習支援ポータル. All Rights Reserved.</p>
+        <footer style="text-align: center; margin-top: 3rem; border-top: 1px solid var(--pico-muted-border-color); padding-top: 1rem;">
+            <small>&copy; 2026 北海道地方銀行 新人研修・業務推進サポートチーム</small>
         </footer>
     </main>
 </body>
