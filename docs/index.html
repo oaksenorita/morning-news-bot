@@ -1,67 +1,133 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年08月11日)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>朝のインサイト - 2026年08月12日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        body {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            background-color: var(--pico-background-color);
+        }
+        .header-container {
+            border-bottom: 2px solid var(--pico-primary);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
+        .weather-card {
+            background-color: var(--pico-card-background-color);
+            border-left: 5px solid var(--pico-primary);
+        }
+        .weather-info {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+        .summary-box {
+            background-color: var(--pico-code-background-color);
+            padding: 1rem;
+            border-radius: var(--pico-border-radius);
+            margin-bottom: 1rem;
+        }
+        .insight-box {
+            border-left: 3px solid #2e7d32;
+            padding-left: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
 </head>
 <body>
     <main class="container">
-        <header>
-            <h1>☀️ 朝のインサイト (2026年08月11日)</h1>
+        <header class="header-container">
+            <h1>☀️ 朝のインサイト (2026年08月12日)</h1>
+            <p><small>北海道の未来を担う新人行員のためのデイリー情報キャッチアップ</small></p>
         </header>
 
-        <section>
-            <article>
-                <header>
-                    <strong>📍 本日の北海道の天気状況</strong>
-                </header>
-                <p><strong>天気:</strong> 晴天 | <strong>最高気温:</strong> 26.34℃ | <strong>最低気温:</strong> 26.34℃</p>
-                <p><small>過ごしやすい晴天の一日となります。外回りや店舗でのご案内時も、爽やかな笑顔と丁寧な接客を心がけましょう。</small></p>
+        <section id="weather">
+            <article class="weather-card">
+                <header><strong>🌤 本日の天気情報（北海道エリア）</strong></header>
+                <div class="weather-info">
+                    <span><strong>天気:</strong> 厚い雲</span>
+                    <span><strong>最高気温:</strong> 26.01℃</span>
+                    <span><strong>最低気温:</strong> 26.01℃</span>
+                </div>
             </article>
         </section>
 
-        <section>
-            <h2>📰 今日の厳選ニュース & 地銀インサイト</h2>
+        <section id="news">
+            <h2>本日の厳選ニュース（地銀視点解説付）</h2>
 
+            <!-- ニュース1 -->
             <article>
-                <h3>年収「400万円」は日本の平均年収より低い？ 住宅ローンと教育費に追われる40代は、毎月いくら貯蓄できれば安心なのでしょうか？</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><b>背景/経緯:</b> 40代子育て世代において、住宅ローンの返済と教育資金の負担が重なり、将来に向けた貯蓄や資産運用に頭を悩ませる世帯が増加している。</li>
-                    <li><b>事象:</b> 年収400万円世帯のリアルな収支状況や貯蓄実態を整理し、安心できる目標貯蓄額の設定と家計見直しのステップが提示された。</li>
-                    <li><b>結果/影響:</b> 可処分所得が圧迫される中、預金だけに頼らない先取り貯蓄やNISA制度を活用した長期・積立投資の重要性がさらに増している。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>リテール営業において、住宅ローンを利用中の子育て世代顧客に対する「資産形成（新NISAや積立投信など）」の提案ネタとして非常に有効です。「毎月の返済に加え教育費がかさむ時期ですが、将来に向けたご準備や資産の分散対応はお済みですか？」といった問いかけから家計相談に入り、長期的な信頼関係の構築とクロスセルへ繋げることができます。</p>
-                <a href="https://news.yahoo.co.jp/articles/ac7468eb8bd38b4725adc47bbaecc117fd5e8c63?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>熊が牛舎の餌狙う被害多発　保管庫の施錠徹底を(日本農業新聞)</h3>
+                
+                <div class="summary-box">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯:</b> 野生熊の生息圏拡大および山林の餌不足に伴い、農業・酪農地域への出没事例が増加傾向にある。</li>
+                        <li><b>事象:</b> 牛舎や倉庫に保管されている配合飼料やデントコーン等を狙い、熊が侵入・破壊する被害が相次いで発生しており、自治体や防除団体が保管庫の施錠徹底や電気柵設置を呼びかけている。</li>
+                        <li><b>結果/影響:</b> 飼料の汚損・損失といった直接的損害に加え、施設修繕コストの増大や作業者の安全確保が喫緊の課題となっている。</li>
+                    </ul>
+                </div>
+
+                <div class="insight-box">
+                    <b>地銀視点の深掘り</b>
+                    <p>北海道の基幹産業である酪農・農家様における重大な操業リスクです。農協や農業法人のお客様との面談時、「鳥獣被害対策や保管施設の整備状況」を話題にすることで、現場の困りごとに寄り添う姿勢を示せます。また、鳥獣害対策用の電気柵・堅牢な物置設置に向けた設備資金ニーズの掘り起こしや、自治体の補助金制度と連携したファイナンス提案の機会としてもご活用いただけます。</p>
+                </div>
+
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/11c1de29ba68c99adc5c3a69c1003fa5080592a8?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+                </footer>
             </article>
 
+            <!-- ニュース2 -->
             <article>
-                <h3>テスラの納車拠点「デリバリーセンター」、横浜・神戸に8月17日同時オープン</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><b>背景/経緯:</b> EV（電気自動車）世界最大手のテスラが、日本国内における納車プロセスの効率化と顧客体験向上を図っている。</li>
-                    <li><b>事象:</b> 2026年8月17日、神奈川県横浜市と兵庫県神戸市に大規模な納車専用拠点「デリバリーセンター」を2拠点同時に開設する。</li>
-                    <li><b>結果/影響:</b> 都市部を中心としたEV納車・サポート体制が強化され、国内自動車市場におけるEV普及の足がかりが広がっている。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>北海道でも寒冷地対応の改善に伴いEVに関心を持つ企業や消費者が増えつつあります。地元の自動車販売店や整備工場、エネルギー関連企業などの取引先との情報交換において「EVシフトによる地域の設備・サービス需要の変化」を議論する好材料になります。また、個人顧客向けマイカーローンの提案時に各種エコカー優遇制度の案内を合わせるなど、最新トレンドを押さえた対応が可能になります。</p>
-                <a href="https://news.yahoo.co.jp/articles/83681595f24f9f5c19f11af98a4cfbad78dff65f?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>ネットプロテクションズ、三井住友カードによる「NP掛け払い」の媒介での案件受領を開始(日本ネット経済新聞)</h3>
+
+                <div class="summary-box">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯:</b> B2B（企業間）取引における後払い（BNPL）需要の高まりと、売り手の未収金リスク軽減・請求業務効率化のニーズが拡大している。</li>
+                        <li><b>事象:</b> ネットプロテクションズが提供する企業間決済サービス「NP掛け払い」について、三井住友カードを通じた紹介・媒介（案件受領）のスキームが本格始動した。</li>
+                        <li><b>結果/影響:</b> 大手カード会社の顧客基盤を活用することで信用補完と導入が加速し、中小企業の売掛金回収リスク軽減とDX化が一段と推進される。</li>
+                    </ul>
+                </div>
+
+                <div class="insight-box">
+                    <b>地銀視点の深掘り</b>
+                    <p>法人営業において、取引先中小企業の最大の発注・受注リスクは「売掛金の回収不能」と「請求・回収事務の手間」です。当行でもビジネスマッチングやファクタリング、決済ソリューションを提供しています。他社カード会社やFinTech企業の連携事例を押さえておくことで、地元企業のデジタル化支援（DX推進）や資金繰り改善のビジネスマッチング提案のヒントにできます。</p>
+                </div>
+
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/bd8f8a317b32f23cab0dba0e8d4e6ac2d302849b?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+                </footer>
             </article>
 
+            <!-- ニュース3 -->
             <article>
-                <h3>「一流」と「凡人」を分ける決定的な差とは？</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><b>背景/経緯:</b> 同等の知識や能力を持ってスタートしても、ビジネスシーンで突出した成果を残す人物と伸び悩む人物に分かれる要因が分析されている。</li>
-                    <li><b>事象:</b> 思考の深さ、主体性、相手の真のニーズを汲み取る力、そして意思決定と行動のスピード感といった日常の姿勢の差が長期的な実績差を生む。</li>
-                    <li><b>結果/影響:</b> 業務スキルの習得だけでなく、日頃の「顧客視点」と「自己内省」の有無がビジネスパーソンとしての評価と成長速度を大きく左右する。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>新人行員として配属された際、単に「指示された事務を処理する」だけでは地域の顧客や先輩からの深い信頼は得られません。取引先の経営者が「何に悩み、何を求めているか」を一歩先回りして考え、準備や仮説提案を行う姿勢（一流の思考法）が重要です。日常の行内業務やOJTの段階からこのマインドを持つことで、早い段階で「頼りにされる銀行員」としての基礎を築くことができます。</p>
-                <a href="https://news.yahoo.co.jp/articles/7603c13fee12c37c6dad158f87d4ca7d66a65ea6?source=rss" role="button" class="outline">続きを読む</a>
+                <h3>EV充電サービス「テラチャージ」、東京・千葉のヨドバシ4店舗に50kW急速器を設置(レスポンス)</h3>
+
+                <div class="summary-box">
+                    <b>ロジカル要約</b>
+                    <ul>
+                        <li><b>背景/経緯:</b> EV（電気自動車）普及に向けて、滞在時間の長い商業施設や集客拠点での急速充電インフラ整備が求められている。</li>
+                        <li><b>事象:</b> EV充電インフラを推進する「テラチャージ」が、首都圏の大型家電量販店ヨドバシカメラ4店舗の駐車場に50kWの急速充電器を導入・設置した。</li>
+                        <li><b>結果/影響:</b> 商業施設の集客力向上および顧客滞在時間の有効活用を可能にし、地域全体のGX（グリーン・トランスフォーメーション）推進に寄与する。</li>
+                    </ul>
+                </div>
+
+                <div class="insight-box">
+                    <b>地銀視点の深掘り</b>
+                    <p>広大な北海道ではEVインフラの整備が観光地や主要移動ルートの利便性を左右する重要テーマです。道内のホテル・温泉旅館、道の駅、ドライブインなどを運営する取引先に対して、集客力向上や環境配慮（ESG/GX対応）を目的とした充電器設置のアライアンスや融資提案を行う際の先進事例として紹介・対話できます。</p>
+                </div>
+
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/d4191ccf76acc9d0499d7456b06e7260c21a3e49?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+                </footer>
             </article>
         </section>
     </main>
