@@ -1,135 +1,119 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>朝のインサイト - 2026年08月12日</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝のインサイト (2026年08月13日) - 北海道地銀 内定者向け情報</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
-        body {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-            background-color: var(--pico-background-color);
-        }
-        .header-container {
-            border-bottom: 2px solid var(--pico-primary);
+        header {
             margin-bottom: 2rem;
-            padding-bottom: 1rem;
+            padding-top: 1rem;
         }
-        .weather-card {
-            background-color: var(--pico-card-background-color);
-            border-left: 5px solid var(--pico-primary);
-        }
-        .weather-info {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            font-size: 1.1rem;
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
             margin-top: 0.5rem;
         }
-        .summary-box {
-            background-color: var(--pico-code-background-color);
-            padding: 1rem;
+        .weather-item {
+            background-color: var(--pico-card-background-color);
+            padding: 0.75rem;
             border-radius: var(--pico-border-radius);
-            margin-bottom: 1rem;
+            text-align: center;
+            border: 1px solid var(--pico-muted-border-color);
         }
-        .insight-box {
-            border-left: 3px solid #2e7d32;
-            padding-left: 1rem;
-            margin-top: 1rem;
+        article {
+            margin-bottom: 2rem;
+        }
+        .news-header {
+            margin-bottom: 1rem;
         }
     </style>
 </head>
 <body>
     <main class="container">
-        <header class="header-container">
-            <h1>☀️ 朝のインサイト (2026年08月12日)</h1>
-            <p><small>北海道の未来を担う新人行員のためのデイリー情報キャッチアップ</small></p>
+        <header>
+            <h1>☀️ 朝のインサイト (2026年08月13日)</h1>
+            <p><small>北海道の未来を担う内定者の皆さんへ。今日のビジネス視点と地域経済のヒントをお届けします。</small></p>
         </header>
 
-        <section id="weather">
-            <article class="weather-card">
-                <header><strong>🌤 本日の天気情報（北海道エリア）</strong></header>
-                <div class="weather-info">
-                    <span><strong>天気:</strong> 厚い雲</span>
-                    <span><strong>最高気温:</strong> 26.01℃</span>
-                    <span><strong>最低気温:</strong> 26.01℃</span>
+        <section aria-labelledby="weather-heading">
+            <article>
+                <h2 id="weather-heading" style="font-size: 1.25rem; margin-bottom: 0.5rem;">⛅ 本日の北海道エリアの天気</h2>
+                <p style="margin-bottom: 0.5rem;"><small>お盆期間中ですが、全道的に雲が広がり過ごしやすい気温となっています。営業活動や外出時の参考にしてください。</small></p>
+                <div class="weather-grid">
+                    <div class="weather-item">
+                        <strong>天気</strong><br>厚い雲
+                    </div>
+                    <div class="weather-item">
+                        <strong>最高気温</strong><br>22.86℃
+                    </div>
+                    <div class="weather-item">
+                        <strong>最低気温</strong><br>22.86℃
+                    </div>
                 </div>
             </article>
         </section>
 
-        <section id="news">
-            <h2>本日の厳選ニュース（地銀視点解説付）</h2>
+        <section aria-labelledby="news-heading">
+            <h2 id="news-heading" style="font-size: 1.5rem; margin-bottom: 1.5rem;">📰 厳選ニュース＆地銀視点解説</h2>
 
-            <!-- ニュース1 -->
+            <!-- 記事 1 -->
             <article>
-                <h3>熊が牛舎の餌狙う被害多発　保管庫の施錠徹底を(日本農業新聞)</h3>
+                <h3 class="news-header">「自分で巻くのが楽しい」「子どもが夢中に」…家で《ソフトクリーム》が作れるスジャータの“体験型サブスク”ヒットの裏側</h3>
                 
-                <div class="summary-box">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯:</b> 野生熊の生息圏拡大および山林の餌不足に伴い、農業・酪農地域への出没事例が増加傾向にある。</li>
-                        <li><b>事象:</b> 牛舎や倉庫に保管されている配合飼料やデントコーン等を狙い、熊が侵入・破壊する被害が相次いで発生しており、自治体や防除団体が保管庫の施錠徹底や電気柵設置を呼びかけている。</li>
-                        <li><b>結果/影響:</b> 飼料の汚損・損失といった直接的損害に加え、施設修繕コストの増大や作業者の安全確保が喫緊の課題となっている。</li>
-                    </ul>
-                </div>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> スジャータめいらくが、業務用として長年培ってきたソフトクリーム抽出技術と家庭向け需要（巣ごもり・家族団らん体験）を融合させた新サービスを模索。</li>
+                    <li><strong>事象:</strong> 専用マシンをレンタルし、自宅で本格的なソフトクリームを自分で巻いて作れる「体験型サブスクリプション」を展開し、ファミリー層を中心に人気を獲得。</li>
+                    <li><strong>結果/影響:</strong> 単なる「モノ（アイス）」の販売から「体験（コト）」を提供するビジネスモデルへの転換に成功し、継続的なリカーリング収益基盤を確立。</li>
+                </ul>
 
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>北海道の基幹産業である酪農・農家様における重大な操業リスクです。農協や農業法人のお客様との面談時、「鳥獣被害対策や保管施設の整備状況」を話題にすることで、現場の困りごとに寄り添う姿勢を示せます。また、鳥獣害対策用の電気柵・堅牢な物置設置に向けた設備資金ニーズの掘り起こしや、自治体の補助金制度と連携したファイナンス提案の機会としてもご活用いただけます。</p>
-                </div>
+                <b>地銀視点の深掘り</b>
+                <p>北海道の基幹産業である「酪農業」や「食品加工業」のお取引先への事業支援において、非常に示唆に富む事例です。道内には高品質な生乳や乳製品を強みとする事業者が多く存在しますが、価格競争に巻き込まれず高付加価値化を図るには「体験価値（コト消費）」や「サブスクリプション型モデル」の導入が有効な打ち手となります。取引先経営者との面談時には、単なる販路拡大だけでなく、こうした継続課金モデルや直販（D2C）展開による収益安定化のアイデアとして話題にすると深いディスカッションに繋がります。</p>
 
-                <footer>
-                    <a href="https://news.yahoo.co.jp/articles/11c1de29ba68c99adc5c3a69c1003fa5080592a8?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-                </footer>
+                <a href="https://news.yahoo.co.jp/articles/6c9702847d516b628e925fbce0ee6ca3ecb017e4?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
             </article>
 
-            <!-- ニュース2 -->
+            <!-- 記事 2 -->
             <article>
-                <h3>ネットプロテクションズ、三井住友カードによる「NP掛け払い」の媒介での案件受領を開始(日本ネット経済新聞)</h3>
+                <h3 class="news-header">お盆休み明けの「お土産」でわかる。二流の凡人と「気が利く一流」の違い。</h3>
+                
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> お盆休みや大型連休明けに職場や取引先へ渡す手土産は、ビジネスマナーや周囲への配慮力を測る試金石とされている。</li>
+                    <li><strong>事象:</strong> 「日持ちしないもの」「切り分けが必要なもの」を選ぶ二流に対し、一流は「個包装・常温保存・配りやすさ」や「相手の状況・好み」を緻密に考慮して選定する。</li>
+                    <li><strong>結果/影響:</strong> 細部への気配りが信頼感の醸成に直結し、組織内の円滑な人間関係や取引先との関係強化につながる。</li>
+                </ul>
 
-                <div class="summary-box">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯:</b> B2B（企業間）取引における後払い（BNPL）需要の高まりと、売り手の未収金リスク軽減・請求業務効率化のニーズが拡大している。</li>
-                        <li><b>事象:</b> ネットプロテクションズが提供する企業間決済サービス「NP掛け払い」について、三井住友カードを通じた紹介・媒介（案件受領）のスキームが本格始動した。</li>
-                        <li><b>結果/影響:</b> 大手カード会社の顧客基盤を活用することで信用補完と導入が加速し、中小企業の売掛金回収リスク軽減とDX化が一段と推進される。</li>
-                    </ul>
-                </div>
+                <b>地銀視点の深掘り</b>
+                <p>銀行員としての基本行動規範「リレーションシップ・バンキング」の原点がここにあります。銀行業務は信頼がすべてであり、相手の立場に立った細やかな気配り（相手の手間を減らす、相手の好みを把握する）ができるかどうかが、顧客からの信用度に大きく影響します。また、北海道内の洋菓子・食品銘菓メーカーはお取引先であるケースも多いため、「どの地域にどんな名産品があり、日持ちや個包装に対応しているか」を把握しておくことは、顧客訪問時の手土産選定だけでなく、地元企業の強みを理解する上でも有用な会話ネタになります。</p>
 
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>法人営業において、取引先中小企業の最大の発注・受注リスクは「売掛金の回収不能」と「請求・回収事務の手間」です。当行でもビジネスマッチングやファクタリング、決済ソリューションを提供しています。他社カード会社やFinTech企業の連携事例を押さえておくことで、地元企業のデジタル化支援（DX推進）や資金繰り改善のビジネスマッチング提案のヒントにできます。</p>
-                </div>
-
-                <footer>
-                    <a href="https://news.yahoo.co.jp/articles/bd8f8a317b32f23cab0dba0e8d4e6ac2d302849b?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-                </footer>
+                <a href="https://news.yahoo.co.jp/articles/78561b7da8a2e12478128dfabf10c2b225ba0acd?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
             </article>
 
-            <!-- ニュース3 -->
+            <!-- 記事 3 -->
             <article>
-                <h3>EV充電サービス「テラチャージ」、東京・千葉のヨドバシ4店舗に50kW急速器を設置(レスポンス)</h3>
+                <h3 class="news-header">パル公式通販サイト「PAL CLOSET」新アンバサダーにお笑いコンビ「エルフ」が就任</h3>
+                
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 大手アパレル・ライフスタイル企業のパルが、自社ECサイト「PAL CLOSET」の認知拡大と若年・幅広い顧客層の獲得を企図。</li>
+                    <li><strong>事象:</strong> 親しみやすさと個性で幅広い世代から人気を集めるお笑いコンビ「エルフ」を新アンバサダーに起用し、SNS連携や共感型プロモーションを開始。</li>
+                    <li><strong>結果/影響:</strong> 従来のモデル起用とは異なる親しみやすさ・エンタメ性をEC購買体験に付加し、デジタルネイティブ世代の囲い込みを加速。</li>
+                </ul>
 
-                <div class="summary-box">
-                    <b>ロジカル要約</b>
-                    <ul>
-                        <li><b>背景/経緯:</b> EV（電気自動車）普及に向けて、滞在時間の長い商業施設や集客拠点での急速充電インフラ整備が求められている。</li>
-                        <li><b>事象:</b> EV充電インフラを推進する「テラチャージ」が、首都圏の大型家電量販店ヨドバシカメラ4店舗の駐車場に50kWの急速充電器を導入・設置した。</li>
-                        <li><b>結果/影響:</b> 商業施設の集客力向上および顧客滞在時間の有効活用を可能にし、地域全体のGX（グリーン・トランスフォーメーション）推進に寄与する。</li>
-                    </ul>
-                </div>
+                <b>地銀視点の深掘り</b>
+                <p>地方創生や地元中小企業の販路開拓支援において、「オムニチャネル（店舗×EC）」戦略と「共感型マーケティング」の重要性が高まっています。道内の小売業・アパレル・観光関連企業においても、自社ECの活性化やSNSを活用したインフルエンサーマーケティングが課題となっています。地銀の担当者として、地元企業のデジタルシフト支援（DX支援やECモール出店支援）を提案する際、キャラクターやストーリー性を通じたファン獲得の具体例として引き合いに出せる好事例です。</p>
 
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>広大な北海道ではEVインフラの整備が観光地や主要移動ルートの利便性を左右する重要テーマです。道内のホテル・温泉旅館、道の駅、ドライブインなどを運営する取引先に対して、集客力向上や環境配慮（ESG/GX対応）を目的とした充電器設置のアライアンスや融資提案を行う際の先進事例として紹介・対話できます。</p>
-                </div>
-
-                <footer>
-                    <a href="https://news.yahoo.co.jp/articles/d4191ccf76acc9d0499d7456b06e7260c21a3e49?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-                </footer>
+                <a href="https://news.yahoo.co.jp/articles/f3b2ef4f5255855a4d49ab85c2b67401dec060ae?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
             </article>
         </section>
+
+        <footer style="margin-top: 3rem; text-align: center; border-top: 1px solid var(--pico-muted-border-color); padding-top: 1.5rem;">
+            <p><small>&copy; 2026 北海道地方銀行 内定者育成支援プログラム</small></p>
+        </footer>
     </main>
 </body>
 </html>
