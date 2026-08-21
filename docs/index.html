@@ -3,99 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年08月20日) - 北海道地銀内定者向け</title>
+    <title>朝のインサイト (2026年08月21日) | 北海道地銀 内定者向け情報</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
-        body {
-            padding: 1.5rem 0;
+        header {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
         }
-        .meta-info {
-            color: var(--pico-muted-color);
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
         }
-        .badge {
+        .weather-item {
+            text-align: center;
+            padding: 0.75rem;
+            background: var(--pico-card-background-color);
+            border-radius: var(--pico-border-radius);
+            border: 1px solid var(--pico-muted-border-color);
+        }
+        .section-label {
             display: inline-block;
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            background-color: var(--pico-primary-background);
-            color: var(--pico-primary-inverse);
-            font-size: 0.8rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.25rem;
+            color: var(--pico-primary);
         }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年08月20日)</h1>
-            <p class="meta-info">北海道の未来を担う新人バンカーのためのデイリー経済・地域情報ブリーフィング</p>
+            <h1>☀️ 朝のインサイト (2026年08月21日)</h1>
+            <p><small>道内経済・グローバル市場の動向を掴み、バンカーとしての視座を高める朝のニュースブリーフィング</small></p>
         </header>
 
-        <!-- 天気情報 -->
+        <!-- 天気セクション -->
         <article>
             <header>
-                <strong>📍 本日の北海道エリア気象概況</strong>
+                <strong>📍 本日の北海道エリア気象情報</strong>
             </header>
-            <div class="grid">
-                <div><strong>天気:</strong> 晴天 ☀️</div>
-                <div><strong>最高気温:</strong> 20.23℃</div>
-                <div><strong>最低気温:</strong> 20.23℃</div>
+            <p>道内は初秋を感じさせる爽やかな青空が広がり、過ごしやすい一日となります。気温差への体調管理にご留意ください。</p>
+            <div class="weather-grid">
+                <div class="weather-item">
+                    <small>天気</small>
+                    <p><strong>☀️ 晴天</strong></p>
+                </div>
+                <div class="weather-item">
+                    <small>最高気温</small>
+                    <p><strong>23.01℃</strong></p>
+                </div>
+                <div class="weather-item">
+                    <small>最低気温</small>
+                    <p><strong>21.86℃</strong></p>
+                </div>
             </div>
-            <footer>
-                <small>※道内は爽やかな気候です。外出時や顧客訪問時のアイスブレイク（気候の話題）に活用できます。</small>
-            </footer>
         </article>
 
-        <section>
-            <h2>厳選ビジネス・地域ニュース解説</h2>
+        <!-- ニュースセクション 1 -->
+        <article>
+            <h3>台湾「ホンハイ」の狙いは三菱ふそうのエンジン技術か!?　両者が設立した新メーカー「FUSO BUS」が送り出す車両とは</h3>
+            
+            <b class="section-label">ロジカル要約</b>
+            <ul>
+                <li><strong>背景/経緯:</strong> 世界的なEVシフトが進む中、受託製造大手のホンハイ（富士康）が商用車・バス分野への本格参入と技術基盤の強化を模索。</li>
+                <li><strong>事象:</strong> ホンハイと三菱ふそうが提携し、新ブランド・共同事業として「FUSO BUS」を展開。エンジン技術と電動化ノウハウの融合を推進。</li>
+                <li><strong>結果/影響:</strong> 商用車市場でのサプライチェーン再編が加速し、アジア圏を中心に新たなモビリティインフラの供給体制が構築されつつある。</li>
+            </ul>
 
-            <!-- ニュース1: 北方領土・地政学 -->
-            <article>
-                <div class="badge">地政学・水産業界</div>
-                <h3>中国には強気な高市首相がロシアには手も足も出ない…屈辱的な｢プーチンの北方領土初上陸｣を許した"日本の急所"</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><strong>背景/経緯:</strong> ウクライナ侵攻以降の日露関係冷え込みと極東における軍備強化が続く中、対中政策との温度差が浮き彫りに。</li>
-                    <li><strong>事象:</strong> ロシア側による北方領土の実効支配強化の動きや首脳級の動向に対し、日本側の有効な外交カードが限られている現状。</li>
-                    <li><strong>結果/影響:</strong> 北方四島周辺での安全操業協定やサケ・マス交渉など、北海道の水産業および根室・オホーツク沿岸地域の経済活動への先行き不透明感が一段と増大。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>北方領土問題や対露関係の硬直化は、道東エリアの水産加工業者や漁業協同組合の経営基盤に直結する死活問題です。融資先である水産関連企業へのヒアリングでは、仕入れルートの多様化や原価高騰への対応策を注視する必要があります。渉外活動では「操業状況や魚種確保の状況はいかがですか」といった現場目線のアプローチが信頼関係構築の第一歩になります。</p>
-                <a href="https://news.yahoo.co.jp/articles/f11e581611ca145ce2d0faebdda1950df31dea3d?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-            </article>
+            <b class="section-label">地銀視点の深掘り</b>
+            <p>道内の路線バス・観光バス運行会社や運送業各社において、EVバス導入やカーボンニュートラル対応は重要経営課題です。車両調達コストの変動や脱炭素化投資に伴う設備資金ニーズの把握に加え、道内の自動車部品・整備関連企業への二次的影響を考慮した伴走型支援や融資提案の切り口として活用できます。</p>
 
-            <!-- ニュース2: M&A・事業承継 -->
-            <article>
-                <div class="badge">事業承継・財務戦略</div>
-                <h3>M＆Aキャピタルパートナーズによる通期予想の上方修正　成約件数予想は引き下げなのになぜ？　競合・ストライクグループとの差を生んだ「大型案件」の存在</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 国内中小企業の経営者高齢化に伴い、事業承継型M&Aの需要が高止まりしている。</li>
-                    <li><strong>事象:</strong> 成約件数自体の予想は引き下げられたものの、手数料単価の高い「大型案件」の成約が進んだことで通期業績予想を上方修正。</li>
-                    <li><strong>結果/影響:</strong> M&A仲介市場において、単なるマッチング件数追及から企業価値評価が高い中堅・中核企業の事業再編・統合へのシフトが進んでいることが鮮明化。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>北海道内でも後継者不在に悩む優良中堅企業が増加しており、地銀にとってM&A・事業承継支援はフィービジネスおよび取引深耕の最重要戦略です。件数重視の小規模承継だけでなく、グループ再編や道外大手との資本提携といった「大型・高付加価値案件」を組成できるかが今後の差別化要因となります。取引先オーナーの潜在的な承継ニーズを早期に発掘する対話力が求められます。</p>
-                <a href="https://news.yahoo.co.jp/articles/7996df3ef7d0c3e529009f8db558dd9e84a68534?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-            </article>
+            <a href="https://news.yahoo.co.jp/articles/7d781e26c8669f9c9c813a4d5c398bf74ead9b3f?source=rss" role="button" class="outline">続きを読む</a>
+        </article>
 
-            <!-- ニュース3: 小売・財務分析 -->
-            <article>
-                <div class="badge">企業分析・与信管理</div>
-                <h3>528店から"ほぼ半減"…決算を見ればわかる､｢遊べる本屋｣ヴィレヴァンの"宝の山"が重荷に変わった本当の理由</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><strong>背景/経緯:</strong> ユニークな商品構成と店舗体験で急成長したヴィレッジヴァンガードだが、ピーク時の528店舗から店舗網が大幅に縮小。</li>
-                    <li><strong>事象:</strong> トレンド変化の加速とEC普及に伴い、強みであった「豊富な滞留在庫（宝の山）」がキャッシュフローを圧迫する不良在庫へと反転。</li>
-                    <li><strong>結果/影響:</strong> 運転資本の固定化と収益性悪化を招き、不採算店舗の大量閉鎖とビジネスモデルの抜本的見直しを余儀なくされた。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>地銀の融資審査・財務分析において「棚卸資産（在庫）の回転期間」と「運転資金の健全性」を見極める重要性を示す典型的な事例です。道内の小売・卸売業の取引先を見る際も、決算書上の資産に隠れた「陳腐化在庫」がないか、キャッシュを生む売上構造になっているかを定性・定量の両面から見抜く洞察力が銀行員として不可欠です。</p>
-                <a href="https://news.yahoo.co.jp/articles/902e60e00be64b3b5aa3b131ae993d00e34dbd5d?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-            </article>
-        </section>
+        <!-- ニュースセクション 2 -->
+        <article>
+            <h3>米国は“景気後退”の瀬戸際にある──。金融危機を研究するエコノミストが示す、2つの警告サイン</h3>
+            
+            <b class="section-label">ロジカル要約</b>
+            <ul>
+                <li><strong>背景/経緯:</strong> 高水準の政策金利が長期化する米国市場において、労働市場の軟化や消費の減速懸念が台頭。</li>
+                <li><strong>事象:</strong> 金融危機の歴史的パターンを研究するエコノミストが、信用収縮の兆候や雇用指標の悪化など「2つの警告サイン」を指摘。</li>
+                <li><strong>結果/影響:</strong> 米連邦準備制度理事会（FRB）の利下げシナリオや為替相場のボラティリティが高まり、世界的な資本フローへ警戒感が拡大。</li>
+            </ul>
+
+            <b class="section-label">地銀視点の深掘り</b>
+            <p>米国景気の動向はドル円為替レートに直結し、道内の水産・農産物輸出企業やインバウンド観光事業者、さらには輸入飼料・資材価格に悩む第一次産業の収支に大きな影響を与えます。法人顧客との対話では、為替リスクヘッジの提案や金利動向に応じた中長期の設備投資計画の策定支援が響く話題です。</p>
+
+            <a href="https://news.yahoo.co.jp/articles/a4a966cd698efa5da5baee0e84894637484ab43d?source=rss" role="button" class="outline">続きを読む</a>
+        </article>
+
+        <!-- ニュースセクション 3 -->
+        <article>
+            <h3>イーロン・マスク、ついにウォーレン・バフェットを株主に迎える ─ ある意味で</h3>
+            
+            <b class="section-label">ロジカル要約</b>
+            <ul>
+                <li><strong>背景/経緯:</strong> 伝統的バリュー投資の巨頭ウォーレン・バフェット率いるバークシャー・ハサウェイと、革新派起業家イーロン・マスクの投資哲学の違いが長年注目されていた。</li>
+                <li><strong>事象:</strong> バークシャーの間接的なポートフォリオ投資やインデックス構成等を通じ、実質的にテスラ等のマスク関連資産を保有する構図が成立。</li>
+                <li><strong>結果/影響:</strong> 伝統的な堅実経営とディスラプティブ（破壊的）な成長テック企業が交錯する現代の株式市場の構造変化を象徴するトピックとなった。</li>
+            </ul>
+
+            <b class="section-label">地銀視点の深掘り</b>
+            <p>富裕層顧客やオーナー経営者との資産運用・事業承継に関する面談時のアイスブレイクとして最適です。「伝統的なキャッシュフロー重視（バフェット流）」と「未来志向の成長投資（マスク流）」のバランスは、地域中小企業の事業投資判断や個人の資産形成ポートフォリオ助言にも通じる深い視座を提供します。</p>
+
+            <a href="https://news.yahoo.co.jp/articles/a3aabe528159c5adbfcb9c33263ed3ca6f520880?source=rss" role="button" class="outline">続きを読む</a>
+        </article>
+
+        <footer style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
+            <small>&copy; 2026 Morning Insights for Regional Bank Apprentices</small>
+        </footer>
     </main>
 </body>
 </html>
