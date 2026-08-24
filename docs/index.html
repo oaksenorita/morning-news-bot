@@ -3,82 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 2026年08月23日</title>
+    <title>朝のインサイト - 北海道地銀内定者向けデイリーニュース</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--pico-primary);
+            padding-bottom: 1rem;
+        }
+        .weather-card {
+            background-color: var(--pico-card-background-color);
+            border-left: 4px solid var(--pico-primary);
+        }
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        .weather-item {
+            text-align: center;
+            padding: 0.5rem;
+            background: var(--pico-background-color);
+            border-radius: var(--pico-border-radius);
+        }
+        .weather-item span {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--pico-muted-color);
+        }
+        .weather-item strong {
+            font-size: 1.2rem;
+        }
+        .section-title {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+        article {
+            margin-bottom: 2rem;
+        }
+    </style>
 </head>
 <body>
     <main class="container">
-        <header style="margin-bottom: 2rem; margin-top: 1rem;">
-            <h1>☀️ 朝のインサイト (2026年08月23日)</h1>
-            <p><small>北海道の地方銀行 内定者のためのデイリーニュース＆ビジネスインサイト</small></p>
+        <header>
+            <h1>☀️ 朝のインサイト (2026年08月24日)</h1>
+            <p><small>北海道の未来を担う内定者のための経済・ビジネス情報ダイジェスト</small></p>
         </header>
 
-        <section aria-label="本日の天気">
-            <article>
-                <header><strong>📍 北海道・本日の気象情報</strong></header>
-                <div class="grid">
-                    <div><strong>天気:</strong> 曇りがち</div>
-                    <div><strong>最高気温:</strong> 23.56℃</div>
-                    <div><strong>最低気温:</strong> 23.56℃</div>
+        <!-- 天気情報 -->
+        <article class="weather-card">
+            <header>
+                <strong>📍 北海道エリア 本日の気象概況</strong>
+            </header>
+            <div class="weather-grid">
+                <div class="weather-item">
+                    <span>天候</span>
+                    <strong>小雨 🌦️</strong>
                 </div>
-            </article>
-        </section>
+                <div class="weather-item">
+                    <span>最高気温</span>
+                    <strong>21.9℃</strong>
+                </div>
+                <div class="weather-item">
+                    <span>最低気温</span>
+                    <strong>21.86℃</strong>
+                </div>
+            </div>
+            <p style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--pico-muted-color);">
+                ※気温差が小さく、湿度が高い一日となります。訪問・外出時は足元と雨具にご注意ください。
+            </p>
+        </article>
 
-        <section aria-label="厳選ニュース解説">
-            <h2>📰 今日の重要トピックス（3選）</h2>
+        <!-- ニュース解説 1: 半導体 -->
+        <article>
+            <h3>富士フイルムグループの先端半導体材料工場に新棟が完成　生産能力が3倍に向上</h3>
+            
+            <strong class="section-title">ロジカル要約</strong>
+            <ul>
+                <li><strong>背景/経緯：</strong> 世界的なAI普及やデジタル化に伴い、最先端ロジック半導体や高機能メモリ向けの先端材料需要が急速に拡大。</li>
+                <li><strong>事象：</strong> 富士フイルムグループが先端半導体材料工場に新棟を竣工させ、生産能力を従来の3倍に増強した。</li>
+                <li><strong>結果/影響：</strong> サプライチェーンの強靭化と安定供給体制が確立され、先端プロセス向け材料市場における同社の競争力向上が見込まれる。</li>
+            </ul>
 
-            <!-- ニュース1: バフェット -->
-            <article>
-                <h3>投資の神様ウォーレン・バフェットはCEO退任後も主役？…アルファベットへの巨額の投資に果たした役割（海外）</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> バークシャー・ハサウェイを率いてきたウォーレン・バフェット氏の世代交代・権限移譲が進む中、巨大テック企業への投資判断が注目されていた。</li>
-                    <li><strong>事象:</strong> バフェット氏のCEO退任議論後も、同社によるアルファベット（Google親会社）などへの巨額投資において、同氏の投資哲学や影響力が依然として強い役割を果たしていることが浮き彫りに。</li>
-                    <li><strong>結果/影響:</strong> 経営体制の移行期にあっても「持続的な競争優位性を持つ企業への長期集中投資」という原則が組織に浸透しており、市場や投資家からの信頼維持に寄与している。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    事業承継や経営理念の継承は、北海道の中小企業やオーナー系取引先においても極めて重要な経営課題です。トップが変わっても揺るがない組織の「判断基準（DNA）」をどう残すかという観点は、将来法人営業（RM）として経営者と対話する際の質の高いディスカッションテーマになります。また、資産運用や信託提案の文脈でも顧客の関心を惹くトピックです。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/30110eef011f08d679cd082385ea6be9c13cacbe?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
+            <strong class="section-title">地銀視点の深掘り</strong>
+            <p>
+                北海道千歳市で進む次世代半導体製造（ラピダス関連）など、道内でも半導体関連のサプライチェーン形成や関連投資が加速しています。本件のような大手材料メーカーの設備投資は、道内の下請け加工業者や物流・建設関連の地元中小企業にも波及効果をもたらします。法人営業担当として、取引先企業が半導体エコシステムにどう参入・連動できるかを提案する際の重要トレンドとして押さえておきたいニュースです。
+            </p>
 
-            <!-- ニュース2: キャリア・働き方 -->
-            <article>
-                <h3>「グサッとくる…」真面目に頑張ってきた人ほど仕事で行き詰まる意外なワケ</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 若手・中堅ビジネスパーソンにおいて、与えられた業務を忠実にこなす「真面目な努力」が必ずしも成果や評価に直結しないケースが増加。</li>
-                    <li><strong>事象:</strong> 正解を求めるあまり視野が狭くなり、周囲への巻き込みや前提を疑う柔軟性が欠如することで、キャリアの壁に直面するメカニズムが指摘されている。</li>
-                    <li><strong>結果/影響:</strong> 単なる作業の正確さだけでなく、課題を自ら設定し、関係者を巻き込んで解決する「主体的な協業力」へのマインドセット転換が求められている。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    銀行業務は厳格な規程やコンプライアンス遵守が前提ですが、入行後に差がつくのは「地域企業や行内の関係者を巻き込んで価値を作る力」です。内定期間中から「指示待ちではなく、相手の真の課題は何か」を考える癖をつけることが、配属後のスムーズな立ち上がりや顧客との信頼構築につながります。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/2cee9234681061ea94d1e51e23065391da7b0bb8?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
+            <a href="https://news.yahoo.co.jp/articles/cecece32b97b365309b5db33456020b5ddae283f?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+        </article>
 
-            <!-- ニュース3: 自動車（SUV/四駆比較） -->
-            <article>
-                <h3>カローラクロスvsクロストレック！ ハイブリッドSUVの絶対王者と本格四駆の実力を徹底比較</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 燃費性能と悪路走破性の両立を求めるユーザーが増加し、コンパクト〜ミドルサイズSUV市場での競争が激化。</li>
-                    <li><strong>事象:</strong> ハイブリッドの燃費効率と居住性でリードする「カローラクロス」と、本格シンメトリカルAWDによる悪路走破力に強みを持つ「クロストレック」の実力比較が実施された。</li>
-                    <li><strong>結果/影響:</strong> 日常の経済性を重視する層と、積雪路・アウトドアなどタフな環境性能を求める層で需要の棲み分けが進んでいることが確認された。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    広大な面積と冬期の積雪環境を持つ北海道において、自動車市場は地域経済の生命線であり、四駆SUVの動向は道民の消費マインドを直接反映します。地元の自動車ディーラーや整備工場は地銀の重要なお取引先です。新型車の売れ行きや四駆性能へのニーズ動向を把握しておくことは、マイカーローン提案やディーラー向け運転資金・設備資金の融資提案時の基礎知識として大いに役立ちます。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/5b93a6e3ab30d75f826aaab972f8204d50110d6f?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
-        </section>
+        <!-- ニュース解説 2: 労務・マネジメント -->
+        <article>
+            <h3>逆パワハラに怯える管理職、放置する経営陣――「ハラスメント対応をあいまいにする会社」が自滅する理由</h3>
+            
+            <strong class="section-title">ロジカル要約</strong>
+            <ul>
+                <li><strong>背景/経緯：</strong> ハラスメント防止意識の高まりの一方で、部下から上司への「逆パワハラ」や指導への過剰なハラスメント主張に苦慮する現場が増加。</li>
+                <li><strong>事象：</strong> 経営陣が明確な基準やサポート体制を整備せず放置することで、中間管理職の疲弊や現場の指導力低下が発生している。</li>
+                <li><strong>結果/影響：</strong> 組織規律の崩壊、中間層の離職増、現場の生産性低下を招き、企業の持続的な成長を阻害するリスクが顕在化。</li>
+            </ul>
 
-        <footer style="margin-top: 3rem; text-align: center;">
-            <p><small>&copy; 2026 Morning Insights for Future Bankers - Hokkaido Local Bank Initiative</small></p>
-        </footer>
+            <strong class="section-title">地銀視点の深掘り</strong>
+            <p>
+                地域企業の人手不足が深刻化する中、人材の定着や組織力向上は融資先企業共通の最重要経営課題です。地銀の営業店では、単なる資金繰り支援だけでなく、人事評価制度や就業規則の整備など「組織ガバナンス」に関する経営相談への対応が求められます。また、内定者自身にとっても、入行後に上司やチームと適切なコミュニケーションを築く上で大いに参考となる視点です。
+            </p>
+
+            <a href="https://news.yahoo.co.jp/articles/fc21f511e981d85c93f98c91479ee598fc1793d6?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+        </article>
+
+        <!-- ニュース解説 3: 自動車・モビリティ -->
+        <article>
+            <h3>NISMOが「赤」を捨てた！　日産ノートシリーズが一部改良を受けてブラック基調の新モデル設定</h3>
+            
+            <strong class="section-title">ロジカル要約</strong>
+            <ul>
+                <li><strong>背景/経緯：</strong> コンパクトカー市場での競争激化や、多様化するユーザーの嗜好（上質感・シックなデザインへの志向）に対応する必要性。</li>
+                <li><strong>事象：</strong> 日産がノートシリーズの一部改良を行い、NISMOの象徴であった「赤」のアクセントを見直し、ブラックを基調とした新モデルを設定。</li>
+                <li><strong>結果/影響：</strong> スポーティ路線から洗練されたプレミアム路線への間口を広げ、新たな顧客層の獲得とブランドイメージの刷新を図る。</li>
+            </ul>
+
+            <strong class="section-title">地銀視点の深掘り</strong>
+            <p>
+                北海道は全国でも有数のモビリティ依存地域であり、自動車ディーラーや整備工場、部品販売業者は地銀の極めて重要な取引先です。人気量販車種のマイナーチェンジや商品力強化は、道内ディーラーの販売台数や自動車ローン（マイカーローン）需要に直結します。地元カーディーラーの経営者や営業担当者との面談時において、足元の商談動向や売れ筋のトレンドを掴むための格好のアイスブレイクネタになります。
+            </p>
+
+            <a href="https://news.yahoo.co.jp/articles/7af5eb213cc2336b005a2f9cc30d18adf567307d?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+        </article>
     </main>
 </body>
 </html>
