@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年08月25日) - 北海道地銀 内定者向けニュース</title>
+    <title>朝のインサイト (2026年08月27日) - 北海道地方銀行 内定者向け</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <style>
+        body {
+            padding-bottom: 2rem;
+        }
         .weather-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -16,95 +19,96 @@
             background-color: var(--pico-card-background-color);
             padding: 0.75rem;
             border-radius: var(--pico-border-radius);
-            text-align: center;
             border: 1px solid var(--pico-muted-border-color);
+            text-align: center;
         }
-        .weather-card span {
-            font-size: 0.85rem;
-            color: var(--pico-muted-color);
+        .weather-card small {
             display: block;
+            color: var(--pico-muted-color);
         }
         .weather-card strong {
             font-size: 1.25rem;
         }
         .section-title {
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
     </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年08月25日)</h1>
-            <p><small>北海道の地域経済と金融ビジネスの潮流を掴む、内定者のためのデイリーアップデート</small></p>
+            <h1>☀️ 朝のインサイト (2026年08月27日)</h1>
+            <p><small>北海道の地域経済とビジネス動向を捉える、内定者のための毎朝の金融・経済トピック</small></p>
         </header>
 
-        <!-- 本日の天気 -->
+        <!-- 天気セクション -->
         <article>
             <header>
-                <strong>📍 北海道エリアの本日の天気</strong>
+                <strong>📍 本日の北海道エリア 気象概況</strong>
             </header>
             <div class="weather-grid">
                 <div class="weather-card">
-                    <span>天候</span>
-                    <strong>☁️ 厚い雲</strong>
+                    <small>天気</small>
+                    <strong>☁️ 雲</strong>
                 </div>
                 <div class="weather-card">
-                    <span>最高気温</span>
-                    <strong>21.9 ℃</strong>
+                    <small>最高気温</small>
+                    <strong>26.9℃</strong>
                 </div>
                 <div class="weather-card">
-                    <span>最低気温</span>
-                    <strong>21.9 ℃</strong>
+                    <small>最低気温</small>
+                    <strong>26.86℃</strong>
                 </div>
             </div>
         </article>
 
-        <!-- 厳選ニュース解説 1 -->
+        <h2 class="section-title">厳選ニュース解説（3選）</h2>
+
+        <!-- ニュース1: 建材流通 -->
         <article>
-            <h3>変動金利は1年後に2％から3%台まで上がる?! 利上げペース加速の局面における住宅ローン選びの判断基準を解説！</h3>
-            <p><strong>ロジカル要約</strong></p>
+            <h3>全鉄連 7月建材6種販売6.2％減 流通、価格転嫁に尽力</h3>
+            <b>ロジカル要約</b>
             <ul>
-                <li><strong>背景/経緯:</strong> 日銀の追加利上げに伴い、長年続いてきた超低金利環境が転換点を迎え、各金融機関の短期プライムレート引き上げと変動金利型住宅ローンの金利上昇懸念が高まっている。</li>
-                <li><strong>事象:</strong> 今後の利上げペース次第では、現在0%台後半〜1%前後の変動金利が数年で2〜3%台へ急上昇するシナリオが現実味を帯びており、固定金利との比較・選択基準の再考が迫られている。</li>
-                <li><strong>結果/影響:</strong> 借入希望者の返済負担増リスクが高まる一方、固定金利やミックスローンの需要が増加。融資実行時のストレステスト（審査金利）の重要性がより増している。</li>
+                <li><strong>背景/経緯:</strong> 建設コストの上昇や人手不足を背景に、全国的に建設工事の着工遅延や見直しが継続している。</li>
+                <li><strong>事象:</strong> 全国鉄鋼販売業連合会（全鉄連）発表の7月主要建材6品種販売量が前年同月比6.2％減少。一方、流通各社は仕入コスト上昇分の価格転嫁を粘り強く進めている。</li>
+                <li><strong>結果/影響:</strong> 数量減を単価維持・改善で補う構造となっており、下流の建設業者や工務店における採算圧迫・資金繰りへの影響が懸念される。</li>
             </ul>
-            <p><strong>地銀視点の深掘り</strong></p>
-            <p>住宅ローンはリテール営業の要です。お客様は「金利が上がったら返済はどうなるのか」と強い不安を抱えています。単に金利の安さだけで変動金利を勧めるのではなく、5年ルール・125%ルールの仕組みや、固定金利選択型・全期間固定（フラット35等）とのリスク比較をロジカルに説明できるリテラシーが求められます。道内ハウスメーカーとの提携強化や、既存借換相談への丁寧な対応が新規顧客獲得の鍵となります。</p>
-            <a href="https://news.yahoo.co.jp/articles/01d0fbd2568ac1309f94bffe331a1d3a3c24c125?source=rss" role="button" class="outline">続きを読む</a>
+            <b>地銀視点の深掘り</b>
+            <p>北海道内でも大型再開発やインフラ整備が進む一方、中小建設業者や建材卸では資材高騰と着工延期に伴う運転資金需要が高まっています。顧客訪問時には「資材の価格転嫁がスムーズに進んでいるか」「工期延伸に伴うつなぎ資金のニーズはないか」といった視点でヒアリングを行うことが、新規融資やソリューション提案（ビジネスマッチング等）のきっかけになります。</p>
+            <a href="https://news.yahoo.co.jp/articles/448411bba09d9bdc6aed4a7a626ff7805a157aef?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
         </article>
 
-        <!-- 厳選ニュース解説 2 -->
+        <!-- ニュース2: 食品・リテール -->
         <article>
-            <h3>札幌を貫く「5kmの地下バイパス」工事で“地上の橋を相次ぎ撤去”へ 札幌駅至近で“東西分断” 街の動線が激変か？</h3>
-            <p><strong>ロジカル要約</strong></p>
+            <h3>ミスド「さつまいもド」8年目、全5種を発売 形も食感も“さつまいも”らしく進化</h3>
+            <b>ロジカル要約</b>
             <ul>
-                <li><strong>背景/経緯:</strong> 札幌都心の渋滞緩和と物流円滑化を目的とした「創成川通」の大規模地下バイパス事業（都心アクセス道路）が進行している。</li>
-                <li><strong>事象:</strong> 札幌駅至近の創成川を渡る地上の橋が工事進捗に伴い相次いで撤去され、東西方向の歩行者・車両動線が一時的に大きく制限される見込み。</li>
-                <li><strong>結果/影響:</strong> 工事期間中の周辺商業施設やオフィスビルへのアクセス悪化が懸念される一方、完成後は都心部と札幌北IC間のアクセスが劇的に改善し、長期的なエリア価値向上が期待される。</li>
+                <li><strong>背景/経緯:</strong> 秋の味覚スイーツ需要が年々早期化・定着する中、定番季節商品の差別化とリピート獲得が外食・菓子業界の課題。</li>
+                <li><strong>事象:</strong> ミスタードーナツが秋恒例「さつまいもド」を発売。8年目を迎え、素材感・食感・見た目を本物のさつまいもに近づけた5種類を展開。</li>
+                <li><strong>結果/影響:</strong> 単なるフレーバー展開にとどまらない商品開発力とプロモーションにより、秋商戦の来店客数増加および客単価アップを見込む。</li>
             </ul>
-            <p><strong>地銀視点の深掘り</strong></p>
-            <p>道内最大の経済中心地である札幌駅周辺・創成東エリアの再開発動向は、法人営業において必須のトピックです。工事期間中の動線変化によって客足や配送ルートに影響を受ける地元商店・企業への資金繰り支援や、中長期的な街の活性化を見越した不動産開発融資の提案機会となります。地元の経営者との面談でも「アクセスの変化による事業への影響」は格好の対話ネタになります。</p>
-            <a href="https://news.yahoo.co.jp/articles/b552e8cc521597c1ff9a700d955ab1181b2f03c9?source=rss" role="button" class="outline">続きを読む</a>
+            <b>地銀視点の深掘り</b>
+            <p>道内の基幹産業である農業および食品加工・製菓メーカーの取引先との雑談・アイスブレイクに最適な話題です。北海道でもサツマイモやカボチャ、小豆など秋の農産物を活用した高付加価値商品（6次産業化）への取り組みが盛んです。「今年度の秋物・季節限定商品の売れ行き動向」や「原材料調達・ブランド化の工夫」について対話を深める好材料になります。</p>
+            <a href="https://news.yahoo.co.jp/articles/44eaab0e1a99968fcea74a0b02a7ae0464f1a13b?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
         </article>
 
-        <!-- 厳選ニュース解説 3 -->
+        <!-- ニュース3: 環境・サーキュラーエコノミー -->
         <article>
-            <h3>年間家賃収入5700万円の不動産投資家・JOJO氏が“手痛い失敗”から学んだこと 「安い見積もりを出してきた建設会社が実は倒産寸前だった！」</h3>
-            <p><strong>ロジカル要約</strong></p>
+            <h3>エンビプロHD27年6月期 「10年後に向け基盤築く」 前期は構造改革に成果</h3>
+            <b>ロジカル要約</b>
             <ul>
-                <li><strong>背景/経緯:</strong> 資材高騰や人手不足が続く中、コスト削減を狙う不動産投資家が相場より大幅に安い見積もりを提示する施工業者を選定するケースが増加。</li>
-                <li><strong>事象:</strong> 極端な安値を出していた建設会社が工事着工後に資金ショートし倒産。前払金の回収不能や工事中断などの深刻なトラブルに発展した実例が報告された。</li>
-                <li><strong>結果/影響:</strong> 不動産投資における「施工会社の財務健全性」の確認不足が事業破綻に直結するリスクが浮き彫りとなり、発注者のリスクマネジメントの甘さが露呈。</li>
+                <li><strong>背景/経緯:</strong> サーキュラーエコノミー（循環型経済）や脱炭素への関心が高まる中、資源リサイクル業界の高度化と事業基盤強化が急務となっている。</li>
+                <li><strong>事象:</strong> 総合リサイクルのエンビプロHDが構造改革の成果を元に、次期に向けた成長基盤の構築と中長期投資方針を明示した。</li>
+                <li><strong>結果/影響:</strong> 廃棄物処理から高度な資源循環ソリューションへのシフトが進み、製造業をはじめとする企業のサプライチェーン全体への脱炭素支援が加速する。</li>
             </ul>
-            <p><strong>地銀視点の深掘り</strong></p>
-            <p>アパートローンや事業用不動産向け融資審査を行う際、物件の収益性だけでなく「施工業者の財務状況（与信）」を見極めることの重要性を物語る事例です。地銀の強みは、地元建設会社の財務内容や施工実績を幅広く把握している点にあります。アパート建築を検討する地主や投資家に対し、単に融資を提供するだけでなく、「信頼できる施工業者の選定アドバイス」や「出来高払いの適切な管理」をサポートすることで、伴走型金融機関としての付加価値を発揮できます。</p>
-            <a href="https://news.yahoo.co.jp/articles/b34cb5d0c9a3dc884caff1e8f6537d8d42d54d79?source=rss" role="button" class="outline">続きを読む</a>
+            <b>地銀視点の深掘り</b>
+            <p>地方銀行において「ESG・サステナビリティ経営支援」は最重要テーマの一つです。道内取引先に対しても、単なる廃棄物削減にとどまらず、副産物の再資源化や省エネ設備投資への「サステナビリティ・リンク・ローン」「グリーンローン」の提案が求められています。環境対応に取り組む地元企業の先進事例を知る上で非常に示唆に富むニュースです。</p>
+            <a href="https://news.yahoo.co.jp/articles/d651530cc4b64c1fc815f6216733f547044fa0a8?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
         </article>
 
         <footer>
-            <p><small>&copy; 2026 北海道地方銀行 内定者育成プログラム - 朝のインサイト</small></p>
+            <small>© 2026 北海道地方銀行 内定者研修サポートポータル</small>
         </footer>
     </main>
 </body>
