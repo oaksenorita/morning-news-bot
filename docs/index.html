@@ -3,149 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年08月31日) - 北海道地方銀行内定者向け情報</title>
+    <title>朝のインサイト (2026年09月01日)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <style>
-        header {
-            margin-bottom: 2rem;
-            border-bottom: 2px solid var(--pico-primary);
-            padding-bottom: 1rem;
-        }
-        .weather-card {
-            background-color: var(--pico-card-background-color);
-            border-left: 5px solid var(--pico-primary);
-        }
-        .weather-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1rem;
-            margin-top: 0.5rem;
-        }
-        .weather-item {
-            padding: 0.5rem;
-            border-radius: var(--pico-border-radius);
-            background: var(--pico-background-color);
-        }
-        .news-article {
-            margin-bottom: 2rem;
-        }
-        .logical-summary ul {
-            margin-bottom: 1rem;
-        }
-        .insight-box {
-            background: var(--pico-background-color);
-            padding: 1rem;
-            border-radius: var(--pico-border-radius);
-            margin-top: 1rem;
-            border-left: 4px solid var(--pico-ins-color);
-        }
-    </style>
 </head>
 <body>
     <main class="container">
-        <header>
-            <h1>☀️ 朝のインサイト (2026年08月31日)</h1>
-            <p><small>北海道の地方銀行 内定者向け デイリー経済・ビジネストレンド解説</small></p>
+        <header style="margin-bottom: 2rem;">
+            <h1>☀️ 朝のインサイト (2026年09月01日)</h1>
+            <p><small>北海道の地方銀行 内定者向け デイリー・ビジネスインサイト</small></p>
         </header>
 
-        <!-- 天気セクション -->
-        <article class="weather-card">
-            <header>
-                <strong>📍 本日の北海道エリア 気象概況</strong>
-            </header>
-            <div class="weather-grid">
-                <div class="weather-item">
-                    <small>天気</small>
-                    <p><strong>☁️ 曇りがち</strong></p>
-                </div>
-                <div class="weather-item">
-                    <small>最高気温</small>
-                    <p><strong>🔺 21.34℃</strong></p>
-                </div>
-                <div class="weather-item">
-                    <small>最低気温</small>
-                    <p><strong>🔻 19.86℃</strong></p>
-                </div>
-            </div>
-            <footer>
-                <small>※ 8月末を迎え、道内は秋の気配が強まっています。朝晩の寒暖差に留意し、体調管理を徹底しましょう。</small>
-            </footer>
+        <!-- 天気情報 -->
+        <article>
+            <header><strong>今日の天気予報</strong></header>
+            <p style="margin-bottom: 0;">
+                ☁️ <strong>天気:</strong> 厚い雲 ｜ 
+                🌡️ <strong>最高気温:</strong> 22.86℃ ｜ 
+                ❄️ <strong>最低気温:</strong> 22.86℃
+            </p>
         </article>
 
-        <!-- ニュースセクション -->
-        <section id="news-section">
-            <h2>厳選ビジネストピックス</h2>
+        <section>
+            <h2>厳選ニュース解説</h2>
 
-            <!-- ニュース1: 飲食料品値上げ -->
-            <article class="news-article">
-                <h3>飲食料品値上げ 9月は4923品目、今年最大の値上げラッシュ 2023年以来3年ぶりの多さ</h3>
-                <div class="logical-summary">
-                    <p><b>ロジカル要約</b></p>
-                    <ul>
-                        <li><strong>背景/経緯:</strong> 原材料価格の高止まり、物流費や人件費の上昇、為替動向を背景に、メーカー各社でコスト吸収の限界を迎えている。</li>
-                        <li><strong>事象:</strong> 2026年9月の飲食料品値上げが4,923品目に達し、単月として今年最大、2023年以来3年ぶりの高水準となる。</li>
-                        <li><strong>結果/影響:</strong> 家計の節約志向が一層強まる一方で、小売業・飲食業における価格転嫁力や収益確保の巧拙による業績二極化が予想される。</li>
-                    </ul>
-                </div>
-                <div class="insight-box">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>
-                        北海道の基幹産業である食品製造業や地場スーパー・外食チェーンにとって、価格転嫁は死活問題です。営業店訪問では「今回の値上げによる客離れや粗利益率への影響」「原材料調達コストの推移」が格好のヒアリング材料になります。運転資金需要や省力化・省人化に向けた設備投資ニーズを捉え、適切な融資提案やビジネスマッチングへ繋げる視点を養いましょう。
-                    </p>
-                </div>
-                <div style="margin-top: 1rem;">
-                    <a href="https://news.yahoo.co.jp/articles/84b5d9f014b50c9900bd55eeadc2b5b3f351702c?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-                </div>
+            <!-- ニュース1: 長期金利上昇 -->
+            <article>
+                <h3>長期金利、一時2.955％　30年ぶり水準、財政懸念で</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 国内の財政拡張懸念や金融正常化の進展に伴い、債券市場で国債の売り圧力が継続。</li>
+                    <li><strong>事象:</strong> 新発10年物国債の利回り（長期金利）が一時2.955％まで上昇し、約30年ぶりの高水準を記録。</li>
+                    <li><strong>結果/影響:</strong> 住宅ローン固定金利や企業の長期借入金利への上昇圧力が強まる一方、銀行にとっては貸出利ざやの拡大期待が高まる。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>
+                <p>
+                    金利上昇局面は、銀行の預貸金利ざや改善という追い風になる一方、道内取引先企業にとっては借入調達コスト増の経営リスクとなります。特に設備投資需要が高い地場メーカーや一次産業関連企業に対し、固定・変動金利の選択や金利スワップ等のヘッジ提案が急務です。融資先企業の財務健全性を見極めつつ、金利耐性を伴走支援する姿勢が求められます。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/315a6b9d12e5eaf8089de658349c6c9207dc029b?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
             </article>
 
-            <!-- ニュース2: 日産アトラス 4WD追加 -->
-            <article class="news-article">
-                <h3>日産の小型トラック『アトラス』、普通免許対応モデルに4WD追加…プリクラッシュブレーキも進化</h3>
-                <div class="logical-summary">
-                    <p><b>ロジカル要約</b></p>
-                    <ul>
-                        <li><strong>背景/経緯:</strong> 免許制度改定に伴う若手ドライバー確保の課題と、積雪地や悪路環境における実用的な小型商用車への高い需要。</li>
-                        <li><strong>事象:</strong> 日産が普通免許で運転可能な小型トラック『アトラス』に4WDモデルを追加設定し、安全運転支援システム（プリクラッシュブレーキ）を強化。</li>
-                        <li><strong>結果/影響:</strong> 運転手不足に悩む事業者が採用の間口を広げやすくなり、降雪地域における配送・現場作業の安全性・稼働率向上が期待される。</li>
-                    </ul>
-                </div>
-                <div class="insight-box">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>
-                        冬期の積雪・凍結路面が不可避な北海道において、「普通免許対応＋4WD」の商用トラックは、農業法人・建設業者・地場配送業者にとって待望の仕様です。「ドライバー採用や冬期の運行体制に課題はありませんか？」という投げかけから、商用車更新に伴う設備資金（カーリースやマイカーローン、オートローン含む事業性資金）の相談を発掘する切り口として活用できます。
-                    </p>
-                </div>
-                <div style="margin-top: 1rem;">
-                    <a href="https://news.yahoo.co.jp/articles/1e39196384953d01804a2bf37839f407a084473d?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-                </div>
+            <!-- ニュース2: 羽田空港 サテライト開業（女満別便） -->
+            <article>
+                <h3>羽田空港、木材生かした1タミ北サテライト開業　初便はJAL女満別行き　日本一長い搭乗橋も</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 羽田空港第1ターミナルの機能強化と脱炭素・国産木材利用の推進。</li>
+                    <li><strong>事象:</strong> 木材をふんだんに使用した北サテライト施設が開業し、記念すべき初便としてJAL女満別行きが出発。</li>
+                    <li><strong>結果/影響:</strong> 首都圏とオホーツク圏を結ぶゲートウェイの利便性・快適性が向上し、人流活性化が期待される。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>
+                <p>
+                    初便がオホーツクの玄関口である女満別行きとなったことは、道東エリアの観光・ビジネス誘致における絶好のPR材料です。知床をはじめとする観光資源へのインバウンド・国内旅行客の動向や、地元ホテル・飲食・交通事業者への波及効果に注目しましょう。また、木材活用建築のトレンドは道内林業・木材加工業にとってもビジネスチャンスであり、取引先への情報提供ネタとして有効です。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/20d05dd2e9d050e0e8a3863ff87a21c8a6087e00?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
             </article>
 
-            <!-- ニュース3: 高級SUV人気 -->
-            <article class="news-article">
-                <h3>「高いのに売れまくり」はなぜ!? 800万円級ランクル300など令和に大ヒットしたSUV「6台」の秘密</h3>
-                <div class="logical-summary">
-                    <p><b>ロジカル要約</b></p>
-                    <ul>
-                        <li><strong>背景/経緯:</strong> 車両価格の高騰が続く中、残価設定ローンの普及や高残価率（リセールバリュー）への着目が消費行動を変化させている。</li>
-                        <li><strong>事象:</strong> 800万円を超えるランドクルーザー300をはじめとする高価格帯SUVが、令和の市場で異例の納車待ち・大ヒットを記録。</li>
-                        <li><strong>結果/影響:</strong> 単なる「移動手段」ではなく「資産価値を維持・期待できる耐久消費財」としての車選びが定着し、プレミアム市場が拡大。</li>
-                    </ul>
-                </div>
-                <div class="insight-box">
-                    <p><b>地銀視点の深掘り</b></p>
-                    <p>
-                        北海道では走破性の高さからSUV需要が全国屈指の規模を誇ります。富裕層顧客（企業オーナーや医師・農業経営者等）との面談において、趣味やステータスだけでなく「リセールバリューを見据えた資産管理・キャッシュフロー設計」の話題として親和性が高いテーマです。リテール分野におけるマイカーローン提案や、オーナー個人の資産形成相談のきっかけ作りに役立ちます。
-                    </p>
-                </div>
-                <div style="margin-top: 1rem;">
-                    <a href="https://news.yahoo.co.jp/articles/133fdad16500c33377e957fcf7df75c9272aebc0?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-                </div>
+            <!-- ニュース3: 昭和100年 記念硬貨 -->
+            <article>
+                <h3>【昭和100年】記念硬貨発行で打初め式　“限定4万枚”新幹線や東京タワーなど描かれた『1000円硬貨』が3万4800円　大阪・造幣局</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 2026年（昭和換算で100年）の節目を迎える記念事業の一環。</li>
+                    <li><strong>事象:</strong> 造幣局で新幹線や東京タワーをデザインした限定4万枚の1000円銀貨（販売価格34,800円）の打初め式が実施。</li>
+                    <li><strong>結果/影響:</strong> コレクターのみならず、昭和世代を中心としたシニア層の間で高い関心と話題を集める。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>
+                <p>
+                    「昭和100年」というフレーズは、道内のシニア富裕層や事業オーナーとのアイスブレイクに非常に親和性が高い話題です。窓口や営業先で記念硬貨の話題から入り、お客様の創業当時の思い出や資産承継（事業承継・相続）ニーズのヒアリングへと自然に展開する会話のフックとして活用できます。
+                </p>
+                <a href="https://news.yahoo.co.jp/articles/625f2b71a5ebb622b6e89533fc3bf9255bbd73cb?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
             </article>
         </section>
 
-        <footer>
-            <hr>
-            <p><small>© 2026 北海道地方銀行 内定者サポートデスク | 本日のインプットを明日の提案力へ</small></p>
+        <footer style="margin-top: 3rem; text-align: center;">
+            <small>&copy; 2026 北海道地方銀行 新人育成プロジェクト</small>
         </footer>
     </main>
 </body>
