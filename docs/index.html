@@ -3,82 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年09月17日)</title>
+    <title>朝のインサイト (2026年09月19日) - 北海道地銀新人向け情報クリップ</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--pico-primary);
+            padding-bottom: 1rem;
+        }
+        .weather-card {
+            background-color: var(--pico-card-background-color);
+            border-left: 6px solid var(--pico-primary);
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            background-color: var(--pico-secondary-background);
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
     <main class="container">
         <header>
-            <h1>☀️ 朝のインサイト (2026年09月17日)</h1>
+            <h1>☀️ 朝のインサイト (2026年09月19日)</h1>
+            <p>北海道の地域経済・金融動向を見据える内定者向けデイリーアップデート</p>
         </header>
 
-        <!-- 天気情報 -->
-        <article>
+        <!-- 天気セクション -->
+        <article class="weather-card">
             <header>
-                <strong>📍 本日の道内気象概況</strong>
+                <strong>本日の道内天候サマリー</strong>
             </header>
             <div class="grid">
-                <div><strong>天気:</strong> 晴天</div>
-                <div><strong>最高気温:</strong> 20.79℃</div>
-                <div><strong>最低気温:</strong> 16.86℃</div>
+                <div><strong>天気:</strong> 小雨 🌧️</div>
+                <div><strong>最高気温:</strong> 19.67℃</div>
+                <div><strong>最低気温:</strong> 18.86℃</div>
             </div>
-            <footer style="margin-top: 1rem; font-size: 0.9rem; color: var(--pico-muted-color);">
-                朝晩の寒暖差が広がっています。取引先訪問の際は一枚羽織るものを用意し、体調管理に留意しましょう。
+            <footer>
+                <small>※ 20℃を下回り肌寒い一日となります。秋冬商戦や燃料需要の立ち上がりに着目しましょう。</small>
             </footer>
         </article>
 
-        <section>
-            <h2>本日の注目ニュース（地銀新人向け厳選）</h2>
+        <!-- ニュース解説1 -->
+        <article>
+            <span class="badge">地域モビリティ & 産業</span>
+            <h3>卓越した悪路走破性で唯一無二の存在「スズキ・ジムニー」【最新軽自動車 車種別解説 SUZUKI JIMNY】</h3>
+            <b>ロジカル要約</b>:
+            <ul>
+                <li><strong>背景/経緯:</strong> 軽自動車唯一のラダーフレーム構造とパートタイム4WDを備え、半世紀以上にわたり本格オフローダーとして独自の地位を確立。</li>
+                <li><strong>事象:</strong> 現行4代目はレトロモダンなスクエアデザインと最新安全機能を融合し、熱心なファンのみならずアウトドア志向の一般層へも支持を大幅拡大。</li>
+                <li><strong>結果/影響:</strong> 悪路走破性に加え高いリセールバリューを維持し、納車待ちが続く異例のロングセラーとして中古車相場も高水準を維持。</li>
+            </ul>
+            <b>地銀視点の深掘り</b>:
+            <p>
+                積雪や凍結路面が多い北海道において、ジムニーは生活必需品・業務車両として絶大な需要を誇ります。地元の自動車整備工場や中古車販売店へのヒアリング時には、「納期遅延による下取り・販売への影響」や「カスタムパーツ需要」を尋ねることで業界動向を掴む会話のきっかけになります。また、マイカーローン提案時にも資産価値の落ちにくい人気車種の特徴を把握しておくことは必須の基礎知識です。
+            </p>
+            <a href="https://news.yahoo.co.jp/articles/8572dfb2d6de83af81ae8be29574fea97d749220?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+        </article>
 
-            <!-- ニュース1: 物価指数 -->
-            <article>
-                <h3>8月の全国消費者物価指数1.7％上昇</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 原材料費・エネルギー価格の推移および人件費上昇を受けたサービス価格の改定動向が注視されていた。</li>
-                    <li><strong>事象:</strong> 総務省発表の8月全国消費者物価指数（生鮮食品を除くコアCPI）が前年同月比1.7％の上昇を記録。</li>
-                    <li><strong>結果/影響:</strong> 伸び率は一定水準を維持しており、日銀の金融政策正常化・追加利上げの判断材料となる一方、家計の実質購買力への影響が継続する。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>
-                    物価動向は金利見通しに直結し、当行の預貸金利息や利ざや戦略の前提となります。北海道内の中小企業取引先では「原材料高を適切に価格転嫁できているか」が資金繰りの成否を分けます。融資担当・渉外担当として、訪問先企業の収益圧迫状況をヒアリングする際の基礎データとして押さえておきましょう。個人顧客に対しては、インフレに負けない資産形成（NISA等）の提案フックとしても活用できます。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/fb5b86be6dfa10fa3e16e3ddfcbf2b61a7154945?source=rss" role="button" class="outline
-" target="_blank" rel="noopener noreferrer">続きを読む</a>
-            </article>
+        <!-- ニュース解説2 -->
+        <article>
+            <span class="badge">リテール金融 & 消費者保護</span>
+            <h3>解約したつもりの動画配信サービスから、翌月も料金が引き落とされていました。「手続きが完了していない」と言われましたが、見ていない月の料金まで払う必要がありますか？</h3>
+            <b>ロジカル要約</b>:
+            <ul>
+                <li><strong>背景/経緯:</strong> 動画配信をはじめとする定額課金（サブスクリプション）サービスの普及に伴い、解約漏れや決済トラブルに関する相談が増加。</li>
+                <li><strong>事象:</strong> アカウント削除と有料プラン解約の混同、決済事業者（クレカやキャリア決済）側の締日とのズレにより、意図せぬ引き落としが発生する。</li>
+                <li><strong>結果/影響:</strong> 契約上、正規の手続きが未完了である期間の料金支払義務は残るケースが多く、規約確認と確実な解約通知の保存が求められる。</li>
+            </ul>
+            <b>地銀視点の深掘り</b>:
+            <p>
+                銀行の窓口業務において、「身に覚えのない自動引き落としがある」「口座振替を今すぐ止めてほしい」といった相談は日常的に発生します。顧客の感情に寄り添いつつも、銀行側で勝手に契約解除の代行はできない法的な仕組みを冷静に説明できるスキルが新人には求められます。また、家計の見直し相談（リテール営業）において、不要な固定費削減の文脈から資産形成（NISA等）へ誘導する対話の引き出しとしても活用できます。
+            </p>
+            <a href="https://news.yahoo.co.jp/articles/e2b9bba3f066df09d81e6219d0ef866a714c827a?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+        </article>
 
-            <!-- ニュース2: 食品・米粉需要 -->
-            <article>
-                <h3>カバヤ食品「さくさくぱんだ」米粉に切り替え、食味を向上　新規・休眠ユーザーの取り込み図る</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 輸入小麦の価格高騰やグルテンフリー志向の高まりを背景に、食品業界で国産米粉を活用したリニューアル需要が拡大。</li>
-                    <li><strong>事象:</strong> カバヤ食品がロングセラー菓子「さくさくぱんだ」のビスケット生地を小麦粉主体から米粉へ刷新し、食感向上とブランド活性化を推進。</li>
-                    <li><strong>結果/影響:</strong> 既存顧客の再活性化に加え、米粉特有のサクサク感と健康イメージで新規層を獲得し、国産農産物の利用促進にも寄与。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>
-                    農業大国である北海道において、米粉用米の作付や道産米の高付加価値化は地域農業振興の重要テーマです。道内の食品加工業取引先にとっても、小麦代替や差別化戦略として米粉活用は注目度が高く、設備投資融資や道産原料マッチング支援の好機となります。「御社でも米粉や地元産原料を活用した新商品開発の動きはありますか？」と経営者に投げかけ、設備資金・販路開拓ニーズを深掘りしてみましょう。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/27298e2ec7662b2218e59785dc6319579c882e53?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-            </article>
-
-            <!-- ニュース3: 交通トラブル・家計防衛 -->
-            <article>
-                <h3>予約していた国内線が欠航しました。別便への振り替えではなく旅行自体を取りやめる場合、航空券は全額払い戻しされますか？</h3>
-                <p><b>ロジカル要約</b></p>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 自然災害や機材トラブル等に伴う欠航時の旅行中止について、利用者の権利や払い戻し規定への関心が高まっている。</li>
-                    <li><strong>事象:</strong> 航空会社都合（機材故障）や不可抗力（台風・悪天候等）による欠航時、便の振替を行わず取消す場合、原則として手数料なしで航空券代金は全額払い戻されるルールを解説。</li>
-                    <li><strong>結果/影響:</strong> 宿泊代やレンタカー等、自己手配した他交通・宿泊のキャンセル料は航空会社の補償対象外となるケースが多く、旅行保険や包括的なリスク管理の必要性が浮き彫りになる。</li>
-                </ul>
-                <p><b>地銀視点の深掘り</b></p>
-                <p>
-                    広大な北海道において航空便はビジネス・観光の生命線であり、秋の台風期や冬の大雪時には取引先の物流停滞や出張キャンセルが日常的に生じます。また、個人顧客（リテール窓口）との雑談・アイスブレイクとして「急な交通トラブル時の金銭補償」の話題は共感を得やすく、旅行傷害保険やクレジットカード付帯保険の案内、さらには道内観光関連先（ホテル・観光バス）の直前キャンセルによる資金繰り影響のモニタリングに繋がります。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/e26afd6d6cfdef1910e76252b65f4ebe004d17c9?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-            </article>
-        </section>
+        <!-- ニュース解説3 -->
+        <article>
+            <span class="badge">インフラ & 物流</span>
+            <h3>首都圏に潜む「10km超え鉄道トンネル」が転換点に ベッドタウンを貫く「路線図にない貨物線」はこうして生まれた</h3>
+            <b>ロジカル要約</b>:
+            <ul>
+                <li><strong>背景/経緯:</strong> 高度経済成長期の首都圏過密化に伴い、都市部を迂回して貨物を効率輸送するバイパス路線（武蔵野南線など）が地下トンネル主体で建設された。</li>
+                <li><strong>事象:</strong> 旅客線とは異なるネットワークとして整備され、現在も長距離貨物輸送の重要動脈として機能し続けている。</li>
+                <li><strong>結果/影響:</strong> 地形や都市計画の制約を克服したインフラ投資が、半世紀にわたり日本の大動脈のサプライチェーン安定化を支え続けている。</li>
+            </ul>
+            <b>地銀視点の深掘り</b>:
+            <p>
+                広大な北海道において「物流インフラの維持・強靭化」は道内経済最大の命題です。北海道新幹線の札幌延伸に伴う並行在来線（青函共用区間を含む貨物輸送ネットワーク）のあり方は、農水産品を本州へ送る道内企業にとって死活問題となっています。道内の物流・運送業、食品加工業の取引先と面談する際には、物流2024年問題への対応状況やモーダルシフト（鉄道・海運への転換）の設備投資計画をヒアリングする重要な視座となります。
+            </p>
+            <a href="https://news.yahoo.co.jp/articles/5b290876b83dad0e8f6503728dc2dd45e88b1416?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+        </article>
     </main>
 </body>
 </html>
