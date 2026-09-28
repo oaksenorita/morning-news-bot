@@ -3,85 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>朝のインサイト - 2026年09月27日</title>
+  <title>朝のインサイト | 2026年09月28日</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--pico-muted-border-color);
+      padding-bottom: 1rem;
+    }
+    .weather-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    .weather-item {
+      padding: 0.75rem;
+      background: var(--pico-card-background-color);
+      border-radius: var(--pico-border-radius);
+      border: 1px solid var(--pico-muted-border-color);
+      text-align: center;
+    }
+    .weather-item strong {
+      display: block;
+      font-size: 1.25rem;
+      color: var(--pico-primary);
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      font-size: 0.8rem;
+      border-radius: 999px;
+      background-color: var(--pico-primary-background);
+      color: var(--pico-primary-inverse);
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <main class="container">
     <header>
-      <h1>☀️ 朝のインサイト (2026年09月27日)</h1>
-      <p><small>北海道の地方銀行 内定者向けデイリーニュースブリーフィング</small></p>
+      <h1>☀️ 朝のインサイト (2026年09月28日)</h1>
+      <p><small>北海道の地域経済を担う未来のバンカーへ贈る、毎朝のマーケット＆ビジネストピック集</small></p>
     </header>
 
+    <!-- 天気セクション -->
     <article>
       <header>
-        <h2>🍂 本日の北海道の天気</h2>
+        <span class="badge">道内気象概況</span>
+        <h2>札幌・道央エリア 本日の天気</h2>
       </header>
-      <div class="grid">
-        <div><strong>天候:</strong> 厚い雲</div>
-        <div><strong>最高気温:</strong> 14.12℃</div>
-        <div><strong>最低気温:</strong> 13.86℃</div>
+      <div class="weather-grid">
+        <div class="weather-item">
+          <small>空模様</small>
+          <strong>厚い雲 ☁️</strong>
+        </div>
+        <div class="weather-item">
+          <small>最高気温</small>
+          <strong>19.67℃</strong>
+        </div>
+        <div class="weather-item">
+          <small>最低気温</small>
+          <strong>18.86℃</strong>
+        </div>
       </div>
-      <p style="margin-top: 1rem; margin-bottom: 0;">
-        道内は厚い雲に覆われ、日中も気温が上がらず14℃前後の肌寒い一日となります。朝晩との気温差は小さいものの、秋の深まりを感じる冷え込みです。季節の変わり目ですので、体調管理に気をつけてお過ごしください。
-      </p>
+      <p style="margin-top: 1rem; margin-bottom: 0;"><small>※本日は日中も気温が上がらず肌寒い一日となります。朝晩の冷え込みも本格化し、暖房需要や冬支度の話題が取引先とのアイスブレイクに役立ちます。</small></p>
     </article>
 
-    <section>
-      <h2>厳選ビジネストピックス（3選）</h2>
+    <h2 style="margin-top: 2.5rem;">厳選ニュース＆バンカーズ視点</h2>
 
-      <!-- 記事1: 新NISAと個人金融資産形成 -->
-      <article>
-        <h3>「この先の人生、年金と貯金だけで生きていくのは不安だ…」新NISAの成長投資枠で〈月5万円・年間60万円の自分年金〉を作る方法【FPが解説】</h3>
-        <b>ロジカル要約</b>
-        <ul>
-          <li><strong>背景/経緯:</strong> 物価高や長寿化に伴い、公的年金と預貯金だけでは老後資金に不安を抱える現役世代・シニア層が急増している。</li>
-          <li><strong>事象:</strong> 新NISAの「成長投資枠」を活用し、高配当株や分配重視の投資信託などを組み合わせて「月5万円（年間60万円）」の副次的インカムゲインを非課税で創出する具体的な資産設計手法が注目されている。</li>
-          <li><strong>結果/影響:</strong> 単なる預金保持から「インカム重視の資産運用」へのシフトが進み、リテール金融市場におけるアドバイザリー業務の需要が拡大している。</li>
-        </ul>
-        <b>地銀視点の深掘り</b>
-        <p>
-          地方銀行のリテール営業（個人営業）において、新NISAをフックとした資産形成・資産承継の相談対応は最重要テーマです。北海道内でも預金金利が動くなか、インフレ対策として預金から投資信託等への預替えを検討するお客様が増えています。「元本割れが怖い」というシニア層や現役世代に対し、リスクを抑えつつ“毎月の生活を豊かにする補填年金”という切り口で対話するアプローチは、将来窓口や渉外で非常に実用的なトークになります。
-        </p>
-        <a href="https://news.yahoo.co.jp/articles/b3776bc5b97503c6e399e2e683d958d2ded14188?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-      </article>
+    <!-- ニュース1 -->
+    <article>
+      <span class="badge">マーケット動向</span>
+      <h3>東証、続伸して始まる</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> 米国市場の堅調なハイテク株買いや為替動向を背景に、東京市場でも寄り付きから投資家の買い安心感が先行した。</li>
+        <li><strong>事象:</strong> 28日午前の東京株式市場において、日経平均株価が前日終値から続伸して取引を開始。主要銘柄を中心に買いが優勢となった。</li>
+        <li><strong>結果/影響:</strong> 企業収益への過度な懸念が和らぎ、投資マインドが改善。機関投資家および個人投資家の運用意欲の下支えとなっている。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>
+        株価の堅調な推移は、道内企業の設備投資マインド維持や預金者の資産運用（投資信託等）提案における好環境を後押しします。朝の支店内ミーティングでも「マクロ指標が安定している今こそ、預金滞留資金の運用ニーズを掘り起こす」という視点を持つと、先輩行員や上司との議論に深みが出ます。
+      </p>
+      <a href="https://news.yahoo.co.jp/articles/587904138156cfa76fb17f7866d4d61ea6722a32?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+    </article>
 
-      <!-- 記事2: ベルーナの優待と観光・通販 -->
-      <article>
-        <h3>【9月末権利確定】ベルーナの株主優待は100株から、通販割引券や「食品・ワイン・日本酒」を選べる仕組み。宿泊・飲食で使える割引券も</h3>
-        <b>ロジカル要約</b>
-        <ul>
-          <li><strong>背景/経緯:</strong> 個人投資家の裾野拡大やファン株主獲得を目的に、自社サービスを活かした魅力的な株主優待制度を展開する企業が定着している。</li>
-          <li><strong>事象:</strong> ベルーナが9月末権利確定の株主に対し、自社通販割引券、食品・ワイン・酒類の贈呈、自社運営のホテル・飲食店割引券などを選択できる優待を実施。</li>
-          <li><strong>結果/影響:</strong> 投資家の利便性を高めると同時に、同社が展開する宿泊・飲食事業や通販の利用促進・クロスセルを実現している。</li>
-        </ul>
-        <b>地銀視点の深掘り</b>
-        <p>
-          9月末は上場企業の中間決算・配当・優待の権利確定が集中する時期です。ベルーナは北海道内（洞爺湖や定山渓など）でもリゾートホテル事業を積極的に展開しており、観光・宿泊業に強みを持つ道内経済とも結びつきがあります。地元観光事業者への融資や事業支援を行う際、こうした大手資本の集客施策（優待券活用や自社顧客網の送客力）を把握しておくことは、取引先ホテル・旅館の競争力分析やビジネスマッチングのヒントになります。
-        </p>
-        <a href="https://news.yahoo.co.jp/articles/3b447bd8868e1aa1f2f0be26378d1b2f631520e8?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-      </article>
+    <!-- ニュース2 -->
+    <article>
+      <span class="badge">コンプライアンス & DX</span>
+      <h3>契約書をChatGPTで要約する前に。情報漏洩を防ぐ3つの注意点</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> 生成AIツールの業務利用が急速に拡大する一方、守秘義務や個人情報保護の観点で情報漏洩リスクが顕在化している。</li>
+        <li><strong>事象:</strong> 契約書や社外秘資料をそのまま外部AIに入力することで、学習データへの取り込みや意図しない漏洩が生じる懸念について、3つの具体的防御策が提示された。</li>
+        <li><strong>結果/影響:</strong> 法的トラブル回避のため、入力データのマスキング徹底やエンタープライズ版AIの利用、社内ガバナンス規則の厳格化が急務となっている。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>
+        銀行業務では「守秘義務（銀行法第24条等に関連する厳格な情報管理）」が生命線です。内定者の段階から「AI利用＝情報漏洩リスクの検証」をセットで考える習慣は不可欠。また、人手不足に悩む道内中小企業の取引先でもDX推進と情報セキュリティのジレンマに直面しており、「生成AIの安全な活用ガイドライン」は経営相談におけるタイムリーな助言ネタになります。
+      </p>
+      <a href="https://news.yahoo.co.jp/articles/145a48e3423e4f305fbebe59b3dd83736f45bb7b?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+    </article>
 
-      <!-- 記事3: 3Dスキャン・DX技術の進展 -->
-      <article>
-        <h3>写真は平面、動画は時間、次は空間　中国「KIRI」が挑む3D記録の日常化</h3>
-        <b>ロジカル要約</b>
-        <ul>
-          <li><strong>背景/経緯:</strong> AIおよびコンピュータービジョン技術の進化により、高価な機材を必要とせずスマートフォンから手軽に3Dスキャンができる環境が整いつつある。</li>
-          <li><strong>事象:</strong> 中国発のスタートアップ「KIRI」が、日常の物体や空間を高品質な3Dデータとして記録・生成するAIアプリを展開し、記録メディアのパラダイムシフトを主導。</li>
-          <li><strong>結果/影響:</strong> ゲームやメタバースだけでなく、ECの商品展示、不動産の内見、製造業のリバースエンジニアリング、文化財のアーカイブなど産業用途への応用が加速している。</li>
-        </ul>
-        <b>地銀視点の深掘り</b>
-        <p>
-          道内の中小企業（食品加工、観光・宿泊、工務店、製造業など）では、販路拡大や人手不足への対応としてデジタル技術（DX）の導入が急務です。高コストな専門業者に頼らず、手軽に自社製品や観光スポットを3D・バーチャル化できる技術は、地元企業のEC展開や海外向けPRの強力な武器になり得ます。地銀行員として「資金を貸す」だけでなく、こうした先端ツールの存在を知り、事業課題解決のための情報提供やコンサルティング提案に活かす視点が求められます。
-        </p>
-        <a href="https://news.yahoo.co.jp/articles/7b13375ed0fbff3047b856ca2a5779990db2f8e2?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-      </article>
-    </section>
+    <!-- ニュース3 -->
+    <article>
+      <span class="badge">地域社会 & 個人営業</span>
+      <h3>“高リセール”のクルマは車検ごとに買い替えた方が“得”なのか。「ランクル」「アルファード」はレアケース…「錬金術」はもう不可能？</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> 中古車相場の高騰を背景に「人気車を車検ごとに短期乗換して実質コストを浮かす」リセール重視の購入手法が一部で流行していた。</li>
+        <li><strong>事象:</strong> 中古車流通の正常化や諸費用の高騰に伴い、残価錬金術が成立する車種は限定的であり、維持費や手数料を含めると経済的メリットが薄れている実態が浮き彫りとなった。</li>
+        <li><strong>結果/影響:</strong> 車両の資産価値偏重の購入スタイルが見直され、長期保有や堅実な資金計画（マイカーローン活用等）への回帰が促されている。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>
+        広大な北海道において自動車は生活・事業の絶対的なインフラです。個人のマイカーローン審査や、法人・個人事業主の社用車リースの商談において「リセール市場の現状と減価償却・キャッシュフローのバランス」を正しく把握しておくことは必須です。富裕層顧客や中小企業オーナーとの雑談でも「車の買い替えサイクルと資産価値」は食いつきの良いトピックとなります。
+      </p>
+      <a href="https://news.yahoo.co.jp/articles/b8ad6f7bd90522acd359c2f82bb309a73fadaa42?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+    </article>
 
-    <footer>
-      <hr>
-      <p style="text-align: center;"><small>&copy; 2026 Hokkaido Regional Bank New Comer Support Team</small></p>
+    <footer style="text-align: center; margin-top: 3rem; padding-bottom: 2rem;">
+      <small>&copy; 2026 朝のインサイト | 北海道地銀内定者向けナレッジ配信</small>
     </footer>
   </main>
 </body>
