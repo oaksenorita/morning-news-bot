@@ -1,88 +1,155 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>朝のインサイト - 2026年09月29日</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝のインサイト - 2026年09月30日</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        :root {
+            --pico-font-size: 95%;
+        }
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--pico-primary-background);
+            padding-bottom: 1rem;
+        }
+        .weather-card {
+            background: linear-gradient(135deg, rgba(230, 240, 255, 0.5), rgba(245, 245, 250, 0.5));
+            border-left: 5px solid var(--pico-primary);
+        }
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        .weather-item {
+            padding: 0.5rem 0;
+        }
+        .weather-item span {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--pico-muted-color);
+        }
+        .weather-item strong {
+            font-size: 1.25rem;
+        }
+        article {
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .insight-box {
+            background-color: rgba(0, 114, 206, 0.05);
+            border-left: 4px solid var(--pico-primary);
+            padding: 1rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 1rem;
+        }
+    </style>
 </head>
 <body>
-  <main class="container">
-    <header style="margin-bottom: 2rem; border-bottom: 1px solid var(--pico-muted-border-color); padding-bottom: 1rem;">
-      <h1>☀️ 朝のインサイト (2026年09月29日)</h1>
-      <p><small>北海道の地方銀行 内定者向け情報キュレーション</small></p>
-    </header>
+    <main class="container">
+        <header>
+            <h1>☀️ 朝のインサイト (2026年09月30日)</h1>
+            <p><small>北海道の未来を担う新人バンカーのためのデイリー・ブリーフィング</small></p>
+        </header>
 
-    <!-- 天気情報 -->
-    <article>
-      <header><strong>📍 道内の気象概況</strong></header>
-      <div class="grid">
-        <div><strong>天気:</strong> 厚い雲</div>
-        <div><strong>最高気温:</strong> 18.56℃</div>
-        <div><strong>最低気温:</strong> 18.56℃</div>
-      </div>
-      <p style="margin-top: 0.8rem; margin-bottom: 0;">
-        <small>※ 雲が広がり日差しが届きにくい一日となります。気温は20℃を下回り、朝晩の冷え込みが進む季節の変わり目です。体調管理に留意しつつ、秋の経済動向をチェックしていきましょう。</small>
-      </p>
-    </article>
+        <!-- 天気情報 -->
+        <article class="weather-card">
+            <header>
+                <strong>🌤️ 本日の道内気象概況</strong>
+            </header>
+            <div class="weather-grid">
+                <div class="weather-item">
+                    <span>天候</span>
+                    <strong>厚い雲</strong>
+                </div>
+                <div class="weather-item">
+                    <span>最高気温</span>
+                    <strong>16.9℃</strong>
+                </div>
+                <div class="weather-item">
+                    <span>最低気温</span>
+                    <strong>16.86℃</strong>
+                </div>
+            </div>
+            <footer style="margin-top: 0.5rem; padding-top: 0.5rem; font-size: 0.85rem; color: var(--pico-muted-color);">
+                ※日中も気温が横ばいで肌寒い一日となります。外訪・店舗周辺清掃時は暖かい装いを意識しましょう。
+            </footer>
+        </article>
 
-    <!-- ニュース解説 1 -->
-    <article>
-      <h3>米、自動車の燃費基準を緩和　EV推進転換で値下げ主張</h3>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> 世界的にEV（電気自動車）シフトが進められてきた一方、高価格や充電インフラの課題から足元で普及スピードに減速感が生じている。</li>
-        <li><strong>事象:</strong> 米国政府が自動車の燃費基準の緩和方針を示し、EV一辺倒の推進政策から方針を転換。車両価格の引き下げや消費者の選択肢確保を掲げる。</li>
-        <li><strong>結果/影響:</strong> 内燃機関車やハイブリッド車（HV）の需要が再評価され、自動車メーカー各社の投資計画やサプライチェーン再編に大きな影響を与える見通し。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>
-        寒冷地かつ移動距離が長い北海道では、冬季のバッテリー性能低下や充電スポット不足からEV普及への慎重論が根強くあります。今回の米国の方針転換は、道内の自動車ディーラーや整備工場、部品関連企業にとっても「HV・内燃機関車の延命・再強化」という現実的なシナリオをもたらします。自動車関連の取引先経営者と面談する際は、脱炭素対応の投資スケジュールや今後の在庫ポートフォリオの変化について意見交換を行う良い切り口となります。
-      </p>
-      <footer>
-        <a href="https://news.yahoo.co.jp/articles/1a7df7cdef9b99b3f5860b18f1d92667cd150870?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-      </footer>
-    </article>
+        <!-- ニュース解説 1 -->
+        <article>
+            <header>
+                <small style="color: var(--pico-primary); font-weight: bold;">国際情勢・サプライチェーン</small>
+                <h3 style="margin-top: 0.25rem;">中国進出の日本企業、3000社減で過去最少に　関係悪化や不動産不況などで</h3>
+            </header>
+            
+            <b>ロジカル要約</b>
+            <ul>
+                <li><strong>背景/経緯：</strong>中国国内の不動産不況の長期化や地政学リスクの高まり、米中摩擦などを背景に、外資系企業の事業環境が厳しさを増している。</li>
+                <li><strong>事象：</strong>中国に進出する日系企業数が前年調査比で約3000社減少し、調査開始以来の過去最少水準を記録。</li>
+                <li><strong>結果/影響：</strong>チャイナ・プラス・ワンとしてのASEAN展開や、国内への生産回帰（リショアリング）に向けたサプライチェーンの再構築が一段と加速している。</li>
+            </ul>
 
-    <!-- ニュース解説 2 -->
-    <article>
-      <h3>だから働きやすい職場なのに若者が去っていく…人材のプロが見た"優しい上司"が隠す｢裏の本音｣の正体</h3>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> コンプライアンス意識の高まりやハラスメント防止の徹底により、過度に配慮し叱責や厳格な指導を避ける「優しい上司」が増加。</li>
-        <li><strong>事象:</strong> 一見「ホワイト」で働きやすい環境でありながら、成長実感が得られない・自身の市場価値が上がらないと感じる若手社員の離職が頻発。</li>
-        <li><strong>結果/影響:</strong> 表面的な優しさではなく、適切なフィードバックと成長機会を提供する組織設計やマネジメント手法の変革が求められている。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>
-        人手不足が深刻化する道内の中小企業経営者にとって、若手の「採用」だけでなく「定着・育成」は最重要経営課題です。取引先との対話では、単に離職率や福利厚生だけでなく「若手にどのような役割や成長機会を与えているか」という組織力評価の視点を持つことが肝要です。また、内定者自身にとっても、行内での研修や配属先で自律的に学びを取りに行く姿勢を考える有益な題材と言えます。
-      </p>
-      <footer>
-        <a href="https://news.yahoo.co.jp/articles/f0eb090ecf8e585709cc7e747c6a0b6b78f85f3b?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-      </footer>
-    </article>
+            <div class="insight-box">
+                <b>地銀視点の深掘り</b>
+                <p>道内企業でも水産加工・食品輸出や部材調達において脱・中国依存を進め、台湾や北米、東南アジアへの販路開拓を模索する先が増加しています。「調達先や輸出先の多角化」「国内設備投資（生産回帰）への資金調達」について経営者の関心が高まっており、為替リスク対策や公的支援制度を含めた情報提供・相談の絶好の切り口になります。</p>
+            </div>
 
-    <!-- ニュース解説 3 -->
-    <article>
-      <h3>兵庫・丹波マツタケ初競り　過去最高値6本110万円で地元旅館が落札　豊作に期待</h3>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> 秋の高級味覚であるマツタケの初競りは、その年の作柄や秋の観光・飲食需要の活況度を測る象徴的イベント。</li>
-        <li><strong>事象:</strong> 兵庫県丹波市で初競りが行われ、6本（計330グラム）が過去最高値となる110万円で地元の老舗旅館によって落札された。</li>
-        <li><strong>結果/影響:</strong> 最高値落札による話題づくり（PR効果）と秋の観光需要喚起、富裕層向け高付加価値プランの展開が期待される。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>
-        道内でも夕張メロンや白老牛、秋鮭など、初競りでのご祝儀相場が地域ブランドを全国に発信する好機となっています。本件のように地元旅館がPRを兼ねて高額落札する事例は、「地域資源の高付加価値化×インバウンド・観光消費」の好例です。道内各地の観光・宿泊・飲食事業者を担当する際、単なる仕入れコストの議論にとどまらず、話題性を活かした高単価宿泊プランの設計やプロモーション戦略について提案・対話するヒントになります。
-      </p>
-      <footer>
-        <a href="https://news.yahoo.co.jp/articles/4ac45aeacffe730c141700a332f252e4efa97fb1?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-      </footer>
-    </article>
+            <footer style="text-align: right; margin-top: 1rem;">
+                <a href="https://news.yahoo.co.jp/articles/5a7d30b44201d8ab8d3fcb418a62e6f0f7ec8bef?source=rss" role="button" class="outline">続きを読む</a>
+            </footer>
+        </article>
 
-    <footer style="text-align: center; margin-top: 3rem; color: var(--pico-muted-color);">
-      <small>© 2026 朝のインサイト | 北海道地域金融情報デスク</small>
-    </footer>
-  </main>
+        <!-- ニュース解説 2 -->
+        <article>
+            <header>
+                <small style="color: var(--pico-primary); font-weight: bold;">物流・インフラBCP</small>
+                <h3 style="margin-top: 0.25rem;">貨物列車が通れないなら「迂回」すればいいじゃない…そうでもない？ 災害時の過去事例にみる「課題と現実」</h3>
+            </header>
+            
+            <b>ロジカル要約</b>
+            <ul>
+                <li><strong>背景/経緯：</strong>頻発する自然災害により鉄道路線の寸断リスクが高まる中、鉄道貨物輸送の安定維持が全国的な物流課題として浮上。</li>
+                <li><strong>事象：</strong>貨物列車の迂回運行は、電化・非電化の規格差、線路の耐荷重、機関士の運転資格や他社路線との調整など、極めて高い運用ハードルが存在する。</li>
+                <li><strong>結果/影響：</strong>代替ルートへの即時切替は容易ではなく、平時からの内航海運やトラック輸送を組み合わせた複線型ロジスティクスの備えが不可欠。</li>
+            </ul>
+
+            <div class="insight-box">
+                <b>地銀視点の深掘り</b>
+                <p>道内農業・食品製造業にとって、秋の収穫最盛期における青函トンネル経由の鉄道貨物は本州向け出荷の「大動脈」です。物流の2024年問題に加え、災害等による幹線寸断は融資先の資金回収サイクルや在庫滞留に直結します。地元運送会社や農協・食品メーカーへの訪問時には、荷主のBCP（事業継続計画）策定状況や物流代替手段の確保について話題を振ってみましょう。</p>
+            </div>
+
+            <footer style="text-align: right; margin-top: 1rem;">
+                <a href="https://news.yahoo.co.jp/articles/f0ab7ce0129d4f0f5d76364220e22597194bb5f0?source=rss" role="button" class="outline">続きを読む</a>
+            </footer>
+        </article>
+
+        <!-- ニュース解説 3 -->
+        <article>
+            <header>
+                <small style="color: var(--pico-primary); font-weight: bold;">自治体ビジネス・地域インフラ</small>
+                <h3 style="margin-top: 0.25rem;">アワードで文科大臣賞　豊田市の水道管調査　自治体で初</h3>
+            </header>
+            
+            <b>ロジカル要約</b>
+            <ul>
+                <li><strong>背景/経緯：</strong>全国の地方自治体において、高度経済成長期に埋設された水道管の老朽化が進む一方、財政難と職員不足で点検・更新が遅延している。</li>
+                <li><strong>事象：</strong>豊田市が民間技術を活用し、音波やAI等の新技術を用いた効率的な水道管健全度調査体制を確立。自治体として初の文部科学大臣賞を受賞。</li>
+                <li><strong>結果/影響：</strong>従来の大規模な掘削点検に比べて大幅なコスト削減と漏水リスクの早期発見を実現し、持続可能なインフラ維持管理モデルを実証。</li>
+            </ul>
+
+            <div class="insight-box">
+                <b>地銀視点の深掘り</b>
+                <p>広大な面積と多数の過疎地域を抱える北海道の各自治体でも、上下水道をはじめとする公共インフラの更新・維持費用の捻出は喫緊の課題です。地方銀行として地方自治体との連携（公的PPP/PFI案件の組成）や、最新の点検技術を持つ地元土木・IT関連の取引先企業と市町村を結ぶ「ビジネスマッチング」の好事例として紹介できます。</p>
+            </div>
+
+            <footer style="text-align: right; margin-top: 1rem;">
+                <a href="https://news.yahoo.co.jp/articles/7eb04803c6fd6d7ee44e202810cde988e915bad1?source=rss" role="button" class="outline">続きを読む</a>
+            </footer>
+        </article>
+    </main>
 </body>
 </html>
