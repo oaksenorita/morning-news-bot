@@ -1,106 +1,148 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 2026年10月01日</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <style>
-        header {
-            margin: 2rem 0 1.5rem 0;
-            border-bottom: 2px solid var(--pico-primary);
-            padding-bottom: 1rem;
-        }
-        .weather-card {
-            background-color: var(--pico-card-background-color);
-            border-left: 5px solid #3b82f6;
-        }
-        .weather-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 1rem;
-            margin-top: 0.5rem;
-        }
-        .weather-item {
-            font-size: 1.05rem;
-        }
-        .insight-tag {
-            display: inline-block;
-            margin-bottom: 0.5rem;
-            font-size: 0.85rem;
-            font-weight: bold;
-            color: var(--pico-primary);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>朝のインサイト (2026年10月02日) - 道内地銀内定者向け情報</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+    header {
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid var(--pico-primary);
+      padding-bottom: 0.5rem;
+    }
+    .weather-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    .weather-item {
+      padding: 0.75rem;
+      background: var(--pico-card-background-color);
+      border-radius: var(--pico-border-radius);
+      border: 1px solid var(--pico-muted-border-color);
+    }
+    .weather-label {
+      font-size: 0.85rem;
+      color: var(--pico-muted-color);
+      margin-bottom: 0.25rem;
+    }
+    .weather-value {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .news-tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      background-color: var(--pico-primary-background);
+      color: var(--pico-primary-inverse);
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-size: 1.1rem;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    article {
+      margin-bottom: 2rem;
+    }
+  </style>
 </head>
 <body>
-    <main class="container">
-        <header>
-            <h1>☀️ 朝のインサイト (2026年10月01日)</h1>
-            <p>北海道の未来を担う内定者の皆さんへ。毎朝の金融経済・地域ビジネスの視点養成デイリーレポートです。</p>
-        </header>
+  <main class="container">
+    <header>
+      <h1>☀️ 朝のインサイト (2026年10月02日)</h1>
+      <p><small>北海道の地域経済を見つめる、内定者のためのデイリー・ブリーフィング</small></p>
+    </header>
 
-        <!-- 天気情報 -->
-        <article class="weather-card">
-            <header>
-                <strong>📍 本日の道内気象情報</strong>
-            </header>
-            <p>本日の北海道エリアは前線や低気圧の影響により荒天となっています。足元および気温の低下にご注意ください。</p>
-            <div class="weather-grid">
-                <div class="weather-item"><strong>天候:</strong> 強い雨 🌧️</div>
-                <div class="weather-item"><strong>最高気温:</strong> 17.45℃</div>
-                <div class="weather-item"><strong>最低気温:</strong> 16.86℃</div>
-            </div>
-            <footer style="margin-top: 1rem; font-size: 0.9rem;">
-                ※日中も気温が上がらず肌寒い一日です。外訪活動や面談時は雨具の携行と体調管理を徹底しましょう。
-            </footer>
-        </article>
+    <!-- 天気情報 -->
+    <article>
+      <header>
+        <strong>📍 本日の道内気象概況</strong>
+      </header>
+      <div class="weather-grid">
+        <div class="weather-item">
+          <div class="weather-label">天候</div>
+          <div class="weather-value">薄い雲</div>
+        </div>
+        <div class="weather-item">
+          <div class="weather-label">最高気温</div>
+          <div class="weather-value">16.34℃</div>
+        </div>
+        <div class="weather-item">
+          <div class="weather-label">最低気温</div>
+          <div class="weather-value">16.34℃</div>
+        </div>
+      </div>
+      <footer style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--pico-muted-color);">
+        ※秋の深まりとともに気温が落ち着いています。外訪・渉外活動時の服装選びや体調管理に留意しましょう。
+      </footer>
+    </article>
 
-        <!-- 厳選ニュース 1 -->
-        <article>
-            <span class="insight-tag">【金融・マーケット】</span>
-            <h3>東証、659円高　午前9時15分現在</h3>
-            <b>ロジカル要約</b>
-            <ul>
-                <li><strong>背景/経緯:</strong> 米国市場でのハイテク株買い戻しや為替市場の安定化を受け、東京株式市場でも投資家のリスク選好姿勢が先行。</li>
-                <li><strong>事象:</strong> 寄り付き直後から主力の輸出関連株や半導体関連株を中心に幅広く買いが集まり、日経平均株価は前日比659円高と大幅反発して推移。</li>
-                <li><strong>結果/影響:</strong> 投資家心理の改善が進み、下半期（10月）スタートにあたって機関投資家や個人投資家の運用意欲を後押しする好材料となっている。</li>
-            </ul>
-            <b>地銀視点の深掘り</b>
-            <p>株高局面は、個人リテール営業において投信・資産運用提案の追い風となる一方、高値警戒感を持つ顧客にはドルコスト平均法（つみたてNISA等）の分散投資提案が響きます。また、道内上場企業や株式を保有する地元法人の保有有価証券含み益の動向、下半期の設備投資意欲の喚起に向けたトークネタとして即座に活用できます。</p>
-            <a href="https://news.yahoo.co.jp/articles/7846a31121c9f49a9f4102aa2d0b0386b08bc44d?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-        </article>
+    <!-- ニュース解説 1: 脱炭素・GX関連 -->
+    <article>
+      <span class="news-tag">産業・GXトレンド</span>
+      <h3>石炭ボイラ業績低迷で構造改革…IHI、子会社売却</h3>
+      
+      <p class="section-title"><b>ロジカル要約</b></p>
+      <ul>
+        <li><strong>背景/経緯：</strong>世界的な脱炭素シフト（カーボンニュートラル）の加速により、火力発電向けの石炭ボイラ関連事業を取り巻く市場環境が急速に厳しさを増している。</li>
+        <li><strong>事象：</strong>大手重工メーカーのIHIが、業績が低迷している石炭ボイラ事業を手掛ける子会社の売却を決定し、抜本的な事業構造改革に着手した。</li>
+        <li><strong>結果/影響：</strong>脱炭素の逆風を受けるレガシー事業の整理と、成長領域への経営資源集中が進む一方、関連する部品供給企業やサプライチェーンへの再編余波が懸念される。</li>
+      </ul>
 
-        <!-- 厳選ニュース 2 -->
-        <article>
-            <span class="insight-tag">【企業経営・ガバナンス】</span>
-            <h3>課題山積み“戒田ニデック”新体制始動、拡大路線で生じた歪みを修正できるか</h3>
-            <b>ロジカル要約</b>
-            <ul>
-                <li><strong>背景/経緯:</strong> 創業者・永守氏による積極的なM&amp;A戦略で世界的巨大企業へと急成長したニデックだが、急速な規模拡大の裏で組織統制やPMI（買収後の統合作業）の歪みが表面化。</li>
-                <li><strong>事象:</strong> 戒田新社長を中心とする新体制が始動し、これまでの拡大至上主義から内実の強化や組織カルチャーの改革、事業ポートフォリオの再構築へと舵を切る。</li>
-                <li><strong>結果/影響:</strong> トップ依存型経営からの脱却と持続可能な成長モデルへの転換が試され、製造業サプライチェーン各社への発注基準や取引方針の見直しが懸念される。</li>
-            </ul>
-            <b>地銀視点の深掘り</b>
-            <p>地銀の重要テーマである「事業承継」と「M&amp;A・PMI支援」の本質を突く事例です。道内中小企業でもカリスマ創業者から次世代経営者への交代が進んでいますが、経営権移譲後の組織統合や幹部育成が成否を分かちます。法人営業担当として「単にM&amp;Aや承継を仲介するだけでなく、その後のガバナンス定着まで寄り添えるか」という視点を学ぶ好材料です。</p>
-            <a href="https://news.yahoo.co.jp/articles/4cf0113a1f5e18a
-6612264a6548511385fd74673?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-        </article>
+      <p class="section-title"><b>地銀視点の深掘り</b></p>
+      <p>
+        北海道内には火力発電所や大型熱源プラントを支えるメンテナンス・部品加工・設備工事関連の中堅・中小企業が数多く存在します。大手の事業再編・撤退は、道内サプライチェーンの受注減や取引先見直しに直結するリスクがあります。銀行員としては、製造・プラント関連取引先の「売上依存先」や「脱炭素化に伴う転換計画」の有無を早期にヒアリングし、事業転換（GX）支援や新分野進出に向けた設備投資融資・伴走支援の提案に繋げる視点が重要です。
+      </p>
 
-        <!-- 厳選ニュース 3 -->
-        <article>
-            <span class="insight-tag">【地域インフラ・信頼構築】</span>
-            <h3>「まずは信頼回復」　中電林社長、最後の会見</h3>
-            <b>ロジカル要約</b>
-            <ul>
-                <li><strong>背景/経緯:</strong> 大手電力会社におけるカルテル問題や顧客情報の不正閲覧問題など相次ぐ不祥事により、地域社会や取引先からの信認が大きく毀損。</li>
-                <li><strong>事象:</strong> 中部電力の林社長が退任会見において、任期中の最大の反省点として法令遵守・信頼の欠如を挙げ、「信頼回復こそが最優先課題」と総括。</li>
-                <li><strong>結果/影響:</strong> インフラ企業に求められるガバナンスと社会的責任（CSR/ESG）の重さが改めて浮き彫りとなり、全社的な意識改革と内部統制の再徹底が進められる。</li>
-            </ul>
-            <b>地銀視点の深掘り</b>
-            <p>地域金融機関も電力会社と同様、「地域のインフラ」であり最大の資本は「顧客からの信用」です。一度失った信頼を取り戻すには多大な時間と労力がかかるため、若手のうちからコンプライアンス遵守・守秘義務徹底がいかに生命線であるかを自覚する必要があります。道内主要インフラ（電力・交通・通信等）の動向やESG経営について経営者と対話する際の教訓的トピックです。</p>
-            <a href="https://news.yahoo.co.jp/articles/4ae8e64c74bceb07835d52dda3b416ab040472e5?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-        </article>
-    </main>
+      <a href="https://news.yahoo.co.jp/articles/c5303e53fa9b190051dbfbde526d91788d4de501?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
+
+    <!-- ニュース解説 2: 車社会・家計消費 -->
+    <article>
+      <span class="news-tag">生活防衛・モビリティ</span>
+      <h3>ハイブリッド買って後悔のまさか!!　ガソリン車にすればよかったとなる前に確認すべきポイント</h3>
+      
+      <p class="section-title"><b>ロジカル要約</b></p>
+      <ul>
+        <li><strong>背景/経緯：</strong>環境意識の高まりやガソリン高を背景にHV（ハイブリッド車）の人気が定着しているが、車両本体価格は同クラスの純ガソリン車よりも割高に設定されている。</li>
+        <li><strong>事象：</strong>走行距離が短いユーザーや特定条件下での利用において、ガソリン代の差額で車両本体価格の元を取れず、「ガソリン車にしておけばよかった」と後悔するミスマッチが生じている。</li>
+        <li><strong>結果/影響：</strong>ユーザーの使用環境や年間走行距離に応じたトータルコスト（TCO：総保有コスト）の冷静な試算の必要性が再認識されている。</li>
+      </ul>
+
+      <p class="section-title"><b>地銀視点の深掘り</b></p>
+      <p>
+        広大な北海道において自動車は「生活・事業の生命線」です。特に冬場は暖房使用や低温によりHVバッテリーの燃費向上が鈍るケースもあり、純ガソリン車や4WD車との比較検討は道民共通の関心事です。リテール営業ではマイカーローンの提案時に「年間の想定走行距離」や維持費を踏まえたライフプラン相談のフックとして活用できます。また、営業車を複数抱える法人顧客に対しても、車両更新時のコスト削減（フリート契約・燃費効率）を巡る雑談やリース提案の糸口として刺さりやすい話題です。
+      </p>
+
+      <a href="https://news.yahoo.co.jp/articles/e9b11d511deea03b6e1729ecaa1d55c350b05a47?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
+
+    <!-- ニュース解説 3: 高級車・富裕層市場 -->
+    <article>
+      <span class="news-tag">富裕層・オーナー動向</span>
+      <h3>ニュルブルクリンクでシャシー性能を徹底熟成！　レクサスRXが一部改良でより上質に</h3>
+      
+      <p class="section-title"><b>ロジカル要約</b></p>
+      <ul>
+        <li><strong>背景/経緯：</strong>高級SUV市場で堅調な需要を持つレクサスRXが、競争力を維持・強化するためにシャシー剛性や足回りの徹底的なチューニングを実施。</li>
+        <li><strong>事象：</strong>過酷なテストコースであるニュルブルクリンクでの走り込みを通じて、操縦安定性と乗り心地を一段と向上させた一部改良モデルが発表された。</li>
+        <li><strong>結果/影響：</strong>ラグジュアリーSUVとしてのブランド価値がさらに高まり、既存オーナーの買い替え需要や高所得者層の購買意欲を喚起することが見込まれる。</li>
+      </ul>
+
+      <p class="section-title"><b>地銀視点の深掘り</b></p>
+      <p>
+        レクサスRXのようなプレミアムSUVは、道内の企業オーナー、医師、農業の大規模経営者など「富裕層・トップ層」に極めて高い人気を誇ります。経営者との面談時において、新型車の改良点や納期動向はアイスブレイク（雑談）として非常に効果的です。また、地元ディーラーとの提携ローン案件や、オーナー個人の資産管理・事業承継といったプライベートバンキング領域の接点を構築するきっかけとしても視野に入れておきたいトピックです。
+      </p>
+
+      <a href="https://news.yahoo.co.jp/articles/192b83eaaf9a1b4cf27674f23327515aa92f0f20?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
+  </main>
 </body>
 </html>
