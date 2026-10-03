@@ -1,148 +1,81 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>朝のインサイト (2026年10月02日) - 道内地銀内定者向け情報</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <style>
-    header {
-      margin-top: 1.5rem;
-      margin-bottom: 2rem;
-      border-bottom: 2px solid var(--pico-primary);
-      padding-bottom: 0.5rem;
-    }
-    .weather-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 1rem;
-      text-align: center;
-      margin-top: 0.5rem;
-    }
-    .weather-item {
-      padding: 0.75rem;
-      background: var(--pico-card-background-color);
-      border-radius: var(--pico-border-radius);
-      border: 1px solid var(--pico-muted-border-color);
-    }
-    .weather-label {
-      font-size: 0.85rem;
-      color: var(--pico-muted-color);
-      margin-bottom: 0.25rem;
-    }
-    .weather-value {
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
-    .news-tag {
-      font-size: 0.75rem;
-      padding: 0.2rem 0.5rem;
-      background-color: var(--pico-primary-background);
-      color: var(--pico-primary-inverse);
-      border-radius: 4px;
-      display: inline-block;
-      margin-bottom: 0.5rem;
-    }
-    .section-title {
-      font-size: 1.1rem;
-      display: inline-block;
-      margin-bottom: 0.5rem;
-    }
-    article {
-      margin-bottom: 2rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝のインサイト (2026年10月03日)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>☀️ 朝のインサイト (2026年10月02日)</h1>
-      <p><small>北海道の地域経済を見つめる、内定者のためのデイリー・ブリーフィング</small></p>
-    </header>
+    <main class="container">
+        <header style="margin-bottom: 2rem;">
+            <h1>☀️ 朝のインサイト (2026年10月03日)</h1>
+            <p><small>北海道の地域経済とお客様の暮らしを支える新人バンカーのための朝刊ダイジェスト</small></p>
+        </header>
 
-    <!-- 天気情報 -->
-    <article>
-      <header>
-        <strong>📍 本日の道内気象概況</strong>
-      </header>
-      <div class="weather-grid">
-        <div class="weather-item">
-          <div class="weather-label">天候</div>
-          <div class="weather-value">薄い雲</div>
-        </div>
-        <div class="weather-item">
-          <div class="weather-label">最高気温</div>
-          <div class="weather-value">16.34℃</div>
-        </div>
-        <div class="weather-item">
-          <div class="weather-label">最低気温</div>
-          <div class="weather-value">16.34℃</div>
-        </div>
-      </div>
-      <footer style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--pico-muted-color);">
-        ※秋の深まりとともに気温が落ち着いています。外訪・渉外活動時の服装選びや体調管理に留意しましょう。
-      </footer>
-    </article>
+        <section>
+            <article>
+                <header><strong>⛅ 本日の道内気象概況</strong></header>
+                <div class="grid">
+                    <div><strong>天気:</strong> 曇りがち</div>
+                    <div><strong>最高気温:</strong> 14.67℃</div>
+                    <div><strong>最低気温:</strong> 11.86℃</div>
+                </div>
+                <footer style="font-size: 0.9rem; margin-top: 1rem;">
+                    朝晩の冷え込みが強まり、道内各地で秋の深まりを感じる気候です。外回りや訪問の際は、防寒対策を整えるとともに、融雪設備導入や暖房燃料費の動向など季節性の高い顧客ニーズにも目を配りましょう。
+                </footer>
+            </article>
+        </section>
 
-    <!-- ニュース解説 1: 脱炭素・GX関連 -->
-    <article>
-      <span class="news-tag">産業・GXトレンド</span>
-      <h3>石炭ボイラ業績低迷で構造改革…IHI、子会社売却</h3>
-      
-      <p class="section-title"><b>ロジカル要約</b></p>
-      <ul>
-        <li><strong>背景/経緯：</strong>世界的な脱炭素シフト（カーボンニュートラル）の加速により、火力発電向けの石炭ボイラ関連事業を取り巻く市場環境が急速に厳しさを増している。</li>
-        <li><strong>事象：</strong>大手重工メーカーのIHIが、業績が低迷している石炭ボイラ事業を手掛ける子会社の売却を決定し、抜本的な事業構造改革に着手した。</li>
-        <li><strong>結果/影響：</strong>脱炭素の逆風を受けるレガシー事業の整理と、成長領域への経営資源集中が進む一方、関連する部品供給企業やサプライチェーンへの再編余波が懸念される。</li>
-      </ul>
+        <section>
+            <h2>📰 今日の厳選ニュース解説</h2>
 
-      <p class="section-title"><b>地銀視点の深掘り</b></p>
-      <p>
-        北海道内には火力発電所や大型熱源プラントを支えるメンテナンス・部品加工・設備工事関連の中堅・中小企業が数多く存在します。大手の事業再編・撤退は、道内サプライチェーンの受注減や取引先見直しに直結するリスクがあります。銀行員としては、製造・プラント関連取引先の「売上依存先」や「脱炭素化に伴う転換計画」の有無を早期にヒアリングし、事業転換（GX）支援や新分野進出に向けた設備投資融資・伴走支援の提案に繋げる視点が重要です。
-      </p>
+            <!-- ニュース1: アマゾン データ拠点整備 -->
+            <article>
+                <h3>地域支援に1600億円　アマゾン、データ拠点整備</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 生成AIの普及やクラウド需要の急拡大に伴い、世界的IT大手が電力や土地の確保が可能な地方部へデータセンター投資を加速させている。</li>
+                    <li><strong>事象:</strong> アマゾンがデータ拠点整備に伴い、インフラ整備や人材育成、環境保全など地域社会支援に向けて約1600億円規模の投資方針を打ち出した。</li>
+                    <li><strong>結果/影響:</strong> 拠点建設地および周辺自治体での雇用創出や地元工事需要、再生可能エネルギー需要の拡大が見込まれる。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>
+                <p>北海道は豊富な再エネ資源と寒冷な気候を生かしたデータセンター誘致の適地として全国から注目されています。メガ投資に伴う直接的な建設・設備関連の地元取引先への波及効果はもちろん、用地取得やサプライチェーン参入を狙う中小企業へのファイナンス機会を捉える視点が不可欠です。法人営業担当として「自社製品・サービスを新規参入案件にどう結びつけるか」を経営者と議論する格好の会話ネタになります。</p>
+                <p><a href="https://news.yahoo.co.jp/articles/3ede7082781e1178aeae692a7113ff9b1a08ca04?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a></p>
+            </article>
 
-      <a href="https://news.yahoo.co.jp/articles/c5303e53fa9b190051dbfbde526d91788d4de501?source=rss" role="button" class="outline">続きを読む</a>
-    </article>
+            <!-- ニュース2: 高齢者の通院タクシー費補助 -->
+            <article>
+                <h3>母が週3回の通院にタクシーを使い、毎月1万円以上かかっています。「年金だけでは負担が大きい」と言いますが、高齢者の通院交通費に使える補助制度はあるのでしょうか？</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 高齢化が進むなか、運転免許の返納や身体機能の低下により、通院時の移動手段確保が年金生活者世帯の家計を圧迫している。</li>
+                    <li><strong>事象:</strong> 週3回の通院で月額1万円超のタクシー代を支出するケースがあり、公的助成や自治体による割引施策の有無が問題提起されている。</li>
+                    <li><strong>結果/影響:</strong> 自治体ごとに高齢者外出支援乗車証や福祉タクシー利用券、特定疾患向けの交通費助成などが用意されているが、申請主義のため制度を知らないまま自己負担している層が多い。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>
+                <p>公共交通網が限られる北海道の地方部では、高齢顧客の「生活の足」の確保は切実な地域課題です。リテール営業窓口において年金受給者やそのご家族から家計相談を受ける際、単に金融商品を案内するだけでなく、地元自治体の助成制度や移動支援情報を把握して情報提供できるバンカーは大きな信頼を得られます。老後資金計画（ライフプランニング）や信託・資産承継の面談時のアイスブレイクとしても非常に有用です。</p>
+                <p><a href="https://news.yahoo.co.jp/articles/7ece4f3b6d02e8a82f548a37c5f121d86a435bae?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a></p>
+            </article>
 
-    <!-- ニュース解説 2: 車社会・家計消費 -->
-    <article>
-      <span class="news-tag">生活防衛・モビリティ</span>
-      <h3>ハイブリッド買って後悔のまさか!!　ガソリン車にすればよかったとなる前に確認すべきポイント</h3>
-      
-      <p class="section-title"><b>ロジカル要約</b></p>
-      <ul>
-        <li><strong>背景/経緯：</strong>環境意識の高まりやガソリン高を背景にHV（ハイブリッド車）の人気が定着しているが、車両本体価格は同クラスの純ガソリン車よりも割高に設定されている。</li>
-        <li><strong>事象：</strong>走行距離が短いユーザーや特定条件下での利用において、ガソリン代の差額で車両本体価格の元を取れず、「ガソリン車にしておけばよかった」と後悔するミスマッチが生じている。</li>
-        <li><strong>結果/影響：</strong>ユーザーの使用環境や年間走行距離に応じたトータルコスト（TCO：総保有コスト）の冷静な試算の必要性が再認識されている。</li>
-      </ul>
+            <!-- ニュース3: 宅配トラブルと損害賠償 -->
+            <article>
+                <h3>宅配業者のトラックが自宅前をふさいでいて車を出せず、予約していた病院に遅れました。余計にかかったタクシー代は、業者へ請求できるのでしょうか？</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> EC市場の拡大により住宅街や狭隘路における荷扱い・駐停車トラブルが増加しており、周辺住民の日常生活への影響が顕在化している。</li>
+                    <li><strong>事象:</strong> 配送車による私道・出入口の塞ぎにより自家用車が出せず、予約診療に遅れ代替タクシー代が発生した事案における損害賠償責任の成否が論点となった。</li>
+                    <li><strong>結果/影響:</strong> 不法行為（民法709条）や相当因果関係の立証が必要とされ、実務上は違法性の程度や損害の証明にハードルがあり、直接請求には法的・証拠面での整理が求められる。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>
+                <p>物流の「ラストワンマイル」問題やドライバー不足（2024年問題以降の定着課題）は、道内物流企業が直面する労務・業務管理上の重大リスクです。運送業を営む取引先に対しては、配送効率化だけでなく、駐停車トラブルやクレーム・賠償リスクを防ぐ運行管理・コンプライアンス体制が整っているかという観点でモニタリングを行う契機になります。また、民法上の損害賠償や過失の考え方は、銀行業務における法務基礎知識の復習にも役立ちます。</p>
+                <p><a href="https://news.yahoo.co.jp/articles/d4ae18fe21da6424c8a0e2a7bcfcf8ac8f70c27a?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a></p>
+            </article>
+        </section>
 
-      <p class="section-title"><b>地銀視点の深掘り</b></p>
-      <p>
-        広大な北海道において自動車は「生活・事業の生命線」です。特に冬場は暖房使用や低温によりHVバッテリーの燃費向上が鈍るケースもあり、純ガソリン車や4WD車との比較検討は道民共通の関心事です。リテール営業ではマイカーローンの提案時に「年間の想定走行距離」や維持費を踏まえたライフプラン相談のフックとして活用できます。また、営業車を複数抱える法人顧客に対しても、車両更新時のコスト削減（フリート契約・燃費効率）を巡る雑談やリース提案の糸口として刺さりやすい話題です。
-      </p>
-
-      <a href="https://news.yahoo.co.jp/articles/e9b11d511deea03b6e1729ecaa1d55c350b05a47?source=rss" role="button" class="outline">続きを読む</a>
-    </article>
-
-    <!-- ニュース解説 3: 高級車・富裕層市場 -->
-    <article>
-      <span class="news-tag">富裕層・オーナー動向</span>
-      <h3>ニュルブルクリンクでシャシー性能を徹底熟成！　レクサスRXが一部改良でより上質に</h3>
-      
-      <p class="section-title"><b>ロジカル要約</b></p>
-      <ul>
-        <li><strong>背景/経緯：</strong>高級SUV市場で堅調な需要を持つレクサスRXが、競争力を維持・強化するためにシャシー剛性や足回りの徹底的なチューニングを実施。</li>
-        <li><strong>事象：</strong>過酷なテストコースであるニュルブルクリンクでの走り込みを通じて、操縦安定性と乗り心地を一段と向上させた一部改良モデルが発表された。</li>
-        <li><strong>結果/影響：</strong>ラグジュアリーSUVとしてのブランド価値がさらに高まり、既存オーナーの買い替え需要や高所得者層の購買意欲を喚起することが見込まれる。</li>
-      </ul>
-
-      <p class="section-title"><b>地銀視点の深掘り</b></p>
-      <p>
-        レクサスRXのようなプレミアムSUVは、道内の企業オーナー、医師、農業の大規模経営者など「富裕層・トップ層」に極めて高い人気を誇ります。経営者との面談時において、新型車の改良点や納期動向はアイスブレイク（雑談）として非常に効果的です。また、地元ディーラーとの提携ローン案件や、オーナー個人の資産管理・事業承継といったプライベートバンキング領域の接点を構築するきっかけとしても視野に入れておきたいトピックです。
-      </p>
-
-      <a href="https://news.yahoo.co.jp/articles/192b83eaaf9a1b4cf27674f23327515aa92f0f20?source=rss" role="button" class="outline">続きを読む</a>
-    </article>
-  </main>
+        <footer style="margin-top: 3rem; text-align: center; border-top: 1px solid var(--pico-muted-border-color); padding-top: 1rem;">
+            <p><small>&copy; 2026 北海道地方銀行 新人育成支援デスク</small></p>
+        </footer>
+    </main>
 </body>
 </html>
