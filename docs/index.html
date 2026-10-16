@@ -1,93 +1,115 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年10月15日)</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>朝のインサイト - 2026年10月15日</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+    body {
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+    }
+    .weather-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    .weather-item {
+      padding: 0.75rem;
+      background: var(--pico-card-sectionning-background-color);
+      border-radius: var(--pico-border-radius);
+      text-align: center;
+    }
+    .weather-val {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    .news-badge {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-    <main class="container">
-        <header>
-            <h1>☀️ 朝のインサイト (2026年10月15日)</h1>
-            <p><small>北海道の地域経済と未来を担う内定者のためのデイリー・ブリーフィング</small></p>
-        </header>
+  <main class="container">
+    <header>
+      <h1>☀️ 朝のインサイト (2026年10月15日)</h1>
+      <p><small>北海道の未来を担う新人バンカー向けビジネス・デイリーサマリー</small></p>
+    </header>
 
-        <!-- 天気セクション -->
-        <article>
-            <header><strong>📍 北海道の気象概況</strong></header>
-            <div class="grid">
-                <div>
-                    <strong>天気:</strong> ☁️ 雲
-                </div>
-                <div>
-                    <strong>最高気温:</strong> 15.79℃
-                </div>
-                <div>
-                    <strong>最低気温:</strong> 15.79℃
-                </div>
-            </div>
-            <p style="margin-top: 0.5rem; margin-bottom: 0;">
-                <small>※ 日中も気温が上がらず冷え込みが進む予報です。外回りの準備や体調管理に留意しましょう。</small>
-            </p>
-        </article>
+    <!-- 天気セクション -->
+    <article>
+      <header>
+        <h2 style="margin-bottom: 0;">📍 本日の道内気象状況</h2>
+      </header>
+      <div class="weather-grid">
+        <div class="weather-item">
+          <div>気象状況</div>
+          <div class="weather-val">☁️ 厚い雲</div>
+        </div>
+        <div class="weather-item">
+          <div>最高気温</div>
+          <div class="weather-val" style="color: #d84315;">13.01℃</div>
+        </div>
+        <div class="weather-item">
+          <div>最低気温</div>
+          <div class="weather-val" style="color: #1976d2;">11.86℃</div>
+        </div>
+      </div>
+      <footer style="margin-top: 1rem;">
+        <small>※道内各地で肌寒い曇天が続いています。まもなく暖房需要期を迎える取引先（製造業・農業・ホテル業等）の光熱費動向にも留意しましょう。</small>
+      </footer>
+    </article>
 
-        <!-- ニュースセクション -->
-        <section>
-            <h2>厳選ビジネスニュース</h2>
+    <!-- ニュース1 -->
+    <article>
+      <span class="news-badge">マクロ経済・個人金融</span>
+      <h3>国民民主 物価高対策で5万円程度の給付案</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> 長期化する円安と資源高に伴い、食料品やエネルギー価格の高騰が継続し、一般家計への圧迫が社会課題となっている。</li>
+        <li><strong>事象:</strong> 国民民主党が経済対策の柱として、インフレの影響を緩和するために1人あたり5万円程度の現金給付を盛り込んだ対策案を提示した。</li>
+        <li><strong>結果/影響:</strong> 今後の政策審議次第で低所得者層を中心とした消費喚起につながる可能性がある一方、財政負担や中長期的なインフレ再燃への懸念も議論される。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>北海道は冬期にかけて灯油代・暖房光熱費が急増するため、給付金に関する話題はリテール顧客（個人顧客）との親密なアイスブレイクになります。「これからの暖房費シーズン、給付金や自治体の助成策がどうなるか気になりますね」といった対話から、家計の見直しや冬のボーナス・資産運用（つみたてNISA等）の提案へ繋げる視点を意識しましょう。</p>
+      <a href="https://news.yahoo.co.jp/articles/7ca04b8825b1313fa6c36da313d3fb0b619ee4d8?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
 
-            <!-- 記事1: 機械受注動向 -->
-            <article>
-                <h3>8月機械受注5.2％増 2カ月ぶりプラス</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 企業の設備投資姿勢を見極める先行指標として機械受注統計が注目される中、前月は反落していた。</li>
-                    <li><strong>事象:</strong> 内閣府が発表した8月の機械受注統計（船舶・電力を除く民需）は、前月比5.2％増となり2カ月ぶりのプラスを記録。</li>
-                    <li><strong>結果/影響:</strong> 製造業・非製造業ともに底堅い設備投資需要が確認され、国内景気の緩やかな回復基調を裏付ける結果となった。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    北海道内でも人手不足への対応を目的とした省力化・自動化投資や、老朽化設備の更新需要が活発化しています。取引先の中小企業を訪問する際は、「設備投資の計画や補助金の活用予定はございますか？」といったヒアリングから、設備資金調達や日本公庫等との協調融資、リース提案への糸口を掴む会話ネタとして活用できます。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/79951505580513cff86d34eb03b97ef566099653?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
+    <!-- ニュース2 -->
+    <article>
+      <span class="news-badge">地域産業・デジタル戦略</span>
+      <h3>【GMOメイクショップ、福岡でアワード表彰式】グランプリはJR九州商事、九州のEC支える3社を表彰</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> 地方事業者が全国・グローバル市場を開拓する手段として、自社ECサイト構築やデジタルマーケティングの重要性が急速に高まっている。</li>
+        <li><strong>事象:</strong> GMOメイクショップが九州エリアで優れたEC運営を行う事業者を顕彰し、JR九州商事など地域に根ざした3社が表彰された。</li>
+        <li><strong>結果/影響:</strong> 鉄道系商社をはじめとする地域中核企業が特産品販路を全国へ拡大する成功モデルが示され、他地域への水平展開やDX支援の機運が強まっている。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>道内企業（食品加工業・観光関連・水産業等）の多くも「高品質な道産品をいかに道外・海外へ高付加価値で届けるか」に苦心しています。地銀は単なる融資にとどまらず、ビジネスマッチングやECモール連携など「本業支援・販路開拓支援」が求められます。取引先企業の社長に対し、「九州では鉄道系商社のEC展開が注目されていますが、御社の道外開拓や直販体制はいかがですか？」と提案型ヒアリングを展開する良質なネタになります。</p>
+      <a href="https://news.yahoo.co.jp/articles/3d839db858d0cd77a99dc69953107933127a0f81?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
 
-            <!-- 記事2: 水素航空エンジン -->
-            <article>
-                <h3>世界最高レベルの低NOX性能実現に見通し…川重、水素航空エンジンで試験成功</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 航空業界における2050年カーボンニュートラル達成に向け、次世代クリーンエネルギーである水素エンジンの開発競争が激化している。</li>
-                    <li><strong>事象:</strong> 川崎重工業が水素混焼・専焼航空機用エンジン燃焼器の燃焼試験を実施し、世界最高水準の低NOx（窒素酸化物）性能の実現に見通しを立てた。</li>
-                    <li><strong>結果/影響:</strong> 航空分野での脱炭素技術の実用化が前進し、関連サプライチェーンや水素インフラの整備計画への追い風となる。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    北海道は苫小牧や室蘭を中心に「水素サプライチェーン拠点化」や再生可能エネルギー活用を進めており、道内経済にとっても水素関連技術の進展は直結する重要テーマです。エネルギー関連企業やものづくり企業との面談時には、GX（グリーントランスフォーメーション）や脱炭素投資への取り組み状況を伺うフックとして大いに役立ちます。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/36824d9704b23732931e95ebca123984dbd89a87?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
+    <!-- ニュース3 -->
+    <article>
+      <span class="news-badge">脱炭素・モビリティインフラ</span>
+      <h3>「パンタグラフで充電するバス」がついに登場！ 脅威の時間短縮を遂げた「超速充電」の映像が公開</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> 公共交通の脱炭素化（EVバス導入）が進む一方、充電に長時間を要することによる運行効率の低下や大型バッテリー搭載コストが課題となっていた。</li>
+        <li><strong>事象:</strong> バス上部のパンタグラフを用いて停留所などで急速充電を行う新技術が公開され、短時間の停車で必要電力をチャージできる運用が実用化されつつある。</li>
+        <li><strong>結果/影響:</strong> 車両の軽量化とバッテリー小型化が可能になり、初期費用・電力効率の改善および運行ダイヤの安定化が期待されている。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>北海道では長距離運行や厳冬期のバッテリー消耗、運転手不足、路線維持が深刻な経営課題です。超急速充電インフラや次世代EVバスは、道内路線バス・観光バス会社、自治体との公民連携（PPP/PFI）における設備投資・グリーンローン・サステナビリティリンクローンの対象になり得ます。法人担当として、地域の公共インフラを支える交通事業者への設備投資需要や補助金活用ニーズにアンテナを張っておきましょう。</p>
+      <a href="https://news.yahoo.co.jp/articles/9349a9e4bcd77a88fcfc288bf53c8b0979d2eb3d?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
 
-            <!-- 記事3: 終活・墓じまいと資産管理 -->
-            <article>
-                <h3>墓じまいをしようと思っています。「50万円あればできる」と聞きましたが、墓石の撤去以外にもお金がかかるのでしょうか？ 費用相場も知りたいです。</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 少子高齢化や核家族化に伴い、遠方にある先祖代々の墓の維持管理が難しくなり、「墓じまい」を検討する世帯が急増。</li>
-                    <li><strong>事象:</strong> 単なる墓石撤去（約10万〜30万円）にとどまらず、離檀料、閉眼供養のお布施、新たな受入先（永代供養墓・樹木葬・納骨堂等）への納骨費用など、総額で数十万〜数百万円規模の費用が発生する実情が解説された。</li>
-                    <li><strong>結果/影響:</strong> 高齢者世代における想定外の出費要因となり、事前のライフプランニングや資金準備の重要性が浮き彫りとなっている。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>
-                    道内は過疎化・高齢化が顕著であり、リテール（個人）営業において「終活・生前整理・相続対策」は極めて関心の高い話題です。窓口や営業先で高齢のお客様と接する際、預貯金の保全だけでなく、遺言信託や資産承継、家族信託といった当行のソリューションを案内するための身近なアプローチ題材となります。
-                </p>
-                <a href="https://news.yahoo.co.jp/articles/444d90bc54f033b6ff008f9434e86759ef61df14?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
-        </section>
-
-        <footer>
-            <small>© 2026 北海道地方銀行 内定者研修サポートデスク</small>
-        </footer>
-    </main>
+  </main>
 </body>
 </html>
