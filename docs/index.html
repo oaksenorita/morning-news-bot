@@ -1,115 +1,80 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>朝のインサイト - 2026年10月15日</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <style>
-    body {
-      padding-top: 2rem;
-      padding-bottom: 3rem;
-    }
-    .weather-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
-      margin-top: 0.5rem;
-    }
-    .weather-item {
-      padding: 0.75rem;
-      background: var(--pico-card-sectionning-background-color);
-      border-radius: var(--pico-border-radius);
-      text-align: center;
-    }
-    .weather-val {
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
-    .news-badge {
-      display: inline-block;
-      margin-bottom: 0.5rem;
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝のインサイト - 2026年10月17日</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        header { margin-bottom: 2rem; }
+        .weather-info { display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 0.5rem; }
+        .weather-item { font-size: 1.1rem; }
+        .section-title { margin-top: 0.5rem; margin-bottom: 0.25rem; font-size: 1rem; color: var(--pico-muted-color); }
+    </style>
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>☀️ 朝のインサイト (2026年10月15日)</h1>
-      <p><small>北海道の未来を担う新人バンカー向けビジネス・デイリーサマリー</small></p>
-    </header>
+    <main class="container">
+        <header>
+            <h1>☀️ 朝のインサイト (2026年10月17日)</h1>
+            <p>北海道の地方銀行内定者に向けた、日々の経済・地域ビジネス動向キャッチアップ</p>
+        </header>
 
-    <!-- 天気セクション -->
-    <article>
-      <header>
-        <h2 style="margin-bottom: 0;">📍 本日の道内気象状況</h2>
-      </header>
-      <div class="weather-grid">
-        <div class="weather-item">
-          <div>気象状況</div>
-          <div class="weather-val">☁️ 厚い雲</div>
-        </div>
-        <div class="weather-item">
-          <div>最高気温</div>
-          <div class="weather-val" style="color: #d84315;">13.01℃</div>
-        </div>
-        <div class="weather-item">
-          <div>最低気温</div>
-          <div class="weather-val" style="color: #1976d2;">11.86℃</div>
-        </div>
-      </div>
-      <footer style="margin-top: 1rem;">
-        <small>※道内各地で肌寒い曇天が続いています。まもなく暖房需要期を迎える取引先（製造業・農業・ホテル業等）の光熱費動向にも留意しましょう。</small>
-      </footer>
-    </article>
+        <!-- 本日の天気 -->
+        <article>
+            <header>
+                <strong>📍 本日の北海道エリア概況</strong>
+            </header>
+            <div class="weather-info">
+                <span class="weather-item">☁️ 天気: <strong>雲</strong></span>
+                <span class="weather-item">🔺 最高気温: <strong>13.56℃</strong></span>
+                <span class="weather-item">🔻 最低気温: <strong>11.86℃</strong></span>
+            </div>
+            <footer>
+                <small>※道内各地で秋が深まり冷え込みが続いています。取引先への訪問や外回りでは季節の変わり目の健康管理を気遣う一言から会話を始めるのが効果的です。</small>
+            </footer>
+        </article>
 
-    <!-- ニュース1 -->
-    <article>
-      <span class="news-badge">マクロ経済・個人金融</span>
-      <h3>国民民主 物価高対策で5万円程度の給付案</h3>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> 長期化する円安と資源高に伴い、食料品やエネルギー価格の高騰が継続し、一般家計への圧迫が社会課題となっている。</li>
-        <li><strong>事象:</strong> 国民民主党が経済対策の柱として、インフレの影響を緩和するために1人あたり5万円程度の現金給付を盛り込んだ対策案を提示した。</li>
-        <li><strong>結果/影響:</strong> 今後の政策審議次第で低所得者層を中心とした消費喚起につながる可能性がある一方、財政負担や中長期的なインフレ再燃への懸念も議論される。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>北海道は冬期にかけて灯油代・暖房光熱費が急増するため、給付金に関する話題はリテール顧客（個人顧客）との親密なアイスブレイクになります。「これからの暖房費シーズン、給付金や自治体の助成策がどうなるか気になりますね」といった対話から、家計の見直しや冬のボーナス・資産運用（つみたてNISA等）の提案へ繋げる視点を意識しましょう。</p>
-      <a href="https://news.yahoo.co.jp/articles/7ca04b8825b1313fa6c36da313d3fb0b619ee4d8?source=rss" role="button" class="outline">続きを読む</a>
-    </article>
+        <!-- 厳選ニュース 1 -->
+        <article>
+            <h3>〈サイゼリヤ上場以来初〉本格値上げでミラノ風ドリアも320円に…徹底したコスト削減でも価格維持できず、中国事業にも異変「安さの王者」に何が起きているのか</h3>
+            <div class="section-title"><b>ロジカル要約</b></div>
+            <ul>
+                <li><strong>背景/経緯:</strong> 原材料費の高騰やエネルギーコスト上昇、為替円安の長期化により、徹底した効率化で価格を維持してきた大手外食チェーンでも自社努力による吸収が限界に到達。</li>
+                <li><strong>事象:</strong> 「安さの象徴」であったサイゼリヤが上場以来初の大規模値上げに踏み切り、看板メニューのミラノ風ドリアも改定。また海外進出の牽引役だった中国市場でも消費環境の変化に直面。</li>
+                <li><strong>結果/影響:</strong> 外食産業全体における「デフレ価格設定」の終焉が決定づけられ、業界全体で価格転嫁と付加価値向上の両立が必須課題となった。</li>
+            </ul>
+            <div class="section-title"><b>地銀視点の深掘り</b></div>
+            <p>道内の飲食事業者や食品加工業のお客様でも、仕入コスト増を価格へ適正に転嫁できているかが死活問題となっています。「安さ」のみを訴求してきた企業ほど価格改定の心理的ハードルが高いため、価格転嫁に伴う客数減少リスクへの資金手当て（運転資金・つなぎ資金需要）の提案や、原価管理システムの導入支援（DX融資）など、事業再生・伴走支援の切り口として対話の糸口にできます。</p>
+            <a href="https://news.yahoo.co.jp/articles/981ecc07c160b75a8e9ca24cbf124898af0d22da?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+        </article>
 
-    <!-- ニュース2 -->
-    <article>
-      <span class="news-badge">地域産業・デジタル戦略</span>
-      <h3>【GMOメイクショップ、福岡でアワード表彰式】グランプリはJR九州商事、九州のEC支える3社を表彰</h3>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> 地方事業者が全国・グローバル市場を開拓する手段として、自社ECサイト構築やデジタルマーケティングの重要性が急速に高まっている。</li>
-        <li><strong>事象:</strong> GMOメイクショップが九州エリアで優れたEC運営を行う事業者を顕彰し、JR九州商事など地域に根ざした3社が表彰された。</li>
-        <li><strong>結果/影響:</strong> 鉄道系商社をはじめとする地域中核企業が特産品販路を全国へ拡大する成功モデルが示され、他地域への水平展開やDX支援の機運が強まっている。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>道内企業（食品加工業・観光関連・水産業等）の多くも「高品質な道産品をいかに道外・海外へ高付加価値で届けるか」に苦心しています。地銀は単なる融資にとどまらず、ビジネスマッチングやECモール連携など「本業支援・販路開拓支援」が求められます。取引先企業の社長に対し、「九州では鉄道系商社のEC展開が注目されていますが、御社の道外開拓や直販体制はいかがですか？」と提案型ヒアリングを展開する良質なネタになります。</p>
-      <a href="https://news.yahoo.co.jp/articles/3d839db858d0cd77a99dc69953107933127a0f81?source=rss" role="button" class="outline">続きを読む</a>
-    </article>
+        <!-- 厳選ニュース 2 -->
+        <article>
+            <h3>ぼうぼうの庭木、鍵のない門扉…玄関先を見ただけで、犯罪者に狙われる家の特徴を防犯アドバイザーが解説！</h3>
+            <div class="section-title"><b>ロジカル要約</b></div>
+            <ul>
+                <li><strong>背景/経緯:</strong> 地方部を含む全国各地で高齢単身世帯や空き家が増加し、防犯意識や敷地管理の格差を突いた空き巣・悪質リフォーム詐欺等の被害が多発。</li>
+                <li><strong>事象:</strong> 庭木の手入れ不足や施錠意識の低さなど、管理が行き届いていない住宅外観の特徴が犯罪者の下見時の格好の標的となっている実態を専門家が提示。</li>
+                <li><strong>結果/影響:</strong> 住環境のメンテナンスと防犯対策が一体となった住まい管理・防犯投資の必要性が広く認識されている。</li>
+            </ul>
+            <div class="section-title"><b>地銀視点の深掘り</b></div>
+            <p>北海道は高齢化に伴う「実家の空き家化」や過疎地での防犯不安が深刻化しています。個人リテール営業において、リフォームローンや防犯設備投資ローンの提案に直結する話題です。また、庭木の剪定や見守りサービスを提供する地元造園業者・警備会社・建設業者といった法人先とのビジネスマッチングや、空き家解体ローン等の提携商品開発を検討する際にも重要な社会課題視点となります。</p>
+            <a href="https://news.yahoo.co.jp/articles/d022ea1e039f364eeb76bc5ecf54872d0bed3f68?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+        </article>
 
-    <!-- ニュース3 -->
-    <article>
-      <span class="news-badge">脱炭素・モビリティインフラ</span>
-      <h3>「パンタグラフで充電するバス」がついに登場！ 脅威の時間短縮を遂げた「超速充電」の映像が公開</h3>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> 公共交通の脱炭素化（EVバス導入）が進む一方、充電に長時間を要することによる運行効率の低下や大型バッテリー搭載コストが課題となっていた。</li>
-        <li><strong>事象:</strong> バス上部のパンタグラフを用いて停留所などで急速充電を行う新技術が公開され、短時間の停車で必要電力をチャージできる運用が実用化されつつある。</li>
-        <li><strong>結果/影響:</strong> 車両の軽量化とバッテリー小型化が可能になり、初期費用・電力効率の改善および運行ダイヤの安定化が期待されている。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>北海道では長距離運行や厳冬期のバッテリー消耗、運転手不足、路線維持が深刻な経営課題です。超急速充電インフラや次世代EVバスは、道内路線バス・観光バス会社、自治体との公民連携（PPP/PFI）における設備投資・グリーンローン・サステナビリティリンクローンの対象になり得ます。法人担当として、地域の公共インフラを支える交通事業者への設備投資需要や補助金活用ニーズにアンテナを張っておきましょう。</p>
-      <a href="https://news.yahoo.co.jp/articles/9349a9e4bcd77a88fcfc288bf53c8b0979d2eb3d?source=rss" role="button" class="outline">続きを読む</a>
-    </article>
-
-  </main>
+        <!-- 厳選ニュース 3 -->
+        <article>
+            <h3>〈ネットフリックス大量解雇〉業績好調なのになぜ？ 突然の約1000人削減、翌日にはコンテンツ部門トップも交代…背景にある「視聴時間」の争奪戦</h3>
+            <div class="section-title"><b>ロジカル要約</b></div>
+            <ul>
+                <li><strong>背景/経緯:</strong> サブスクリプション市場の飽和に伴い、ユーザーの「可処分時間（視聴時間）」の奪い合いがYouTubeやTikTokなどの台頭で激化。</li>
+                <li><strong>事象:</strong> ネットフリックスは直近業績が好調であるにもかかわらず約1,000人規模の人員削減を実施し、幹部体制も刷新。</li>
+                <li><strong>結果/影響:</strong> 企業が好業績下であっても将来の成長鈍化を先読みし、AI投資や新領域への経営資源再配分を果敢に進める「構造改革の先鋭化」が顕在化。</li>
+            </ul>
+            <div class="section-title"><b>地銀視点の深掘り</b></div>
+            <p>「好調な時こそ次世代への構造改革を行う」という経営判断は、地元中堅・中小企業の経営者と中長期経営戦略をディスカッションする際の好例となります。特に労働人口減少が進む北海道において、人手不足を単なる採用で補うのではなく、業務のスクラップ＆ビルドや省力化投資（IT設備投資融資）をいかに前倒しで行うべきか、経営層の背中を押すアドバイザリー業務の会話ネタとして活用できます。</p>
+            <a href="https://news.yahoo.co.jp/articles/f3b13da0600290235f4c057aa57255eb8b2e9cd0?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+        </article>
+    </main>
 </body>
 </html>
