@@ -1,79 +1,124 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 2026年10月18日</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>朝のインサイト - 2026年10月20日</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 2px solid var(--pico-muted-border-color);
+      padding-bottom: 1rem;
+    }
+    .weather-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      text-align: center;
+    }
+    .weather-item {
+      background: var(--pico-card-background-color);
+      padding: 0.75rem;
+      border-radius: var(--pico-border-radius);
+      border: 1px solid var(--pico-card-border-color);
+    }
+    .weather-value {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 1rem;
+      background-color: var(--pico-primary-background);
+      color: var(--pico-primary-inverse);
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-    <main class="container">
-        <header>
-            <h1>☀️ 朝のインサイト (2026年10月18日)</h1>
-            <p><small>北海道の地方銀行 内定者向け デイリー・ブリーフィング</small></p>
-        </header>
+  <main class="container">
+    <header>
+      <h1>☀️ 朝のインサイト (2026年10月20日)</h1>
+      <p><small>北海道の未来を担う新人バンカーのためのデイリー・インテリジェンス</small></p>
+    </header>
 
-        <article>
-            <header>
-                <strong>📍 本日の道内気象状況</strong>
-            </header>
-            <div class="grid">
-                <div>☁️ <strong>天気:</strong> 厚い雲</div>
-                <div>🔺 <strong>最高気温:</strong> 15.86℃</div>
-                <div>🔻 <strong>最低気温:</strong> 15.79℃</div>
-            </div>
-            <p style="margin-top: 0.5rem; margin-bottom: 0;"><small>※ 一日を通して気温変化が少ない肌寒い曇天です。外訪活動時の体調管理や、天候要因による農作物・物流への影響意識を持っておきましょう。</small></p>
-        </article>
+    <!-- 天気セクション -->
+    <article>
+      <header>
+        <strong>📍 本日の北海道（主要エリア）の気象概況</strong>
+      </header>
+      <div class="weather-grid">
+        <div class="weather-item">
+          <small>空模様</small>
+          <div class="weather-value">☁️ 厚い雲</div>
+        </div>
+        <div class="weather-item">
+          <small>日中最高気温</small>
+          <div class="weather-value" style="color: #d84315;">14.67℃</div>
+        </div>
+        <div class="weather-item">
+          <small>朝晩最低気温</small>
+          <div class="weather-value" style="color: #1565c0;">12.86℃</div>
+        </div>
+      </div>
+      <footer>
+        <small>※道内は晩秋の肌寒さが続いています。訪問活動の際はトレンチコート等での防寒対策を徹底し、取引先との会話でも初霜や暖房準備の話題を取り入れてみましょう。</small>
+      </footer>
+    </article>
 
-        <section>
-            <h2>📰 本日の厳選経済・ビジネストピックス</h2>
+    <!-- ニュース1：地域交通・航空 -->
+    <article>
+      <span class="badge">地域インフラ・観光</span>
+      <h3>JALが26機発注、「エンブラエルE190-E2型機」の仕様</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> 国内リージョナル（地方間）路線の運航効率化と低炭素化が航空業界全体の急務となっていること。</li>
+        <li><strong>事象:</strong> 日本航空（JAL）が最新鋭の小型ジェット機「エンブラエルE190-E2」を26機導入することを決定し、燃費性能や機内居住性に優れた仕様を公開。</li>
+        <li><strong>結果/影響:</strong> 地方空港を結ぶネットワークの維持・強化が進み、地方都市間の移動利便性向上や観光誘客への好影響が期待される。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>
+        新千歳をはじめ道内各空港（丘珠・函館・旭川・帯広・釧路など）を抱える北海道にとって、機体更新による地方路線の安定維持は観光・ビジネス双方の生命線です。宿泊施設や観光事業者へのヒアリング時に「道外からのアクセス性向上に伴うインバウンド・国内客の動向変化」を切り口とした意見交換に活用できます。
+      </p>
+      <a href="https://news.yahoo.co.jp/articles/9812df9dc38b04a57334c6baa605c773456834c4?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
 
-            <!-- 記事1: 物流・サプライチェーン -->
-            <article>
-                <h3>「トヨタ専用貨物列車」が日本海側を走行！ 機関車を何度も交換して“大迂回” 物流を止めない備え</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 自然災害による主要動脈（太平洋側ルートなど）の寸断リスクや物流の「2024年問題」を踏まえ、製造業各社で冗長性（バックアップ）の確保が急務となっている。</li>
-                    <li><strong>事象:</strong> トヨタ自動車の部品専用貨物列車「TOYOTA LONGPASS EXPRESS」が、有事を想定した大規模な訓練として日本海側ルートへの迂回運行を実施。電化・非電化区間を跨ぐため複数回の機関車交換を伴う高難度な運行を実証した。</li>
-                    <li><strong>結果/影響:</strong> 万が一の幹線寸断時でもサプライチェーンを維持できる代替手段が確立され、企業のBCP（事業継続計画）実効性が大きく向上した。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>食料供給基地である北海道にとっても、青函トンネルやJR貨物幹線の安定稼働は死活問題です。道内メーカーや農水産品関連の取引先に対し、「災害時・冬期荒天時の代替輸送手段の有無」や「サプライチェーン寸断時の在庫ファイナンス需要」をヒアリングする好材料になります。BCP策定支援や運転資金枠の提案など、伴走型支援の会話のきっかけとして活用できます。</p>
-                <a href="https://news.yahoo.co.jp/articles/b1c14caa0c4d8b4de03406af9d2b0d27337e566d?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-            </article>
+    <!-- ニュース2：金融・マクロ経済 -->
+    <article>
+      <span class="badge">マーケット・金融情勢</span>
+      <h3>東証、406円安 午前9時15分現在</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> 米国市場の調整や為替市場の乱高下、地政学的要因などを背景としたリスクオフ姿勢の台頭。</li>
+        <li><strong>事象:</strong> 20日午前の東京株式市場において、取引開始直後から幅広い銘柄に売りが先行し、日経平均株価が一時400円を超える下落を記録。</li>
+        <li><strong>結果/影響:</strong> 投資家心理の冷え込みが観測され、市場参加者は今後の企業業績発表や金融政策動向を慎重に見極める姿勢を強めている。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>
+        日経平均の下落は、個人顧客の資産運用（投資信託や預かり資産）に対する不安材料となり得ます。窓口や営業推進では「短期的なボラティリティに惑わされない長期・積立・分散投資」の重要性を丁寧にお伝えする姿勢が求められます。また、法人オーナーに対してはマクロ経済の不透明感を踏まえた運転資金繰り支援や為替ヘッジの話題提供が有効です。
+      </p>
+      <a href="https://news.yahoo.co.jp/articles/0c149c01dad36f45599fa4312cbafdce4254c00b?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
 
-            <!-- 記事2: 法人DX・生産性向上 -->
-            <article>
-                <h3>DXの反省を生かせ　AIで「月間9万時間」「4.7億円相当」の業務削減をしたレゾナックの「共創モデル」とは</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> ツール導入先行で成果が出にくかった従来のDXへの反省から、現場の実務課題に直結した本質的な生産性向上が求められていた。</li>
-                    <li><strong>事象:</strong> 化学大手のレゾナックが現場主導の「共創モデル」で生成AI等の活用基盤を整備・定着させ、全社的な業務プロセスの改革を推進した。</li>
-                    <li><strong>結果/影響:</strong> 月間9万時間、金額換算で約4.7億円相当という劇的な業務削減効果を創出し、従業員が付加価値の高いコア業務へシフトできる体制を構築した。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>人手不足が深刻な道内中小企業経営者との面談で極めて関心の高いテーマです。「単なるツールの導入ではなく、現場の定着と仕組み化が成否を分ける」という具体例として情報提供できます。また、地方銀行自身が推進するペーパーレス化やAI活用による業務効率化の姿勢を伝えることで、デジタル化・DX支援コンサルティングや設備投資資金の相談へ繋げる契機となります。</p>
-                <a href="https://news.yahoo.co.jp/articles/ec1d8c52d1aeb564e9b52c5f93c693345aaf3e98?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-            </article>
-
-            <!-- 記事3: リテール・資産形成・シニアライフプラン -->
-            <article>
-                <h3>資産「5000万円」が貯まったので、55歳で「FIRE」したいです。夫婦2人、生活費が月「25万円」なら、65歳の年金開始まで十分もちますよね？</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 働き方の多様化や早期退職（FIRE）志向の高まりを背景に、50代プレシニア層における資産取り崩しやライフプラン設計への関心が急増している。</li>
-                    <li><strong>事象:</strong> 資産5,000万円を原資に55歳で退職した場合、年金受給（65歳）までの10年間で3,000万円を消費するため、残額2,000万円となりインフレリスクや医療・介護・住宅維持等の突発的支出を考慮するとリスクが残ることが試算された。</li>
-                    <li><strong>結果/影響:</strong> 単純な元本取り崩しだけでは長寿化リスクに対応しきれず、引退後もリスクを抑えた継続的な資産運用や段階的就労の組み合わせが不可欠であることが浮き彫りになった。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>リテール（個人向け）営業において、退職金受取層や50代の富裕・準富裕層顧客に対するアプローチの王道テーマです。「インフレ下における現金保有リスク」や「資産寿命を延ばすための分散投資（NISA、投資信託、年金保険等）」の必要性を説得力を持って説明できます。顧客のライフステージに寄り添い、将来キャッシュフロー表の作成支援を提案する際のアイスブレイクに最適です。</p>
-                <a href="https://news.yahoo.co.jp/articles/928f11ca9d21b49c373fc5b5f2c00bb73aa53a5e?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-            </article>
-        </section>
-
-        <footer style="margin-top: 2rem; text-align: center;">
-            <small>© 2026 北海道の地方銀行 内定者学習ポータル</small>
-        </footer>
-    </main>
+    <!-- ニュース3：沿線開発・まちづくり -->
+    <article>
+      <span class="badge">地域創生・不動産</span>
+      <h3>都心方面への相互直通運転で価値爆上がりの「相鉄」ナカの人の視線はちょっと違った――「鉄道会社の街づくり」とは</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> JRや東急との相互直通運転により、首都圏大手私鉄である相模鉄道（相鉄）の知名度および沿線不動産価値が急上昇。</li>
+        <li><strong>事象:</strong> 鉄道会社側の狙いは単なる移動の速達化ではなく、沿線住民の「住み続けたい街」づくりや生活利便施設の再開発といった多面的な沿線価値向上にあったことが明らかに。</li>
+        <li><strong>結果/影響:</strong> ハード整備とソフト（コミュニティ育成・職住近接）を融合させた長期的な持続可能性モデルとして、全国の地域開発のベンチマークとなっている。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>
+        北海道でも札幌都心部や新幹線延伸予定エリア、JR沿線の拠点駅周辺における「コンパクトシティ化」「まちづくり再開発」が重要課題です。地銀は単なる不動産融資にとどまらず、地元自治体やデベロッパーと連携して街全体のグランドデザインを描く旗振り役（ハブ）が期待されています。地域経済を支えるパートナーとしての銀行の役割を考える好事例です。
+      </p>
+      <a href="https://news.yahoo.co.jp/articles/d109370b4f0a19bc0d4cf37a8e2c45abb37060bd?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
+  </main>
 </body>
 </html>
