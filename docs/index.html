@@ -1,124 +1,87 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>朝のインサイト - 2026年10月20日</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <style>
-    header {
-      margin-bottom: 2rem;
-      border-bottom: 2px solid var(--pico-muted-border-color);
-      padding-bottom: 1rem;
-    }
-    .weather-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
-      text-align: center;
-    }
-    .weather-item {
-      background: var(--pico-card-background-color);
-      padding: 0.75rem;
-      border-radius: var(--pico-border-radius);
-      border: 1px solid var(--pico-card-border-color);
-    }
-    .weather-value {
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
-    .badge {
-      display: inline-block;
-      font-size: 0.8rem;
-      padding: 0.2rem 0.6rem;
-      border-radius: 1rem;
-      background-color: var(--pico-primary-background);
-      color: var(--pico-primary-inverse);
-      margin-bottom: 0.5rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝のインサイト - 2026年10月21日</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>☀️ 朝のインサイト (2026年10月20日)</h1>
-      <p><small>北海道の未来を担う新人バンカーのためのデイリー・インテリジェンス</small></p>
-    </header>
+    <main class="container">
+        <header style="margin-bottom: 2rem;">
+            <h1>☀️ 朝のインサイト (2026年10月21日)</h1>
+            <p><small>北海道の未来を担う地方銀行内定者向けデイリーレポート</small></p>
+        </header>
 
-    <!-- 天気セクション -->
-    <article>
-      <header>
-        <strong>📍 本日の北海道（主要エリア）の気象概況</strong>
-      </header>
-      <div class="weather-grid">
-        <div class="weather-item">
-          <small>空模様</small>
-          <div class="weather-value">☁️ 厚い雲</div>
-        </div>
-        <div class="weather-item">
-          <small>日中最高気温</small>
-          <div class="weather-value" style="color: #d84315;">14.67℃</div>
-        </div>
-        <div class="weather-item">
-          <small>朝晩最低気温</small>
-          <div class="weather-value" style="color: #1565c0;">12.86℃</div>
-        </div>
-      </div>
-      <footer>
-        <small>※道内は晩秋の肌寒さが続いています。訪問活動の際はトレンチコート等での防寒対策を徹底し、取引先との会話でも初霜や暖房準備の話題を取り入れてみましょう。</small>
-      </footer>
-    </article>
+        <!-- 天気情報 -->
+        <article>
+            <header>
+                <strong>📍 本日の道内気象概況</strong>
+            </header>
+            <div class="grid">
+                <div><strong>天気:</strong> 小雨 🌧️</div>
+                <div><strong>最高気温:</strong> 12.45℃</div>
+                <div><strong>最低気温:</strong> 12.45℃</div>
+            </div>
+            <p style="margin-top: 1rem; margin-bottom: 0;"><small>※冷たい雨と路面の濡れによる視界不良・スリップに注意が必要です。外回りや通勤時は温かい服装と安全運転を心がけましょう。</small></p>
+        </article>
 
-    <!-- ニュース1：地域交通・航空 -->
-    <article>
-      <span class="badge">地域インフラ・観光</span>
-      <h3>JALが26機発注、「エンブラエルE190-E2型機」の仕様</h3>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> 国内リージョナル（地方間）路線の運航効率化と低炭素化が航空業界全体の急務となっていること。</li>
-        <li><strong>事象:</strong> 日本航空（JAL）が最新鋭の小型ジェット機「エンブラエルE190-E2」を26機導入することを決定し、燃費性能や機内居住性に優れた仕様を公開。</li>
-        <li><strong>結果/影響:</strong> 地方空港を結ぶネットワークの維持・強化が進み、地方都市間の移動利便性向上や観光誘客への好影響が期待される。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>
-        新千歳をはじめ道内各空港（丘珠・函館・旭川・帯広・釧路など）を抱える北海道にとって、機体更新による地方路線の安定維持は観光・ビジネス双方の生命線です。宿泊施設や観光事業者へのヒアリング時に「道外からのアクセス性向上に伴うインバウンド・国内客の動向変化」を切り口とした意見交換に活用できます。
-      </p>
-      <a href="https://news.yahoo.co.jp/articles/9812df9dc38b04a57334c6baa605c773456834c4?source=rss" role="button" class="outline">続きを読む</a>
-    </article>
+        <!-- ニュースセクション -->
+        <section>
+            <h2>厳選ビジネストピックス</h2>
 
-    <!-- ニュース2：金融・マクロ経済 -->
-    <article>
-      <span class="badge">マーケット・金融情勢</span>
-      <h3>東証、406円安 午前9時15分現在</h3>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> 米国市場の調整や為替市場の乱高下、地政学的要因などを背景としたリスクオフ姿勢の台頭。</li>
-        <li><strong>事象:</strong> 20日午前の東京株式市場において、取引開始直後から幅広い銘柄に売りが先行し、日経平均株価が一時400円を超える下落を記録。</li>
-        <li><strong>結果/影響:</strong> 投資家心理の冷え込みが観測され、市場参加者は今後の企業業績発表や金融政策動向を慎重に見極める姿勢を強めている。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>
-        日経平均の下落は、個人顧客の資産運用（投資信託や預かり資産）に対する不安材料となり得ます。窓口や営業推進では「短期的なボラティリティに惑わされない長期・積立・分散投資」の重要性を丁寧にお伝えする姿勢が求められます。また、法人オーナーに対してはマクロ経済の不透明感を踏まえた運転資金繰り支援や為替ヘッジの話題提供が有効です。
-      </p>
-      <a href="https://news.yahoo.co.jp/articles/0c149c01dad36f45599fa4312cbafdce4254c00b?source=rss" role="button" class="outline">続きを読む</a>
-    </article>
+            <!-- 記事1: 金融市場 -->
+            <article>
+                <h3>東証、一時6万5千円回復</h3>
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 国内外の景気動向や企業収益の改善期待を背景に、株式市場で買い意欲が継続。</li>
+                    <li><strong>事象:</strong> 東京株式市場において日経平均株価が堅調に推移し、一時節目の6万5千円台を回復。</li>
+                    <li><strong>結果/影響:</strong> 投資家心理の好転に加え、個人や法人の資産運用に対する関心が一段と高まる契機となる。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>株高局面は個人顧客への預金シフト（NISAや投資信託など預かり資産営業）を後押しする絶好の機会です。また、地元取引先企業の経営者にとっても保有有価証券の含み益改善や事業拡大に向けた設備投資意欲の向上につながる可能性があります。市場環境の話題を切り口に、経営者のマインドや資金需要を探る会話を展開しましょう。</p>
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/fc38bbc9ca789519a972b7a4346a9d6b88f780ae?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+                </footer>
+            </article>
 
-    <!-- ニュース3：沿線開発・まちづくり -->
-    <article>
-      <span class="badge">地域創生・不動産</span>
-      <h3>都心方面への相互直通運転で価値爆上がりの「相鉄」ナカの人の視線はちょっと違った――「鉄道会社の街づくり」とは</h3>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> JRや東急との相互直通運転により、首都圏大手私鉄である相模鉄道（相鉄）の知名度および沿線不動産価値が急上昇。</li>
-        <li><strong>事象:</strong> 鉄道会社側の狙いは単なる移動の速達化ではなく、沿線住民の「住み続けたい街」づくりや生活利便施設の再開発といった多面的な沿線価値向上にあったことが明らかに。</li>
-        <li><strong>結果/影響:</strong> ハード整備とソフト（コミュニティ育成・職住近接）を融合させた長期的な持続可能性モデルとして、全国の地域開発のベンチマークとなっている。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>
-        北海道でも札幌都心部や新幹線延伸予定エリア、JR沿線の拠点駅周辺における「コンパクトシティ化」「まちづくり再開発」が重要課題です。地銀は単なる不動産融資にとどまらず、地元自治体やデベロッパーと連携して街全体のグランドデザインを描く旗振り役（ハブ）が期待されています。地域経済を支えるパートナーとしての銀行の役割を考える好事例です。
-      </p>
-      <a href="https://news.yahoo.co.jp/articles/d109370b4f0a19bc0d4cf37a8e2c45abb37060bd?source=rss" role="button" class="outline">続きを読む</a>
-    </article>
-  </main>
+            <!-- 記事2: 決済・インフラDX -->
+            <article>
+                <h3>JR東・京急・京成…鉄道7社が磁気乗車券廃止へ、27年春QR式に</h3>
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 従来の磁気乗車券は券売機・改札機の維持更新コストや環境負荷（リサイクル難）が課題視されていた。</li>
+                    <li><strong>事象:</strong> 首都圏を中心とする鉄道7社が2027年春を目処に磁気乗車券を廃止し、QRコード式乗車券への移行を発表。</li>
+                    <li><strong>結果/影響:</strong> 発券・改札設備の省力化・低コスト化が進むと同時に、交通インフラにおけるデジタル化・キャッシュレス化が加速。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>全国的なキャッシュレス・ペーパーレスの加速は、北海道内の交通機関や観光業、小売・飲食業における決済インフラの将来像にも直結します。地銀としても、地元事業者に対するキャッシュレス決済導入支援や業務DXのコンサルティング提案の必要性が増しています。DX化による維持コスト削減の好事例として、取引先との対話に活かせます。</p>
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/a034543d9adb3c558b520c679395341d9adfc3fc?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+                </footer>
+            </article>
+
+            <!-- 記事3: 地域特有の課題とリスク管理 -->
+            <article>
+                <h3>エゾシカと自動車の事故、10月から北海道で急増 運転中に気をつけるべき点は</h3>
+                <p><b>ロジカル要約</b></p>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 毎年秋（10〜11月）はエゾシカの繁殖期にあたり、行動が活発化することで道路への飛び出しリスクが年間で最も高まる。</li>
+                    <li><strong>事象:</strong> 道内各地で自動車とエゾシカの衝突事故が急増しており、ドライバーへの注意喚起が強化されている。</li>
+                    <li><strong>結果/影響:</strong> 物損や人的被害の発生はもちろん、物流網の遅延や車両修繕コスト増など地域経済・生活への支障が生じる。</li>
+                </ul>
+                <p><b>地銀視点の深掘り</b></p>
+                <p>道内での営業活動（車巡回）において新人行員自身の安全確保は最優先事項です。また、地元企業（特に運送・観光・営業車両を多く保有する企業）とのアイスブレイクや、自動車保険・フリート契約の見直し提案、さらには鳥獣被害対策に取り組むアグリビジネスやジビエ活用事業者への投融資・支援の文脈でも関心を持てる地域密着トピックです。</p>
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/6942000ede349945622ac299b70782c85cb91b7b?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+                </footer>
+            </article>
+        </section>
+
+        <footer style="margin-top: 3rem; text-align: center;">
+            <p><small>&copy; 2026 朝のインサイト | 北海道地域金融イニシアティブ</small></p>
+        </footer>
+    </main>
 </body>
 </html>
