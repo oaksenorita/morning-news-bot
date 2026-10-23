@@ -1,125 +1,85 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>朝のインサイト (2026年10月22日) - 北海道の地銀内定者向け</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <style>
-    header {
-      margin-bottom: 2rem;
-    }
-    .weather-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 1rem;
-      text-align: center;
-      margin-top: 1rem;
-    }
-    .weather-card {
-      background-color: var(--pico-card-background-color);
-      border: 1px solid var(--pico-muted-border-color);
-      border-radius: var(--pico-border-radius);
-      padding: 0.75rem;
-    }
-    .weather-card .val {
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
-    article {
-      margin-bottom: 2rem;
-    }
-    ul {
-      margin-bottom: 1rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝のインサイト - 2026年10月23日</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>☀️ 朝のインサイト (2026年10月22日)</h1>
-      <p><small>北海道の地方銀行 内定者の皆さまへ：金融・経済の視点を養い、朝の情報感度を高めるデイリーレポートです。</small></p>
-    </header>
+    <main class="container">
+        <header style="margin-bottom: 2rem;">
+            <h1>☀️ 朝のインサイト (2026年10月23日)</h1>
+            <p><small>北海道の地方銀行 内定者向けモーニングブリーフィング</small></p>
+        </header>
 
-    <!-- 天気セクション -->
-    <article>
-      <header>
-        <h2>道内の気象情報</h2>
-      </header>
-      <p>初冬の足音が近づく冷え込みとなっています。寒暖差に気を配り、体調管理を徹底しましょう。</p>
-      <div class="weather-grid">
-        <div class="weather-card">
-          <small>天気</small>
-          <div class="val">弱いにわか雨 🌧️</div>
-        </div>
-        <div class="weather-card">
-          <small>最高気温</small>
-          <div class="val">7.45 ℃</div>
-        </div>
-        <div class="weather-card">
-          <small>最低気温</small>
-          <div class="val">4.86 ℃</div>
-        </div>
-      </div>
-    </article>
+        <section>
+            <article>
+                <header>
+                    <h2 style="margin-bottom: 0;">🌤️ 本日の道内気象情報</h2>
+                </header>
+                <div class="grid">
+                    <div>
+                        <strong>天気:</strong> 薄い雲
+                    </div>
+                    <div>
+                        <strong>最高気温:</strong> 10.86℃
+                    </div>
+                    <div>
+                        <strong>最低気温:</strong> 10.86℃
+                    </div>
+                </div>
+                <footer style="margin-top: 1rem; font-size: 0.85rem;">
+                    肌寒い晩秋の気候です。寒暖差や初雪の便りに備え、顧客とのアイスブレイクでは冬支度や暖房用燃料費の話題などを意識してみましょう。
+                </footer>
+            </article>
+        </section>
 
-    <!-- ニュース1：国際金融・マクロ経済 -->
-    <article>
-      <header>
-        <h3>フランス、長期金利一時5％超　24年ぶり、暴動で財政懸念</h3>
-      </header>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> 国内の社会情勢不安（暴動）や政治対立を受け、フランス政府の財政規律悪化に対する市場の警戒感が高まっていた。</li>
-        <li><strong>事象:</strong> フランスの長期金利（10年物国債利回り）が一時5％を突破。これは約24年ぶりの高水準を記録。</li>
-        <li><strong>結果/影響:</strong> 欧州主要国間の国債スプレッドが拡大し、グローバル市場での国債売り圧力や世界的な金利高リスクが再燃している。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>
-        海外金利の急騰は、国内の長期・超長期金利の上昇圧力としても波及します。当行の外債ポートフォリオ運用における含み損益リスクを注視する必要があるほか、地元企業の資金調達面でも「金利のある世界」へのシフトが一段と加速することを意味します。法人顧客に対し、固定金利型調達への切り替え提案や為替・金利スワップのニーズ確認など、財務防衛のアドバイザリーを行う好機として会話の糸口にできます。
-      </p>
-      <a href="https://news.yahoo.co.jp/articles/491650a95bfd4e42b557bbb57dfca5bbac8fa6b7?source=rss" role="button" class="outline">続きを読む</a>
-    </article>
+        <section>
+            <h2>厳選ビジネス・金融ニュース解説</h2>
 
-    <!-- ニュース2：コーポレートガバナンス・財務分析 -->
-    <article>
-      <header>
-        <h3>ニデック調査委報告書、歴代社長ら9人に賠償責任認定…会計理念の逆転を批判</h3>
-      </header>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> 外部調査委員会がニデック（旧日本電産）における不適切会計やガバナンス不全の有無について調査を進めていた。</li>
-        <li><strong>事象:</strong> 調査委は歴代社長ら9名に損害賠償責任があると認定。「業績目標の達成を優先し会計基準を後から合わせる」という会計理念の逆転が常態化していたと痛烈に批判。</li>
-        <li><strong>結果/影響:</strong> 経営陣の法的責任追及が進むと同時に、同社のガバナンス体制への信頼失墜、コンプライアンス再構築が不可避となった。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>
-        銀行員にとって「決算書の数字を正しく疑う力」は与信判断の根幹です。中小企業や中堅企業の融資審査でも、トップダウンの強い企業ほど粉飾や無理な利益計上のインセンティブが働きやすい傾向にあります。「なぜこの利益水準が維持できているのか」というキャッシュフローの実態確認や、トップへのヒアリングによるガバナンス状況の見極めなど、将来の融資業務・財務分析における重要な教訓・反面教師となるケースです。
-      </p>
-      <a href="https://news.yahoo.co.jp/articles/915cd21ebe502d13cce607f72f881811b3122dbb?source=rss" role="button" class="outline">続きを読む</a>
-    </article>
+            <!-- ニュース1 -->
+            <article>
+                <h3>東証、一時千円超安、6万2千円割れ</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 高水準で推移してきた株式市場において、外部環境の不透明感や過熱感に対する警戒感が高まっていた。</li>
+                    <li><strong>事象:</strong> 東京株式市場で日経平均株価が一時1,000円を超える急落を見せ、節目となる6万2,000円の大台を割り込んだ。</li>
+                    <li><strong>結果/影響:</strong> 投資家心理の冷え込みや利益確定売りが連鎖し、金融市場全体に短期的な調整局面・リスクオフ姿勢が広がっている。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>
+                <p>株価の急変動は、当行の富裕層顧客や預かり資産運用（投資信託等）をご利用いただいている個人顧客のマインドに直結します。「相場が下がったがどうすればよいか」という不安の声を想定し、中長期・積立・分散投資の基本原則を丁寧に再説明できる姿勢が求められます。また、地元上場企業や含み益を持つ法人取引先における業績評価や担保評価、資金調達スケジュールへの影響をモニタリングする視点も重要です。</p>
+                <a href="https://news.yahoo.co.jp/articles/5ae54cd6e2c5788756f5ba9b43665b07d598caca?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
 
-    <!-- ニュース3：リテール・高齢化・相続ビジネス -->
-    <article>
-      <header>
-        <h3>多死社会　死亡数は5年ぶり減　東京都の火葬料金は無料から民営8万円以上</h3>
-      </header>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> 日本は超高齢社会の進展に伴い年間死亡者数が増加基調にあり、終活や葬祭関連の費用負担が社会的な関心事となっている。</li>
-        <li><strong>事象:</strong> 直近の統計で死亡数は5年ぶりに減少したものの、都内を中心に火葬料金の公営・民営による格差（無料〜8万円超）など、終活費用の地域間・施設間格差が顕在化。</li>
-        <li><strong>結果/影響:</strong> 家族葬の普及や葬儀の簡素化が進む一方、事前の費用準備や生前整理を望むシニア層の相談意識が高まっている。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>
-        高齢化が進む北海道において、相続・終活支援は地方銀行のリテール戦略における最重要分野です。「終活はお金がかかる」という顧客の不安に対し、預金だけでなく遺言代用信託や生前贈与、認知症対策としての家族信託などのソリューション提案へと展開できます。窓口や営業先でのシニア顧客・その現役世代の子供たちとの会話で「将来の備え」を自然にヒアリングするための身近なフックとなります。
-      </p>
-      <a href="https://news.yahoo.co.jp/articles/515948d412fee091e5c8aa7eb7af55c977854808?source=rss" role="button" class="outline">続きを読む</a>
-    </article>
+            <!-- ニュース2 -->
+            <article>
+                <h3>銀行で米ドルの定期預金を勧められました。円高になると損をする可能性もあると聞きますが、円安の今、米ドル定期預金はやったほうがいいですか？</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 日米金利差や円安トレンドを背景に、高金利を謳う米ドル建て定期預金などの外貨商品への関心が高まっている。</li>
+                    <li><strong>事象:</strong> 顧客が銀行窓口で外貨預金を提案された際、金利メリットと将来の為替変動（円高リスク）による元本割れ懸念の間で判断に迷う事例が発生。</li>
+                    <li><strong>結果/影響:</strong> 表面利回りだけでなく、為替手数料や為替リスクを勘案した「実質リターン」の正確な理解と、適切な金融リテラシーの必要性が浮き彫りになっている。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>
+                <p>リテール（個人向け）営業の現場において、新人行員が最も直面しやすい相談事例です。外貨預金は表面金利の高さが魅力に見えますが、解約時に円高が進めば為替差損が生じるリスクがあります。顧客本位の業務運営（フィデューシャリー・デューティー）に基づき、顧客の余裕資金の有無や資産全体のリスク許容度を把握した上で、為替リスクの仕組みを平易な言葉で説明し、信頼関係を築く提案力が求められます。</p>
+                <a href="https://news.yahoo.co.jp/articles/fcc9de1cecad63122702f42faf1ed156e30bf292?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
 
-    <footer>
-      <p><small>&copy; 2026 Hokkaido Regional Bank Prospective Employees Support Desk.</small></p>
-    </footer>
-  </main>
+            <!-- ニュース3 -->
+            <article>
+                <h3>「ハイラックス」改良…トヨタが完成、「ダカール」参戦FCVの性能</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 脱炭素（カーボンニュートラル）社会の実現に向け、過酷な商用・オフロード環境における次世代動力技術の確立が急務となっている。</li>
+                    <li><strong>事象:</strong> トヨタが過酷な「ダカール・ラリー」参戦を見据え、ピックアップトラック「ハイラックス」の燃料電池車（FCV）改良モデルを完成させた。</li>
+                    <li><strong>結果/影響:</strong> 水素を燃料とするパワートレインの耐久性・航続性能が極限環境で実証され、将来的な商用モビリティやインフラ普及への弾みとなる。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>
+                <p>北海道は広大な土地と過酷な積雪・寒冷地環境を抱えており、物流・農業・建設業においてタフな四輪駆動車の存在は不可欠です。寒冷地でのFCV（水素）の実用化は、道内のエネルギー転換や脱炭素化の命題に直結します。将来的に水素ステーションの整備や業務用車両の更新需要が生じるため、道内の自動車ディーラーや運送業者、再エネ・インフラ関連企業との対話において、中長期の設備投資支援やサステナビリティ融資の切り口として活用できます。</p>
+                <a href="https://news.yahoo.co.jp/articles/c12970271c5b673ee1bab78d7dd6e9e4026ae8f0?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
