@@ -3,91 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>朝のインサイト (2026年10月24日)</title>
+  <title>朝のインサイト - 2026年10月25日</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+    header {
+      margin-bottom: 2rem;
+    }
+    .weather-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      align-items: center;
+    }
+    .weather-item {
+      padding: 0.5rem;
+    }
+    .weather-temp {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      background-color: var(--pico-muted-background);
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <main class="container">
-    <header style="margin-bottom: 2rem;">
-      <h1>☀️ 朝のインサイト (2026年10月24日)</h1>
-      <p>北海道の地域経済と銀行実務への解像度を高める、内定者向けモーニング・ダイジェスト</p>
+    <header>
+      <h1>☀️ 朝のインサイト (2026年10月25日)</h1>
+      <p><small>北海道の地方銀行 内定者向け デイリー・ブリーフィング</small></p>
     </header>
 
     <!-- 天気情報 -->
     <article>
       <header>
-        <h2 style="margin-bottom: 0;">道内の気象概況</h2>
+        <strong>📍 本日の北海道エリアの気候</strong>
       </header>
-      <div class="grid">
-        <div><strong>天気:</strong> 曇りがち</div>
-        <div><strong>最高気温:</strong> 11.9℃</div>
-        <div><strong>最低気温:</strong> 9.86℃</div>
+      <div class="weather-grid">
+        <div class="weather-item">
+          <span>天気予報:</span>
+          <div class="weather-temp">☁️ 雲</div>
+        </div>
+        <div class="weather-item">
+          <span>最高気温:</span>
+          <div class="weather-temp" style="color: #d9534f;">10.23℃</div>
+        </div>
+        <div class="weather-item">
+          <span>最低気温:</span>
+          <div class="weather-temp" style="color: #0275d8;">9.86℃</div>
+        </div>
       </div>
-      <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem; color: var(--pico-muted-color);">
-        各地で秋の深まりを感じる冷え込みとなっています。11月を目前に控え、路面の凍結や急激な寒暖差に備えつつ、健康管理に万全を期しましょう。
-      </p>
+      <footer>
+        <small>晩秋の冷え込みが本格化しています。暖房需要や冬支度による季節指数の変化、顧客訪問時の寒暖差に留意しましょう。</small>
+      </footer>
     </article>
 
     <!-- ニュース解説 1 -->
     <article>
-      <h3>実家で昔の通帳を見つけたら、5万円ほど残高がありました。しかし記帳すると「未利用口座管理手数料」が毎年引かれていました。何に使うためのお金なのでしょうか？</h3>
-      
+      <div class="badge">ガバナンス・リスク管理</div>
+      <h3>安全性課題、社内で事前に指摘とGMO社長</h3>
       <b>ロジカル要約</b>
       <ul>
-        <li><strong>背景/経緯:</strong> マネー・ローンダリング対策や休眠口座管理に伴うシステム維持コストの増大を受け、メガバンクや地方銀行各行で「未利用口座管理手数料」の新設・適用が進んでいる。</li>
-        <li><strong>事象:</strong> 長期間入出金等の取引がない普通預金口座に対し、規定年数経過後に年間1,000円〜1,300円前後の手数料が自動引き落としされるケースが増加。</li>
-        <li><strong>結果/影響:</strong> 預金残高が手数料分を下回ると自動解約となる場合が多く、休眠状態の口座削減が進む一方、顧客への丁寧な事前周知や納得感のある説明が課題となっている。</li>
+        <li><strong>背景/経緯:</strong> GMOグループにおける新サービスまたはシステム展開に伴い、開発現場や内部監査等の段階でセキュリティや安全性に関する懸念が挙がっていた。</li>
+        <li><strong>事象:</strong> 記者会見等の場において、社長自らが社内から事前の課題指摘が存在していた事実を公表・認知した。</li>
+        <li><strong>結果/影響:</strong> 内部統制や現場アラートのエスカレーションプロセス、経営判断の妥当性が問われ、今後のコーポレートガバナンス改革が不可欠となる。</li>
       </ul>
-
       <b>地銀視点の深掘り</b>
       <p>
-        窓口業務や個人渉外において顧客から直接質問を受けやすい重要テーマです。単に「手数料収入を得るため」ではなく、不正利用対策（口座売買等の犯罪抑止）やペーパーレス・デジタル化の推進、システム維持コストの適正化という銀行側の正当な理由を的確に理解しておく必要があります。「通帳アプリへの切り替え」や「メインバンク化・給与受取口座等の集約提案」といった顧客提案へポジティブに繋げるトークを意識してみましょう。
+        地方銀行の法人営業（RM）において、取引先の「内部統制」や「現場の声を吸い上げる風通しの良さ」は、財務数値には表れない定性評価の極めて重要な指標です。特に道内中小企業がDXや新事業へ踏み切る際、経営陣がリスクを適切に把握できているかを確認することは、融資審査や経営支援の成否を分かちます。経営者との対話では「現場からリスクや課題はスムーズに上がってきていますか？」という切り口で、組織マネジメントの健全性を引き出す好材料になります。
       </p>
-
-      <a href="https://news.yahoo.co.jp/articles/c021f62ad763d2660ed50151087dc7b3854f2de8?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+      <a href="https://news.yahoo.co.jp/articles/e510551b9ff436c145205bb73504523b67a96fa1?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
     </article>
 
     <!-- ニュース解説 2 -->
     <article>
-      <h3>なぜ千葉県の魅力度は年々「ダダ下がり」なのか？ 5年間で7ランクもダウン！ ディズニーも成田空港もある県で何が起きているのか――観光大国を悩ませる「評価の落差」とは</h3>
-      
+      <div class="badge">リテール金融・地域活性化</div>
+      <h3>共働き夫婦ですが、ふるさと納税は夫に任せきり。「夫婦で寄付しないともったいない」と友人に言われましたが、私も自分名義で寄付したほうが世帯全体では得なのでしょうか？</h3>
       <b>ロジカル要約</b>
       <ul>
-        <li><strong>背景/経緯:</strong> 地域ブランド調査において、全国屈指の観光資源（成田国際空港、東京ディズニーリゾート等）を擁する千葉県の魅力度順位が低下傾向にある。</li>
-        <li><strong>事象:</strong> 「個別スポットの集客力・知名度」が圧倒的である反面、それらが「千葉県全体のブランド価値」として認知・定着していない構造的乖離が存在する。</li>
-        <li><strong>結果/影響:</strong> 単発の通過型観光にとどまり、県内各地域（内陸部・外房等）への周遊や宿泊需要、地場産品の消費拡大といった波及効果が限定的になっている。</li>
+        <li><strong>背景/経緯:</strong> 共働き世帯が増加する中、世帯内の資産管理や税制メリットの活用方法についての関心が高まっている。</li>
+        <li><strong>事象:</strong> ふるさと納税の控除上限枠は個人の所得税・住民税額に応じるため、夫単独ではなく妻も所得があれば各自で寄付枠を活用した方が世帯全体の控除総額が大きくなる。</li>
+        <li><strong>結果/影響:</strong> 税制メリットの最大化に加え、各自治体の返礼品選択の幅が広がる一方、名義の混同や寄付上限額の計算ミスへの注意が必要。</li>
       </ul>
-
       <b>地銀視点の深掘り</b>
       <p>
-        都道府県魅力度ランキングで常にトップを独走する北海道にとっても「他山の石」とすべき事例です。道内でもニセコや富良野、知床などのキラーコンテンツに依存し、周辺自治体や他産業への経済波及が分断されるリスクは常に潜んでいます。道内地銀の行員として、地元ホテル・飲食・交通事業者・農林水産加工業者が連携する「面的な観光DX」や「地域周遊型ビジネス」への資金供給・ビジネスマッチングをどう仕掛けるか、地域商社機能の視点から考察する絶好の材料となります。
+        窓口でのリテール提案や若年ファミリー層とのライフプラン相談において、税制優遇（ふるさと納税、新NISA、iDeCo等）はファーストアプローチに最適なテーマです。また、北海道内の自治体は全国有数の人気返礼品（海産物、農畜産物等）を誇るため、「道外へ流出する税金」と「道内へ呼び込む寄付」の双方の視点を持つことが肝要です。道内取引先（食品加工業・観光業）の販路拡大や地域商社機能としての銀行の関わり方まで視野を広げてトークを展開できます。
       </p>
-
-      <a href="https://news.yahoo.co.jp/articles/1ed298623eccade151768755d0aeb623aea19c04?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+      <a href="https://news.yahoo.co.jp/articles/2b83c49d93606f53720157356e9756dfe9e55725?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
     </article>
 
     <!-- ニュース解説 3 -->
     <article>
-      <h3>ANAとJAL、初のダイヤ調整開始　羽田−岡山、近接便を1時間差に</h3>
-      
+      <div class="badge">事業性評価・法人支援</div>
+      <h3>「金を掘るよりシャベルを売る」思考法、2027年の成長6分野で商機を探す 米国</h3>
       <b>ロジカル要約</b>
       <ul>
-        <li><strong>背景/経緯:</strong> 地方路線における航空需要の構造的変化や操縦士・整備士等の人手不足を受け、国土交通省の共同運営規制緩和を活用した大手2社の協調体制が模索されていた。</li>
-        <li><strong>事象:</strong> ANAとJALが羽田−岡山線において初の発着ダイヤ調整を実施。出発時刻が重なっていた便を1時間ずらすことで、利用者の利便性を向上させた。</li>
-        <li><strong>結果/影響:</strong> 過度な重複競合の解消により機材・人員運用の効率化と地方路線の採算性向上が見込まれ、他地方路線への横展開が期待されている。</li>
+        <li><strong>背景/経緯:</strong> ゴールドラッシュ期に最も確実に富を築いたのは採掘者ではなく作業道具（シャベルやジーンズ）の供給者であったという教訓。</li>
+        <li><strong>事象:</strong> 2027年に向けたAI、脱炭素、ロボティクス等の先端トレンドにおいて、直接的な競争に飛び込むのではなく、それらのインフラや周辺支援資材・ツールを提供するビジネスモデルが再評価されている。</li>
+        <li><strong>結果/影響:</strong> 激しいトレンド競争の消耗戦を回避し、確実性の高いBtoB需要を捉える持続的な収益モデルの構築が可能となる。</li>
       </ul>
-
       <b>地銀視点の深掘り</b>
       <p>
-        広大な面積を抱える北海道にとって、新千歳・丘珠・函館・旭川・釧路・帯広・女満別・稚内などを結ぶ航空ネットワークは生命線です。過疎化や人口減少が進む道内空港路線の維持・存続は、地元企業の広域取引や観光インバウンド誘致に直結する死活問題です。航空各社や道内交通事業者とのリレーションを持つ企業融資担当として、交通インフラ再編が取引先（観光・物流・出張需要）のコストやサプライチェーンに与えるインパクトを先読みした対話が求められます。
+        地銀の内定者が身につけるべき「事業性評価」の本質がここにあります。例えば、道内で進む大規模半導体工場の進出（ラピダス関連）や再生可能エネルギー（洋上風力等）のメガトレンドに対し、一次請けの直接参入だけでなく、「作業員の宿泊・飲食・移動需要」「現場で使われる建機・資材リース」「特殊運送」といった“周辺インフラ（シャベル）”を担う地元中堅・中小企業の発掘と資金供給こそが地銀の本分です。取引先への多角化提案や設備投資提案に直結する思考法です。
       </p>
-
-      <a href="https://news.yahoo.co.jp/articles/f93942cd680260967a4cad71188197f5f367f6a0?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+      <a href="https://news.yahoo.co.jp/articles/2b32b2d1c278d650fe3a36c926258c03c7f62d5c?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
     </article>
-
-    <footer style="margin-top: 3rem; text-align: center; color: var(--pico-muted-color); font-size: 0.85rem;">
-      <p>© 2026 朝のインサイト | 北海道地域金融イニシアチブ 内定者研修プログラム</p>
-    </footer>
   </main>
 </body>
 </html>
