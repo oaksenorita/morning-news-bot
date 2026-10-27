@@ -1,118 +1,143 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>朝のインサイト - 2026年10月25日</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <style>
-    header {
-      margin-bottom: 2rem;
-    }
-    .weather-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
-      align-items: center;
-    }
-    .weather-item {
-      padding: 0.5rem;
-    }
-    .weather-temp {
-      font-size: 1.25rem;
-      font-weight: bold;
-    }
-    .badge {
-      display: inline-block;
-      padding: 0.2rem 0.6rem;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      background-color: var(--pico-muted-background);
-      margin-bottom: 0.5rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝のインサイト - 2026年10月27日</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        header {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .weather-card {
+            border-left: 4px solid var(--pico-primary);
+            background-color: var(--pico-card-background-color);
+        }
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        .weather-item {
+            padding: 0.5rem 0;
+        }
+        .weather-item span {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--pico-muted-color);
+        }
+        .weather-item strong {
+            font-size: 1.25rem;
+        }
+        .news-section {
+            margin-top: 2rem;
+        }
+        .news-card {
+            margin-bottom: 2rem;
+        }
+        .insight-box {
+            background-color: var(--pico-code-background-color);
+            padding: 1rem;
+            border-radius: var(--pico-border-radius);
+            margin: 1rem 0;
+        }
+    </style>
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>☀️ 朝のインサイト (2026年10月25日)</h1>
-      <p><small>北海道の地方銀行 内定者向け デイリー・ブリーフィング</small></p>
-    </header>
+    <main class="container">
+        <header>
+            <h1>☀️ 朝のインサイト (2026年10月27日)</h1>
+            <p><small>北海道の地域経済と金融の未来を担う内定者のためのデイリー・ブリーフィング</small></p>
+        </header>
 
-    <!-- 天気情報 -->
-    <article>
-      <header>
-        <strong>📍 本日の北海道エリアの気候</strong>
-      </header>
-      <div class="weather-grid">
-        <div class="weather-item">
-          <span>天気予報:</span>
-          <div class="weather-temp">☁️ 雲</div>
-        </div>
-        <div class="weather-item">
-          <span>最高気温:</span>
-          <div class="weather-temp" style="color: #d9534f;">10.23℃</div>
-        </div>
-        <div class="weather-item">
-          <span>最低気温:</span>
-          <div class="weather-temp" style="color: #0275d8;">9.86℃</div>
-        </div>
-      </div>
-      <footer>
-        <small>晩秋の冷え込みが本格化しています。暖房需要や冬支度による季節指数の変化、顧客訪問時の寒暖差に留意しましょう。</small>
-      </footer>
-    </article>
+        <!-- 本日の天気 -->
+        <article class="weather-card">
+            <header>
+                <strong>道内主要地域の気象概況</strong>
+            </header>
+            <div class="weather-grid">
+                <div class="weather-item">
+                    <span>天候</span>
+                    <strong>☔ 適度な雨</strong>
+                </div>
+                <div class="weather-item">
+                    <span>最高気温</span>
+                    <strong>11.9℃</strong>
+                </div>
+                <div class="weather-item">
+                    <span>最低気温</span>
+                    <strong>6.86℃</strong>
+                </div>
+            </div>
+            <footer>
+                <small>※10月下旬を迎え、朝晩の冷え込みが一段と本格化しています。暖房需要の立ち上がりや路面状況の確認など、外回りに向けた足元の準備を整えましょう。</small>
+            </footer>
+        </article>
 
-    <!-- ニュース解説 1 -->
-    <article>
-      <div class="badge">ガバナンス・リスク管理</div>
-      <h3>安全性課題、社内で事前に指摘とGMO社長</h3>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> GMOグループにおける新サービスまたはシステム展開に伴い、開発現場や内部監査等の段階でセキュリティや安全性に関する懸念が挙がっていた。</li>
-        <li><strong>事象:</strong> 記者会見等の場において、社長自らが社内から事前の課題指摘が存在していた事実を公表・認知した。</li>
-        <li><strong>結果/影響:</strong> 内部統制や現場アラートのエスカレーションプロセス、経営判断の妥当性が問われ、今後のコーポレートガバナンス改革が不可欠となる。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>
-        地方銀行の法人営業（RM）において、取引先の「内部統制」や「現場の声を吸い上げる風通しの良さ」は、財務数値には表れない定性評価の極めて重要な指標です。特に道内中小企業がDXや新事業へ踏み切る際、経営陣がリスクを適切に把握できているかを確認することは、融資審査や経営支援の成否を分かちます。経営者との対話では「現場からリスクや課題はスムーズに上がってきていますか？」という切り口で、組織マネジメントの健全性を引き出す好材料になります。
-      </p>
-      <a href="https://news.yahoo.co.jp/articles/e510551b9ff436c145205bb73504523b67a96fa1?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-    </article>
+        <!-- 厳選ニュース解説 -->
+        <section class="news-section">
+            <h2>注目の金融・経済トピックス</h2>
 
-    <!-- ニュース解説 2 -->
-    <article>
-      <div class="badge">リテール金融・地域活性化</div>
-      <h3>共働き夫婦ですが、ふるさと納税は夫に任せきり。「夫婦で寄付しないともったいない」と友人に言われましたが、私も自分名義で寄付したほうが世帯全体では得なのでしょうか？</h3>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> 共働き世帯が増加する中、世帯内の資産管理や税制メリットの活用方法についての関心が高まっている。</li>
-        <li><strong>事象:</strong> ふるさと納税の控除上限枠は個人の所得税・住民税額に応じるため、夫単独ではなく妻も所得があれば各自で寄付枠を活用した方が世帯全体の控除総額が大きくなる。</li>
-        <li><strong>結果/影響:</strong> 税制メリットの最大化に加え、各自治体の返礼品選択の幅が広がる一方、名義の混同や寄付上限額の計算ミスへの注意が必要。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>
-        窓口でのリテール提案や若年ファミリー層とのライフプラン相談において、税制優遇（ふるさと納税、新NISA、iDeCo等）はファーストアプローチに最適なテーマです。また、北海道内の自治体は全国有数の人気返礼品（海産物、農畜産物等）を誇るため、「道外へ流出する税金」と「道内へ呼び込む寄付」の双方の視点を持つことが肝要です。道内取引先（食品加工業・観光業）の販路拡大や地域商社機能としての銀行の関わり方まで視野を広げてトークを展開できます。
-      </p>
-      <a href="https://news.yahoo.co.jp/articles/2b83c49d93606f53720157356e9756dfe9e55725?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-    </article>
+            <!-- 記事1 -->
+            <article class="news-card">
+                <h3>金融相、GMOで金融機関に被害防止要請</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯：</strong>フィッシング詐欺や不正アクセスを端緒としたオンラインバンキングの不正送金・不正出金被害が社会問題化し、金融インフラ全体の信用毀損が懸念されている。</li>
+                    <li><strong>事象：</strong>金融担当相がGMOインターネットグループをはじめとする決済・セキュリティ関連企業や各金融機関に対し、サイバー攻撃抑止および顧客資産の被害防止に向けた実効性ある対策の徹底を要請した。</li>
+                    <li><strong>結果/影響：</strong>地方銀行を含む全金融機関において、多要素認証の厳格化や不審取引検知システムの導入・強化が急務となり、セキュリティ関連のIT投資負担および顧客への周知徹底が求められる。</li>
+                </ul>
+                <div class="insight-box">
+                    <b>地銀視点の深掘り</b>
+                    <p>
+                        地域金融機関にとって「信頼と安全性」は最大の経営基盤です。道内の中小企業でもネットバンキングの活用が急速に進む中、法人向け不正送金対策は取引先防衛の最前線と言えます。新人のうちから「セキュリティの仕組み」と「被害事例」を理解しておくことで、窓口や営業先で『最近巧妙化しているフィッシング詐欺への対策はお済みですか？』と注意喚起を兼ねた信頼構築の会話のきっかけを作ることができます。
+                    </p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/8e7bd8edf1bddfbaf17207a09b8f7a5d86f3fbca?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+            </article>
 
-    <!-- ニュース解説 3 -->
-    <article>
-      <div class="badge">事業性評価・法人支援</div>
-      <h3>「金を掘るよりシャベルを売る」思考法、2027年の成長6分野で商機を探す 米国</h3>
-      <b>ロジカル要約</b>
-      <ul>
-        <li><strong>背景/経緯:</strong> ゴールドラッシュ期に最も確実に富を築いたのは採掘者ではなく作業道具（シャベルやジーンズ）の供給者であったという教訓。</li>
-        <li><strong>事象:</strong> 2027年に向けたAI、脱炭素、ロボティクス等の先端トレンドにおいて、直接的な競争に飛び込むのではなく、それらのインフラや周辺支援資材・ツールを提供するビジネスモデルが再評価されている。</li>
-        <li><strong>結果/影響:</strong> 激しいトレンド競争の消耗戦を回避し、確実性の高いBtoB需要を捉える持続的な収益モデルの構築が可能となる。</li>
-      </ul>
-      <b>地銀視点の深掘り</b>
-      <p>
-        地銀の内定者が身につけるべき「事業性評価」の本質がここにあります。例えば、道内で進む大規模半導体工場の進出（ラピダス関連）や再生可能エネルギー（洋上風力等）のメガトレンドに対し、一次請けの直接参入だけでなく、「作業員の宿泊・飲食・移動需要」「現場で使われる建機・資材リース」「特殊運送」といった“周辺インフラ（シャベル）”を担う地元中堅・中小企業の発掘と資金供給こそが地銀の本分です。取引先への多角化提案や設備投資提案に直結する思考法です。
-      </p>
-      <a href="https://news.yahoo.co.jp/articles/2b32b2d1c278d650fe3a36c926258c03c7f62d5c?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-    </article>
-  </main>
+            <!-- 記事2 -->
+            <article class="news-card">
+                <h3>【ヤフコメで話題】「物価高でランチ代が高騰」「弁当持参や節約志向が広がる」 - 日常生活への影響と対応策を巡る議論</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯：</strong>原材料費・物流費・エネルギーコストの継続的な上昇に伴い、外食産業や日常消費財の価格転嫁が進行している。</li>
+                    <li><strong>事象：</strong>ビジネスパーソンのランチ代が高騰し、1,000円超のメニューが一般化するなかで、弁当持参やまとめ買いによる節約志向・防衛的な消費行動が顕著になっている。</li>
+                    <li><strong>結果/影響：</strong>消費者の可処分所得における「実質的な目減り」が意識され、飲食業界では客単価アップと客数維持の二極化が進展。家計向けには資産形成や固定費見直しのニーズが高まる。</li>
+                </ul>
+                <div class="insight-box">
+                    <b>地銀視点の深掘り</b>
+                    <p>
+                        取引先である道内の飲食店・食品卸業にとっては、コスト増の価格転嫁と顧客離れ防止を両立するマーケティング支援や資金繰り管理が肝要です。また個人顧客に対しては、物価高への対抗策としてNISAをはじめとする「インフレに負けない資産形成」や住宅ローン見直しの提案が一段と刺さりやすい環境です。『日常のランチ代や光熱費の実感』を切り口に、リアルな生活感覚に寄り添ったヒアリングを行う姿勢が求められます。
+                    </p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/f22e5287ca20246195f200aa93ff40b40e082dd2?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+            </article>
+
+            <!-- 記事3 -->
+            <article class="news-card">
+                <h3>ガソリン価格、前政権超え 米中間選挙、共和に逆風</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯：</strong>中東情勢の緊迫化や産油国の減産方針、国際的な原油先物相場の変動により、エネルギー価格が高止まりを続けている。</li>
+                    <li><strong>事象：</strong>米国のガソリン小売価格が前政権時の水準を超過し、生活コストの上昇が米中間選挙を控えた与野党の支持基盤および政策議論に強い逆風と緊張を与えている。</li>
+                    <li><strong>結果/影響：</strong>世界的な燃料・輸送コスト高が継続し、為替市場や米金融政策（FRBの金利方針）の不確実性が高まり、日本国内のガソリン補助金動向や輸入コストにも波及している。</li>
+                </ul>
+                <div class="insight-box">
+                    <b>地銀視点の深掘り</b>
+                    <p>
+                        広大な面積を持つ北海道経済において、燃料費・ガソリン価格の動向は生命線です。物流・運送業はもちろん、ハウス栽培等の農業、漁業、そして冬場の灯油・暖房需要を控えた一般家庭まで、直撃を受けない先はありません。『冬場の暖房燃料費や輸送コストの採算見通しはいかがですか？』という問いかけは、経営者の本音と資金需要を引き出す極めて重要かつタイムリーな話題になります。
+                    </p>
+                </div>
+                <a href="https://news.yahoo.co.jp/articles/efce94244206ccd9da2f3a833419601f2f58fdcf?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+            </article>
+        </section>
+
+        <footer style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
+            <small>&copy; 2026 Hokkaido Regional Bank Newcomer Support Desk</small>
+        </footer>
+    </main>
 </body>
 </html>
