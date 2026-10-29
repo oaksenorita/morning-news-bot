@@ -1,143 +1,112 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 2026年10月27日</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <style>
-        header {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-        }
-        .weather-card {
-            border-left: 4px solid var(--pico-primary);
-            background-color: var(--pico-card-background-color);
-        }
-        .weather-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 1rem;
-            margin-top: 0.5rem;
-        }
-        .weather-item {
-            padding: 0.5rem 0;
-        }
-        .weather-item span {
-            display: block;
-            font-size: 0.85rem;
-            color: var(--pico-muted-color);
-        }
-        .weather-item strong {
-            font-size: 1.25rem;
-        }
-        .news-section {
-            margin-top: 2rem;
-        }
-        .news-card {
-            margin-bottom: 2rem;
-        }
-        .insight-box {
-            background-color: var(--pico-code-background-color);
-            padding: 1rem;
-            border-radius: var(--pico-border-radius);
-            margin: 1rem 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>朝のインサイト - 2026年10月29日</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--pico-muted-border-color);
+      padding-bottom: 1rem;
+    }
+    .weather-widget {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .weather-item {
+      font-size: 1.05rem;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+      background-color: var(--pico-primary-background);
+      color: var(--pico-primary-inverse);
+    }
+  </style>
 </head>
 <body>
-    <main class="container">
-        <header>
-            <h1>☀️ 朝のインサイト (2026年10月27日)</h1>
-            <p><small>北海道の地域経済と金融の未来を担う内定者のためのデイリー・ブリーフィング</small></p>
-        </header>
+  <main class="container">
+    <header>
+      <h1>☀️ 朝のインサイト (2026年10月29日)</h1>
+      <p><small>北海道の地方銀行 内定者向け情報ブリーフィング</small></p>
+    </header>
 
-        <!-- 本日の天気 -->
-        <article class="weather-card">
-            <header>
-                <strong>道内主要地域の気象概況</strong>
-            </header>
-            <div class="weather-grid">
-                <div class="weather-item">
-                    <span>天候</span>
-                    <strong>☔ 適度な雨</strong>
-                </div>
-                <div class="weather-item">
-                    <span>最高気温</span>
-                    <strong>11.9℃</strong>
-                </div>
-                <div class="weather-item">
-                    <span>最低気温</span>
-                    <strong>6.86℃</strong>
-                </div>
-            </div>
-            <footer>
-                <small>※10月下旬を迎え、朝晩の冷え込みが一段と本格化しています。暖房需要の立ち上がりや路面状況の確認など、外回りに向けた足元の準備を整えましょう。</small>
-            </footer>
-        </article>
+    <!-- 天気情報 -->
+    <article>
+      <header>
+        <strong>📍 本日の道内気象状況</strong>
+      </header>
+      <div class="weather-widget">
+        <div class="weather-item">☁️ <strong>天候:</strong> 雲</div>
+        <div class="weather-item">🔺 <strong>最高気温:</strong> 10.23℃</div>
+        <div class="weather-item">🔻 <strong>最低気温:</strong> 9.86℃</div>
+      </div>
+      <p style="margin-top: 1rem; margin-bottom: 0;">
+        <small>※寒暖差が小さく底冷えのする一日となります。冬タイヤ交換の相談や暖房燃料の仕入れ需要が本格化する季節です。体調管理に留意しましょう。</small>
+      </p>
+    </article>
 
-        <!-- 厳選ニュース解説 -->
-        <section class="news-section">
-            <h2>注目の金融・経済トピックス</h2>
+    <!-- ニュース1 -->
+    <article>
+      <span class="tag">為替・マクロ経済</span>
+      <h3>東京円、158円近辺</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> 日米の金利差継続や地政学的リスクを背景に、外国為替市場では根強い円安・ドル高トレンドが推移。</li>
+        <li><strong>事象:</strong> 東京外国為替市場において、円相場が1ドル＝158円近辺の円安水準で推移。</li>
+        <li><strong>結果/影響:</strong> 輸入エネルギー・資材の高止まりが懸念される一方、輸出関連産業の採算改善やインバウンド消費の追い風が継続。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>
+        北海道内の基幹産業である農業・酪農や漁業、食品加工業では飼料・資材・重油の輸入コスト高が直接収益を圧迫します。運転資金の融資相談や為替デリバティブ等のヘッジ提案が重要な接点となります。一方で、ニセコや富良野、道内主要観光地へのインバウンド需要は一段と高まるため、観光・宿泊事業者への設備投資支援や多言語キャッシュレス決済導入支援など、取引先ごとの「円安の明暗」を見極めた対話ネタとして活用できます。
+      </p>
+      <a href="https://news.yahoo.co.jp/articles/c07ded2e01666f55433eb9b351299192ae5b9519?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
 
-            <!-- 記事1 -->
-            <article class="news-card">
-                <h3>金融相、GMOで金融機関に被害防止要請</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯：</strong>フィッシング詐欺や不正アクセスを端緒としたオンラインバンキングの不正送金・不正出金被害が社会問題化し、金融インフラ全体の信用毀損が懸念されている。</li>
-                    <li><strong>事象：</strong>金融担当相がGMOインターネットグループをはじめとする決済・セキュリティ関連企業や各金融機関に対し、サイバー攻撃抑止および顧客資産の被害防止に向けた実効性ある対策の徹底を要請した。</li>
-                    <li><strong>結果/影響：</strong>地方銀行を含む全金融機関において、多要素認証の厳格化や不審取引検知システムの導入・強化が急務となり、セキュリティ関連のIT投資負担および顧客への周知徹底が求められる。</li>
-                </ul>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>
-                        地域金融機関にとって「信頼と安全性」は最大の経営基盤です。道内の中小企業でもネットバンキングの活用が急速に進む中、法人向け不正送金対策は取引先防衛の最前線と言えます。新人のうちから「セキュリティの仕組み」と「被害事例」を理解しておくことで、窓口や営業先で『最近巧妙化しているフィッシング詐欺への対策はお済みですか？』と注意喚起を兼ねた信頼構築の会話のきっかけを作ることができます。
-                    </p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/8e7bd8edf1bddfbaf17207a09b8f7a5d86f3fbca?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-            </article>
+    <!-- ニュース2 -->
+    <article>
+      <span class="tag">地域産業・自動車需要</span>
+      <h3>三菱「新型パジェロ」正式発表 先行予約で年度目標以上の「5500台」を受注 国内で7年ぶり復活しブランドをけん引するモデルに進化</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> 本格オフロードSUVの象徴として親しまれ、惜しまれつつ販売終了していた「パジェロ」が7年ぶりに国内復活。</li>
+        <li><strong>事象:</strong> 三菱自動車が「新型パジェロ」を正式発表。先行予約段階ですでに年度目標を上回る5,500台の受注を記録。</li>
+        <li><strong>結果/影響:</strong> 高価格帯SUV市場が活況を呈し、ブランド価値向上とともに自動車販売現場・アフターマーケットが活性化。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>
+        積雪寒冷地である北海道において、4WD・悪路走破性に優れたSUVは実用面・趣味面の両方で極めて根強い人気を誇ります。道内ディーラー各社との提携マイカーローンの推進はもちろん、一次産業従事者や道内富裕層顧客との商談アイスブレイク（冬の足回りや新車買い替えニーズ）に絶好の話題です。納車に伴う関連部品・整備工場の設備投資など、地域サプライチェーンの動向にも目を配りましょう。
+      </p>
+      <a href="https://news.yahoo.co.jp/articles/7c6dc1c3b852183ff9f605a2fdfc6e898f7a445f?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
 
-            <!-- 記事2 -->
-            <article class="news-card">
-                <h3>【ヤフコメで話題】「物価高でランチ代が高騰」「弁当持参や節約志向が広がる」 - 日常生活への影響と対応策を巡る議論</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯：</strong>原材料費・物流費・エネルギーコストの継続的な上昇に伴い、外食産業や日常消費財の価格転嫁が進行している。</li>
-                    <li><strong>事象：</strong>ビジネスパーソンのランチ代が高騰し、1,000円超のメニューが一般化するなかで、弁当持参やまとめ買いによる節約志向・防衛的な消費行動が顕著になっている。</li>
-                    <li><strong>結果/影響：</strong>消費者の可処分所得における「実質的な目減り」が意識され、飲食業界では客単価アップと客数維持の二極化が進展。家計向けには資産形成や固定費見直しのニーズが高まる。</li>
-                </ul>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>
-                        取引先である道内の飲食店・食品卸業にとっては、コスト増の価格転嫁と顧客離れ防止を両立するマーケティング支援や資金繰り管理が肝要です。また個人顧客に対しては、物価高への対抗策としてNISAをはじめとする「インフレに負けない資産形成」や住宅ローン見直しの提案が一段と刺さりやすい環境です。『日常のランチ代や光熱費の実感』を切り口に、リアルな生活感覚に寄り添ったヒアリングを行う姿勢が求められます。
-                    </p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/f22e5287ca20246195f200aa93ff40b40e082dd2?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-            </article>
+    <!-- ニュース3 -->
+    <article>
+      <span class="tag">FinTech・金融イノベーション</span>
+      <h3>ジャナスとセントリフュージ、ナスダック100連動のトークン化ファンド立ち上げ、ステラ展開へ</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> 伝統的資産（RWA: Real World Assets）をブロックチェーン上でトークン化し、流動性向上と運用効率化を図る動きが世界的に加速。</li>
+        <li><strong>事象:</strong> 大手資産運用会社ジャナス・ヘンダーソンとDeFiプラットフォームのセントリフュージが提携し、ナスダック100連動のトークン化ファンドを組成、ステラブロックチェーン上へ展開。</li>
+        <li><strong>結果/影響:</strong> 個人・機関投資家が少額かつ即時決済で主要指数へ分散投資できるインフラが整備され、既存証券インフラとの融合が一段と進展。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>
+        「地域銀行には遠い話題」と捉えがちですが、RWA（現実資産のトークン化）は将来的に道内の再生可能エネルギー債券、地方創生ファンド、未上場地元企業への少額出資プラットフォームなどに応用可能な基盤技術です。資産運用立国をめざす中で、顧客から「デジタル証券や最新ファンドの仕組み」について質問を受ける機会も増えます。先進的な金融テクノロジーの潮流を把握し、信頼される相談相手を目指しましょう。
+      </p>
+      <a href="https://news.yahoo.co.jp/articles/af9952d4d0f06cb6d9b8d9c74503a6ea720bf698?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
 
-            <!-- 記事3 -->
-            <article class="news-card">
-                <h3>ガソリン価格、前政権超え 米中間選挙、共和に逆風</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯：</strong>中東情勢の緊迫化や産油国の減産方針、国際的な原油先物相場の変動により、エネルギー価格が高止まりを続けている。</li>
-                    <li><strong>事象：</strong>米国のガソリン小売価格が前政権時の水準を超過し、生活コストの上昇が米中間選挙を控えた与野党の支持基盤および政策議論に強い逆風と緊張を与えている。</li>
-                    <li><strong>結果/影響：</strong>世界的な燃料・輸送コスト高が継続し、為替市場や米金融政策（FRBの金利方針）の不確実性が高まり、日本国内のガソリン補助金動向や輸入コストにも波及している。</li>
-                </ul>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>
-                        広大な面積を持つ北海道経済において、燃料費・ガソリン価格の動向は生命線です。物流・運送業はもちろん、ハウス栽培等の農業、漁業、そして冬場の灯油・暖房需要を控えた一般家庭まで、直撃を受けない先はありません。『冬場の暖房燃料費や輸送コストの採算見通しはいかがですか？』という問いかけは、経営者の本音と資金需要を引き出す極めて重要かつタイムリーな話題になります。
-                    </p>
-                </div>
-                <a href="https://news.yahoo.co.jp/articles/efce94244206ccd9da2f3a833419601f2f58fdcf?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
-            </article>
-        </section>
-
-        <footer style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
-            <small>&copy; 2026 Hokkaido Regional Bank Newcomer Support Desk</small>
-        </footer>
-    </main>
+    <footer>
+      <p><small>&copy; 2026 北海道地方銀行 内定者研修サポートシステム</small></p>
+    </footer>
+  </main>
 </body>
 </html>
