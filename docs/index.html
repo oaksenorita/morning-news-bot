@@ -3,93 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年11月07日)</title>
+    <title>朝のインサイト (2026年11月08日)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <style>
-        header { margin-bottom: 2rem; }
-        .weather-card { background: linear-gradient(135deg, #f0f4f8, #d9e2ec); color: #102a43; border-left: 6px solid #334e68; }
-        .badge { display: inline-block; padding: 0.25rem 0.5rem; font-size: 0.85rem; border-radius: 4px; background: #e2e8f0; margin-bottom: 0.5rem; }
-        .insight-box { background: #f8fafc; border-left: 4px solid #0070f3; padding: 0.75rem 1rem; border-radius: 0 4px 4px 0; }
-    </style>
 </head>
 <body>
     <main class="container">
-        <header>
-            <h1>☀️ 朝のインサイト (2026年11月07日)</h1>
-            <p><small>北海道の地域経済を担う内定者のための毎朝の情勢アップデート</small></p>
+        <header style="margin-bottom: 2rem;">
+            <h1>☀️ 朝のインサイト (2026年11月08日)</h1>
+            <p><small>北海道の未来を担う内定者のための毎朝ブリーフィング</small></p>
         </header>
 
         <!-- 天気情報 -->
-        <article class="weather-card">
-            <header><strong>📍 北海道 今日の気象概況</strong></header>
+        <article>
+            <header><strong>📍 道内の気象概況（初冬の冷え込みに注意）</strong></header>
             <div class="grid">
-                <div><strong>天気:</strong> ❄️ 雪</div>
-                <div><strong>最高気温:</strong> 0.23℃</div>
-                <div><strong>最低気温:</strong> -0.14℃</div>
+                <div><strong>天気:</strong> 曇りがち</div>
+                <div><strong>最高気温:</strong> 3.56℃</div>
+                <div><strong>最低気温:</strong> 2.86℃</div>
             </div>
-            <p style="margin-top: 0.75rem; margin-bottom: 0;"><small>※本格的な降雪と路面凍結が見込まれます。車移動を伴う営業店配属に備え、冬道運転や早めの行動を意識しましょう。</small></p>
+            <p style="margin-top: 1rem; margin-bottom: 0;">
+                <small>※道内各地で日中でも厳しい寒さが続き、路面凍結等への注意が必要な時期に入っています。支店訪問や移動の際は足元と防寒対策を万全に。</small>
+            </p>
         </article>
 
-        <section>
-            <h2>厳選ビジネスニュース</h2>
+        <!-- ニュース解説1 -->
+        <article>
+            <h3>30代夫婦で貯蓄は「300万円」。子どもの教育費や住宅ローンを考えると「これで足りるの？」と不安です…。子育て中の家庭では、貯蓄「300万円」は少ないほうなのでしょうか？</h3>
+            <b>ロジカル要約</b>
+            <ul>
+                <li><strong>背景/経緯:</strong> 物価高や社会保険料負担が続く中、30代の子育て世代において教育資金の準備と住宅購入のタイミングが重なり、家計の将来不安が急速に拡大している。</li>
+                <li><strong>事象:</strong> 30代世帯の貯蓄額中央値や平均値との比較を通じ、「貯蓄300万円」という水準に対する現実的な評価と、教育費・住宅ローンに対する備えの不足感が浮き彫りになっている。</li>
+                <li><strong>結果/影響:</strong> 単なる現預金積立だけではインフレに対抗できず、つみたてNISAなどの資産形成やライフプランニングに基づく計画的借入の必要性が高まっている。</li>
+            </ul>
+            <b>地銀視点の深掘り</b>
+            <p>地銀のリテール営業における最重要ターゲット層である「一次取得者（30代・子育て世代）」のリアルな心理です。窓口相談や住宅ローン相談会において、ただ金利競争をするのではなく、教育資金準備を含めた「長期的なライフプランシミュレーション」を提案できるかどうかが信頼獲得の鍵となります。「300万円で足りるか」と悩む顧客に対し、新NISAや学資保険、適切な借入限度額の設定を組み合わせた伴走型支援を意識しましょう。</p>
+            <footer>
+                <a href="https://news.yahoo.co.jp/articles/b5190cd1d61d35301212764ef44c8c770456e7ea?source=rss" role="button" class="outline">続きを読む</a>
+            </footer>
+        </article>
 
-            <!-- 記事1 -->
-            <article>
-                <span class="badge">情報セキュリティ・リスク管理</span>
-                <h3>ロート製薬が“約280万人分”個人情報漏えい…うち約9700件はクレカ情報が流出</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 大手製薬・化粧品メーカーの公式通販サイト等のシステムに対し、第三者からの不正アクセスが発生。</li>
-                    <li><strong>事象:</strong> 顧客の個人情報約280万人分、およびクレジットカード情報を含む重要データ約9,700件が外部へ流出。</li>
-                    <li><strong>結果/影響:</strong> 対象顧客への連絡・カード再発行手続き対応やブランドイメージの毀損、セキュリティ投資の抜本的見直しを迫られる事態に。</li>
-                </ul>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>道内でもEC展開を強化する食品加工業や観光・物販企業が増加していますが、中小企業ほどセキュリティ対策が後手に回りがちです。「自社通販での決済セキュリティ対策やサイバー保険への加入状況」は、融資先企業の事業継続計画（BCP）支援や関連ソリューション（ビジネスマッチング）の重要な提案材料になります。</p>
-                </div>
-                <footer>
-                    <a href="https://news.yahoo.co.jp/articles/116dd30e9ac0b63f9594fc71c435f6287b4729a1?source=rss" role="button" class="outline" target="_blank" rel="noopener">続きを読む</a>
-                </footer>
-            </article>
+        <!-- ニュース解説2 -->
+        <article>
+            <h3>ソフトバンク孫正義のフィジカルAI戦略に急ブレーキ、中国が巨額買収を不許可</h3>
+            <b>ロジカル要約</b>
+            <ul>
+                <li><strong>背景/経緯:</strong> ソフトバンクグループはAIとロボティクスを融合した「フィジカルAI」を中核成長戦略に位置づけ、グローバル規模での巨額M&amp;Aを推進してきた。</li>
+                <li><strong>事象:</strong> 推進していた巨額買収計画に対し、中国の規制当局が独占禁止や安全保障の観点等から不許可の判断を下し、買収戦略が暗礁に乗り上げた。</li>
+                <li><strong>結果/影響:</strong> 米中対立や各国規制によるクロスボーダーM&amp;Aのハードルが再認識され、テック大手各社の投資戦略およびサプライチェーン再編に大きな見直しを迫る事態となっている。</li>
+            </ul>
+            <b>地銀視点の深掘り</b>
+            <p>メガテック企業の大規模投資が地政学リスクによって頓挫した象徴的事例です。道内においても、半導体関連（ラピダス等）の進出や先端技術のサプライチェーン構築が進んでいますが、地域企業であっても国際情勢や外資規制の影響を間接的に受けます。法人取引先経営者との面談時には、技術投資や設備投資の実行リスク、調達先・販路の分散について大局的な視点から情報提供・ディスカッションできる知見が求められます。</p>
+            <footer>
+                <a href="https://news.yahoo.co.jp/articles/402995983767e669b655f1ebc99cfc49594ad881?source=rss" role="button" class="outline">続きを読む</a>
+            </footer>
+        </article>
 
-            <!-- 記事2 -->
-            <article>
-                <span class="badge">法務知識・モビリティ</span>
-                <h3>「現状販売」の中古車でも修理や減額を販売店に求められる場合がある。請求する場合、裁判所に納める申立手数料はいくらかかるのか【一覧】で確認</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 「現状渡し」「保証なし」とされる中古車売買でも、契約内容不適合責任に基づき販売店側の責任が問われる法的事例が存在する。</li>
-                    <li><strong>事象:</strong> 隠れた瑕疵や重要事項の不告知がある場合、修理代金請求や契約解除・減額請求が可能であり、民事調停や訴訟にかかる手数料の詳細が整理された。</li>
-                    <li><strong>結果/影響:</strong> 消費者の権利保護への認識が高まる一方、中古車販売店にはより厳格な車両状態の点検・説明義務が求められる。</li>
-                </ul>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>北海道は完全な車社会であり、マイカーローンはリテール営業の主力商品です。また、地元の中古車ディーラーや整備工場は当行の大切な融資先です。販売店顧客との会話では、コンプライアンスや売買トラブル防止の取り組みを聞き取ることで事業の健全性を評価でき、個人顧客には安心な提携マイカーローンの提案へとつなげられます。</p>
-                </div>
-                <footer>
-                    <a href="https://news.yahoo.co.jp/articles/b00e6613a855ed5e35b101d19ffcb0e503d05474?source=rss" role="button" class="outline" target="_blank" rel="noopener">続きを読む</a>
-                </footer>
-            </article>
-
-            <!-- 記事3 -->
-            <article>
-                <span class="badge">リテール金融・FP相談</span>
-                <h3>月収50万円夫が｢禁酒禁煙小遣い1万｣でも家計は大赤字…倹約の裏でお嬢様妻が膨らませた｢月10万円の支出｣</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 世帯収入が比較的高く（手取り月収約50万円）、片方の配偶者が極端な節約を行っていても家計が赤字化するケースが増加。</li>
-                    <li><strong>事象:</strong> 一方の過度な節約に隠れ、もう一方の固定費・使途不明金（見栄や習い事、交際費等）が月10万円以上膨らみ、資産形成が阻害されていた。</li>
-                    <li><strong>結果/影響:</strong> 夫婦間での収支・資産の「見える化」と共通目標の設定が欠落していることが根本的な家計破綻リスクにつながる。</li>
-                </ul>
-                <div class="insight-box">
-                    <b>地銀視点の深掘り</b>
-                    <p>窓口や資産運用相談（NISA・iDeCoなど）において、「世帯全体のキャッシュフローを客観的に可視化する」ファイナンシャル・プランニング業務の意義を実感する好例です。単に金融商品を勧めるのではなく、夫婦でのライフプラン設計に寄り添う相談スタンスを身につけることが、長期的な信頼獲得の第一歩となります。</p>
-                </div>
-                <footer>
-                    <a href="https://news.yahoo.co.jp/articles/bc5595cae63c4932c6f1c12532422c56effecbf7?source=rss" role="button" class="outline" target="_blank" rel="noopener">続きを読む</a>
-                </footer>
-            </article>
-        </section>
+        <!-- ニュース解説3 -->
+        <article>
+            <h3>その発想はなかった…！3COINSの“天才エコバッグ”便利すぎて感動してる！「傾かないまま持って帰れます」「とてもいいです！」《購入レビュー》</h3>
+            <b>ロジカル要約</b>
+            <ul>
+                <li><strong>背景/経緯:</strong> レジ袋有料化の定着に伴い多様なエコバッグが登場しているが、コンビニ弁当や総菜など「平らに運びたい商品」が傾くという生活者の潜在的不満が残っていた。</li>
+                <li><strong>事象:</strong> 3COINSがマチの広い構造を取り入れ、弁当を水平に保ったまま持ち運べる工夫を施した機能性エコバッグを投入し、SNSを中心に大きなヒットを記録。</li>
+                <li><strong>結果/影響:</strong> 既存の当たり前を見直し、日常の微細なペイン（不満・不便）を低コストで解消する商品企画が、低価格帯小売市場での強力な差別化要因となることを証明した。</li>
+            </ul>
+            <b>地銀視点の深掘り</b>
+            <p>道内の中小小売業や食品・日用品メーカーの経営支援に直結するヒントです。地域企業との対話では「巨額の設備投資をしなくても、顧客の小さな不満を解消する工夫次第で高付加価値商品が生まれる」という具体例として会話の引き出しになります。また、地元商工会議所や若手経営者との雑談でも「生活者目線の課題解決力」を語るフックとして大いに活用できます。</p>
+            <footer>
+                <a href="https://news.yahoo.co.jp/articles/cfddfba3d03410f8522b96eaf4a1b8c365164c34?source=rss" role="button" class="outline">続きを読む</a>
+            </footer>
+        </article>
     </main>
 </body>
 </html>
