@@ -3,76 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト (2026年11月08日)</title>
+    <title>朝のインサイト - 2026年11月09日</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        header {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .weather-card {
+            background-color: var(--pico-card-background-color);
+            border-left: 5px solid var(--pico-primary);
+        }
+        .weather-info {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: 1.1rem;
+        }
+        article {
+            margin-bottom: 2rem;
+        }
+        ul {
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
     <main class="container">
-        <header style="margin-bottom: 2rem;">
-            <h1>☀️ 朝のインサイト (2026年11月08日)</h1>
-            <p><small>北海道の未来を担う内定者のための毎朝ブリーフィング</small></p>
+        <header>
+            <h1>☀️ 朝のインサイト (2026年11月09日)</h1>
+            <p>北海道の未来を担う内定者の皆さんへ。毎朝の経済・地域動向のインプットにお役立てください。</p>
         </header>
 
-        <!-- 天気情報 -->
-        <article>
-            <header><strong>📍 道内の気象概況（初冬の冷え込みに注意）</strong></header>
-            <div class="grid">
-                <div><strong>天気:</strong> 曇りがち</div>
-                <div><strong>最高気温:</strong> 3.56℃</div>
-                <div><strong>最低気温:</strong> 2.86℃</div>
-            </div>
-            <p style="margin-top: 1rem; margin-bottom: 0;">
-                <small>※道内各地で日中でも厳しい寒さが続き、路面凍結等への注意が必要な時期に入っています。支店訪問や移動の際は足元と防寒対策を万全に。</small>
-            </p>
-        </article>
+        <section>
+            <article class="weather-card">
+                <header><strong>📍 道内の本日の気象情報</strong></header>
+                <div class="weather-info">
+                    <span><strong>天気:</strong> 曇りがち ☁️</span>
+                    <span><strong>最高気温:</strong> 3.56℃</span>
+                    <span><strong>最低気温:</strong> 2.86℃</span>
+                </div>
+                <small style="margin-top: 0.5rem; display: block; color: var(--pico-muted-color);">
+                    初冬の厳しい冷え込みが続いています。路面凍結や体調管理に留意し、取引先訪問を想定した防寒・安全対策の意識を持ちましょう。
+                </small>
+            </article>
+        </section>
 
-        <!-- ニュース解説1 -->
-        <article>
-            <h3>30代夫婦で貯蓄は「300万円」。子どもの教育費や住宅ローンを考えると「これで足りるの？」と不安です…。子育て中の家庭では、貯蓄「300万円」は少ないほうなのでしょうか？</h3>
-            <b>ロジカル要約</b>
-            <ul>
-                <li><strong>背景/経緯:</strong> 物価高や社会保険料負担が続く中、30代の子育て世代において教育資金の準備と住宅購入のタイミングが重なり、家計の将来不安が急速に拡大している。</li>
-                <li><strong>事象:</strong> 30代世帯の貯蓄額中央値や平均値との比較を通じ、「貯蓄300万円」という水準に対する現実的な評価と、教育費・住宅ローンに対する備えの不足感が浮き彫りになっている。</li>
-                <li><strong>結果/影響:</strong> 単なる現預金積立だけではインフレに対抗できず、つみたてNISAなどの資産形成やライフプランニングに基づく計画的借入の必要性が高まっている。</li>
-            </ul>
-            <b>地銀視点の深掘り</b>
-            <p>地銀のリテール営業における最重要ターゲット層である「一次取得者（30代・子育て世代）」のリアルな心理です。窓口相談や住宅ローン相談会において、ただ金利競争をするのではなく、教育資金準備を含めた「長期的なライフプランシミュレーション」を提案できるかどうかが信頼獲得の鍵となります。「300万円で足りるか」と悩む顧客に対し、新NISAや学資保険、適切な借入限度額の設定を組み合わせた伴走型支援を意識しましょう。</p>
-            <footer>
-                <a href="https://news.yahoo.co.jp/articles/b5190cd1d61d35301212764ef44c8c770456e7ea?source=rss" role="button" class="outline">続きを読む</a>
-            </footer>
-        </article>
+        <section>
+            <h2>📰 今日の注目ニュース解説</h2>
 
-        <!-- ニュース解説2 -->
-        <article>
-            <h3>ソフトバンク孫正義のフィジカルAI戦略に急ブレーキ、中国が巨額買収を不許可</h3>
-            <b>ロジカル要約</b>
-            <ul>
-                <li><strong>背景/経緯:</strong> ソフトバンクグループはAIとロボティクスを融合した「フィジカルAI」を中核成長戦略に位置づけ、グローバル規模での巨額M&amp;Aを推進してきた。</li>
-                <li><strong>事象:</strong> 推進していた巨額買収計画に対し、中国の規制当局が独占禁止や安全保障の観点等から不許可の判断を下し、買収戦略が暗礁に乗り上げた。</li>
-                <li><strong>結果/影響:</strong> 米中対立や各国規制によるクロスボーダーM&amp;Aのハードルが再認識され、テック大手各社の投資戦略およびサプライチェーン再編に大きな見直しを迫る事態となっている。</li>
-            </ul>
-            <b>地銀視点の深掘り</b>
-            <p>メガテック企業の大規模投資が地政学リスクによって頓挫した象徴的事例です。道内においても、半導体関連（ラピダス等）の進出や先端技術のサプライチェーン構築が進んでいますが、地域企業であっても国際情勢や外資規制の影響を間接的に受けます。法人取引先経営者との面談時には、技術投資や設備投資の実行リスク、調達先・販路の分散について大局的な視点から情報提供・ディスカッションできる知見が求められます。</p>
-            <footer>
-                <a href="https://news.yahoo.co.jp/articles/402995983767e669b655f1ebc99cfc49594ad881?source=rss" role="button" class="outline">続きを読む</a>
-            </footer>
-        </article>
+            <!-- 記事1 -->
+            <article>
+                <h3>東証一時1500円超高、5万9千円回復</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 世界的な経済環境の好転や主要企業の堅調な業績期待を背景に、投資家心理が大幅に改善。</li>
+                    <li><strong>事象:</strong> 東京株式市場で日経平均株価が一時1,500円を超える急騰を見せ、節目の5万9,000円台を回復。</li>
+                    <li><strong>結果/影響:</strong> 国内市場全体にリスクオンのムードが広がり、年末商戦や設備投資に向けた企業マインドの好転が期待される。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>
+                <p>株価の大幅上昇は、個人預金者の「貯蓄から投資へ」という運用ニーズ（投資信託やNISAなど）を強力に後押しします。窓口やリテール営業では、富裕層やリタイア層に対する資産形成提案の絶好の切り口となります。また、上場企業だけでなく、地元の取引先企業オーナーの自社株評価や事業承継対策、設備投資意欲にも波及するため、景況感の好転を契機とした資金需要の掘り起こしが期待できます。</p>
+                <a href="https://news.yahoo.co.jp/articles/125b9dd32d607ed0cb310b164db62464d26da54d?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
 
-        <!-- ニュース解説3 -->
-        <article>
-            <h3>その発想はなかった…！3COINSの“天才エコバッグ”便利すぎて感動してる！「傾かないまま持って帰れます」「とてもいいです！」《購入レビュー》</h3>
-            <b>ロジカル要約</b>
-            <ul>
-                <li><strong>背景/経緯:</strong> レジ袋有料化の定着に伴い多様なエコバッグが登場しているが、コンビニ弁当や総菜など「平らに運びたい商品」が傾くという生活者の潜在的不満が残っていた。</li>
-                <li><strong>事象:</strong> 3COINSがマチの広い構造を取り入れ、弁当を水平に保ったまま持ち運べる工夫を施した機能性エコバッグを投入し、SNSを中心に大きなヒットを記録。</li>
-                <li><strong>結果/影響:</strong> 既存の当たり前を見直し、日常の微細なペイン（不満・不便）を低コストで解消する商品企画が、低価格帯小売市場での強力な差別化要因となることを証明した。</li>
-            </ul>
-            <b>地銀視点の深掘り</b>
-            <p>道内の中小小売業や食品・日用品メーカーの経営支援に直結するヒントです。地域企業との対話では「巨額の設備投資をしなくても、顧客の小さな不満を解消する工夫次第で高付加価値商品が生まれる」という具体例として会話の引き出しになります。また、地元商工会議所や若手経営者との雑談でも「生活者目線の課題解決力」を語るフックとして大いに活用できます。</p>
-            <footer>
-                <a href="https://news.yahoo.co.jp/articles/cfddfba3d03410f8522b96eaf4a1b8c365164c34?source=rss" role="button" class="outline">続きを読む</a>
-            </footer>
-        </article>
+            <!-- 記事2 -->
+            <article>
+                <h3>LIXIL・TOTO・タカラスタンダード…住設3社の通期見通し、増収増益も海外事業回復遅れ警戒</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 国内ではリフォーム需要や高付加価値商品の引き合いが底堅い一方、海外（特に中国や北米等）の市況停滞が長期化。</li>
+                    <li><strong>事象:</strong> 住設大手3社の通期連結業績見通しは増収増益を維持するものの、海外事業の回復遅延に対する警戒感が残る決算内容となった。</li>
+                    <li><strong>結果/影響:</strong> 国内の高単価・省エネリノベーション市場への注力が加速し、地域工務店やリフォーム事業者とのサプライチェーン連携がより重要視される。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>
+                <p>北海道内でも高断熱・高気密住宅や省エネリフォームの需要は依然として高い水準にあります。地銀としては、道内の地場工務店やリフォーム施工会社に対し、環境配慮型住宅ローン（グリーンローン）の共同提案や、リフォーム資金の無担保ローン需要の開拓が可能です。また、資材価格の転嫁状況や仕入れ資金の資金繰り支援など、取引先建設業の経営実態に即した伴走支援が求められます。</p>
+                <a href="https://news.yahoo.co.jp/articles/9f63c55807e109e76f9b26035a1e022676fd090f?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
+
+            <!-- 記事3 -->
+            <article>
+                <h3>軽貨物法人向け「CarryNote Plus」正式リリース　日報・請求・支払を一元管理（キャリーノート株式会社）</h3>
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> EC市場拡大に伴うラストワンマイル配送の急増と、「物流2024年問題」以降のドライバー労務管理・事務負担の増大。</li>
+                    <li><strong>事象:</strong> 軽貨物運送法人向けに、日報入力・案件管理・請求・下請け支払までをクラウド上で一括完結できる専用業務支援ツールが提供開始。</li>
+                    <li><strong>結果/影響:</strong> アナログ管理が残る中小・零細運送事業者の間接業務コストが削減され、コンプライアンス遵守と収益改善の加速が見込まれる。</li>
+                </ul>
+                <b>地銀視点の深掘り</b>
+                <p>広大な面積を抱える北海道において、物流網の維持は地域社会・経済の最重要課題です。道内の中小運送会社は依然として手書き日報やExcel管理が多く、人手不足と相まって疲弊しているケースが少なくありません。地銀の法人担当として、単なる融資にとどまらず、こうしたSaaSツールのビジネスマッチング（DX支援）を提案することで、経営改善や生産性向上を支援し、強固なリレーションを構築する好例となります。</p>
+                <a href="https://news.yahoo.co.jp/articles/49071135301bcefa597c15c5b5f462ea3dda776e?source=rss" role="button" class="outline">続きを読む</a>
+            </article>
+        </section>
+
+        <footer style="margin-top: 3rem; text-align: center; color: var(--pico-muted-color);">
+            <small>&copy; 2026 北海道地方銀行 新人育成プログラム - 朝の経済情報</small>
+        </footer>
     </main>
 </body>
 </html>
