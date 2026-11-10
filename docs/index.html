@@ -1,103 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 2026年11月09日</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <style>
-        header {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-        }
-        .weather-card {
-            background-color: var(--pico-card-background-color);
-            border-left: 5px solid var(--pico-primary);
-        }
-        .weather-info {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-            font-size: 1.1rem;
-        }
-        article {
-            margin-bottom: 2rem;
-        }
-        ul {
-            margin-bottom: 1rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>朝のインサイト | 2026年11月10日</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
 </head>
 <body>
-    <main class="container">
-        <header>
-            <h1>☀️ 朝のインサイト (2026年11月09日)</h1>
-            <p>北海道の未来を担う内定者の皆さんへ。毎朝の経済・地域動向のインプットにお役立てください。</p>
-        </header>
+  <main class="container">
+    <header style="margin-bottom: 2rem;">
+      <h1>☀️ 朝のインサイト (2026年11月10日)</h1>
+      <p><small>北海道の地域経済・金融現場をリードする新人バンカー向けデイリーレポート</small></p>
+    </header>
 
-        <section>
-            <article class="weather-card">
-                <header><strong>📍 道内の本日の気象情報</strong></header>
-                <div class="weather-info">
-                    <span><strong>天気:</strong> 曇りがち ☁️</span>
-                    <span><strong>最高気温:</strong> 3.56℃</span>
-                    <span><strong>最低気温:</strong> 2.86℃</span>
-                </div>
-                <small style="margin-top: 0.5rem; display: block; color: var(--pico-muted-color);">
-                    初冬の厳しい冷え込みが続いています。路面凍結や体調管理に留意し、取引先訪問を想定した防寒・安全対策の意識を持ちましょう。
-                </small>
-            </article>
-        </section>
+    <!-- 天気情報セクション -->
+    <article style="border-left: 5px solid var(--pico-primary);">
+      <header>
+        <strong>📍 本日の道内気象状況</strong>
+      </header>
+      <div class="grid">
+        <div>
+          <strong>天気:</strong> 曇りがち
+        </div>
+        <div>
+          <strong>最高気温:</strong> 0.79℃
+        </div>
+        <div>
+          <strong>最低気温:</strong> -0.14℃
+        </div>
+      </div>
+      <p style="margin-top: 1rem; margin-bottom: 0;">
+        <small>※終日氷点下前後の厳しい寒さとなり、路面凍結（ブラックアイスバーン）が予想されます。外訪活動や顧客訪問時の運転には十分注意し、足元に気をつけて行動しましょう。</small>
+      </p>
+    </article>
 
-        <section>
-            <h2>📰 今日の注目ニュース解説</h2>
+    <h2 style="margin-top: 2rem;">厳選ビジネストピックス</h2>
 
-            <!-- 記事1 -->
-            <article>
-                <h3>東証一時1500円超高、5万9千円回復</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 世界的な経済環境の好転や主要企業の堅調な業績期待を背景に、投資家心理が大幅に改善。</li>
-                    <li><strong>事象:</strong> 東京株式市場で日経平均株価が一時1,500円を超える急騰を見せ、節目の5万9,000円台を回復。</li>
-                    <li><strong>結果/影響:</strong> 国内市場全体にリスクオンのムードが広がり、年末商戦や設備投資に向けた企業マインドの好転が期待される。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>株価の大幅上昇は、個人預金者の「貯蓄から投資へ」という運用ニーズ（投資信託やNISAなど）を強力に後押しします。窓口やリテール営業では、富裕層やリタイア層に対する資産形成提案の絶好の切り口となります。また、上場企業だけでなく、地元の取引先企業オーナーの自社株評価や事業承継対策、設備投資意欲にも波及するため、景況感の好転を契機とした資金需要の掘り起こしが期待できます。</p>
-                <a href="https://news.yahoo.co.jp/articles/125b9dd32d607ed0cb310b164db62464d26da54d?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
+    <!-- 記事1: 高額療養費 -->
+    <article>
+      <h3>【高額療養費の多数回該当】夫と妻の月を合わせて12か月に3回、間があいてもよい。区分エの世帯は4回目の上限が「4万4400円」に</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> 医療費負担を抑える公的医療保険の「高額療養費制度」には、複数回該当した場合に負担がさらに軽減される「多数回該当」ルールが存在する。</li>
+        <li><strong>事象:</strong> 同一保険世帯であれば夫婦の受診月を合算でき、直近12か月以内に通算3回以上上限に達していれば、4回目以降は上限額がさらに引き下げられる（年収約210万〜370万円の区分エでは月額4万4,400円に固定）。</li>
+        <li><strong>結果/影響:</strong> 重病や長期療養による家計への打撃を最小限に抑えられ、世帯単位での医療費リスク管理がより実効的なものとなる。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>
+        リテール営業（窓口・渉外）において、シニア層や現役世帯へのライフプラン・資産形成提案時に極めて役立つ知識です。「医療費の自己負担には確固たるセーフティネットがある」という公的保障の仕組みを正しく説明した上で、過度な民間保険への加入を防ぎ、浮いた資金を新NISAなどの長期積立投資や教育資金準備へ誘導するコンサルティング営業の信頼構築に繋げられます。
+      </p>
+      <a href="https://news.yahoo.co.jp/articles/84eb79057aa176cd344c87d3a86cf1a9cd219149?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
 
-            <!-- 記事2 -->
-            <article>
-                <h3>LIXIL・TOTO・タカラスタンダード…住設3社の通期見通し、増収増益も海外事業回復遅れ警戒</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 国内ではリフォーム需要や高付加価値商品の引き合いが底堅い一方、海外（特に中国や北米等）の市況停滞が長期化。</li>
-                    <li><strong>事象:</strong> 住設大手3社の通期連結業績見通しは増収増益を維持するものの、海外事業の回復遅延に対する警戒感が残る決算内容となった。</li>
-                    <li><strong>結果/影響:</strong> 国内の高単価・省エネリノベーション市場への注力が加速し、地域工務店やリフォーム事業者とのサプライチェーン連携がより重要視される。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>北海道内でも高断熱・高気密住宅や省エネリフォームの需要は依然として高い水準にあります。地銀としては、道内の地場工務店やリフォーム施工会社に対し、環境配慮型住宅ローン（グリーンローン）の共同提案や、リフォーム資金の無担保ローン需要の開拓が可能です。また、資材価格の転嫁状況や仕入れ資金の資金繰り支援など、取引先建設業の経営実態に即した伴走支援が求められます。</p>
-                <a href="https://news.yahoo.co.jp/articles/9f63c55807e109e76f9b26035a1e022676fd090f?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
+    <!-- 記事2: エルグランド vs アルファード -->
+    <article>
+      <h3>新型「エルグランド」は「アルファード」より130万円高い？ HV・4WD同士なら価格差28万円、その中身を検証</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> 高級ミニバン市場においてトヨタ「アルファード」が圧倒的シェアを維持する中、日産が新型「エルグランド」の市場投入に向けて注目を集めている。</li>
+        <li><strong>事象:</strong> ベースグレード比較では約130万円の価格差に見えるが、主軸となるハイブリッドかつ4WD同士で比較すると、実質的な価格差は約28万円程度に縮小する。</li>
+        <li><strong>結果/影響:</strong> 走行性能や先進装備（e-4ORCEとE-Fourの駆動制御の違いなど）を比較検討するユーザーが増加し、高級ファミリーカー需要の選択肢が多様化。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>
+        積雪寒冷地である北海道において、4WDの大型ミニバンはファミリー層のみならず、中小企業オーナーの役員車や観光ハイヤー事業者など法人需要も極めて高い商材です。道内ディーラーとの提携マイカーローン推進の好機であると同時に、法人顧客への定期訪問時に「冬場の営業車・役員車の入れ替え」や「減価償却を踏まえた車両購入計画」の雑談フックとして商談のきっかけ作りに活用できます。
+      </p>
+      <a href="https://news.yahoo.co.jp/articles/5b87130bdf195ab8a579b238aebf4722b10d27ab?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
 
-            <!-- 記事3 -->
-            <article>
-                <h3>軽貨物法人向け「CarryNote Plus」正式リリース　日報・請求・支払を一元管理（キャリーノート株式会社）</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> EC市場拡大に伴うラストワンマイル配送の急増と、「物流2024年問題」以降のドライバー労務管理・事務負担の増大。</li>
-                    <li><strong>事象:</strong> 軽貨物運送法人向けに、日報入力・案件管理・請求・下請け支払までをクラウド上で一括完結できる専用業務支援ツールが提供開始。</li>
-                    <li><strong>結果/影響:</strong> アナログ管理が残る中小・零細運送事業者の間接業務コストが削減され、コンプライアンス遵守と収益改善の加速が見込まれる。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>広大な面積を抱える北海道において、物流網の維持は地域社会・経済の最重要課題です。道内の中小運送会社は依然として手書き日報やExcel管理が多く、人手不足と相まって疲弊しているケースが少なくありません。地銀の法人担当として、単なる融資にとどまらず、こうしたSaaSツールのビジネスマッチング（DX支援）を提案することで、経営改善や生産性向上を支援し、強固なリレーションを構築する好例となります。</p>
-                <a href="https://news.yahoo.co.jp/articles/49071135301bcefa597c15c5b5f462ea3dda776e?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
-        </section>
+    <!-- 記事3: 化粧品輸出基準 -->
+    <article>
+      <h3>日本化粧品工業会、PIF共通基準を年内に骨子案 輸出規制情報の整備に1.2億円</h3>
+      <b>ロジカル要約</b>
+      <ul>
+        <li><strong>背景/経緯:</strong> アジア諸国を中心に各国の化粧品輸入規制（製品情報ファイル「PIF」の整備義務など）が年々厳格化し、輸出障壁となっている。</li>
+        <li><strong>事象:</strong> 日本化粧品工業会は年内に業界共通のPIF基準骨子案を取りまとめ、経済産業省の支援を受けて1.2億円規模で各国の規制情報データベースを整備する。</li>
+        <li><strong>結果/影響:</strong> 各社ごとの過剰な調査・書類作成コストが削減され、特に対応リソースが限られる中堅・中小コスメメーカーの海外展開が容易になる。</li>
+      </ul>
+      <b>地銀視点の深掘り</b>
+      <p>
+        北海道には白樺樹液やハスカップ、馬油、海洋深層水など地域固有の天然資源を活用したコスメブランドやOEM製造会社が多数存在します。中小メーカーが越境ECやアジア圏輸出へ打って出る際の大きな追い風となる動きです。地域商社機能や公的補助金申請支援、貿易金融（為替予約・外為）や設備投資融資の案件発掘に向け、地場コスメメーカーへの情報提供・ヒアリングを強化しましょう。
+      </p>
+      <a href="https://news.yahoo.co.jp/articles/c3158393c66da562e000380790959d2abacf97f7?source=rss" role="button" class="outline">続きを読む</a>
+    </article>
 
-        <footer style="margin-top: 3rem; text-align: center; color: var(--pico-muted-color);">
-            <small>&copy; 2026 北海道地方銀行 新人育成プログラム - 朝の経済情報</small>
-        </footer>
-    </main>
+    <footer style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
+      <small>© 2026 Hokkaido Regional Banking Group. For Internal Training Only.</small>
+    </footer>
+  </main>
 </body>
 </html>
