@@ -3,90 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>朝のインサイト | 2026年11月10日</title>
+  <title>朝のインサイト (2026年11月11日) - 北海道地銀内定者向け</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+    header {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .weather-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      text-align: center;
+    }
+    .weather-card {
+      padding: 0.75rem;
+      background-color: var(--pico-card-background-color);
+      border-radius: var(--pico-border-radius);
+      border: 1px solid var(--pico-muted-border-color);
+    }
+    .temp-high {
+      color: #e53935;
+      font-weight: bold;
+    }
+    .temp-low {
+      color: #1e88e5;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <main class="container">
-    <header style="margin-bottom: 2rem;">
-      <h1>☀️ 朝のインサイト (2026年11月10日)</h1>
-      <p><small>北海道の地域経済・金融現場をリードする新人バンカー向けデイリーレポート</small></p>
+    <header>
+      <h1>☀️ 朝のインサイト (2026年11月11日)</h1>
+      <p><small>北海道の未来を担う内定者の皆さんへ：朝の金融・経済インプット</small></p>
     </header>
 
     <!-- 天気情報セクション -->
-    <article style="border-left: 5px solid var(--pico-primary);">
+    <article>
       <header>
-        <strong>📍 本日の道内気象状況</strong>
+        <strong>📍 本日の道内気象概況</strong>
       </header>
-      <div class="grid">
-        <div>
-          <strong>天気:</strong> 曇りがち
+      <p>各地で氷点下の冷え込みが観測され、初冬の寒さが本格化しています。防寒対策と足元の凍結に注意しましょう。</p>
+      <div class="weather-grid">
+        <div class="weather-card">
+          <small>空模様</small>
+          <div>☁️ 薄い雲</div>
         </div>
-        <div>
-          <strong>最高気温:</strong> 0.79℃
+        <div class="weather-card">
+          <small>最高気温</small>
+          <div class="temp-high">3.01℃</div>
         </div>
-        <div>
-          <strong>最低気温:</strong> -0.14℃
+        <div class="weather-card">
+          <small>最低気温</small>
+          <div class="temp-low">-1.14℃</div>
         </div>
       </div>
-      <p style="margin-top: 1rem; margin-bottom: 0;">
-        <small>※終日氷点下前後の厳しい寒さとなり、路面凍結（ブラックアイスバーン）が予想されます。外訪活動や顧客訪問時の運転には十分注意し、足元に気をつけて行動しましょう。</small>
-      </p>
     </article>
 
-    <h2 style="margin-top: 2rem;">厳選ビジネストピックス</h2>
-
-    <!-- 記事1: 高額療養費 -->
+    <!-- ニュース解説 1 -->
     <article>
-      <h3>【高額療養費の多数回該当】夫と妻の月を合わせて12か月に3回、間があいてもよい。区分エの世帯は4回目の上限が「4万4400円」に</h3>
+      <h3>食品消費減税「負担軽減を実感」と首相</h3>
       <b>ロジカル要約</b>
       <ul>
-        <li><strong>背景/経緯:</strong> 医療費負担を抑える公的医療保険の「高額療養費制度」には、複数回該当した場合に負担がさらに軽減される「多数回該当」ルールが存在する。</li>
-        <li><strong>事象:</strong> 同一保険世帯であれば夫婦の受診月を合算でき、直近12か月以内に通算3回以上上限に達していれば、4回目以降は上限額がさらに引き下げられる（年収約210万〜370万円の区分エでは月額4万4,400円に固定）。</li>
-        <li><strong>結果/影響:</strong> 重病や長期療養による家計への打撃を最小限に抑えられ、世帯単位での医療費リスク管理がより実効的なものとなる。</li>
+        <li><strong>背景/経緯：</strong>長期化する生活必需品・食料品の値上がりを受け、家計の購買力低下と内需の停滞が政策的課題となっていた。</li>
+        <li><strong>事象：</strong>首相が食品分野の消費減税政策に関し、国民が日々の生活の中で負担軽減を実感できる効果を強調した。</li>
+        <li><strong>結果/影響：</strong>消費マインドの下支えが期待される一方、流通・小売現場におけるレジ改修や価格改定等のシステム対応負担、財源の議論が浮上する見通し。</li>
       </ul>
       <b>地銀視点の深掘り</b>
-      <p>
-        リテール営業（窓口・渉外）において、シニア層や現役世帯へのライフプラン・資産形成提案時に極めて役立つ知識です。「医療費の自己負担には確固たるセーフティネットがある」という公的保障の仕組みを正しく説明した上で、過度な民間保険への加入を防ぎ、浮いた資金を新NISAなどの長期積立投資や教育資金準備へ誘導するコンサルティング営業の信頼構築に繋げられます。
-      </p>
-      <a href="https://news.yahoo.co.jp/articles/84eb79057aa176cd344c87d3a86cf1a9cd219149?source=rss" role="button" class="outline">続きを読む</a>
+      <p>道内の食品スーパーや一次産業・加工食品メーカー等の取引先に対して、価格転嫁や販売計画、レジ・会計システムの改修に伴う設備資金需要をヒアリングする絶好のきっかけになります。また、個人のお客様との会話でも「冬の食費や暖房費負担に対する実感がどう変わるか」といった生活密着の視点から信頼関係を構築する話題として活用できます。</p>
+      <footer>
+        <a href="https://news.yahoo.co.jp/articles/b665132327683b7b12630a010e053d8d20df3258?source=rss" role="button" class="outline">続きを読む</a>
+      </footer>
     </article>
 
-    <!-- 記事2: エルグランド vs アルファード -->
+    <!-- ニュース解説 2 -->
     <article>
-      <h3>新型「エルグランド」は「アルファード」より130万円高い？ HV・4WD同士なら価格差28万円、その中身を検証</h3>
+      <h3>世帯年収1000万円の会社員夫婦なら、手取りは夫だけ「約738.5万円」と500万円ずつ「約788.4万円」でこんなに違う？令和8年分の税金と社会保険料で計算した試算</h3>
       <b>ロジカル要約</b>
       <ul>
-        <li><strong>背景/経緯:</strong> 高級ミニバン市場においてトヨタ「アルファード」が圧倒的シェアを維持する中、日産が新型「エルグランド」の市場投入に向けて注目を集めている。</li>
-        <li><strong>事象:</strong> ベースグレード比較では約130万円の価格差に見えるが、主軸となるハイブリッドかつ4WD同士で比較すると、実質的な価格差は約28万円程度に縮小する。</li>
-        <li><strong>結果/影響:</strong> 走行性能や先進装備（e-4ORCEとE-Fourの駆動制御の違いなど）を比較検討するユーザーが増加し、高級ファミリーカー需要の選択肢が多様化。</li>
+        <li><strong>背景/経緯：</strong>日本の所得税の累進課税制度および社会保険料の算出構造により、同一の世帯年収でも収入の偏りによって可処分所得に大きな差が生じる。</li>
+        <li><strong>事象：</strong>令和8年分試算において、片働き1000万円（手取り約738.5万円）と共働き各500万円（手取り約788.4万円）で年間約50万円の手取り格差が生じることが示された。</li>
+        <li><strong>結果/影響：</strong>共働き世帯の経済的合理性が改めて浮き彫りとなり、共働きを前提とした資産形成やライフプラン設計の需要が拡大している。</li>
       </ul>
       <b>地銀視点の深掘り</b>
-      <p>
-        積雪寒冷地である北海道において、4WDの大型ミニバンはファミリー層のみならず、中小企業オーナーの役員車や観光ハイヤー事業者など法人需要も極めて高い商材です。道内ディーラーとの提携マイカーローン推進の好機であると同時に、法人顧客への定期訪問時に「冬場の営業車・役員車の入れ替え」や「減価償却を踏まえた車両購入計画」の雑談フックとして商談のきっかけ作りに活用できます。
-      </p>
-      <a href="https://news.yahoo.co.jp/articles/5b87130bdf195ab8a579b238aebf4722b10d27ab?source=rss" role="button" class="outline">続きを読む</a>
+      <p>道内でも増加傾向にある共働きファミリー層への住宅ローン提案（ペアローンや連帯債務）や、新NISA・iDeCoを活用した資産形成アドバイスに直結する知識です。「同じ世帯年収でも手取り差があるため、税制や社会保険を考慮した賢いマネープランを組むことが重要」という切り口は、リテール営業で顧客の納得感を大きく高める武器になります。</p>
+      <footer>
+        <a href="https://news.yahoo.co.jp/articles/d0dd1c1a07cb0c21d807f0e84695b64c0f52d775?source=rss" role="button" class="outline">続きを読む</a>
+      </footer>
     </article>
 
-    <!-- 記事3: 化粧品輸出基準 -->
+    <!-- ニュース解説 3 -->
     <article>
-      <h3>日本化粧品工業会、PIF共通基準を年内に骨子案 輸出規制情報の整備に1.2億円</h3>
+      <h3>DCファンドの資金流入超過は8カ月連続、トータルリターン上位に国内株アクティブが浮上＝DC専用ファンド（2026年10月）</h3>
       <b>ロジカル要約</b>
       <ul>
-        <li><strong>背景/経緯:</strong> アジア諸国を中心に各国の化粧品輸入規制（製品情報ファイル「PIF」の整備義務など）が年々厳格化し、輸出障壁となっている。</li>
-        <li><strong>事象:</strong> 日本化粧品工業会は年内に業界共通のPIF基準骨子案を取りまとめ、経済産業省の支援を受けて1.2億円規模で各国の規制情報データベースを整備する。</li>
-        <li><strong>結果/影響:</strong> 各社ごとの過剰な調査・書類作成コストが削減され、特に対応リソースが限られる中堅・中小コスメメーカーの海外展開が容易になる。</li>
+        <li><strong>背景/経緯：</strong>公的年金の補完および自助努力による資産形成の重要性が増し、確定拠出年金（DC）市場への安定的な積立投資が定着している。</li>
+        <li><strong>事象：</strong>2026年10月のDC専用ファンドへの資金流入超過が8カ月連続となり、リターン上位に国内株式アクティブ型がランクインした。</li>
+        <li><strong>結果/影響：</strong>インデックス偏重から銘柄選別力を持つ国内株アクティブへの関心が高まり、加入者の運用リテラシー向上とポートフォリオ見直しの動きが加速している。</li>
       </ul>
       <b>地銀視点の深掘り</b>
-      <p>
-        北海道には白樺樹液やハスカップ、馬油、海洋深層水など地域固有の天然資源を活用したコスメブランドやOEM製造会社が多数存在します。中小メーカーが越境ECやアジア圏輸出へ打って出る際の大きな追い風となる動きです。地域商社機能や公的補助金申請支援、貿易金融（為替予約・外為）や設備投資融資の案件発掘に向け、地場コスメメーカーへの情報提供・ヒアリングを強化しましょう。
-      </p>
-      <a href="https://news.yahoo.co.jp/articles/c3158393c66da562e000380790959d2abacf97f7?source=rss" role="button" class="outline">続きを読む</a>
+      <p>法人営業では、道内中小企業の人材確保・定着策としての「企業型DC導入支援」のニーズが非常に高い状況です。また、企業オーナーや従業員への継続教育・制度提案の際、「長期積立の継続性と直近の運用トレンド（国内株アクティブの見直しなど）」を分かりやすく説明できることは、銀行員の専門性を示す大きな強みとなります。</p>
+      <footer>
+        <a href="https://news.yahoo.co.jp/articles/50fb87d673f5e67f1c199442dcb900beddaa3e46?source=rss" role="button" class="outline">続きを読む</a>
+      </footer>
     </article>
-
-    <footer style="text-align: center; margin-top: 3rem; margin-bottom: 2rem;">
-      <small>© 2026 Hokkaido Regional Banking Group. For Internal Training Only.</small>
-    </footer>
   </main>
 </body>
 </html>
