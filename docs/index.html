@@ -1,89 +1,98 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>朝のインサイト - 2026年11月17日</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>朝のインサイト - 2026年11月18日</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <style>
+    header {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid var(--pico-primary);
+      padding-bottom: 1rem;
+    }
+    .weather-card {
+      background-color: var(--pico-card-background-color);
+      border-left: 5px solid var(--pico-primary);
+    }
+    .news-tag {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--pico-muted-color);
+    }
+  </style>
 </head>
 <body>
-    <main class="container">
-        <header style="margin-bottom: 2rem;">
-            <h1>☀️ 朝のインサイト (2026年11月17日)</h1>
-            <p><small>北海道の地方銀行 内定者向けモーニングブリーフィング</small></p>
+  <main class="container">
+    <header>
+      <h1>☀️ 朝のインサイト (2026年11月18日)</h1>
+      <p><small>道内地銀内定者のための経済・社会・業務直結ニュースブリーフィング</small></p>
+    </header>
+
+    <section aria-label="本日の天気">
+      <article class="weather-card">
+        <header>
+          <strong>📍 本日の道内気象概況</strong>
         </header>
+        <div class="grid">
+          <div><strong>天気:</strong> 曇りがち ☁️</div>
+          <div><strong>最高気温:</strong> 9.12℃</div>
+          <div><strong>最低気温:</strong> 8.86℃</div>
+        </div>
+        <p style="margin-top: 0.75rem; margin-bottom: 0;"><small>晩秋を迎え、冷え込みが続いています。体調管理とともに、融資先企業の暖房・燃料コストや除雪準備の動向にも目を配りましょう。</small></p>
+      </article>
+    </section>
 
-        <!-- 天気セクション -->
-        <article>
-            <header>
-                <strong>📍 本日の道内気象概況</strong>
-            </header>
-            <div class="grid">
-                <div>
-                    <p><strong>天気:</strong> 曇りがち</p>
-                </div>
-                <div>
-                    <p><strong>最高気温:</strong> 5.79℃</p>
-                </div>
-                <div>
-                    <p><strong>最低気温:</strong> 5.79℃</p>
-                </div>
-            </div>
-            <footer>
-                <small>※防寒対策を万全にし、寒暖差による体調管理に留意しましょう。取引先への訪問時にも気候の話題からスムーズなアイスブレイクが可能です。</small>
-            </footer>
-        </article>
+    <section aria-label="厳選ニュース">
+      <article>
+        <span class="news-tag">行政手続・リテール金融実務</span>
+        <h3>名字が変わったらマイナンバーカードの手続きは14日以内。令和8年からのローマ字表記の追記ルールと、公式案内から読み取れること・分からないことの違い</h3>
+        <b>ロジカル要約</b>
+        <ul>
+          <li><strong>背景/経緯:</strong> 改姓に伴うマイナンバーカードの更新手続きルールが存在する中、令和8年（2026年）からのカード利便性向上に向けた「ローマ字表記」追加の法・システム整備が進行。</li>
+          <li><strong>事象:</strong> 氏名変更時の14日以内ルールや、海外取引・パスポート連携を見据えた新仕様について、公式案内と現場運用で解釈・案内にギャップが生じている。</li>
+          <li><strong>結果/影響:</strong> 市民・顧客の更新漏れや窓口混乱のリスクがある一方、デジタルIDとしての国際通用性強化が進展。</li>
+        </ul>
+        <b>地銀視点の深掘り</b>
+        <p>銀行窓口における「犯罪収益移転防止法」に基づく本人確認（KYC）に直結する重要テーマです。口座名義変更の手続きに来店された個人のお客様に対し、マイナンバーカード自体の更新期限（14日以内）やローマ字表記ルールを正確にアドバイスできると、顧客満足度や信頼感の向上につながります。また、今後増える外国人労働者やインバウンド関連の取引先への口座開設案内時にも押さえておくべき基礎知識です。</p>
+        <a href="https://news.yahoo.co.jp/articles/446770d4f85a73faccc9c16d21790767059403e3?source=rss" role="button" class="outline">続きを読む</a>
+      </article>
 
-        <!-- ニュース解説セクション -->
-        <section>
-            <h2>📰 本日の厳選ニュース解説</h2>
+      <article>
+        <span class="news-tag">一次産業・フードビジネス支援</span>
+        <h3>サガミの秋冬スイーツ「蜜芋」フェアが11月18日スタート!丸ごと焼き芋のキャラメリゼやテイクアウト可能なシェイクなど7品</h3>
+        <b>ロジカル要約</b>
+        <ul>
+          <li><strong>背景/経緯:</strong> 外食産業において秋冬シーズンの集客強化と客単価向上を狙い、季節性・トレンド感の高いスイーツ開発が活発化。</li>
+          <li><strong>事象:</strong> 和食麺類レストラン「サガミ」が、高糖度で人気の「蜜芋」を前面に押し出したスイーツ全7品（焼き芋キャラメリゼ、シェイクなど）を本日から展開。</li>
+          <li><strong>結果/影響:</strong> 焼き芋ブームを取り入れたテイクアウト需要の開拓や、カフェタイムのアイドルタイム集客による店舗収益の改善が見込まれる。</li>
+        </ul>
+        <b>地銀視点の深掘り</b>
+        <p>北海道の基幹産業である農業（さつまいも・馬鈴薯・乳製品など）の高付加価値化（6次産業化）を考える好例です。道内でも温暖化傾向に伴いサツマイモ栽培に取り組む農家が増えており、大手外食チェーンのような「素材の甘み×加工・スイーツ化」のトレンドは、地元の生産者や食品加工業者に対する新商品開発・販路開拓支援のヒントになります。融資先飲食店のアイドルタイム対策の会話ネタとしても有用です。</p>
+        <a href="https://news.yahoo.co.jp/articles/618ed95bb3f4bc8683d0a64a62c1d91070bce486?source=rss" role="button" class="outline">続きを読む</a>
+      </article>
 
-            <!-- 記事1: 渋谷AI観光案内 -->
-            <article>
-                <h3>東京・渋谷の観光案内にAI導入、観光協会の公式情報で案内、対話データで旅行者のニーズ把握へ、東急不動産らが実証</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> インバウンド回復に伴う観光客の多様化と窓口案内の混雑・多言語対応の人手不足が課題化。</li>
-                    <li><strong>事象:</strong> 東急不動産などが観光協会の公式データを活用したAI観光案内システムを渋谷で実証開始。旅行者との対話データを収集・分析する仕組みを構築。</li>
-                    <li><strong>結果/影響:</strong> 観光案内業務の省人化だけでなく、蓄積データから潜在的な観光需要や回遊ルートを可視化し、地域商業の活性化施策への還元が期待される。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>北海道でもニセコや富良野、函館などインバウンド需要が急伸する地域を多く抱えていますが、深刻な観光人材不足がボトルネックとなっています。地銀としては、地元自治体やDMO（観光地域づくり法人）、商店街振興組合に対し、人手不足対策とデータマーケティングを兼ねた観光DXソリューションの提案ネタとして活用できます。「単なる案内省力化ではなく、得られた対話データを宿泊施設や飲食店の新メニュー開発・出店計画にどう活かすか」という伴走支援の視点を持って顧客と意見交換すると説得力が増します。</p>
-                <a href="https://news.yahoo.co.jp/articles/e0f895c6a92839fabc4870e8fe7f266084a811bb?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
+      <article>
+        <span class="news-tag">インフラ・地域開発・建設動向</span>
+        <h3>多摩の大動脈「新青梅街道」止めます2夜間！ 歩道橋を撤去 モノレール延伸いよいよ本格化へ</h3>
+        <b>ロジカル要約</b>
+        <ul>
+          <li><strong>背景/経緯:</strong> 多摩都市モノレールの箱根ヶ崎方面への延伸事業に伴い、主要幹線道路「新青梅街道」における大規模な支障物撤去が必要に。</li>
+          <li><strong>事象:</strong> 延伸ルート上の歩道橋撤去のため、深夜から早朝にかけて同街道の夜間通行止めを実施し、インフラ整備工事が本格化。</li>
+          <li><strong>結果/影響:</strong> 工事期間中の物流・交通への一時的影響が生じる一方、将来的な沿線地価の上昇、公共交通利便性の向上、沿線再開発の活性化が期待される。</li>
+        </ul>
+        <b>地銀視点の深掘り</b>
+        <p>インフラ整備は地域経済や不動産価値、物流ネットワークを大きく変える契機です。北海道においても北海道新幹線札幌延伸や都市圏の交通再編プロジェクトが進んでおり、交通結節点の整備が地域商業や住宅需要にどう波及するかを学ぶケーススタディになります。建設業者・運送事業者への運転資金支援や、開発予定地周辺の地主・資産家に対する不動産活用・資産承継提案など、銀行員として先回りした提案力を磨く視点として捉えましょう。</p>
+        <a href="https://news.yahoo.co.jp/articles/301e8a508e554d869555a156af1ac39c5cdda10c?source=rss" role="button" class="outline">続きを読む</a>
+      </article>
+    </section>
 
-            <!-- 記事2: 在職老齢年金 -->
-            <article>
-                <h3>65歳の父は再雇用で「月給40万円」、ボーナスは「年120万円」の予定です。年金「月20万円」だけでは生活費が足りないから働くのに、逆に年金が減らされることもあるのでしょうか？</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> シニア層の就労意欲向上と生活防衛の一方で、厚生年金に加入しながら働く際の「在職老齢年金制度」による支給停止の仕組みが十分に認知されていない現状。</li>
-                    <li><strong>事象:</strong> 給与（総報酬月額相当額）と厚生年金（基本月額）の合計が基準額（50万円）を超えると、超えた分の半額の年金が支給停止される制度の解説。</li>
-                    <li><strong>結果/影響:</strong> 「働けば働くほど手取りがそのまま増えるわけではない」というギャップから、定年後のライフプランニングや就労形態の事前検討の重要性が浮き彫りに。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>リテール営業（個人向け資産形成支援）における極めて実践的なテーマです。道内でも定年を迎える団塊ジュニア世代が増加するなか、「年金＋給与＋退職金・預貯金」を組み合わせた総合的な資産寿命延伸コンサルティングの切り口になります。また、法人担当の視点でも「優秀なシニア社員に長く働いてもらいたいが、給与設定をどうすれば年金支給停止を回避しつつモチベーションを維持できるか」と悩む中小企業オーナーへのアドバイスネタとして直結します。</p>
-                <a href="https://news.yahoo.co.jp/articles/30ce964e2caa691bfb2973314dcc79e4ae4af174?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
-
-            <!-- 記事3: 南極観測船「宗谷」 -->
-            <article>
-                <h3>70年前に南極を目指した観測船 実は戦時中の「強運艦」だった!?「総員退艦」から生還した逸話も</h3>
-                <b>ロジカル要約</b>
-                <ul>
-                    <li><strong>背景/経緯:</strong> 初代南極観測船として国民的人気を博した「宗谷」は、元は戦前に建造された砕氷型貨物船であり、太平洋戦争を生き延びた歴史を持つ。</li>
-                    <li><strong>事象:</strong> 魚雷命中時の不発や座礁からの自力離脱など奇跡的な生還を重ね、戦後は引き揚げ船、海上保安庁の巡視船を経て南極観測船へと改装され任務を完遂。</li>
-                    <li><strong>結果/影響:</strong> 幾度もの沈没危機と過酷な環境を乗り越え、現在は船の科学館で保存展示され、日本の近代海運・科学史の象徴として語り継がれている。</li>
-                </ul>
-                <b>地銀視点の深掘り</b>
-                <p>船名「宗谷」は北海道最北の宗谷海峡に由来し、海上保安庁時代には小樽を基地として北方海域の警備・救難に従事した道内にゆかりの深い名船です。地元のシニア経営者や港湾・水産関係の取引先との雑談で大いに盛り上がる教養ネタになります。また、「幾度の危機に直面しても柔軟に役割（ビジネスモデル）を変え、困難なミッションを完遂する」という宗谷の歩みは、人口減少や気候変動など逆風に立ち向かう中小企業のBCP（事業継続計画）や事業再構築の姿勢に通じるアナロジーとしても活用できます。</p>
-                <a href="https://news.yahoo.co.jp/articles/67883c09891387aaa4dd67c48130411802812eff?source=rss" role="button" class="outline">続きを読む</a>
-            </article>
-        </section>
-
-        <footer style="margin-top: 3rem; text-align: center;">
-            <p><small>&copy; 2026 北海道地方銀行 内定者研修ポータル</small></p>
-        </footer>
-    </main>
+    <footer>
+      <hr>
+      <p style="text-align: center;"><small>&copy; 2026 Financial Insights for New Associates. 北海道の未来を拓くバンカーのために。</small></p>
+    </footer>
+  </main>
 </body>
 </html>
