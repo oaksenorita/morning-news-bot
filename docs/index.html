@@ -1,98 +1,143 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>朝のインサイト - 2026年11月18日</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-  <style>
-    header {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-      border-bottom: 2px solid var(--pico-primary);
-      padding-bottom: 1rem;
-    }
-    .weather-card {
-      background-color: var(--pico-card-background-color);
-      border-left: 5px solid var(--pico-primary);
-    }
-    .news-tag {
-      display: inline-block;
-      margin-bottom: 0.5rem;
-      font-size: 0.85rem;
-      color: var(--pico-muted-color);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝のインサイト (2026年11月19日) - 北海道地方銀行 内定者向け</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <style>
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        .weather-card {
+            background: var(--pico-card-background-color);
+            padding: 1rem;
+            border-radius: var(--pico-border-radius);
+            border: 1px solid var(--pico-muted-border-color);
+            text-align: center;
+        }
+        .weather-val {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            background-color: var(--pico-primary-background);
+            color: var(--pico-primary-inverse);
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>☀️ 朝のインサイト (2026年11月18日)</h1>
-      <p><small>道内地銀内定者のための経済・社会・業務直結ニュースブリーフィング</small></p>
-    </header>
-
-    <section aria-label="本日の天気">
-      <article class="weather-card">
-        <header>
-          <strong>📍 本日の道内気象概況</strong>
+    <main class="container">
+        <header style="margin-bottom: 2rem;">
+            <h1>☀️ 朝のインサイト (2026年11月19日)</h1>
+            <p><small>北海道の未来を担う内定者の皆さんへ。金融・地域経済・マーケットの動きを毎朝お届けします。</small></p>
         </header>
-        <div class="grid">
-          <div><strong>天気:</strong> 曇りがち ☁️</div>
-          <div><strong>最高気温:</strong> 9.12℃</div>
-          <div><strong>最低気温:</strong> 8.86℃</div>
-        </div>
-        <p style="margin-top: 0.75rem; margin-bottom: 0;"><small>晩秋を迎え、冷え込みが続いています。体調管理とともに、融資先企業の暖房・燃料コストや除雪準備の動向にも目を配りましょう。</small></p>
-      </article>
-    </section>
 
-    <section aria-label="厳選ニュース">
-      <article>
-        <span class="news-tag">行政手続・リテール金融実務</span>
-        <h3>名字が変わったらマイナンバーカードの手続きは14日以内。令和8年からのローマ字表記の追記ルールと、公式案内から読み取れること・分からないことの違い</h3>
-        <b>ロジカル要約</b>
-        <ul>
-          <li><strong>背景/経緯:</strong> 改姓に伴うマイナンバーカードの更新手続きルールが存在する中、令和8年（2026年）からのカード利便性向上に向けた「ローマ字表記」追加の法・システム整備が進行。</li>
-          <li><strong>事象:</strong> 氏名変更時の14日以内ルールや、海外取引・パスポート連携を見据えた新仕様について、公式案内と現場運用で解釈・案内にギャップが生じている。</li>
-          <li><strong>結果/影響:</strong> 市民・顧客の更新漏れや窓口混乱のリスクがある一方、デジタルIDとしての国際通用性強化が進展。</li>
-        </ul>
-        <b>地銀視点の深掘り</b>
-        <p>銀行窓口における「犯罪収益移転防止法」に基づく本人確認（KYC）に直結する重要テーマです。口座名義変更の手続きに来店された個人のお客様に対し、マイナンバーカード自体の更新期限（14日以内）やローマ字表記ルールを正確にアドバイスできると、顧客満足度や信頼感の向上につながります。また、今後増える外国人労働者やインバウンド関連の取引先への口座開設案内時にも押さえておくべき基礎知識です。</p>
-        <a href="https://news.yahoo.co.jp/articles/446770d4f85a73faccc9c16d21790767059403e3?source=rss" role="button" class="outline">続きを読む</a>
-      </article>
+        <section>
+            <h2>道内の気候・概況</h2>
+            <article>
+                <header>
+                    <strong>📍 本日の道内気象状況</strong>
+                </header>
+                <p>路面凍結やシャーベット状の積雪に注意が必要な季節となってきました。外回りの営業動線や顧客訪問時の安全運転意識を高める時期です。</p>
+                <div class="weather-grid">
+                    <div class="weather-card">
+                        <small>空模様</small>
+                        <div class="weather-val">🌧️/❄️ にわかみぞれ</div>
+                    </div>
+                    <div class="weather-card">
+                        <small>最高気温</small>
+                        <div class="weather-val" style="color: #d9534f;">8.01℃</div>
+                    </div>
+                    <div class="weather-card">
+                        <small>最低気温</small>
+                        <div class="weather-val" style="color: #0275d8;">5.86℃</div>
+                    </div>
+                </div>
+            </article>
+        </section>
 
-      <article>
-        <span class="news-tag">一次産業・フードビジネス支援</span>
-        <h3>サガミの秋冬スイーツ「蜜芋」フェアが11月18日スタート!丸ごと焼き芋のキャラメリゼやテイクアウト可能なシェイクなど7品</h3>
-        <b>ロジカル要約</b>
-        <ul>
-          <li><strong>背景/経緯:</strong> 外食産業において秋冬シーズンの集客強化と客単価向上を狙い、季節性・トレンド感の高いスイーツ開発が活発化。</li>
-          <li><strong>事象:</strong> 和食麺類レストラン「サガミ」が、高糖度で人気の「蜜芋」を前面に押し出したスイーツ全7品（焼き芋キャラメリゼ、シェイクなど）を本日から展開。</li>
-          <li><strong>結果/影響:</strong> 焼き芋ブームを取り入れたテイクアウト需要の開拓や、カフェタイムのアイドルタイム集客による店舗収益の改善が見込まれる。</li>
-        </ul>
-        <b>地銀視点の深掘り</b>
-        <p>北海道の基幹産業である農業（さつまいも・馬鈴薯・乳製品など）の高付加価値化（6次産業化）を考える好例です。道内でも温暖化傾向に伴いサツマイモ栽培に取り組む農家が増えており、大手外食チェーンのような「素材の甘み×加工・スイーツ化」のトレンドは、地元の生産者や食品加工業者に対する新商品開発・販路開拓支援のヒントになります。融資先飲食店のアイドルタイム対策の会話ネタとしても有用です。</p>
-        <a href="https://news.yahoo.co.jp/articles/618ed95bb3f4bc8683d0a64a62c1d91070bce486?source=rss" role="button" class="outline">続きを読む</a>
-      </article>
+        <section>
+            <h2>本日の注目ニュース（3選）</h2>
 
-      <article>
-        <span class="news-tag">インフラ・地域開発・建設動向</span>
-        <h3>多摩の大動脈「新青梅街道」止めます2夜間！ 歩道橋を撤去 モノレール延伸いよいよ本格化へ</h3>
-        <b>ロジカル要約</b>
-        <ul>
-          <li><strong>背景/経緯:</strong> 多摩都市モノレールの箱根ヶ崎方面への延伸事業に伴い、主要幹線道路「新青梅街道」における大規模な支障物撤去が必要に。</li>
-          <li><strong>事象:</strong> 延伸ルート上の歩道橋撤去のため、深夜から早朝にかけて同街道の夜間通行止めを実施し、インフラ整備工事が本格化。</li>
-          <li><strong>結果/影響:</strong> 工事期間中の物流・交通への一時的影響が生じる一方、将来的な沿線地価の上昇、公共交通利便性の向上、沿線再開発の活性化が期待される。</li>
-        </ul>
-        <b>地銀視点の深掘り</b>
-        <p>インフラ整備は地域経済や不動産価値、物流ネットワークを大きく変える契機です。北海道においても北海道新幹線札幌延伸や都市圏の交通再編プロジェクトが進んでおり、交通結節点の整備が地域商業や住宅需要にどう波及するかを学ぶケーススタディになります。建設業者・運送事業者への運転資金支援や、開発予定地周辺の地主・資産家に対する不動産活用・資産承継提案など、銀行員として先回りした提案力を磨く視点として捉えましょう。</p>
-        <a href="https://news.yahoo.co.jp/articles/301e8a508e554d869555a156af1ac39c5cdda10c?source=rss" role="button" class="outline">続きを読む</a>
-      </article>
-    </section>
+            <!-- ニュース 1 -->
+            <article>
+                <span class="badge">個人金融・住宅ローン・雇用動向</span>
+                <h3>【世帯年収】共働き世帯は「1333万世帯」で専業主婦世帯の2.8倍に。9月の配偶者の収入は月9万8001円に上がった</h3>
+                
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 物価高への対応や社会構造の変化により、夫婦共に収入を得る共働きモデルが標準化。「年収の壁」見直し論議も活発化している。</li>
+                    <li><strong>事象:</strong> 共働き世帯数が1333万世帯に達し専業主婦世帯（約470万世帯）の2.8倍に拡大。配偶者（主に妻）の平均月収も9万8,001円へ伸長した。</li>
+                    <li><strong>結果/影響:</strong> 世帯収入の合算により住宅購入等の借入余力が増加する一方、税制や社会保険料負担の境界線に対する家計の関心が一層高まっている。</li>
+                </ul>
 
-    <footer>
-      <hr>
-      <p style="text-align: center;"><small>&copy; 2026 Financial Insights for New Associates. 北海道の未来を拓くバンカーのために。</small></p>
-    </footer>
-  </main>
+                <b>地銀視点の深掘り</b>
+                <p>
+                    道内でも住宅ローン提案において「ペアローン」や「夫婦連帯債務」のニーズが定番化しています。また、道内中小企業の人手不足対策（主婦パートの労働時間拡大）と直結する話題です。リテール営業では、共働き世帯向けの新NISA・教育資金形成サポートのフックとして、また法人営業では取引先のパート採用・時給改定動向をヒアリングする好材料になります。
+                </p>
+
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/efb604d7f39dd596f27e0180c6bc881ef73ab7fb?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+                </footer>
+            </article>
+
+            <!-- ニュース 2 -->
+            <article>
+                <span class="badge">道内産業・飲食・一次産業振興</span>
+                <h3>日本人のボジョレー・ヌーヴォー好きは教科書に載るほど？ ワイン界で今起きている変化</h3>
+                
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> かつてバブル期や2000年代に一大ブームとなったボジョレー・ヌーヴォー（毎年11月第3木曜日が解禁日）。本日はその解禁日当日。</li>
+                    <li><strong>事象:</strong> 円安や輸送コスト高騰を受け、輸入イベントとしての一律のお祭り騒ぎから、品質重視や国内ワイナリーへのシフトなど消費行動が多様化。</li>
+                    <li><strong>結果/影響:</strong> 日本ワイン（特に冷涼な気候を活かした北海道産ワイン）の評価が国際的に向上し、地産地消や観光（ワイナリーツーリズム）と融合した新市場が形成されている。</li>
+                </ul>
+
+                <b>地銀視点の深掘り</b>
+                <p>
+                    本日（11月第3木曜日）はまさに解禁日であり、飲食業や小売業の取引先との雑談に即効性があります。さらに北海道（余市、空知、池田町など）は今や世界的ワイン産地として投資が活発です。地銀としては単なるブーム消費の話題にとどまらず、地元ワイナリーの設備資金調達、寒冷地農業の高付加価値化、インバウンドを絡めたアグリツーリズム支援といった事業性評価の視点を持って議論を深められます。
+                </p>
+
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/b4352f60bdd87a543f83b132a9a3ef3e90e7491b?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+                </footer>
+            </article>
+
+            <!-- ニュース 3 -->
+            <article>
+                <span class="badge">国際金融・先端テクノロジー・DX</span>
+                <h3>アンソロピック　IPO公開価格83ドルに</h3>
+                
+                <b>ロジカル要約</b>
+                <ul>
+                    <li><strong>背景/経緯:</strong> 生成AIブームを牽引する主要プレイヤー「Anthropic（Claude開発元）」の株式上場プロセスが市場の最大の関心事となっていた。</li>
+                    <li><strong>事象:</strong> 同社のIPO公開価格が1株あたり83ドルに設定され、AI銘柄への旺盛な投資意欲が裏付けられた。</li>
+                    <li><strong>結果/影響:</strong> ハイテク市場や米株式市場のセンチメントを強気に押し上げ、国内外の運用市場やハイテク向けエクイティ投資環境にポジティブな波及効果を与える。</li>
+                </ul>
+
+                <b>地銀視点の深掘り</b>
+                <p>
+                    銀行内定者として、国際市場の流動性や生成AIの進化速度を肌感覚で把握しておくことは不可欠です。地方銀行でも業務自動化や融資稟議のAIアシスト導入が急速に進んでおり、Anthropicの動向は地銀自身のDX戦略に直結します。また、富裕層顧客（プライベートバンキング）に対するグローバル株式・投信を通じた運用アドバイスの場面でも、AI関連の市場動向は最も関心が高いトークテーマとなります。
+                </p>
+
+                <footer>
+                    <a href="https://news.yahoo.co.jp/articles/9b127eb36b249a6bfe9ec059c1bfc8a68169613e?source=rss" role="button" class="outline" target="_blank" rel="noopener noreferrer">続きを読む</a>
+                </footer>
+            </article>
+        </section>
+
+        <footer style="margin-top: 3rem; text-align: center;">
+            <p><small>&copy; 2026 北海道地方銀行 内定者研修支援ポータル - 寒冷前線通過に伴い、足元に気をつけてお過ごしください。</small></p>
+        </footer>
+    </main>
 </body>
 </html>
